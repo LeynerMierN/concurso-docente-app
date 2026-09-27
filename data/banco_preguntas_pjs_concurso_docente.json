@@ -1,0 +1,1178 @@
+[
+  {
+    "id": "PJS_001",
+    "area": "Pedagogía y Gestión de Aula",
+    "tema": "Inclusión y DUA",
+    "norma_referencia": "Decreto 1421 de 2017 / Guía de Implementación del Decreto 1421",
+    "contexto": "Un docente de Ciencias Naturales de grado 6° recibe en su aula a un estudiante con discapacidad visual (baja visión) recientemente matriculado. Al momento de planear el primer periodo, el docente considera que, mientras la institución educativa contrata un docente de apoyo pedagógico exclusivo, el estudiante debe realizar guías de trabajo simplificadas de manera aislada en la biblioteca con un acudiente para no retrasar el ritmo de aprendizaje del resto del grupo.",
+    "pregunta": "¿Cuál es la actuación pedagógica e institucional inmediata más adecuada que debe asumir el docente de aula según la normativa de educación inclusiva?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Mantener al estudiante en la biblioteca realizando guías individuales hasta que el sector salud expida un diagnóstico médico definitivo y la Secretaría de Educación asigna un docente de apoyo exclusivo."
+      },
+      {
+        "id": "B",
+        "texto": "Diseñar e implementar desde el inicio la planeación pedagógica basada en el Diseño Universal para el Aprendizaje (DUA), garantizando la presencia y participación del estudiante en el aula común junto a sus pares, e iniciar la estructuración del Plan Individual de Ajustes Razonables (PIAR)."
+      },
+      {
+        "id": "C",
+        "texto": "Modificar de forma unilateral la escala de valoración institucional para reducir las competencias del área al estudiante y exonerarlo de las actividades presenciales de evaluación."
+      },
+      {
+        "id": "D",
+        "texto": "Solicitar a la Comisión de Evaluación y Promoción el traslado inmediato del estudiante a un aula de educación especial fuera del establecimiento educativo regular."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El Decreto 1421 de 2017 y su guía de implementación disponen que la educación inclusiva exige garantizar la presencia, participación y aprendizaje de los estudiantes con discapacidad en el aula común junto a pares de su misma edad. El Diseño Universal para el Aprendizaje (DUA) debe ser el punto de partida en la planeación pedagógica del aula para todos los estudiantes, mientras que el Plan Individual de Ajustes Razonables (PIAR) se elabora para responder a las barreras específicas que persistan."
+  },
+  {
+    "id": "PJS_002",
+    "area": "Pedagogía y Gestión de Aula",
+    "tema": "Inclusión y DUA",
+    "norma_referencia": "Decreto 1421 de 2017 / Instructivo PIAR (Colombia Aprende)",
+    "contexto": "Durante el segundo periodo académico, un docente de Matemáticas observa que las estrategias diversificadas del DUA no han sido suficientes para que un estudiante con discapacidad intelectual alcance los desempeños básicos en la resolución de problemas. La madre del estudiante solicita que se apruebe automáticamente al niño para evitar afectaciones emocionales, mientras que algunos compañeros de área sugieren reprobarlo de inmediato.",
+    "pregunta": "¿Cuál es la estrategia pedagógica y normativa correcta que debe ejecutar el docente de aula?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Aprobar al estudiante en el área de Matemáticas sin evaluar desempeños pedagógicos, atendiendo la solicitud de la familia para proteger sus derechos afectivos."
+      },
+      {
+        "id": "B",
+        "texto": "Diseñar un currículo paralelo independiente del plan de estudios institucional y calificar al estudiante únicamente por su asistencia a la institución."
+      },
+      {
+        "id": "C",
+        "texto": "Consolidar y flexibilizar las metas de aprendizaje y metodologías de evaluación mediante los ajustes razonables del PIAR en conjunto con el equipo pedagógico, formalizando los compromisos con la familia mediante la firma del Acta de Acuerdo."
+      },
+      {
+        "id": "D",
+        "texto": "Solicitar al Consejo Directivo la cancelación de la matrícula del estudiante por no adaptarse a las exigencias académicas del grado que cursa."
+      }
+    ],
+    "respuesta_correcta": "C",
+    "justificacion": "De acuerdo con el Decreto 1421 de 2017 y las orientaciones del MEN, cuando las estrategias DUA requieren apoyos individuales persistentes, el docente de aula lidera la formulación de los ajustes razonables dentro del PIAR. El PIAR flexibiliza la planeación y la evaluación de acuerdo con las características del estudiante, sin constituir un currículo paralelo ni significar una promoción automática desprovista de valoración pedagógica."
+  },
+  {
+    "id": "PJS_003",
+    "area": "Convivencia Escolar",
+    "tema": "Rutas de Atención y Clasificación de Situaciones (Tipo I)",
+    "norma_referencia": "Ley 1620 de 2013 / Decreto 1965 de 2013 / Guía Pedagógica No. 49",
+    "contexto": "Durante el descanso pedagógico en una institución educativa, dos estudiantes de grado 8° tienen un altercado verbal y descalificaciones mutuas esporádicas por la utilización de una cancha deportiva. La situación no pasa a mayores ni se presentan agresiones físicas o antecedentes de acoso entre ellos. El docente de turno presencia el altercado e interviene.",
+    "pregunta": "De acuerdo con la Ley 1620 de 2013 y el Decreto 1965 de 2013, ¿cuál es la tipificación de la situación y la actuación inmediata que debe adelantar el docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Tipificar la situación como Tipo II y convocar de manera extraordinaria al Comité Escolar de Convivencia para aplicar sanciones disciplinarias de suspensión."
+      },
+      {
+        "id": "B",
+        "texto": "Clasificar la situación como Tipo I y realizar una mediación pedagógica inmediata donde las partes expongan sus puntos de vista, acuerden acciones restaurativas para reparar el daño y firmen compromisos de convivencia."
+      },
+      {
+        "id": "C",
+        "texto": "Remitir el caso directamente a la Comisaría de Familia y a la Policía de Infancia y Adolescencia por tratarse de una vulneración de derechos en espacio público."
+      },
+      {
+        "id": "D",
+        "texto": "Ignorar el hecho por tratarse de un desacuerdo menor del descanso y esperar a que los estudiantes resuelvan sus diferencias de forma autónoma."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "Los conflictos manejados inadecuadamente y las situaciones esporádicas de agresión verbal que inciden negativamente en el clima escolar sin causar daño al cuerpo o a la salud corresponden a Situaciones Tipo I. El protocolo reglamentado por el Decreto 1965 de 2013 exige una mediación pedagógica inmediata, garantizando que las partes expongan sus puntos de vista, se fijen alternativas de solución equitativas, se implementen acciones restaurativas y se firmen compromisos."
+  },
+  {
+    "id": "PJS_004",
+    "area": "Convivencia Escolar",
+    "tema": "Protocolo de Acoso Escolar (Tipo II)",
+    "norma_referencia": "Ley 1620 de 2013 / Decreto 1965 de 2013 / Guía Pedagógica No. 49",
+    "contexto": "Un director de grupo de grado 7° detecta que un estudiante viene siendo objeto de burlas repetitivas, apodos denigrantes y exclusión deliberada en redes sociales y en el aula durante el último mes por parte de tres compañeros. El estudiante agredido manifiesta temor de asistir al colegio y afectación emocional, mientras que los agresores afirman que se trata de 'juegos normales'.",
+    "pregunta": "¿Cuál es el procedimiento normativo y pedagógico que debe activar el docente frente a esta situación?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Identificar el caso como acoso escolar y ciberacoso (Situación Tipo II), garantizar la atención física/emocional de los involucrados, informar de inmediato a los acudientes de todas las partes y remitir el caso al Presidente del Comité Escolar de Convivencia para el análisis, seguimiento y registro."
+      },
+      {
+        "id": "B",
+        "texto": "Tratar la situación como un conflicto de Situación Tipo I mediante un pacto informal de aula, evitando citar a los acudientes para no polarizar el grupo."
+      },
+      {
+        "id": "C",
+        "texto": "Interponer una denuncia penal inmediata ante la Fiscalía General de la Nación contra los tres estudiantes por tratarse de una Situación Tipo III constitutiva de delito."
+      },
+      {
+        "id": "D",
+        "texto": "Solicitar la reubicación de jornada únicamente para el estudiante agredido como medida principal de protección, dando por cerrado el procedimiento institucional."
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "El acoso escolar (bullying) y el ciberacoso corresponden a Situaciones Tipo II cuando se presentan de manera repetida, sistemática o asimétrica y no revisten las características de un delito penal. El protocolo de atención exige brindar atención inmediata, adoptar medidas de protección confidenciales, informar de inmediato a los padres o acudientes y remitir el caso al Presidente del Comité Escolar de Convivencia."
+  },
+  {
+    "id": "PJS_005",
+    "area": "Pedagogía y Gestión de Aula",
+    "tema": "Evaluación Formativa y SIEE",
+    "norma_referencia": "Decreto 1290 de 2009 / Documento No. 11 MEN",
+    "contexto": "En un establecimiento educativo, un docente de Lengua Castellana califica el periodo académico con un único examen escrito acumulativo. Al reprobar el 50% de los estudiantes, el docente argumenta que la evaluación debe ser un filtro de selección para garantizar la excelencia y que no realizará actividades de apoyo ni modificaciones a su método evaluativo. Los estudiantes acuden a la coordinación académica.",
+    "pregunta": "Desde la fundamentación conceptual del Decreto 1290 de 2009 y el Documento No. 11 del MEN, ¿cuál es la inconsistencia técnica de la práctica del docente y la orientación adecuada?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La práctica del docente es correcta, puesto que el Decreto 1290 le otorga autonomía absoluta para implementar evaluaciones sumativas y punitivas de carácter terminal."
+      },
+      {
+        "id": "B",
+        "texto": "La evaluación en el aula debe ser de naturaleza esencialmente formativa y procesal, por lo que el docente debe diversificar las técnicas de valoración, implementar estrategias continuas de apoyo pedagógico para superar debilidades y reorientar su práctica de enseñanza."
+      },
+      {
+        "id": "C",
+        "texto": "El docente debe solicitar a la Secretaría de Educación una exención de la escala de valoración nacional del SIEE para su asignatura."
+      },
+      {
+        "id": "D",
+        "texto": "El docente debe sustituir la evaluación de aula por la aplicación exclusiva de pruebas censales estandarizadas del ICFES."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El Decreto 1290 de 2009 y el Documento No. 11 del MEN definen la evaluación en el aula como un proceso formativo, continuo, motivador y no sancionatorio. La evaluación no puede reducirse a un único examen o medición cuantitativa, sino que exige utilizar múltiples técnicas de valoración para identificar fortalezas y dificultades a tiempo."
+  },
+  {
+    "id": "PJS_006",
+    "area": "Pedagogía y Gestión de Aula",
+    "tema": "Movilidad Estudiantil y Promoción Escolar",
+    "norma_referencia": "Decreto 1290 de 2009 / Documento No. 11 MEN",
+    "contexto": "A mitad del año lectivo, un estudiante se matricula en grado 9° tras ser trasladado de otra institución educativa oficial. Presenta una constancia de desempeño que certifica la aprobación de grado 8°. No obstante, el docente director de grupo advierte que el plan de estudios anterior no dictó dos temas que en la institución actual se enseñan en 8°, por lo que solicita ubicar al estudiante en grado 8° hasta que nivele dichos contenidos.",
+    "pregunta": "De acuerdo con los procedimientos normativos regulados en el Decreto 1290 de 2009 y el Documento No. 11 del MEN, ¿cuál es la decisión institucional y pedagógica ajustada a la norma?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Anular la constancia de desempeño de la institución de origen y exigir exámenes de admisión pagados para definir el grado correspondiente."
+      },
+      {
+        "id": "B",
+        "texto": "Matricular al estudiante en el grado 9° garantizando la validez nacional de la constancia de desempeño aprobatoria, e implementar un plan pedagógico de apoyo y acompañamiento para nivelar las competencias o contenidos pendientes."
+      },
+      {
+        "id": "C",
+        "texto": "Ubicar al estudiante como oyente en grado 8° sin registro escolar formal hasta que presente exámenes de nivelación de los contenidos locales."
+      },
+      {
+        "id": "D",
+        "texto": "Solicitar a la Secretaría de Educación el traslado del estudiante a un colegio que posea exactamente la misma intensidad horaria y plan de estudios."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El Decreto 1290 de 2009 y el Documento No. 11 establecen que la constancia de desempeño tiene validez nacional para asegurar la movilidad de los estudiantes. Un establecimiento educativo no puede ubicar a un estudiante en un grado inferior al promovido. La institución receptora debe matricularlo en el grado al que fue promovido (9°) y diseñar planes de apoyo pedagógico."
+  },
+  {
+    "id": "PJS_007",
+    "area": "Convivencia Escolar y Competencias Ciudadanas",
+    "tema": "Resolución de Conflictos entre Pares y Mediación Escolar",
+    "norma_referencia": "Ley 1620 de 2013 / Decreto 1965 de 2013 / Guía Pedagógica No. 49",
+    "contexto": "Durante un trabajo grupal de Ciencias Sociales en grado 9°, dos estudiantes entran en una acalorada discusión por la asignación de roles. Uno de ellos acusa al otro de no aportar y, en medio de la rabia, le rompe los apuntes de la materia. La situación genera un altercado verbal fuerte en el salón, aunque no se presentan agresiones físicas ni existen antecedentes de acoso o violencia previa entre ellos. El docente interrumpe la discusión inmediatamente.",
+    "pregunta": "De acuerdo con los protocolos de atención para Situaciones Tipo I establecidos en el Decreto 1965 de 2013, ¿cuál es la actuación pedagógica e inmediata idónea que debe realizar el docente de aula?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Suspender inmediatamente del aula a ambos estudiantes y enviar el caso a la coordinación de convivencia para que aplique una sanción disciplinaria según el Manual de Convivencia."
+      },
+      {
+        "id": "B",
+        "texto": "Facilitar un espacio de mediación pedagógica donde ambas partes expongan sus puntos de vista, reconozcan sus emociones, acuerden una acción restaurativa para reparar el material dañado y firmen compromisos de convivencia con seguimiento."
+      },
+      {
+        "id": "C",
+        "texto": "Obligar al estudiante que rompió los apuntes a pedir disculpas públicas frente a todo el grupo para sentar un precedente disciplinario de no violencia."
+      },
+      {
+        "id": "D",
+        "texto": "Cambiar a los estudiantes de grupo de trabajo sin abordar la situación, permitiendo que resuelvan sus diferencias de forma privada fuera de la jornada escolar."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "Las Situaciones Tipo I requieren una mediación pedagógica directa e inmediata por parte del docente o mediador escolar. El procedimiento exige reunir a las partes, escuchar sus versiones de forma equitativa, concertar acciones restaurativas para reparar los daños causados y fijar compromisos con seguimiento."
+  },
+  {
+    "id": "PJS_008",
+    "area": "Convivencia Escolar y Competencias Ciudadanas",
+    "tema": "Enfoque Restaurativo y Protección en Agresión entre Pares",
+    "norma_referencia": "Ley 1620 de 2013 / Decreto 1965 de 2013 / Guía Pedagógica No. 49",
+    "contexto": "Durante el cambio de clase en grado 10°, un estudiante empuja intencionalmente a otro contra la pared tras una serie de provocaciones verbales que se vienen repitiendo de forma sistemática durante el último mes, causándole un hematoma leve en el brazo. El estudiante agredido manifiesta llanto y temor de regresar al salón. Es la tercera vez en el periodo que se presenta una agresión de este tipo por parte del mismo estudiante.",
+    "pregunta": "¿Cuál es la ruta de atención pedagógica y normativa adecuada que debe activar el docente que presencia el hecho?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Garantizar la atención inmediata en salud física y emocional de los involucrados, tomar medidas de protección confidenciales, informar de inmediato a los acudientes de ambas partes, generar espacios de escucha para acordar acciones restaurativas y reportar el caso al Presidente del Comité Escolar de Convivencia."
+      },
+      {
+        "id": "B",
+        "texto": "Obligar a los dos estudiantes a darse un abrazo frente al grupo y firmar un compromiso inmediato de silencio para evitar que los acudientes se enteren y se afecte el clima escolar."
+      },
+      {
+        "id": "C",
+        "texto": "Interponer una denuncia penal ante la Fiscalía General de la Nación de forma directa por tratarse de un delito de lesiones personales constitutivo de Situación Tipo III."
+      },
+      {
+        "id": "D",
+        "texto": "Aplicar de manera unilateral la expulsión definitiva del estudiante agresor del establecimiento educativo sin requerir la intervención del Comité Escolar de Convivencia."
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "La situación corresponde a una Situación Tipo II (agresión o acoso escolar sistemático que causa daño a la salud sin generar incapacidad ni constituir delito penal). El protocolo normativo exige garantizar atención inmediata, adoptar medidas de protección, informar a acudientes, determinar acciones restaurativas y remitir al Comité Escolar de Convivencia."
+  },
+  {
+    "id": "PJS_009",
+    "area": "Convivencia Escolar y Competencias Ciudadanas",
+    "tema": "Prevención y Pactos de Aula para la Convivencia Escolar",
+    "norma_referencia": "Ley 1620 de 2013 / Decreto 1965 de 2013 / Guías Pedagógicas para la Convivencia Escolar",
+    "contexto": "Al iniciar el año escolar en un grado 7° caracterizado por constantes burlas sobre los rasgos físicos y el origen regional de algunos compañeros, el docente director de grupo proyecta establecer pautas de convivencia sólidas para prevenir el escalamiento hacia situaciones de acoso escolar.",
+    "pregunta": "Desde la perspectiva del componente de Prevención y Promoción de la Ley 1620 de 2013, ¿cuál es la estrategia pedagógica más pertinente que debe implementar el docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Imponer un reglamento de aula estricto diseñado exclusivamente por los docentes, estableciendo sanciones pecuniarias y suspensiones automáticas por cualquier comentario indebido."
+      },
+      {
+        "id": "B",
+        "texto": "Construir de manera participativa con los estudiantes un Pacto de Aula, reflexionando sobre el impacto de las burlas en la dignidad humana, definiendo acuerdos de trato respetuoso, límites claros y acciones restaurativas comunitarias en caso de incumplimiento."
+      },
+      {
+        "id": "C",
+        "texto": "Delegar la disciplina del grupo a un estudiante monitor para que anote en una lista a quienes hagan comentarios inadecuados y los remita al final de la semana a la rectoría."
+      },
+      {
+        "id": "D",
+        "texto": "Evitar abordar el tema de las burlas en clase para no fijar la atención en conductas negativas, esperando a que ocurra una falta grave para sancionar."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La prevención y promoción se fundamentan en la participación democrática y el desarrollo de competencias ciudadanas. La construcción colectiva de Pactos de Aula permite que los estudiantes comprendan el valor de la diversidad y la dignidad, asumiendo la corresponsabilidad de sus actos."
+  },
+  {
+    "id": "PJS_010",
+    "area": "Pedagogía y Gestión de Aula",
+    "tema": "Evaluación Formativa y Retroalimentación Asertiva",
+    "norma_referencia": "Decreto 1290 de 2009 / Documento No. 11 MEN",
+    "contexto": "En una prueba de diagnóstico y seguimiento formativo de Matemáticas en grado 8°, la mayoría de los estudiantes presenta dificultades severas en la resolución de problemas algebraicos, cometiendo errores conceptuales recurrentes. El docente devuelve los exámenes únicamente con una calificación cuantitativa baja (v.gr. 2.0/5.0) y la anotación 'Insuficiente', indicando que en la siguiente clase iniciará el próximo tema del programa académico.",
+    "pregunta": "De acuerdo con los principios de la evaluación formativa contenidos en el Documento No. 11 del MEN y el Decreto 1290 de 2009, ¿cuál es la actuación pedagógica que debe reorientar el docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Mantener la nota asignada y solicitar a los padres de familia que contraten docentes particulares para que los estudiantes estudien la temática por su cuenta."
+      },
+      {
+        "id": "B",
+        "texto": "Diseñar una sesión de retroalimentación cualitativa y explícita para analizar el origen de los errores, reajustar su planeación pedagógica e implementar estrategias continuas de apoyo para afianzar las competencias antes de avanzar de unidad."
+      },
+      {
+        "id": "C",
+        "texto": "Anular la evaluación y otorgar a todos los estudiantes una calificación aprobatoria de 3.5 para no afectar los promedios académicos del periodo."
+      },
+      {
+        "id": "D",
+        "texto": "Exonerar de las siguientes evaluaciones a los estudiantes reprobados para concentrar la atención pedagógica exclusivamente en quienes obtuvieron desempeño superior."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La evaluación en el aula es de naturaleza formativa, procesal y motivadora. Su finalidad es dar información para que el docente ajuste sus prácticas de enseñanza y para que el estudiante comprenda sus debilidades y cómo superarlas a través de retroalimentación cualitativa."
+  },
+  {
+    "id": "PJS_011",
+    "area": "Pedagogía y Gestión de Aula",
+    "tema": "Autoevaluación y Coevaluación en el Desarrollo Personal y Social",
+    "norma_referencia": "Decreto 1290 de 2009 / Documento No. 11 MEN",
+    "contexto": "Un docente de Educación Física asigna la valoración del componente de 'Desarrollo Personal y Social' del periodo basándose exclusivamente en su apreciación subjetiva sobre la disciplina del grupo. Varios estudiantes solicitan conocer los criterios de esa valoración y poder evaluar su propio desempeño y el de sus pares en el trabajo colaborativo. El docente se niega afirmando que la autoevaluación es un proceso informal sin validez en la nota definitiva.",
+    "pregunta": "¿Cuál es la concepción normativa y conceptual del Decreto 1290 de 2009 y el Documento No. 11 frente a la autoevaluación de los estudiantes?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La autoevaluación y coevaluación son componentes constitutivos del proceso formativo que promueven la autorregulación y la ética, por lo que deben integrarse con criterios cualitativos transparentes e indicadores concertados e incluidos en el SIEE."
+      },
+      {
+        "id": "B",
+        "texto": "La valoración del docente es el único juicio válido normativamente para el desarrollo personal y social, pues los estudiantes no poseen la objetividad requerida para autoevaluarse."
+      },
+      {
+        "id": "C",
+        "texto": "La autoevaluación solo está autorizada para estudiantes con desempeño superior como un estímulo a la excelencia académica."
+      },
+      {
+        "id": "D",
+        "texto": "Las calificaciones de autoevaluación deben promediarse únicamente si coinciden de manera exacta con la nota asignada previamente por el docente de área."
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "El Decreto 1290 de 2009 y el Documento No. 11 señalan que la evaluación del desarrollo personal y social exige fomentar la autoevaluación y coevaluación pedagógica. Este ejercicio convoca de manera responsable y democrática al estudiante para construir un sentido realista de sí mismo."
+  },
+  {
+    "id": "PJS_012",
+    "area": "Pedagogía y Gestión de Aula",
+    "tema": "Diversificación de Técnicas e Instrumentos de Evaluación",
+    "norma_referencia": "Decreto 1290 de 2009 / Documento No. 11 MEN",
+    "contexto": "En un aula de grado 5° coexisten estudiantes con diversos ritmos y estilos de aprendizaje (algunos sobresalen en la expresión oral y artística, mientras otros prefieren actividades gráficas o de indagación). Para la evaluación final del periodo en Ciencias Naturales, la docente exige de manera exclusiva la entrega de un ensayo escrito de 10 páginas. Estudiantes que demuestran dominio conceptual alto en debates y proyectos prácticos obtienen desempeño bajo debido a dificultades en la redacción formal.",
+    "pregunta": "Desde las fundamentaciones pedagógicas del Decreto 1290 de 2009 y el Documento No. 11 del MEN, ¿cuál es la orientación que debe asumir la docente para garantizar una evaluación justa e integral?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Exigir el ensayo escrito sin variaciones, argumentando que la aplicación de un único instrumento rígido es la única forma de garantizar la rigurosidad e igualdad de condiciones."
+      },
+      {
+        "id": "B",
+        "texto": "Diversificar las técnicas e instrumentos de valoración (v.gr. exposiciones, mapas conceptuales, portafolios, pruebas objetivas o representaciones) para evaluar las competencias según los diversos ritmos y estilos de aprendizaje, realizando triangulación de la información."
+      },
+      {
+        "id": "C",
+        "texto": "Eliminar las evaluaciones del periodo y calificar a todos los estudiantes asignando la nota promedio tomando en cuenta únicamente la asistencia a clase."
+      },
+      {
+        "id": "D",
+        "texto": "Asignar la nota máxima a todos los estudiantes con dificultades de redacción escrita para evitar reclamos ante la Comisión de Evaluación."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "Para evaluar de manera integral y formativa, el docente debe valerse de múltiples técnicas (orales, escritas, prácticas, individuales y grupales) y realizar una triangulación de datos para valorar fielmente el desempeño del estudiante sin convertir un único formato en una barrera de aprendizaje."
+  },
+  {
+    "id": "PJS_013",
+    "area": "Lectura Crítica y Análisis Textual en el Contexto Educativo",
+    "tema": "Identificación de la Intención Comunicativa y Tesis Central",
+    "norma_referencia": "Documento No. 11 - MEN (Evaluación en el aula vs. Evaluación externa)",
+    "contexto": "\"Las evaluaciones externas en general, tienen la función de ser un termómetro para procesos macros en el campo de la educación, toda vez que a ellas escapan muchos elementos y detalles del proceso de enseñanza-aprendizaje, pero recogen otros que facilitan la comparación y la correlación... Por el contrario, la evaluación en el aula es un elemento fundamental del proceso enseñanza-aprendizaje, porque exige la implementación de distintas actividades creativas para obtener información sobre los aprendizajes de los estudiantes... Ambas no deben ser consideradas como incompatibles, sino entendidas como miradas y estrategias complementarias.\" (Ministerio de Educación Nacional, Documento No. 11).",
+    "pregunta": "A partir de la lectura del fragmento anterior, ¿cuál es la tesis central que defiende el autor respecto a los ámbitos de la evaluación educativa?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La evaluación externa debe reemplazar paulatinamente a la evaluación de aula debido a su capacidad para ofrecer métricas objetivas y comparables a nivel nacional."
+      },
+      {
+        "id": "B",
+        "texto": "La evaluación de aula y la evaluación externa no son antagónicas, sino instrumentos de naturaleza distinta cuya articulación permite captar de manera integral la realidad compleja del proceso educativo."
+      },
+      {
+        "id": "C",
+        "texto": "Las actividades creativas de evaluación de aula carecen de rigor técnico al estar expuestas a la subjetividad docente, por lo que requieren subordinarse a las pruebas estandarizadas."
+      },
+      {
+        "id": "D",
+        "texto": "El único propósito válido de la evaluación educativa es funcionar como un termómetro sancionatorio para medir el rendimiento de los establecimientos educativos."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El texto plantea que la evaluación externa y la de aula cumplen funciones diferenciadas. El autor argumenta explícitamente que ambas 'no deben ser consideradas como incompatibles, sino entendidas como miradas y estrategias complementarias'."
+  },
+  {
+    "id": "PJS_014",
+    "area": "Lectura Crítica y Análisis Textual en el Contexto Educativo",
+    "tema": "Inferencia de Premisas Implícitas y Presupuestos Pedagógicos",
+    "norma_referencia": "Decreto 1421 de 2017 / Guía de Implementación del Decreto 1421",
+    "contexto": "\"El Diseño Universal para el Aprendizaje (DUA) ensancha la puerta de entrada al currículo para que la mayoría de estudiantes participe sin adaptaciones posteriores. El Plan Individual de Ajustes Razonables (PIAR) responde a las barreras específicas que persisten cuando, a pesar del DUA, se requieren apoyos individuales... Un PIAR excesivamente denso o complejo delata, en la práctica, un DUA deficiente o corto en la planeación pedagógica del aula.\" (Adaptado de la Guía de Implementación del Decreto 1421 de 2017).",
+    "pregunta": "¿Qué supuesto o premisa implícita subyace a la afirmación 'un PIAR enorme delata un DUA corto'?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que los estudiantes con discapacidad no deben ser escolarizados en aulas comunes a menos que cuenten con un PIAR minuciosamente elaborado."
+      },
+      {
+        "id": "B",
+        "texto": "Que una planeación pedagógica diversificada e incluyente desde el DUA reduce sustancialmente la necesidad de realizar adaptaciones individuales excepcionales."
+      },
+      {
+        "id": "C",
+        "texto": "Que el PIAR es el instrumento primario y obligatorio de la educación inclusiva y el DUA es solo una herramienta opcional para actividades extracurriculares."
+      },
+      {
+        "id": "D",
+        "texto": "Que la elaboración del PIAR es una tarea exclusiva del docente de apoyo pedagógico que exime al docente de aula de diversificar sus metodologías."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La premisa implícita es que si la planeación general del aula (DUA) se diseña ofreciendo multiplicidad de formas de representación, expresión y motivación, la gran mayoría de las barreras se eliminan desde el origen. Por tanto, requerir un volumen masivo de ajustes individuales demuestra que la planeación inicial no fue lo suficientemente flexible."
+  },
+  {
+    "id": "PJS_015",
+    "area": "Lectura Crítica y Análisis Textual en el Contexto Educativo",
+    "tema": "Análisis de Relaciones Lógicas entre Ideas (Causa-Efecto y Paradoja)",
+    "norma_referencia": "Documento No. 11 - MEN (El error como oportunidad de aprendizaje)",
+    "contexto": "\"Al castigar o penalizar el error en los ambientes de formación –en vez de convertirlo en una oportunidad para aprender–, se rompe y frena el proceso en sí mismo, y lo que resulta más paradójico, es que con ello se contradice la naturaleza del objetivo que se desea incentivar en la institución educativa: aprender.\" (Ministerio de Educación Nacional, Documento No. 11).",
+    "pregunta": "En el texto, la relación entre 'penalizar el error' y 'contradecir el objetivo de aprender' se califica como una 'paradoja' porque:",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Penalizar el error garantiza la excelencia académica, aunque genera descontento pasajero entre los estudiantes."
+      },
+      {
+        "id": "B",
+        "texto": "Se utiliza un mecanismo sancionatorio que produce exactamente el resultado opuesto al fin formativo que la escuela pretende alcanzar."
+      },
+      {
+        "id": "C",
+        "texto": "El error demuestra la falta de capacidad del estudiante, por lo que la sanción es la única vía para forzar la apropiación conceptual."
+      },
+      {
+        "id": "D",
+        "texto": "La evaluación cuantitativa tradicional logra eliminar los errores de aprendizaje sin afectar la motivación de los educandos."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La paradoja señalada por el autor radica en la contradicción sistemática entre el medio (castigar la falla) y el fin (lograr que el estudiante aprenda). Al penalizar el error se inhibe la experimentación y la autorregulación."
+  },
+  {
+    "id": "PJS_016",
+    "area": "Lectura Crítica y Análisis Textual en el Contexto Educativo",
+    "tema": "Evaluación de Argumentos y Posturas Críticas",
+    "norma_referencia": "Ley 1620 de 2013 / Guía Pedagógica No. 49 / Decreto 1965 de 2013",
+    "contexto": "\"El protocolo de atención frente al acoso escolar prefiere aprovechar la crisis para generar reflexiones, sembrar autocrítica y empatía a través del diálogo abierto, enfocándose en la dimensión emocional e interpersonal. El mensaje poderoso para la comunidad es que el respeto real no se construye aislando o escondiendo a las víctimas potenciales detrás de muros más lejanos, sino educando emocionalmente a quienes invaden ese espacio.\" (Guía Pedagógica No. 49 / Decreto 1965 de 2013).",
+    "pregunta": "¿Cuál es la postura crítica que se sintetiza en el texto frente a las medidas tradicionales de manejo del acoso escolar basadas en el aislamiento de las víctimas?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Respaldar el aislamiento de la víctima como la medida más veloz e inofensiva para evitar costos administrativos a la institución."
+      },
+      {
+        "id": "B",
+        "texto": "Cuestionar el enfoque segregador y punitivo porque no resuelve la causa de la agresión ni educa al agresor, proponiendo en su lugar una transformación pedagógica y restaurativa del entorno escolar."
+      },
+      {
+        "id": "C",
+        "texto": "Considerar que las sanciones penales y la expulsión inmediata deben ser el único camino para mantener el orden en el establecimiento educativo."
+      },
+      {
+        "id": "D",
+        "texto": "Argumentar que el acoso escolar es un fenómeno ineludible de la interacción social que no requiere intervención pedagógica por parte de los docentes."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "Se critica la práctica tradicional de 'esconder a las posibles víctimas', catalogándola como una medida superficial. Se defiende en su lugar la justicia restaurativa y la educación emocional del grupo para generar soluciones sostenibles."
+  },
+  {
+    "id": "PJS_017",
+    "area": "Lectura Crítica y Análisis Textual en el Contexto Educativo",
+    "tema": "Distinción entre Concejos Normativos y Juicios Arbitrarios",
+    "norma_referencia": "Ley 115 de 1994 (Autonomía escolar y Currículo)",
+    "contexto": "\"Currículo es el conjunto de criterios, planes de estudio, programas, metodologías y procesos que contribuyen a la formación integral y a la construcción de la identidad cultural nacional, regional y local... Dentro de los límites fijados por la ley y el PEI, las instituciones de educación formal gozan de autonomía para organizar las áreas fundamentales, adaptar contenidos a las necesidades regionales y adoptar métodos de enseñanza, dentro de los lineamientos del Ministerio de Educación Nacional.\" (Ley 115 de 1994, Artículos 76 y 77).",
+    "pregunta": "De acuerdo con la definición legal de currículo y autonomía escolar en la Ley 115 de 1994, ¿cuál de las siguientes afirmaciones expresa de manera rigurosa el concepto normativo de autonomía regulada?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La autonomía escolar faculta a las instituciones educativas para omitir de forma absoluta las áreas obligatorias definidas por la ley si el Consejo Directivo así lo decide."
+      },
+      {
+        "id": "B",
+        "texto": "El currículo es una construcción integral y flexible que articula planes, métodos y contextos, sujeta a los lineamientos y referentes de calidad nacionales expedidos por el MEN."
+      },
+      {
+        "id": "C",
+        "texto": "La definición del currículo es potestad exclusiva y discrecional del docente de aula sin necesidad de estar alineada con el Proyecto Educativo Institucional (PEI)."
+      },
+      {
+        "id": "D",
+        "texto": "El plan de estudios debe mantenerse inalterable a lo largo del tiempo para evitar la desorientación de la comunidad educativa."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La norma establece que la autonomía escolar no es absoluta ni desregulada, sino que se ejerce dentro de los límites de la ley y los lineamientos curriculares del MEN, integrando los planes de estudio con la formación integral en el marco del PEI."
+  },
+  {
+    "id": "PJS_018",
+    "area": "Lectura Crítica y Análisis Textual en el Contexto Educativo",
+    "tema": "Síntesis e Interpretación del Sentido Global del Texto",
+    "norma_referencia": "Ley 1620 de 2013 / Decreto 1965 de 2013 (Manuales de Convivencia)",
+    "contexto": "\"La corresponsabilidad en la convivencia escolar exige entender que la formación ciudadana no es un asunto exclusivo de los docentes ni una carga administrativa del colegio, sino un compromiso ético compartido entre la escuela, la familia y la sociedad. La actualización participativa del Manual de Convivencia no busca redactar un código de castigos, sino acordar pautas de vida comunitaria, mecanismos de mediación pacífica y compromisos de reparación que permitan aprender del error.\" (Decreto 1965 de 2013 / Guías Pedagógicas para la Convivencia Escolar).",
+    "pregunta": "¿Cuál de los siguientes enunciados sintetiza adecuadamente el sentido global del texto sobre el Manual de Convivencia?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El Manual de Convivencia es un contrato sancionatorio que otorga al rector la facultad unilateral de expulsar a los estudiantes que infrinjan la disciplina."
+      },
+      {
+        "id": "B",
+        "texto": "El Manual de Convivencia es un acuerdo pedagógico y participativo fundamentado en la corresponsabilidad comunitaria, orientado al desarrollo de competencias ciudadanas y a la resolución restaurativa de conflictos."
+      },
+      {
+        "id": "C",
+        "texto": "La responsabilidad de la convivencia recae de forma exclusiva en los padres de familia, liberando a la institución escolar de la gestión de los conflictos."
+      },
+      {
+        "id": "D",
+        "texto": "La actualización del Manual de Convivencia es un mero trámite legal periódico que no incide en la vida cotidiana de la comunidad educativa."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El Manual de Convivencia trasciende el enfoque punitivo tradicional para constituirse en un instrumento participativo, pedagógico y democrático donde la comunidad educativa acuerda normas, promueve derechos humanos y aplica la justicia restaurativa."
+  },
+  {
+    "id": "PJS_019",
+    "area": "Gestión Institucional y Gobierno Escolar",
+    "tema": "Instancias del Gobierno Escolar y Modificaciones Curriculares",
+    "norma_referencia": "Ley 115 de 1994 (Artículos 142, 144 y 145)",
+    "contexto": "Durante el segundo periodo lectivo, un grupo de docentes de un establecimiento educativo oficial propone modificar el plan de estudios del área de Ciencias Sociales para incorporar un proyecto de historia regional, eliminando una de las asignaturas obligatorias contempladas en el Proyecto Educativo Institucional (PEI). Los docentes le presentan la propuesta directamente al Rector para que la apruebe por resolución rectoral e inicie su aplicación inmediata sin consultar a otras instancias.",
+    "pregunta": "¿Cuál es el procedimiento normativo y la instancia del Gobierno Escolar competente para analizar y aprobar las modificaciones al currículo y plan de estudios, según la Ley 115 de 1994?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El Rector puede aprobar las modificaciones de manera unilateral mediante acto administrativo interno por tratarse de la máxima autoridad ejecutiva de la institución."
+      },
+      {
+        "id": "B",
+        "texto": "El Consejo Académico elabora y estudia la propuesta pedagógica de ajuste al currículo, y posteriormente el Consejo Directivo la evalúa y aprueba, garantizando la participación de todos los estamentos del Gobierno Escolar."
+      },
+      {
+        "id": "C",
+        "texto": "La solicitud debe enviarse a la Secretaría de Educación Departamental o Distrital para que sea esta autoridad territorial la que diseñe de forma directa el nuevo plan de estudios."
+      },
+      {
+        "id": "D",
+        "texto": "La modificación debe someterse a votación en una asamblea general de estudiantes liderada exclusivamente por el Personero Estudiantil."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El Consejo Académico estudia y propone los ajustes técnico-pedagógicos, mientras que el Consejo Directivo (máxima instancia donde participan docentes, padres, estudiantes, exalumnos y sector productivo) aprueba las modificaciones e incorporación al PEI."
+  },
+  {
+    "id": "PJS_020",
+    "area": "Gestión Institucional y Protección de Derechos",
+    "tema": "Derecho Fundamental a la Educación e Interés Superior del Menor",
+    "norma_referencia": "Ley 115 de 1994 / Constitución Política / Guías Pedagógicas de Convivencia Escolar",
+    "contexto": "Una estudiante de grado 9° que se encuentra en estado de embarazo presenta reiteradas inasistencias por controles médicos programados y malestares de salud. Un grupo de docentes propone suspender temporalmente su matrícula y sugerirle que continúe sus estudios en la jornada nocturna para adultos o que regrese al año siguiente, argumentando que su presencia en el aula diurna 'no es un buen ejemplo' para sus compañeras y afecta el clima institucional.",
+    "pregunta": "Desde la jurisprudencia constitucional y los principios amparados en la Ley 115 de 1994 y la Ley 1620 de 2013, ¿cuál es la actuación correcta que debe asumir la institución educativa y sus docentes?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Aceptar la propuesta de traslado a la jornada nocturna para adultos para salvaguardar el orden institucional y desvincular a la estudiante del aula regular."
+      },
+      {
+        "id": "B",
+        "texto": "Garantizar la permanencia e inclusión de la estudiante en la jornada diurna mediante flexibilización curricular, planes de apoyo pedagógico en casa para las inasistencias justificadas y acompañamiento de la orientación escolar, respetando el interés superior del menor y el derecho fundamental a la educación sin discriminación."
+      },
+      {
+        "id": "C",
+        "texto": "Exigir una póliza de seguro médico privado a la familia como condición previa indispensable para otorgarle el permiso de continuar asistiendo a clases presenciales."
+      },
+      {
+        "id": "D",
+        "texto": "Desvincular a la estudiante del establecimiento educativo hasta que dé a luz y cumpla la mayoría de edad, para proteger la responsabilidad jurídica del colegio."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La Constitución Política, la Ley 115 de 1994 y el Decreto 1965 de 2013 prohíben cualquier acto de discriminación por embarazo. La institución tiene la obligación de garantizar el acceso y permanencia mediante flexibilización pedagógica."
+  },
+  {
+    "id": "PJS_021",
+    "area": "Pedagogía y Gestión Curricular",
+    "tema": "Modelos Educativos Flexibles y Continuidad Pedagógica",
+    "norma_referencia": "Decreto 1290 de 2009 / Documento No. 11 MEN",
+    "contexto": "Una institución educativa ubicada en una zona rural aplica el modelo educativo flexible 'Aceleración del Aprendizaje' para estudiantes en extraedad. Al finalizar el primer semestre, un docente recién nombrado sugiere que a estos estudiantes se les aplique exactamente la misma prueba cuantitativa sumativa y la misma intensidad horaria del modelo regular tradicional, eliminando las metodologías de proyectos de aula del modelo flexible para 'estandarizar la exigencia'.",
+    "pregunta": "De acuerdo con el Decreto 1290 de 2009 y las orientaciones del Documento No. 11 del MEN respecto a los modelos educativos flexibles, ¿cuál es la consideración técnica aplicable?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El docente tiene autonomía absoluta para eliminar la metodología del modelo flexible si considera que la evaluación regular eleva el nivel académico del establecimiento."
+      },
+      {
+        "id": "B",
+        "texto": "Los Sistemas Institucionales de Evaluación (SIEE) deben respetar de manera absoluta la naturaleza, estructura y pedagogía de los modelos flexibles, adoptando criterios de valoración y promoción acordes a su esencia, sin desvirtuar sus guías y proyectos de aprendizaje."
+      },
+      {
+        "id": "C",
+        "texto": "Los modelos educativos flexibles deben sustituirse progresivamente por exámenes estandarizados únicos aprobados por el Consejo Municipal de Educación."
+      },
+      {
+        "id": "D",
+        "texto": "Los estudiantes de modelos flexibles no tienen derecho a obtener certificaciones oficiales de desempeño a menos que cursen el modelo tradicional."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El Decreto 1290 de 2009 señala que las instituciones educativas que implementen modelos flexibles deben respetar en su SIEE la esencia y metodología de dichos modelos, sin imponer esquemas rígidos del modelo tradicional."
+  },
+  {
+    "id": "PJS_022",
+    "area": "Convivencia Escolar y Corresponsabilidad",
+    "tema": "Corresponsabilidad de la Familia y Conducto Regular",
+    "norma_referencia": "Ley 115 de 1994 (Artículo 7°) / Decreto 1965 de 2013 / Guía Pedagógica No. 49",
+    "contexto": "El acudiente de un estudiante de grado 6° acude al colegio muy alterado interrumpiendo abruptamente la clase de Matemáticas para reclamar a viva voz al docente por una calificación baja asignada a su hijo. Exige que se le cambie la nota inmediatamente en la planilla y amenaza con interponer demandas judiciales contra el docente si no accede en ese mismo instante.",
+    "pregunta": "¿Cuál es la actuación inmediata del docente y el procedimiento institucional ajustado al marco de la corresponsabilidad y el conducto regular?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Acceder de inmediato a la exigencia del acudiente y modificar la nota en la planilla para calmar la situación y evitar inconvenientes legales."
+      },
+      {
+        "id": "B",
+        "texto": "Mantener la calma, explicar respetuosamente que la clase con los estudiantes no puede interrumpirse y citar al acudiente a un espacio de atención a padres institucional para revisar la valoración, los criterios de evaluación del SIEE y concertar acuerdos pedagógicos dentro del conducto regular."
+      },
+      {
+        "id": "C",
+        "texto": "Discutir fuertemente con el acudiente dentro del salón de clases frente a los estudiantes para defender la autoridad docente e imponer respeto."
+      },
+      {
+        "id": "D",
+        "texto": "Solicitar a la guardia de seguridad que expulse permanentemente al padre de familia de la institución y sancionar al estudiante reprobándolo automáticamente en el periodo."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La familia es corresponsable del proceso formativo y debe seguir las instancias de diálogo en el Manual de Convivencia y el SIEE. El docente debe garantizar la continuidad de la clase y canalizar la inquietud a través de los conductos regulares."
+  },
+  {
+    "id": "PJS_023",
+    "area": "Pedagogía y Gestión de Aula",
+    "tema": "Proyectos Pedagógicos Transversales y Formación Ciudadana",
+    "norma_referencia": "Ley 115 de 1994 (Artículo 14) / Ley 1620 de 2013 / Decreto 1965 de 2013",
+    "contexto": "Durante la revisión del plan de estudios de una institución educativa, el área de Ética y Valores propone dictar el Proyecto de Educación para la Sexualidad y Construcción de Ciudadanía (PESCC) únicamente como una charla teórica de dos horas al final del año lectivo, con el fin de no interferir con las intensidades horarias de las asignaturas académicas tradicionales.",
+    "pregunta": "De acuerdo con el artículo 14 de la Ley 115 de 1994 y la Ley 1620 de 2013, ¿cuál es la orientación normativa sobre la transversalidad y desarrollo de los proyectos pedagógicos obligatorios?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La propuesta del área es totalmente válida porque los proyectos transversales no forman parte del currículo oficial del establecimiento educativo."
+      },
+      {
+        "id": "B",
+        "texto": "Los proyectos pedagógicos obligatorios (educación para la democracia, sexualidad, medio ambiente y uso del tiempo libre) deben desarrollarse de manera transversal e integrada a lo largo del plan de estudios desde preescolar hasta grado 11°, promoviendo competencias ciudadanas en todas las áreas."
+      },
+      {
+        "id": "C",
+        "texto": "Los proyectos transversales son responsabilidad exclusiva del docente orientador y no deben involucrar a los docentes de aula ni a los estudiantes."
+      },
+      {
+        "id": "D",
+        "texto": "El Ministerio de Educación Nacional exime de la obligatoriedad de los proyectos transversales a los colegios que obtienen nivel superior en las pruebas SABER 11."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La enseñanza de los proyectos pedagógicos obligatorios debe integrarse transversalmente en el PEI y el plan de estudios desde preescolar hasta grado undécimo, desarrollando competencias ciudadanas continuas."
+  },
+  {
+    "id": "PJS_024",
+    "area": "Convivencia Escolar y Prevención",
+    "tema": "Comité Escolar de Convivencia y Promoción de Clima Escolar",
+    "norma_referencia": "Ley 1620 de 2013 / Decreto 1965 de 2013",
+    "contexto": "El Comité Escolar de Convivencia de una institución educativa pública se reúne al inicio del año escolar. Algunos integrantes sugieren que las funciones del comité deben limitarse exclusivamente a juzgar y castigar a los estudiantes cuando cometan faltas graves contra la disciplina o peleas en el colegio, omitiendo la realización de proyectos de prevención o revisión del Manual de Convivencia.",
+    "pregunta": "Desde las funciones otorgadas por la Ley 1620 de 2013 y el Decreto 1965 de 2013, ¿cuál es la verdadera naturaleza y alcance del Comité Escolar de Convivencia?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El comité es un tribunal disciplinario cuyo fin primario es juzgar faltas y fijar sanciones de suspensión o expulsión para imponer orden."
+      },
+      {
+        "id": "B",
+        "texto": "El comité es un órgano de apoyo pedagógico encargado de liderar la promoción de la convivencia, la prevención de la violencia escolar, la actualización participativa del Manual de Convivencia y el seguimiento a la Ruta de Atención Integral en sus cuatro componentes."
+      },
+      {
+        "id": "C",
+        "texto": "El comité sustituye plenamente las funciones de los jueces de la República y de la Fiscalía General de la Nación en todos los delitos cometidos en el municipio."
+      },
+      {
+        "id": "D",
+        "texto": "El comité funciona únicamente como un canal de recaudo de aportes económicos para las actividades recreativas de los docentes."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El Comité Escolar de Convivencia no es un tribunal punitivo, sino un estamento pedagógico y consultivo centrado en liderar la promoción del clima escolar, prevención de la violencia y seguimiento a la Ruta de Atención Integral."
+  },
+  {
+    "id": "PJS_025",
+    "area": "Razonamiento Cuantitativo en el Contexto Docente",
+    "tema": "Promedios Ponderados y Análisis de Calificaciones del SIEE",
+    "norma_referencia": "Decreto 1290 de 2009 / Sistema Institucional de Evaluación de Estudiantes",
+    "contexto": "Un docente de Ciencias Naturales debe determinar la calificación definitiva anual de un estudiante en grado 7°. El Sistema Institucional de Evaluación de Estudiantes (SIEE) del colegio establece que el año académico consta de 4 periodos con ponderaciones específicas: Periodo 1 (20%), Periodo 2 (20%), Periodo 3 (30%) y Periodo 4 (30%). Las calificaciones obtenidas por el estudiante en cada periodo fueron 3.0, 2.5, 3.5 y 4.0 respectivamente.",
+    "pregunta": "¿Cuál es la calificación definitiva ponderada obtenida por el estudiante al finalizar el año lectivo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "3.25"
+      },
+      {
+        "id": "B",
+        "texto": "3.35"
+      },
+      {
+        "id": "C",
+        "texto": "3.40"
+      },
+      {
+        "id": "D",
+        "texto": "3.50"
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "Cálculo: (3.0 × 0.20) + (2.5 × 0.20) + (3.5 × 0.30) + (4.0 × 0.30) = 0.60 + 0.50 + 1.05 + 1.20 = 3.35."
+  },
+  {
+    "id": "PJS_026",
+    "area": "Razonamiento Cuantitativo en el Contexto Docente",
+    "tema": "Interpretación de Porcentajes de Promoción y Reprobación Escolar",
+    "norma_referencia": "Decreto 1290 de 2009 / Indicadores de Gestión Académica",
+    "contexto": "Al consolidar el informe de rendimiento académico de fin de año en una institución educativa de 120 estudiantes de grado 9°, se identifica que el 65% de los estudiantes aprobó todas las asignaturas directamente, el 20% reprobó entre 1 y 2 asignaturas (debiendo presentar actividades de apoyo pedagógico), y el porcentaje restante reprobó 3 o más asignaturas, lo cual implica la reprobación automática del grado según el SIEE.",
+    "pregunta": "¿Cuántos estudiantes de grado 9° deben repetir el año escolar por haber reprobado 3 o más asignaturas?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "18 estudiantes"
+      },
+      {
+        "id": "B",
+        "texto": "24 estudiantes"
+      },
+      {
+        "id": "C",
+        "texto": "30 estudiantes"
+      },
+      {
+        "id": "D",
+        "texto": "42 estudiantes"
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "Porcentaje reprobación = 100% - (65% + 20%) = 15%. Estudiantes = 15% de 120 = 0.15 × 120 = 18 estudiantes."
+  },
+  {
+    "id": "PJS_027",
+    "area": "Razonamiento Cuantitativo en el Contexto Docente",
+    "tema": "Proporcionalidad Compuesta en la Planeación de Recursos Pedagógicos",
+    "norma_referencia": "Gestión de Proyectos Pedagógicos Transversales",
+    "contexto": "Para adecuar un terreno de 120 m² destinado a la huerta escolar en un proyecto ambiental transversal, 6 docentes trabajando durante 4 horas diarias lograron completar la labor en 5 días. Para la segunda fase del proyecto, se requiere adecuar un nuevo lote de 180 m² en un plazo de 3 días trabajando a razón de 6 horas diarias.",
+    "pregunta": "¿Cuántos docentes con el mismo rendimiento de trabajo se necesitarán para completar la adecuación del nuevo lote bajo las nuevas condiciones de tiempo e intensidad?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "8 docentes"
+      },
+      {
+        "id": "B",
+        "texto": "10 docentes"
+      },
+      {
+        "id": "C",
+        "texto": "12 docentes"
+      },
+      {
+        "id": "D",
+        "texto": "15 docentes"
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "Regla de tres compuesta: D = 6 × (180/120) × (4/6) × (5/3) = 6 × 1.5 × 0.6667 × 1.6667 = 10 docentes."
+  },
+  {
+    "id": "PJS_028",
+    "area": "Razonamiento Cuantitativo en el Contexto Docente",
+    "tema": "Estadística Descriptiva e Interpretación de Pruebas Saber",
+    "norma_referencia": "Análisis de Resultados Diagnósticos y Pruebas Estandarizadas",
+    "contexto": "El docente de Matemáticas analiza las puntuaciones obtenidas por 9 estudiantes de grado 11° en una prueba diagnóstica tipo Saber 11. Las calificaciones ordenadas de menor a mayor son: 42, 45, 48, 50, 52, 52, 58, 65 y 88.",
+    "pregunta": "El docente requiere determinar la medida de tendencia central correspondiente a la Mediana para identificar el punto medio del desempeño del grupo. ¿Cuál es el valor de la mediana?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "50"
+      },
+      {
+        "id": "B",
+        "texto": "52"
+      },
+      {
+        "id": "C",
+        "texto": "55.5"
+      },
+      {
+        "id": "D",
+        "texto": "58"
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "Para N = 9 datos ordenados, la mediana ocupa la posición (9+1)/2 = 5° dato, que corresponde exactamente al valor 52."
+  },
+  {
+    "id": "PJS_029",
+    "area": "Razonamiento Cuantitativo en el Contexto Docente",
+    "tema": "Probabilidad de Eventos Compuestos en Selección de Estudiantes",
+    "norma_referencia": "Toma de Decisiones y Muestreo en el Aula",
+    "contexto": "En un curso de grado 10° hay 30 estudiantes en total: 18 mujeres y 12 hombres. De las 18 mujeres, 6 pertenecen al equipo de debate de la institución; de los 12 hombres, 4 pertenecen a dicho equipo. El docente de Ciencias Sociales seleccionará al azar a un estudiante del grupo para liderar un foro de democracia escolar.",
+    "pregunta": "¿Cuál es la probabilidad de que el estudiante elegido al azar sea mujer O pertenezca al equipo de debate?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "22 / 30 (equivalente a 11 / 15)"
+      },
+      {
+        "id": "B",
+        "texto": "28 / 30 (equivalente a 14 / 15)"
+      },
+      {
+        "id": "C",
+        "texto": "18 / 30 (equivalente a 3 / 5)"
+      },
+      {
+        "id": "D",
+        "texto": "10 / 30 (equivalente a 1 / 3)"
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "P(Mujer o Debate) = P(Mujer) + P(Debate) - P(Mujer y Debate) = (18/30) + (10/30) - (6/30) = 22/30 = 11/15."
+  },
+  {
+    "id": "PJS_030",
+    "area": "Razonamiento Cuantitativo en el Contexto Docente",
+    "tema": "Variación Porcentual y Análisis de Cobertura Escolar",
+    "norma_referencia": "Indicadores de Cobertura y Permanencia Institucional",
+    "contexto": "El reporte de gestión de una sede educativa indica que la matrícula oficial pasó de 400 estudiantes en el año 2024 a 480 estudiantes en el año 2025. Para el año 2026, debido a factores de movilidad poblacional, la matrícula experimentó una disminución del 15% respecto a la cifra alcanzada en el año 2025.",
+    "pregunta": "¿Cuántos estudiantes se matricularon en el año 2026 y cuál fue la variación porcentual neta de la matrícula en 2026 respecto al año base 2024?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "408 estudiantes, representando un incremento neto del 2% respecto al año 2024."
+      },
+      {
+        "id": "B",
+        "texto": "408 estudiantes, representando un incremento neto del 8% respecto al año 2024."
+      },
+      {
+        "id": "C",
+        "texto": "420 estudiantes, representando un incremento neto del 5% respecto al año 2024."
+      },
+      {
+        "id": "D",
+        "texto": "410 estudiantes, representando un incremento neto del 2.5% respecto al año 2024."
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "Matrícula 2026 = 480 - (480 × 0.15) = 480 - 72 = 408. Variación neta respecto a 2024 (400): (408 - 400)/400 = 8/400 = 2%."
+  },
+  {
+    "id": "PJS_031",
+    "area": "Aptitud Verbal y Competencia Comunicativa Docente",
+    "tema": "Sinónimos en Contexto y Polisemia Normativa",
+    "norma_referencia": "Decreto Ley 1278 de 2002 / Manual de Funciones del MEN",
+    "contexto": "El artículo 4° del Decreto Ley 1278 de 2002 establece que la función docente y la carrera magisterial se fundamentan en el mérito y en la 'idoneidad ética y pedagógica de los educadores'. En un proceso de evaluación de desempeño, la comisión evaluadora debe certificar si el profesional demuestra la idoneidad requerida para el ejercicio del cargo.",
+    "pregunta": "Según el contexto normativo y semántico del estatuto docente, la palabra 'idoneidad' equivale conceptualmente a:",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Capacidad, competencia y suficiencia comprobada para desempeñar con eficacia, ética y calidad la labor educativa."
+      },
+      {
+        "id": "B",
+        "texto": "Antigüedad acumulada en el servicio público que otorga inamovilidad en el escalafón nacional."
+      },
+      {
+        "id": "C",
+        "texto": "Titulación académica de posgrado expedida exclusivamente por universidades internacionales."
+      },
+      {
+        "id": "D",
+        "texto": "Popularidad y aceptación afectiva entre los estamentos del Gobierno Escolar."
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "El término 'idoneidad' se refiere a la aptitud, suficiencia, formación ética y competencia pedagógica demostrada objetivamente."
+  },
+  {
+    "id": "PJS_032",
+    "area": "Aptitud Verbal y Competencia Comunicativa Docente",
+    "tema": "Analogías Pedagógicas y Relaciones Conceptuales",
+    "norma_referencia": "Decreto 1421 de 2017 / Guía de Implementación DUA y PIAR",
+    "contexto": "En la preparación para las pruebas de competencias básicas del concurso docente, se evalúa la capacidad de establecer relaciones analógicas entre conceptos, principios pedagógicos y sus respectivas finalidades normativas en el sistema educativo colombiano.",
+    "pregunta": "Analice la siguiente relación analógica pedagógica: DISEÑO UNIVERSAL PARA EL APRENDIZAJE (DUA) es a PREVENCIÓN Y ELIMINACIÓN DE BARRERAS GENERALES como PLAN INDIVIDUAL DE AJUSTES RAZONABLES (PIAR) es a:",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "EXCLUSIÓN DEL PLAN DE ESTUDIOS"
+      },
+      {
+        "id": "B",
+        "texto": "AJUSTES RAZONABLES E INDIVIDUALIZADOS"
+      },
+      {
+        "id": "C",
+        "texto": "DIAGNÓSTICO CLÍNICO OBLIGATORIO"
+      },
+      {
+        "id": "D",
+        "texto": "EVALUACIÓN SUMATIVA TERMINAL"
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La analogía establece la relación de 'instrumento a su finalidad específica': DUA actúa sobre barreras generales, mientras que el PIAR define 'ajustes razonables e individualizados'."
+  },
+  {
+    "id": "PJS_033",
+    "area": "Aptitud Verbal y Competencia Comunicativa Docente",
+    "tema": "Conectores Lógicos y Cohesión Textual en Informes Pedagógicos",
+    "norma_referencia": "Documento No. 11 MEN / Redacción de Informes Cualitativos",
+    "contexto": "Un docente redacta el informe cualitativo de evaluación en el observador del estudiante: 'El educando manifiesta una alta participación e interés durante las discusiones verbales en clase; ________, presenta severas dificultades al momento de organizar y plasmar sus ideas de forma escrita. ________, se hace necesario implementar un plan de apoyo pedagógico centrado en la producción textual'.",
+    "pregunta": "¿Cuál secuencia de conectores lógicos otorga cohesión, coherencia y sentido preciso al texto pedagógico?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "sin embargo — Por lo tanto"
+      },
+      {
+        "id": "B",
+        "texto": "además — Es decir"
+      },
+      {
+        "id": "C",
+        "texto": "porque — Aunque"
+      },
+      {
+        "id": "D",
+        "texto": "en consecuencia — Por el contrario"
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "El primer espacio requiere un conector de oposición/contraste ('sin embargo') y el segundo un conector de consecuencia ('por lo tanto')."
+  },
+  {
+    "id": "PJS_034",
+    "area": "Aptitud Verbal y Competencia Comunicativa Docente",
+    "tema": "Antónimos Contextuales en la Argumentación Pedagógica",
+    "norma_referencia": "Documento No. 11 del MEN (Evaluación Formativa)",
+    "contexto": "En el Documento No. 11 del Ministerio de Educación Nacional se sostiene que la evaluación en el aula debe despojarse de su carácter tradicional 'punitivo' para consolidarse como un proceso esencialmente orientador que acompañe el desarrollo integral del estudiante.",
+    "pregunta": "Dentro del contexto del texto pedagógico citado, el antónimo adecuado de la palabra 'punitivo' es:",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Formativo y restaurativo"
+      },
+      {
+        "id": "B",
+        "texto": "Sancionatorio y coercitivo"
+      },
+      {
+        "id": "C",
+        "texto": "Cuantitativo y acumulativo"
+      },
+      {
+        "id": "D",
+        "texto": "Rígido y estandarizado"
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "'Punitivo' se refiere a lo sancionatorio/castigo. Su antónimo exacto en evaluación es el enfoque 'formativo y restaurativo'."
+  },
+  {
+    "id": "PJS_035",
+    "area": "Aptitud Verbal y Competencia Comunicativa Docente",
+    "tema": "Comprensión Lexicocontextual de Competencias Comportamentales",
+    "norma_referencia": "Manual de Funciones, Requisitos y Competencias del MEN",
+    "contexto": "El Manual de Funciones del MEN define la competencia comportamental de 'Comunicación Asertiva' como la capacidad para escuchar a los demás y expresar ideas y opiniones de manera clara, serena y directa, ajustando el lenguaje al contexto e interlocutores, sin recurrir a la agresividad ni a la pasividad.",
+    "pregunta": "A partir de la definición técnica expresada en la norma, un docente demuestra 'comunicación asertiva' frente a una falta disciplinaria en el aula cuando:",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Expresa su postura con claridad, firmeza y respeto por la dignidad del estudiante, fijando límites precisos sin acudir a gritos, descalificaciones o intimidaciones."
+      },
+      {
+        "id": "B",
+        "texto": "Guarda silencio y omite hacer cualquier llamado de atención para evitar enfrentamientos o discusiones con el grupo."
+      },
+      {
+        "id": "C",
+        "texto": "Eleva el tono de voz intencionalmente para imponer autoridad infundiendo temor inmediato en el salón."
+      },
+      {
+        "id": "D",
+        "texto": "Envía anónimos escritos a los padres de familia sin dialogar previamente con el estudiante afectado."
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "La asertividad implica comunicar con claridad, firmeza y serenidad respetando los derechos y dignidad del interlocutor, ubicándose entre la agresividad y la pasividad."
+  },
+  {
+    "id": "PJS_036",
+    "area": "Aptitud Verbal y Competencia Comunicativa Docente",
+    "tema": "Coherencia Global y Secuencia Lógica de Textos Pedagógicos",
+    "norma_referencia": "Decreto 1421 de 2017 / Instructivo PIAR (Colombia Aprende)",
+    "contexto": "Analice los siguientes enunciados desordenados que describen la ruta metodológica para la formulación e implementación del Plan Individual de Ajustes Razonables (PIAR):\n\n1. Diseñar e incorporar los ajustes razonables específicos en las planificaciones de aula.\n2. Recolectar la información sobre el entorno familiar, estado de salud y trayectoria del estudiante.\n3. Evaluar periódicamente los avances y formalizar los acuerdos con la familia mediante la firma del Acta de Acuerdo.\n4. Elaborar la valoración pedagógica e identificar las barreras para el aprendizaje presentes en el entorno escolar.",
+    "pregunta": "¿Cuál es el orden lógico y cronológico en que deben organizarse los enunciados para constituir un texto coherente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "2, 4, 1, 3"
+      },
+      {
+        "id": "B",
+        "texto": "1, 3, 2, 4"
+      },
+      {
+        "id": "C",
+        "texto": "4, 2, 3, 1"
+      },
+      {
+        "id": "D",
+        "texto": "2, 1, 4, 3"
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "La secuencia del PIAR es: Recolección de información inicial (2) -> Valoración pedagógica e identificación de barreras (4) -> Diseño e implementación de ajustes (1) -> Evaluación y firma de acuerdos (3)."
+  },
+  {
+    "id": "PJS_037",
+    "area": "Competencias Comportamentales y Prueba Psicotécnica",
+    "tema": "Trabajo en Equipo y Liderazgo Pedagógico",
+    "norma_referencia": "Manual de Funciones, Requisitos y Competencias del MEN / Guía de Orientación CNSC",
+    "contexto": "Un docente de reciente nombramiento en periodo de prueba es asignado a un grado donde los demás docentes del equipo de área llevan más de diez años trabajando juntos de manera tradicional. Al sugerir en una reunión de área la incorporación de herramientas tecnológicas y estrategias del DUA para diversificar las clases, los docentes más antiguos rechazan abiertamente las propuestas, manifestando que 'siempre se ha enseñado así en el colegio y ha funcionado'.",
+    "pregunta": "Desde la evaluación de las competencias comportamentales de Trabajo en Equipo y Liderazgo Pedagógico, ¿cuál es la actuación profesional más idónea que debe asumir el docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Presentar una queja formal ante la rectoría acusando a los compañeros de resistencia al cambio y exigiendo que se les obligue a modificar sus prácticas de aula."
+      },
+      {
+        "id": "B",
+        "texto": "Acatar de forma pasiva la postura del grupo tradicional y renunciar a aplicar innovaciones pedagógicas en su propia aula para evitar fricciones interpersonales."
+      },
+      {
+        "id": "C",
+        "texto": "Generar espacios de diálogo respetuoso dentro del equipo, compartiendo paulatinamente experiencias exitosas a pequeña escala en su aula, escuchando los saberes acumulados de sus pares e invitándolos a co-diseñar actividades integradas."
+      },
+      {
+        "id": "D",
+        "texto": "Desarrollar sus proyectos pedagógicos de forma aislada e individual sin volver a asistir a las reuniones del área."
+      }
+    ],
+    "respuesta_correcta": "C",
+    "justificacion": "El Trabajo en Equipo implica integrarse activamente, valorar los aportes de los demás y generar relaciones de confianza. El Liderazgo Pedagógico promueve la innovación mediante la persuasión asertiva, la empatía y la construcción colectiva."
+  },
+  {
+    "id": "PJS_038",
+    "area": "Competencias Comportamentales y Prueba Psicotécnica",
+    "tema": "Sensibilidad Intercultural y Orientación al Servicio",
+    "norma_referencia": "Manual de Funciones del MEN / Decreto 1421 de 2017 / Ley 115 de 1994",
+    "contexto": "Un establecimiento educativo urbano recibe a un grupo de estudiantes pertenecientes a una comunidad indígena en situación de movilidad poblacional. En las actividades comunitarias y de aula, algunos docentes y padres de familia expresan preocupación porque los estudiantes indígenas conversan entre sí en su lengua nativa antes de traducir sus intervenciones al español, y proponen prohibir el uso de la lengua materna dentro del colegio para acelerar la 'adaptación'.",
+    "pregunta": "De acuerdo con la competencia comportamental de Sensibilidad Intercultural y el marco normativo de atención a la diversidad, ¿cuál es la respuesta más adecuada del docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Respaldar la prohibición del uso de la lengua nativa en la institución para facilitar la homogeneización lingüística del grupo."
+      },
+      {
+        "id": "B",
+        "texto": "Promover un ambiente pedagógico de valoración y respeto por la diversidad cultural y lingüística, integrando saberes propios de la comunidad indígena en los proyectos de aula y fomentando el intercambio intercultural entre todos los estudiantes."
+      },
+      {
+        "id": "C",
+        "texto": "Eximir a los estudiantes indígenas de asistir a las clases regulares y aislarlos en un aula de apoyo de forma permanente."
+      },
+      {
+        "id": "D",
+        "texto": "Sugerir a los líderes de la comunidad indígena que retiren a los niños del colegio e ingresen a un internado fuera de la ciudad."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La Sensibilidad Intercultural implica reconocer, respetar e integrar activamente las diferencias culturales y lingüísticas de la población escolar como un valor enriquecedor de la comunidad educativa."
+  },
+  {
+    "id": "PJS_039",
+    "area": "Competencias Comportamentales y Prueba Psicotécnica",
+    "tema": "Negociación, Resolución de Conflictos y Clima Institucional",
+    "norma_referencia": "Manual de Funciones del MEN / Ley 1620 de 2013",
+    "contexto": "Durante la organización de las comisiones para las actividades del Día de la Excelencia Educativa (Día E), surge un severo desacuerdo entre dos comisiones de docentes por la asignación del presupuesto y el espacio del salón de actos, escalando a discusiones personales que paralizan la planeación institucional. El docente designado como coordinador de la jornada debe intervenir.",
+    "pregunta": "Desde la competencia comportamental de Negociación y Resolución de Conflictos, ¿cuál es la decisión estratégica más adecuada?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Imponer arbitrariamente la distribución de espacio y recursos utilizando la autoridad del cargo y amenazar con reportes disciplinarios a quien no acepte."
+      },
+      {
+        "id": "B",
+        "texto": "Convocar a una reunión de concertación centrada en los objetivos institucionales compartidos, escuchando las necesidades de cada comisión, renegociando el uso equitativo de los espacios y recursos, y logrando acuerdos de mutuo beneficio."
+      },
+      {
+        "id": "C",
+        "texto": "Cancelar la actividad institucional del Día E para no gestionar el desacuerdo entre los docentes."
+      },
+      {
+        "id": "D",
+        "texto": "Asignar el total del presupuesto y el espacio únicamente a la comisión que posea docentes con mayor antigüedad en la institución."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La Negociación y Resolución de Conflictos exige identificar causas del desacuerdo, mantener imparcialidad, facilitar el diálogo centrado en intereses institucionales y pactar acuerdos sostenibles."
+  },
+  {
+    "id": "PJS_040",
+    "area": "Competencias Comportamentales y Prueba Psicotécnica",
+    "tema": "Orientación al Logro y Flexibilidad/Adaptabilidad Pedagógica",
+    "norma_referencia": "Manual de Funciones del MEN / Documento Guía Evaluación de Competencias",
+    "contexto": "Un docente planea una unidad didáctica intensiva apoyada en recursos digitales e internet para desarrollar durante un mes. Sin embargo, en la segunda semana de clase, la infraestructura tecnológica del colegio sufre un daño severo que dejará sin conectividad a la sede por el resto del periodo académico.",
+    "pregunta": "En la evaluación psicotécnica de las competencias de Orientación al Logro y Adaptabilidad, ¿cuál es la conducta profesional que evidencia un desempeño superior?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Suspender el desarrollo de los contenidos programados argumentando la falta de insumos tecnológicos y dedicar las horas de clase a actividades libres hasta que se repare el servicio."
+      },
+      {
+        "id": "B",
+        "texto": "Reorganizar y flexibilizar inmediatamente las estrategias de enseñanza adaptando los insumos pedagógicos a guías físicas, materiales concretos y dinámicas grupales analógicas, garantizando el alcance de los propósitos de aprendizaje definidos."
+      },
+      {
+        "id": "C",
+        "texto": "Exigir a las familias de los estudiantes que financien la compra de planes de datos móviles individuales para continuar las clases virtuales desde sus teléfonos."
+      },
+      {
+        "id": "D",
+        "texto": "Presentar un recurso de reposición ante la Secretaría de Educación solicitando la cancelación del periodo académico para todo el curso."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La Adaptabilidad y Orientación al Logro reflejan la capacidad para responder positivamente a cambios imprevistos, reajustando oportunamente planes y metodologías para asegurar la continuidad del aprendizaje."
+  },
+  {
+    "id": "PJS_041",
+    "area": "Competencias Comportamentales y Prueba Psicotécnica",
+    "tema": "Ética Profesional e Integridad",
+    "norma_referencia": "Decreto Ley 1278 de 2002 / Manual de Funciones del MEN",
+    "contexto": "A pocos días de finalizar el año lectivo, el acudiente de un estudiante de grado 11° que se encuentra en riesgo inminente de reprobar la asignatura de Física por inasistencias e incumplimiento en entregas, aborda al docente a la salida del colegio y le ofrece una donación económica 'para la compra de materiales del laboratorio' a cambio de que le otorgue la nota mínima aprobatoria al estudiante para no perjudicar su graduación.",
+    "pregunta": "Frente a este dilema ético y según los principios de Integridad y Transparencia que rigen la carrera docente, ¿cuál es la actuación inmediata e ineludible del educador?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Aceptar la donación económica siempre y cuando se ingrese oficialmente a la tesorería del colegio como fondo de apoyo a la infraestructura."
+      },
+      {
+        "id": "B",
+        "texto": "Rechazar rotundamente el ofrecimiento de manera firme y respetuosa, reiterar que las valoraciones académicas se fundamentan exclusivamente en el desempeño del estudiante según el SIEE, e informar de inmediato el hecho a la directiva institucional."
+      },
+      {
+        "id": "C",
+        "texto": "Conceder la aprobación académica al estudiante sin recibir el dinero pero exigiendo a cambio que realice un trabajo manual simple en sus horas libres."
+      },
+      {
+        "id": "D",
+        "texto": "Comprometerse a subir la calificación del estudiante a cambio de que el padre prometa no volver a cometer una falta similar."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La función docente exige actuar con absoluta idoneidad ética, transparencia e imparcialidad. Alterar valoraciones académicas a cambio de beneficios constituye una falta gravísima."
+  },
+  {
+    "id": "PJS_042",
+    "area": "Competencias Comportamentales y Prueba Psicotécnica / Entrevista",
+    "tema": "Liderazgo Directivo y Gestión del Cambio Institucional",
+    "norma_referencia": "Manual de Funciones (Directivos Docentes) / Guía de la Prueba de Entrevista (GEARD/CNSC)",
+    "contexto": "Un aspirante al cargo de Directivo Docente participa en la prueba de entrevista grupal situacional. Se plantea un caso donde una sede educativa presenta altos índices de deserción escolar y desmotivación docente. Los demás participantes de la mesa sugieren implementar medidas puramente punitivas, como sanciones severas a los docentes y reportes automáticos de inasistencia al ICBF.",
+    "pregunta": "Desde la competencia comportamental de Liderazgo Institucional y la metodología de evaluación de la prueba de entrevista, ¿cuál es la propuesta de intervención más adecuada que debe plantear el aspirante?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Apoyar la propuesta punitiva sin objeciones para mostrar alineación rápida con el consenso aparente de la mesa de entrevista."
+      },
+      {
+        "id": "B",
+        "texto": "Intervenir asertivamente proponiendo un plan de gestión integral basado en el diagnóstico participativo de las causas reales de la deserción, el acompañamiento pedagógico y motivación al equipo docente, el fortalecimiento del clima escolar y la alianza estratégica con las familias."
+      },
+      {
+        "id": "C",
+        "texto": "Descalificar con tono confrontativo las opiniones de los demás compañeros de mesa para sobresalir ante los jurados evaluadores."
+      },
+      {
+        "id": "D",
+        "texto": "Guardar silencio durante la dinámica grupal para evitar que otros participantes adopten sus ideas pedagógicas."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El Directivo Docente idóneo ejerce un Liderazgo Institucional transformacional y colaborativo, planteando soluciones estratégicas fundamentadas en el diagnóstico participativo y la calidad pedagógica."
+  }
+]

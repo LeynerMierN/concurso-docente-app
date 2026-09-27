@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  --color-marca-50: #eef4ff;
+  --color-marca-100: #dbe6ff;
+  --color-marca-500: #1d4ed8;
+  --color-marca-600: #1e40af;
+  --color-marca-700: #1e3a8a;
+  --color-oro: #fcd116;
+  --color-exito: #16a34a;
+  --color-error: #dc2626;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  --fondo: #f8fafc;
+  --texto: #0f172a;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fondo: #0b1120;
+    --texto: #e2e8f0;
+  }
+}
+
+html,
+body {
+  background: var(--fondo);
+  color: var(--texto);
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Respeta el área segura en celulares con notch */
+.pb-safe {
+  padding-bottom: max(1rem, env(safe-area-inset-bottom));
+}

@@ -1,0 +1,140 @@
+[
+  {
+    "id": "FICHA_DUA",
+    "categoria": "Inclusión",
+    "concepto": "Diseño Universal para el Aprendizaje",
+    "sigla": "DUA",
+    "pregunta_disparadora": "¿Cuáles son los 3 principios del DUA y en qué momento de la planeación se aplican?",
+    "definicion": "Enfoque de diseño del currículo que busca que la planeación sea accesible para todos los estudiantes desde el inicio, anticipando la diversidad del aula en lugar de adaptar después para unos pocos. El Decreto 1421 de 2017 lo incorpora como base de la educación inclusiva.",
+    "norma": "Decreto 1421 de 2017 (compilado en el Decreto 1075 de 2015) · Marco DUA de CAST",
+    "puntos_clave": [
+      "Principio 1 · Múltiples formas de implicación (el «porqué» del aprendizaje): motivación, interés y persistencia.",
+      "Principio 2 · Múltiples formas de representación (el «qué»): presentar la información por distintos canales y formatos.",
+      "Principio 3 · Múltiples formas de acción y expresión (el «cómo»): permitir que el estudiante demuestre lo aprendido de diversas maneras.",
+      "Se aplica en la planeación de aula para todo el grupo, antes de pensar en ajustes individuales.",
+      "Lo que el DUA no alcanza a cubrir para un estudiante concreto se resuelve con ajustes razonables en el PIAR."
+    ],
+    "error_frecuente": "Pensar que el DUA es una adaptación solo para estudiantes con discapacidad o que requiere un diagnóstico médico previo."
+  },
+  {
+    "id": "FICHA_PIAR",
+    "categoria": "Inclusión",
+    "concepto": "Plan Individual de Ajustes Razonables",
+    "sigla": "PIAR",
+    "pregunta_disparadora": "¿Quién elabora el PIAR, cuándo y qué debe contener?",
+    "definicion": "Herramienta que garantiza los procesos de enseñanza y aprendizaje de un estudiante con discapacidad. Se basa en su valoración pedagógica y social e incluye los apoyos y ajustes razonables que requiere, entre ellos los curriculares, de infraestructura y todos los demás necesarios para su aprendizaje, participación, permanencia y promoción.",
+    "norma": "Decreto 1421 de 2017 (compilado en el Decreto 1075 de 2015)",
+    "puntos_clave": [
+      "Lo elaboran los docentes de aula con el docente de apoyo pedagógico, la familia y el estudiante.",
+      "Se elabora durante el primer trimestre del año escolar y se actualiza anualmente.",
+      "Complementa la planeación con enfoque DUA: el estudiante sigue en el aula con sus pares.",
+      "Se formaliza con un acta de acuerdo en la que familia e institución asumen compromisos.",
+      "Es insumo para la evaluación y promoción del estudiante según el SIEE."
+    ],
+    "error_frecuente": "Aislar al estudiante o negar la matrícula mientras se espera un diagnóstico o la asignación de un docente de apoyo."
+  },
+  {
+    "id": "FICHA_TIPO_I",
+    "categoria": "Convivencia Escolar",
+    "concepto": "Situaciones Tipo I",
+    "sigla": "Tipo I",
+    "pregunta_disparadora": "¿Cuándo un conflicto es Tipo I y qué hace el docente de inmediato?",
+    "definicion": "Conflictos manejados inadecuadamente y situaciones esporádicas que inciden negativamente en el clima escolar y que en ningún caso generan daños al cuerpo o a la salud.",
+    "norma": "Ley 1620 de 2013 · Decreto 1965 de 2013 (compilado en el Decreto 1075 de 2015)",
+    "puntos_clave": [
+      "Clave para identificarla: es esporádica y no hay daño al cuerpo ni a la salud.",
+      "Reunir de inmediato a las partes y mediar de forma pedagógica para que expongan sus puntos de vista.",
+      "Buscar una solución imparcial, equitativa y justa, con acciones de reparación y reconciliación.",
+      "Dejar constancia de la solución y hacer seguimiento para verificar que funcionó.",
+      "Los estudiantes formados como mediadores o conciliadores escolares pueden participar."
+    ],
+    "error_frecuente": "Escalar un conflicto cotidiano directamente al Comité de Convivencia o a la Policía, o aplicar solo una sanción sin mediación."
+  },
+  {
+    "id": "FICHA_TIPO_II",
+    "categoria": "Convivencia Escolar",
+    "concepto": "Situaciones Tipo II",
+    "sigla": "Tipo II",
+    "pregunta_disparadora": "¿Cuándo una agresión es Tipo II y qué exige la ruta?",
+    "definicion": "Situaciones de agresión escolar, acoso escolar (bullying) y ciberacoso (ciberbullying) que no constituyen delito y que cumplen cualquiera de estas características: se presentan de manera repetida o sistemática, o causan daños al cuerpo o a la salud sin generar incapacidad para ninguno de los involucrados.",
+    "norma": "Ley 1620 de 2013 · Decreto 1965 de 2013 (compilado en el Decreto 1075 de 2015)",
+    "puntos_clave": [
+      "Clave para identificarla: es repetida o sistemática, o hay daño sin incapacidad, y no es delito.",
+      "Si hay daño al cuerpo o a la salud, garantizar primero la atención inmediata en salud.",
+      "Adoptar medidas de protección para los involucrados e informar de inmediato a padres o acudientes.",
+      "Si se requiere restablecimiento de derechos, remitir a las autoridades administrativas competentes.",
+      "Abrir espacios para exponer lo ocurrido preservando la intimidad y definir acciones restaurativas.",
+      "El Comité Escolar de Convivencia analiza el caso, le hace seguimiento y se reporta en el Sistema de Información Unificado de Convivencia Escolar."
+    ],
+    "error_frecuente": "Tratar un acoso sistemático como un conflicto Tipo I solo con mediación, o reportarlo a la Policía como si fuera un delito."
+  },
+  {
+    "id": "FICHA_TIPO_III",
+    "categoria": "Convivencia Escolar",
+    "concepto": "Situaciones Tipo III",
+    "sigla": "Tipo III",
+    "pregunta_disparadora": "¿Qué convierte una situación en Tipo III y a quién se informa de inmediato?",
+    "definicion": "Situaciones de agresión escolar que constituyen presuntos delitos contra la libertad, integridad y formación sexual (Título IV del Libro II del Código Penal, Ley 599 de 2000), o cualquier otro delito establecido en la ley penal colombiana vigente.",
+    "norma": "Ley 1620 de 2013 · Decreto 1965 de 2013 · Ley 599 de 2000 (Código Penal)",
+    "puntos_clave": [
+      "Clave para identificarla: hay un presunto delito, sea sexual o de cualquier otro tipo.",
+      "Garantizar la atención inmediata en salud física y mental de los afectados.",
+      "Informar de inmediato a padres o acudientes.",
+      "El presidente del Comité Escolar de Convivencia informa de inmediato a la Policía Nacional (Infancia y Adolescencia).",
+      "La institución no investiga ni juzga el delito: eso corresponde a las autoridades. Sí protege a las víctimas y hace seguimiento.",
+      "Se reporta en el Sistema de Información Unificado de Convivencia Escolar."
+    ],
+    "error_frecuente": "Intentar conciliar o mediar entre las partes, o esperar a tener pruebas antes de informar a las autoridades."
+  },
+  {
+    "id": "FICHA_SIEE",
+    "categoria": "Evaluación",
+    "concepto": "Sistema Institucional de Evaluación de los Estudiantes",
+    "sigla": "SIEE",
+    "pregunta_disparadora": "¿Quién aprueba el SIEE y cuál es la escala de valoración nacional?",
+    "definicion": "Conjunto de criterios, procedimientos y estrategias que cada establecimiento educativo define, en ejercicio de su autonomía, para evaluar el aprendizaje y decidir la promoción de sus estudiantes. Hace parte del PEI.",
+    "norma": "Decreto 1290 de 2009 (compilado en el Decreto 1075 de 2015)",
+    "puntos_clave": [
+      "Escala de valoración nacional: Desempeño Superior, Alto, Básico y Bajo. Cada institución define su equivalencia numérica.",
+      "Lo aprueba el Consejo Directivo, lo que queda consignado en acta, y se incorpora al PEI.",
+      "Debe incluir criterios de promoción, estrategias de apoyo, acciones de seguimiento e instancias para las reclamaciones.",
+      "Promoción anticipada: la decide el Consejo Directivo, previa recomendación del Consejo Académico, durante el primer período.",
+      "Tiene un enfoque formativo: la evaluación sirve para identificar avances y reorientar el proceso, no solo para calificar."
+    ],
+    "error_frecuente": "Creer que el docente puede cambiar por su cuenta la escala o los criterios de evaluación para un curso o un estudiante."
+  },
+  {
+    "id": "FICHA_LEY_115",
+    "categoria": "Normativa General",
+    "concepto": "Ley General de Educación · Fines de la educación",
+    "sigla": "Ley 115",
+    "pregunta_disparadora": "¿Qué persiguen los fines de la educación y qué instrumentos crea la Ley 115?",
+    "definicion": "La Ley 115 de 1994 concibe la educación como un proceso de formación permanente, personal, cultural y social, fundamentado en la dignidad humana, los derechos y los deberes. En su artículo 5 establece 13 fines de la educación.",
+    "norma": "Ley 115 de 1994, artículos 1, 5, 23, 73, 77 y 142",
+    "puntos_clave": [
+      "Fines (art. 5): pleno desarrollo de la personalidad, respeto a los derechos humanos, la paz y la democracia, participación, pensamiento crítico, conservación del ambiente, formación para el trabajo y la salud, entre otros.",
+      "Proyecto Educativo Institucional, PEI (art. 73): toda institución debe tenerlo y construirlo con la comunidad educativa.",
+      "Autonomía escolar (art. 77): cada institución organiza sus áreas, introduce asignaturas optativas y adapta el currículo, dentro de los lineamientos del MEN.",
+      "Áreas obligatorias y fundamentales (art. 23): nueve grupos de áreas para la educación básica.",
+      "Gobierno escolar (art. 142): Consejo Directivo, Consejo Académico y Rector."
+    ],
+    "error_frecuente": "Confundir los fines de la educación (art. 5) con los objetivos por niveles, o creer que el currículo lo impone por completo el MEN sin margen de autonomía."
+  },
+  {
+    "id": "FICHA_1278",
+    "categoria": "Normativa General",
+    "concepto": "Estatuto de Profesionalización Docente",
+    "sigla": "Decreto 1278",
+    "pregunta_disparadora": "¿Cómo está organizado el escalafón del 1278 y qué pasa en el periodo de prueba?",
+    "definicion": "El Decreto Ley 1278 de 2002 regula el ingreso por concurso de méritos, la permanencia, el ascenso y el retiro de los docentes y directivos docentes nombrados desde 2002. Su principio es el mérito y la evaluación permanente.",
+    "norma": "Decreto Ley 1278 de 2002 · Decreto 1075 de 2015",
+    "puntos_clave": [
+      "Escalafón con 3 grados según el título: Grado 1 (normalista o tecnólogo en educación), Grado 2 (licenciado o profesional) y Grado 3 (con maestría o doctorado).",
+      "Cada grado tiene 4 niveles salariales: A, B, C y D. Se ingresa en el nivel A.",
+      "Periodo de prueba: va hasta terminar el año escolar y no puede ser inferior a 4 meses. Para quedar inscrito en el escalafón se necesita una calificación de al menos 60.",
+      "Evaluación de desempeño anual: dos evaluaciones consecutivas no satisfactorias (menos de 60) llevan al retiro del servicio.",
+      "Ascenso de grado y reubicación de nivel: mediante evaluación de competencias (hoy la ECDF), con requisitos de título y de tiempo de servicio."
+    ],
+    "error_frecuente": "Suponer que el ascenso es automático por antigüedad, como en el Decreto 2277 de 1979, o que el nombramiento en periodo de prueba ya da derechos de carrera."
+  }
+]
