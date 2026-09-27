@@ -11,7 +11,7 @@ Aplicación web (mobile-first, instalable como PWA) para entrenar el Concurso Do
 | `/` | Inicio con tu progreso: racha, acierto por área y últimos simulacros |
 | `/practica` | Práctica libre por área o tema, con retroalimentación inmediata |
 | `/simulacro` | Simulacro cronometrado (2 min por pregunta), banderas y revisión final |
-| `/fichas` | Fichas normativas (DUA, PIAR, Ley 1620, SIEE, Ley 115, Decreto 1278) |
+| `/fichas` | 13 fichas normativas: DUA, PIAR, Tipo I/II/III, Ruta de Atención, Comité de Convivencia, SIEE, evaluación formativa, Ley 115, gobierno escolar, Decreto 1278 |
 | `/convocatoria` | Reglas del examen, calculadora salarial y beneficios del magisterio |
 
 El progreso se guarda en el `localStorage` del navegador; no hay backend ni cuentas.
@@ -29,7 +29,7 @@ Otros comandos: `npm run build` (compilación de producción) y `npm run typeche
 
 ## Despliegue
 
-Se despliega en Vercel sin configuración adicional: todas las rutas son estáticas y no requiere variables de entorno.
+Se despliega en Vercel sin configuración adicional: todas las rutas son estáticas. La URL absoluta de la imagen Open Graph se toma del dominio de producción de Vercel; si usas un dominio propio, define `NEXT_PUBLIC_SITE_URL` (p. ej. `https://midominio.co`).
 
 ## Estructura
 

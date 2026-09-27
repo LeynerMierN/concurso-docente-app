@@ -9,14 +9,16 @@ Idioma de la interfaz y del código de dominio: español (es-CO).
 - El puerto 3000 suele estar ocupado por otra app del usuario; usar `PORT=3002 npm run dev`. `turbopack.root` fijado en `next.config.ts` porque hay un `pnpm-lock.yaml` en el home.
 - Inicio (`src/app/page.tsx`): estadísticas del banco, banner de salarios, accesos a módulos, sección «Tu progreso» (`TuProgreso`) y chips de áreas.
 - PWA: `public/manifest.json` + íconos en `public/icons/` y `public/apple-touch-icon.png` (generados con Pillow). Metadatos en `layout.tsx`; Next 15 los emite en streaming dentro de `<body>`, es normal. Sin service worker (no funciona sin conexión).
-- `npm run build` compila sin advertencias; las 6 rutas son estáticas.
+- `npm run build` compila sin advertencias; todas las rutas son estáticas.
+- SEO: metadatos en `layout.tsx` (título con plantilla `%s | Concurso Docente`, Open Graph y Twitter `es_CO`); títulos por ruta en `layout.tsx` de practica/simulacro/fichas. `src/lib/sitio.ts` centraliza título, descripción y `URL_SITIO` (NEXT_PUBLIC_SITE_URL → VERCEL_PROJECT_PRODUCTION_URL → localhost). `opengraph-image.tsx` genera la imagen 1200×630 en el build (descarga Inter de Google Fonts; si no hay red usa la fuente por defecto); `twitter-image.tsx` la reutiliza.
+- Git: rama `main`; aún sin remoto.
 - `/practica` y `/simulacro` funcionales sobre el motor `useQuizRunner`.
 - `/fichas` funcional: flashcards con giro 3D (Tailwind `transform-3d`/`backface-hidden`), filtro por categoría, ← → con teclado.
 - `/convocatoria` funcional: pestañas Reglas / Salarios / Beneficios sincronizadas con el hash (`/convocatoria#salarios`, enlazado desde el banner del inicio).
 
 ## Datos (fuente de verdad, no editar sin pedirlo)
 - `data/banco_preguntas_pjs_concurso_docente.json`: 42 preguntas PJS { id, area, tema, norma_referencia, contexto, pregunta, opciones[A-D], respuesta_correcta, justificacion }. Hay 13 áreas; algunas son variantes (p. ej. "Convivencia Escolar ..."), podría convenir agruparlas en macro-áreas.
-- `data/fichas_normativas.json`: 8 fichas { id, categoria (Inclusión | Convivencia Escolar | Evaluación | Normativa General), concepto, sigla, pregunta_disparadora, definicion, norma, puntos_clave[], error_frecuente }. Contenido redactado por Claude a partir de las normas citadas: revisar antes de publicar.
+- `data/fichas_normativas.json`: 13 fichas { id, categoria (Inclusión | Convivencia Escolar | Evaluación | Normativa General), concepto, sigla, pregunta_disparadora, definicion, norma, puntos_clave[], error_frecuente }. Contenido redactado por Claude a partir de las normas citadas: revisar antes de publicar.
 - `data/convocatoria_info_y_calculadora.js`: `CONVOCATORIA_DATA` (requisitos, fases, escalafón, prestaciones) y `calcularIngresoAnualDocente(id)`.
 - Alias: `@/*` → `src/*`, `@data/*` → `data/*`.
 

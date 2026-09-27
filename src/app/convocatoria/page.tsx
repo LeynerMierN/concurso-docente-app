@@ -7,7 +7,7 @@ import ReglasExamen from "@/components/convocatoria/ReglasExamen";
 import { CONVOCATORIA_DATA } from "@/lib/convocatoria";
 
 export const metadata: Metadata = {
-  title: "Convocatoria y salarios · Concurso Docente",
+  title: "Convocatoria y calculadora salarial",
   description: "Reglas del examen, umbrales, costo del PIN, calculadora salarial del Decreto 1278 y beneficios del magisterio.",
 };
 

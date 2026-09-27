@@ -78,7 +78,7 @@ export default function Pagina() {
         <>
           <div className="flex items-center justify-between text-sm">
             <p className="font-semibold" aria-live="polite">
-              Tarjeta {indice + 1} de {fichas.length}
+              Ficha {indice + 1} de {fichas.length}
             </p>
             <div className="flex gap-1" aria-hidden>
               {fichas.map((f, i) => (
@@ -97,7 +97,7 @@ export default function Pagina() {
               type="button"
               onClick={() => irA(indice - 1)}
               disabled={indice === 0}
-              aria-label="Tarjeta anterior"
+              aria-label="Ficha anterior"
               className="grid size-12 place-items-center rounded-2xl bg-white ring-1 ring-slate-200 disabled:opacity-40 dark:bg-slate-900 dark:ring-slate-800"
             >
               <ChevronLeft className="size-6" />
@@ -109,13 +109,13 @@ export default function Pagina() {
               className="flex items-center justify-center gap-1.5 whitespace-nowrap rounded-2xl bg-oro px-2 text-[13px] font-semibold text-slate-900 active:scale-[0.98]"
             >
               {volteada ? <EyeOff className="size-5 shrink-0" /> : <Eye className="size-5 shrink-0" />}
-              {volteada ? "Ver la pregunta" : "Ver definición / Marco legal"}
+              {volteada ? "Ver la pregunta" : "Ver respuesta / sustento"}
             </button>
             <button
               type="button"
               onClick={() => irA(indice + 1)}
               disabled={indice === fichas.length - 1}
-              aria-label="Tarjeta siguiente"
+              aria-label="Ficha siguiente"
               className="grid size-12 place-items-center rounded-2xl bg-marca-600 text-white disabled:opacity-40 active:scale-[0.98]"
             >
               <ChevronRight className="size-6" />

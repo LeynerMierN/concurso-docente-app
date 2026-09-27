@@ -87,6 +87,57 @@
     "error_frecuente": "Intentar conciliar o mediar entre las partes, o esperar a tener pruebas antes de informar a las autoridades."
   },
   {
+    "id": "FICHA_RAI",
+    "categoria": "Convivencia Escolar",
+    "concepto": "Ruta de Atención Integral para la Convivencia Escolar",
+    "sigla": "RAI",
+    "pregunta_disparadora": "¿Cuáles son los 4 componentes de la Ruta y a cuál corresponde activar un protocolo?",
+    "definicion": "Herramienta de la Ley 1620 de 2013 que define los procesos y protocolos que deben seguir las instituciones educativas para promover la convivencia y atender los casos que la afectan. Tiene cuatro componentes que van de lo preventivo a lo reactivo.",
+    "norma": "Ley 1620 de 2013, arts. 29 a 31 · Decreto 1965 de 2013 (compilado en el Decreto 1075 de 2015)",
+    "puntos_clave": [
+      "Promoción: fomentar el buen clima escolar y el ejercicio de los derechos humanos, sexuales y reproductivos; por ejemplo, actualizar el manual de convivencia o desarrollar proyectos pedagógicos.",
+      "Prevención: intervenir a tiempo sobre los factores de riesgo que pueden afectar la convivencia, antes de que ocurran las situaciones.",
+      "Atención: asistir de forma inmediata, pertinente e integral cuando ocurre una situación, aplicando el protocolo Tipo I, II o III que corresponda.",
+      "Seguimiento: reportar en el Sistema de Información Unificado de Convivencia Escolar y verificar que las acciones funcionaron.",
+      "Truco para ubicarlo en el examen: si la situación aún no ocurre, es promoción o prevención; si ya ocurrió, es atención y luego seguimiento."
+    ],
+    "error_frecuente": "Clasificar una charla o campaña general para todo el colegio como «atención», o activar un protocolo cuando la pregunta describe una acción preventiva."
+  },
+  {
+    "id": "FICHA_COMITE",
+    "categoria": "Convivencia Escolar",
+    "concepto": "Comité Escolar de Convivencia",
+    "sigla": "CEC",
+    "pregunta_disparadora": "¿Quiénes integran el Comité Escolar de Convivencia y cuándo interviene?",
+    "definicion": "Instancia de cada establecimiento educativo encargada de apoyar la convivencia escolar, la educación para los derechos humanos, la educación sexual y la prevención y mitigación de la violencia escolar. Lidera la Ruta de Atención Integral dentro de la institución.",
+    "norma": "Ley 1620 de 2013, arts. 12 y 13 · Decreto 1965 de 2013",
+    "puntos_clave": [
+      "Lo preside el rector. Lo integran además el personero estudiantil, el docente con función de orientación, el coordinador (si existe), el presidente del consejo de padres, el presidente del consejo de estudiantes y un docente que lidere procesos de convivencia.",
+      "Interviene en las situaciones Tipo II y Tipo III; las Tipo I las maneja directamente el docente o los mediadores.",
+      "Puede convocar espacios de conciliación cuando lo considere conveniente, pero nunca para situaciones que constituyen delito.",
+      "Sesiona como mínimo una vez cada dos meses y de forma extraordinaria cuando se requiera.",
+      "Hace seguimiento al cumplimiento del manual de convivencia."
+    ],
+    "error_frecuente": "Pensar que el comité debe resolver cualquier conflicto menor entre estudiantes, o que puede conciliar un presunto delito."
+  },
+  {
+    "id": "FICHA_EVAL_FORMATIVA",
+    "categoria": "Evaluación",
+    "concepto": "Evaluación formativa",
+    "sigla": "Eval. formativa",
+    "pregunta_disparadora": "Un grupo reprueba masivamente un examen: ¿qué haría un docente con enfoque de evaluación formativa?",
+    "definicion": "Enfoque en el que la evaluación forma parte del proceso de aprendizaje: sirve para identificar avances y dificultades, dar retroalimentación oportuna y ajustar la enseñanza. No se limita a asignar una nota al final del período.",
+    "norma": "Decreto 1290 de 2009, art. 3 (propósitos de la evaluación) · MEN, Documento No. 11",
+    "puntos_clave": [
+      "Propósitos de la evaluación (art. 3): identificar las características, intereses y ritmos de aprendizaje, reorientar los procesos, implementar estrategias de apoyo, determinar la promoción y aportar al plan de mejoramiento institucional.",
+      "Es continua: ocurre durante todo el proceso, no solo al final.",
+      "Retroalimentación descriptiva y oportuna: le dice al estudiante qué hizo bien y cómo mejorar, no solo si acertó.",
+      "Combina autoevaluación, coevaluación y heteroevaluación, con instrumentos diversos como rúbricas, portafolios y observación.",
+      "Si muchos estudiantes fallan, el docente revisa también su propia práctica y ajusta la enseñanza."
+    ],
+    "error_frecuente": "Elegir respuestas que solo repiten el examen, bajan la exigencia o sancionan, en lugar de analizar las dificultades y retroalimentar."
+  },
+  {
     "id": "FICHA_SIEE",
     "categoria": "Evaluación",
     "concepto": "Sistema Institucional de Evaluación de los Estudiantes",
@@ -119,6 +170,38 @@
       "Gobierno escolar (art. 142): Consejo Directivo, Consejo Académico y Rector."
     ],
     "error_frecuente": "Confundir los fines de la educación (art. 5) con los objetivos por niveles, o creer que el currículo lo impone por completo el MEN sin margen de autonomía."
+  },
+  {
+    "id": "FICHA_COMUNIDAD",
+    "categoria": "Normativa General",
+    "concepto": "Comunidad educativa",
+    "sigla": "Art. 6 Ley 115",
+    "pregunta_disparadora": "¿Quiénes conforman la comunidad educativa y en qué deben participar?",
+    "definicion": "Conjunto de personas que tienen responsabilidades directas en la organización, el desarrollo y la evaluación del Proyecto Educativo Institucional (PEI) de un establecimiento.",
+    "norma": "Ley 115 de 1994, art. 6 · Decreto 1860 de 1994, art. 18 (compilado en el Decreto 1075 de 2015)",
+    "puntos_clave": [
+      "La conforman estudiantes, educadores, padres de familia o acudientes, egresados, directivos docentes y administradores escolares.",
+      "Participa en el diseño, la ejecución y la evaluación del PEI y en la buena marcha del establecimiento.",
+      "Participa a través de sus representantes en los órganos del gobierno escolar.",
+      "La familia es corresponsable de la formación, según la Ley 1620 y la Ley 1098 (Código de Infancia y Adolescencia)."
+    ],
+    "error_frecuente": "Dejar por fuera a los egresados o a los administradores escolares, o creer que el PEI lo construyen solo los directivos."
+  },
+  {
+    "id": "FICHA_GOBIERNO",
+    "categoria": "Normativa General",
+    "concepto": "Gobierno escolar",
+    "sigla": "Gobierno escolar",
+    "pregunta_disparadora": "Un docente quiere modificar el plan de estudios de su área: ¿qué instancia lo estudia y cuál lo adopta?",
+    "definicion": "Órganos mediante los cuales la comunidad educativa participa en la dirección de cada establecimiento. Está conformado por el Consejo Directivo, el Consejo Académico y el Rector.",
+    "norma": "Ley 115 de 1994, arts. 142 a 145 · Decreto 1860 de 1994, arts. 19 a 25",
+    "puntos_clave": [
+      "Consejo Directivo: instancia de dirección y de orientación académica y administrativa. Adopta el PEI, aprueba el SIEE y el manual de convivencia. Participan el rector, docentes, padres, un estudiante, un egresado y un representante del sector productivo.",
+      "Consejo Académico: instancia de orientación pedagógica. Estudia el currículo y el plan de estudios y propone modificaciones. Lo integran el rector, los directivos docentes y un docente por cada área.",
+      "Rector: representante del establecimiento y ejecutor de las decisiones del gobierno escolar.",
+      "Otras formas de participación estudiantil: el personero, elegido entre los estudiantes del último grado, y el consejo de estudiantes."
+    ],
+    "error_frecuente": "Confundir funciones: creer que el Consejo Académico aprueba el SIEE o adopta el PEI, o que el rector puede cambiar el plan de estudios por su cuenta."
   },
   {
     "id": "FICHA_1278",

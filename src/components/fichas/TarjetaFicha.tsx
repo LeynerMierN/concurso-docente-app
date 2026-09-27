@@ -41,7 +41,7 @@ export default function TarjetaFicha({ ficha, volteada, onVoltear }: Props) {
             </p>
           </div>
           <p className="flex items-center justify-center gap-1.5 text-xs text-marca-100">
-            <RotateCw className="size-3.5" /> Toca la tarjeta para ver la respuesta
+            <RotateCw className="size-3.5" /> Toca la ficha para ver la respuesta
           </p>
         </section>
 
