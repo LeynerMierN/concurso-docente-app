@@ -1,0 +1,282 @@
+[
+  {
+    "id": "SOC_001",
+    "area": "Competencias Específicas - Ciencias Sociales",
+    "tema": "Multiperspectivismo y Memoria Histórica",
+    "norma_referencia": "Estándares Básicos de Competencias en Ciencias Sociales (MEN) / Ley 115 de 1994",
+    "contexto": "Un docente de Ciencias Sociales de grado 9° aborda el periodo de 'La Violencia' en Colombia (década de 1950). Al revisar las lecturas del texto guía, un grupo de estudiantes afirma que los testimonios presentados son 'falsos y sesgados' porque contradicen las versiones familiares que les han transmitido sus acudientes en casa.",
+    "pregunta": "¿Cuál es la intervención pedagógica más adecuada que debe asumir el docente para desarrollar la competencia de Multiperspectivismo y Pensamiento Social Crítico?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Descalificar las versiones familiares de los estudiantes y exigir la memorización exclusiva de la versión consignada en el libro de texto oficial para evitar debates ideológicos."
+      },
+      {
+        "id": "B",
+        "texto": "Promover un ejercicio de indagación mediante el contraste de diversas fuentes primarias y secundarias (prensa de la época, testimonios orales, archivos oficiales y relatos de distintos actores), orientando a los estudiantes a analizar la intencionalidad, el contexto histórico y la validez de cada relato."
+      },
+      {
+        "id": "C",
+        "texto": "Sustituir el tema de historia de Colombia por geografía física mundial para prevenir conflictos políticos entre los estudiantes del curso."
+      },
+      {
+        "id": "D",
+        "texto": "Someter a votación en el salón cuál de las versiones históricas es la 'verdadera' y asumir el resultado de la mayoría como la única postura oficial del área."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "Según los Estándares Básicos de Competencias en Ciencias Sociales del MEN, el desarrollo del pensamiento social crítico requiere abordar los hechos históricos desde el multiperspectivismo. Esto implica confrontar diferentes fuentes de información, reconocer los intereses de los actores involucrados y comprender la historia como una construcción dinámica basada en evidencias y contextos sociopolíticos, en lugar de imponer una verdad dogmática o anular la memoria histórica."
+  },
+  {
+    "id": "SOC_002",
+    "area": "Competencias Específicas - Ciencias Sociales",
+    "tema": "Constitución Política y Formación para la Paz",
+    "norma_referencia": "Ley 1732 de 2014 (Cátedra de la Paz) / Ley 115 de 1994 (Art. 14)",
+    "contexto": "En la unidad de Constitución Política y Democracia de grado 10°, los estudiantes identifican una problemática constante de contaminación auditiva y mal manejo de basuras en los alrededores del establecimiento educativo. El docente busca que la Cátedra de la Paz no se limite a teoría conceptual sobre los derechos.",
+    "pregunta": "Desde la perspectiva de la Ley 1732 de 2014 y la formación ciudadana activa, ¿cuál es la estrategia pedagógica más pertinente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Dictar una clase magistral sobre los artículos de la Constitución y evaluar la memorización de los deberes de los ciudadanos mediante un examen escrito."
+      },
+      {
+        "id": "B",
+        "texto": "Guiar a los estudiantes en el diseño y radicación de acciones ciudadanas (mecanismos de participación, derecho de petición o proyectos de cultura ambiental comunitaria), articulando la teoría de los derechos con la transformación activa de su entorno local."
+      },
+      {
+        "id": "C",
+        "texto": "Solicitar a la policía del municipio que imponga comparendos ambientales a los vecinos sin involucrar a los estudiantes en el proceso."
+      },
+      {
+        "id": "D",
+        "texto": "Asignar como sanción disciplinaria la copia del texto completo del proyecto ambiental institucional a los estudiantes que no participen en clase."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La Ley 1732 de 2014 (Cátedra de la Paz) y los Lineamientos de Ciencias Sociales señalan que la educación para la democracia y la paz debe transcender el aprendizaje memorístico e implantarse como una práctica ciudadana vivencial. Involucrar a los estudiantes en la resolución de problemas comunitarios reales mediante el uso consciente de mecanismos constitutionales y la acción comunitaria fortalece la agencia ciudadana y el pensamiento crítico."
+  },
+  {
+    "id": "SOC_003",
+    "area": "Competencias Específicas - Ciencias Sociales",
+    "tema": "Geografía Humana y Ordenamiento Territorial",
+    "norma_referencia": "Estándares Básicos de Competencias en Ciencias Sociales / DBA de Ciencias Sociales",
+    "contexto": "Al estudiar la distribución de la población y el ordenamiento territorial en Colombia con grado 8°, la docente nota que los estudiantes asumen que el subdesarrollo de ciertas regiones se debe únicamente a 'factores climáticos o pereza de sus habitantes'.",
+    "pregunta": "¿Cuál es la estrategia didáctica adecuada para reorientar esta concepción hacia el análisis espacial riguroso?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Confirmar las apreciaciones de los estudiantes para mantener la empatía en el clima de aula."
+      },
+      {
+        "id": "B",
+        "texto": "Proponer el análisis multicausal del espacio geográfico relacionando mapas temáticos de infraestructura, vías de comunicación, modelos de tenencia de la tierra, inversión estatal histórica y procesos de poblamiento, para explicar las desigualdades territoriales."
+      },
+      {
+        "id": "C",
+        "texto": "Exigir la memorización del número de habitantes y gentilicios de todos los municipios del país."
+      },
+      {
+        "id": "D",
+        "texto": "Prohibir los debates sobre geografía humana y concentrarse exclusivamente en la memorización de los accidentes orográficos e hidrográficos."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "Los Estándares de Ciencias Sociales establecen que la comprensión del espacio geográfico exige superar las explicaciones deterministas o los prejuicios sociales. La geografía humana y regional analiza el espacio como una construcción social multicausal, donde interactúan factores socioeconómicos, políticos, históricos y de planificación estatal."
+  },
+  {
+    "id": "SOC_004",
+    "area": "Competencias Específicas - Ciencias Sociales",
+    "tema": "Cátedra de Estudios Afrocolombianos y Diversidad Étnica",
+    "norma_referencia": "Decreto 1122 de 1998 / Ley 70 de 1993 / Ley 115 de 1994",
+    "contexto": "En la revisión del plan de estudios de Ciencias Sociales de grado 6°, el equipo docente debate sobre cómo incorporar la Cátedra de Estudios Afrocolombianos (CEA). Un docente sostiene que esta cátedra solo debe dictarse en colegios con población afrodescendiente mayoritaria.",
+    "pregunta": "De acuerdo con el Decreto 1122 de 1998 y la Ley 115 de 1994, ¿cuál es el principio normativo y pedagógico que rige la Cátedra de Estudios Afrocolombianos?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La CEA es obligatoria exclusivamente para las instituciones educativas ubicadas en los territorios colectivos de las comunidades negras."
+      },
+      {
+        "id": "B",
+        "texto": "La CEA es de carácter obligatorio en todos los establecimientos educativos del país (estatales y privados) en los niveles de preescolar, básica y media, como una estrategia para reconocer la plurietnicidad, combatir el racismo y valorar los aportes históricos de las comunidades afrocolombianas."
+      },
+      {
+        "id": "C",
+        "texto": "La CEA es una asignatura opcional que solo debe ofrecerse durante la celebración del Día de la Afrocolombianidad en el mes de mayo."
+      },
+      {
+        "id": "D",
+        "texto": "La CEA reemplaza de manera definitiva la enseñanza de la historia universal en la educación básica."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El Decreto 1122 de 1998 (que reglamenta la Ley 70 de 1993 y la Ley 115) manda la obligatoriedad de la Cátedra de Estudios Afrocolombianos en todos los establecimientos de educación formal del país, independientemente de la composición étnica de sus estudiantes, con el fin de afianzar la identidad nacional pluriétnica y multicultural y erradicar los sesgos racistas."
+  },
+  {
+    "id": "SOC_005",
+    "area": "Competencias Específicas - Ciencias Sociales",
+    "tema": "Uso de Fuentes Primarias e Indagación Histórica",
+    "norma_referencia": "Estándares Básicos de Competencias en Ciencias Sociales / DBA",
+    "contexto": "Para abordar la Revolución de los Comuneros y la Independencia de Colombia en grado 7°, el docente lleva al aula reproducciones de cartas de la época, edictos reales, pasquines de protesta y diarios de viajeros del siglo XVIII.",
+    "pregunta": "¿Qué finalidad pedagógica de la enseñanza de las Ciencias Sociales se privilegiando con el uso de estas fuentes primarias?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Evaluar la velocidad de lectura rápida de los estudiantes sin importar la comprensión temática."
+      },
+      {
+        "id": "B",
+        "texto": "Desarrollar habilidades del pensamiento historiográfico, permitiendo que los estudiantes actúen como 'jóvenes historiadores' al interpretar el lenguaje, las tensiones de poder y las mentalidades de la época a partir de evidencias directas."
+      },
+      {
+        "id": "C",
+        "texto": "Demostrar que los libros de texto modernos son inútiles y deben desecharse de la biblioteca."
+      },
+      {
+        "id": "D",
+        "texto": "Memorizar las fechas exactas de nacimiento de todos los virreyes del Virreinato de la Nueva Granada."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El trabajo con fuentes primarias en Ciencias Sociales permite a los estudiantes construir conocimiento histórico en lugar de consumirlo de forma pasiva. Fomenta la inferencia, la contextualización temporal, la empatía histórica y la comprensión de que la historia se escribe contrastando testimonios de la época."
+  },
+  {
+    "id": "SOC_006",
+    "area": "Competencias Específicas - Ciencias Sociales",
+    "tema": "Inclusión y DUA en la Enseñanza de las Ciencias Sociales",
+    "norma_referencia": "Decreto 1421 de 2017 / Guía de Implementación DUA",
+    "contexto": "Un docente de Ciencias Sociales prepara la unidad de Geografía de Colombia en grado 6°. En el aula hay dos estudiantes con discapacidad auditiva (usuarios de Lengua de Señas Colombiana - LSC) y un estudiante con baja visión.",
+    "pregunta": "Desde los principios del DUA y el Decreto 1421 de 2017, ¿cuál es la planeación de aula más inclusiva?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Eximir a los tres estudiantes de la clase de Geografía y enviarles guías de coloreado de mapas a sus casas."
+      },
+      {
+        "id": "B",
+        "texto": "Diseñar la unidad incorporando mapas en relieve e impresiones en macrotipo (para el estudiante de baja visión), maquetas tridimensionales multisensoriales y recursos audiovisuales enriquecidos con intérprete de LSC o subtitulado, permitiendo formas diversas de representación y expresión para todo el grupo."
+      },
+      {
+        "id": "C",
+        "texto": "Utilizar únicamente exposiciones magistrales verbales sin ningún apoyo visual o táctil."
+      },
+      {
+        "id": "D",
+        "texto": "Exigir que los estudiantes con discapacidad elaboren un mapa cartográfico tradicional idéntico al de sus compañeros sin ningún tipo de apoyo o ajuste."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El Decreto 1421 de 2017 y el DUA exigen ofrecer múltiples formas de presentación de la información (mapas táctiles, relieve, LSC, macrotipo) y de expresión del aprendizaje. Esto elimina las barreras físicas y comunicativas, garantizando la participación de los estudiantes con discapacidad en el currículo común."
+  },
+  {
+    "id": "SOC_007",
+    "area": "Competencias Específicas - Ciencias Sociales",
+    "tema": "Uso Pedagógico de TICs y Cartografía Digital",
+    "norma_referencia": "Orientaciones Pedagógicas MEN para el uso de TIC / Estándares de Ciencias Sociales",
+    "contexto": "En la clase de geografía urbana de grado 11°, el docente sustituye la copia tradicional de mapas de papel por el uso interactivo de herramientas de Sistemas de Información Geográfica (SIG) libres y visores satelitales (como Google Earth o visores del IGAC).",
+    "pregunta": "¿Cuál es la ventaja cognitiva y pedagógica principal de esta estrategia en la enseñanza de las Ciencias Sociales?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Evitar que el docente tenga que preparar la clase, dejando que los estudiantes naveguen libremente sin propósito educativo."
+      },
+      {
+        "id": "B",
+        "texto": "Permitir el análisis dinámico de transformaciones espacio-temporales, la superposición de capas de información (población, riesgos ambientales, uso del suelo) y la comprensión a escala local y global de los fenómenos territoriales."
+      },
+      {
+        "id": "C",
+        "texto": "Eliminar de forma definitiva la enseñanza de la historia en el grado 11°."
+      },
+      {
+        "id": "D",
+        "texto": "Garantizar que todos los estudiantes obtengan una nota superior a 4.5 independientemente de su desempeño."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "Las TICs y la cartografía digital en Ciencias Sociales potencian el pensamiento espacial al permitir la superposición de variables (físicas, sociales, económicas) y la observación de cambios en el territorio a lo largo del tiempo, transitando de una geografía memorística a una geografía analítica y prospectiva."
+  },
+  {
+    "id": "SOC_008",
+    "area": "Competencias Específicas - Ciencias Sociales",
+    "tema": "Evaluación Formativa y Análisis del Juicio Histórico",
+    "norma_referencia": "Decreto 1290 de 2009 / Documento No. 11 MEN",
+    "contexto": "Al evaluar un ensayo sobre las causas del Frente Nacional en Colombia (grado 11°), la docente encuentra que varios estudiantes emiten juicios morales anacrónicos (v.gr. 'los líderes de 1957 eran ignorantes porque no pensaron como nosotros hoy').",
+    "pregunta": "Desde los principios de la evaluación formativa (Decreto 1290 y Doc. 11), ¿cuál es la retroalimentación adecuada que debe brindar la docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Asignar una nota de reprobación de 1.0 sin explicaciones adicionales para sancionar la falta de rigor."
+      },
+      {
+        "id": "B",
+        "texto": "Realizar una devolución cualitativa que señale el sesgo de 'anacronismo histórico', orientando a los estudiantes a contextualizar los hechos según los códigos políticos, las limitaciones y la información disponible para los actores en la época analizada."
+      },
+      {
+        "id": "C",
+        "texto": "Aprobar el trabajo argumentando que en Ciencias Sociales cualquier opinión subjetiva es igualmente válida sin necesidad de rigor histórico."
+      },
+      {
+        "id": "D",
+        "texto": "Obligar a los estudiantes a copiar diez veces la biografía de Alberto Lleras Camargo."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La evaluación formativa (Documento 11 MEN) busca identificar las falencias en la estructuración del pensamiento disciplinar. En historia, el anacronismo es un error metodológico recurrente; la retroalimentación cualitativa debe orientar al estudiante para comprender el contexto histórico original de las decisiones políticas."
+  },
+  {
+    "id": "SOC_009",
+    "area": "Competencias Específicas - Ciencias Sociales",
+    "tema": "Globalización, Geopolítica y Economía Mundial",
+    "norma_referencia": "Estándares Básicos de Competencias en Ciencias Sociales (Grados 10°-11°)",
+    "contexto": "Un docente de grado 10° analiza con su grupo el fenómeno de la globalización económica y el impacto de las cadenas globales de valor en los países en desarrollo.",
+    "pregunta": "¿Qué actividad pedagógica evidencia el nivel más alto de análisis de la competencia social en Geopolítica y Economía?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Memorizar los nombres de los tratados de libre comercio firmados por Colombia en los últimos 20 años."
+      },
+      {
+        "id": "B",
+        "texto": "Realizar un estudio de caso sobre la trazabilidad de un producto de consumo cotidiano (v.gr. un teléfono inteligente o una prenda de vestir), analizando los costos ambientales, las condiciones laborales y la distribución de ganancias entre el país de origen de la materia prima y las sedes corporativas."
+      },
+      {
+        "id": "C",
+        "texto": "Copiar en el cuaderno las definiciones de 'inflación', 'devaluación' y 'exportación' tomadas de un diccionario económico."
+      },
+      {
+        "id": "D",
+        "texto": "Dibujar el mapa político de Europa coloreando las capitales de cada país."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "Los Estándares de Ciencias Sociales para 10° y 11° promueven la comprensión del sistema mundo globalizado a través de análisis relacionales complejas. Un estudio de caso sobre cadenas de valor conecta la vida cotidiana del estudiante con la economía política, la justicia ambiental y el comercio internacional."
+  },
+  {
+    "id": "SOC_010",
+    "area": "Competencias Específicas - Ciencias Sociales",
+    "tema": "Democracia Escolar y Mecanismos de Participación",
+    "norma_referencia": "Ley 115 de 1994 (Art. 142) / Decreto 1860 de 1994 (Personero Estudiantil)",
+    "contexto": "Durante las elecciones del Personero Estudiantil en una institución educativa, el candidato ganador prometió en su campaña 'modificar el horario de clases para salir dos horas antes todos los viernes e instalar una cancha de fútbol profesional'. Tras asumir el cargo, los estudiantes le exigen el cumplimiento de la promesa.",
+    "pregunta": "Como docente del área de Ciencias Sociales y líder del proyecto de Democracia Escolar, ¿cuál es la reflexión pedagógica que debe encauzar con la comunidad estudiantil?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Validar la protesta de los estudiantes y exigir al rector que modifique el horario de clases para cumplir las promesas de campaña."
+      },
+      {
+        "id": "B",
+        "texto": "Desarrollar un análisis crítico sobre la democracia representativa, el voto informado y las funciones legales del Personero Estudiantil (promotor de derechos y deberes según el Decreto 1860) frente a las promesas populistas que exceden las competencias de la figura escolar."
+      },
+      {
+        "id": "C",
+        "texto": "Sancionar disciplinariamente al Personero Estudiantil con la expulsión inmediata del establecimiento educativo."
+      },
+      {
+        "id": "D",
+        "texto": "Eliminar el proyecto de Gobierno Escolar para evitar confusiones en los estudiantes."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El proyecto de Democracia Escolar y la enseñanza de las Ciencias Sociales pretenden formar ciudadanos conscientes de la institucionalidad. Analizar los límites de la figura del Personero (Ley 115 / Decreto 1860) y la importancia del voto programático responsable brinda un aprendizaje ciudadano fundamental para la vida en democracia."
+  }
+]

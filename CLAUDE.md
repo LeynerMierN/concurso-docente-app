@@ -7,35 +7,49 @@ Idioma de la interfaz y del código de dominio: español (es-CO).
 ## Estado actual
 - Estructura base creada a mano (sin create-next-app). Dependencias instaladas; `npm run dev` y `tsc --noEmit` compilan sin errores (Next 15.5, React 19, Tailwind 4).
 - El puerto 3000 suele estar ocupado por otra app del usuario; usar `PORT=3002 npm run dev`. `turbopack.root` fijado en `next.config.ts` porque hay un `pnpm-lock.yaml` en el home.
-- Inicio (`src/app/page.tsx`): estadísticas del banco, banner de salarios, accesos a módulos, sección «Tu progreso» (`TuProgreso`) y chips de áreas.
+- Inicio (`src/app/page.tsx`) = Dashboard: hero con `app_metadata`, `RachaDiaria` (racha, meta diaria, últimos 7 días, área más débil), `TarjetasModos` (exam_modes), banner de salarios y recursos.
+- Navegación: `BarraLateral` (≥1024 px) y `BarraNavegacion` (móvil/tablet), ambas desde `MODULOS_NAVEGACION`. Premium se oculta a propósito (`MODULOS_OCULTOS`); Convocatoria va en «Recursos» de la barra lateral porque no está en el config.
 - PWA: `public/manifest.json` + íconos en `public/icons/` y `public/apple-touch-icon.png` (generados con Pillow). Metadatos en `layout.tsx`; Next 15 los emite en streaming dentro de `<body>`, es normal. Sin service worker (no funciona sin conexión).
 - `npm run build` compila sin advertencias; todas las rutas son estáticas.
 - SEO: metadatos en `layout.tsx` (título con plantilla `%s | Concurso Docente`, Open Graph y Twitter `es_CO`); títulos por ruta en `layout.tsx` de practica/simulacro/fichas. `src/lib/sitio.ts` centraliza título, descripción y `URL_SITIO` (NEXT_PUBLIC_SITE_URL → VERCEL_PROJECT_PRODUCTION_URL → localhost). `opengraph-image.tsx` genera la imagen 1200×630 en el build (descarga Inter de Google Fonts; si no hay red usa la fuente por defecto); `twitter-image.tsx` la reutiliza.
-- Git: rama `main`; aún sin remoto.
-- `/practica` y `/simulacro` funcionales sobre el motor `useQuizRunner`.
-- `/fichas` funcional: flashcards con giro 3D (Tailwind `transform-3d`/`backface-hidden`), filtro por categoría, ← → con teclado.
+- Git: rama `main`, remoto `origin` = https://github.com/LeynerMierN/concurso-docente-app (push despliega en Vercel si está conectado).
+- `/practica` y `/simulacros` funcionan sobre `useQuizRunner` y aceptan `?modo=<id de exam_modes>`. Práctica usa `SelectorCategorias` (taxonomía agrupada con íconos). Los modos de práctica usan por defecto el núcleo común (`grupo:core_transversal`). Los simulacros se arman por componentes con `DISTRIBUCION_CNSC` 30/30/20/20 (`armarPorDistribucion`, en bloques); si un componente no alcanza, se usa lo disponible y el tiempo se escala (hoy el de 100 queda en 92 preguntas / 249 min). Rutas renombradas según el config (`/simulacro` → `/simulacros`, `/fichas` → `/normatividad`) con redirecciones 308 en `next.config.ts`.
+- `/estadisticas`: indicadores, evolución de simulacros, fortalezas/debilidades por macro-área e historial.
+- `/normatividad` funcional: flashcards con giro 3D (Tailwind `transform-3d`/`backface-hidden`), filtro por categoría, ← → con teclado.
 - `/convocatoria` funcional: pestañas Reglas / Salarios / Beneficios sincronizadas con el hash (`/convocatoria#salarios`, enlazado desde el banner del inicio).
 
 ## Datos (fuente de verdad, no editar sin pedirlo)
-- `data/banco_preguntas_pjs_concurso_docente.json`: 42 preguntas PJS { id, area, tema, norma_referencia, contexto, pregunta, opciones[A-D], respuesta_correcta, justificacion }. Hay 13 áreas; algunas son variantes (p. ej. "Convivencia Escolar ..."), podría convenir agruparlas en macro-áreas.
+- `data/banco_preguntas.json`: banco unificado (296 preguntas) { id, categoria_id, grupo, area, tema, norma_referencia, contexto, pregunta, opciones[A-D], respuesta_correcta, justificacion, modulo? }. **No editar a mano**: se genera con `python3 scripts/importar_bancos.py` desde `data/fuentes/` (archivos crudos tal como llegan del usuario).
+- `scripts/importar_bancos.py`: asigna `categoria_id` (taxonomía del config), aplica correcciones por id (CORRECCIONES: exige que el texto original exista, falla si la fuente cambió) y erratas globales (ERRATAS), y valida. Para un banco nuevo: copiarlo a `data/fuentes/`, mapearlo en ARCHIVOS y correr el script.
+- Correcciones aplicadas (revisadas con el usuario): CUA_004 → D (6 días), CUA_007 NTC 4595 como parámetro supuesto, QUI_FIS_004 onda longitudinal, ECO_002 SU-095/2018, TEC_006, ETI_REL_001 (Ley 115 art. 24), citas no verificables de JUI_003/004/005/013/014 reemplazadas, notas legales del Orientador, erratas. Descartado: `simulacros_completos_icfes-v2.json` (plantilla con 100 respuestas «A»).
 - `data/fichas_normativas.json`: 13 fichas { id, categoria (Inclusión | Convivencia Escolar | Evaluación | Normativa General), concepto, sigla, pregunta_disparadora, definicion, norma, puntos_clave[], error_frecuente }. Contenido redactado por Claude a partir de las normas citadas: revisar antes de publicar.
 - `data/convocatoria_info_y_calculadora.js`: `CONVOCATORIA_DATA` (requisitos, fases, escalafón, prestaciones) y `calcularIngresoAnualDocente(id)`.
+- `data/app_config.json`: copia del config de producto (ui_theme, navigation_modules, exam_modes, gamification…). Los modos de 50 y 100 preguntas usan las 42 del banco con tiempo proporcional (`dimensionarModo`).
 - Alias: `@/*` → `src/*`, `@data/*` → `data/*`.
 
 ## Utilidades existentes
+- Tema: Tailwind v4 en `globals.css` (`@theme`), no hay `tailwind.config.js`. Tokens del config: primary/secondary/accent/danger (+ -light/-dark), `fondo`, `tarjeta` (#1E293B en oscuro), `font-heading` (Plus Jakarta Sans; h1–h3 la usan por defecto). `marca-*`, `exito` y `error` son alias hacia la paleta nueva; `oro` es el amarillo de la bandera.
+- `src/lib/appConfig.ts`: APP, MODULOS_NAVEGACION, MODOS_EXAMEN, META_DIARIA_PREGUNTAS, DISTRIBUCION_CNSC, FILTRO_NUCLEO_COMUN, obtenerModo, dimensionarModo (devuelve preguntas, minutos y distribución), configDesdeModo.
+- `src/lib/categorias.ts`: CATEGORIAS (taxonomía con íconos Lucide), GRUPOS, NOMBRE_GRUPO, obtenerCategoria. Separado de preguntas.ts para evitar dependencias circulares.
+- `src/lib/estadisticas.ts`: aciertoPorArea, aciertoGlobal, proyeccionPuntaje (promedio de los últimos 3 simulacros). `src/hooks/useProgreso.ts` lee el progreso en cliente.
 - `src/types/exam.ts`: Pregunta, FiltroExamen, RespuestaUsuario, ResultadoExamen, ConfigExamen, SesionExamen.
-- `src/lib/preguntas.ts`: PREGUNTAS, obtenerPregunta, obtenerAreas, FILTROS_TEMATICOS (convivencia/inclusion/evaluacion/psicotecnica), filtrarPreguntas, armarExamen, calificar → ResultadoExamen (0–100; umbral 60 aula, 70 directivo), MINUTOS_POR_PREGUNTA = 2.
-- `src/hooks/useQuizRunner.ts`: motor de examen; sesión en localStorage (`concurso-docente:practica` / `:simulacro`) con hora límite absoluta, banderas, navegación libre y cierre automático. Mezcla el orden de las opciones por sesión porque el banco está sesgado (29/42 correctas son B, ninguna D); las respuestas se guardan con el id original.
-- `src/lib/storage.ts`: historial en localStorage (`concurso-docente:progreso`): intentos (máx. 300), días de estudio, total respondidas y estadística por pregunta. `registrarIntento` es idempotente por `${modo}-${inicioMs}` y lo llama `useQuizRunner` al terminar. `calcularRacha` (viva si estudió hoy o ayer).
-- `macroArea(area)` en `preguntas.ts` agrupa las 13 variantes de área en 7 macro-áreas para el progreso.
+- `src/lib/preguntas.ts`: PREGUNTAS, obtenerPregunta, CONTEO_POR_CATEGORIA, CATEGORIAS_CON_PREGUNTAS, FILTROS_TEMATICOS (por tema/norma), filtrarPreguntas (acepta "todos", temático, `grupo:<grupo>` o id de categoría), armarExamen, armarPorDistribucion, calificar (0–100; umbral 60 aula, 70 directivo).
+- `src/hooks/useQuizRunner.ts`: motor de examen con pausa (`pausar`/`reanudar` desplazan inicio y límite; solo si `config.permitirPausa`); sesión en localStorage (`concurso-docente:practica` / `:simulacro`) con hora límite absoluta, banderas, navegación libre y cierre automático. Mezcla el orden de las opciones por sesión porque el banco está sesgado (29/42 correctas son B, ninguna D); las respuestas se guardan con el id original.
+- `src/lib/storage.ts`: historial en localStorage (`concurso-docente:progreso`): intentos (máx. 300), días de estudio, total respondidas y estadística por pregunta. `registrarIntento` es idempotente por `${modo}-${inicioMs}` y lo llama `useQuizRunner` al terminar. `calcularRacha` (viva si estudió hoy o ayer), `respondidasEnDia`, `ultimosDias`. Los intentos guardan `respondidas` para la meta diaria.
+- Estadísticas por categoría de la taxonomía (`aciertoPorArea` usa `pregunta.area`, que ahora es el nombre de la categoría).
 - `src/components/quiz/`: QuizRunner, Resultados (confeti solo si terminó hace <10 s), Confirmacion, Cargando.
 - `src/lib/convocatoria.ts`: reexporta datos + `formatoCOP`; tipa `calcularIngresoAnualDocente` con `IngresoAnualDocente` (el JSDoc del .js solo dice `object`). El total anual incluye cesantías (15,35 salarios; 14,35 en nómina).
 - `src/components/convocatoria/`: PestanasConvocatoria, ReglasExamen, CalculadoraSalarial, Beneficios (estos beneficios extra —sin copagos, 7 semanas de vacaciones— están en el componente, no en data/).
 - `src/lib/celebrar.ts`: `celebrarAprobacion()` confeti con colores de Colombia, llamarla al aprobar un simulacro.
 - `src/lib/fichas.ts`: FICHAS, CATEGORIAS_FICHAS, fichasDe(categoria).
-- `src/components/BarraNavegacion.tsx`: tab bar inferior fija, 5 pestañas en grid (Inicio, Práctica, Simulacro, Fichas, Convocatoria); «Convocatoria» ocupa justo el ancho a 375 px.
+
 
 ## Próximos pasos
+- Del config aún sin implementar: perfil de usuario y claves `concurso_docente_*` de localStorage, XP e insignias (`gamification`), taxonomía de especialidades/directivos/contextos, Premium.
+- Ampliar bancos: núcleo común (lectura 29/30 y cuantitativo 23/30 para el simulacro de 100), cada especialidad 10/60–80.
+- El banco va dentro del JS (~110 KB extra en práctica/simulacros): si crece mucho, cargarlo por categoría con import() dinámico.
+- Verificar CUA_007 (valor real de la NTC 4595) y DIR_ADM_001 ("tres cotizaciones").
+- Si Turbopack no recarga en servidor un cambio hecho con `sed -i`, reiniciar `npm run dev` (causa errores de hidratación falsos).
 - Rebalancear la letra de la respuesta correcta en el banco (29/42 son B, ninguna D).
 - Service worker para uso sin conexión.
 - Actualizar a Next 16 cuando convenga (vulnerabilidad de PostCSS embebido en Next 15).

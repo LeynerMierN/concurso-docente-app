@@ -1,0 +1,437 @@
+[
+  {
+    "id": "LEC_001",
+    "categoria_id": "lectura_critica",
+    "area": "Lectura Crítica (Núcleo Común)",
+    "tema": "Identificación de Tesis Central y Propósito Comunicativo",
+    "norma_referencia": "Documento No. 11 del MEN / Decreto 1290 de 2009",
+    "contexto": "Toda evaluación es una medición, pero no toda medición es evaluación. La medición se limita a asignar un valor cuantitativo o una categoría a un rendimiento en un momento estático; la evaluación en el aula, en cambio, es un proceso pedagógico continuo, reflexivo y formativo que interpreta dicha medición para reorientar la enseñanza, comprender las barreras del aprendizaje y potenciar el desarrollo integral del estudiante. Confundir la evaluación con la mera calificación cuantitativa reduce la escuela a un centro de clasificación social e inhibe la función transformadora del acto educativo. (Ministerio de Educación Nacional, Documento No. 11).",
+    "pregunta": "Según la estructura argumentativa del texto, ¿cuál es la intención comunicativa principal del autor?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Demostrar que las calificaciones cuantitativas deben eliminarse de forma absoluta de todos los niveles del sistema educativo colombiano."
+      },
+      {
+        "id": "B",
+        "texto": "Diferenciar la medición de la evaluación formativa para defender la naturaleza cualitativa, procesal y reorientadora de la evaluación de aula frente al reduccionismo clasificatorio."
+      },
+      {
+        "id": "C",
+        "texto": "Probar que la medición estática es el único método válido para garantizar la objetividad en los informes finales de desempeño del SIEE."
+      },
+      {
+        "id": "D",
+        "texto": "Argumentar que la función principal de la escuela es la selección meritocrática mediante pruebas estandarizadas periódicas."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El texto contrapone explícitamente el concepto limitado de 'medición' con el concepto amplio de 'evaluación formativa'. El propósito central del autor es defender la esencia formativa de la evaluación frente al riesgo de reducirla a una simple etiqueta."
+  },
+  {
+    "id": "LEC_002",
+    "categoria_id": "lectura_critica",
+    "area": "Lectura Crítica (Núcleo Común)",
+    "tema": "Inferencia de Premisas Implícitas",
+    "norma_referencia": "Decreto 1421 de 2017 / Guía para la Implementación del Decreto 1421",
+    "contexto": "Pensar la educación inclusiva desde el ajuste individual posterior es llegar tarde al aula. Cuando una planeación pedagógica nace rígida y uniforme, cada diferencia en el ritmo, estilo o canal sensorial de los estudiantes se percibe como un problema o una anomalía que exige una 'reparación' extraordinaria. Por el contrario, cuando la planeación se concibe desde el origen bajo el Diseño Universal para el Aprendizaje (DUA), la diversidad deja de ser una contingencia molesta para convertirse en la arquitectura misma del ambiente de aprendizaje. (Guía de Implementación del Decreto 1421 de 2017).",
+    "pregunta": "¿Qué presupuesto o premisa implícita sostiene el argumento a favor del DUA frente a los ajustes individuales a posteriori?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que las barreras para el aprendizaje no son deficiencias intrínsecas del estudiante, sino limitaciones creadas por currículos e inflexividades del entorno escolar."
+      },
+      {
+        "id": "B",
+        "texto": "Que los estudiantes con discapacidad únicamente pueden aprender si están segregados en aulas especializadas con docentes de apoyo."
+      },
+      {
+        "id": "C",
+        "texto": "Que el DUA elimina la necesidad de realizar evaluaciones de desempeño en el Sistema Institucional de Evaluación."
+      },
+      {
+        "id": "D",
+        "texto": "Que los ajustes razonables individuales sustituyen por completo el diseño curricular institucional."
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "El argumento del DUA parte del presupuesto de que la discapacidad o la diversidad no constituyen una 'anomalía del estudiante', sino una barrera generada cuando el currículo se diseña de manera rígida e inflexible."
+  },
+  {
+    "id": "LEC_003",
+    "categoria_id": "lectura_critica",
+    "area": "Lectura Crítica (Núcleo Común)",
+    "tema": "Análisis de Validez Argumentativa y Falacias",
+    "norma_referencia": "Ley 1620 de 2013 / Guía Pedagógica No. 49",
+    "contexto": "Durante un debate sobre la modificación del Manual de Convivencia respecto al porte del uniforme y el libre desarrollo de la personalidad, un docente afirma: 'Si permitimos que los estudiantes elijan libremente el largo del cabello o el uso de accesorios, mañana exigirán no asistir a clases, luego aboliremos las notas y finalmente la institución caerá en la anarquía total'.",
+    "pregunta": "¿Qué tipo de falacia argumentativa comete el docente en su intervención?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Falacia de apelación a la autoridad (Ad Verecundiam)."
+      },
+      {
+        "id": "B",
+        "texto": "Falacia de ataque personal (Ad Hominem)."
+      },
+      {
+        "id": "C",
+        "texto": "Falacia de la pendiente resbaladiza (Slippery Slope)."
+      },
+      {
+        "id": "D",
+        "texto": "Falacia de la falsa analogía."
+      }
+    ],
+    "respuesta_correcta": "C",
+    "justificacion": "La intervención constituye una falacia de pendiente resbaladiza, pues encadena hipotéticamente consecuencias cada vez más extremas e infundadas (anarquía total) a partir de una premisa inicial moderada (libertad en el porte del uniforme), sin probar la causalidad entre los eventos."
+  },
+  {
+    "id": "LEC_004",
+    "categoria_id": "lectura_critica",
+    "area": "Lectura Crítica (Núcleo Común)",
+    "tema": "Paráfrasis e Interpretación de Artículos Legales",
+    "norma_referencia": "Ley 115 de 1994, Artículo 73 / Decreto 1860 de 1994",
+    "contexto": "Con el fin de lograr la formación integral del educando, cada establecimiento educativo deberá elaborar y poner en práctica un Proyecto Educativo Institucional (PEI) en el que se especifiquen entre otros aspectos, los principios y fines del establecimiento, los recursos docentes y didácticos disponibles y necesarios, la estrategia pedagógica, el reglamento para docentes y estudiantes y el sistema de gestión, todo ello orientado a responder a las necesidades de la comunidad local, regional y nacional. (Ley 115 de 1994).",
+    "pregunta": "¿Cuál de las siguientes proposiciones expresa con mayor fidelidad el sentido normativo del texto?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El PEI es un documento puramente administrativo redactado por el Rector para cumplir con la Secretaría de Educación."
+      },
+      {
+        "id": "B",
+        "texto": "El PEI se limita a copiar los lineamientos genéricos del Ministerio de Educación sin adaptación territorial."
+      },
+      {
+        "id": "C",
+        "texto": "El PEI debe ser un contrato comercial entre la institución y los padres de familia."
+      },
+      {
+        "id": "D",
+        "texto": "El PEI es un instrumento integral y autónomo que articula recursos, pedagogía y gobierno escolar para atender el contexto sociocultural de la comunidad."
+      }
+    ],
+    "respuesta_correcta": "D",
+    "justificacion": "La paráfrasis correcta rescata los elementos clave del texto legal: la formación integral, la articulación de recursos y estrategias, y la orientación explícita a responder a las necesidades del entorno local, regional y nacional."
+  },
+  {
+    "id": "LEC_005",
+    "categoria_id": "lectura_critica",
+    "area": "Lectura Crítica (Núcleo Común)",
+    "tema": "Evaluación de Recursos Retóricos y Tono del Texto",
+    "norma_referencia": "Decreto Ley 1278 de 2002 / Evaluación de Desempeño",
+    "contexto": "La práctica pedagógica no es la ejecución autómata de un guion preconcebido en un texto guía, ni el docente es un mero capataz de la memoria ajena. Enseñar en el siglo XXI es un acto de alta filigrana intelectual, un ejercicio continuo de diagnóstico, adaptación e invención situacional donde la teoría cobra vida en el diálogo vivo de la clase.",
+    "pregunta": "¿Qué recurso estilístico predomina en el fragmento y qué actitud revela el autor frente a la labor docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Uso de metáforas valorativas ('filigrana intelectual', 'capataz de la memoria') para enaltecer la complejidad profesional de la enseñanza frente a la concepción mecanicista."
+      },
+      {
+        "id": "B",
+        "texto": "Empleo de datos estadísticos fríos para demostrar el rendimiento docente en pruebas estandarizadas."
+      },
+      {
+        "id": "C",
+        "texto": "Tono irónico y despectivo hacia la formación académica de los profesores del sector público."
+      },
+      {
+        "id": "D",
+        "texto": "Estructura narrativa ficticia orientada a entretener al lector sin contenido pedagógico real."
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "El autor recurre a metáforas contrastantes ('filigrana intelectual' vs 'capataz de la memoria') para dignificar la labor docente como un ejercicio profesional reflexivo, crítico y creativo."
+  },
+  {
+    "id": "LEC_006",
+    "categoria_id": "lectura_critica",
+    "area": "Lectura Crítica (Núcleo Común)",
+    "tema": "Sintesis y Relación entre Párrafos",
+    "norma_referencia": "Ley 1620 de 2013 / Sistema de Convivencia Escolar",
+    "contexto": "Párrafo 1: El matoneo o acoso escolar no es un juego de niños ni una etapa inevitable de la socialización. Sus secuelas psicológicas en las víctimas incluyen depresión, deserción y en casos extremos, autolesiones.\nPárrafo 2: Por ello, la Ley 1620 de 2013 creó los Comités Escolares de Convivencia, transformando el abordaje punitivo tradicional en una ruta de atención integral que enfatiza la prevención, la mediación y la justicia restaurativa.",
+    "pregunta": "¿Cuál es la relación lógica fundamental que vincula al Párrafo 2 con el Párrafo 1?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El Párrafo 2 presenta una contradicción teórica irreconciliable con lo expuesto en el Párrafo 1."
+      },
+      {
+        "id": "B",
+        "texto": "El Párrafo 2 ofrece una solución institucional y marco normativo de respuesta a la problemática diagnosticada en el Párrafo 1."
+      },
+      {
+        "id": "C",
+        "texto": "El Párrafo 2 repite exactamente los mismos conceptos del Párrafo 1 utilizando sinónimos."
+      },
+      {
+        "id": "D",
+        "texto": "El Párrafo 1 es una consecuencia directa del modelo expuesto en el Párrafo 2."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El Párrafo 1 expone la gravedad del problema (gravedad y secuelas del acoso), mientras que el Párrafo 2 introduce la respuesta institucional y normativa (Ley 1620) creada para enfrentar dicha problemática."
+  },
+  {
+    "id": "LEC_007",
+    "categoria_id": "lectura_critica",
+    "area": "Lectura Crítica (Núcleo Común)",
+    "tema": "Interpretación de Textos Discontinuos (Diagramas y Rutas)",
+    "norma_referencia": "Guía Pedagógica No. 49 del MEN / Ruta de Atención Integral",
+    "contexto": "Un diagrama de la Ruta de Atención Integral para la Convivencia Escolar muestra cuatro componentes encadenados: 1. Promoción (Clima escolar y derechos) -> 2. Prevención (Identificación de riesgos) -> 3. Atención (Protocolos según Situación Tipo I, II o III) -> 4. Seguimiento (Evaluación de compromisos y restauración de derechos).",
+    "pregunta": "De acuerdo con la secuencia del diagrama, si una institución educativa solo actúa cuando se presenta una agresión física (Situación Tipo II), ¿qué componente previo de la Ruta está omitiendo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El componente de Seguimiento a las sanciones disciplinarias impartidas por la rectoría."
+      },
+      {
+        "id": "B",
+        "texto": "Los componentes sistemáticos de Promoción pedagógica del clima escolar y Prevención temprana de riesgos."
+      },
+      {
+        "id": "C",
+        "texto": "La denuncia penal inmediata ante la Fiscalía General de la Nación."
+      },
+      {
+        "id": "D",
+        "texto": "El componente de evaluación cuantitativa del rendimiento académico."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "Actuar únicamente ante la agresión consolida un enfoque reactivo (Atención), omitiendo la gestión previa y continua de los componentes de Promoción de competencias ciudadanas y Prevención de riesgos."
+  },
+  {
+    "id": "LEC_008",
+    "categoria_id": "lectura_critica",
+    "area": "Lectura Crítica (Núcleo Común)",
+    "tema": "Identificación de Posturas y Sesgos en Textos Educativos",
+    "norma_referencia": "Decreto 1290 de 2009 / Autonomía de Evaluación",
+    "contexto": "Exigir que todos los colegios de un país reprueben exactamente al 10% de sus estudiantes cada año para garantizar el 'rigor académico' es un contrasentido pedagógico. Implica asumir erróneamente que el aprendizaje se distribuye como una curva normal perfecta sin importar la calidad de la enseñanza o las condiciones socioeconómicas del entorno.",
+    "pregunta": "¿Cuál es la postura del autor respecto a las cuotas fijas de reprobación escolar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Apoya las cuotas fijas porque estimulan la competencia sana entre los estudiantes."
+      },
+      {
+        "id": "B",
+        "texto": "Las rechaza categóricamente por considerarlas un dogma estadístico ajeno a la realidad pedagógica y a la calidad de la enseñanza."
+      },
+      {
+        "id": "C",
+        "texto": "Propone elevar la cuota de reprobación al 20% en zonas urbanas."
+      },
+      {
+        "id": "D",
+        "texto": "Considera que las cuotas de reprobación son la única garantía del estándar de calidad nacional."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El autor califica las cuotas fijas de reprobación como un 'contrasentido pedagógico' y un supuesto erróneo, rechazando la idea de imponer porcentajes obligatorios de reprobados."
+  },
+  {
+    "id": "LEC_009",
+    "categoria_id": "lectura_critica",
+    "area": "Lectura Crítica (Núcleo Común)",
+    "tema": "Evaluación de la Coherencia Global y Contradicciones",
+    "norma_referencia": "Ley 1098 de 2006 (Código de la Infancia) / Interés Superior del Niño",
+    "contexto": "Texto: 'El principio del Interés Superior del Niño obliga a que todas las decisiones de los docentes y directivos primen sobre los derechos de la familia y de la sociedad. Sin embargo, este principio no puede invocarse para vulnerar el debido proceso o aplicar expulsiones automáticas sin escuchar previamente al menor'.",
+    "pregunta": "¿Qué inconsistencia o imprecisión conceptual presenta la primera oración del texto respecto al marco legal de la infancia?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Afirmar que el Interés Superior del Niño significa que las decisiones de los adultos priman, cuando en realidad exige que los derechos e intereses fundamentales de los niños primen sobre los de los adultos e instituciones."
+      },
+      {
+        "id": "B",
+        "texto": "Sostener que el debido proceso solo aplica para adultos en procesos penales."
+      },
+      {
+        "id": "C",
+        "texto": "Insinuar que las expulsiones automáticas están permitidas por la Constitución."
+      },
+      {
+        "id": "D",
+        "texto": "Decir que la familia no tiene responsabilidades en la formación del menor."
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "El principio constitucional del Interés Superior del Niño (Ley 1098, Art. 8) establece que los derechos de los niños prevalecen sobre los derechos de los demás (adultos e instituciones), y no que las decisiones directivas primen sobre la niñez."
+  },
+  {
+    "id": "LEC_010",
+    "categoria_id": "lectura_critica",
+    "area": "Lectura Crítica (Núcleo Común)",
+    "tema": "Inferencia de Conclusiones No Declaradas",
+    "norma_referencia": "Decreto 1421 de 2017 / Inclusión Educativa",
+    "contexto": "Un estudio sobre inclusión educativa reveló que en las escuelas donde los docentes recibieron capacitación intensiva en DUA pero no contaron con tiempos institucionales para la planeación colaborativa ni con recursos adaptados, la tasa de implementación efectiva del PIAR no superó el 15%.",
+    "pregunta": "¿Qué conclusión lógica se deriva directamente de los hallazgos del estudio?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que la capacitación teórica de los docentes es totalmente inútil y debe eliminarse."
+      },
+      {
+        "id": "B",
+        "texto": "Que la formación docente es condición necesaria pero insuficiente si no se acompaña de condiciones organizacionales (tiempo de planeación y recursos)."
+      },
+      {
+        "id": "C",
+        "texto": "Que los estudiantes con discapacidad no deben matricularse en el aula regular."
+      },
+      {
+        "id": "D",
+        "texto": "Que el PIAR debe ser elaborado exclusivamente por los padres de familia."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El estudio demuestra que la capacitación sola no logra la implementación si faltan las condiciones operativas e institucionales indispensables (tiempos de planeación y recursos)."
+  },
+  {
+    "id": "LEC_011",
+    "categoria_id": "lectura_critica",
+    "area": "Lectura Crítica (Núcleo Común)",
+    "tema": "Comprensión de Términos en Contexto Pedagógico",
+    "norma_referencia": "Documento No. 11 del MEN / Evaluación Formativa",
+    "contexto": "La retroalimentación en la evaluación formativa no debe ser un veredicto sentencioso al final de la carrera, sino una brújula de navegación que orienta al navegante en medio de la travesía.",
+    "pregunta": "En el contexto de la oración, la expresión 'veredicto sentencioso' se refiere peyorativamente a:",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Una calificación sumativa e inapelable que juzga el resultado final sin ofrecer caminos de mejora."
+      },
+      {
+        "id": "B",
+        "texto": "Un diálogo constructivo entre el docente y el estudiante."
+      },
+      {
+        "id": "C",
+        "texto": "Un informe cualitativo detallado sobre los avances en el desarrollo de competencias."
+      },
+      {
+        "id": "D",
+        "texto": "Una autoevaluación guiada mediante rúbricas analíticas."
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "'Veredicto sentencioso' simboliza la evaluación sumativa tradicional que se limita a juzgar o sancionar un resultado estático al final del proceso sin brindar orientación formativa."
+  },
+  {
+    "id": "LEC_012",
+    "categoria_id": "lectura_critica",
+    "area": "Lectura Crítica (Núcleo Común)",
+    "tema": "Distinción entre Hechos, Inferencias y Valoraciones",
+    "norma_referencia": "Estatuto Profesional Docente / Ley 115",
+    "contexto": "En la prueba de ingreso a la carrera docente se inscribieron 250.000 aspirantes para 35.000 plazas en todo el país. Algunos analistas consideran que este elevado número demuestra el gran atractivo de la profesión, mientras que otros argumentan que evidencia la escasez de empleo profesional en otras áreas de la economía.",
+    "pregunta": "¿Cuál de las siguientes afirmaciones corresponde a un HECHO OBJETIVO expresado en el texto?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La profesión docente en Colombia es la más atractiva del mercado laboral."
+      },
+      {
+        "id": "B",
+        "texto": "La economía colombiana sufre una grave crisis de empleo profesional."
+      },
+      {
+        "id": "C",
+        "texto": "Se inscribieron 250.000 aspirantes para disputar 35.000 plazas docentes en la convocatoria."
+      },
+      {
+        "id": "D",
+        "texto": "El concurso docente garantiza la meritocracia absoluta en la selección del personal."
+      }
+    ],
+    "respuesta_correcta": "C",
+    "justificacion": "La cifra de 250.000 inscritos para 35.000 plazas constituye un dato empírico o hecho verificado, a diferencia de las opiniones e interpretaciones expresadas por los analistas."
+  },
+  {
+    "id": "LEC_013",
+    "categoria_id": "lectura_critica",
+    "area": "Lectura Crítica (Núcleo Común)",
+    "tema": "Identificación de la Estructura Argumentativa",
+    "norma_referencia": "Ley 1732 de 2014 / Cátedra de la Paz",
+    "contexto": "La Cátedra de la Paz no debe enseñarse como una asignatura teórica aislada con exámenes memorísticos sobre fechas de tratados. Para que cumpla su cometido constitucional, debe ser una vivencia cotidiana transversal que atraviese las prácticas de aula, la resolución pacífica de conflictos y la democracia escolar.",
+    "pregunta": "¿Cuál es la premisa mayor o tesis central defendida en el fragmento?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La Cátedra de la Paz debe implementarse como una práctica transversal y cotidiana y no como una materia teórica memorística."
+      },
+      {
+        "id": "B",
+        "texto": "Los tratados de paz en Colombia carecen de valor histórico."
+      },
+      {
+        "id": "C",
+        "texto": "Las asignaturas teóricas deben eliminarse del plan de estudios escolar."
+      },
+      {
+        "id": "D",
+        "texto": "Los exámenes escritos son el único medio para evaluar la convivencia."
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "La tesis central sostiene explícitamente la necesidad de asumir la Cátedra de la Paz como una vivencia cotidiana y transversal, rechazando su reducción a una asignatura memorística."
+  },
+  {
+    "id": "LEC_014",
+    "categoria_id": "lectura_critica",
+    "area": "Lectura Crítica (Núcleo Común)",
+    "tema": "Análisis de Contradicciones y Consecuencias Prácticas",
+    "norma_referencia": "Decreto 1290 de 2009 / Promoción Escolar",
+    "contexto": "Un colegio aprueba en su SIEE que los estudiantes con tres o más áreas no aprobadas al finalizar el año escolar deben repetir el grado de manera automática. Sin embargo, en el mismo documento establece que 'la institución garantizará estrategias de apoyo pedagógico y nivelación continua durante todo el año para evitar la reprobación'.",
+    "pregunta": "Frente a un estudiante repetidor que no recibió actividades de nivelación durante el año, ¿qué contradicción institucional se evidencia?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "No existe contradicción, pues la reprobación cancela las obligaciones previas de la institución."
+      },
+      {
+        "id": "B",
+        "texto": "Incoherencia entre la norma punitiva de reprobación y el incumplimiento del compromiso institucional de nivelación preventiva y continua."
+      },
+      {
+        "id": "C",
+        "texto": "El SIEE es ilegal porque ningún estudiante puede reprobar bajo el Decreto 1290."
+      },
+      {
+        "id": "D",
+        "texto": "El docente de área es el único responsable por no haber modificado la nota antes de la comisión."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "Existe una evidente inconsistencia entre aplicar una norma sancionatoria de reprobación y el incumplimiento previo por parte de la institución de su propio mandato de brindar apoyo y nivelación continua durante el año escolar."
+  },
+  {
+    "id": "LEC_015",
+    "categoria_id": "lectura_critica",
+    "area": "Lectura Crítica (Núcleo Común)",
+    "tema": "Síntesis de Posturas Contrapuestas",
+    "norma_referencia": "Ley 115 de 1994 / Modelos Pedagógicos",
+    "contexto": "Mientras que los defensores de la instrucción directa argumentan que la estructuración docente clara y el modelado guiado son indispensables para consolidar saberes básicos en aulas de alta diversidad, los promotores del constructivismo sostienen que el aprendizaje genuino solo ocurre cuando el estudiante descubre autónomamente el conocimiento a través de la indagación y el error.",
+    "pregunta": "¿Qué síntesis integra de forma más equilibrada ambas posturas en la práctica de aula?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Sustituir por completo las explicaciones docentes por talleres de trabajo autónomo no guiado."
+      },
+      {
+        "id": "B",
+        "texto": "Eliminar la indagación estudiantil y retomar las clases magistrales expositivas tradicionales."
+      },
+      {
+        "id": "C",
+        "texto": "Combinar el andamiaje instructivo estructurado en las fases iniciales del aprendizaje con momentos progresivos de indagación y exploración autónoma del estudiante."
+      },
+      {
+        "id": "D",
+        "texto": "Alternar ambas metodologías según el género de los estudiantes."
+      }
+    ],
+    "respuesta_correcta": "C",
+    "justificacion": "La síntesis pedagógica integra la instrucción estructurada como andamiaje inicial y promueve gradualmente la autonomía, indagación y descubrimiento a medida que se consolida la competencia."
+  }
+]

@@ -1,26 +1,72 @@
 @import "tailwindcss";
 
+/*
+ * Tema de la app. Tailwind v4 se configura aquí (no en tailwind.config.js).
+ * Paleta y tipografías tomadas de data/app_config.json → ui_theme.
+ * Uso: bg-primary, text-primary-dark, bg-secondary-light, text-accent, ring-danger, font-heading…
+ */
 @theme {
+  /* Azul Institucional */
+  --color-primary-light: #2563eb;
+  --color-primary: #1e40af;
+  --color-primary-dark: #1e3a8a;
+  /* Verde Éxito / Acierto */
+  --color-secondary-light: #10b981;
+  --color-secondary: #059669;
+  --color-secondary-dark: #047857;
+  /* Ámbar Premium / Insignias */
+  --color-accent-light: #f59e0b;
+  --color-accent: #d97706;
+  --color-accent-dark: #b45309;
+  /* Rojo Error / Alerta */
+  --color-danger-light: #ef4444;
+  --color-danger: #dc2626;
+  --color-danger-dark: #b91c1c;
+  /* Superficies y texto: cambian solas en modo oscuro (ver :root abajo) */
+  --color-fondo: var(--fondo);
+  --color-tarjeta: var(--tarjeta);
+  --color-texto: var(--texto);
+  --color-texto-secundario: #475569;
+  --color-texto-tenue: #94a3b8;
+
+  /* Alias usados por las pantallas existentes, apuntando a la paleta del config */
   --color-marca-50: #eef4ff;
   --color-marca-100: #dbe6ff;
-  --color-marca-500: #1d4ed8;
-  --color-marca-600: #1e40af;
-  --color-marca-700: #1e3a8a;
+  --color-marca-500: var(--color-primary-light);
+  --color-marca-600: var(--color-primary);
+  --color-marca-700: var(--color-primary-dark);
+  --color-exito: var(--color-secondary);
+  --color-error: var(--color-danger);
+  /* Amarillo de la bandera: íconos, confeti e imagen Open Graph */
   --color-oro: #fcd116;
-  --color-exito: #16a34a;
-  --color-error: #dc2626;
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  --font-sans: var(--font-inter), Inter, system-ui, sans-serif;
+  --font-heading: var(--font-jakarta), "Plus Jakarta Sans", sans-serif;
+
+  /* Breakpoints del config: móvil desde 320px, tablet 768px, escritorio 1024px */
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
 }
 
 :root {
   --fondo: #f8fafc;
+  --tarjeta: #ffffff;
   --texto: #0f172a;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --fondo: #0b1120;
+    --fondo: #0f172a;
+    --tarjeta: #1e293b;
     --texto: #e2e8f0;
+  }
+}
+
+@layer base {
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-heading);
   }
 }
 

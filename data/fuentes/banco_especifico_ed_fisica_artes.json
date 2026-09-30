@@ -1,0 +1,282 @@
+[
+  {
+    "id": "EFI_ART_001",
+    "area": "Competencias Específicas - Educación Física, Recreación, Deporte y Educación Artística",
+    "tema": "Desarrollo de la Competencia Motriz y Enfoque Inclusivo de Corporeidad",
+    "norma_referencia": "Orientaciones Pedagógicas para la Educación Física, Recreación y Deporte (Documento No. 15 MEN) / Ley 115 de 1994",
+    "contexto": "Un docente de Educación Física de grado 6° inicia el periodo académico evaluando el desempeño de sus estudiantes. Observa que varios alumnos presentan dificultades en la coordinación dinámica general y en la agilidad motriz. Para abordar la situación, el docente considera dos caminos: organizar la clase en función de competencias atléticas de alto rendimiento eliminando a los menos aptos, o implementar unidades didácticas basadas en el desarrollo de la corporeidad, la exploración motriz variada y el trabajo cooperativo.",
+    "pregunta": "¿Cuál es la orientación pedagógica y curricular más adecuada que debe asumir el docente según los lineamientos del Ministerio de Educación Nacional?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Implementar un entrenamiento físico centrado en la selección atlética exclusiva y el rendimiento competitivo, separando a los estudiantes con menor desarrollo motriz para que realicen ejercicios mecánicos repetitivos fuera de la cancha."
+      },
+      {
+        "id": "B",
+        "texto": "Diseñar e implementar secuencias didácticas centradas en la competencia motriz, la expresión corporal y el juego cooperativo, garantizando la participación de todos los estudiantes según sus ritmos de desarrollo y promoviendo el disfrute y el autocuidado."
+      },
+      {
+        "id": "C",
+        "texto": "Sustituir las prácticas corporales presenciales por lecturas teóricas individuales sobre historia del deporte para evitar el riesgo de lesiones entre los estudiantes."
+      },
+      {
+        "id": "D",
+        "texto": "Eximir del área de Educación Física a los estudiantes que no alcancen las marcas mínimas biométricas estandarizadas en las pruebas iniciales."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "De acuerdo con el Documento No. 15 del MEN (Orientaciones Pedagógicas para la Educación Física, Recreación y Deporte), la disciplina en la escuela no busca el rendimiento deportivo de élite ni la selección de deportistas, sino la formación integral del ser humano a través del desarrollo de la competencia motriz, la axiológica corporal y la expresión. Se debe priorizar la inclusión, el juego cooperativo y la vivencia placentera del movimiento."
+  },
+  {
+    "id": "EFI_ART_002",
+    "area": "Competencias Específicas - Educación Física, Recreación, Deporte y Educación Artística",
+    "tema": "Desarrollo de la Sensibilidad Estética y Pensamiento Artístico",
+    "norma_referencia": "Orientaciones Pedagógicas para la Educación Artística y Cultural (Documento No. 16 MEN) / Ley 115 de 1994",
+    "contexto": "En la clase de Educación Artística de grado 8°, la docente plantea un proyecto de expresión plástica. Tradicionalmente, en la institución se exigía a los estudiantes colorear o calcar exactamente una plantilla previa proporcionada por el colegio, asignando la nota máxima a quien lograra la copia más idéntica al modelo original. La nueva docente propone transformar esta práctica.",
+    "pregunta": "Desde los fundamentos de las Orientaciones Pedagógicas para la Educación Artística (Documento No. 16 MEN), ¿cuál es la estrategia didáctica que promueve verdaderamente el pensamiento artístico y la sensibilidad?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Mantener el uso exclusivo de plantillas impresas para colorear, asegurando que la disciplina y la precisión manual sean los únicos criterios de evaluación."
+      },
+      {
+        "id": "B",
+        "texto": "Propiciar espacios de creación exploración e investigación donde los estudiantes elijan lenguajes artísticos (plástica, música, teatro, danza), experimenten con diversos materiales y expresen comprensiones simbólicas de su realidad cultural."
+      },
+      {
+        "id": "C",
+        "texto": "Eliminar la producción práctica artística y limitar la clase al dictado de biografías históricas de pintores renacentistas."
+      },
+      {
+        "id": "D",
+        "texto": "Evaluar la producción artística contratando a un jurado externo que califique las obras mediante criterios de belleza comercial del mercado del arte."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El Documento No. 16 del MEN establece que la Educación Artística orienta el desarrollo de competencias clave: la sensibilidad, la apreciación estética y la comunicación creadora. Reducir el arte a la copia estandarizada de plantillas anula la dimensión simbólica y creadora del estudiante. El aula de artes debe ser un taller de indagación, vivencia estética y transformación simbólica del entorno."
+  },
+  {
+    "id": "EFI_ART_003",
+    "area": "Competencias Específicas - Educación Física, Recreación, Deporte y Educación Artística",
+    "tema": "Juego Limpio, Convivencia Escolar y Manejo de Conflictos Deportivos",
+    "norma_referencia": "Ley 1620 de 2013 / Decreto 1965 de 2013 / Guía Pedagógica No. 49",
+    "contexto": "Durante el torneo interclases de fútbol en una jornada deportiva escolar, dos estudiantes de grado 9° entran en un fuerte altercado verbal y empujones esporádicos tras una falta cometida en la cancha. El partido se interrumpe y los demás compañeros se dividen gritando ofensas. El docente de Educación Física, que actúa como réferi y mediador, interviene de inmediato.",
+    "pregunta": "De acuerdo con los protocolos para Situaciones Tipo I de la Ley 1620 de 2013 y el principio de 'Juego Limpio' pedagógico, ¿cuál es la actuación inmediata del docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Expulsar definitivamente a ambos estudiantes del colegio y solicitar la intervención inmediata de la Policía Nacional dentro del campo de juego."
+      },
+      {
+        "id": "B",
+        "texto": "Detener el juego, brindar un espacio de autorregulación emocional, facilitar la mediación pedagógica entre las partes para que expongan sus puntos de vista, acuerden compromisos de respeto restaurativo y reanudar la actividad bajo acuerdos de convivencia."
+      },
+      {
+        "id": "C",
+        "texto": "Permitir que los estudiantes continúen agrediéndose físicamente dentro del juego para que 'resuelvan sus diferencias como deportistas' sin interferencia docente."
+      },
+      {
+        "id": "D",
+        "texto": "Anular los puntos de todo el grupo y asignar una nota reprobatoria de cero en la asignatura de Educación Física a todos los asistentes al torneo."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "Las situaciones de conflicto esporádico sin daño físico grave corresponden a Situaciones Tipo I (Decreto 1965 de 2013, art. 42). El docente de Educación Física debe utilizar el deporte como escenario formativo para enseñar autorregulación, resolución pacífica de conflictos, empatía y fair play (juego limpio), aplicando una mediación inmediata que responsabilice a las partes y restaure la convivencia."
+  },
+  {
+    "id": "EFI_ART_004",
+    "area": "Competencias Específicas - Educación Física, Recreación, Deporte y Educación Artística",
+    "tema": "Inclusión y DUA en Educación Física para Estudiantes con Discapacidad Motora",
+    "norma_referencia": "Decreto 1421 de 2017 / Guía de Implementación DUA y PIAR",
+    "contexto": "Un estudiante de grado 7° con movilidad reducida (usuario de silla de ruedas) se integra a las clases presenciales de Educación Física. El docente de la asignatura considera que, debido a su condición física, el estudiante debe permanecer en la tribuna tomando apuntes teóricos en un cuaderno durante todo el año para evitar cualquier riesgo o esfuerzo.",
+    "pregunta": "¿Cuál es la actuación pedagógica y normativa correcta que debe asumir el docente de Educación Física según el Decreto 1421 de 2017?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Mantener al estudiante como espectador pasivo en la tribuna para proteger la responsabilidad civil de la institución educativa ante posibles accidentes."
+      },
+      {
+        "id": "B",
+        "texto": "Diseñar e implementar ajustes razonables dentro del PIAR y diversificar la clase bajo el enfoque DUA, adaptando las reglas del juego, los elementos materiales (balones, terrenos) y las funciones del grupo para asegurar su participación activa y goce motor."
+      },
+      {
+        "id": "C",
+        "texto": "Eximir al estudiante del plan de estudios de Educación Física y sugerir a la familia que lo matricule en una escuela deportiva exclusiva para personas con discapacidad."
+      },
+      {
+        "id": "D",
+        "texto": "Obligar al estudiante a realizar exactamente los mismos ejercicios de salto atlético sin ninguna modificación ni apoyo adaptativo."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El Decreto 1421 de 2017 prohíbe la segregación y la pasividad obligada de los estudiantes con discapacidad en las clases regulares. El docente de Educación Física debe aplicar el DUA en su planeación general e incorporar ajustes razonables en el PIAR (deportes adaptados, juegos inclusivos, modificación de implementos y espacios) para garantizar el derecho a la práctica corporal, el desarrollo motor y la interacción de pares."
+  },
+  {
+    "id": "EFI_ART_005",
+    "area": "Competencias Específicas - Educación Física, Recreación, Deporte y Educación Artística",
+    "tema": "Inclusión y DUA en Educación Artística para Estudiantes con Discapacidad Sensorial",
+    "norma_referencia": "Decreto 1421 de 2017 / Documento No. 16 MEN",
+    "contexto": "En el área de Educación Artística de grado 5°, se matricula un estudiante con discapacidad auditiva (sordera profunda). La docente está planeando una unidad didáctica sobre ritmo, expresión corporal y danza folclórica colombiana, y se pregunta cómo integrar al estudiante sin excluirlo del montaje del grupo.",
+    "pregunta": "Desde el enfoque del Diseño Universal para el Aprendizaje (DUA) y la educación inclusiva, ¿cuál es la estrategia pedagógica más apropiada?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Excluir al estudiante del montaje dancístico e indicarle que limpie los pinceles en el taller mientras sus compañeros ensayan la coreografía."
+      },
+      {
+        "id": "B",
+        "texto": "Utilizar recursos multisensoriales como la percepción de vibraciones sonoras a través del piso o globos, el seguimiento de señales visuales y la modelación gestual en Lengua de Señas Colombiana (LSC), integrando al estudiante activamente en la danza."
+      },
+      {
+        "id": "C",
+        "texto": "Solicitar a la rectoría que transfiera al estudiante a una institución especial exclusiva para personas sordas."
+      },
+      {
+        "id": "D",
+        "texto": "Exigir al estudiante que apruebe un examen auditivo teórico tradicional sobre historia de la música colombiana."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "En el marco del Decreto 1421 de 2017 y las Orientaciones de Ed. Artística (Doc. 16 MEN), la música y la danza no se restringen a la vía auditiva estándar. El uso de la vía propioceptiva, la percepción de vibraciones por impacto táctil y la codificación visual permiten una experiencia artística plena e incluyente para estudiantes sordos dentro del aula común."
+  },
+  {
+    "id": "EFI_ART_006",
+    "area": "Competencias Específicas - Educación Física, Recreación, Deporte y Educación Artística",
+    "tema": "Evaluación Formativa y Procesal en la Expresión Corporal y Artística",
+    "norma_referencia": "Decreto 1290 de 2009 / Documento No. 11 MEN / Documentos No. 15 y 16 MEN",
+    "contexto": "Un docente de Educación Artística asigna la nota definitiva del periodo basándose de manera exclusiva en un único dibujo final. Un estudiante que mostró un proceso constante de avance, puntualidad, exploración con diversos materiales e investigación conceptual obtiene una nota reprobatoria porque el dibujo 'no cumple con los estándares subjetivos de belleza del docente'. El estudiante solicita una revisión.",
+    "pregunta": "De acuerdo con las directrices de la evaluación formativa (Decreto 1290 de 2009 y Documento No. 11 MEN), ¿cuál es la inconsistencia del docente y la orientación correcta?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La práctica del docente es acertada, pues la evaluación en arte debe fundamentarse en el gusto estético personal e inapelable del educador."
+      },
+      {
+        "id": "B",
+        "texto": "La evaluación debe ser procesal, formativa e integral, valorando la indagación, la bitácora de bocetos, el uso responsable de técnicas, la autoevaluación y la evolución individual del estudiante mediante criterios cualitativos transparentes en el SIEE."
+      },
+      {
+        "id": "C",
+        "texto": "El docente debe otorgar automáticamente la nota máxima de 5.0 a todos los estudiantes de la clase para evitar reclamaciones administrativas."
+      },
+      {
+        "id": "D",
+        "texto": "Se debe suspender la materia de Educación Artística del plan de estudios por ser una asignatura no evaluable."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El Decreto 1290 de 2009 y el Documento No. 11 del MEN sostienen que la evaluación no puede ser punitiva ni depender del juicio estético subjetivo del docente. En artes y educación física, la evaluación formativa pondera el proceso, la actitud investigativa, la bitácora de creación, la autorregulación y el progreso individual del educando a partir de criterios claros concertados en el SIEE."
+  },
+  {
+    "id": "EFI_ART_007",
+    "area": "Competencias Específicas - Educación Física, Recreación, Deporte y Educación Artística",
+    "tema": "Proyectos Artísticos Transversales y Diversidad Cultural",
+    "norma_referencia": "Ley 115 de 1994 (Artículo 14) / Decreto 1122 de 1998 / Cátedra de Estudios Afrocolombianos",
+    "contexto": "El área de Educación Artística y Expresión Corporal proyecta realizar el montaje de la muestra cultural institucional. Un grupo de docentes propone limitar la presentación a danzas e iconografías europeas clásicas, excluyendo las manifestaciones folclóricas afrocolombianas e indígenas por considerarlas 'poco académicas'.",
+    "pregunta": "Desde el marco de la Ley 115 de 1994 y la Cátedra de Estudios Afrocolombianos (Decreto 1122 de 1998), ¿cuál es la fundamentación pedagógica que debe reorientar el montaje institucional?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Aprobar la exclusión de las manifestaciones locales para mantener un estándar estético homogeneizante en la muestra pública."
+      },
+      {
+        "id": "B",
+        "texto": "Integrar y visibilizar la riqueza de las tradiciones folclóricas afrocolombianas, indígenas y mestizas, reconociendo el arte como un vehículo para la construcción de identidad, la memoria histórica y la valoración de la pluriethnicidad nacional."
+      },
+      {
+        "id": "C",
+        "texto": "Sustituir las muestras artísticas presenciales por conferencias teóricas magistrales dictadas por ponentes internacionales."
+      },
+      {
+        "id": "D",
+        "texto": "Prohibir la presentación de cualquier tipo de danza o música en el establecimiento educativo."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La Ley 115 de 1994 y el Decreto 1122 de 1998 mandatan la integración de la Cátedra de Estudios Afrocolombianos y la valoración de la diversidad cultural en el currículo escolar. Las artes y la expresión corporal son la plataforma idónea para vivenciar, rescatar y dignificar la memoria colectiva, los ritmos y las identidades pluriétnicas de la nación."
+  },
+  {
+    "id": "EFI_ART_008",
+    "area": "Competencias Específicas - Educación Física, Recreación, Deporte y Educación Artística",
+    "tema": "Hábitos de Vida Saludable, Autocuidado y Prevención de Lesiones",
+    "norma_referencia": "Documento No. 15 MEN / Ley 115 de 1994 (Fines de la Educación)",
+    "contexto": "Durante una jornada de alta temperatura ambiental, un docente de Educación Física exige a sus estudiantes de grado 10° realizar una prueba de resistencia aeróbica extrema de 45 minutos continuos sin permitir descansos ni hidratación, argumentando que 'la disciplina deportiva exige superar el dolor corporal a toda costa'. Dos estudiantes presentan síntomas de deshidratación y mareo.",
+    "pregunta": "Frente a las normas de seguridad y los fines de la Educación Física escolar (Documento No. 15 MEN), ¿cuál es el error técnico de la práctica del docente y la actuación adecuada?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La práctica es correcta porque el dolor físico es el único indicador de un entrenamiento deportivo eficiente."
+      },
+      {
+        "id": "B",
+        "texto": "El docente vulnera los principios de salud y autocuidado; la clase de Educación Física debe priorizar la seguridad, la hidratación adecuada, la dosificación del esfuerzo según las condiciones fisiológicas y ambientales, y la enseñanza de hábitos saludables."
+      },
+      {
+        "id": "C",
+        "texto": "Se debe sancionar a los dos estudiantes con mareos asignándoles una calificación de cero por 'falta de preparación física'."
+      },
+      {
+        "id": "D",
+        "texto": "El docente debe continuar la prueba incrementando el tiempo de exigencia para el resto del grupo."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El Documento No. 15 del MEN enfatiza que la Educación Física escolar se orienta hacia la salud, el autocuidado, la seguridad y el conocimiento del propio cuerpo. Someter a los estudiantes a sobreexigencia fisiológica sin pautas de hidratación y prevención del riesgo contraviene los fines de la educación y constituye una práctica pedagógica inadecuada e irresponsable."
+  },
+  {
+    "id": "EFI_ART_009",
+    "area": "Competencias Específicas - Educación Física, Recreación, Deporte y Educación Artística",
+    "tema": "Uso de TICs en la Creación Artística y Análisis del Movimiento",
+    "norma_referencia": "Documento No. 16 MEN / Estándares de Competencias Tecnológicas",
+    "contexto": "Una docente de Educación Artística de Educación Media proyecta incorporar herramientas digitales en la unidad de lenguaje audiovisual. Plantea que los estudiantes utilicen sus dispositivos móviles o las tabletas de la institución para crear secuencias de animación paso a paso (stop-motion) o cortometrajes sobre problemáticas de convivencia escolar.",
+    "pregunta": "Desde el enfoque de la innovación pedagógica en el área de Educación Artística, ¿cuál es el principal valor de esta estrategia?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Reemplazar al docente de aula por programas automatizados que califiquen los videos sin intervención humana."
+      },
+      {
+        "id": "B",
+        "texto": "Potenciar el pensamiento artístico multimodal, la alfabetización audiovisual, el trabajo colaborativo y la comunicación estética de reflexiones éticas y sociales mediante el uso creativo de las TICs."
+      },
+      {
+        "id": "C",
+        "texto": "Limitar el uso de las computadoras a la copia de texto plano desde enciclopedias virtuales hacia procesadores de palabras."
+      },
+      {
+        "id": "D",
+        "texto": "Fomentar el consumo pasivo de redes sociales durante las horas lectivas sin ningún propósito pedagógico."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "Las Orientaciones Pedagógicas para la Ed. Artística (Doc. 16 MEN) promueven la convergencia entre arte y tecnología. El uso del lenguaje audiovisual y la animación digital permite a los jóvenes convertirse en prosumidores creativos, desarrollando competencias comunicativas, estéticas y ciudadanas a través de medios contemporáneos."
+  },
+  {
+    "id": "EFI_ART_010",
+    "area": "Competencias Específicas - Educación Física, Recreación, Deporte y Educación Artística",
+    "tema": "Gestión del Riesgo y Primeros Auxilios Pedagógicos en Actividades Prácticas",
+    "norma_referencia": "Manual de Funciones del MEN / Protocolos de Gestión del Riesgo e Higiene Escolar",
+    "contexto": "Durante una práctica de gimnasia en el patio escolar, un estudiante de grado 8° sufre una caída sobre la colchoneta y manifiesta un dolor agudo en el tobillo con imposibilidad para apoyar el pie. La clase se detiene y los compañeros se aglomeran preocupados.",
+    "pregunta": "¿Cuál es la secuencia de atención inmediata y protocolo institucional que debe activar el docente de Educación Física?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Obligar al estudiante a ponerse de pie e intentar correr para 'calentar la zona lastimada' antes de llamar a la familia."
+      },
+      {
+        "id": "B",
+        "texto": "Suspender la actividad física en la zona del incidente, mantener la calma del grupo, inmovilizar preventivamente la extremidad afectada sin realizar maniobras bruscas, trasladar al estudiante al área de enfermería/primeros auxilios, informar de inmediato a la directiva y acudientes, y activar la póliza o servicio de atención médica escolar."
+      },
+      {
+        "id": "C",
+        "texto": "Dejar al estudiante solo en la cancha hasta que finalice la jornada lectiva e irse a dictar clase a otro salón."
+      },
+      {
+        "id": "D",
+        "texto": "Dar por terminada la clase de forma definitiva sin registrar el hecho en el observador ni notificar a los acudientes."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El Manual de Funciones del MEN y los protocolos de gestión de riesgo escolar exigen al docente actuar con diligencia, prudencia y responsabilidad. Ante un incidente físico, se debe priorizar la protección del estudiante, la inmovilización segura, la notificación inmediata a directivos y acudientes, y la activación de los servicios médicos previstos por la institución educativa."
+  }
+]

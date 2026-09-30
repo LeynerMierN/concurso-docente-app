@@ -1,0 +1,282 @@
+[
+  {
+    "id": "DIR_DIR_001",
+    "area": "Competencias Específicas - Directivos Docentes (Gestión Directiva)",
+    "tema": "Liderazgo Institucional y Direccionamiento Estratégico del PEI",
+    "norma_referencia": "Ley 115 de 1994 (Arts. 73 y 142) / Decreto 1860 de 1994 / Manual de Funciones MEN",
+    "contexto": "Al asumir la rectoría de una institución educativa oficial que presenta un estancamiento en sus indicadores de desempeño académico y altas tasas de deserción, el nuevo Rector identifica que el Proyecto Educativo Institucional (PEI) no se actualiza desde hace ocho años y fue redactado de manera unilateral por un comité cerrado. El Rector se propone liderar la reestructuración estratégica del PEI para alinearlo con las necesidades actuales de la comunidad.",
+    "pregunta": "De acuerdo con el marco normativo de la Ley 115 de 1994 y las competencias del perfil directivo del MEN, ¿cuál es la ruta metodológica correcta que debe liderar el Rector?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Contratar una consultoría externa para que redacte un nuevo PEI estandarizado e imponerlo por resolución rectoral sin consulta previa."
+      },
+      {
+        "id": "B",
+        "texto": "Convocar al Consejo Directivo y conformar mesas de trabajo participativas con representación de todos los estamentos del Gobierno Escolar (docentes, estudiantes, padres y sector productivo) para realizar un diagnóstico institucional participativo y someter los ajustes a aprobación formal del Consejo Directivo."
+      },
+      {
+        "id": "C",
+        "texto": "Delegar la reestructuración completa del PEI exclusivamente al Personero Estudiantil y al Consejo de Estudiantes para garantizar la juventud de la propuesta."
+      },
+      {
+        "id": "D",
+        "texto": "Solicitar a la Secretaría de Educación Departamental que redacte y apruebe de forma directa los contenidos curriculares del PEI."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El artículo 73 y 142 de la Ley 115 de 1994, así como el Decreto 1860, disponen que el PEI debe ser respondido y construido participativamente por la comunidad educativa y aprobado por el Consejo Directivo. El perfil de Gestión Directiva del Manual de Funciones del MEN establece que el directivo docente lidera el direccionamiento estratégico promoviendo la participación democrática y el sentido de pertenencia institucional."
+  },
+  {
+    "id": "DIR_DIR_002",
+    "area": "Competencias Específicas - Directivos Docentes (Gestión Directiva)",
+    "tema": "Clima Escolar, Cultura Institucional y Motivación del Equipo",
+    "norma_referencia": "Manual de Funciones, Requisitos y Competencias para Directivos Docentes (MEN) / Guía 34",
+    "contexto": "Un Coordinador pedagógico detecta un clima laboral tenso entre dos departamentos de área (Ciencias Naturales y Matemáticas) debido a disputas por el uso de los laboratorios y los horarios de clase. Esta situación ha generado desmotivación, falta de colaboración e impacto negativo en las actividades transversales del colegio.",
+    "pregunta": "Desde la competencia comportamental y funcional de Gestión del Clima Escolar y Liderazgo Directivo, ¿cuál es la intervención más adecuada que debe realizar el Coordinador?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Ignorar la situación argumentando que los docentes son profesionales adultos que deben resolver sus diferencias de forma privada fuera del colegio."
+      },
+      {
+        "id": "B",
+        "texto": "Sancionar disciplinariamente a los jefes de área de forma inmediata y reasignar los laboratorios a áreas no científicas como medida punitiva."
+      },
+      {
+        "id": "C",
+        "texto": "Facilitar un espacio institucional de diálogo y concertación, revisando de manera objetiva y transparente las necesidades de cada área, estableciendo acuerdos equitativos de uso compartido de recursos y promoviendo proyectos pedagógicos integrados."
+      },
+      {
+        "id": "D",
+        "texto": "Trasladar de sede a los docentes involucrados sin realizar proceso de concertación previo."
+      }
+    ],
+    "respuesta_correcta": "C",
+    "justificacion": "Según el Manual de Funciones del MEN y la Guía 34 para el Mejoramiento Institucional, el directivo docente debe propiciar un clima institucional estimulante, armonioso y enfocado en el logro de objetivos comunes. La resolución pacífica y concertada de desacuerdos promueve la cooperación profesional y fortalece la cultura organizacional."
+  },
+  {
+    "id": "DIR_DIR_003",
+    "area": "Competencias Específicas - Directivos Docentes (Gestión Directiva)",
+    "tema": "Planeación Estratégica y Plan de Mejoramiento Institucional (PMI)",
+    "norma_referencia": "Guía No. 34 del MEN (Guía para el mejoramiento institucional de la autoevaluación al plan de mejoramiento)",
+    "contexto": "En la etapa de autoevaluación institucional de fin de año, el equipo directivo y docente analiza los resultados del PMI del ciclo anterior. Se evidencia que las metas planteadas en el área de gestión académica no se cumplieron porque las acciones planificadas eran demasiado abstractas, carecían de indicadores de seguimiento periódicos y no tenían responsables asignados.",
+    "pregunta": "Con base en las orientaciones de la Guía 34 del MEN, ¿cuál es la acción técnica que debe liderar la Rectoría para formular un Plan de Mejoramiento Institucional (PMI) efectivo para el nuevo cuatrienio?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Formular objetivos cuantitativos irreales y muy elevados sin considerar los recursos disponibles para impresionar a la Secretaría de Educación."
+      },
+      {
+        "id": "B",
+        "texto": "Establecer metas realizables y meditadas a corto, mediano y largo plazo, definiendo indicadores de gestión medibles, cronogramas precisos, presupuesto asignado y responsables claros para cada meta en las cuatro áreas de gestión."
+      },
+      {
+        "id": "C",
+        "texto": "Copiar de forma textual el Plan de Mejoramiento de una institución privada acreditada de la ciudad para asegurar estándares internacionales."
+      },
+      {
+        "id": "D",
+        "texto": "Eliminar el proceso de autoevaluación anual para dedicar el tiempo de desarrollo institucional exclusivamente a actividades recreativas docentes."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La Guía 34 del MEN estipula que el Plan de Mejoramiento Institucional (PMI) consta de tres etapas: Autoevaluación, Elaboración del Plan de Mejoramiento y Seguimiento. Para ser operativo y exitoso, el PMI requiere metas claras, indicadores de resultado y proceso, responsables identificados, cronograma y asignación presupuestal concreta."
+  },
+  {
+    "id": "DIR_DIR_004",
+    "area": "Competencias Específicas - Directivos Docentes (Gestión Directiva)",
+    "tema": "Liderazgo de la Educación Inclusiva y Equidad Institucional",
+    "norma_referencia": "Decreto 1421 de 2017 / Manual de Funciones para Directivos Docentes (MEN)",
+    "contexto": "Varios docentes de aula acuden a la Rectoría solicitando que se le niegue la matrícula a tres estudiantes con discapacidad cognitiva y motora severa para el siguiente año lectivo, argumentando que el colegio no cuenta con infraestructura 100% accesible ni con docentes de apoyo especializados suficientes.",
+    "pregunta": "Desde el rol directivo y en estricto cumplimiento del Decreto 1421 de 2017 y el principio de no discriminación, ¿cuál debe ser la posición e instrucción institucional impartida por el Rector?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Aprobar la solicitud de los docentes y negar la matrícula a los estudiantes recomendándoles buscar centros de educación especial privados."
+      },
+      {
+        "id": "B",
+        "texto": "Garantizar el acceso e ingreso sin barreras de los estudiantes, gestionar ante la Secretaría de Educación la asignación de apoyos/profesionales de apoyo pedagógico y liderar con el equipo docente la incorporación del DUA y la elaboración de los PIAR."
+      },
+      {
+        "id": "C",
+        "texto": "Matricular a los estudiantes pero condicionar su asistencia a que los padres de familia paguen el sueldo completo de una sombra o tutor privado en el aula."
+      },
+      {
+        "id": "D",
+        "texto": "Aceptar a los estudiantes únicamente en la modalidad virtual asincrónica para no modificar las dinámicas del aula presencial."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El Decreto 1421 de 2017 prohíbe explícitamente negar el cupo o la matrícula a estudiantes con discapacidad. Es función del directivo docente gestionar los recursos y apoyos requeridos ante la entidad territorial certificada, garantizar los ajustes razonables en el PEI y liderar la cultura de inclusión sin transferir costos indebidos a las familias."
+  },
+  {
+    "id": "DIR_DIR_005",
+    "area": "Competencias Específicas - Directivos Docentes (Gestión Directiva)",
+    "tema": "Gobierno Escolar y Funcionamiento del Consejo Directivo",
+    "norma_referencia": "Ley 115 de 1994 (Art. 142 y 143) / Decreto 1860 de 1994",
+    "contexto": "Un Rector convoca a la primera sesión del Consejo Directivo del año escolar. Durante la conformación de esta instancia, el Rector decide no convocar las elecciones del representante de los exalumnos ni del sector productivo local, argumentando que sus aportes 'no son indispensables' y que se puede sesionar de forma válida únicamente con los docentes y el rector.",
+    "pregunta": "¿Cuál es la implicación legal y administrativa de la decisión del Rector frente a la validez de los actos emitidos por el Consejo Directivo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La decisión es completamente legal porque el Rector ostenta la potestad discrecional de definir la composición del Consejo Directivo."
+      },
+      {
+        "id": "B",
+        "texto": "Los acuerdos y actos administrativos aprobados por un Consejo Directivo indebidamente integrado vulneran el artículo 143 de la Ley 115 y pueden ser viciados de nulidad por no garantizar la debida representación de la comunidad educativa."
+      },
+      {
+        "id": "C",
+        "texto": "El Consejo Directivo solo requiere la presencia del Rector y del Personero para tomar decisiones válidas sobre el presupuesto."
+      },
+      {
+        "id": "D",
+        "texto": "La ausencia del sector productivo genera automáticamente la intervención de la Fiscalía General de la Nación."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El artículo 143 de la Ley 115 de 1994 y el Decreto 1860 estipulan de forma imperativa la composición obligatoria del Consejo Directivo (Rector, docentes, padres, estudiantes, exalumnos y sector productivo). Omitir arbitrariamente la convocatoria de sus integrantes invalida el quórum normativo y expone los acuerdos institucionales a vicios de nulidad."
+  },
+  {
+    "id": "DIR_DIR_006",
+    "area": "Competencias Específicas - Directivos Docentes (Gestión Directiva)",
+    "tema": "Gestión de Crisis, Comunicación Institucional y Debido Proceso",
+    "norma_referencia": "Ley 1620 de 2013 / Ley 1098 de 2006 (Código de Infancia y Adolescencia)",
+    "contexto": "A las afueras de una institución educativa se presenta un altercado grave entre estudiantes que es grabado y viralizado en redes sociales. Medios de comunicación locales acuden al colegio exigiendo entrevistas y solicitando los nombres completos y hojas de vida de los estudiantes involucrados.",
+    "pregunta": "Desde la Gestión Directiva de Comunicaciones y la Protección Integral de los Derechos de Niños, Niñas y Adolescentes, ¿cuál debe ser la actuación del Rector?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Entregar a los medios de comunicación las hojas de vida y datos confidenciales de los estudiantes para demostrar la transparencia del colegio."
+      },
+      {
+        "id": "B",
+        "texto": "Atender de forma respetuosa a los medios ofreciendo un comunicado institucional oficial que informe sobre la activación de los protocolos de la Ley 1620 y el debido proceso, protegiendo estrictamente la identidad y reserva de la información de los menores según la Ley 1098."
+      },
+      {
+        "id": "C",
+        "texto": "Confrontar agresivamente a los periodistas y negar todo hecho violento manifestando que los estudiantes no pertenecen al colegio."
+      },
+      {
+        "id": "D",
+        "texto": "Expulsar inmediatamente a los estudiantes involucrados en una rueda de prensa pública."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La Ley 1098 de 2006 (Código de Infancia y Adolescencia) protege de forma prevalente el derecho a la intimidad, imagen y reserva de identidad de los menores de edad. El Rector debe gestionar la comunicación de crisis con asertividad e institucionalidad, informando las acciones de la Ruta de Atención Integral (Ley 1620) sin vulnerar los derechos fundamentales de los involucrados."
+  },
+  {
+    "id": "DIR_DIR_007",
+    "area": "Competencias Específicas - Directivos Docentes (Gestión Directiva)",
+    "tema": "Articulación Intersectorial y Alianzas Comunitarias",
+    "norma_referencia": "Ley 1620 de 2013 / Manual de Funciones MEN (Gestión Comunitarios)",
+    "contexto": "Un colegio ubicado en una zona con alta vulnerabilidad social registra un incremento en casos de ideación suicida y consumo de sustancias psicoactivas en adolescentes. El equipo de orientación escolar se encuentra desbordado ante la demanda de atención especializada.",
+    "pregunta": "Como líder de la Gestión Comunitario-Directiva, ¿cuál es la estrategia articuladora e intersectorial que debe activar el Rector?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Sugerir a los padres que retiren a los estudiantes del colegio y no intervenir institucionalmente por tratarse de temas de salud pública."
+      },
+      {
+        "id": "B",
+        "texto": "Convocar al Comité Escolar de Convivencia y activar los enlaces interinstitutional con la Secretaría de Salud (Red de Salud Mental), Comisaría de Familia e ICBF para establecer rutas de atención externa complementaria y programas de prevención en el colegio."
+      },
+      {
+        "id": "C",
+        "texto": "Obligar a los docentes de educación física a actuar como psicólogos clínicos durante las horas de clase."
+      },
+      {
+        "id": "D",
+        "texto": "Expulsar a los estudiantes que manifiesten ideación suicida para evitar responsabilidades legales en el establecimiento."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La Ley 1620 de 2013 (Ruta de Atención Integral - componente de Atención y Seguimiento) y el Manual de Funciones del MEN dictaminan que las instituciones educativas deben articularse con el Sistema Nacional de Convivencia Escolar y entidades de salud/protección para remitir y hacer seguimiento intersectorial a casos que sobrepasen el ámbito netamente pedagógico."
+  },
+  {
+    "id": "DIR_DIR_008",
+    "area": "Competencias Específicas - Directivos Docentes (Gestión Directiva)",
+    "tema": "Evaluación Anual de Desempeño Docente",
+    "norma_referencia": "Decreto Ley 1278 de 2002 (Art. 32) / Guía de Evaluación de Competencias MEN",
+    "contexto": "Al iniciar el año lectivo, el Rector debe iniciar el proceso de Evaluación Anual de Desempeño Laboral de los docentes regidos por el Decreto Ley 1278 de 2002 que se encuentran a su cargo.",
+    "pregunta": "De acuerdo con el procedimiento legal y técnico establecido por el MEN para la Evaluación de Desempeño, ¿cuál es el primer paso metodológico que debe concertar el evaluador (Rector) con el evaluado (Docente)?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Asignar la calificación definitiva en el mes de febrero sin revisar el trabajo del docente durante el año."
+      },
+      {
+        "id": "B",
+        "texto": "Realizar la concertación inicial de compromisos funcionales y comportamentales, definiendo los criterios de desempeño y los tipos de evidencias válidas que se recolectarán a lo largo del año."
+      },
+      {
+        "id": "C",
+        "texto": "Solicitar al estudiante monitor del curso que evalúe al docente mediante una encuesta secreta."
+      },
+      {
+        "id": "D",
+        "texto": "Suspender el sueldo del docente hasta que entregue un portafolio de mil páginas en la primera semana de clases."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El procedimiento oficial fijado por el MEN para la Evaluación de Desempeño Docente (Decreto Ley 1278 de 2002) exige que al comienzo del periodo lectivo el evaluador y el evaluado concierten los compromisos funcionales y comportamentales, así como las evidencias (de producto y desempeño) que sustentarán la valoración objetiva al final del año."
+  },
+  {
+    "id": "DIR_DIR_009",
+    "area": "Competencias Específicas - Directivos Docentes (Gestión Directiva)",
+    "tema": "Rendición de Cuentas y Transparencia Institucional",
+    "norma_referencia": "Ley 115 de 1994 / Ley 1712 de 2014 (Ley de Transparencia)",
+    "contexto": "Al finalizar el año lectivo, un grupo de padres de familia y líderes comunitarios solicita conocer en detalle cómo se ejecutaron los recursos del Fondo de Servicios Educativos (FSE) y cuáles fueron los avances pedagógicos del colegio alcanzados en el periodo.",
+    "pregunta": "En cumplimiento del principio de Transparencia y la función de Rendición de Cuentas Directiva, ¿cuál es el procedimiento institucional adecuado que debe adelantar la Rectoría?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Negar la información argumentando que la ejecución financiera del colegio es de carácter reservado y solo compete al Rector."
+      },
+      {
+        "id": "B",
+        "texto": "Organizar y presidir una Audiencia Pública de Rendición de Cuentas, presentando informes claros, accesibles y consolidados sobre la gestión académica, directiva, administrativa (presupuesto del FSE) y comunitaria ante la comunidad educativa."
+      },
+      {
+        "id": "C",
+        "texto": "Publicar un documento de 500 páginas en un idioma extranjero en la cartelera del colegio durante diez minutos."
+      },
+      {
+        "id": "D",
+        "texto": "Cobrar un valor económico a los padres de familia que deseen revisar las facturas de la institución."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La Ley 1712 de 2014 (Transparencia y Acceso a la Información) y las orientaciones del MEN establecen la obligatoriedad de la Rendición de Cuentas periódica por parte de los directivos docentes. La Audiencia Pública permite informar con transparencia sobre la ejecución presupuestal del FSE, los logros del PEI y los resultados académicos."
+  },
+  {
+    "id": "DIR_DIR_010",
+    "area": "Competencias Específicas - Directivos Docentes (Gestión Directiva)",
+    "tema": "Gestión de la Innovación y Transformación Pedagógica",
+    "norma_referencia": "Manual de Funciones, Requisitos y Competencias para Directivos Docentes (MEN)",
+    "contexto": "Un equipo de docentes presenta una propuesta innovadora de integración curricular basada en Aprendizaje Basado en Proyectos (ABP) y uso de tecnologías, que requiere flexibilizar temporalmente los horarios tradicionales y la evaluación por asignaturas aisladas en la Educación Media.",
+    "pregunta": "Desde la perspectiva del Liderazgo Pedagógico y la Gestión Directiva de la Innovación, ¿cuál debe ser la actitud y acción del Rector?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Rechazar la propuesta inmediatamente aduciendo que alterar la estructura tradicional de horarios altera el orden institucional."
+      },
+      {
+        "id": "B",
+        "texto": "Estudiar la propuesta con el Consejo Académico, viabilizar las adaptaciones requeridas en el plan de estudios, brindar el acompañamiento directivo y apoyar la experiencia piloto con evaluación de impacto pedagógico."
+      },
+      {
+        "id": "C",
+        "texto": "Exigir a los docentes que implementen la propuesta únicamente fuera de la jornada laboral sin afectar las clases tradicionales."
+      },
+      {
+        "id": "D",
+        "texto": "Sancionar a los docentes por sugerir cambios al plan de estudios existente."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El perfil del Directivo Docente en el Manual de Funciones del MEN promueve el liderazgo transformador y la innovación educativa. Apoyar iniciativas metodológicas viables a través del Consejo Académico fortalece la calidad de los aprendizajes y dinamiza el desarrollo curricular en el establecimiento."
+  }
+]

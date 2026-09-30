@@ -1,0 +1,346 @@
+{
+  "app_metadata": {
+    "name": "Concurso Docente App",
+    "tagline": "Tu pasaporte a la Carrera Magisterial en Colombia",
+    "version": "1.0.0",
+    "description": "Plataforma de preparación de alto rendimiento para el Concurso de Mérito Docente y Directivos Docentes (CNSC / ICFES / MEN).",
+    "target_audience": "Aspirantes a Docentes de Aula y Directivos Docentes en contextos Rurales y No Rurales.",
+    "supported_frameworks": [
+      "Next.js 14+",
+      "Tailwind CSS",
+      "React",
+      "Lucide React",
+      "Shadcn UI",
+      "Zustand / LocalStorage"
+    ]
+  },
+  "ui_theme": {
+    "color_palette": {
+      "primary": {
+        "light": "#2563EB",
+        "DEFAULT": "#1E40AF",
+        "dark": "#1E3A8A",
+        "label": "Azul Institucional"
+      },
+      "secondary": {
+        "light": "#10B981",
+        "DEFAULT": "#059669",
+        "dark": "#047857",
+        "label": "Verde Éxito / Acierto"
+      },
+      "accent": {
+        "light": "#F59E0B",
+        "DEFAULT": "#D97706",
+        "dark": "#B45309",
+        "label": "Ámbar Premium / Insignias"
+      },
+      "danger": {
+        "light": "#EF4444",
+        "DEFAULT": "#DC2626",
+        "dark": "#B91C1C",
+        "label": "Rojo Error / Alerta"
+      },
+      "background": {
+        "light": "#F8FAFC",
+        "dark": "#0F172A"
+      },
+      "card_bg": {
+        "light": "#FFFFFF",
+        "dark": "#1E293B"
+      },
+      "text": {
+        "primary": "#0F172A",
+        "secondary": "#475569",
+        "muted": "#94A3B8"
+      }
+    },
+    "typography": {
+      "font_family_sans": "Inter, system-ui, sans-serif",
+      "font_family_heading": "Plus Jakarta Sans, sans-serif"
+    },
+    "layout_breakpoints": {
+      "mobile": "320px",
+      "tablet": "768px",
+      "desktop": "1024px"
+    },
+    "dark_mode_supported": true
+  },
+  "navigation_modules": [
+    {
+      "id": "home",
+      "label": "Inicio / Dashboard",
+      "icon": "LayoutDashboard",
+      "route": "/",
+      "description": "Vista general del progreso, racha diaria y acceso rápido a modalidades."
+    },
+    {
+      "id": "practica",
+      "label": "Práctica Guiada",
+      "icon": "BookOpenCheck",
+      "route": "/practica",
+      "description": "Retroalimentación inmediata con explicación y cita de norma tras cada pregunta."
+    },
+    {
+      "id": "simulacros",
+      "label": "Simulacros Reales",
+      "icon": "Timer",
+      "route": "/simulacros",
+      "description": "Pruebas con temporizador real estilo ICFES sin feedback hasta finalizar."
+    },
+    {
+      "id": "normatividad",
+      "label": "Fichas Normativas",
+      "icon": "FileText",
+      "route": "/normatividad",
+      "description": "Biblioteca interactiva de flashcards con decretos, leyes y guías del MEN."
+    },
+    {
+      "id": "estadisticas",
+      "label": "Mi Rendimiento",
+      "icon": "BarChart3",
+      "route": "/estadisticas",
+      "description": "Métricas por área, mapa de fortalezas/debilidades y proyección de puntaje."
+    },
+    {
+      "id": "premium",
+      "label": "Modo Premium",
+      "icon": "Crown",
+      "route": "/premium",
+      "description": "Desbloqueo de bancos de especialidad, simulacros ilimitados y descargas PDF."
+    }
+  ],
+  "categories_taxonomy": {
+    "core_transversal": [
+      {
+        "id": "lectura_critica",
+        "name": "Lectura Crítica",
+        "icon": "BookOpen",
+        "color": "blue"
+      },
+      {
+        "id": "razonamiento_cuantitativo",
+        "name": "Razonamiento Cuantitativo",
+        "icon": "Calculator",
+        "color": "emerald"
+      },
+      {
+        "id": "juicio_situacional",
+        "name": "Juicio Situacional Pedagógico",
+        "icon": "BrainCircuit",
+        "color": "purple"
+      },
+      {
+        "id": "comportamental",
+        "name": "Competencias Comportamentales",
+        "icon": "UserCheck",
+        "color": "amber"
+      }
+    ],
+    "especialidades_docentes": [
+      {
+        "id": "preescolar_primaria",
+        "name": "Preescolar y Primaria",
+        "icon": "Baby"
+      },
+      {
+        "id": "matematicas",
+        "name": "Matemáticas",
+        "icon": "Sigma"
+      },
+      {
+        "id": "lengua_castellana",
+        "name": "Lengua Castellana",
+        "icon": "Languages"
+      },
+      {
+        "id": "ciencias_naturales",
+        "name": "Ciencias Naturales",
+        "icon": "Microscope"
+      },
+      {
+        "id": "ciencias_sociales",
+        "name": "Ciencias Sociales y Ciudadana",
+        "icon": "Globe"
+      },
+      {
+        "id": "ingles",
+        "name": "Idioma Extranjero Inglés",
+        "icon": "GraduationCap"
+      },
+      {
+        "id": "ed_fisica_artes",
+        "name": "Educación Física y Artes",
+        "icon": "Activity"
+      },
+      {
+        "id": "orientador_escolar",
+        "name": "Docente Orientador",
+        "icon": "HeartHandshake"
+      },
+      {
+        "id": "tecnologia_informatica",
+        "name": "Tecnología e Informática",
+        "icon": "Cpu"
+      },
+      {
+        "id": "filosofia",
+        "name": "Filosofía",
+        "icon": "BookMarked"
+      },
+      {
+        "id": "ciencias_politicas",
+        "name": "Ciencias Económicas y Políticas",
+        "icon": "Landmark"
+      },
+      {
+        "id": "quimica_fisica",
+        "name": "Química y Física (Educación Media)",
+        "icon": "Atom"
+      },
+      {
+        "id": "etica_religiosa",
+        "name": "Ética, Valores y Educación Religiosa",
+        "icon": "Compass"
+      }
+    ],
+    "directivos_docentes": [
+      {
+        "id": "gestion_directiva",
+        "name": "Gestión Directiva y Liderazgo",
+        "icon": "Compass"
+      },
+      {
+        "id": "gestion_academica",
+        "name": "Gestión Académica y Curricular",
+        "icon": "GraduationCap"
+      },
+      {
+        "id": "gestion_administrativa",
+        "name": "Gestión Administrativa y Financiera",
+        "icon": "Briefcase"
+      },
+      {
+        "id": "gestion_comunitaria",
+        "name": "Gestión Comunitaria y Convivencia",
+        "icon": "Users"
+      }
+    ],
+    "contextos_diferenciados": [
+      {
+        "id": "no_rural",
+        "name": "Población No Rural (Urbano)",
+        "icon": "Building2"
+      },
+      {
+        "id": "rural_pdet",
+        "name": "Población Rural y Zonas PDET",
+        "icon": "Trees"
+      }
+    ]
+  },
+  "exam_modes": [
+    {
+      "id": "express_10",
+      "name": "Entrenamiento Rápido (10 Preguntas)",
+      "duration_minutes": 0,
+      "question_count": 10,
+      "instant_feedback": true,
+      "allow_pause": true,
+      "description": "Ideal para repasar en 10 minutos con retroalimentación inmediata."
+    },
+    {
+      "id": "area_20",
+      "name": "Prueba por Competencia (20 Preguntas)",
+      "duration_minutes": 30,
+      "question_count": 20,
+      "instant_feedback": true,
+      "allow_pause": true,
+      "description": "Enfocado en una sola área de conocimiento a libre elección."
+    },
+    {
+      "id": "simulacro_medio",
+      "name": "Simulacro Parcial (50 Preguntas)",
+      "duration_minutes": 120,
+      "question_count": 50,
+      "instant_feedback": false,
+      "allow_pause": false,
+      "description": "Prueba cronometrada sin ayuda visual hasta la entrega."
+    },
+    {
+      "id": "simulacro_oficial_100",
+      "name": "Simulacro Tipo ICFES / CNSC (100 Preguntas)",
+      "duration_minutes": 270,
+      "question_count": 100,
+      "instant_feedback": false,
+      "allow_pause": false,
+      "description": "Replicación exacta del examen oficial de 4 horas y 30 minutos."
+    }
+  ],
+  "gamification": {
+    "xp_system": {
+      "correct_answer": 10,
+      "correct_first_try": 15,
+      "streak_bonus_per_day": 5,
+      "complete_quiz": 50,
+      "complete_full_simulation": 200
+    },
+    "streak_system": {
+      "daily_goal_questions": 15,
+      "freeze_streak_cost_xp": 100
+    },
+    "badges": [
+      {
+        "id": "badge_dua_master",
+        "title": "Experto en Inclusión y DUA",
+        "description": "Respondiste correctamente 10 preguntas de Decreto 1421 y PIAR.",
+        "icon": "HeartHandshake",
+        "req_correct_tag": "Inclusión y DUA",
+        "count": 10
+      },
+      {
+        "id": "badge_convivencia",
+        "title": "Defensor de la Convivencia Escolar",
+        "description": "Dominaste la Ruta de Atención Integral y Ley 1620.",
+        "icon": "ShieldCheck",
+        "req_correct_tag": "Convivencia Escolar",
+        "count": 10
+      },
+      {
+        "id": "badge_siee",
+        "title": "Especialista en Evaluación Formativa",
+        "description": "Aprobaste el módulo de Decreto 1290 y Documento 11.",
+        "icon": "Award",
+        "req_correct_tag": "Evaluación Formativa",
+        "count": 10
+      },
+      {
+        "id": "badge_7_days",
+        "title": "Constancia Magisterial",
+        "description": "Mantuviste una racha ininterrumpida de estudio de 7 días.",
+        "icon": "Flame",
+        "req_streak_days": 7
+      }
+    ]
+  },
+  "data_schemas_for_state": {
+    "local_storage_keys": {
+      "user_profile": "concurso_docente_user_profile",
+      "answers_history": "concurso_docente_answers_history",
+      "bookmarks": "concurso_docente_bookmarks",
+      "active_session": "concurso_docente_active_session"
+    },
+    "user_profile_template": {
+      "id": "usr_local_01",
+      "name": "Docente Aspirante",
+      "email": "aspirante@ejemplo.com",
+      "role": "docente_aula",
+      "specialty": "primaria",
+      "context": "no_rural",
+      "is_premium": false,
+      "xp": 0,
+      "streak_days": 0,
+      "last_study_date": "",
+      "badges_unlocked": []
+    }
+  }
+}

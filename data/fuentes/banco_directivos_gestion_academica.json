@@ -1,0 +1,282 @@
+[
+  {
+    "id": "DIR_ACA_001",
+    "area": "Competencias Específicas - Directivos Docentes (Gestión Académica)",
+    "tema": "Seguimiento al SIEE y Comisiones de Evaluación y Promoción",
+    "norma_referencia": "Decreto 1290 de 2009 / Documento No. 11 del MEN / Ley 115 de 1994",
+    "contexto": "Al finalizar el tercer periodo académico, el Coordinador Académico identifica que en el área de Matemáticas de grado 8° el 45% de los estudiantes registra reprobación acumulada. En la reunión de la Comisión de Evaluación y Promoción, un grupo de docentes solicita la pérdida automática del año para estos estudiantes argumentando 'bajo rendimiento sistemático', omitiendo la aplicación de los planes de apoyo y nivelación previstos en el Sistema Institucional de Evaluación de Estudiantes (SIEE).",
+    "pregunta": "¿Cuál es la actuación que debe asumir el Coordinador Académico en el marco del Decreto 1290 de 2009 y el debido proceso de evaluación formativa?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Aprobar la solicitud de los docentes de reprobación anticipada para sentar un precedente de exigencia académica en la institución."
+      },
+      {
+        "id": "B",
+        "texto": "Rechazar la reprobación extemporánea, exigir la ejecución inmediata de los planes de apoyo pedagógico y nivelación continua garantizados en el SIEE, y convocar a un taller de revisión de estrategias didácticas con los docentes del área."
+      },
+      {
+        "id": "C",
+        "texto": "Modificar directamente las calificaciones de los estudiantes reprobados en la plataforma del colegio para bajar los índices institucionales de reprobación."
+      },
+      {
+        "id": "D",
+        "texto": "Transferir la responsabilidad de la decisión al Consejo Estudiantil para que este someta a votación la promoción de los estudiantes afectados."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El Decreto 1290 de 2009 y el Documento No. 11 del MEN señalan que la evaluación tiene carácter esencialmente formativo y continuo. Las Comisiones de Evaluación y Promoción tienen la función de analizar los casos y definir actividades de apoyo para superar las dificultades, garantizando el debido proceso sin incurrir en reprobaciones automáticas que desconozcan las acciones de nivelación estipuladas en el SIEE."
+  },
+  {
+    "id": "DIR_ACA_002",
+    "area": "Competencias Específicas - Directivos Docentes (Gestión Académica)",
+    "tema": "Diseño Curricular, Articulación y Actualización de Planes de Estudio",
+    "norma_referencia": "Ley 115 de 1994 (Arts. 76 al 79) / Estándares Básicos de Competencias / DBA",
+    "contexto": "Durante la revisión anual de los planes de área, el equipo directivo identifica que el plan de estudios de Ciencias Sociales de la institución educativa no se actualiza desde hace diez años, manteniendo contenidos conceptuales fragmentados que no incorporan los Derechos Básicos de Aprendizaje (DBA), los lineamientos de formación ciudadana ni la Cátedra de la Paz (Ley 1732 de 2014).",
+    "pregunta": "¿Cuál es la ruta de gestión académica que debe liderar la Coordinación para orientar la reestructuración curricular del área?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Contratar una editorial privada para que imponga un texto escolar único y sustituya íntegramente el plan de estudios del colegio sin participación de los docentes."
+      },
+      {
+        "id": "B",
+        "texto": "Liderar jornadas de trabajo pedagógico con los docentes del área para revisar la alineación del plan de estudios con los Estándares Básicos, DBA y normas vigentes, articulando los proyectos transversales e incorporando estrategias de evaluación por competencias."
+      },
+      {
+        "id": "C",
+        "texto": "Eliminar la asignatura de Ciencias Sociales del plan de estudios e incrementar la intensidad horaria de las Matemáticas para mejorar los puntajes Saber 11."
+      },
+      {
+        "id": "D",
+        "texto": "Delegar la reestructuración curricular exclusivamente en los estudiantes de grado 11° como requisito para optar al título de bachiller."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La Ley 115 de 1994 (arts. 76 a 79) y los lineamientos del MEN establecen que la autonomía escolar para el diseño curricular se ejerce mediante un proceso participativo de construcción colectiva. El directivo docente debe liderar el acompañamiento técnico a los docentes para armonizar los planes de área con referentes nacionales de calidad (Estándares, DBA) y leyes específicas (Cátedra de la Paz)."
+  },
+  {
+    "id": "DIR_ACA_003",
+    "area": "Competencias Específicas - Directivos Docentes (Gestión Académica)",
+    "tema": "Acompañamiento Pedagógico a la Práctica de Aula y Retroalimentación Formativa",
+    "norma_referencia": "Manual de Funciones para Directivos Docentes (MEN) / Guía No. 34 del MEN",
+    "contexto": "En el marco del plan de seguimiento a la práctica de aula, el Coordinador Académico realiza visitas de observación de clase programadas. En una de las clases, observa que el docente mantiene una metodología magistral pasiva durante dos horas, genera un clima de tensión por descalificaciones verbales a los estudiantes que preguntan y no utiliza los recursos didácticos acordados en la planeación de área.",
+    "pregunta": "¿Cuál es la estrategia de acompañamiento pedagógico más adecuada y constructiva que debe implementar el Coordinador?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Interrumpir la clase enfrente de los estudiantes, reprender severamente al docente y asumir el dictado de la lección durante el resto de la jornada."
+      },
+      {
+        "id": "B",
+        "texto": "Sostener un diálogo reflexivo y reservado posterior a la clase con el docente, analizar objetivamente las evidencias observadas, concertar un plan de mejora pedagógico individual con compromisos medibles y realizar observaciones de seguimiento."
+      },
+      {
+        "id": "C",
+        "texto": "Ignorar los hallazgos observados para evitar conflictos interpersonales y firmar el formato de visita indicando un desempeño 'excelente'."
+      },
+      {
+        "id": "D",
+        "texto": "Radicar una denuncia penal inmediata contra el docente en la Fiscalía General de la Nación por bajo rendimiento didáctico."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El Manual de Funciones de Directivos Docentes y la Guía 34 del MEN estipulan que el seguimiento a la práctica pedagógica tiene un propósito de desarrollo profesional y mejoramiento de la calidad. La retroalimentación debe ser formativa, privada, basada en evidencias objetivas y orientada a pactar compromisos de mejora pedagógica en el marco del clima laboral institucional."
+  },
+  {
+    "id": "DIR_ACA_004",
+    "area": "Competencias Específicas - Directivos Docentes (Gestión Académica)",
+    "tema": "Liderazgo en la Implementación de la Educación Inclusiva (DUA y PIAR)",
+    "norma_referencia": "Decreto 1421 de 2017 / Instructivo del PIAR (Colombia Aprende)",
+    "contexto": "Tres docentes de Educación Media acuden a la Coordinación Académica manifestando que no pueden atender a un estudiante con discapacidad auditiva matriculado en grado 10°, argumentando que carecen de formación en Lengua de Señas Colombiana (LSC) y solicitando que el estudiante sea promovido de grado automáticamente 'sin exigirle académicamente' o que sea desvinculado del colegio.",
+    "pregunta": "¿Qué acción de gestión académica directiva debe adelantar la Coordinación para garantizar la inclusión efectiva según el Decreto 1421 de 2017?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Aprobar la exoneración académica total del estudiante y concederle el título de bachiller de forma honorífica sin asistir a clases."
+      },
+      {
+        "id": "B",
+        "texto": "Liderar la articulación de los apoyos pedagógicos, coordinar la consolidación y aplicación del Plan Individual de Ajustes Razonables (PIAR), gestionar la presencia del intérprete/modelo lingüístico de LSC y capacitar al equipo docente en estrategias del DUA."
+      },
+      {
+        "id": "C",
+        "texto": "Solicitar la cancelación inmediata de la matrícula del estudiante en el SIMAT y sugerir su traslado a un centro de rehabilitación."
+      },
+      {
+        "id": "D",
+        "texto": "Sancionar disciplinariamente al estudiante por no hablar español fluido durante las exposiciones del curso."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El Decreto 1421 de 2017 exige a los directivos docentes garantizar la permanencia y calidad académica de los estudiantes con discapacidad en el aula común. Esto implica liderar la flexibilización curricular mediante el DUA, articular la elaboración e implementación del PIAR y gestionar los apoyos (intérprete de LSC, docente de apoyo) necesarios para eliminar las barreras de aprendizaje."
+  },
+  {
+    "id": "DIR_ACA_005",
+    "area": "Competencias Específicas - Directivos Docentes (Gestión Académica)",
+    "tema": "Uso Pedagógico de Resultados de Pruebas Estandarizadas (Saber 11 / Evaluar para Avanzar)",
+    "norma_referencia": "Guía No. 34 del MEN / Documento No. 11 del MEN",
+    "contexto": "Al recibir el informe institucional de resultados de las Pruebas Saber 11 y la evaluación diagnóstica 'Evaluar para Avanzar', el equipo de docentes propone utilizar las puntuaciones individuales más bajas para sancionar a los estudiantes dejándolos sin derecho a participar en la ceremonia de graduación.",
+    "pregunta": "Desde el enfoque institucional de gestión académica, ¿cuál es el uso pedagógico y normativo correcto de los resultados de las evaluaciones externas e internas?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Avalar las sanciones propuestas para desincentivar los puntajes bajos en las futuras promociones del colegio."
+      },
+      {
+        "id": "B",
+        "texto": "Realizar un taller institucional de análisis de datos para identificar competencias descendidas por áreas, reorientar los planes de aula, ajustar las secuencias didácticas e incorporar las acciones de mejora en el Plan de Mejoramiento Institucional (PMI)."
+      },
+      {
+        "id": "C",
+        "texto": "Publicar un escalafón público con las fotos de los estudiantes con peores resultados en la cartelera principal del municipio."
+      },
+      {
+        "id": "D",
+        "texto": "Archivar los reportes del ICFES sin revisión para no generar tensiones académicas con el cuerpo docente."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "De acuerdo con el Documento No. 11 y la Guía 34 del MEN, los resultados de las evaluaciones externas (Saber 11, Evaluar para Avanzar) son insumos diagnósticos para el análisis institucional. Su función pedagógica es identificar debilidades en los aprendizajes, reorientar las prácticas de aula e integrar metas de mejoramiento en el PMI, evitando usarlos como mecanismos punitivos contra los estudiantes."
+  },
+  {
+    "id": "DIR_ACA_006",
+    "area": "Competencias Específicas - Directivos Docentes (Gestión Académica)",
+    "tema": "Gestión Curricular de la Jornada Única y Modelos Pedagógicos",
+    "norma_referencia": "Decreto 2105 de 2017 / Ley 115 de 1994 / Guía de Jornada Única MEN",
+    "contexto": "Un establecimiento educativo oficial inicia la implementación de la Jornada Única. El Consejo Académico propone que las dos horas adicionales de permanencia diaria de los estudiantes se dediquen exclusivamente a la repetición de guías mecánicas de planas y dictados de la misma materia que los estudiantes ya cursan en la mañana.",
+    "pregunta": "¿Qué orientación pedagógica y curricular debe imprimir la Dirección Académica para aprovechar la Jornada Única según el Decreto 2105 de 2017?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Aprobar la repetición de dictados por ser la forma más económica y sencilla de llenar el tiempo de la jornada extendida."
+      },
+      {
+        "id": "B",
+        "texto": "Diversificar la propuesta pedagógica estructurando talleres de profundización en competencias básicas, proyectos de investigación (STEAM), actividades deportivas, artísticas y de uso del tiempo libre que enriquezcan la formación integral."
+      },
+      {
+        "id": "C",
+        "texto": "Autorizar a los estudiantes para que salgan del establecimiento educativo a realizar actividades comerciales durante las horas adicionales."
+      },
+      {
+        "id": "D",
+        "texto": "Obligar a los docentes a dictar materias universitarias de postgrado sin importar el nivel de desarrollo de los educandos."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El Decreto 2105 de 2017 y las orientaciones del MEN establecen que la Jornada Única no consiste en 'más de lo mismo', sino en una oportunidad para la transformación pedagógica. La extensión del tiempo escolar debe destinarse al fortalecimiento de competencias clave, la profundización en áreas fundamentales, el arte, el deporte y la formación integral."
+  },
+  {
+    "id": "DIR_ACA_007",
+    "area": "Competencias Específicas - Directivos Docentes (Gestión Académica)",
+    "tema": "Transversalización de Cátedras Obligatorias y Enfoque Étnico",
+    "norma_referencia": "Ley 115 de 1994 (Art. 14) / Decreto 1122 de 1998 (Cátedra de Estudios Afrocolombianos)",
+    "contexto": "En la evaluación institucional de fin de año, se evidencia que la Cátedra de Estudios Afrocolombianos (Decreto 1122 de 1998) no fue impartida en ningún grado, argumentando que en la institución 'no hay matrícula de estudiantes afrodescendientes registrados en el SIMAT'.",
+    "pregunta": "¿Cuál es la precisión normativa y la decisión de gestión académica que debe adoptar la Coordinación frente a este hallazgo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Validar la omisión argumentando que las cátedras étnicas solo aplican en colegios ubicados en territorios de comunidades negras reconocidas."
+      },
+      {
+        "id": "B",
+        "texto": "Exigir e integrar la Cátedra de Estudios Afrocolombianos de manera transversal en los planes de estudio de Ciencias Sociales y Humanidades de todos los grados, recordando que es una norma de obligatorio cumplimiento que promueve la plurietnicidad nacional en toda la población escolar."
+      },
+      {
+        "id": "C",
+        "texto": "Reemplazar la cátedra por un curso de contabilidad comercial para responder a las exigencias del sector productivo."
+      },
+      {
+        "id": "D",
+        "texto": "Sancionar a los estudiantes con notas reprobatorias por no autoidentificarse como afrodescendientes en el formato de matrícula."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El Decreto 1122 de 1998 y la Ley 115 de 1994 estipulan que la Cátedra de Estudios Afrocolombianos forma parte del currículo obligatorio en todos los establecimientos de educación formal del país (públicos y privados), independientemente de la composición étnica de sus estudiantes, para visibilizar los aportes de las comunidades afrocolombianas y combatir el racismo."
+  },
+  {
+    "id": "DIR_ACA_008",
+    "area": "Competencias Específicas - Directivos Docentes (Gestión Académica)",
+    "tema": "Articulación de la Educación Media con la Educación Superior y el Trabajo",
+    "norma_referencia": "Ley 115 de 1994 (Arts. 27 al 32) / Orientaciones para la Educación Media MEN",
+    "contexto": "Una institución educativa que ofrece Educación Media Técnica proyecta diversificar sus especialidades. Algunos miembros del Consejo Académico sugieren implementar de forma improvisada una técnica en 'Mantenimiento de Barcos' en una sede ubicada en una zona de alta montaña sin ríos navegables ni demanda laboral afín.",
+    "pregunta": "¿Qué criterio de gestión y pertinencia académica debe aplicar la Dirección Institucional para definir las especialidades de la Educación Media?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Aprobar la especialidad sin importar el contexto para innovar con títulos exóticos en la región."
+      },
+      {
+        "id": "B",
+        "texto": "Realizar un estudio de caracterización del entorno socioeconómico regional, consultar la vocación productiva local, establecer alianzas estratégicas con instituciones como el SENA o IES y consultar el interés vocacional de los estudiantes."
+      },
+      {
+        "id": "C",
+        "texto": "Eliminar la Educación Media Técnica y convertir la sede exclusivamente en un internado de educación primaria."
+      },
+      {
+        "id": "D",
+        "texto": "Imponer obligatoriamente la especialidad que el Rector haya cursado durante su educación profesional inicial."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La Ley 115 de 1994 y los lineamientos de Educación Media del MEN establecen que la articulación técnica y la oferta vocacional deben responder al principio de pertinencia. Esto requiere analizar el contexto productivo y social regional, contar con la capacidad técnica e infraestructura adecuada y articularse válidamente con el SENA u otras IES."
+  },
+  {
+    "id": "DIR_ACA_009",
+    "area": "Competencias Específicas - Directivos Docentes (Gestión Académica)",
+    "tema": "Gestión del Material Didáctico y Recursos para el Aprendizaje",
+    "norma_referencia": "Guía No. 34 del MEN / Decreto 1860 de 1994",
+    "contexto": "En la biblioteca escolar de la institución se encuentran bajo llave más de 500 libros de literatura infantil, textos de investigación y tabletas digitales entregadas por el Ministerio de TIC. El encargado de la biblioteca sostiene que mantiene el material guardado 'para evitar que los estudiantes lo deterioren o lo dañen durante los descansos o clases'.",
+    "pregunta": "¿Cuál es la directriz pedagógica que debe impartir la Coordinación Académica para el uso efectivo de los recursos de aprendizaje?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Felicitar al bibliotecario por cuidar el patrimonio del colegio y mantener el material bajo candado de forma indefinida."
+      },
+      {
+        "id": "B",
+        "texto": "Establecer un protocolo de dinamización y préstamo activo de los recursos pedagógicos, integrando la biblioteca y las tabletas a los planes de aula y proyectos transversales, concibiendo el uso y desgaste normal de los materiales como parte del proceso de aprendizaje."
+      },
+      {
+        "id": "C",
+        "texto": "Vender los libros e implementos tecnológicos a librerías de segunda mano para financiar la pintura de la fachada rectoral."
+      },
+      {
+        "id": "D",
+        "texto": "Permitir el uso de los libros únicamente a los docentes que tengan títulos de doctorado acreditados."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "De acuerdo con la Guía 34 del MEN, la gestión de recursos para el aprendizaje implica garantizar la disponibilidad, acceso y aprovechamiento didáctico del material bibliográfico y tecnológico. Los recursos deben estar al servicio directo de los estudiantes y docentes en el aula y la biblioteca, promoviendo el cuidado responsable sin restringir el acceso pedagógico."
+  },
+  {
+    "id": "DIR_ACA_010",
+    "area": "Competencias Específicas - Directivos Docentes (Gestión Académica)",
+    "tema": "Seguimiento al Ausentismo, Alerta Temprana y Prevención de la Deserción",
+    "norma_referencia": "Decreto 1860 de 1994 / Ley 1620 de 2013 / Sistema de Alertas Tempranas MEN",
+    "contexto": "Durante los comités de seguimiento mensual, la Coordinación detecta que 15 estudiantes de grado 6° presentan reiteradas inasistencias injustificadas (más de 3 días a la semana) y baja entrega de evidencias de aprendizaje, estando en riesgo inminente de desertar del sistema escolar.",
+    "pregunta": "En el marco de la gestión académica preventiva, ¿cuál es el protocolo institucional de alerta temprana que debe activarse?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Cancelar la matrícula SIMAT de los estudiantes inmediatamente sin realizar indagaciones ni llamadas a los acudientes."
+      },
+      {
+        "id": "B",
+        "texto": "Activar la ruta interna de seguimiento: citar a los acudientes para indagar las causas de la inasistencia, activar apoyos de orientación escolar, concertar planes flexibles de nivelación académica y, de persistir la inasistencia por vulneración de derechos, reportar al ICBF/Comisaría de Familia."
+      },
+      {
+        "id": "C",
+        "texto": "Asignar nota 0.0 en todas las asignaturas a los estudiantes ausentes sin otorgar posibilidades de nivelación."
+      },
+      {
+        "id": "D",
+        "texto": "Exigir una sanción económica en dinero a las familias por cada día de inasistencia a la institución."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El Sistema de Alertas Tempranas del MEN y las normas de retención escolar exigen a las directivas académicas agotar las instancias de acompañamiento, prevención e investigación del ausentismo. Se deben articular esfuerzos entre la orientación escolar, la flexibilización académica y la corresponsabilidad familiar antes de considerar cualquier afectación al cupo escolar o activar entidades de protección."
+  }
+]

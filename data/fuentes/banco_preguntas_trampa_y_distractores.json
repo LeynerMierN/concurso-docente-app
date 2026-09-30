@@ -1,0 +1,58 @@
+[
+  {
+    "id": "TRAMPA_001",
+    "area": "Módulo Especial Premium - Análisis de Distractores y Cascaritas",
+    "tema": "Inclusión y Asignación de Responsabilidades en el PIAR",
+    "norma_referencia": "Decreto 1421 de 2017",
+    "contexto": "Un docente de aula identifica que un estudiante con Discapacidad Intelectual Leve requiere ajustes en los criterios de evaluación de Lengua Castellana. El docente afirma que no puede realizar los ajustes hasta que la docente de apoyo pedagógico redacte y firme el PIAR.",
+    "pregunta": "¿Por qué la afirmación del docente constituye un error conceptual recurrente en las pruebas del Concurso Docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Porque la responsabilidad del diseño de la clase y la aplicación de los ajustes razonables del PIAR recae en el docente de aula, actuando la docente de apoyo como asesora y acompañante."
+      },
+      {
+        "id": "B",
+        "texto": "Porque los estudiantes con discapacidad no requieren PIAR si están matriculados en el SIMAT."
+      },
+      {
+        "id": "C",
+        "texto": "Porque la docente de apoyo pedagógico es la única persona autorizada para dictar clases a los estudiantes con discapacidad."
+      },
+      {
+        "id": "D",
+        "texto": "Porque el PIAR solo se elabora para estudiantes que están en proceso de reprobación académica de grado."
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "Distractor Típico (Casi Correcto para muchos aspirantes): Asumir que la inclusión es responsabilidad exclusiva del docente de apoyo. La cascarita normativa radica en ignorar que el Decreto 1421 asigna la titularidad del PIAR y de los ajustes de aula al docente de área/grado."
+  },
+  {
+    "id": "TRAMPA_002",
+    "area": "Módulo Especial Premium - Análisis de Distractores y Cascaritas",
+    "tema": "Convivencia Escolar y Sanciones Disciplinarias",
+    "norma_referencia": "Ley 1620 de 2013 / Ley 1098 de 2006",
+    "contexto": "Ante una agresión física leve entre dos estudiantes dentro del colegio (Situación Tipo II), el Consejo Directivo decide expulsar inmediatamente a los involucrados cancelando sus matrículas de forma definitiva sin citar a comités de convivencia.",
+    "pregunta": "¿Cuál es la falla jurídica central cometida por la institución que conduciría a la pérdida de una tutela?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Vulnerar el debido proceso y el derecho a la educación al aplicar una sanción punitiva desproporcionada sin agotar la Ruta de Atención Integral ni las acciones formativas/restaurativas del Manual de Convivencia."
+      },
+      {
+        "id": "B",
+        "texto": "No haber cobrado una multa económica a los padres de familia antes de la expulsión."
+      },
+      {
+        "id": "C",
+        "texto": "Permitir que el Consejo Directivo sesione sin la presencia del Secretario de Educación Municipal."
+      },
+      {
+        "id": "D",
+        "texto": "Haber clasificado el incidente como agresión escolar en lugar de falta académica."
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "Cascarita recurrente: Confundir la autoridad del Consejo Directivo con la facultad de ignorar el debido proceso. La jurisprudencia constitucional exige agotar el proceso formativo, la restauración de derechos y la Ruta de la Ley 1620 antes de considerar la desescolarización."
+  }
+]

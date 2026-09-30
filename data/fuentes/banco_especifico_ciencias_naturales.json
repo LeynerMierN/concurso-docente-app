@@ -1,0 +1,282 @@
+[
+  {
+    "id": "NAT_001",
+    "area": "Competencias Específicas - Ciencias Naturales y Educación Ambiental",
+    "tema": "Indagación Científica y Formulación de Hipótesis",
+    "norma_referencia": "Estándares Básicos de Competencias en Ciencias Naturales (MEN) / DBA de Ciencias",
+    "contexto": "Un docente de Ciencias Naturales de grado 7° realiza con sus estudiantes un experimento para evaluar el crecimiento de plantas de fríjol sometidas a diferentes intensidades de luz solar. Durante la fase de observación, los estudiantes notan que las plantas que reciben luz indirecta crecen más altas pero sus tallos son más delgados y amarillentos. Varios estudiantes afirman que 'esas plantas son las más saludables porque son las más largas'.",
+    "pregunta": "¿Cuál es la intervención pedagógica más adecuada del docente para promover el desarrollo de la competencia de Indagación Científica frente a esta afirmación?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Corregir inmediatamente a los estudiantes explicándoles el fenómeno de etiolación y asignando una calificación baja por la interpretación errónea."
+      },
+      {
+        "id": "B",
+        "texto": "Guiar a los estudiantes mediante preguntas problematizadoras para que diseñen una prueba de medición de biomasa, firmeza del tallo y pigmentación foliar, contrastando sus hipótesis con la literatura científica."
+      },
+      {
+        "id": "C",
+        "texto": "Descartar el experimento actual y dictar una lección magistral sobre fotosíntesis para evitar confusiones conceptuales en el examen final."
+      },
+      {
+        "id": "D",
+        "texto": "Aceptar la afirmación de los estudiantes como válida para no afectar su motivación en el trabajo de campo."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "Según los Estándares Básicos de Competencias en Ciencias Naturales del MEN, la indagación no se limita a observar, sino a evaluar evidencias, contrastar hipótesis preliminares y diseñar procedimientos para medir variables adicionales (fuerza, color, peso seco). Guiar el análisis crítico promueve el rigor metodológico y la construcción activa del conocimiento científico escolar."
+  },
+  {
+    "id": "NAT_002",
+    "area": "Competencias Específicas - Ciencias Naturales y Educación Ambiental",
+    "tema": "Didáctica de la Química y Transformación de la Materia",
+    "norma_referencia": "Estándares Básicos de Competencias en Ciencias Naturales (MEN) / DBA",
+    "contexto": "Al trabajar la diferenciación entre cambios físicos y químicos en grado 8°, una docente mezcla bicarbonato de sodio con vinagre en un erlenmeyer acoplado a un globo, observando que este se infla rápidamente por la liberación de gas CO2. Ante esto, un grupo de estudiantes sostiene que 'la masa total aumentó porque el globo ahora ocupa un volumen mayor'.",
+    "pregunta": "¿Qué estrategia didáctica permite deconstruir este obstáculo epistemológico y afianzar la Ley de Conservación de la Masa?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Solicitar a los estudiantes que memoricen la ecuación química de la reacción sin realizar más actividades prácticas."
+      },
+      {
+        "id": "B",
+        "texto": "Realizar la medición en una balanza digital antes y después de la reacción en un sistema cerrado hermético, comparando la masa del sistema completo frente a un sistema abierto para discutir la conservación de la materia."
+      },
+      {
+        "id": "C",
+        "texto": "Dictar la definición formal del principio de Lavoisier y solicitar un resumen escrito individual de diez páginas."
+      },
+      {
+        "id": "D",
+        "texto": "Exonerar del tema a los estudiantes que no comprendieron la diferencia entre masa y volumen."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La enseñanza de la química escolar exige superar las confusiones entre las magnitudes de masa y volumen mediante el uso de experimentos cuantitativos comparativos (sistemas cerrados vs. abiertos). La medición en balanza digital proporciona evidencia empírica directa para comprender la conservación de la masa conforme a los DBA de Ciencias Naturales."
+  },
+  {
+    "id": "NAT_003",
+    "area": "Competencias Específicas - Ciencias Naturales y Educación Ambiental",
+    "tema": "Pensamiento Físico y Conservación de la Energía",
+    "norma_referencia": "Estándares Básicos de Competencias en Ciencias Naturales (MEN) / DBA",
+    "contexto": "En una unidad sobre mecánica clásica y energía en grado 10°, un docente analiza el movimiento de un péndulo simple. Algunos estudiantes afirman que el péndulo se detiene eventualmente porque 'la energía desaparece progresivamente a medida que oscila'.",
+    "pregunta": "¿Cuál es la orientación pedagógica más acertada para guiar la comprensión de la Primera Ley de la Termodinámica y la degradación de la energía?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Confirmar que la energía desaparece cuando los cuerpos se detienen, de acuerdo con la física intuitiva cotidiana."
+      },
+      {
+        "id": "B",
+        "texto": "Plantear un análisis del sistema pendular incorporando el trabajo realizado por la fuerza de fricción con el aire y la disipación de energía mecánica en forma de energía térmica en el punto de suspensión."
+      },
+      {
+        "id": "C",
+        "texto": "Resolver ejercicios numéricos abstractos en el tablero omitiendo las fuerzas disipativas para no confundir al grupo."
+      },
+      {
+        "id": "D",
+        "texto": "Indicar que la conservación de la energía solo se cumple en el espacio exterior y no aplica en el planeta Tierra."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El pensamiento físico fundamenta que la energía no se destruye ni desaparece, sino que se transforma. Para resolver la concepción alternativa del 'agotamiento de la energía', el docente debe evidenciar los mecanismos de disipación (fricción y calor), permitiendo a los estudiantes comprender el principio de conservación en sistemas reales."
+  },
+  {
+    "id": "NAT_004",
+    "area": "Competencias Específicas - Ciencias Naturales y Educación Ambiental",
+    "tema": "Educación Ambiental y Proyectos Ambientales Escolares (PRAE)",
+    "norma_referencia": "Ley 115 de 1994 (Art. 14) / Decreto 1743 de 1994 / Política Nacional de Educación Ambiental",
+    "contexto": "Una institución educativa ubicada cerca a una cuenca hidrográfica afectada por la contaminación por plásticos busca estructurar su Proyecto Ambiental Escolar (PRAE). Un grupo de docentes sugiere limitar el PRAE a una jornada semestral de recolección de basura alrededor de la cancha del colegio para no alterar el cronograma de clases.",
+    "pregunta": "Según la Ley 115 de 1994 y el Decreto 1743 de 1994, ¿cuál es el enfoque transversal pedagógico con el que se debe diseñar el PRAE?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Validar la jornada de aseo esporádica como el único requisito legal exigido por el Ministerio de Educación."
+      },
+      {
+        "id": "B",
+        "texto": "Integrar el PRAE de manera sistémica y transversal en el plan de estudios, involucrando el diagnóstico ambiental del territorio (cuenca del río), la investigación participativa comunitaria y la formación de hábitos sustentables intersectoriales."
+      },
+      {
+        "id": "C",
+        "texto": "Sustituir las clases de Ciencias Naturales por capacitaciones dictadas exclusivamente por empresas privadas de aseo."
+      },
+      {
+        "id": "D",
+        "texto": "Restringir el PRAE a la elaboración de carteleras decorativas para el día del árbol sin articulación con las problemáticas locales."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El Decreto 1743 de 1994 y la Política Nacional de Educación Ambiental establecen que los PRAE no son actividades aisladas de limpieza, sino proyectos pedagógicos transversales contextualizados. Deben diagnosticar y abordar problemáticas ambientales locales desde una perspectiva interdisciplinar, comunitaria y sistemática."
+  },
+  {
+    "id": "NAT_005",
+    "area": "Competencias Específicas - Ciencias Naturales y Educación Ambiental",
+    "tema": "Uso de Modelos Científicos en Genética y Biología Celular",
+    "norma_referencia": "Estándares Básicos de Competencias en Ciencias Naturales (MEN) / DBA",
+    "contexto": "Al abordar la replicación del ADN y la síntesis de proteínas en grado 9°, el docente utiliza un software interactivo de modelado molecular 3D. Un estudiante con alto rendimiento teórico pregunta por qué los modelos celulares en los libros de texto suelen mostrar los organelos estáticos y aislados cuando en la realidad existen interacciones dinámicas constantes.",
+    "pregunta": "¿Qué valor pedagógico e epistemológico representa esta inquietud en el desarrollo del pensamiento científico escolar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Refleja una pérdida de tiempo, por lo que se debe exigir al estudiante que se limite a memorizar el dibujo plano del libro de texto."
+      },
+      {
+        "id": "B",
+        "texto": "Evidencia la comprensión de la naturaleza de la ciencia y el uso del modelo como una representación simplificada y explicativa sujeto a revisión, estimulando la capacidad de análisis crítico de las representaciones biológicas."
+      },
+      {
+        "id": "C",
+        "texto": "Demuestra que los modelos científicos de los libros de texto contienen errores ilegales que deben denunciarse ante la Secretaría de Educación."
+      },
+      {
+        "id": "D",
+        "texto": "Indica que la síntesis de proteínas no debe enseñarse en la educación básica secundaria."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "Los Estándares de Ciencias Naturales conciben los modelos como construcciones teóricas y simplificaciones útiles de la realidad para explicar fenómenos complejos. Reconocer las limitaciones de un modelo estático y transitar hacia modelos dinámicos fortalece la competencia de Explicación de Fenómenos y la epistemología de la ciencia escolar."
+  },
+  {
+    "id": "NAT_006",
+    "area": "Competencias Específicas - Ciencias Naturales y Educación Ambiental",
+    "tema": "Inclusión y DUA en Prácticas de Laboratorio",
+    "norma_referencia": "Decreto 1421 de 2017 / Guía DUA / Ley 115 de 1994",
+    "contexto": "Un docente de Ciencias Naturales organiza una práctica de laboratorio sobre diversidad vegetal y clasificación de hojas en grado 6°. En el grupo se encuentra matriculado un estudiante con discapacidad visual (ceguera total). Algunos compañeros sugieren que el estudiante permanezca en el salón de lectura escuchando un audiolibro mientras los demás manipulan las muestras.",
+    "pregunta": "De acuerdo con el Decreto 1421 de 2017 y los principios del DUA, ¿cuál es el ajuste razonable y la estrategia pedagógica inclusiva que debe implementar el docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Aceptar que el estudiante permanezca en la biblioteca para evitar riesgos de accidentes con el material biológico."
+      },
+      {
+        "id": "B",
+        "texto": "Diseñar e incorporar en la práctica estaciones táctiles y olfativas con muestras vegetales reales (texturas de bordes, nervaduras, aromas y relieves), promoviendo el trabajo en parejas y el uso de macromodelos en relieve."
+      },
+      {
+        "id": "C",
+        "texto": "Eximir al estudiante con discapacidad visual de la asignatura de Ciencias Naturales durante todo el año lectivo."
+      },
+      {
+        "id": "D",
+        "texto": "Exigir al estudiante que identifique la estructura foliar mediante la observación en microscopio con lente de gran aumento."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El Decreto 1421 de 2017 y el DUA exigen garantizar la participación de todos los estudiantes en las actividades del aula regular. En Ciencias Naturales, la exploración multisensorial (tacto, olfato, textura, macromodelos) permite al estudiante con ceguera desarrollar competencias de indagación e identificación biológica en equidad con sus pares."
+  },
+  {
+    "id": "NAT_007",
+    "area": "Competencias Específicas - Ciencias Naturales y Educación Ambiental",
+    "tema": "Evaluación Formativa e Interpretación de Gráficas Científicas",
+    "norma_referencia": "Decreto 1290 de 2009 / Documento No. 11 MEN",
+    "contexto": "En un examen formativo de Biología en grado 11°, se presenta una gráfica de curvas de crecimiento poblacional de dos especies (depredador-presa) a lo largo del tiempo. Al revisar los resultados, el docente identifica que el 60% del grupo confunde la variable independiente (tiempo en el eje X) con la variable dependiente (densidad poblacional en el eje Y), interpretando de forma errónea los desfases de las curvas.",
+    "pregunta": "Desde el enfoque del Decreto 1290 de 2009 y la evaluación formativa (Documento No. 11 del MEN), ¿cuál es la acción pedagógica inmediata más acertada?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Asignar la nota reprobatoria a las evaluaciones y continuar con la siguiente unidad de biodiversidad de acuerdo con el plan de área."
+      },
+      {
+        "id": "B",
+        "texto": "Realizar un taller de retroalimentación procesal centrado en el análisis y construcción de gráficas cartesianas, utilizando datos simulados en tiempo real para que los estudiantes corrijan sus interpretaciones antes de realizar una nueva valoración."
+      },
+      {
+        "id": "C",
+        "texto": "Solicitar a la comisión de evaluación la reprobación del grado para el 60% de los estudiantes que fallaron la gráfica."
+      },
+      {
+        "id": "D",
+        "texto": "Eliminar la lectura de gráficas de los exámenes posteriores para no afectar el promedio académico institucional."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El Documento No. 11 del MEN orienta que la evaluación en el aula es procesal y formativa. Detectar una dificultad generalizada en la interpretación de lenguajes científicos exige ajustar las estrategias de enseñanza y realizar retroalimentación efectiva, ofreciendo oportunidades concretas de nivelación y superación del error."
+  },
+  {
+    "id": "NAT_008",
+    "area": "Competencias Específicas - Ciencias Naturales y Educación Ambiental",
+    "tema": "Argumentación Científica Escolar y Bioética",
+    "norma_referencia": "Estándares Básicos de Competencias en Ciencias Naturales (MEN) / DBA",
+    "contexto": "En la clase de Biología de grado 11°, se aborda el uso de organismos genéticamente modificados (OGM) en la agricultura colombiana. La clase se polariza en posturas emocionales sin fundamento técnico. El docente busca que los estudiantes construyan argumentos científicos rigurosos respetando visiones socioambientales diversas.",
+    "pregunta": "¿Cuál es el diseño metodológico más adecuado para promover la competencia de Argumentación y Compromiso Social y Ambiental?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Imponer la postura del docente como la verdad absoluta e indiscutible de la lección."
+      },
+      {
+        "id": "B",
+        "texto": "Organizar un juego de roles o juego de simulación (juicio socioambiental) donde los grupos investiguen evidencias científicas sobre impacto biológico, socioeconómico y ético, fundamentando sus posiciones con datos verificables."
+      },
+      {
+        "id": "C",
+        "texto": "Prohibir los debates sobre temas controversiales en el establecimiento educativo para evitar conflictos ideológicos."
+      },
+      {
+        "id": "D",
+        "texto": "Calificar como correcta únicamente la postura de los estudiantes que defienden el uso irrestricto de los transgénicos."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "Los Estándares de Ciencias promovidos por el MEN enfatizan que el aprendizaje de las ciencias debe conectar con la toma de decisiones informadas y la bioética. El uso de juegos de roles fundamentados en evidencias científicas desarraiga las opiniones infundadas y fortalece la capacidad argumentativa y ciudadana."
+  },
+  {
+    "id": "NAT_009",
+    "area": "Competencias Específicas - Ciencias Naturales y Educación Ambiental",
+    "tema": "Explicación de Fenómenos y Ecosistemas Colombianos",
+    "norma_referencia": "Estándares Básicos de Competencias en Ciencias Naturales (MEN) / DBA",
+    "contexto": "Un docente de Ciencias de grado 8° diseña una secuencia sobre los ecosistemas de páramo en Colombia y su función en la regulación hídrica. Para evaluar la competencia de 'Explicación de Fenómenos', presenta una situación hipotética en la que se elimina la vegetación de frailejones para introducir ganadería extensiva.",
+    "pregunta": "¿Qué desempeño evidencia que el estudiante ha alcanzado el nivel deseado de explicación científica?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Mencionar que las vacas son animales mamíferos que producen leche en las zonas frías del país."
+      },
+      {
+        "id": "B",
+        "texto": "Explicar las relaciones causa-efecto entre la pérdida de la estructura del suelo, la alteración en la capacidad de retención de agua por la pubescencia foliar del frailejón y la disminución del caudal en las cuencas bajas."
+      },
+      {
+        "id": "C",
+        "texto": "Dibujar un frailejón y colorear sus hojas sin establecer ninguna relación con el ciclo del agua."
+      },
+      {
+        "id": "D",
+        "texto": "Recitar de memoria el nombre científico de tres especies de frailejón sin analizar el impacto ecológico."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La competencia de 'Explicación de Fenómenos' en Ciencias Naturales trasciende la memorización o descripción simple; exige construir explicaciones articuladas basadas en relaciones de causalidad, interacciones ecosistémicas y modelos de conservación de recursos."
+  },
+  {
+    "id": "NAT_010",
+    "area": "Competencias Específicas - Ciencias Naturales y Educación Ambiental",
+    "tema": "Uso Pedagógico de Tecnologías y Simulaciones Virtuales",
+    "norma_referencia": "Orientaciones Pedagógicas del MEN para el Uso de TIC en Ciencias",
+    "contexto": "En una institución educativa con recursos limitados para adquirir reactivos químicos de alto costo o riesgo, el docente de Química de grado 11° planea la unidad de cinética química y factores que afectan la velocidad de reacción (temperatura, concentración y catalizadores).",
+    "pregunta": "¿Cuál es la integración tecnológica más pertinente que enriquece la experiencia indagatoria respetando las condiciones del contexto?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Cancelar las actividades de experimentación y dictar únicamente la teoría mediante lectura individual de fotocopias."
+      },
+      {
+        "id": "B",
+        "texto": "Utilizar simulaciones virtuales interactivas gratuitas (como PhET Interactive Simulations) donde los estudiantes manipulen digitalmente las variables, registren datos y construyan modelos de colisiones moleculares."
+      },
+      {
+        "id": "C",
+        "texto": "Exigir a los estudiantes que compren individualmente reactivos químicos de alta peligrosidad para manipularlos en sus casas."
+      },
+      {
+        "id": "D",
+        "texto": "Proyectar un video pasivo de 2 horas sin realizar preguntas de indagación o análisis de variables."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "Las orientaciones del MEN sobre la integración de TIC en ciencias resaltan el valor de los simuladores interactivos (p. ej. PhET) para modelar fenómenos a escala molecular de manera segura, permitiendo el control de variables, la recolección de datos y la formulación de conclusiones sin barreras presupuestales."
+  }
+]

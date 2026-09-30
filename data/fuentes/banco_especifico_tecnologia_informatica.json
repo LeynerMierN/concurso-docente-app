@@ -1,0 +1,282 @@
+[
+  {
+    "id": "TEC_001",
+    "area": "Competencias Específicas - Tecnología e Informática",
+    "tema": "Pensamiento Computacional y Algoritmos en la Escuela",
+    "norma_referencia": "Orientaciones Pedagógicas para la Educación en Tecnología (Guía 30 MEN) / DBA de Tecnología",
+    "contexto": "Un docente de Tecnología e Informática en grado 7° desea desarrollar el pensamiento computacional en sus estudiantes sin depender inicialmente de un lenguaje de programación con sintaxis compleja. Diseña una actividad donde los estudiantes deben representar mediante diagramas de flujo y pseudocódigo los pasos lógicos para resolver un problema de clasificación de residuos en la escuela.",
+    "pregunta": "¿Cuál es la razón pedagógica fundamental para priorizar el diseño de algoritmos y la descomposición de problemas antes de la codificación en un lenguaje específico?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Evitar que los estudiantes utilicen computadores en el aula de clase por el riesgo de distracción."
+      },
+      {
+        "id": "B",
+        "texto": "Fomentar las habilidades de abstracción, lógica de secuencias, depuración y descomposición de problemas, que son la base transferible del pensamiento computacional independientemente de la herramienta tecnológica."
+      },
+      {
+        "id": "C",
+        "texto": "Cumplir de manera estricta con el dictado de definiciones teóricas antes de permitir el acceso al laboratorio de informática."
+      },
+      {
+        "id": "D",
+        "texto": "Asegurar que solo los estudiantes con aptitudes avanzadas en matemáticas puedan participar en la clase."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "Según la Guía 30 del MEN, la educación en tecnología busca desarrollar la alfabetización tecnológica y el pensamiento computacional. La descomposición de problemas, el reconocimiento de patrones y el diseño algorítmico abstraen la lógica conceptual de la sintaxis particular de un lenguaje de programación, permitiendo un aprendizaje significativo e inclusivo."
+  },
+  {
+    "id": "TEC_002",
+    "area": "Competencias Específicas - Tecnología e Informática",
+    "tema": "Ciudadanía Digital, Seguridad en la Red y Etiqueta Digital",
+    "norma_referencia": "Ley 1620 de 2013 / Guía 30 MEN / Estrategia EnTICconfío - Mintic",
+    "contexto": "Durante una sesión de navegación guiada en grado 9°, el docente observa que varios estudiantes comparten contraseñas personales, descargan archivos ejecutables de fuentes no verificadas y publican comentarios despectivos en un foro escolar simulado.",
+    "pregunta": "¿Cuál es la intervención pedagógica integral que debe implementar el docente para fortalecer la Ciudadanía Digital?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Prohibir indefinidamente el uso de computadores e internet en todas las asignaturas del establecimiento educativo."
+      },
+      {
+        "id": "B",
+        "texto": "Desarrollar una unidad didáctica transversal sobre Ciudadanía Digital que aborde la huella digital, la seguridad de la información personal, la netiqueta y la prevención del ciberacoso y grooming."
+      },
+      {
+        "id": "C",
+        "texto": "Sancionar económicamente a los estudiantes involucrados mediante el cobro de licencias de software."
+      },
+      {
+        "id": "D",
+        "texto": "Ignorar la conducta al considerar que las acciones en plataformas digitales pertenecen exclusivamente al ámbito privado fuera de la escuela."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La dimensión de 'Tecnología y Sociedad' (Guía 30 MEN) y la Ley 1620 promueven la formación en Ciudadanía Digital ética, segura y responsable. La educación en netiqueta, ciberseguridad y convivencia digital transforma el aula de informática en un espacio formativo integral."
+  },
+  {
+    "id": "TEC_003",
+    "area": "Competencias Específicas - Tecnología e Informática",
+    "tema": "Sistemas Tecnológicos, Robótica Educativa y Prototipado",
+    "norma_referencia": "Guía No. 30 MEN / Estándares Básicos de Educación en Tecnología",
+    "contexto": "En grado 10°, los estudiantes trabajan en un proyecto de aula para automatizar un sistema de riego escolar utilizando sensores de humedad y placas programables de hardware libre (como Arduino o Micro:bit). Al conectar el circuito, el sensor no emite lecturas correctas.",
+    "pregunta": "¿Cómo debe guiar el docente la fase de depuración y solución de problemas (troubleshooting) desde el enfoque de diseño tecnológico?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Reemplazar inmediatamente todo el proyecto por una guía de lectura en papel sobre electricidad estática."
+      },
+      {
+        "id": "B",
+        "texto": "Orientar a los estudiantes para que apliquen una estrategia sistemática de aislamiento de variables: verificar conexiones físicas, revisar el código fuente bloque por bloque y medir voltajes de entrada."
+      },
+      {
+        "id": "C",
+        "texto": "Resolver el problema directamente conectando él mismo los cables sin explicar el procedimiento a los estudiantes."
+      },
+      {
+        "id": "D",
+        "texto": "Calificar como reprobado el proyecto ya que la tecnología debe funcionar al primer intento sin margen de error."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La solución de problemas (troubleshooting) es un componente central de la alfabetización tecnológica según la Guía 30 del MEN. Guiar el aislamiento de variables y la depuración lógica desarrolla el pensamiento crítico y la resiliencia en el aprendizaje técnico."
+  },
+  {
+    "id": "TEC_004",
+    "area": "Competencias Específicas - Tecnología e Informática",
+    "tema": "Inclusión, Accesibilidad Tecnológica y DUA (Decreto 1421 de 2017)",
+    "norma_referencia": "Decreto 1421 de 2017 / Guía 30 MEN / Pautas DUA",
+    "contexto": "Un estudiante con discapacidad motora en miembros superiores ingresa al curso de Informática de grado 6°. La sala de sistemas cuenta únicamente con teclados y ratones estándar sobre mesas de altura fija.",
+    "pregunta": "De acuerdo con el Decreto 1421 de 2017 y el Diseño Universal para el Aprendizaje (DUA), ¿cuál es el ajuste razonable tecnológico que debe garantizar la institución?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Eximir al estudiante de asistir a la clase de Informática y asignarle resúmenes escritos a mano sobre historia de los computadores."
+      },
+      {
+        "id": "B",
+        "texto": "Implementar periféricos adaptados (softwares de reconocimiento de voz, emuladores de ratón por seguimiento ocular o teclados en pantalla con pulsadores) y adaptar la altura de la mesa de trabajo."
+      },
+      {
+        "id": "C",
+        "texto": "Solicitar a la familia que compre los equipos de cómputo especializados y los donen al colegio como condición de permanencia."
+      },
+      {
+        "id": "D",
+        "texto": "Asignarle un compañero que realice la totalidad de los trabajos en el computador mientras el estudiante observa pasivamente."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El Decreto 1421 de 2017 establece la obligación de incorporar Tecnologías de la Información y la Comunicación accesibles como ajustes razonables en el PIAR, garantizando la autonomía y participación directa del estudiante con discapacidad."
+  },
+  {
+    "id": "TEC_005",
+    "area": "Competencias Específicas - Tecnología e Informática",
+    "tema": "Derechos de Autor, Licenciamiento Abierto y Ética Digital",
+    "norma_referencia": "Ley 23 de 1982 (Derechos de Autor) / Licencias Creative Commons / Guía 30 MEN",
+    "contexto": "En la elaboración de un sitio web escolar sobre historia local, los estudiantes copian y pegan imágenes y textos directamente de sitios de internet comerciales sin citar las fuentes ni verificar los permisos de uso.",
+    "pregunta": "¿Cuál es la estrategia pedagógica adecuada para enseñar sobre propiedad intelectual y licenciamiento en la era digital?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Permitir la copia indiscriminada bajo el argumento de que todo el contenido publicado en internet es de dominio público sin restricciones."
+      },
+      {
+        "id": "B",
+        "texto": "Enseñar el uso correcto de citas bibliográficas, derechos de autor y el funcionamiento de repositorios con licencias Creative Commons (CC) y dominio público para la reutilización ética de contenidos."
+      },
+      {
+        "id": "C",
+        "texto": "Prohibir el uso de imágenes e información de internet en todos los proyectos escolares."
+      },
+      {
+        "id": "D",
+        "texto": "Exigir que los estudiantes paguen derechos patrimoniales en dólares a las agencias internacionales antes de presentar la tarea."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La Guía 30 del MEN resalta la relación entre tecnología, ética y sociedad. El conocimiento de las licencias Creative Commons y el respeto a la propiedad intelectual promueven un uso ético y legal de la información."
+  },
+  {
+    "id": "TEC_006",
+    "area": "Competencias Específicas - Tecnología e Informática",
+    "tema": "Uso de Recursos Offline y Repositorios en Entornos sin Conectividad",
+    "norma_referencia": "Estrategia Computadores para Educar / Guía 30 MEN",
+    "contexto": "En una institución educativa rural sin acceso a internet continuo, el docente de Informática planifica sus clases de investigación y producción de conocimientos.",
+    "pregunta": "¿Qué estrategia tecnológica y pedagógica garantiza la equidad en el acceso a la información en este entorno?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Cancelar el plan de estudios de Informática hasta que el gobierno instale fibra óptica de alta velocidad."
+      },
+      {
+        "id": "B",
+        "texto": "Aprovechar los servidores locales e escolares cargados con repositorios digitales offline (como Colombia Aprende Offline, Wikipedia Kiwix y simuladores precargados)."
+      },
+      {
+        "id": "C",
+        "texto": "Obligar a los estudiantes a contratar planes de datos móviles personales para poder asistir a las prácticas."
+      },
+      {
+        "id": "D",
+        "texto": "Reemplazar los computadores por mecanografía en máquinas de escribir tradicionales."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "Las políticas educativas de la estrategia Computadores para Educar promueven el uso de tecnologías offline y servidores locales para cerrar la brecha digital en sedes rurales sin conectividad."
+  },
+  {
+    "id": "TEC_007",
+    "area": "Competencias Específicas - Tecnología e Informática",
+    "tema": "Procesos de Diseño Tecnológico y Prototipado de Soluciones",
+    "norma_referencia": "Guía No. 30 MEN (Componente: Solución de Problemas con Tecnología)",
+    "contexto": "Para atender la problemática del exceso de ruido en los pasillos de la escuela, los estudiantes de grado 8° proponen construir un dispositivo medidor de decibelios con luces indicadoras.",
+    "pregunta": "Siguiendo las fases del proceso de diseño tecnológico de la Guía 30 del MEN, ¿cuál es la secuencia correcta que deben seguir los estudiantes?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Comprar materiales → Ensamblar sin planos → Evaluar al final → Identificar el problema."
+      },
+      {
+        "id": "B",
+        "texto": "Identificar la necesidad o problema → Investigar y analizar antecedentes → Diseñar y planificar la solución (planos/bocetos) → Construir prototipo → Probar y evaluar."
+      },
+      {
+        "id": "C",
+        "texto": "Redactar el manual de usuario → Construir el prototipo → Analizar si existía una necesidad."
+      },
+      {
+        "id": "D",
+        "texto": "Copiar un diseño comercial exacto sin realizar adaptaciones ni pruebas."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La Guía 30 del MEN establece que el diseño tecnológico implica un proceso metódico e iterativo: identificación de necesidades, diseño conceptual, prototipado y evaluación del impacto."
+  },
+  {
+    "id": "TEC_008",
+    "area": "Competencias Específicas - Tecnología e Informática",
+    "tema": "Mantenimiento Preventivo y Arquitectura de Computadores",
+    "norma_referencia": "Guía No. 30 MEN / Estándares de Educación Media Técnica",
+    "contexto": "En la sala de sistemas, varios computadores presentan lentitud extrema al iniciar y calentamiento excesivo en la torre (CPU). El docente aprovecha la situación para desarrollar un taller práctico con grado 11°.",
+    "pregunta": "¿Cuál es el enfoque pedagógico adecuado para el componente técnico de mantenimiento preventivo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Desechar inmediatamente los equipos y solicitar la compra de nuevos dispositivos."
+      },
+      {
+        "id": "B",
+        "texto": "Guía metodológica para la identificación de componentes de hardware (limpieza de polvo, verificación de disipadores) y optimización de software (gestión de inicio y desinfección de malware)."
+      },
+      {
+        "id": "C",
+        "texto": "Permitir que los estudiantes desarmen los equipos con herramientas inadecuadas sin protocolo de seguridad eléctrica."
+      },
+      {
+        "id": "D",
+        "texto": "Centrar la clase exclusivamente en la memorización de los nombres en inglés de las tarjetas electrónicas sin tocar los equipos."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El mantenimiento preventivo pedagógico combina la comprensión teórica del hardware y software con el desarrollo de competencias operativas seguras y responsables en el cuidado de los recursos de la institución."
+  },
+  {
+    "id": "TEC_009",
+    "area": "Competencias Específicas - Tecnología e Informática",
+    "tema": "Bases de Datos, Gestión de Información y Hojas de Cálculo",
+    "norma_referencia": "Guía No. 30 MEN / Estándares Básicos en Informática",
+    "contexto": "Los estudiantes de grado 9° deben analizar los datos de consumo de agua de la institución educativa durante el último año. Disponen de una tabla con 500 registros mensuales.",
+    "pregunta": "¿Qué herramienta e interpretación analítica promueve el desarrollo del pensamiento de manejo de información?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Copiar la tabla manualmente en cuadernos de papel y sumar los números con calculadora básica uno a uno."
+      },
+      {
+        "id": "B",
+        "texto": "Utilizar hojas de cálculo para organizar los datos, aplicar fórmulas de agregación, generar gráficos dinámicos e inferir meses de mayor desperdicio para proponer campañas de ahorro."
+      },
+      {
+        "id": "C",
+        "texto": "Borrar la mitad de los datos para reducir la cantidad de trabajo."
+      },
+      {
+        "id": "D",
+        "texto": "Escribir un texto literario sobre el agua sin consultar la base de datos recopilada."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El manejo de información y datos mediante hojas de cálculo potencia el análisis cuantitativo, la visualización de patrones y la toma de decisiones informadas basadas en evidencia."
+  },
+  {
+    "id": "TEC_010",
+    "area": "Competencias Específicas - Tecnología e Informática",
+    "tema": "Impacto Ambiental de la Tecnología y Obsolescencia Programada",
+    "norma_referencia": "Guía No. 30 MEN (Componente: Tecnología y Sociedad)",
+    "contexto": "En grado 11°, se abre un debate sobre la acumulación de residuos de aparatos eléctricos y electrónicos (RAEE) y la velocidad con la que se sustituyen los teléfonos inteligentes.",
+    "pregunta": "Para desarrollar una postura crítica frente a la tecnología, ¿cuál es el concepto clave que debe analizarse?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La conveniencia de comprar siempre el último modelo de celular para no quedarse rezagado socialmente."
+      },
+      {
+        "id": "B",
+        "texto": "La obsolescencia programada y percibida, el ciclo de vida de los materiales y la necesidad de modelos de economía circular y reciclaje tecnológico (RAEE)."
+      },
+      {
+        "id": "C",
+        "texto": "La prohibición de fabricar nuevos dispositivos electrónicos a nivel mundial."
+      },
+      {
+        "id": "D",
+        "texto": "El aumento de la velocidad de procesamiento informático sin considerar el costo energético ni de extracción de minerales."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El componente 'Tecnología y Sociedad' de la Guía 30 del MEN busca formar ciudadanos capaces de evaluar los impactos ambientales, sociales y éticos de los desarrollos tecnológicos."
+  }
+]

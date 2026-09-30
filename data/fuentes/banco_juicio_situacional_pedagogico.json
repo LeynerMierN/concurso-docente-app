@@ -1,0 +1,437 @@
+[
+  {
+    "id": "JUI_001",
+    "categoria_id": "juicio_situacional",
+    "area": "Juicio Situacional Pedagógico (Núcleo Común)",
+    "tema": "Inclusión Educativa y Elaboración del PIAR",
+    "norma_referencia": "Decreto 1421 de 2017 / Guía SED Boyacá / Colombia Aprende",
+    "contexto": "Un estudiante con Trastorno del Espectro Autista (TEA) se matricula en grado 6°. Al diseñar el PIAR, el docente de área advierte que el estudiante presenta hipersensibilidad auditiva que le genera crisis de ansiedad durante los trabajos grupales ruidosos.",
+    "pregunta": "¿Cuál es la actuación y ajuste razonable más adecuado que debe consignar e implementar el docente en el PIAR?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Exonerar al estudiante de asistir a todas las clases presenciales y asignarle guías de estudio domiciliarias exclusivas."
+      },
+      {
+        "id": "B",
+        "texto": "Proporcionar apoyos sensoriales (canceladores de ruido), habilitar un rincón de calma en el aula y estructurar roles individuales definidos en las dinámicas grupales."
+      },
+      {
+        "id": "C",
+        "texto": "Exigir al grupo que permanezca en silencio absoluto durante todo el año escolar bajo amenaza de sanción disciplinaria."
+      },
+      {
+        "id": "D",
+        "texto": "Solicitar el traslado inmediato del estudiante a un centro de educación especial no regular."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El Decreto 1421 de 2017 establece que los ajustes razonables deben garantizar la permanencia y participación en el aula común con pares, adaptando el ambiente físico, sensorial y metodológico sin segregar al estudiante."
+  },
+  {
+    "id": "JUI_002",
+    "categoria_id": "juicio_situacional",
+    "area": "Juicio Situacional Pedagógico (Núcleo Común)",
+    "tema": "Convivencia Escolar y Manejo de Situaciones Tipo II",
+    "norma_referencia": "Ley 1620 de 2013 / Decreto 1965 de 2013 / Guía Pedagógica No. 49",
+    "contexto": "Un docente descubre que un grupo de tres estudiantes ha creado un perfil falso en redes sociales para difundir memes denigrantes sobre la apariencia física de un compañero durante el último mes. El estudiante agredido llora en el aula y no quiere regresar al colegio.",
+    "pregunta": "¿Cuál es la ruta de atención inmediata e institucional que debe activar el docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Clasificar el hecho como Situación Tipo II (ciberacoso), brindar apoyo emocional al agredido, informar inmediatamente a los acudientes de todos los involucrados, adoptar medidas de protección y remitir el caso al Comité Escolar de Convivencia."
+      },
+      {
+        "id": "B",
+        "texto": "Resolver la situación mediante un apretón de manos informal en el descanso sin citar a los acudientes para no alarmar a la comunidad."
+      },
+      {
+        "id": "C",
+        "texto": "Denunciar inmediatamente a los estudiantes ante la Fiscalía General de la Nación por delito penal constitutivo de Situación Tipo III."
+      },
+      {
+        "id": "D",
+        "texto": "Expulsar de manera directa a los estudiantes agresores sin realizar ningún procedimiento previo."
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "El ciberacoso escolar sistemático constituye una Situación Tipo II bajo la Ley 1620 de 2013. Exige atención inmediata a la víctima, citación a acudientes, adopción de medidas pedagógicas restaurativas y reporte al Comité Escolar de Convivencia."
+  },
+  {
+    "id": "JUI_003",
+    "categoria_id": "juicio_situacional",
+    "area": "Juicio Situacional Pedagógico (Núcleo Común)",
+    "tema": "Libertad de Cultos y Laicidad Escolar",
+    "norma_referencia": "Constitución Política de 1991, Artículo 19 / Sentencia T-388 de 2009",
+    "contexto": "Durante la planeación de un acto cívico institucional, la dirección propone realizar una misa católica obligatoria para todos los estudiantes como parte de la programación del aniversario del colegio. Los padres de un estudiante que profesa la fe cristiana evangélica solicitan por escrito que su hijo no sea obligado a asistir.",
+    "pregunta": "Atendiendo a la Constitución Política y la jurisprudencia constitucional, ¿cómo debe actuar la institución educativa?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Rechazar la solicitud argumentando que la tradición del colegio prevalece sobre los cultos individuales."
+      },
+      {
+        "id": "B",
+        "texto": "Garantizar el derecho a la libertad de cultos del estudiante, ofreciendo una actividad pedagógica alternativa de carácter laico sin represalias disciplinarias ni académicas."
+      },
+      {
+        "id": "C",
+        "texto": "Sancionar disciplinariamente al estudiante por desacato al Manual de Convivencia."
+      },
+      {
+        "id": "D",
+        "texto": "Obligar al estudiante a permanecer arrodillado en silencio en la misa como muestra de respeto."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El artículo 19 de la C.P. y la Corte Constitucional amparan la libertad de cultos. En colegios oficiales o eventos institucionales obligatorios no se puede constreñir a los estudiantes a prácticas religiosas contrarias a sus convicciones, debiendo garantizarse alternativas académicas laicas."
+  },
+  {
+    "id": "JUI_004",
+    "categoria_id": "juicio_situacional",
+    "area": "Juicio Situacional Pedagógico (Núcleo Común)",
+    "tema": "Debido Proceso Disciplinario Estudiantil",
+    "norma_referencia": "Sentencia T-240 de 2018 / Decreto 1860 de 1994",
+    "contexto": "Un estudiante de grado 11° es sorprendido portando una sustancia psicoactiva en el descanso. El coordinador de convivencia, indignado por el hecho, redacta en el acto una resolución de expulsión definitiva del colegio sin permitir que el estudiante presente descargos ni citar a sus padres.",
+    "pregunta": "¿Qué derecho fundamental ha sido vulnerado y cuál es el procedimiento legal correcto?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Se vulneró el derecho a la intimidad; debía decomisarse la sustancia en secreto."
+      },
+      {
+        "id": "B",
+        "texto": "Se vulneró el derecho al debido proceso; la institución debe citar al acudiente, permitir la presentación de descargos, controvertir pruebas y garantizar la doble instancia antes de cualquier sanción."
+      },
+      {
+        "id": "C",
+        "texto": "No existió ninguna vulneración, pues el flagrante delito autoriza la expulsión inmediata."
+      },
+      {
+        "id": "D",
+        "texto": "Se vulneró el derecho al libre desarrollo de la personalidad, pues el colegio no puede sancionar el consumo."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La Corte Constitucional ha reiterado que el debido proceso (Art. 29 C.P.) es plenamente aplicable al régimen disciplinario escolar. La expulsión o sanción arbitraria sin descargos, citación a padres y derecho a la defensa es nula y violatoria de derechos fundamentales."
+  },
+  {
+    "id": "JUI_005",
+    "categoria_id": "juicio_situacional",
+    "area": "Juicio Situacional Pedagógico (Núcleo Común)",
+    "tema": "Protección de Estudiantes Embarazadas y Maternidad",
+    "norma_referencia": "Sentencia T-673 de 2011 / Ley 115 de 1994",
+    "contexto": "Una estudiante de grado 9° de 15 años informa que se encuentra en estado de embarazo. La comisión de evaluación de su colegio propone trasladarla a la jornada nocturna de educación de adultos para 'evitar un mal ejemplo' al resto de las compañeras del grado diario.",
+    "pregunta": "¿Cuál es la validez constitucional de la propuesta formulada por la comisión de evaluación?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Es inconstitucional y discriminatoria; la institución debe garantizar la permanencia de la estudiante en su jornada regular adaptando flexibilizaciones pedagógicas para su maternidad."
+      },
+      {
+        "id": "B",
+        "texto": "Es legal porque el rector tiene la facultad de reubicar estudiantes por convivencia."
+      },
+      {
+        "id": "C",
+        "texto": "Es válida siempre y cuando el padre de la estudiante firme la autorización de traslado."
+      },
+      {
+        "id": "D",
+        "texto": "Es obligatoria bajo las normas del Ministerio de Salud."
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "La jurisprudencia constitucional protege la maternidad en el entorno escolar. La expulsión, segregación o traslado no consentido de estudiantes embarazadas a jornadas de adultos constituye discriminación por razones de género y vulnera el derecho fundamental a la educación."
+  },
+  {
+    "id": "JUI_006",
+    "categoria_id": "juicio_situacional",
+    "area": "Juicio Situacional Pedagógico (Núcleo Común)",
+    "tema": "Manejo de Situaciones Tipo III (Delitos y Armas)",
+    "norma_referencia": "Ley 1620 de 2013 / Ley 1098 de 2006",
+    "contexto": "Un docente observa que un estudiante de grado 10° exhibe a sus compañeros un arma blanca (cuchillo) dentro del aula de clase en tono amenazante.",
+    "pregunta": "¿Cuál es la actuación legal obligatoria que debe liderar la institución educativa?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Sancionar al estudiante únicamente con trabajo comunitario en el colegio durante el fin de semana."
+      },
+      {
+        "id": "B",
+        "texto": "Clasificar el caso como Situación Tipo III, poner a salvo a los estudiantes, notificar inmediatamente a la Policía de Infancia y Adolescencia, informar a los acudientes y convocar al Comité de Convivencia."
+      },
+      {
+        "id": "C",
+        "texto": "Ignorar el hecho si no se produjeron heridas físicas en ningún compañero."
+      },
+      {
+        "id": "D",
+        "texto": "Retener al estudiante en un calabozo escolar hasta que cumpla 18 años."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El porte de armas e intimidación con riesgo presunto de delito se clasifica como Situación Tipo III bajo la Ley 1620 de 2013, exigiendo reporte inmediato a autoridades de protección (Policía de Infancia), custodia segura del menor y activación del protocolo de emergencia."
+  },
+  {
+    "id": "JUI_007",
+    "categoria_id": "juicio_situacional",
+    "area": "Juicio Situacional Pedagógico (Núcleo Común)",
+    "tema": "Atención a la Diversidad Sexual e Identidad de Género",
+    "norma_referencia": "Sentencia T-478 de 2015 (Caso Sergio Urrego) / Ley 1620 de 2013",
+    "contexto": "Un estudiante de grado 11° manifiesta de manera libre su orientación sexual. Un docente del colegio realiza comentarios burlones en clase sobre su apariencia y le advierte que le bajará la nota de comportamiento si no 'actúa como un hombre tradicional'.",
+    "pregunta": "¿Qué actuación debe emprender el directivo docente al conocer la situación?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Respaldar al docente para mantener la disciplina y moral tradicional de la institución."
+      },
+      {
+        "id": "B",
+        "texto": "Brindar protección inmediata al estudiante, frenar el hostigamiento, iniciar proceso disciplinario contra el docente por discriminación (Sentencia T-478) y remitir apoyo psicosocial."
+      },
+      {
+        "id": "C",
+        "texto": "Aconsejar al estudiante que oculte su orientación sexual hasta graduarse."
+      },
+      {
+        "id": "D",
+        "texto": "Cambiar al estudiante de colegio para evitar conflictos con el cuerpo docente."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La Sentencia T-478/15 prohíbe taxativamente la discriminación o persecución por orientación sexual e identidad de género en las escuelas. El directivo debe restaurar los derechos del estudiante e iniciar acciones disciplinarias ante el acoso institucional."
+  },
+  {
+    "id": "JUI_008",
+    "categoria_id": "juicio_situacional",
+    "area": "Juicio Situacional Pedagógico (Núcleo Común)",
+    "tema": "Protección ante Indicios de Maltrato o Negligencia Familiar",
+    "norma_referencia": "Ley 1098 de 2006, Artículo 44 / Código de la Infancia",
+    "contexto": "Un docente de primaria nota que un estudiante de 7 años acude reiteradamente con hematomas en su cuerpo, ropa sucia y evidencias de desnutrición. Al indagar con el menor, este revela que su padrastro lo golpea severamente cuando no vende dulces en la calle.",
+    "pregunta": "¿Cuál es la obligación legal prioritaria del docente y del establecimiento educativo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Esperar a que termine el año lectivo para ver si la situación familiar mejora espontáneamente."
+      },
+      {
+        "id": "B",
+        "texto": "Confrontar en privado al padrastro amenazándolo con no entregarle el boletín de notas."
+      },
+      {
+        "id": "C",
+        "texto": "Activar inmediatamente la Ruta de Protección, denunciando el caso ante el ICBF, Comisaría de Familia o Personería para la medida de restablecimiento de derechos."
+      },
+      {
+        "id": "D",
+        "texto": "Expulsar al estudiante por vulnerar el perfil institucional."
+      }
+    ],
+    "respuesta_correcta": "C",
+    "justificacion": "El Art. 44 de la Ley 1098/06 obliga a los educadores a denunciar de inmediato ante las autoridades de protección (ICBF/Comisaría) cualquier indicio de violencia, maltrato o explotación de un menor, primando su interés superior."
+  },
+  {
+    "id": "JUI_009",
+    "categoria_id": "juicio_situacional",
+    "area": "Juicio Situacional Pedagógico (Núcleo Común)",
+    "tema": "Manejo de Situaciones de Consumo de SPA en el Colegio",
+    "norma_referencia": "Ley 1566 de 2012 / Decreto 1844 de 2018 / Guía 49 MEN",
+    "contexto": "Un docente detecta a un estudiante de grado 9° consumiendo una sustancia psicoactiva ilícita en el baño del colegio durante el descanso.",
+    "pregunta": "Desde el enfoque pedagógico y de derechos amparado en la Ley 1566 de 2012, ¿cuál es el abordaje institucional adecuado?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Tratar el consumo como un problema pedagógico y de salud pública, brindando contención, notificando a la familia y activando la ruta de atención en salud (EPS/Orientación) sin recurrir a la expulsión automática."
+      },
+      {
+        "id": "B",
+        "texto": "Llamar a la policía para que detenga e incaerele inmediatamente al estudiante por delito de tráfico."
+      },
+      {
+        "id": "C",
+        "texto": "Exhibir al estudiante en la formación general para que sirva de escarmiento a sus compañeros."
+      },
+      {
+        "id": "D",
+        "texto": "Cobrar una multa económica a los padres para financiar el proyecto de prevención."
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "La Ley 1566 reconoce la adicción o consumo de SPA como un asunto de salud pública. La escuela debe activar la ruta de salud y acompañamiento pedagógico, protegiendo al estudiante sin estigmatización ni medidas de expulsión sumaria."
+  },
+  {
+    "id": "JUI_010",
+    "categoria_id": "juicio_situacional",
+    "area": "Juicio Situacional Pedagógico (Núcleo Común)",
+    "tema": "Evaluación Formativa y Retención Escolar Injustificada",
+    "norma_referencia": "Decreto 1290 de 2009 / Documento No. 11 del MEN",
+    "contexto": "Un docente propone reprobar automáticamente al 30% de sus estudiantes argumentando que 'la alta reprobación es la única prueba objetiva del rigor académico de su asignatura'.",
+    "pregunta": "¿Qué directriz pedagógica del Decreto 1290 contraviene la propuesta del docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El principio de que la evaluación debe ser formativa, procesal y continua, orientada a superar barreras de aprendizaje y no a cumplir cuotas punitivas de reprobación."
+      },
+      {
+        "id": "B",
+        "texto": "El derecho del docente a decidir de forma autocrática sin rendir cuentas al Consejo Académico."
+      },
+      {
+        "id": "C",
+        "texto": "La obligatoriedad de aprobar al 100% de los estudiantes sin importar su desempeño."
+      },
+      {
+        "id": "D",
+        "texto": "La norma que exige utilizar únicamente exámentes escritos tipo ICFES."
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "El Decreto 1290 de 2009 proscribe las cuotas fijas de reprobación y concibe la evaluación como un proceso formativo destinado a identificar fortalezas y brindar apoyos de nivelación."
+  },
+  {
+    "id": "JUI_011",
+    "categoria_id": "juicio_situacional",
+    "area": "Juicio Situacional Pedagógico (Núcleo Común)",
+    "tema": "Inclusión y Adaptación Curricular en Discapacidad Intelectual",
+    "norma_referencia": "Decreto 1421 de 2017 / Anexo PIAR",
+    "contexto": "Un estudiante con discapacidad intelectual leve ingresa a grado 7°. El docente de Ciencias afirma que no puede enseñarle nada porque el estudiante 'no maneja el pensamiento abstracto algebraico requerido'.",
+    "pregunta": "¿Cuál es la recomendación del orientador basada en el marco normativo del Decreto 1421?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Diseñar en el PIAR ajustes razonables que adapten las metas de aprendizaje, los apoyos gráficos y la evaluación, permitiendo la construcción del concepto a su ritmo sin eliminar los contenidos del grado."
+      },
+      {
+        "id": "B",
+        "texto": "Enviar al estudiante a la biblioteca durante la clase de Ciencias para que no se atrase el resto del grupo."
+      },
+      {
+        "id": "C",
+        "texto": "Solicitar a la Secretaría de Educación que el estudiante sea desmatriculado."
+      },
+      {
+        "id": "D",
+        "texto": "Calificar siempre con 5.0 al estudiante sin realizar ninguna actividad pedagógica."
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "El Decreto 1421 exige diversificar la didáctica y consignar ajustes razonables en el PIAR para garantizar que el estudiante acceda a los saberes de su grado con los apoyos e intensidades adecuados a sus capacidades."
+  },
+  {
+    "id": "JUI_012",
+    "categoria_id": "juicio_situacional",
+    "area": "Juicio Situacional Pedagógico (Núcleo Común)",
+    "tema": "Protección de Datos e Imagen de Menores de Edad",
+    "norma_referencia": "Ley 1581 de 2012 / Ley 1098 de 2006",
+    "contexto": "Para promocionar la institución en redes sociales, el coordinador publica fotografías en alta resolución de varios estudiantes de primaria en situaciones vulnerables o de llanto durante un simulacro de evacuación.",
+    "pregunta": "¿Qué falta legal se evidencia en la publicación de dichas imágenes?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Vulneración de la Ley de Habeas Data y protección de la imagen de menores de edad sin autorización informada de los padres."
+      },
+      {
+        "id": "B",
+        "texto": "Falta de derechos de autor sobre las fotografías del simulacro."
+      },
+      {
+        "id": "C",
+        "texto": "Ninguna, pues el colegio tiene derecho de uso total sobre la imagen de sus matriculados."
+      },
+      {
+        "id": "D",
+        "texto": "Incumplimiento de las metas del Plan de Mejoramiento Institucional."
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "La imagen de niños y adolescentes está protegida por la Ley de Infancia y la Ley 1581. Publicar fotos sin consentimiento informado explícito de los padres vulne la intimidad y protección de datos."
+  },
+  {
+    "id": "JUI_013",
+    "categoria_id": "juicio_situacional",
+    "area": "Juicio Situacional Pedagógico (Núcleo Común)",
+    "tema": "Acompañamiento a la Diversidad de Género",
+    "norma_referencia": "Sentencia T-565 de 2013 / Sentencia T-478 de 2015",
+    "contexto": "Un estudiante trans de grado 10° solicita respetuosamente ser llamado por su nombre social identitario tanto en el aula como en los listados del colegio.",
+    "pregunta": "Conforme a la jurisprudencia constitucional sobre derecho a la identidad de género en la escuela, ¿cómo debe responder el establecimiento educativo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Negar la solicitud argumentando que solo se usará el nombre del registro civil hasta que exista sentencia judicial."
+      },
+      {
+        "id": "B",
+        "texto": "Aceptar el uso del nombre social de preferencia del estudiante en las interacciones cotidianas de aula y boletines informativos internos, garantizando su dignidad e identidad sexual e identidad de género."
+      },
+      {
+        "id": "C",
+        "texto": "Exigir una multa a los padres para modificar las planillas de los profesores."
+      },
+      {
+        "id": "D",
+        "texto": "Recomendar al estudiante que solicite el retiro de la institución."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La Corte Constitucional (Sentencias T-565/13 y T-478/15) ha determinado que amparar el nombre social manifestado por el estudiante respeta el libre desarrollo de la personalidad y la vivencia de la orientación sexual e identidad de género."
+  },
+  {
+    "id": "JUI_014",
+    "categoria_id": "juicio_situacional",
+    "area": "Juicio Situacional Pedagógico (Núcleo Común)",
+    "tema": "Uso Pedagógico de Celulares y TICs en el Aula",
+    "norma_referencia": "Ley 2170 de 2021 / Autonomía Escolar del PEI",
+    "contexto": "Un docente decomisa indefinidamente el teléfono móvil de un estudiante por tenerlo sobre el escritorio durante la explicación, negándose a devolvérselo al acudiente al finalizar la jornada.",
+    "pregunta": "¿Qué aspecto del procedimiento resulta desproporcionado o contrario al derecho a la propiedad y debido proceso?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Retener indefinidamente el bien privado del estudiante impidiendo su devolución al acudiente; el decomiso debe ser temporal y seguir el protocolo del Manual de Convivencia."
+      },
+      {
+        "id": "B",
+        "texto": "Llamar la atención al estudiante durante la explicación de clase."
+      },
+      {
+        "id": "C",
+        "texto": "Permitir el uso de teléfonos inteligentes durante las pruebas escritas."
+      },
+      {
+        "id": "D",
+        "texto": "Citar al acudiente para dialogar sobre la pauta de uso de las TICs."
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "Aunque el colegio puede regular el uso de dispositivos (Ley 2170/21), el decomiso indefinido o apropiación de bienes privados vulnera el debido proceso y la propiedad privada. Las retenciones deben ser breves y devolverse al acudiente."
+  },
+  {
+    "id": "JUI_015",
+    "categoria_id": "juicio_situacional",
+    "area": "Juicio Situacional Pedagógico (Núcleo Común)",
+    "tema": "Mediación Pedagógica en Conflictos entre Docentes y Estudiantes",
+    "norma_referencia": "Ley 1620 de 2013 / Guía Pedagógica No. 49",
+    "contexto": "Un estudiante de grado 8° interrumpe la clase realizando gritos de protesta por una nota que considera injusta. El docente pierde la calma, lo califica de 'vago e incompetente' y lo saca del salón.",
+    "pregunta": "¿Cuál es la intervención adecuada de mediación pedagógica que debe realizar la coordinación de convivencia?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Sancionar exclusivamente al estudiante con expulsión por 3 días sin revisar la actuación del docente."
+      },
+      {
+        "id": "B",
+        "texto": "Facilitar un espacio de conciliación y restauración de derechos donde el estudiante exprese su reclamo con respeto y el docente reconozca el desacierto del descontrol verbal, restableciendo el diálogo pedagógico."
+      },
+      {
+        "id": "C",
+        "texto": "Bajar la nota del estudiante a 1.0 en todas las asignaturas del grado."
+      },
+      {
+        "id": "D",
+        "texto": "Anular la evaluación a todo el curso para evitar futuros reclamos."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La mediación basada en la Ley 1620 busca la resolución restaurativa de conflictos (Situación Tipo I) promoviendo el reconocimiento de responsabilidad de ambas partes y la reconstrucción del vínculo pedagógico."
+  }
+]

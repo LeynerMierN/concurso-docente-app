@@ -41,7 +41,7 @@ export default function Beneficios() {
   return (
     <ul className="space-y-3">
       {BENEFICIOS.map(({ Icono, titulo, etiqueta, texto, color }) => (
-        <li key={titulo} className="flex gap-4 rounded-3xl bg-white p-5 ring-1 ring-slate-200 dark:bg-slate-900 dark:ring-slate-800">
+        <li key={titulo} className="flex gap-4 rounded-3xl bg-white p-5 ring-1 ring-slate-200 dark:bg-tarjeta dark:ring-slate-700/60">
           <span className={`grid size-12 shrink-0 place-items-center rounded-2xl ${color}`}>
             <Icono className="size-6" />
           </span>

@@ -5,9 +5,14 @@ export interface Opcion {
   texto: string;
 }
 
-/** Pregunta de Juicio Situacional (PJS), tal como viene en data/banco_preguntas_pjs_concurso_docente.json */
+/** Pregunta del banco unificado data/banco_preguntas.json (generado por scripts/importar_bancos.py) */
 export interface Pregunta {
   id: string;
+  /** Id de la taxonomía de data/app_config.json (categories_taxonomy) */
+  categoria_id: string;
+  /** Grupo de la taxonomía: core_transversal, especialidades_docentes, directivos_docentes, contextos_diferenciados */
+  grupo: string;
+  /** Nombre de la categoría (para mostrar) */
   area: string;
   tema: string;
   norma_referencia: string;
@@ -16,9 +21,13 @@ export interface Pregunta {
   opciones: Opcion[];
   respuesta_correcta: OpcionId;
   justificacion: string;
+  /** Módulo especial de origen: casos_juridicos, analisis_distractores, simulacro_icfes */
+  modulo?: string;
 }
 
-/** Filtros temáticos predefinidos; cualquier otro string se interpreta como nombre exacto de área */
+/**
+ * "todos", un filtro temático predefinido, "grupo:<grupo de la taxonomía>" o el id de una categoría
+ */
 export type FiltroExamen = "todos" | "convivencia" | "inclusion" | "evaluacion" | "psicotecnica" | (string & {});
 
 export interface RespuestaUsuario {
@@ -45,6 +54,8 @@ export type ModoExamen = "practica" | "simulacro";
 
 export interface ConfigExamen {
   modo: ModoExamen;
+  /** Id del modo en data/app_config.json (exam_modes), si la sesión salió de uno */
+  modoId?: string;
   filtro: FiltroExamen;
   /** Máximo de preguntas; si se omite se usan todas las del filtro */
   cantidad?: number;
@@ -52,6 +63,10 @@ export interface ConfigExamen {
   limiteSegundos: number | null;
   /** Muestra la respuesta correcta y la justificación apenas se responde */
   feedbackInmediato: boolean;
+  /** Preguntas por categoría (simulacros por componentes); si existe, reemplaza a filtro/cantidad */
+  distribucion?: Record<string, number>;
+  /** Permite pausar el cronómetro (allow_pause del config) */
+  permitirPausa?: boolean;
   umbral: number;
 }
 
@@ -68,4 +83,6 @@ export interface SesionExamen {
   inicioMs: number;
   finMs: number | null;
   terminadoMs: number | null;
+  /** Momento en que se pausó; null o ausente = corriendo */
+  pausadoMs?: number | null;
 }

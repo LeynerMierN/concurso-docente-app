@@ -65,7 +65,7 @@ export default function CalculadoraSalarial() {
                 className={`flex items-center justify-between gap-3 rounded-2xl px-4 py-3 text-left transition active:scale-[0.99] ${
                   activo
                     ? "bg-marca-600 text-white shadow-md"
-                    : "bg-white ring-1 ring-slate-200 dark:bg-slate-900 dark:ring-slate-800"
+                    : "bg-white ring-1 ring-slate-200 dark:bg-tarjeta dark:ring-slate-700/60"
                 }`}
               >
                 <span className="min-w-0">
@@ -108,7 +108,7 @@ export default function CalculadoraSalarial() {
         </div>
 
         {/* Composición */}
-        <div className="rounded-3xl bg-white p-5 ring-1 ring-slate-200 dark:bg-slate-900 dark:ring-slate-800">
+        <div className="rounded-3xl bg-white p-5 ring-1 ring-slate-200 dark:bg-tarjeta dark:ring-slate-700/60">
           <h3 className="flex items-center gap-2 font-semibold">
             <TrendingUp className="size-5 text-marca-500 dark:text-oro" /> ¿De dónde sale el ingreso anual?
           </h3>
@@ -130,7 +130,7 @@ export default function CalculadoraSalarial() {
             ))}
           </ul>
 
-          <ul className="mt-5 divide-y divide-slate-100 dark:divide-slate-800">
+          <ul className="mt-5 divide-y divide-slate-100 dark:divide-slate-700">
             {prestaciones.map(({ nombre, valor, detalle }) => (
               <li key={nombre} className="flex items-center justify-between gap-3 py-2.5 text-sm">
                 <span>
@@ -147,7 +147,7 @@ export default function CalculadoraSalarial() {
           </ul>
         </div>
 
-        <p className="flex gap-2 rounded-2xl bg-slate-100 p-3 text-xs leading-relaxed text-slate-600 dark:bg-slate-800/60 dark:text-slate-400">
+        <p className="flex gap-2 rounded-2xl bg-slate-100 p-3 text-xs leading-relaxed text-slate-600 dark:bg-slate-700/40 dark:text-slate-400">
           <Info className="mt-0.5 size-4 shrink-0" />
           Valores brutos antes de aportes a salud y pensión. De los {formatoFactor.format(factor)} salarios, cerca de{" "}
           {formatoFactor.format(factorEfectivo)} se reciben en nómina; las cesantías se consignan al FOMAG. La bonificación

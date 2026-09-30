@@ -1,0 +1,282 @@
+[
+  {
+    "id": "PRE_PRI_001",
+    "area": "Competencias Específicas - Preescolar y Primaria",
+    "tema": "Dimensiones del Desarrollo y Actividades Rectoras",
+    "norma_referencia": "Ley 115 de 1994 (Art. 15 y 16) / Decreto 2247 de 1997 / Lineamientos Educación Inicial MEN",
+    "contexto": "Una docente de nivel Transición observa que durante las primeras tres semanas del año lectivo, la mayoría de los niños de 5 años muestra resistencia a realizar fichas impresas de trazos repetitivos y preescritura rígida, manifestando cansancio y desinterés. Al revisar la planeación de aula, la docente nota que no se han integrado momentos estructurados para el juego libre, la literatura infantil ni la exploración del entorno.",
+    "pregunta": "De acuerdo con el Decreto 2247 de 1997 y los lineamientos de educación inicial del MEN, ¿cuál es la estrategia pedagógica más adecuada que debe implementar la docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Aumentar el número de repeticiones de las fichas en casa como tarea obligatoria para acelerar la maduración motriz fina de los estudiantes."
+      },
+      {
+        "id": "B",
+        "texto": "Reorganizar la práctica pedagógica estructurando proyectos de aula articulados a través de las actividades rectoras (el juego, el arte, la literatura y la exploración del medio), potenciando el desarrollo de las dimensiones de manera integral."
+      },
+      {
+        "id": "C",
+        "texto": "Remitir a todos los niños con el docente de apoyo pedagógico argumentando la presencia de trastornos del desarrollo psicomotor."
+      },
+      {
+        "id": "D",
+        "texto": "Reemplazar el tiempo de clase por descanso libre sin intencionalidad pedagógica durante la mitad de la jornada escolar."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El Decreto 2247 de 1997 y los Lineamientos Curriculares de Educación Preescolar establecen los principios de integralidad, lúdica y participación. Las actividades rectoras de la primera infancia (juego, arte, literatura y exploración del medio) constituyen los pilares del aprendizaje significativo en el nivel preescolar. Obligar al niño a planas o fichas mecánicas descontextualizadas desconoce los ritmos de desarrollo y entorpece el fortalecimiento de las dimensiones afectiva, corporal, cognitiva, comunicativa y estética."
+  },
+  {
+    "id": "PRE_PRI_002",
+    "area": "Competencias Específicas - Preescolar y Primaria",
+    "tema": "Aprendizaje Significativo de la Lectoescritura Inicial",
+    "norma_referencia": "Ley 115 de 1994 / Lineamientos Curriculares de Lengua Castellana MEN",
+    "contexto": "En un curso de grado 1° de básica primaria, un docente implementa el aprendizaje de la lectura exigiendo la memorización fonética aislada de sílabas ('m con a = ma') y la plana repetitiva del alfabeto. A pesar de lograr que los estudiantes descodifiquen fonemas simples, advierte que los niños no comprenden el sentido de las oraciones ni muestran gusto por los textos informativos o narrativos que leen.",
+    "pregunta": "Desde el enfoque comunicativo y de significación recomendado por el MEN para la educación básica primaria, ¿cuál es la intervención pedagógica transformadora que debe aplicar el docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Proponer situaciones de lectura y escritura con sentido real en entornos significativos (lectura de cuentos, creación de afiches, recetarios y diarios de aula), promoviendo la hipótesis de la lengua escrita y la comprensión global."
+      },
+      {
+        "id": "B",
+        "texto": "Duplicar las planas escritas de palabras compuestas y sancionar cuantitativamente a los niños que no memoricen el silabario."
+      },
+      {
+        "id": "C",
+        "texto": "Postergar la enseñanza de la lectura y la escritura hasta que el estudiante ingrese a grado 3° de primaria."
+      },
+      {
+        "id": "D",
+        "texto": "Exigir la memorización mecanizada de reglas ortográficas complejas mediante dictados diarios de 50 palabras sin contexto."
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "Los Lineamientos Curriculares de Lengua Castellana y los Estándares Básicos de Competencias plantean que el lenguaje es una construcción sociocultural de significado. La lectura y la escritura no son meros procesos mecánicos de descodificación de fonemas aislados, sino actos de interacción comunicativa. La inmersión en textos reales y proyectos significativos permite al estudiante comprender la función social de la lengua escrita y desarrollar hipótesis lectoras activas."
+  },
+  {
+    "id": "PRE_PRI_003",
+    "area": "Competencias Específicas - Preescolar y Primaria",
+    "tema": "Pensamiento Matemático Temprano y Material Concreto",
+    "norma_referencia": "Derechos Básicos de Aprendizaje (DBA) de Matemáticas / Lineamientos MEN",
+    "contexto": "Para la enseñanza del concepto de suma y agrupación en grado 1°, un docente explica en el tablero los símbolos formalizados '+' e '=' y solicita a los estudiantes resolver inmediatamente una guía con 30 operaciones numéricas abstractas (p.ej., 8 + 5 = _). La mayoría de los estudiantes muestra confusión y comete errores al no poder asociar los números con cantidades reales.",
+    "pregunta": "¿Qué ajuste didáctico debe realizar el docente respetando las etapas del pensamiento matemático infantil según los lineamientos del MEN?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Introducir previamente el uso de material concreto manipulable (fichas, semillas, regletas) para vivenciar la acción de juntar y agregar, pasando a la representación gráfica antes del lenguaje simbólico abstracto."
+      },
+      {
+        "id": "B",
+        "texto": "Exigir el uso de calculadora digital para que los estudiantes no tengan que realizar operaciones mentales o grupales."
+      },
+      {
+        "id": "C",
+        "texto": "Avanzar directamente a la enseñanza de las operaciones de multiplicación para acelerar el ritmo del programa académico."
+      },
+      {
+        "id": "D",
+        "texto": "Prohibir el conteo con los dedos o la manipulación de objetos para obligar al razonamiento abstracto inmediato."
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "De acuerdo con los Derechos Básicos de Aprendizaje (DBA) y los Lineamientos de Matemáticas del MEN, la construcción del pensamiento numérico en la infancia requiere transitar progresivamente de la fase concreta (manipulación de objetos reales) a la fase pictórica/gráfica (representaciones visuales) y finalmente a la fase abstracta o simbólica. Forzar el simbolismo prematuro sin soporte concreto genera vacíos conceptuales y aversión hacia las matemáticas."
+  },
+  {
+    "id": "PRE_PRI_004",
+    "area": "Competencias Específicas - Preescolar y Primaria",
+    "tema": "Transiciones Armónicas y Continuidad Educativa",
+    "norma_referencia": "Ley 115 de 1994 / Orientaciones del MEN sobre Transiciones Armónicas",
+    "contexto": "Al inicio del año escolar en grado 1° de básica primaria, varios niños que provienen del nivel de Transición lloran al ingresar al aula, muestran angustia por la rigidez del mobiliario dispuesto en filas e incumplen los tiempos prolongados de trabajo sentado. El docente de 1° expresa que 'ya están en primaria y deben aprender a estar en silencio y disciplina estricta todo el día'.",
+    "pregunta": "Frente a este dilema de transición escolar, ¿cuál es la orientación pedagógica del MEN sobre las 'Transiciones Armónicas'?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Diseñar e implementar un plan de acogida y articulación pedagógica entre Preescolar y Primero que mantenga ambientes lúdicos, rincones de aprendizaje y momentos flexibles de adaptación sociocultural."
+      },
+      {
+        "id": "B",
+        "texto": "Sancionar disciplinariamente a los niños que lloren e informar a sus acudientes que no serán recibidos hasta que adopten una conducta adulta."
+      },
+      {
+        "id": "C",
+        "texto": "Devolver a los estudiantes al nivel de Jardín o Transición de manera inmediata sin evaluación pedagógica."
+      },
+      {
+        "id": "D",
+        "texto": "Eliminar por completo las actividades académicas de grado 1° durante todo el primer semestre lectivo."
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "La Estrategia de Transiciones Armónicas del MEN busca garantizar la continuidad pedagógica y afectiva entre la educación inicial/preescolar y la básica primaria. Exige que los docentes de primero adapten los ambientes de aprendizaje, incorporen el juego y gradúen las exigencias normativas para evitar rupturas abruptas que afecten la salud emocional, el gusto por el colegio y la permanencia escolar de los niños."
+  },
+  {
+    "id": "PRE_PRI_005",
+    "area": "Competencias Específicas - Preescolar y Primaria",
+    "tema": "Protección Integral y Detección de Vulneración de Derechos",
+    "norma_referencia": "Ley 1098 de 2006 (Código de la Infancia y la Adolescencia) / Ley 115 de 1994",
+    "contexto": "Una docente de grado 2° de primaria nota durante varios días consecutivos que un estudiante de 7 años llega a la institución con marcas de hematomas en la espalda, signos de desnutrición severa y desaliño extremo. Al indagar en privado, el niño expresa con temor que en su casa 'lo castigan fuertemente sin comer cuando no hace los mandados'.",
+    "pregunta": "¿Cuál es la obligación legal y pedagógica prioritaria de la docente según la Ley 1098 de 2006?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Confrontar directamente a los padres a la salida del colegio acusándolos de maltrato antes de realizar cualquier reporte formal."
+      },
+      {
+        "id": "B",
+        "texto": "Informar de manera inmediata a la Orientación Escolar, Rectoría o Directivos Docentes para activar la ruta de restablecimiento de derechos ante el ICBF, Comisaría de Familia o Personería, dejando registro detallado en el observador."
+      },
+      {
+        "id": "C",
+        "texto": "Ignorar el hecho argumentando que los métodos de disciplina en el hogar pertenecen a la privacidad de la familia."
+      },
+      {
+        "id": "D",
+        "texto": "Expulsar al niño del colegio para evitar que la institución educativa se vea envuelta en investigaciones judiciales."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El Código de la Infancia y la Adolescencia (Ley 1098 de 2006, Art. 44) establece que los educadores y directivos tienen la obligación legal ineludible de denunciar y activar la Ruta de Atención Integral frente a cualquier indicio de maltrato, negligencia, abuso o vulneración de los derechos fundamentales de los niños. La omisión de denuncia genera responsabilidad penal y administrativa para el servidor público."
+  },
+  {
+    "id": "PRE_PRI_006",
+    "area": "Competencias Específicas - Preescolar y Primaria",
+    "tema": "Inclusión y Adaptaciones Pedagógicas en Infancia",
+    "norma_referencia": "Decreto 1421 de 2017 / DUA y PIAR en Educación Primaria",
+    "contexto": "En un aula de grado 3° de primaria, un estudiante con Trastorno del Espectro Autista (TEA) presenta hipersensibilidad auditiva extrema, lo que le genera crisis de angustia durante los momentos de trabajo en grupos ruidosos. El docente nota que cuando el niño se descompensa, no logra completar las actividades de aprendizaje del periodo.",
+    "pregunta": "¿Qué ajuste razonable e inclusión pedagógica inmediata del PIAR debe implementar el docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Aislar al estudiante de forma permanente en un cuarto de almacenamiento fuera de la jornada académica."
+      },
+      {
+        "id": "B",
+        "texto": "Proporcionar apoyos sensoriales (como audífonos de cancelación de ruido), organizar zonas de calma en el aula y estructurar agendas visuales anticipadas para las transiciones entre actividades."
+      },
+      {
+        "id": "C",
+        "texto": "Exigir al grupo de estudiantes que permanezca en silencio absoluto durante las 6 horas de la jornada diaria sin realizar trabajo colaborativo."
+      },
+      {
+        "id": "D",
+        "texto": "Aprobar automáticamente al estudiante en todas las áreas académicas sin evaluar sus aprendizajes."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "Bajo el Decreto 1421 de 2017 y las pautas del DUA/PIAR, los ajustes razonables abarcan adaptaciones organizativas, sensoriales y metodológicas que eliminan las barreras del entorno. El uso de apoyos sensoriales, rincones de calma y agendas de anticipación visual permite al estudiante autorregularse, permanecer en el aula común junto a sus pares y avanzar en sus competencias individuales."
+  },
+  {
+    "id": "PRE_PRI_007",
+    "area": "Competencias Específicas - Preescolar y Primaria",
+    "tema": "Evaluación Cualitativa e Integral en Preescolar",
+    "norma_referencia": "Decreto 2247 de 1997 (Art. 10 y 14) / Decreto 1290 de 2009",
+    "contexto": "Al finalizar el primer periodo académico en el nivel de Preescolar (Jardín), un docente publica un boletín académico asignando notas cuantitativas numéricas de 1.0 a 5.0 en materias como 'Biología' y 'Geometría', reprobando a tres niños de 4 años por no alcanzar un promedio de 3.0.",
+    "pregunta": "De acuerdo con el marco legal del Decreto 2247 de 1997 y el Decreto 1290 de 2009, ¿cuál es el error normativo en la práctica evaluativa del docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "En la educación preescolar no se aplican reprobaciones ni calificaciones cuantitativas numéricas; la evaluación es un proceso cualitativo, descriptivo y formativo de seguimiento al desarrollo."
+      },
+      {
+        "id": "B",
+        "texto": "El docente debió reprobar al 50% del grupo para garantizar la excelencia del nivel preescolar."
+      },
+      {
+        "id": "C",
+        "texto": "La evaluación en preescolar debe basarse de manera exclusiva en exámenes escritos de selección múltiple."
+      },
+      {
+        "id": "D",
+        "texto": "El preescolar debe evaluarse asignando únicamente calificaciones en escala alfabética internacional (A, B, C, D) expedidas por el ICFES."
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "El artículo 10 del Decreto 2247 de 1997 establece expresamente que 'en el nivel de educación preescolar no se reprueban grados ni actividades. Los educandos avanzarán en el proceso educativo según sus capacidades y ritmos de aprendizaje'. La evaluación en este nivel es strictly cualitativa, sistemática y apreciativa, expresada en informes descriptivos de desarrollo."
+  },
+  {
+    "id": "PRE_PRI_008",
+    "area": "Competencias Específicas - Preescolar y Primaria",
+    "tema": "Didáctica de las Ciencias Naturales e Indagación Infantil",
+    "norma_referencia": "Estándares Básicos de Competencias en Ciencias Naturales MEN",
+    "contexto": "Un docente de grado 4° planea la unidad pedagógica sobre el ciclo de vida de las plantas. Para abordar el tema, solicita a los estudiantes copiar una definición de 3 páginas del libro de texto y memorizar de forma abstracta las partes de la flor para una evaluación escrita sumativa.",
+    "pregunta": "Para promover la indagación y el pensamiento científico infantil sugerido por los Estándares del MEN, ¿cuál es la mejor secuencia didáctica?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Diseñar un experimento guiado de germinación en el aula donde los estudiantes planteen preguntas, observen periódicamente, registren cambios en un diario de campo y formulen explicaciones grupales."
+      },
+      {
+        "id": "B",
+        "texto": "Castigar sin recreo a los estudiantes que no memoricen el nombre científico en latín de cada especie de planta."
+      },
+      {
+        "id": "C",
+        "texto": "Sustituir la clase de Ciencias Naturales por ejercicios de caligrafía y copia de párrafos académicos."
+      },
+      {
+        "id": "D",
+        "texto": "Proyectar un video magistral de 3 horas sin permitir preguntas ni interacción de los niños."
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "Los Estándares de Ciencias Naturales del MEN señalan que en la educación primaria el propósito es 'formar científicos naturales infantiles'. Esto se logra promoviendo las habilidades de indagación: observar, formular preguntas sobre el entorno, experimentar con modelos concretos, registrar datos y comunicar hallazgos de forma colaborativa."
+  },
+  {
+    "id": "PRE_PRI_009",
+    "area": "Competencias Específicas - Preescolar y Primaria",
+    "tema": "Desarrollo Socioemocional y Pactos de Aula en Primaria",
+    "norma_referencia": "Ley 1620 de 2013 / Guías Pedagógicas de Convivencia Escolar",
+    "contexto": "En un curso de grado 2° de primaria se presentan constantes interrupciones, empujones al hacer la fila e incapacidad para compartir el material escolar. El docente decide suspender las salidas al descanso de todo el curso durante un mes e implementar un sistema de castigos físicos o verbales para los infractores.",
+    "pregunta": "Desde la perspectiva de la convivencia escolar pacífica y el desarrollo socioemocional, ¿cuál es la estrategia pedagógica restaurativa adecuada?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Construir de manera participativa los acuerdos de convivencia (Pacto de Aula), realizar asambleas grupales para desarrollar la empatía y la autorregulación, e implementar consecuencias lógicas y reparadoras consensuadas."
+      },
+      {
+        "id": "B",
+        "texto": "Mantener las sanciones colectivas e incentivar que los estudiantes se delaten públicamente entre sí."
+      },
+      {
+        "id": "C",
+        "texto": "Ignorar la conducta destructiva confiando en que la madurez cronológica corregirá el comportamiento sin mediación."
+      },
+      {
+        "id": "D",
+        "texto": "Solicitar la expulsión de los 10 niños más inquietos del salón."
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "La Ley 1620 de 2013 y las Guías de Convivencia del MEN enfatizan el desarrollo de competencias ciudadanas y la justicia restaurativa. Las sanciones colectivas y punitivas destruyen el clima escolar y la confianza. Los Pactos de Aula construidos colectivamente permiten a los niños comprender el impacto de sus acciones, desarrollar autorregulación emocional y asumir compromisos de reparación activa."
+  },
+  {
+    "id": "PRE_PRI_010",
+    "area": "Competencias Específicas - Preescolar y Primaria",
+    "tema": "Formación Ciudadana y Didáctica de las Ciencias Sociales",
+    "norma_referencia": "Estándares Básicos de Competencias Ciudadanas / Ley 115 de 1994",
+    "contexto": "Para trabajar el tema de la diversidad étnica y cultural de Colombia en grado 5°, un docente solicita a sus estudiantes buscar biografías memorísticas de próceres del siglo XIX y copiarlas en el cuaderno.",
+    "pregunta": "¿Qué proyecto pedagógico o estrategia metodológica favorece la formación ciudadana crítica y el análisis social en primaria según el MEN?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Realizar un proyecto de investigación comunitaria sobre las tradiciones, relatos orales y saberes ancestrales de los grupos étnicos presentes en el entorno local o regional, organizando una feria de identidades."
+      },
+      {
+        "id": "B",
+        "texto": "Memorizar las fechas exactas de fundación de todos los municipios del departamento sin análisis social."
+      },
+      {
+        "id": "C",
+        "texto": "Dictar resúmenes del libro de texto durante todas las sesiones de Ciencias Sociales."
+      },
+      {
+        "id": "D",
+        "texto": "Omitir el tema de la diversidad étnica por considerarlo irrelevante en el plan de estudios."
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "Los Estándares de Ciencias Sociales y Competencias Ciudadanas del MEN promueven el reconocimiento de la pluralidad, la identidad cultural y la valoración de la diversidad. Los proyectos de investigación comunitaria y la recopilación de historias de vida locales aproximan al estudiante al pensamiento social crítico y fortalecen la convivencia democrática."
+  }
+]

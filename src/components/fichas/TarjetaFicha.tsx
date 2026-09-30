@@ -10,7 +10,7 @@ interface Props {
 }
 
 const cara =
-  "[grid-area:1/1] h-[min(30rem,calc(100dvh-24rem))] min-h-72 backface-hidden rounded-3xl p-6 shadow-sm ring-1 ring-slate-200 dark:ring-slate-800 cursor-pointer select-none";
+  "[grid-area:1/1] h-[min(30rem,calc(100dvh-24rem))] min-h-72 backface-hidden rounded-3xl p-6 shadow-sm ring-1 ring-slate-200 dark:ring-slate-700/60 cursor-pointer select-none";
 
 /**
  * Tarjeta con giro 3D. Ambas caras ocupan la misma celda del grid con una altura fija
@@ -49,7 +49,7 @@ export default function TarjetaFicha({ ficha, volteada, onVoltear }: Props) {
         <section
           aria-hidden={!volteada}
           inert={!volteada}
-          className={`${cara} rotate-y-180 space-y-4 overflow-y-auto overscroll-contain bg-white text-sm dark:bg-slate-900`}
+          className={`${cara} rotate-y-180 space-y-4 overflow-y-auto overscroll-contain bg-white text-sm dark:bg-tarjeta`}
         >
           <div className="flex items-center justify-between gap-3">
             <p className="text-lg font-bold text-marca-600 dark:text-oro">{ficha.sigla}</p>
@@ -57,7 +57,7 @@ export default function TarjetaFicha({ ficha, volteada, onVoltear }: Props) {
           </div>
           <p className="leading-relaxed text-slate-700 dark:text-slate-300">{ficha.definicion}</p>
 
-          <p className="flex items-start gap-2 rounded-2xl bg-slate-100 p-3 text-xs font-medium text-slate-600 dark:bg-slate-800 dark:text-slate-300">
+          <p className="flex items-start gap-2 rounded-2xl bg-slate-100 p-3 text-xs font-medium text-slate-600 dark:bg-slate-700/60 dark:text-slate-300">
             <Scale className="mt-0.5 size-4 shrink-0" /> {ficha.norma}
           </p>
 

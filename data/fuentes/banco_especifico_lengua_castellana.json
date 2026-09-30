@@ -1,0 +1,282 @@
+[
+  {
+    "id": "CAS_001",
+    "area": "Competencias Específicas - Lengua Castellana",
+    "tema": "Didáctica de la Lectura y Tipología Textual",
+    "norma_referencia": "Lineamientos Curriculares de Lengua Castellana (MEN) / DBA de Lenguaje",
+    "contexto": "En una clase de grado 9°, el docente aborda la lectura de un ensayista colombiano sobre el impacto de la desinformación en las redes sociales. Al evaluar la comprensión, advierte que la mayoría de estudiantes resume los datos presentados pero no logra identificar la postura implícita del autor ni la validez de los contraargumentos presentados.",
+    "pregunta": "De acuerdo con los Lineamientos Curriculares de Lengua Castellana del MEN, ¿cuál es la estrategia pedagógica más adecuada para elevar la comprensión del nivel inferencial al nivel crítico?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Solicitar a los estudiantes que memoricen la biografía del autor y transcriban literalmente las definiciones de desinformación que aparecen en el texto."
+      },
+      {
+        "id": "B",
+        "texto": "Implementar un taller de análisis del discurso orientado a identificar la intencionalidad del autor, las premisas no declaradas, los sesgos ideológicos y la solidez de las evidencias mediante preguntas orientadoras."
+      },
+      {
+        "id": "C",
+        "texto": "Castigar las lecturas incompletas asignando como sanción la elaboración individual de un resumen de 20 páginas sobre la historia del periodismo."
+      },
+      {
+        "id": "D",
+        "texto": "Sustituir el texto argumentativo por la memorización aislada de reglas ortográficas y categorías gramaticales."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "Los Lineamientos Curriculares de Lengua Castellana y los DBA de Lenguaje señalan que la lectura crítica exige superar la simple decodificación literal y el resumen informativo. Se requiere desarrollar competencias pragmáticas e ideológicas que permitan al estudiante cuestionar el texto, desentrañar supuestos implícitos, evaluar la validez de los argumentos y asumir una postura argumentada propia."
+  },
+  {
+    "id": "CAS_002",
+    "area": "Competencias Específicas - Lengua Castellana",
+    "tema": "Producción Textual como Proceso (Planificación, Textualización y Revisión)",
+    "norma_referencia": "Lineamientos Curriculares de Lengua Castellana / Estándares Básicos de Competencias en Lenguaje",
+    "contexto": "Una docente de grado 8° asigna la redacción de un artículo de opinión sobre la conservación ambiental. Para evaluar el escrito, se limita a devolver el texto final con marcas rojas sobre las faltas de ortografía y una calificación numérica baja, sin dar oportunidad de reescritura. Los estudiantes expresan frustración al no saber cómo mejorar sus producciones.",
+    "pregunta": "Desde el enfoque de la producción escrita como proceso continuo y procesal (MEN), ¿cuál es la reorientación didáctica idónea que debe realizar la docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Eliminar las actividades de producción escrita del plan de estudios y cambiarlas por dictados de reglas de acentuación."
+      },
+      {
+        "id": "B",
+        "texto": "Estructurar la producción textual en tres fases procesales (planificación/borrador, textualización y revisión colaborativa con rúbricas analíticas), permitiendo la reescritura antes de la entrega final."
+      },
+      {
+        "id": "C",
+        "texto": "Mantener la evaluación caligráfica estricta sin permitir correcciones, argumentando que la ortografía perfecta es el único criterio de la competencia comunicativa."
+      },
+      {
+        "id": "D",
+        "texto": "Exonerar de la reescritura a los estudiantes que usen procesadores de texto con corrector automático de ortografía."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "Los Estándares Básicos de Competencias en Lenguaje conciben la escritura no como un producto estático e inmediato, sino como un proceso cognoscitivo y comunicativo recursivo. La didáctica del lenguaje exige acompañar la planificación (definición del propósito e interlocutor), la borradores y la revisión mediante autorregulación y coevaluación, convirtiendo el error gramatical o estructural en insumo para la reescritura."
+  },
+  {
+    "id": "CAS_003",
+    "area": "Competencias Específicas - Lengua Castellana",
+    "tema": "Semiótica, Multimodalidad y Alfabetización Mediática",
+    "norma_referencia": "Estándares Básicos de Competencias en Lenguaje / DBA de Lenguaje",
+    "contexto": "Un docente de grado 10° analiza con sus estudiantes caricaturas políticas y anuncios publicitarios de prensa escrita. Observa que el grupo interpreta con facilidad el texto lingüístico (los diálogos), pero omite el análisis de los elementos no verbales (encuadre, simbolismo de los colores, gestos y metáforas visuales).",
+    "pregunta": "¿Qué estrategia pedagógica fortalece la competencia semiótica y la comprensión de lenguajes multimodales en los estudiantes?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Indicar que las imágenes en los textos son meros adornos sin valor comunicativo y pedir que ignoren el componente gráfico."
+      },
+      {
+        "id": "B",
+        "texto": "Guiar una lectura semiótica sistemática que deconstruya la relación entre el plano lingüístico y el plano icónico, analizando recursos ideológicos, ironías visuales y la intención del autor."
+      },
+      {
+        "id": "C",
+        "texto": "Solicitar a los estudiantes que calquen la imagen en sus cuadernos sin realizar ninguna reflexión sobre su significado pedagógico."
+      },
+      {
+        "id": "D",
+        "texto": "Prohibir el análisis de caricaturas políticas para evitar debates de actualidad dentro de la institución educativa."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "Los Estándares de Lenguaje contemplan la comprensión y producción de otros sistemas simbólicos (cómic, cine, pintura, publicidad). La alfabetización mediática y la semiótica requieren que los estudiantes aprendan a leer el lenguaje verbal y no verbal como una unidad integrada, reconociendo el sentido crítico, los sesgos y la intención comunicativa subyacente."
+  },
+  {
+    "id": "CAS_004",
+    "area": "Competencias Específicas - Lengua Castellana",
+    "tema": "Literatura, Canon y Enfoque Sociocultural",
+    "norma_referencia": "Lineamientos Curriculares de Lengua Castellana / Estándares de Lenguaje",
+    "contexto": "En grado 11°, al abordar la literatura latinoamericana del Realismo Mágico, un docente exige a sus estudiantes memorizar las fechas de nacimiento de los autores y el número de capítulos de las obras principales. Ante la desmotivación del grupo, el docente concluye que 'a los jóvenes de hoy no les interesa la literatura'.",
+    "pregunta": "Desde el enfoque del valor estético y sociocultural de la literatura expresado en los Lineamientos del MEN, ¿cómo debe reestructurarse la propuesta pedagógica?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Aumentar la cantidad de fechas y biografías para evaluar en exámenes de opción múltiple de memoria mecánica."
+      },
+      {
+        "id": "B",
+        "texto": "Promover la literatura como un diálogo estético y cultural, vinculando las temáticas de las obras con las realidades sociales del estudiante y fomentando la creación de horizontes de expectativa y talleres de escritura creativa."
+      },
+      {
+        "id": "C",
+        "texto": "Reemplazar la lectura de literatura por la transcripción de artículos del código civil o manuales de convivencia."
+      },
+      {
+        "id": "D",
+        "texto": "Obligar a los estudiantes a leer las obras únicamente en voz alta sin hacer comentarios ni análisis interpretativos."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "Los Lineamientos Curriculares de Lengua Castellana enfatizan que la literatura no debe enseñarse como una historia de fechas y biografías memorísticas, sino como un goce estético y un universo simbólico que permite la recreación del mundo, el desarrollo de la empatía y la reflexión crítica sobre la condición humana en contexto."
+  },
+  {
+    "id": "CAS_005",
+    "area": "Competencias Específicas - Lengua Castellana",
+    "tema": "Sociolingüística, Variación y Diversidad Dialectal",
+    "norma_referencia": "Constitución Política / Ley 115 de 1994 / Lineamientos Curriculares de Lengua Castellana",
+    "contexto": "Un estudiante proveniente de una región costeña se traslada a un colegio en la región andina. Durante sus intervenciones orales, utiliza giros lingüísticos y expresiones propias de su dialecto regional. Varios compañeros se burlan y el docente le exige en tono severo que 'hable correctamente en español neutro si no quiere ser sancionado'.",
+    "pregunta": "¿Cuál es el error conceptual y pedagógico del docente desde la perspectiva sociolingüística y normativa del lenguaje?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El docente actuó de manera correcta porque la escuela debe eliminar las diferencias dialectales para imponer una norma culta única e inalterable."
+      },
+      {
+        "id": "B",
+        "texto": "El docente desconoce la diversidad lingüística y cultural de la nación (Constitución Política y Lineamientos del MEN), confundiendo la variación dialectal legítima con un incorrección e incentivando la discriminación."
+      },
+      {
+        "id": "C",
+        "texto": "El docente debió expulsar al estudiante de forma definitiva por no hablar el acento local de la institución."
+      },
+      {
+        "id": "D",
+        "texto": "El docente debió exigir un dictamen médico sobre las cuerdas vocales del estudiante regional."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La sociolingüística y los Lineamientos Curriculares de Lengua Castellana reconocen que el lenguaje es vivo y diverso. Todas las variedades dialectales geográficas y sociales son legítimas. La función de la escuela no es estigmatizar el dialecto de origen, sino ampliar el repertorio comunicativo del estudiante según el contexto pragmático, respetando la riqueza pluricultural de Colombia."
+  },
+  {
+    "id": "CAS_006",
+    "area": "Competencias Específicas - Lengua Castellana",
+    "tema": "Inclusión, DUA y Accesibilidad Lingüística (Decreto 1421)",
+    "norma_referencia": "Decreto 1421 de 2017 / DUA / Instructivo PIAR",
+    "contexto": "En un curso de grado 7° está matriculado un estudiante sordo que utiliza la Lengua de Señas Colombiana (LSC) como primera lengua y el español escrito como segunda lengua. Durante la clase de Lengua Castellana, el docente exige que el estudiante realice exactamente las mismas pruebas de análisis sintáctico fonético oral que sus compañeros oyentes.",
+    "pregunta": "De acuerdo con el Decreto 1421 de 2017 y los principios del Diseño Universal para el Aprendizaje (DUA), ¿cuál es el ajuste razonable e institucional requerido?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Exonerar al estudiante sordo de la asignatura de Lengua Castellana y no otorgarle ninguna calificación durante el año lectivo."
+      },
+      {
+        "id": "B",
+        "texto": "Garantizar la presencia del intérprete de LSC, adaptar los procesos de enseñanza y evaluación del español como segunda lengua escrita con apoyos visuales (PIAR) y valorar las competencias comunicativas según su modalidad lingüística."
+      },
+      {
+        "id": "C",
+        "texto": "Obligar al estudiante sordo a articular sonidos hablados frente al curso para aprobar el área de Lenguaje."
+      },
+      {
+        "id": "D",
+        "texto": "Remitir al estudiante sordo a una escuela de educación especial fuera del sistema regular."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El Decreto 1421 de 2017 y la normativa sobre educación bilingüe-bicultural para sordos establecen que la LSC es la primera lengua de la comunidad sorda y el español escrito se enseña como segunda lengua. Las prácticas evaluativas deben adaptarse mediante ajustes razonables (PIAR/DUA) sin exigir competencias fonético-auditivas irrazonables."
+  },
+  {
+    "id": "CAS_007",
+    "area": "Competencias Específicas - Lengua Castellana",
+    "tema": "Uso Pedagógico de TICs y Literatura Digital",
+    "norma_referencia": "Orientaciones Pedagógicas para la Inserción de TICs (MEN) / DBA de Lenguaje",
+    "contexto": "Para desarrollar la escritura narrativa en grado 6°, un docente propone la creación colectiva de una 'Cibernovela Hipertextual' mediante una plataforma de edición colaborativa en línea, donde cada grupo escribe un nodo de la historia y los lectores eligen la ruta de navegación del personaje a través de enlaces.",
+    "pregunta": "¿Cuál es la ventaja pedagógica principal de esta estrategia en el desarrollo del pensamiento del lenguaje?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Demostrar que la escritura tradicional en papel ha quedado obsoleta y no debe volver a usarse en las escuelas."
+      },
+      {
+        "id": "B",
+        "texto": "Fomentar la escritura no lineal, la toma de decisiones colaborativa, la coherencia global del universo narrativo y la apropiación de nuevos lenguajes digitales."
+      },
+      {
+        "id": "C",
+        "texto": "Reducir la carga de trabajo del docente al permitir que un software redacte las historias automáticamente."
+      },
+      {
+        "id": "D",
+        "texto": "Aumentar la memorización pasiva de conceptos sintácticos aislados."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El hipertexto y la narrativa transmedia estimulan la estructura no lineal del pensamiento, exigen rigor en la Cohesión y Coherencia entre nodos y potencian el trabajo colaborativo en entornos virtuales, en consonancia con los DBA de Lenguaje sobre lectura y escritura en la era digital."
+  },
+  {
+    "id": "CAS_008",
+    "area": "Competencias Específicas - Lengua Castellana",
+    "tema": "Evaluación Formativa y Rúbricas Analíticas de Escritura",
+    "norma_referencia": "Decreto 1290 de 2009 / Documento No. 11 MEN",
+    "contexto": "Un equipo de docentes de área de Lengua Castellana busca unificar los criterios de evaluación de la producción escrita para básica secundaria. Un docente propone calificar únicamente el uso de la 'b' y la 'v' y la caligrafía. Los demás sostienen que deben evaluarse múltiples dimensiones de la competencia comunicativa.",
+    "pregunta": "De acuerdo con el Decreto 1290 de 2009 y el Documento No. 11 del MEN, ¿qué componentes deben estructurar una rúbrica analítica integral de evaluación formativa de la escritura?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Únicamente la extensión del texto medida en número exacto de palabras e imágenes."
+      },
+      {
+        "id": "B",
+        "texto": "Dimensiones pragmáticas (adecuación al propósito e interlocutor), textuales (coherencia, cohesión y estructura narrativa/argumentativa) y microestructurales (ortografía y puntuación)."
+      },
+      {
+        "id": "C",
+        "texto": "Exclusivamente la belleza estética de la letra manuscrita del estudiante."
+      },
+      {
+        "id": "D",
+        "texto": "El nivel socioeconómico de la familia del estudiante."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La evaluación formativa del lenguaje contempla la complejidad de la competencia comunicativa. Una rúbrica analítica debe valorar tanto la dimensión pragmática (¿cumple el texto su función en el contexto?), la dimensión textual (¿están conectadas las ideas de forma coherente y cohesionada?) y la dimensión sintáctico-ortográfica (convenciones de la lengua)."
+  },
+  {
+    "id": "CAS_009",
+    "area": "Competencias Específicas - Lengua Castellana",
+    "tema": "Desarrollo de la Oralidad y Argumentación Diagológica",
+    "norma_referencia": "Estándares Básicos de Competencias en Lenguaje / Ley 1620 de 2013",
+    "contexto": "Durante un debate escolar sobre el uso de uniformes en el colegio, dos estudiantes comienzan a descalificarse mutuamente con insultos personales y gritos, abandonando la discusión sobre el tema central. La clase se desordena y el público aplaude las agresiones.",
+    "pregunta": "¿Cuál es la intervención pedagógica inmediata del docente de Lengua Castellana para transformar la situación en un ejercicio de aprendizaje deliberativo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Cancelar el debate definitivamente y prohibir la expresión de opiniones orales por el resto del año académico."
+      },
+      {
+        "id": "B",
+        "texto": "Pausar el debate, visibilizar la diferencia entre falacia ad hominem (ataque personal) y argumentación basada en evidencias, restablecer las reglas del escucha activa y pedir a las partes reformular sus posturas con respeto."
+      },
+      {
+        "id": "C",
+        "texto": "Tomar partido por uno de los estudiantes y descalificar públicamente al otro para terminar rápido la discusión."
+      },
+      {
+        "id": "D",
+        "texto": "Remitir a todo el grupo a la estación de policía por alteración del orden."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El desarrollo de la oralidad argumentativa (Estándares MEN) no se limita al uso de la voz, sino al pensamiento crítico e intersubjetivo. El docente debe aprovechar los conflictos comunicativos para enseñar a identificar falacias, promover el respeto a la diferencia e inculcar la argumentación racional y ciudadana."
+  },
+  {
+    "id": "CAS_010",
+    "area": "Competencias Específicas - Lengua Castellana",
+    "tema": "Pragmática y Actos de Habla en el Análisis del Discurso",
+    "norma_referencia": "Lineamientos Curriculares de Lengua Castellana / DBA de Lenguaje",
+    "contexto": "Al analizar la frase '¡Hace mucho frío en este salón!' dicha por un docente mientras mira fijamente la ventana abierta frente a un estudiante, el docente de Lenguaje pide al curso interpretar el significado real de la oración dentro del contexto.",
+    "pregunta": "Desde la teoría de la pragmática y los actos de habla aplicados a la enseñanza del lenguaje, esta afirmación constituye principalmente un acto de habla:",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Representativo literal que únicamente informa sobre la temperatura meteorológica del lugar sin esperar respuesta."
+      },
+      {
+        "id": "B",
+        "texto": "Indirecto / Directivo (petición implícita) cuya intención comunicativa pragmática es solicitar amablemente al estudiante que cierre la ventana."
+      },
+      {
+        "id": "C",
+        "texto": "Sancionatorio penal que implica la expulsión automática del estudiante del establecimiento."
+      },
+      {
+        "id": "D",
+        "texto": "Gramaticalmente incorrecto que viola las normas del sujeto y predicado en español."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La dimensión pragmática del lenguaje (Lineamientos MEN) aborda el uso de la lengua en situación. Los actos de habla indirectos muestran cómo el significado comunicativo (fuerza ilocutiva) trasciende el significado literal de las palabras, exigiendo que el interlocutor infiera la intención real del hablante según el contexto."
+  }
+]

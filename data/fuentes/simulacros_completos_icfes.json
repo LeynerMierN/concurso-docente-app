@@ -1,0 +1,298 @@
+[
+  {
+    "simulacro_id": "SIM_ICFES_001",
+    "titulo": "Simulacro Oficial Nivel Concurso Docente - Prueba General de Selección",
+    "descripcion": "Simulacro estructurado según las especificaciones técnicas de la CNSC y el ICFES. Evalúa las 4 áreas transversales obligatorias con límites de tiempo real y ponderación de puntajes.",
+    "tiempo_limite_minutos": 270,
+    "total_preguntas": 10,
+    "instrucciones": "Responda cada pregunta seleccionando la opción más adecuada. En la prueba oficial no hay penalización por respuestas incorrectas. Administre su tiempo: aprox. 2.5 minutos por pregunta.",
+    "ponderacion_componentes": {
+      "Lectura Crítica": "30%",
+      "Razonamiento Cuantitativo": "20%",
+      "Juicio Situacional Pedagógico": "30%",
+      "Competencias Comportamentales": "20%"
+    },
+    "preguntas": [
+      {
+        "id": "SIM_001",
+        "componente": "Lectura Crítica",
+        "competencia": "Evaluación y Reflexión sobre la Forma y Contenido del Texto",
+        "norma_referencia": "Ley 115 de 1994 / Guía de Orientación CNSC",
+        "contexto": "Fragmento del Artículo 73 de la Ley 115 de 1994: 'Con el fin de lograr la formación integral del educando, cada establecimiento educativo deberá elaborar y poner en práctica un Proyecto Educativo Institucional en el que se especifiquen entre otros aspectos, los principios y fines del establecimiento, los recursos docentes y didácticos disponibles y necesarios, la estrategia pedagógica, el reglamento para docentes y estudiantes y el sistema de gestión, todo ello orientado a responder a las necesidades de la comunidad local, regional y nacional'.",
+        "pregunta": "De la lectura del texto anterior se infiere jurídicamente que la autonomía escolar otorgada a los establecimientos educativos:",
+        "opciones": [
+          {
+            "id": "A",
+            "texto": "Es absoluta e ilimitada, permitiendo a cada colegio eximirse del cumplimiento de los estándares y fines generales fijados por el Estado."
+          },
+          {
+            "id": "B",
+            "texto": "Es relativa y contextualizada, condicionada a responder a las necesidades territoriales e integrarse a los principios normativos nacionales."
+          },
+          {
+            "id": "C",
+            "texto": "Corresponde exclusivamente al Rector de la institución, quien debe redactar el PEI sin intervención comunitaria."
+          },
+          {
+            "id": "D",
+            "texto": "Invalida la necesidad de contar con un Manual de Convivencia o SIEE interno."
+          }
+        ],
+        "respuesta_correcta": "B",
+        "justificacion": "El artículo 73 de la Ley 115 consagra la autonomía escolar para la formulación del PEI, pero esta no es absoluta, sino contextualizada (debe responder a las necesidades locales, regionales y nacionales) y supeditada a la Constitución y la Ley."
+      },
+      {
+        "id": "SIM_002",
+        "componente": "Razonamiento Cuantitativo",
+        "competencia": "Interpretación y Representación de Datos Educativos",
+        "norma_referencia": "Decreto 1290 de 2009 / Pruebas Saber ICFES",
+        "contexto": "En una institución educativa de 800 estudiantes, el informe del SIEE al cierre del tercer periodo muestra la siguiente distribución de desempeño en Matemáticas: Desempeño Superior: 15%, Desempeño Alto: 45%, Desempeño Básico: 25%, y Desempeño Bajo: 15%. La Comisión de Evaluación decide implementar un plan intensivo de tutorías para los estudiantes en Desempeño Bajo y Básico.",
+        "pregunta": "¿Cuántos estudiantes en total serán beneficiarios del plan intensivo de tutorías según los datos institucionales?",
+        "opciones": [
+          {
+            "id": "A",
+            "texto": "120 estudiantes."
+          },
+          {
+            "id": "B",
+            "texto": "200 estudiantes."
+          },
+          {
+            "id": "C",
+            "texto": "320 estudiantes."
+          },
+          {
+            "id": "D",
+            "texto": "480 estudiantes."
+          }
+        ],
+        "respuesta_correcta": "C",
+        "justificacion": "Porcentaje total objetivo = Bajo (15%) + Básico (25%) = 40%. Cálculo del total de estudiantes: 40% de 800 = 0.40 * 800 = 320 estudiantes."
+      },
+      {
+        "id": "SIM_003",
+        "componente": "Juicio Situacional Pedagógico",
+        "competencia": "Inclusión y Ajustes Razonables (DUA / PIAR)",
+        "norma_referencia": "Decreto 1421 de 2017 / Guía SED Boyacá",
+        "contexto": "A mitad de año lectivo, ingresa al grado 6° un estudiante con hipoacusia moderada. El docente de Ciencias Sociales nota que el estudiante comprende los textos leídos pero pierde la concentración cuando el profesor imparte explicaciones magistrales de espalda al grupo mientras escribe en el tablero.",
+        "pregunta": "Frente a esta situación y en consonancia con el Decreto 1421 de 2017, la primera acción pedagógica inmediata que debe realizar el docente es:",
+        "opciones": [
+          {
+            "id": "A",
+            "texto": "Eximir al estudiante de presentar las evaluaciones de la asignatura hasta que la Secretaría de Educación envíe un docente de apoyo."
+          },
+          {
+            "id": "B",
+            "texto": "Aplicar ajustes razonables inmediatos como hablar de frente al grupo para facilitar la lectura labiofacial, incorporar apoyos visuales/gráficos y registrar estos ajustes en el PIAR."
+          },
+          {
+            "id": "C",
+            "texto": "Solicitar al acudiente que retire al niño del aula regular y lo inscriba en un centro de educación especial."
+          },
+          {
+            "id": "D",
+            "texto": "Ubicado al estudiante en la última fila para no interrumpir el ritmo de los demás compañeros."
+          }
+        ],
+        "respuesta_correcta": "B",
+        "justificacion": "El Decreto 1421 de 2017 mandata la eliminación de barreras pedagógicas e institucionales mediante el DUA y los ajustes razonables en el aula regular (PIAR), promoviendo la permanencia y el acceso sin segregación."
+      },
+      {
+        "id": "SIM_004",
+        "componente": "Juicio Situacional Pedagógico",
+        "competencia": "Convivencia Escolar y Enfoque Restaurativo",
+        "norma_referencia": "Ley 1620 de 2013 / Guía Pedagógica No. 49",
+        "contexto": "Dos estudiantes de grado 9° se enfrentan verbalmente de forma acalorada durante el descanso por el turno de la cancha de microfútbol, lanzándose insultos sin llegar a la agresión física. El docente de turno en el patio interviene para controlar la situación.",
+        "pregunta": "Según la clasificación de situaciones de la Ley 1620 de 2013, ¿cómo debe tipificar y gestionar el docente este incidente?",
+        "opciones": [
+          {
+            "id": "A",
+            "texto": "Como Situación Tipo III, remitiendo inmediatamente el caso a la Fiscalía General de la Nación."
+          },
+          {
+            "id": "B",
+            "texto": "Como Situación Tipo I, aplicando la mediación pedagógica inmediata, escuchando a las partes y concertando un acuerdo restaurativo sobre el uso compartido de la cancha."
+          },
+          {
+            "id": "C",
+            "texto": "Como Situación Tipo II, suspendiendo inmediatamente a ambos estudiantes de clases por cinco días hábiles."
+          },
+          {
+            "id": "D",
+            "texto": "Ignorar el hecho argumentando que los conflictos entre adolescentes deben resolverse sin intervención adulta."
+          }
+        ],
+        "respuesta_correcta": "B",
+        "justificacion": "Los conflictos esporádicos y discusiones sin daño físico o psicológico sistemático constituyen Situaciones Tipo I (Ley 1620 y Decreto 1965). Su atención exige mediación pedagógica, diálogo directo y compromisos de reparación."
+      },
+      {
+        "id": "SIM_005",
+        "componente": "Competencias Comportamentales",
+        "competencia": "Trabajo en Equipo y Liderazgo Pedagógico",
+        "norma_referencia": "Manual de Funciones MEN / Guía de Evaluación de Competencias",
+        "contexto": "Durante las comisiones de evaluación de fin de periodo, el equipo de docentes de un grado nota que la reprobación en tres asignaturas supera el 40%. Algunos profesores proponen culpar exclusivamente a la desidia de las familias y no modificar sus estrategias de enseñanza.",
+        "pregunta": "Un docente con alta competencia comportamental de Trabajo en Equipo y Liderazgo propone de forma constructiva:",
+        "opciones": [
+          {
+            "id": "A",
+            "texto": "Aceptar sin objeciones la postura de los compañeros para mantener la tranquilidad en la reunión."
+          },
+          {
+            "id": "B",
+            "texto": "Proponer un análisis reflexivo y colaborativo del currículo, revisando la pertinencia de las metodologías de enseñanza y diseñando un plan conjunto de refuerzo formativo."
+          },
+          {
+            "id": "C",
+            "texto": "Cuestionar públicamente a los docentes responsables acusándolos de incompetencia pedagógica ante la Rectoría."
+          },
+          {
+            "id": "D",
+            "texto": "Sugerir que se baje arbitrariamente la exigencia académica aprobando a todos los estudiantes sin evaluación previa."
+          }
+        ],
+        "respuesta_correcta": "B",
+        "justificacion": "El Manual de Funciones del MEN define la competencia de Trabajo en Equipo y Liderazgo como la capacidad para movilizar colectivamente a los pares hacia la mejora continua de los aprendizajes, el análisis autocritico de las prácticas pedagógicas y la corresponsabilidad."
+      },
+      {
+        "id": "SIM_006",
+        "componente": "Lectura Crítica",
+        "competencia": "Identificación y Contraste de Premisas en Contexto Normativo",
+        "norma_referencia": "Decreto Ley 1278 de 2002 / Ley 115 de 1994",
+        "contexto": "Texto: 'La carrera docente es una estructura meritocrática regulada por el Estado para garantizar que la educación pública sea impartida por los profesionales más idóneos. A diferencia del régimen anterior, la permanencia y el ascenso en el Estatuto 1278 no dependen únicamente del tiempo transcurrido, sino de la evaluación periódica de desempeño y de competencias'.",
+        "pregunta": "¿Cuál es la premisa implícita fundamental que sustenta el Estatuto Profesional Docente 1278?",
+        "opciones": [
+          {
+            "id": "A",
+            "texto": "Que el tiempo de servicio por sí solo garantiza la calidad en el aula de clases."
+          },
+          {
+            "id": "B",
+            "texto": "Que la idoneidad y el rendimiento evaluable continuado son el eje transformador de la calidad educativa estatal."
+          },
+          {
+            "id": "C",
+            "texto": "Que los procesos de selección por mérito deben eliminarse en favor del nombramiento directo."
+          },
+          {
+            "id": "D",
+            "texto": "Que la evaluación docente tiene un fin puramente punitivo para reducir la planta de personal."
+          }
+        ],
+        "respuesta_correcta": "B",
+        "justificacion": "El Decreto Ley 1278 sustenta la carrera docente en el mérito, la evaluación sistemática y la idoneidad profesional continua como garantías del derecho fundamental a la educación de calidad."
+      },
+      {
+        "id": "SIM_007",
+        "componente": "Razonamiento Cuantitativo",
+        "competencia": "Resolución de Problemas de Proporcionalidad y Promedios",
+        "norma_referencia": "Pruebas Saber 11 / Orientaciones Cuantitativas",
+        "contexto": "Para un proyecto transversal de huerta escolar, 6 docentes trabajando a ritmo constante preparan los terrenos en 4 días. La institución requiere acelerar la preparación para entregar los terrenos en 2 días debido al inicio imprevisto de la época de lluvias.",
+        "pregunta": "Asumiendo que todos los docentes trabajan con la misma eficiencia, ¿cuántos docentes adicionales se deben vincular al equipo?",
+        "opciones": [
+          {
+            "id": "A",
+            "texto": "3 docentes."
+          },
+          {
+            "id": "B",
+            "texto": "6 docentes."
+          },
+          {
+            "id": "C",
+            "texto": "8 docentes."
+          },
+          {
+            "id": "D",
+            "texto": "12 docentes."
+          }
+        ],
+        "respuesta_correcta": "B",
+        "justificacion": "Es una regla de tres simple inversa (a menor número de días, se requiere mayor número de docentes). (6 docentes * 4 días) / 2 días = 12 docentes en total. Como ya se cuenta con 6 docentes, se deben vincular 6 adicionales (12 - 6 = 6)."
+      },
+      {
+        "id": "SIM_008",
+        "componente": "Juicio Situacional Pedagógico",
+        "competencia": "Evaluación Formativa y Autonomía Escolar",
+        "norma_referencia": "Decreto 1290 de 2009 / Documento No. 11 MEN",
+        "contexto": "Un docente entrega las calificaciones de un examen parcial de Física donde el 60% del curso obtuvo resultados reprobatorios. Un grupo de estudiantes solicita una revisión manifestando que las preguntas no correspondían a los temas trabajados en clase sino a fórmulas avanzadas no explicadas.",
+        "pregunta": "En el marco del Decreto 1290 de 2009 y la evaluación formativa, la actuación pedagógica correcta del educador es:",
+        "opciones": [
+          {
+            "id": "A",
+            "texto": "Rechazar la solicitud de los estudiantes afirmando que la libertad de cátedra le autoriza a evaluar cualquier nivel de complejidad sin previo aviso."
+          },
+          {
+            "id": "B",
+            "texto": "Revisar objetivamente el instrumento de evaluación frente al plan de clase, realizar la retroalimentación de los vacíos conceptuales detectados y ofrecer oportunidades de nivelación y reevaluación."
+          },
+          {
+            "id": "C",
+            "texto": "Anular la prueba e impartir una nota aprobatoria automática a todo el curso para evitar reclamos."
+          },
+          {
+            "id": "D",
+            "texto": "Sancionar disciplinariamente a los voceros estudiantiles por cuestionar la autoridad docente."
+          }
+        ],
+        "respuesta_correcta": "B",
+        "justificacion": "El Decreto 1290 y el Documento No. 11 destacan que la evaluación debe ser transparente, congruente con los procesos de enseñanza y tener un carácter eminentemente formativo y de reorientación pedagógica."
+      },
+      {
+        "id": "SIM_009",
+        "componente": "Competencias Comportamentales",
+        "competencia": "Sensibilidad Intercultural y Ética Profesional",
+        "norma_referencia": "Manual de Funciones MEN / Decreto 804 de 1995",
+        "contexto": "En un colegio urbano con estudiantes de diversas regiones del país, un grupo de alumnos se burla del acento y costumbres de un compañero recién trasladado del Litoral Pacífico. El docente de aula presenciar el acontecimiento durante la clase.",
+        "pregunta": "Desde la competencia de Sensibilidad Intercultural, la intervención del docente debe ser:",
+        "opciones": [
+          {
+            "id": "A",
+            "texto": "Aprovechar la situación como oportunidad pedagógica para reflexionar sobre la riqueza pluriétnica y multicultural de Colombia, promoviendo el respeto y la inclusión activa."
+          },
+          {
+            "id": "B",
+            "texto": "Pedir al estudiante afectado que procure modificar su acento para evitar ser objeto de comentarios."
+          },
+          {
+            "id": "C",
+            "texto": "Expulsar del salón de manera permanente a los estudiantes que hicieron las burlas sin realizar ningún proceso reflexivo."
+          },
+          {
+            "id": "D",
+            "texto": "Restar importancia al evento considerándolo un 'juego inofensivo de niños'."
+          }
+        ],
+        "respuesta_correcta": "A",
+        "justificacion": "La Sensibilidad Intercultural (Manual de Funciones MEN y Ley 115) orienta al educador a valorar la diversidad como un factor enriquecedor del ambiente de aprendizaje y a intervenir constructivamente ante cualquier atisbo de discriminación."
+      },
+      {
+        "id": "SIM_010",
+        "componente": "Juicio Situacional Pedagógico / Directivo",
+        "competencia": "Gestión del Debido Proceso y Protección de Derechos",
+        "norma_referencia": "Ley 1098 de 2006 / Ley 115 de 1994",
+        "contexto": "El acudiente de una estudiante de grado 10° que se encuentra en estado de embarazo exige al colegio que se mantenga la matrícula y se otorguen las flexibilizaciones académicas necesarias para sus controles médicos. El consejo académico sugiere desescolarizarla para 'no dar mal ejemplo'.",
+        "pregunta": "La decisión legal y éticamente vinculante que debe respaldar la institución es:",
+        "opciones": [
+          {
+            "id": "A",
+            "texto": "Aprobar la desescolarización obligatoria y enviar guías a la casa de la estudiante sin permitirle volver al aula."
+          },
+          {
+            "id": "B",
+            "texto": "Garantizar la permanencia en el aula común, adaptando el plan de estudios y otorgando permisos justificados para controles médicos (Sentencias de la Corte Constitucional y Ley 1098)."
+          },
+          {
+            "id": "C",
+            "texto": "Sugerir a la familia la cancelación inmediata de la matrícula e ingreso a educación nocturna de adultos."
+          },
+          {
+            "id": "D",
+            "texto": "Exigir una póliza económica adicional a la familia como condición para mantener el cupo."
+          }
+        ],
+        "respuesta_correcta": "B",
+        "justificacion": "La Corte Constitucional y la Ley 1098 (Código de Infancia) prohíben categóricamente cualquier discriminación o desescolarización de estudiantes en estado de embarazo. La institución debe garantizar su permanencia en igualdad de condiciones con flexibilización pedagógica."
+      }
+    ]
+  }
+]

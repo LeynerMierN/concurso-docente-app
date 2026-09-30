@@ -1,0 +1,282 @@
+[
+  {
+    "id": "QUI_FIS_001",
+    "area": "Competencias Específicas - Química y Física (Educación Media)",
+    "tema": "Mecánica Clásica, Leyes de Newton y Análisis de Fuerzas",
+    "norma_referencia": "Estándares Básicos de Competencias en Ciencias Naturales (Grados 10°-11°)",
+    "contexto": "Un docente de Física trabaja con grado 10° el movimiento de un bloque sobre un plano inclinado con fricción. Al solicitar el diagrama de cuerpo libre, varios estudiantes omiten la fuerza normal o la dibujan apuntando verticalmente hacia arriba en lugar de perpendicular a la superficie.",
+    "pregunta": "¿Cuál es la intervención didáctica idónea para corregir esta concepción alternativa sobre la fuerza normal?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Memorizar la fórmula F=ma sin volver a dibujar planos inclinados."
+      },
+      {
+        "id": "B",
+        "texto": "Demostrar mediante la interacción de contacto entre las moléculas de las superficies que la fuerza normal es la respuesta elástica de la superficie perpendicular a la superficie de contacto."
+      },
+      {
+        "id": "C",
+        "texto": "Decir que la fuerza normal siempre es igual al peso en cualquier inclinación o dirección."
+      },
+      {
+        "id": "D",
+        "texto": "Eliminar la física de vectores del currículo de educación media."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "En la didáctica de la física (Estándares MEN), comprender el origen físico de las fuerzas de contacto (como la normal) supera el uso mecánico de fórmulas y permite la construcción correcta de diagramas de vectores."
+  },
+  {
+    "id": "QUI_FIS_002",
+    "area": "Competencias Específicas - Química y Física (Educación Media)",
+    "tema": "Estequiometría, Reactivo Límite y Rendimiento de Reacción",
+    "norma_referencia": "Estándares Básicos de Competencias en Ciencias Naturales (Química)",
+    "contexto": "En la clase de Química de grado 11°, se plantea la reacción entre 2 moles de H2 y 2 moles de O2 para formar agua (2H2 + O2 → 2H2O). Un estudiante afirma que por haber igual cantidad de moles iniciales de ambos reactivos, ninguno es el reactivo límite.",
+    "pregunta": "¿Cómo debe orientar el docente el razonamiento estequiométrico del estudiante?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Confirmar que la afirmación del estudiante es correcta."
+      },
+      {
+        "id": "B",
+        "texto": "Guiar el análisis de las relaciones molares del coeficiente estequiométrico (2:1), demostrando que para consumir 2 moles de H2 solo se requiere 1 mol de O2, por lo que el H2 se agota primero y es el reactivo límite."
+      },
+      {
+        "id": "C",
+        "texto": "Decirle que el reactivo límite siempre es el compuesto con mayor masa molecular sin importar los coeficientes."
+      },
+      {
+        "id": "D",
+        "texto": "Prohibir el cálculo de moles en el laboratorio."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La estequiometría requiere comparar las proporciones estequiométricas teóricas fijadas por la ecuación balanceada con las cantidades molares reales para determinar el reactivo que limita la producción."
+  },
+  {
+    "id": "QUI_FIS_003",
+    "area": "Competencias Específicas - Química y Física (Educación Media)",
+    "tema": "Termodinámica, Calor Específico y Cambios de Fase",
+    "norma_referencia": "Estándares Básicos de Competencias en Ciencias Naturales (Física/Química)",
+    "contexto": "Durante el calentamiento de hielo a -10°C hasta convertirlo en vapor a 110°C, los estudiantes grafican la temperatura en función del tiempo. Observan mesetas (temperatura constante) durante la fusión y la ebullición.",
+    "pregunta": "¿Cuál es la explicación científica que deben argumentar los estudiantes para interpretar las mesetas en la gráfica?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que el fuego se apagó durante esos minutos."
+      },
+      {
+        "id": "B",
+        "texto": "Que durante el cambio de fase la energía térmica suministrada (calor latente) no aumenta la energía cinética promedio de las moléculas (temperatura), sino que se utiliza para romper las fuerzas intermoleculares de atracción."
+      },
+      {
+        "id": "C",
+        "texto": "Que la temperatura de una sustancia nunca puede superar los 100°C."
+      },
+      {
+        "id": "D",
+        "texto": "Que el termómetro se rompió al llegar a 0°C y 100°C."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El concepto de calor latente explica por qué durante un cambio de fase la temperatura permanece constante mientras la energía suministrada se emplea en modificar el estado de agregación intermolecular."
+  },
+  {
+    "id": "QUI_FIS_004",
+    "area": "Competencias Específicas - Química y Física (Educación Media)",
+    "tema": "Electromagnetismo, Ondas y Espectro Electromagnético",
+    "norma_referencia": "Estándares Básicos de Competencias en Ciencias Naturales (Física)",
+    "contexto": "Se estudia la propagación de ondas de luz y sonido. Un estudiante afirma que 'como la luz y el sonido son ondas, ambas se propagan a la misma velocidad en el vacío'.",
+    "pregunta": "¿Cuál es la diferenciación conceptual que debe aclarar el docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Aceptar que el sonido viaja más rápido que la luz en el espacio exterior."
+      },
+      {
+        "id": "B",
+        "texto": "Explicar que el sonido es una onda mecánica longitudinal que requiere un medio material para propagarse (por lo que no viaja en el vacío), mientras que la luz es una onda electromagnética que no requiere medio material."
+      },
+      {
+        "id": "C",
+        "texto": "Afirmar que la luz tampoco puede viajar en el vacío."
+      },
+      {
+        "id": "D",
+        "texto": "Decir que las ondas electromagnéticas son peligrosas y no deben estudiarse en la escuela."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "Diferenciar entre ondas mecánicas y electromagnéticas a partir de sus necesidades de medio de propagación y naturaleza física es fundamental en la física del universo ondulatorio."
+  },
+  {
+    "id": "QUI_FIS_005",
+    "area": "Competencias Específicas - Química y Física (Educación Media)",
+    "tema": "Química Orgánica, Grupos Funcionales y Hibridación del Carbono",
+    "norma_referencia": "Estándares Básicos de Competencias en Ciencias Naturales (Química Organic)",
+    "contexto": "Al analizar la estructura del benceno y los alquenos, los estudiantes discuten la geometría molecular y los tipos de enlace (sigma y pi) asociados a la hibridación sp2 del carbono.",
+    "pregunta": "¿Qué modelo tridimensional ayuda a comprender la reactividad del enlace doble?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Considerar que todos los enlaces químicos son esferas sólidas e indeformables."
+      },
+      {
+        "id": "B",
+        "texto": "El solapamiento lateral de los orbitales p no hibridados para formar la nube electrónica pi sobre y debajo del plano del enlace sigma."
+      },
+      {
+        "id": "C",
+        "texto": "Afirmar que el carbono solo puede formar enlaces sencillos en química orgánica."
+      },
+      {
+        "id": "D",
+        "texto": "Representar las moléculas como fórmulas planas sin importar los ángulos de enlace de 120°."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La teoría de orbitales moleculares y la hibridación sp2 explican la geometría plana trigonal y la densidad electrónica pi accesible que determina la reactividad en adiciones electrofílicas."
+  },
+  {
+    "id": "QUI_FIS_006",
+    "area": "Competencias Específicas - Química y Física (Educación Media)",
+    "tema": "Seguridad, Protocolos y Gestión de Residuos en Laboratorio de Ciencias",
+    "norma_referencia": "Guía de Laboratorio Seguro MEN / Decreto 1075 de 2015",
+    "contexto": "Durante una práctica de laboratorio de química, un estudiante derrama accidentalmente ácido sulfúrico concentrado sobre la mesa de trabajo.",
+    "pregunta": "¿Cuál es el protocolo de seguridad inmediato que debe dirigir el docente antes de continuar la práctica?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Secar el ácido directamente con las manos descubiertas o con un paño de tela seco."
+      },
+      {
+        "id": "B",
+        "texto": "Evacuar el área inmediata, neutralizar el derrame con un agente básico suave (como bicarbonato de sodio), usar elementos de protección personal (Epp) y disponer los residuos en el recipiente correspondiente."
+      },
+      {
+        "id": "C",
+        "texto": "Arrojar abundante agua hirviendo sobre la mesa sin neutralizar el ácido."
+      },
+      {
+        "id": "D",
+        "texto": "Ignorar el derrame y permitir que el ácido se evapore solo."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La gestión de seguridad en laboratorios escolares exige conocer las fichas de datos de seguridad (MSDS), neutralizar agentes corrosivos con bases débiles y prevenir quemaduras o reactividades peligrosas."
+  },
+  {
+    "id": "QUI_FIS_007",
+    "area": "Competencias Específicas - Química y Física (Educación Media)",
+    "tema": "Uso de Simuladores Digitales (PhET) y Laboratorios Remotos",
+    "norma_referencia": "Estándares de Ciencias / Orientaciones TIC MEN",
+    "contexto": "En un colegio sin reactivos ni equipos de física avanzada, el docente desea desarrollar la competencia de indagación sobre la Ley de Ohm y circuitos eléctricos RLC.",
+    "pregunta": "¿Qué recurso tecnológico valida el aprendizaje basado en simulación científica interactiva?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Ver una película de ciencia ficción comercial."
+      },
+      {
+        "id": "B",
+        "texto": "Uso de simuladores interactivos tipo PhET donde los estudiantes manipulan variables (voltaje, resistencia), miden corriente con amperímetros virtuales y grafican resultados."
+      },
+      {
+        "id": "C",
+        "texto": "Dictar la biografía de Georg Ohm sin análisis cuantitativo."
+      },
+      {
+        "id": "D",
+        "texto": "Cancelación de las prácticas de física por falta de presupuesto."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "Los simuladores interactivos como PhET de la Universidad de Colorado permiten la indagación científica, la prueba de hipótesis y la recolección de datos cuantitativos precisos en ausencia de equipos físicos."
+  },
+  {
+    "id": "QUI_FIS_008",
+    "area": "Competencias Específicas - Química y Física (Educación Media)",
+    "tema": "Modelos Atómicos y Estructura de la Materia",
+    "norma_referencia": "Estándares Básicos de Ciencias Naturales (Química)",
+    "contexto": "Se aborda la evolución del modelo atómico desde Dalton hasta el modelo cuántico de Schrödinger.",
+    "pregunta": "¿Qué aprendizaje fundamental sobre la naturaleza de la ciencia promueve esta secuencia histórica?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que la ciencia es un conjunto de verdades dogmáticas e inmutables escritas en piedra."
+      },
+      {
+        "id": "B",
+        "texto": "Que los modelos científicos son representaciones explicativas provisorias que se perfeccionan, corrigen o sustituyen a medida que surgen nuevas evidencias experimentales y teorías."
+      },
+      {
+        "id": "C",
+        "texto": "Que el modelo de Dalton sigue siendo el único modelo correcto usado hoy en día."
+      },
+      {
+        "id": "D",
+        "texto": "Que los científicos antiguos cometieron errores por falta de inteligencia."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "Comprender la naturaleza de la ciencia implica reconocer que los modelos científicos (como los modelos atómicos) son construcciones conceptuales sujetas a revisión frente a nuevas evidencias."
+  },
+  {
+    "id": "QUI_FIS_009",
+    "area": "Competencias Específicas - Química y Física (Educación Media)",
+    "tema": "Inclusión y DUA en Laboratorios de Ciencias (Decreto 1421 de 2017)",
+    "norma_referencia": "Decreto 1421 de 2017 / Pautas DUA para Ciencias",
+    "contexto": "Un estudiante con baja visión participa en la práctica sobre densidad y flotabilidad de fluidos.",
+    "pregunta": "¿Cuál es el ajuste razonable en el diseño de la práctica de laboratorio?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Excluir al estudiante de la práctica y pedirle que espere afuera del laboratorio."
+      },
+      {
+        "id": "B",
+        "texto": "Suministrar instrumental graduado con macrotipos y alto contraste, sensores de densidad con lectura de audio y permitir la exploración táctil de las probetas."
+      },
+      {
+        "id": "C",
+        "texto": "Exigirle que use lupas convencionales pequeñas sin adaptar el material."
+      },
+      {
+        "id": "D",
+        "texto": "Asignarle el rol exclusivo de limpiar las mesas al finalizar."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El DUA exige ofrecer múltiples formas de representación y acción en el laboratorio, garantizando la vivencia científica del estudiante con baja visión mediante ajustes razonables eficaces."
+  },
+  {
+    "id": "QUI_FIS_010",
+    "area": "Competencias Específicas - Química y Física (Educación Media)",
+    "tema": "Física Moderna, Radiactividad y Energía Nuclear",
+    "norma_referencia": "Estándares Básicos de Ciencias Naturales (Física 11°)",
+    "contexto": "En la unidad de Física Moderna, se analiza el tiempo de vida media de isótopos radiactivos empleados en medicina nuclear y datación por Carbono-14.",
+    "pregunta": "¿Qué concepto matemático y físico rige el decaimiento radiactivo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Una disminución lineal constante donde se pierde exactamente la misma cantidad de masa cada segundo."
+      },
+      {
+        "id": "B",
+        "texto": "Un proceso probabilístico de decaimiento exponencial donde cada vida media reduce a la mitad el número de núcleos radiactivos presentes."
+      },
+      {
+        "id": "C",
+        "texto": "Un aumento infinito de la masa atómica con el paso del tiempo."
+      },
+      {
+        "id": "D",
+        "texto": "Una reacción que depende de la temperatura del refrigerador donde se guarde."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El decaimiento radiactivo es un fenómeno cuántico probabilístico que se modela con funciones exponenciales decrecientes basadas en el período de semidesintegración."
+  }
+]

@@ -1,6 +1,8 @@
-import banco from "@data/banco_preguntas_pjs_concurso_docente.json";
+import banco from "@data/banco_preguntas.json";
+import { CATEGORIAS, NOMBRE_GRUPO, obtenerCategoria, type GrupoCategoria } from "@/lib/categorias";
 import type { FiltroExamen, Pregunta, RespuestaUsuario, ResultadoExamen } from "@/types/exam";
 
+/** Banco unificado generado por scripts/importar_bancos.py a partir de data/fuentes/ */
 export const PREGUNTAS = banco as Pregunta[];
 
 const PREGUNTAS_POR_ID = new Map(PREGUNTAS.map((p) => [p.id, p]));
@@ -13,56 +15,48 @@ export function obtenerPregunta(id: string): Pregunta | undefined {
 export const UMBRAL_DOCENTE_AULA = 60;
 export const UMBRAL_DIRECTIVO = 70;
 
-/** Minutos por pregunta usados en el simulacro cronometrado */
-export const MINUTOS_POR_PREGUNTA = 2;
+/** Cantidad de preguntas por categoría de la taxonomía */
+export const CONTEO_POR_CATEGORIA: Record<string, number> = PREGUNTAS.reduce<Record<string, number>>((acc, p) => {
+  acc[p.categoria_id] = (acc[p.categoria_id] ?? 0) + 1;
+  return acc;
+}, {});
 
-/** Áreas únicas del banco, ordenadas por cantidad de preguntas */
-export function obtenerAreas(): { area: string; total: number }[] {
-  const conteo = new Map<string, number>();
-  for (const p of PREGUNTAS) conteo.set(p.area, (conteo.get(p.area) ?? 0) + 1);
-  return [...conteo.entries()]
-    .map(([area, total]) => ({ area, total }))
-    .sort((a, b) => b.total - a.total);
+/** Categorías con al menos una pregunta, en el orden de la taxonomía */
+export const CATEGORIAS_CON_PREGUNTAS = CATEGORIAS.filter((c) => CONTEO_POR_CATEGORIA[c.id]);
+
+export function nombreCategoria(id: string): string {
+  return obtenerCategoria(id)?.nombre ?? id;
 }
 
 const sinTildes = (s: string) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+const texto = (p: Pregunta) => sinTildes(`${p.tema} ${p.norma_referencia}`);
 
-/**
- * Agrupa las variantes de área del banco (p. ej. "Convivencia Escolar y Prevención")
- * en macro-áreas sin solaparse, para estadísticas de progreso.
- */
-const MACRO_AREAS: { prefijo: string; nombre: string }[] = [
-  { prefijo: "convivencia", nombre: "Convivencia escolar" },
-  { prefijo: "competencias comportamentales", nombre: "Psicotécnica" },
-  { prefijo: "pedagogia", nombre: "Pedagogía y currículo" },
-  { prefijo: "gestion institucional", nombre: "Gestión institucional" },
-  { prefijo: "lectura critica", nombre: "Lectura crítica" },
-  { prefijo: "razonamiento cuantitativo", nombre: "Razonamiento cuantitativo" },
-  { prefijo: "aptitud verbal", nombre: "Aptitud verbal" },
-];
-
-export function macroArea(area: string): string {
-  const normal = sinTildes(area);
-  return MACRO_AREAS.find((m) => normal.startsWith(m.prefijo))?.nombre ?? area;
-}
-
-/** Filtros temáticos transversales: agrupan variantes de área y temas afines */
+/** Filtros temáticos transversales: cruzan categorías según el tema y la norma de cada pregunta */
 export const FILTROS_TEMATICOS: { id: FiltroExamen; etiqueta: string; coincide: (p: Pregunta) => boolean }[] = [
-  { id: "convivencia", etiqueta: "Convivencia escolar", coincide: (p) => sinTildes(p.area).includes("convivencia") },
-  { id: "inclusion", etiqueta: "Inclusión y DUA", coincide: (p) => sinTildes(p.tema).includes("inclusion") },
-  { id: "evaluacion", etiqueta: "Evaluación y SIEE", coincide: (p) => /evaluacion|siee/.test(sinTildes(p.tema)) },
-  { id: "psicotecnica", etiqueta: "Psicotécnica", coincide: (p) => sinTildes(p.area).includes("psicotecnica") },
+  { id: "convivencia", etiqueta: "Convivencia escolar", coincide: (p) => /convivencia|1620|acoso|tipo i/.test(texto(p)) },
+  { id: "inclusion", etiqueta: "Inclusión y DUA", coincide: (p) => /inclusion|dua|piar|1421/.test(texto(p)) },
+  { id: "evaluacion", etiqueta: "Evaluación y SIEE", coincide: (p) => /evaluacion|siee|1290/.test(texto(p)) },
+  { id: "psicotecnica", etiqueta: "Psicotécnica", coincide: (p) => p.categoria_id === "comportamental" },
 ];
+
+const PREFIJO_GRUPO = "grupo:";
+
+export function filtroDeGrupo(grupo: GrupoCategoria): FiltroExamen {
+  return `${PREFIJO_GRUPO}${grupo}`;
+}
 
 export function filtrarPreguntas(filtro: FiltroExamen): Pregunta[] {
   if (filtro === "todos") return PREGUNTAS;
+  if (filtro.startsWith(PREFIJO_GRUPO)) return PREGUNTAS.filter((p) => p.grupo === filtro.slice(PREFIJO_GRUPO.length));
   const tematico = FILTROS_TEMATICOS.find((f) => f.id === filtro);
-  return PREGUNTAS.filter(tematico ? tematico.coincide : (p) => p.area === filtro);
+  if (tematico) return PREGUNTAS.filter(tematico.coincide);
+  return PREGUNTAS.filter((p) => p.categoria_id === filtro);
 }
 
 export function etiquetaFiltro(filtro: FiltroExamen): string {
-  if (filtro === "todos") return "Todas las áreas";
-  return FILTROS_TEMATICOS.find((f) => f.id === filtro)?.etiqueta ?? filtro;
+  if (filtro === "todos") return "Todo el banco";
+  if (filtro.startsWith(PREFIJO_GRUPO)) return NOMBRE_GRUPO[filtro.slice(PREFIJO_GRUPO.length) as GrupoCategoria] ?? filtro;
+  return FILTROS_TEMATICOS.find((f) => f.id === filtro)?.etiqueta ?? nombreCategoria(filtro);
 }
 
 /** Mezcla (Fisher–Yates) sin mutar el arreglo original */
@@ -79,6 +73,16 @@ export function mezclar<T>(items: readonly T[]): T[] {
 export function armarExamen(filtro: FiltroExamen, cantidad?: number): Pregunta[] {
   const fuente = filtrarPreguntas(filtro);
   return mezclar(fuente).slice(0, Math.min(cantidad ?? fuente.length, fuente.length));
+}
+
+/**
+ * Arma un simulacro por componentes: toma al azar la cantidad pedida de cada categoría
+ * y las presenta en bloques, en el orden de la distribución (como la prueba real).
+ */
+export function armarPorDistribucion(distribucion: Record<string, number>): Pregunta[] {
+  return Object.entries(distribucion).flatMap(([categoria, cantidad]) =>
+    mezclar(PREGUNTAS.filter((p) => p.categoria_id === categoria)).slice(0, cantidad),
+  );
 }
 
 export function listarRespuestas(preguntas: Pregunta[], respuestas: Record<string, string>): RespuestaUsuario[] {

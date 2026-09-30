@@ -1,98 +1,142 @@
 "use client";
 
-import { useState } from "react";
-import { BookOpenCheck, Play } from "lucide-react";
+import { Suspense, useState } from "react";
+import Link from "next/link";
+import { useSearchParams } from "next/navigation";
+import { BookOpenCheck, Clock, Pause, Play } from "lucide-react";
 import Cargando from "@/components/quiz/Cargando";
 import QuizRunner from "@/components/quiz/QuizRunner";
 import { useQuizRunner } from "@/hooks/useQuizRunner";
-import { FILTROS_TEMATICOS, PREGUNTAS, UMBRAL_DOCENTE_AULA, filtrarPreguntas, obtenerAreas } from "@/lib/preguntas";
+import SelectorCategorias from "@/components/practica/SelectorCategorias";
+import { FILTRO_NUCLEO_COMUN, MODOS_EXAMEN, configDesdeModo, dimensionarModo, obtenerModo } from "@/lib/appConfig";
+import { UMBRAL_DOCENTE_AULA, filtrarPreguntas } from "@/lib/preguntas";
 import type { FiltroExamen } from "@/types/exam";
 
+/** "Prueba por Competencia" se enfoca en una sola área: no admite "Todas las áreas" */
+const MODOS_DE_UNA_AREA = new Set(["area_20"]);
+
+/** Modos de práctica (con retroalimentación inmediata) definidos en data/app_config.json */
+const MODOS_PRACTICA = MODOS_EXAMEN.filter((m) => m.feedbackInmediato);
+
 export default function Pagina() {
+  return (
+    <Suspense fallback={<Cargando />}>
+      <Practica />
+    </Suspense>
+  );
+}
+
+function Practica() {
+  const modo = obtenerModo(useSearchParams().get("modo"));
+  // La clave cambia con el modo para que al elegir otro modo se reinicie la selección
+  return <Selector key={modo?.id ?? "libre"} modoId={modo?.id ?? null} />;
+}
+
+function Selector({ modoId }: { modoId: string | null }) {
   const runner = useQuizRunner("concurso-docente:practica");
-  const [filtro, setFiltro] = useState<FiltroExamen>("todos");
+  const modo = obtenerModo(modoId);
+  const unaArea = !!modo && MODOS_DE_UNA_AREA.has(modo.id);
+  const [filtro, setFiltro] = useState<FiltroExamen | null>(unaArea ? null : FILTRO_NUCLEO_COMUN);
   const [feedback, setFeedback] = useState(true);
 
   if (!runner.cargado) return <Cargando />;
   if (runner.sesion) return <QuizRunner runner={runner} />;
 
-  const cantidad = filtrarPreguntas(filtro).length;
-  const grupos: { titulo: string; opciones: { id: FiltroExamen; etiqueta: string; total: number }[] }[] = [
-    {
-      titulo: "Repaso general",
-      opciones: [{ id: "todos", etiqueta: "Todas las áreas", total: PREGUNTAS.length }],
-    },
-    {
-      titulo: "Temas clave",
-      opciones: FILTROS_TEMATICOS.map((f) => ({ id: f.id, etiqueta: f.etiqueta, total: filtrarPreguntas(f.id).length })),
-    },
-    {
-      titulo: "Por área del banco",
-      opciones: obtenerAreas().map(({ area, total }) => ({ id: area, etiqueta: area, total })),
-    },
-  ];
+  const dimension = modo && filtro ? dimensionarModo(modo, filtro) : null;
+  const cantidad = dimension ? dimension.preguntas : filtro ? filtrarPreguntas(filtro).length : 0;
+  const iniciar = () => {
+    if (!filtro) return;
+    runner.iniciar(
+      modo
+        ? configDesdeModo(modo, filtro)
+        : { modo: "practica", filtro, limiteSegundos: null, feedbackInmediato: feedback, umbral: UMBRAL_DOCENTE_AULA },
+    );
+  };
 
   return (
     <div className="space-y-6 pb-20">
       <header>
         <h1 className="flex items-center gap-2 text-2xl font-bold">
-          <BookOpenCheck className="size-7 text-marca-600 dark:text-oro" /> Práctica libre
+          <BookOpenCheck className="size-7 text-primary dark:text-oro" /> Práctica guiada
         </h1>
-        <p className="mt-1 text-sm text-slate-500">Elige qué repasar. Sin límite de tiempo.</p>
+        <p className="mt-1 text-sm text-slate-500">
+          {modo ? modo.descripcion : "Elige qué repasar: el núcleo común, tu especialidad o un tema clave. Sin límite de tiempo."}
+        </p>
       </header>
 
-      {grupos.map(({ titulo, opciones }) => (
-        <section key={titulo} className="space-y-2">
-          <h2 className="text-xs font-semibold uppercase tracking-wide text-slate-500">{titulo}</h2>
-          <ul className="flex flex-wrap gap-2">
-            {opciones.map(({ id, etiqueta, total }) => (
-              <li key={id}>
-                <button
-                  type="button"
-                  onClick={() => setFiltro(id)}
-                  aria-pressed={filtro === id}
-                  className={`rounded-full px-3.5 py-2 text-left text-sm transition ${
-                    filtro === id
-                      ? "bg-marca-600 font-semibold text-white"
-                      : "bg-white text-slate-700 ring-1 ring-slate-200 dark:bg-slate-900 dark:text-slate-300 dark:ring-slate-800"
+      {/* Cambiar de modalidad */}
+      <nav aria-label="Modalidad de práctica" className="-mx-4 overflow-x-auto px-4 [scrollbar-width:none]">
+        <ul className="flex w-max gap-2">
+          {[{ id: null, nombre: "Libre", href: "/practica" }, ...MODOS_PRACTICA.map((m) => ({ id: m.id, nombre: m.nombre, href: m.href }))].map(
+            (m) => (
+              <li key={m.href}>
+                <Link
+                  href={m.href}
+                  aria-current={modoId === m.id ? "page" : undefined}
+                  className={`block whitespace-nowrap rounded-2xl px-3.5 py-2 text-sm transition ${
+                    modoId === m.id
+                      ? "bg-primary font-semibold text-white"
+                      : "bg-white text-slate-700 ring-1 ring-slate-200 dark:bg-tarjeta dark:text-slate-300 dark:ring-slate-700/60"
                   }`}
                 >
-                  {etiqueta} <span className="opacity-70">· {total}</span>
-                </button>
+                  {m.nombre}
+                </Link>
               </li>
-            ))}
-          </ul>
-        </section>
-      ))}
+            ),
+          )}
+        </ul>
+      </nav>
 
-      <label className="flex items-center justify-between gap-4 rounded-2xl bg-white p-4 ring-1 ring-slate-200 dark:bg-slate-900 dark:ring-slate-800">
-        <span>
-          <span className="block font-semibold">Retroalimentación inmediata</span>
-          <span className="block text-sm text-slate-500">Ver la respuesta y la justificación al responder</span>
-        </span>
-        <input
-          type="checkbox"
-          checked={feedback}
-          onChange={(e) => setFeedback(e.target.checked)}
-          className="size-5 shrink-0 accent-marca-600"
-        />
-      </label>
+      {modo && (
+        <ul className="flex flex-wrap gap-2 text-xs font-medium text-slate-600 dark:text-slate-300">
+          <li className="rounded-full bg-slate-100 px-3 py-1 dark:bg-slate-700/60">
+            Hasta {modo.preguntas} preguntas
+          </li>
+          <li className="flex items-center gap-1 rounded-full bg-slate-100 px-3 py-1 dark:bg-slate-700/60">
+            <Clock className="size-3.5" /> {modo.minutos ? `${modo.minutos} min` : "Sin límite de tiempo"}
+          </li>
+          {modo.permitePausa && modo.minutos && (
+            <li className="flex items-center gap-1 rounded-full bg-slate-100 px-3 py-1 dark:bg-slate-700/60">
+              <Pause className="size-3.5" /> Se puede pausar
+            </li>
+          )}
+        </ul>
+      )}
 
-      <div className="fixed inset-x-0 bottom-20 z-30 px-4">
+      {unaArea && !filtro && (
+        <p className="rounded-2xl bg-accent/10 p-3 text-sm text-accent-dark dark:text-accent-light">
+          Elige el área o tema que quieres evaluar.
+        </p>
+      )}
+
+      <SelectorCategorias filtro={filtro} onElegir={setFiltro} soloUnaArea={unaArea} />
+
+      {!modo && (
+        <label className="flex items-center justify-between gap-4 rounded-2xl bg-white p-4 ring-1 ring-slate-200 dark:bg-tarjeta dark:ring-slate-700/60">
+          <span>
+            <span className="block font-semibold">Retroalimentación inmediata</span>
+            <span className="block text-sm text-slate-500">Ver la respuesta y la justificación al responder</span>
+          </span>
+          <input
+            type="checkbox"
+            checked={feedback}
+            onChange={(e) => setFeedback(e.target.checked)}
+            className="size-5 shrink-0 accent-primary"
+          />
+        </label>
+      )}
+
+      <div className="fixed inset-x-0 bottom-20 z-30 px-4 lg:bottom-6 lg:left-64">
         <button
           type="button"
-          onClick={() =>
-            runner.iniciar({
-              modo: "practica",
-              filtro,
-              limiteSegundos: null,
-              feedbackInmediato: feedback,
-              umbral: UMBRAL_DOCENTE_AULA,
-            })
-          }
-          className="mx-auto flex w-full max-w-md items-center justify-center gap-2 rounded-2xl bg-marca-600 px-4 py-3.5 font-semibold text-white shadow-lg active:scale-[0.98]"
+          onClick={iniciar}
+          disabled={!filtro}
+          className="mx-auto flex w-full max-w-md items-center justify-center gap-2 rounded-2xl bg-primary px-4 py-3.5 font-semibold text-white shadow-lg active:scale-[0.98] disabled:opacity-50"
         >
-          <Play className="size-5" fill="currentColor" /> Empezar · {cantidad} {cantidad === 1 ? "pregunta" : "preguntas"}
+          <Play className="size-5" fill="currentColor" />
+          {filtro
+            ? `Empezar · ${cantidad} ${cantidad === 1 ? "pregunta" : "preguntas"}${dimension?.minutos ? ` · ${dimension.minutos} min` : ""}`
+            : "Elige un área para empezar"}
         </button>
       </div>
     </div>

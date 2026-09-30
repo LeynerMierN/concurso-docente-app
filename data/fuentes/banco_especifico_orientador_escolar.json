@@ -1,0 +1,282 @@
+[
+  {
+    "id": "ORI_001",
+    "area": "Competencias Específicas - Docente Orientador",
+    "tema": "Ruta de Atención Integral y Protección de Derechos de la Niñez",
+    "norma_referencia": "Ley 1098 de 2006 (Código de Infancia) / Ley 1620 de 2013 / Guía 49 MEN",
+    "contexto": "Una estudiante de grado 7° solicita una cita con el Docente Orientador y, durante la atención individual, confiesa entre llantos que viene siendo víctima de tocamientos indebidos y presunta violencia sexual en su hogar por parte de un familiar cercano. La estudiante suplica que no se le diga nada a su acudiente porque teme represalias.",
+    "pregunta": "¿Cuál es la actuación legal e institucional inmediata que debe realizar el Docente Orientador de acuerdo con la normatividad vigente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Citar de inmediato al acudiente señalado para confrontarlo en la institución antes de realizar cualquier reporte externo."
+      },
+      {
+        "id": "B",
+        "texto": "Guardar el secreto profesional absoluto sin realizar ningún reporte a las autoridades para proteger la confidencialidad solicitada por la estudiante."
+      },
+      {
+        "id": "C",
+        "texto": "Activar de inmediato la Ruta de Atención Integral, reportando formalmente el caso ante el ICBF o Comisaría de Familia y la Fiscalía, garantizando la reserva de identidad y el acompañamiento protector a la menor."
+      },
+      {
+        "id": "D",
+        "texto": "Condicionar el informe a las autoridades a que la estudiante presente pruebas físicas o médicas del presunto abuso."
+      }
+    ],
+    "respuesta_correcta": "C",
+    "justificacion": "Según el Código de la Infancia y la Adolescencia (Ley 1098 de 2006, Art. 44) y la Ley 1620 de 2013, ante la revelación o indicio de violencia sexual u otra vulneración de derechos (Situación Tipo III), todo servidor público tiene la obligación legal ineludible de notificar de inmediato a las autoridades de protección (ICBF, Comisaría de Familia, Fiscalía). La confidencialidad cede ante el interés superior del menor y la obligación de protección. Confrontar al agresor en la escuela pone en grave riesgo a la víctima."
+  },
+  {
+    "id": "ORI_002",
+    "area": "Competencias Específicas - Docente Orientador",
+    "tema": "Salud Mental, Prevención del Riesgo Suicida y Autolesiones",
+    "norma_referencia": "Ley 1616 de 2013 (Ley de Salud Mental) / Protocolos de Prevención del Riesgo Suicida MEN",
+    "contexto": "Un docente de aula remite al Docente Orientador a un estudiante de grado 10° tras identificar cortes recientes en sus antebrazos (cutting) y haber encontrado notas escritas con ideación suicida explícita. El estudiante manifiesta sentirse abrumado y desesperanzado.",
+    "pregunta": "Frente a este caso de alto riesgo en salud mental, ¿cuál es el protocolo que debe liderar el Docente Orientador?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Realizar psicoterapia clínica de larga duración dentro de la institución educativa hasta lograr la remisión total de los síntomas."
+      },
+      {
+        "id": "B",
+        "texto": "Brindar primera ayuda psicológica, notificar de inmediato a los padres o acudientes, activar la ruta de salud mental para atención médica de urgencias en el sector salud (EPS/Hospital) y realizar seguimiento al compromiso de atención."
+      },
+      {
+        "id": "C",
+        "texto": "Sugerir al docente de aula que le asigne tareas de sobrecarga académica para mantener ocupada la mente del estudiante."
+      },
+      {
+        "id": "D",
+        "texto": "Suspender temporalmente al estudiante de las clases presenciales hasta que presente un certificado de aptitud mental firmado por un médico general."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El Docente Orientador realiza contención emocional, escucha activa y primera ayuda psicológica, pero NO realiza psicoterapia clínica en la escuela (Manual de Funciones MEN). Ante el riesgo suicida o autolesiones, la norma exige la notificación inmediata a la familia y la remisión prioritaria a la red del sistema de salud (Ley 1616 de 2013). La escuela mantiene el acompañamiento pedagógico y el seguimiento intersectorial sin aislar ni desescolarizar al estudiante."
+  },
+  {
+    "id": "ORI_003",
+    "area": "Competencias Específicas - Docente Orientador",
+    "tema": "Prevención del Consumo de Sustancias Psicoactivas (SPA)",
+    "norma_referencia": "Ley 1566 de 2012 / Ley 1620 de 2013 / Directrices de Orientación Escolar MEN",
+    "contexto": "En un colegio urbano, el equipo directivo detecta que varios estudiantes de octavo grado están consumiendo sustancias psicoactivas en los alrededores de la sede. El Consejo Directivo sugiere la expulsión inmediata de los estudiantes involucrados.",
+    "pregunta": "Desde el enfoque formativo y de derechos que rige el rol del Docente Orientador, ¿qué postura técnica y legal debe fundamentar frente a esta situación?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Aprobar la expulsión automática para evitar la contaminación del resto del grupo escolar."
+      },
+      {
+        "id": "B",
+        "texto": "Argumentar que el consumo de SPA es una problemática de salud pública y vulneración de derechos, proponiendo la activación de la ruta pedagógica y de salud, acompañamiento familiar y ajustes razonables para garantizar la permanencia escolar."
+      },
+      {
+        "id": "C",
+        "texto": "Realizar requisas físicas y requisas de maletines a todos los estudiantes de la institución de manera periódica."
+      },
+      {
+        "id": "D",
+        "texto": "Remitir a los estudiantes a la Policía Nacional para que sean procesados penalmente bajo la Ley de Infancia."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La Ley 1566 de 2012 reconoce el consumo de SPA como un asunto de salud pública que requiere atención integral y prevención. La Corte Constitucional y la Ley 1620 prohíben la desescolarización o expulsión punitiva por razones de consumo. El Docente Orientador debe promover acciones pedagógicas, formativas, de prevención de riesgos y vinculación con el sector salud y bienestar familiar para proteger el derecho a la educación."
+  },
+  {
+    "id": "ORI_004",
+    "area": "Competencias Específicas - Docente Orientador",
+    "tema": "Orientación Socioocupacional (OSO) y Proyecto de Vida",
+    "norma_referencia": "Manual de Funciones MEN / Guía de Orientación Socioocupacional del MEN",
+    "contexto": "El Docente Orientador diseña el programa de Orientación Socioocupacional (OSO) para los grados 10° y 11°. Algunos docentes sugieren que el programa se limite a aplicar un test rápido de aptitudes para indicarles a los estudiantes qué carrera universitaria deben estudiar.",
+    "pregunta": "De acuerdo con las orientaciones del MEN, ¿cuál debe ser el enfoque integral de la Orientación Socioocupacional liderada por el orientador?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Un proceso continuo y transversal enfocado en tres dimensiones: autoconocimiento, conocimiento de las ofertas formativas/laborales y toma de decisiones informadas sobre el proyecto de vida."
+      },
+      {
+        "id": "B",
+        "texto": "La aplicación exclusiva de psicometría de inteligencia para clasificar a los estudiantes en áreas técnicas o profesionales según su CI."
+      },
+      {
+        "id": "C",
+        "texto": "La organización de una feria universitaria de un solo día en la que las instituciones privadas entreguen folletos publicitarios."
+      },
+      {
+        "id": "D",
+        "texto": "Asignar directamente a cada estudiante la carrera con mayor demanda económica en el mercado laboral local."
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "La Orientación Socioocupacional (OSO) promovida por el MEN es un proceso pedagógico y reflexivo estructurado en tres pilares: Quién soy (autoconocimiento), Qué hay (conocimiento del mundo del estudio y trabajo) y Cómo me proyecto (toma de decisiones). No se reduce a la aplicación aislada de un test psicométrico ni a eventos comerciales puntualizados."
+  },
+  {
+    "id": "ORI_005",
+    "area": "Competencias Específicas - Docente Orientador",
+    "tema": "Acoso Escolar (Bullying / Cyberbullying) y Enfoque Restaurativo",
+    "norma_referencia": "Ley 1620 de 2013 / Guía Pedagógica No. 49 MEN",
+    "contexto": "Se presenta un caso sistemático de ciberacoso (cyberbullying) donde dos estudiantes difunden imágenes editadas e insultos sobre la orientación sexual de un compañero en redes sociales, causando en la víctima aislamiento y fobia escolar.",
+    "pregunta": "Al abordar este caso en el marco del Comité de Convivencia y las funciones de orientación, ¿cuál debe ser el objetivo central de la intervención pedagógica?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Aplica una sanción pública de humillación a los agresores en la formación de bandera para disuadir a otros."
+      },
+      {
+        "id": "B",
+        "texto": "Recomendar a la familia de la víctima que la cambie de colegio para evitar que continúe el acoso."
+      },
+      {
+        "id": "C",
+        "texto": "Detener el acoso, brindar apoyo emocional y protección a la víctima, y aplicar acciones pedagógicas restaurativas donde los agresores reconozcan el daño, asuman la responsabilidad y reparen la falta."
+      },
+      {
+        "id": "D",
+        "texto": "Ignorar la situación por haber ocurrido en redes sociales fuera de la jornada escolar presencial."
+      }
+    ],
+    "respuesta_correcta": "C",
+    "justificacion": "La Ley 1620 de 2013 y la Guía 49 abogan por un enfoque restaurativo en la convivencia escolar. Ante el ciberacoso (Situación Tipo II), el objetivo es la cesación inmediata del daño, la protección y apoyo psicosocial a la víctima, y la generación de espacios de responsabilidad pedagógica y reparación del tejido social por parte de los agresores. Las sanciones represivas o la invisibilización del entorno digital contradicen la norma."
+  },
+  {
+    "id": "ORI_006",
+    "area": "Competencias Específicas - Docente Orientador",
+    "tema": "Inclusión Educativa, Acompañamiento en PIAR y DUA",
+    "norma_referencia": "Decreto 1421 de 2017 / Instructivo PIAR MEN",
+    "contexto": "Un docente de matemáticas se acerca a Orientación Escolar afirmando que no puede atender a un estudiante con diagnóstico de Trastorno por Déficit de Atención e Hiperactividad (TDAH) porque 'eso es tarea exclusiva del orientador o del docente de apoyo'.",
+    "pregunta": "¿Qué orientación técnica y normativa debe brindar el Docente Orientador al profesor de aula?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Aceptar que el estudiante sea trasladado a la oficina de orientación durante la clase de matemáticas para realizar guías individuales."
+      },
+      {
+        "id": "B",
+        "texto": "Aclarar que el docente de aula es el responsable directo de implementar los ajustes razonables (PIAR) y el DUA en su asignatura, mientras que Orientación brinda asesoría, andamiaje y seguimiento institucional."
+      },
+      {
+        "id": "C",
+        "texto": "Eximirse de intervenir por considerar que el TDAH requiere medicación clínica antes de cualquier abordaje pedagógico."
+      },
+      {
+        "id": "D",
+        "texto": "Recomendar la reprobación del grado por no alcanzar los estándares mínimos de atención de la materia."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El Decreto 1421 de 2017 establece claramente que el responsable pedagógico directo de la enseñanza y de los ajustes razonables (PIAR) es el docente de aula. El Docente Orientador y el docente de apoyo pedagógico cumplen un rol de asesoría, orientación a familias, articulación interinstitucional y acompañamiento, pero no sustituyen al maestro de clase ni asumen un modelo segregado fuera del aula común."
+  },
+  {
+    "id": "ORI_007",
+    "area": "Competencias Específicas - Docente Orientador",
+    "tema": "Corresponsabilidad Familiar y Escuela de Padres",
+    "norma_referencia": "Ley 2025 de 2020 / Ley 115 de 1994 (Art. 7)",
+    "contexto": "En una institución con altos índices de pauta de crianza permisiva y negligencia afectiva, el Docente Orientador lidera la reestructuración de la Escuela de Padres bajo los marcos de la Ley 2025 de 2020.",
+    "pregunta": "¿Cuál es la característica clave que debe cumplir la Escuela de Padres para articularse legal y pedagógicamente con las familias?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Ser un espacio obligatorio de formación periódica, estructurado participativamente, que fortalezca las capacidades de crianza amorosa, hábitos de estudio y prevención de riesgos, de asistencia vinculante para acudientes."
+      },
+      {
+        "id": "B",
+        "texto": "Ser un cobro adicional en la matrícula escolar destinado a financiar conferencistas internacionales."
+      },
+      {
+        "id": "C",
+        "texto": "Un espacio dedicado exclusivamente a la entrega de informes trimestrales de calificaciones y cobro de pensiones."
+      },
+      {
+        "id": "D",
+        "texto": "Un taller voluntario dictado en horarios nocturnos sin registro de asistencia ni articulación con el PEI."
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "La Ley 2025 de 2020 establece la obligatoriedad para las instituciones educativas de implementar las Escuelas de Padres y Madres de Familia dentro del PEI, diseñando un plan de formación obligatorio para los acudientes orientado a fortalecer las competencias parentales, el acompañamiento al desarrollo de los hijos y la prevención de vulneraciones."
+  },
+  {
+    "id": "ORI_008",
+    "area": "Competencias Específicas - Docente Orientador",
+    "tema": "Permanencia Escolar y Prevención de la Maternidad/Paternidad Temprana",
+    "norma_referencia": "Ley 115 de 1994 / Sentencias de la Corte Constitucional sobre Protección a la Maternidad Escolar",
+    "contexto": "Una estudiante de grado 9° de 15 años informa al Docente Orientador que se encuentra en estado de embarazo. La directiva del colegio sugiere convencer a la familia para que la pase a un modelo educativo nocturno o sabatino para 'evitar un mal ejemplo para las compañeras'.",
+    "pregunta": "Desde la jurisprudencia constitucional y las competencias de orientación, ¿cuál es el deber del Docente Orientador en este caso?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Apoyar la solicitud de la directiva y tramitar el traslado a la jornada nocturna de inmediato."
+      },
+      {
+        "id": "B",
+        "texto": "Garantizar el derecho fundamental a la educación en el aula regular, flexibilizar la asistencia por controles médicos, promover el apoyo psicosocial y prevenir cualquier manifestación de discriminación."
+      },
+      {
+        "id": "C",
+        "texto": "Exigir la renuncia del padre del bebé si es estudiante del mismo colegio."
+      },
+      {
+        "id": "D",
+        "texto": "Recomendar la desescolarización total hasta que nazca el bebé."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La Corte Constitucional ha reiterado de manera jurisprudencial (Sentencias T-452/92, T-676/02 entre otras) que el embarazo adolescente jamás puede ser motivo de sanción, discriminación o desescolarización. El Docente Orientador debe velar por la permanencia en el aula regular, el acompañamiento psicosocial, los ajustes académicos para controles prenatales y la prevención de cualquier forma de estigmatización."
+  },
+  {
+    "id": "ORI_009",
+    "area": "Competencias Específicas - Docente Orientador",
+    "tema": "Secreto Profesional y Ética en la Orientación Escolar",
+    "norma_referencia": "Ley 1090 de 2006 (Código Deontológico de Psicología) / Manual de Funciones MEN",
+    "contexto": "Un coordinador académico le exige al Docente Orientador que le entregue la carpeta de notas confidenciales e historias individuales de atención de todos los estudiantes atendidos en el mes para archivarlas en la coordinación general.",
+    "pregunta": "Frente a esta solicitud del superior jerárquico, ¿cuál debe ser la respuesta ética y normativa del Docente Orientador?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Entregar la totalidad de las carpetas originales sin objeción por tratarse del coordinador de la institución."
+      },
+      {
+        "id": "B",
+        "texto": "Explicar que la información clínica y de atención individual de orientación goza de reserva profesional y custodia ética, entregando únicamente informes de gestión técnica o resúmenes ejecutivos sin revelar datos confidenciales."
+      },
+      {
+        "id": "C",
+        "texto": "Publicar las notas de atención en la cartelera del colegio para garantizar el principio de transparencia."
+      },
+      {
+        "id": "D",
+        "texto": "Destruir todos los archivos para evitar que nadie tenga acceso a ellos."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La Ley 1090 de 2006 (Código Deontológico y Bioético de Psicología) y la Ley 1581 de 2012 (Habeas Data) amparan el secreto profesional y la protección de datos sensibles de la infancia. Las historias o registros de atención individual que realiza el Docente Orientador están bajo su custodia. Hacia los directivos docentes se entregan reportes analíticos de gestión o alertas normativas de protección de derechos, nunca el detalle confidencial reservado."
+  },
+  {
+    "id": "ORI_010",
+    "area": "Competencias Específicas - Docente Orientador",
+    "tema": "Intervención en Desastre, Duelo y Crisis Institucionales",
+    "norma_referencia": "Orientaciones Pedagógicas para la Gestión del Riesgo y Apoyo Psicosocial MEN",
+    "contexto": "Fallece trágicamente en un accidente de tránsito un estudiante muy querido de grado 11°. La comunidad educativa se encuentra conmocionada, con llanto generalizado en los salones y paralización de las actividades regulares.",
+    "pregunta": "¿Cuál es la estrategia de intervención en crisis que debe activar de forma prioritaria el Docente Orientador?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Continuar con las clases de manera normal e ignorar el hecho para no alterar el ritmo académico."
+      },
+      {
+        "id": "B",
+        "texto": "Liderar espacios colectivos de contención emocional, elaboración del duelo, primeros auxilios psicológicos y rituales pedagógicos de despedida, identificando estudiantes con reacciones de shock para atención prioritaria."
+      },
+      {
+        "id": "C",
+        "texto": "Cancelar las clases durante un mes completo y enviar a todos los estudiantes a sus casas."
+      },
+      {
+        "id": "D",
+        "texto": "Prohibir que se hable del estudiante fallecido en las instalaciones de la institución."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "Ante eventos traumáticos o muertes repentinas en la comunidad educativa, el Docente Orientador lidera la respuesta de apoyo psicosocial e intervención en crisis: primera ayuda psicológica, espacios para la expresión emocional y rituals simbólicos de duelo. Ello ayuda a procesar el impacto emocional de forma saludable y previene crisis de angustia o descompensaciones mayores en los compañeros."
+  }
+]

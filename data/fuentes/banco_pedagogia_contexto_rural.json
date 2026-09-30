@@ -1,0 +1,282 @@
+[
+  {
+    "id": "RUR_001",
+    "area": "Pedagogía e Inclusión en Contexto Rural",
+    "tema": "Modelo Educativo Flexible Escuela Nueva y Aula Multigrado",
+    "norma_referencia": "Ley 115 de 1994 / Guías de Escuela Nueva (MEN) / Manual del Docente Rural",
+    "contexto": "Un docente asignado a una sede rural unitaria atiende simultáneamente a estudiantes de grados 1° a 5° en una misma aula multigrado. Durante las primeras semanas, observa que intentar impartir clases magistrales separadas para cada grado genera caos, desorden y tiempos muertos prolongados en los estudiantes que esperan su turno.",
+    "pregunta": "¿Cuál es la estrategia metodológica del modelo Escuela Nueva más adecuada para optimizar el trabajo pedagógico en este entorno?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Dividir la jornada escolar atendiendo únicamente a dos grados por día y enviar al resto de estudiantes a realizar tareas en sus hogares."
+      },
+      {
+        "id": "B",
+        "texto": "Implementar las guías de aprendizaje autocontrolado con trabajo en mesas colectivas, promoviendo el aprendizaje colaborativo, la tutoría entre pares de diferentes grados y la dinamización del Gobierno Escolar estudiantil."
+      },
+      {
+        "id": "C",
+        "texto": "Exigir a la Secretaría de Educación el nombramiento de cuatro docentes adicionales como condición obligatoria para continuar con la atención escolar."
+      },
+      {
+        "id": "D",
+        "texto": "Homogeneizar la enseñanza dictando exactamente los mismos contenidos de grado 3° a todos los estudiantes de la sede."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El modelo flexible Escuela Nueva está estructurado específicamente para aulas multigrado rurales. Se fundamenta en el uso de guías de aprendizaje autogestionado, la organización de mesas de trabajo colaborativo donde los niños más avanzados apoyan a sus pares (tutoría entre iguales) y la vivencia democrática a través del Gobierno Escolar, garantizando la atención simultánea sin generar tiempos muertos."
+  },
+  {
+    "id": "RUR_002",
+    "area": "Pedagogía e Inclusión en Contexto Rural",
+    "tema": "Modelo Postprimaria Rural y Proyectos Productivos Pedagógicos (PPP)",
+    "norma_referencia": "Ley 115 de 1994 / Orientaciones para la Educación Rural (MEN)",
+    "contexto": "En una institución educativa rural de difícil acceso que implementa el modelo Postprimaria (grados 6° a 9°), el equipo docente nota desmotivación en los jóvenes, quienes perciben los contenidos académicos desconectados de su realidad campesina y manifiestan su deseo de abandonar los estudios para trabajar en labores agrícolas informales.",
+    "pregunta": "¿Qué acción pedagógica institucional permite articular el currículo con el contexto y fomentar la permanencia escolar de los estudiantes?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Sustituir la totalidad del plan de estudios por trabajo de campo no supervisado sin fundamentación teórica ni evaluación académica."
+      },
+      {
+        "id": "B",
+        "texto": "Sancionar disciplinariamente con llamados de atención a los estudiantes que manifiesten desinterés por las asignaturas tradicionales."
+      },
+      {
+        "id": "C",
+        "texto": "Diseñar e integrar Proyectos Productivos Pedagógicos (PPP) transdisciplinares en el plan de estudios, vinculando los conceptos científicos, matemáticos y de lenguaje con el desarrollo sostenible y la producción de la vereda."
+      },
+      {
+        "id": "D",
+        "texto": "Solicitar el traslado inmediato de la sede rural a la zona urbana para obligar a las familias a desplazarse a la ciudad."
+      }
+    ],
+    "respuesta_correcta": "C",
+    "justificacion": "Los Proyectos Productivos Pedagógicos (PPP) son el eje articulador de la educación rural en modelos como Postprimaria. Permiten transversalizar los Estándares Básicos de Competencias con la resolución de problemas reales del campo (técnicas de cultivo, contabilidad agrícola, preservación ambiental), dotando de sentido el aprendizaje y reduciendo la deserción escolar."
+  },
+  {
+    "id": "RUR_003",
+    "area": "Pedagogía e Inclusión en Contexto Rural",
+    "tema": "Programa de Aceleración del Aprendizaje y Nivelación de Extraedad",
+    "norma_referencia": "Manual de Operación Aceleración del Aprendizaje (MEN)",
+    "contexto": "A un centro educativo rural ingresan varios niños y jóvenes de entre 10 y 14 años que no saben leer ni escribir y presentan una extraedad de tres o más años respecto al grado escolar correspondiente en básica primaria, debido al trabajo infantil o al desplazamiento forzado recurrente.",
+    "pregunta": "Desde las orientaciones del Ministerio de Educación Nacional para la atención a la extraedad en zonas rurales, ¿cuál es la ruta pedagógica adecuada?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Ubicar a los estudiantes de 14 años en aulas de grado 1° junto a niños de 6 años bajo el modelo tradicional."
+      },
+      {
+        "id": "B",
+        "texto": "Implementar el modelo educativo flexible Aceleración del Aprendizaje, trabajando por proyectos interdisciplinares interconectados con módulos específicos para fortalecer la autoestima y lograr la nivelación primaria en un año lectivo."
+      },
+      {
+        "id": "C",
+        "texto": "Negar el cupo escolar sugiriendo que esperen a cumplir la mayoría de edad para validar la primaria en programas nocturnos de adultos."
+      },
+      {
+        "id": "D",
+        "texto": "Otorgar la aprobación automática de los grados primarios sin proceso pedagógico previo para no alterar los índices institucionales."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El modelo Aceleración del Aprendizaje está diseñado especialmente para atender a niños y jóvenes en extraedad que no han culminado la básica primaria. A través de una metodología basada en proyectos, el fortalecimiento de la autoestima y guías modulares, permite avanzar rápidamente en la adquisición de competencias clave y reinsertar al estudiante en el grado correspondiente a su edad."
+  },
+  {
+    "id": "RUR_004",
+    "area": "Pedagogía e Inclusión en Contexto Rural",
+    "tema": "Educación Indígena y Bilingüismo Intercultural (PEC / Calendario Flexible)",
+    "norma_referencia": "Ley 115 de 1994 (Capítulo 3) / Decreto 804 de 1995 / Decreto 1075 de 2015",
+    "contexto": "Un docente labora en una institución educativa ubicada en un resguardo indígena donde la comunidad desarrolla su siembra y cosecha tradicional durante semanas específicas del año. En esas fechas, los estudiantes registran inasistencias masivas porque participan en los ritos de siembra comunitarios.",
+    "pregunta": "Con base en la normatividad sobre Etnoeducación y la construcción del Proyecto Educativo Comunitario (PEC), ¿cuál debe ser la actuación institucional?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Reprobar automáticamente por faltas de asistencia a todos los estudiantes que participen en las actividades agrícolas comunitarias."
+      },
+      {
+        "id": "B",
+        "texto": "Ajustar y flexibilizar el calendario académico y las secuencias didácticas en concertación con las autoridades tradicionales de la comunidad, integrando los saberes de la siembra en los proyectos pedagógicos de aula."
+      },
+      {
+        "id": "C",
+        "texto": "Denunciar a los padres de familia ante el Instituto Colombiano de Bienestar Familiar (ICBF) por vulneración al derecho a la educación."
+      },
+      {
+        "id": "D",
+        "texto": "Prohibir la enseñanza de lenguas y costumbres tradicionales dentro del establecimiento para asegurar la homogeneización del currículo."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La Ley 115 de 1994 y el Decreto 804 de 1995 establecen que la educación para grupos étnicos debe ser concertada, respetuosa de sus cosmovisiones e integrada a su desarrollo comunitario mediante el PEC. La flexibilización del calendario académico y la integración pedagógica de las prácticas culturales garantizan tanto el derecho a la educación como la identidad cultural."
+  },
+  {
+    "id": "RUR_005",
+    "area": "Pedagogía e Inclusión en Contexto Rural",
+    "tema": "Atención a Población Víctima del Conflicto Armado y Zonas PDET",
+    "norma_referencia": "Ley 1448 de 2011 / Decreto 1075 de 2015 / Directiva Ministerial 16 de 2013",
+    "contexto": "En una escuela rural ubicada en una zona de Programas de Desarrollo con Enfoque Territorial (PDET), ingresan niños y niñas en condición de desplazamiento forzado reciente por alteración del orden público. Varios muestran signos de estrés postraumático, temor ante ruidos fuertes y dificultades para concentrarse.",
+    "pregunta": "Desde el marco de atención educativa a población víctima del conflicto armado, ¿qué acciones prioritarias debe adelantar el docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Exigir rendimiento académico inmediato al mismo nivel que los demás compañeros, aplicando evaluaciones escritas rigurosas en la primera semana."
+      },
+      {
+        "id": "B",
+        "texto": "Ofrecer acogida pedagógica con apoyo socioemocional, flexibilizar temporalmente las exigencias académicas, evitar dinámicas que rerevictimicen y activar la ruta de acompañamiento psicosocial de la entidad territorial."
+      },
+      {
+        "id": "C",
+        "texto": "Aislar a los estudiantes en un espacio cerrado fuera del aula mientras superen sus manifestaciones emocionales."
+      },
+      {
+        "id": "D",
+        "texto": "Rechazar la matrícula provisional argumentando que no presentan sus certificados escolares originales del colegio anterior."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La Ley 1448 de 2011 y las directivas del MEN señalan que la población víctima del conflicto tiene derecho a acceso inmediato sin barreras documentales y a una atención educativa con enfoque de derechos y apoyo psicosocial. El docente debe garantizar un entorno seguro de protección, empatía y flexibilidad para favorecer su adaptación e integración."
+  },
+  {
+    "id": "RUR_006",
+    "area": "Pedagogía e Inclusión en Contexto Rural",
+    "tema": "Inclusión y DUA en Aulas Multigrado Rurales (Decreto 1421)",
+    "norma_referencia": "Decreto 1421 de 2017 / Instructivo PIAR en Educación Rural",
+    "contexto": "En una escuela veredal dispersa, ingresa a grado 2° un niño con discapacidad cognitiva moderada. La sede no cuenta con docente de apoyo pedagógico presencial ni profesional de la salud en la zona veredal.",
+    "pregunta": "¿Cómo debe proceder la docente encargada del aula multigrado para garantizar el proceso educativo inclusivo del estudiante?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Suspender la asistencia del niño al colegio hasta que la Secretaría de Educación envíe un docente de apoyo permanente y exclusivo a la vereda."
+      },
+      {
+        "id": "B",
+        "texto": "Elaborar la valoración pedagógica, aplicar los principios del DUA en las guías de aprendizaje y formular el PIAR con ajustes razonables sencillos (materiales manipulables concretos y apoyos de la familia/comunidad)."
+      },
+      {
+        "id": "C",
+        "texto": "Poner al estudiante únicamente a colorear dibujos durante toda la jornada escolar para que no interrumpa las actividades del grupo."
+      },
+      {
+        "id": "D",
+        "texto": "Sugerir a los padres que trasladen diariamente al niño a una institución especializada en la cabecera municipal ubicada a cuatro horas de distancia."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El Decreto 1421 de 2017 compromete a todos los establecimientos educativos oficiales, incluidos los rurales, a brindar educación inclusiva. A falta de equipo interdisciplinario presencial diario, la docente de aula debe asumir el DUA en sus guías de trabajo y estructurar el PIAR con los apoyos y ajustes razonables posibles dentro del entorno veredal."
+  },
+  {
+    "id": "RUR_007",
+    "area": "Pedagogía e Inclusión en Contexto Rural",
+    "tema": "Ruta de Convivencia Escolar en Entornos Rurales Dispersos",
+    "norma_referencia": "Ley 1620 de 2013 / Decreto 1965 de 2013 / Guía Pedagógica No. 49",
+    "contexto": "En una sede rural apartada, dos estudiantes de grado 8° sostienen un altercado físico fuera del establecimiento al finalizar la jornada (Situación Tipo II). Debido a la distancia geográfica con la sede principal, no es posible reunir inmediatamente al Comité Escolar de Convivencia presencial.",
+    "pregunta": "¿Qué actuación debe adelantar el docente encargado de la sede veredal para atender el caso de manera oportuna y ajustada a la norma?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Expulsar inmediatamente a los dos estudiantes sin escuchar sus versiones ni levantar acta de lo ocurrido."
+      },
+      {
+        "id": "B",
+        "texto": "Ignorar la situación por haber ocurrido fuera del predio físico de la escuela y desentenderse del conflicto."
+      },
+      {
+        "id": "C",
+        "texto": "Brindar atención inicial y primeros auxilios si es necesario, dialogar por separado y en conjunto con las partes, fijar acuerdos restaurativos de reparación, notificar a las familias y reportar el caso al Comité de Convivencia de la sede principal mediante los canales disponibles."
+      },
+      {
+        "id": "D",
+        "texto": "Remitir el caso directamente a la Fiscalía General de la Nación omitiendo el protocolo escolar."
+      }
+    ],
+    "respuesta_correcta": "C",
+    "justificacion": "La Ley 1620 de 2013 establece que las Situaciones Tipo II deben abordarse mediante atención inmediata, diálogo, debido proceso y acciones restaurativas. Aunque la sede esté distante de la sede principal, el docente rural actúa como garante de los derechos, aplica la mediación y notifica los compromisos al Comité de Convivencia institucional."
+  },
+  {
+    "id": "RUR_008",
+    "area": "Pedagogía e Inclusión en Contexto Rural",
+    "tema": "Evaluación Formativa y Promoción Flexible en la Escuela Rural",
+    "norma_referencia": "Decreto 1290 de 2009 / Documento No. 11 del MEN",
+    "contexto": "Un estudiante de un centro educativo rural falta periódicamente a clase los días de mercado veredal y cosechas para apoyar a sus padres en la recolección de café. A pesar de sus ausencias, cuando asiste demuestra un manejo sobresaliente de las guías de aprendizaje y desarrolla con calidad los compromisos autonómicos.",
+    "pregunta": "Desde el enfoque de evaluación formativa del Decreto 1290 de 2009 y la flexibilidad de la educación rural, ¿cuál debe ser la determinación pedagógica?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Reprobar automáticamente al estudiante por haber superado el límite de inasistencias sin valorar sus evidencias de aprendizaje."
+      },
+      {
+        "id": "B",
+        "texto": "Valorar el avance del estudiante de acuerdo con su ritmo de aprendizaje, brindar asesoría tutorial para los momentos de ausencia y certificar la aprobación con base en el logro de las competencias demostradas."
+      },
+      {
+        "id": "C",
+        "texto": "Obligar a la familia a pagar una multa económica a la escuela por cada día de falta del estudiante."
+      },
+      {
+        "id": "D",
+        "texto": "Asignarle valoraciones de cero (0.0) en todas las guías desarrolladas durante los días en que no asistió presencialmente."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El Decreto 1290 de 2009 y los modelos educativos flexibles conciben la evaluación como un proceso integral y formativo centrado en la adquisición real de competencias y no en el mero control punitivo de asistencia. En el sector rural, se promueve el aprendizaje flexible al propio ritmo para evitar la deserción de estudiantes vinculados a labores agrícolas temporales."
+  },
+  {
+    "id": "RUR_009",
+    "area": "Pedagogía e Inclusión en Contexto Rural",
+    "tema": "Uso de Tecnologías Offline y Recursos Digitales en Zonas Sin Conectividad",
+    "norma_referencia": "Orientaciones TICs para la Educación Rural (MEN) / Estrategia Computadores para Educar",
+    "contexto": "Una escuela rural dispersa recibe tabletas digitales del programa Computadores para Educar, pero la sede carece de conexión a internet o señal de telefonía móvil. Algunos docentes sugieren guardar los equipos en un armario bajo llave para que 'no se dañen sin uso'.",
+    "pregunta": "¿Cuál es la alternativa pedagógica pertinente para el uso efectivo de estos recursos tecnológicos?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Mantener los equipos almacenados hasta que el Gobierno Nacional instale fibra óptica en la vereda."
+      },
+      {
+        "id": "B",
+        "texto": "Aprovechar los contenidos educativos digitales precargados offline (RACHEL, Colombia Aprende, enciclopedias interactivas y simuladores) incorporándolos en el desarrollo de las guías de aprendizaje."
+      },
+      {
+        "id": "C",
+        "texto": "Vender los dispositivos para comprar cuadernos y fotocopias físicas para los estudiantes."
+      },
+      {
+        "id": "D",
+        "texto": "Permitir que los estudiantes usen las tabletas exclusivamente durante los recreos para juegos recreativos no educativos."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La estrategia de tecnología en la ruralidad promueve el uso de contenidos offline precargados en dispositivos móviles. La ausencia de internet no impide el aprovechamiento de repositorios digitales, diccionarios, bibliotecas y simuladores pedagógicos que enriquecen el trabajo de las guías de aprendizaje en el aula veredal."
+  },
+  {
+    "id": "RUR_010",
+    "area": "Pedagogía e Inclusión en Contexto Rural",
+    "tema": "Liderazgo Docente y Relación Escuela-Comunidad Veredal",
+    "norma_referencia": "Ley 115 de 1994 / Manual de Funciones del MEN / Gestión Comunitaria",
+    "contexto": "Al llegar a una nueva vereda, el docente rural nota que la comunidad local (Junta de Acción Comunal - JAC y familias) percibe a la escuela como un espacio ajeno y cerrado que solo abre pocas horas en la mañana para los niños.",
+    "pregunta": "Desde la competencia de Gestión Comunitaria y el liderazgo del docente rural, ¿qué iniciativa fortalece el vínculo entre la escuela y la vereda?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Prohibir el ingreso de cualquier habitante de la vereda al predio escolar para evitar el deterioro de las instalaciones."
+      },
+      {
+        "id": "B",
+        "texto": "Promover la escuela como centro de desarrollo comunitario, abriendo sus espacios para asambleas de la JAC, talleres de alfabetización de adultos y proyectos de memoria e identidad veredal."
+      },
+      {
+        "id": "C",
+        "texto": "Exigir pago de tarifas de ingreso a los líderes comunitarios que deseen reunirse en la sede escolar."
+      },
+      {
+        "id": "D",
+        "texto": "Limitarse estrictamente a dictar las clases asignadas y retirarse de la vereda inmediatamente al finalizar la jornada académica diariamente."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "En el contexto rural colombiano, la escuela no es una isla; representa el centro de vida social, cultural y comunitaria de la vereda. El Manual de Funciones del MEN y la Ley 115 orientan al docente rural a ejercer un liderazgo transformador que integre a la comunidad, la JAC y las familias en los procesos de la institución."
+  }
+]

@@ -1,0 +1,282 @@
+[
+  {
+    "id": "ING_001",
+    "area": "Competencias Específicas - Idioma Extranjero Inglés",
+    "tema": "Enfoque Comunicativo y Desarrollo de Habilidades Productivas (Speaking)",
+    "norma_referencia": "Estándares Básicos de Competencias en Lenguas Extranjeras: Inglés (Guía 22 MEN) / MCER",
+    "contexto": "Un docente de Inglés de grado 8° observa que al solicitar a sus estudiantes que realicen intervenciones orales en la lengua extranjera, la mayoría responde con monosílabos o recurre al español por miedo a cometer errores de pronunciación o sintaxis. Para superar esta barrera, el docente planea una secuencia didáctica basada en el Enfoque Comunicativo (Communicative Language Teaching - CLT).",
+    "pregunta": "¿Cuál es la estrategia metodológica más adecuada que debe implementar el docente para promover la fluidez oral y la confianza comunicativa en los estudiantes?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Exigir la memorización y recitación individual de diálogos gramaticales rígidos de 20 líneas, interrumpiendo y corrigiendo inmediatamente cada error fonético frente al grupo."
+      },
+      {
+        "id": "B",
+        "texto": "Diseñar tareas comunicativas auténticas basadas en juegos de roles (role-plays) y vacíos de información (information gaps) en parejas o pequeños grupos, priorizando la transmisión efectiva del significado y posponiendo la corrección gramatical para una fase de retroalimentación posterior."
+      },
+      {
+        "id": "C",
+        "texto": "Sustituir las actividades de expresión oral por talleres escritos de traducción directa inglés-español para evitar la exposición del estudiante."
+      },
+      {
+        "id": "D",
+        "texto": "Asignar una calificación reprobatoria automática en el componente de habla a los estudiantes que utilicen palabras en español durante la clase."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "Según la Guía 22 del MEN y los principios del Enfoque Comunicativo (CLT), el propósito central del aprendizaje de una lengua extranjera es el desarrollo de la competencia comunicativa. Las tareas de vacío de información y simulación en entornos seguros (parejas o grupos) reducen el filtro afectivo (Krashen) y promueven la fluidez. La corrección inmediata e interrupción sistemática eleva la ansiedad del estudiante y bloquea la producción oral."
+  },
+  {
+    "id": "ING_002",
+    "area": "Competencias Específicas - Idioma Extranjero Inglés",
+    "tema": "Comprensión Lectora e Inferencia en Textos Continuos (Reading)",
+    "norma_referencia": "Estándares Básicos de Competencias en Lenguas Extranjeras / DBA de Inglés (Grado 10° - 11°)",
+    "contexto": "En una clase de grado 11° (nivel B1 según el MCER), los estudiantes leen un artículo de opinión sobre el impacto del cambio climático. Al responder preguntas sobre el texto, la mayoría se limita a localizar palabras clave literales, pero falla al identificar la postura implícita del autor y la intención comunicativa principal del escrito.",
+    "pregunta": "Para desarrollar la comprensión lectora inferencial y crítica en la lengua extranjera, ¿cuál es la estrategia pedagógica de lectura más efectiva?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Solicitar que los estudiantes traduzcan el texto completo palabra por palabra al español utilizando un diccionario físico antes de responder."
+      },
+      {
+        "id": "B",
+        "texto": "Guiar el proceso mediante las tres fases de lectura (Pre-reading, While-reading, Post-reading), utilizando preguntas orientadoras sobre marcadores de discurso, conectores lógicos y tono del autor para construir la interpretación global del texto."
+      },
+      {
+        "id": "C",
+        "texto": "Evaluar la lectura únicamente a través de un examen de opción múltiple sin realizar actividades previas de activación de conocimientos de fondo (schemata)."
+      },
+      {
+        "id": "D",
+        "texto": "Pedir a los estudiantes que memoricen la lista de vocabulario desconocido contenida en el texto antes de iniciar la lectura."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "Los Estándares de Lenguas Extranjeras del MEN señalan que la lectura es un proceso activo de interacción entre el lector y el texto. La metodología por fases (Pre, While, Post-reading) permite activar esquemas previos (schemata), formular hipótesis de lectura y usar pistas contextuales (conectores, marcadores discursivos) para acceder a los niveles inferencial y crítico sin depender de la traducción literal palabra por palabra."
+  },
+  {
+    "id": "ING_003",
+    "area": "Competencias Específicas - Idioma Extranjero Inglés",
+    "tema": "Enseñanza de la Gramática en Contexto (Grammar in Use vs. Prescriptive Grammar)",
+    "norma_referencia": "Lineamientos Curriculares de Lenguas Extranjeras / Curriculum Suggestion (MEN)",
+    "contexto": "Un docente de Inglés inicia la unidad temática sobre el tiempo verbal 'Present Perfect' en grado 9°. Tradicionalmente, la lección se reducía a escribir la fórmula 'Subject + have/has + Past Participle' en el tablero y realizar 20 ejercicios descontextualizados de completar espacios.",
+    "pregunta": "Con el fin de alinear la lección con las orientaciones del MEN (Way to Go! / English Please!), ¿cuál es la secuencia metodológica inductiva más adecuada?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Dictar la regla gramatical en español, hacer memorizar los verbos irregulares en orden alfabético y aplicar un examen escrito al final de la sesión."
+      },
+      {
+        "id": "B",
+        "texto": "Presentar una muestra de lengua auténtica (un testimonio sobre experiencias de vida significativas), guiando a los estudiantes a notar el uso de la estructura en contexto (noticing), deducir su función comunicativa y posteriormente aplicarla en una entrevista a un compañero sobre sus vivencias."
+      },
+      {
+        "id": "C",
+        "texto": "Prohibir el uso de cualquier tiempo verbal diferente al Present Perfect durante todo el año lectivo para garantizar la automatización de la estructura."
+      },
+      {
+        "id": "D",
+        "texto": "Escribir 50 oraciones gramaticalmente incorrectas en el tablero para que los estudiantes identifiquen los errores de conjugación."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El enfoque inductivo de concienciación gramatical (Focus on Form / Noticing Hypothesis) promovido por los textos del MEN (Way to Go! y English Please!) expone primero al estudiante al uso real del lenguaje en contexto. Esto permite que el estudiante descubra la función pragmática de la estructura (comunicar experiencias pasadas con relevancia presente) antes de formalizar la regla, facilitando la apropiación significativa."
+  },
+  {
+    "id": "ING_004",
+    "area": "Competencias Específicas - Idioma Extranjero Inglés",
+    "tema": "Integración de Habilidades Lingüísticas y Aprendizaje Basado en Proyectos (PBL / TBLT)",
+    "norma_referencia": "Estándares Básicos de Competencias en Lenguas Extranjeras (Guía 22 MEN) / DBA",
+    "contexto": "En el marco de la formulación del proyecto transversal ambiental en grado 7°, la docente de Inglés decide articular los contenidos de la asignatura para que los estudiantes diseñen una campaña comunitaria en inglés sobre el reciclaje en la escuela.",
+    "pregunta": "Desde el enfoque del Aprendizaje Basado en Tareas/Proyectos (TBLT), ¿cómo deben integrarse las cuatro habilidades del lenguaje (Listening, Speaking, Reading, Writing) en esta unidad?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Enseñar cada habilidad en bimestres separados: primer periodo solo Listening, segundo solo Reading, tercero solo Writing y cuarto solo Speaking."
+      },
+      {
+        "id": "B",
+        "texto": "Integrar las habilidades de manera orgánica alrededor de la tarea final: escuchar un podcast sobre reciclaje (Listening), leer afiches informativos (Reading), discutir propuestas en equipo (Speaking) y redactar los folletos de la campaña (Writing)."
+      },
+      {
+        "id": "C",
+        "texto": "Dedicar todo el tiempo de clase a la corrección ortográfica de los folletos redactados en español y traducidos con herramientas digitales."
+      },
+      {
+        "id": "D",
+        "texto": "Priorizar la habilidad de pronunciación aislada de palabras técnicas del medio ambiente mediante repetición coral de listas de vocabulario."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La integración de habilidades (Integrated-Skills Approach) refleja la comunicación en la vida real. El Aprendizaje Basado en Tareas (TBLT) y los DBA de Inglés del MEN sugieren que la recepción (Listening/Reading) sirva de insumo o 'input' comprensible para alimentar la producción (Speaking/Writing) orientada a la solución de una tarea auténtica o proyecto escolar."
+  },
+  {
+    "id": "ING_005",
+    "area": "Competencias Específicas - Idioma Extranjero Inglés",
+    "tema": "Pragmática, Sociolingüística y Registros del Lenguaje",
+    "norma_referencia": "Estándares Básicos de Competencias en Lenguas Extranjeras / MCER (Nivel B1)",
+    "contexto": "Un estudiante de grado 10° envía un correo electrónico en inglés a un docente universitario invitado a dar una conferencia en el colegio, iniciando con la expresión: 'Hey bro, send me the slides ASAP'. El docente de aula aprovecha este hecho como una oportunidad pedagógica para trabajar la competencia sociolingüística.",
+    "pregunta": "¿Cuál es la intervención didáctica más adecuada para desarrollar la conciencia pragmática y el uso de registros formales e informales en la lengua extranjera?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Sancionar disciplinariamente al estudiante por faltarle al respeto al conferencista y suspender la actividad académica programada."
+      },
+      {
+        "id": "B",
+        "texto": "Analizar colectivamente ejemplos de correos electrónicos en diferentes contextos (conversación entre amigos vs. comunicación académica formal), identificando marcadores de cortesía, saludos institucionales y estructuras de solicitud indirecta (v.gr., 'Could you please...')."
+      },
+      {
+        "id": "C",
+        "texto": "Prohibir el uso de abreviaturas o modismos en cualquier contexto comunicativo dentro y fuera del aula de clase."
+      },
+      {
+        "id": "D",
+        "texto": "Explicar que en la cultura angloparlante no existen diferencias entre el lenguaje formal e informal."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La competencia sociolingüística (MCER y Estándares MEN) evalúa la capacidad de adecuar el uso del lenguaje al contexto social, la relación entre interlocutores y la intencionalidad comunicativa. Analizar contrastivamente la cortesía verbal (politeness strategies) y los registros (formal vs. informal) brinda herramientas pragmáticas reales para que el estudiante elija el registro adecuado según la situación."
+  },
+  {
+    "id": "ING_006",
+    "area": "Competencias Específicas - Idioma Extranjero Inglés",
+    "tema": "Inclusión, DUA y Adaptación de Materiales Lingüísticos",
+    "norma_referencia": "Decreto 1421 de 2017 / DUA / Guía de Implementación Inclusiva MEN",
+    "contexto": "En un aula de grado 6° está matriculado un estudiante con baja visión severa. El docente de Inglés planea una lección de vocabulario sobre lugares de la ciudad utilizando únicamente un mapa pequeño impreso en blanco y negro con letra tamaño 8.",
+    "pregunta": "De acuerdo con el Decreto 1421 de 2017 y los principios del Diseño Universal para el Aprendizaje (DUA), ¿cuál es el ajuste razonable pedagógico e inmediato que debe realizar el docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Eximir al estudiante de asistir a la clase de Inglés y asignarle guías de dibujo libre en la biblioteca."
+      },
+      {
+        "id": "B",
+        "texto": "Proporcionar opciones variadas de representación (p.ej., maquetas táctiles con texturas diferenciadas, macrotexto en relieve, audios descriptivos y macrotipos con alto contraste) garantizando que el estudiante participe activamente junto a sus compañeros."
+      },
+      {
+        "id": "C",
+        "texto": "Exigir al acudiente que compre un dispositivo electrónico de lectura en braille antes de permitir la entrada del estudiante al laboratorio de idiomas."
+      },
+      {
+        "id": "D",
+        "texto": "Asignar la nota máxima al estudiante sin evaluar ninguna competencia para evitar frustraciones emocionales."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El Decreto 1421 de 2017 y el DUA exigen garantizar múltiples formas de representación (puntuación del input informativo) para eliminar las barreras de acceso. Para un estudiante con baja visión, adaptar los materiales visuales mediante macrotipos, alto contraste, estímulos auditivos y maquetas táctiles asegura su permanencia y aprendizaje equitativo en la lengua extranjera."
+  },
+  {
+    "id": "ING_007",
+    "area": "Competencias Específicas - Idioma Extranjero Inglés",
+    "tema": "Uso Pedagógico de Recursos Tecnológicos y CALL (Computer-Assisted Language Learning)",
+    "norma_referencia": "Orientaciones MEN para la Integración de TIC en Lenguas Extranjeras",
+    "contexto": "Un colegio cuenta con una sala de bilingüismo equipada con tabletas e internet. El docente de Inglés desea incorporar herramientas de aprendizaje asistido por computador (CALL) para fortalecer la comprensión auditiva (Listening) en grado 8°.",
+    "pregunta": "¿Cuál es la práctica pedagógica con uso de TIC que aporta un mayor valor formativo al proceso de aprendizaje?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Usar las tabletas exclusivamente para que los estudiantes copien a mano reglas gramaticales desde archivos PDF estáticos en la pantalla."
+      },
+      {
+        "id": "B",
+        "texto": "Utilizar aplicaciones e itinerarios de podcasts interactivos con opciones de velocidad ajustable, subtítulos bilingües opcionales, ejercicios de autoevaluación e input auténtico adaptado al nivel de desempeño de cada estudiante."
+      },
+      {
+        "id": "C",
+        "texto": "Permitir el uso libre de redes sociales personales durante las horas de clase como premio por buen comportamiento."
+      },
+      {
+        "id": "D",
+        "texto": "Proyectar una película completa en inglés sin subtítulos ni actividades de andamiaje (scaffolding) pedagógico previo o posterior."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La integración efectiva de las TIC en la enseñanza de lenguas extranjeras (CALL) debe ofrecer andamiaje pedagógico (scaffolding), interactividad, personalización del ritmo de aprendizaje e insumos auténticos comprensibles (Krashen's Comprehensible Input). La simple digitalización de textos estáticos no transforma la práctica pedagógica ni fortalece la habilidad auditiva."
+  },
+  {
+    "id": "ING_008",
+    "area": "Competencias Específicas - Idioma Extranjero Inglés",
+    "tema": "Evaluación Formativa y Retroalimentación Constructiva de la Escritura (Writing)",
+    "norma_referencia": "Decreto 1290 de 2009 / Documento No. 11 MEN / Rubrics for Assessment in ELT",
+    "contexto": "Al evaluar un ensayo corto de grado 11°, la docente nota que un estudiante comete varios errores recurrentes en el uso de los conectores de contraste ('however', 'although', 'in spite of'). La docente desea aplicar una evaluación verdaderamente formativa.",
+    "pregunta": "De acuerdo con las orientaciones del Decreto 1290 de 2009 y la evaluación formativa en ELT, ¿cuál es la mejor estrategia de retroalimentación?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Tachar con tinta roja todos los errores, asignar una nota de 1.0/5.0 y devolver el escrito sin comentarios cualitativos."
+      },
+      {
+        "id": "B",
+        "texto": "Utilizar una rúbrica analítica conocida previamente por el estudiante, señalando con códigos de edición el tipo de error (p.ej., 'C' para conector, 'G' para gramática) y brindar una sesión de tutoría de reescritura para que el estudiante corrija su propio texto."
+      },
+      {
+        "id": "C",
+        "texto": "Reescribir ella misma el texto de forma correcta y pedir al estudiante que lo copie diez veces en su cuaderno."
+      },
+      {
+        "id": "D",
+        "texto": "Ignorar los errores de conectores y asignar 5.0 a todos los escritos para mantener alta la autoestima de los alumnos."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La evaluación formativa de la escritura en lenguas extranjeras busca desarrollar la metacognición y la autorregulación en el estudiante. El uso de rúbricas analíticas transparentes y códigos de corrección (error coding) guía al estudiante para que identifique y corrija sus propias fallas mediante la reescritura consciente, superando la evaluación meramente punitiva o la corrección pasiva por parte del docente."
+  },
+  {
+    "id": "ING_009",
+    "area": "Competencias Específicas - Idioma Extranjero Inglés",
+    "tema": "Desarrollo de la Habilidad Auditiva (Listening Strategies)",
+    "norma_referencia": "Estándares Básicos de Competencias en Lenguas Extranjeras / DBA de Inglés",
+    "contexto": "En una prueba de comprensión auditiva en grado 7°, la docente reproduce un audio de un diálogo en un aeropuerto a velocidad normal de hablantes nativos. Muchos estudiantes se bloquean al intentar entender cada palabra individual y manifiestan no haber comprendido nada.",
+    "pregunta": "¿Qué estrategia de andamiaje pedagógico (listening strategies) debe enseñar la docente para superar el procesamiento palabra por palabra?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Instar a los estudiantes a memorizar el diccionario completo de términos aeronáuticos antes de volver a escuchar el audio."
+      },
+      {
+        "id": "B",
+        "texto": "Enseñar estrategias de procesamiento 'Top-Down' (escucha global para identificar idea principal, contexto, tono de voz y palabras clave) combinadas con 'Bottom-Up', realizando preguntas de comprensión general en la primera escucha."
+      },
+      {
+        "id": "C",
+        "texto": "Repetir el audio 15 veces seguidas hasta que el grupo logre la transcripción fonética exacta de cada oración."
+      },
+      {
+        "id": "D",
+        "texto": "Traducir el audio frase por frase al español mientras suena la grabación."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "Las estrategias de escucha se dividen en Top-Down (utilizar el contexto, los conocimientos previos y el tono para entender el significado general o 'gist') y Bottom-Up (analizar sonidos y palabras específicas). Guiar a los estudiantes para que no se detengan en palabras desconocidas e identifiquen la idea clave desarrolla su autonomía comunicativa real en situaciones cotidianas."
+  },
+  {
+    "id": "ING_010",
+    "area": "Competencias Específicas - Idioma Extranjero Inglés",
+    "tema": "Enfoque Intercultural en la Enseñanza del Inglés (Intercultural Communicative Competence - ICC)",
+    "norma_referencia": "Estándares Básicos de Competencias en Lenguas Extranjeras (MEN) / MCER",
+    "contexto": "Un docente de Inglés proyecta abordar el tema de los festivales culturales en países angloparlantes y en Colombia. Al revisar las sugerencias del material del MEN (Way to Go!), decide que la clase no debe limitarse a la transmisión estática de datos folclóricos.",
+    "pregunta": "Desde el enfoque de la Competencia Comunicativa Intercultural (ICC), ¿cuál es el propósito de aprendizaje fundamental de esta lección?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Demostrar la superioridad de las festividades angloparlantes sobre las tradiciones locales colombianas."
+      },
+      {
+        "id": "B",
+        "texto": "Promover la reflexión crítica y la empatía cultural, permitiendo que los estudiantes comparen reflexivamente sus propias tradiciones locales con las de otras culturas, reconociendo la diversidad y combatiendo estereotipos."
+      },
+      {
+        "id": "C",
+        "texto": "Obligar a los estudiantes a adoptar el acento e idiosincrasia británica de manera permanente."
+      },
+      {
+        "id": "D",
+        "texto": "Memorizar fechas y nombres de platos típicos únicamente para responder un examen de opción múltiple."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La Competencia Comunicativa Intercultural (ICC - Byram / Estándares MEN) busca que el aprendizaje del inglés actúe como una ventana para comprender el mundo y reafirmar la propia identidad cultural. No se trata de asimilar pasivamente costumbres ajenas, sino de fomentar el respeto, la comparación reflexiva, la empatía y la erradicación de prejuicios en un mundo globalizado."
+  }
+]

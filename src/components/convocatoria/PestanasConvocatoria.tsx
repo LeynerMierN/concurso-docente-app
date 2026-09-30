@@ -37,7 +37,7 @@ export default function PestanasConvocatoria({ paneles }: { paneles: Record<IdPe
         aria-label="Secciones de la convocatoria"
         className="sticky top-0 z-20 -mx-4 bg-[var(--fondo)]/90 px-4 py-2 backdrop-blur"
       >
-        <div className="grid grid-cols-3 gap-1 rounded-2xl bg-slate-200/70 p-1 dark:bg-slate-800">
+        <div className="grid grid-cols-3 gap-1 rounded-2xl bg-slate-200/70 p-1 dark:bg-slate-700/60">
           {PESTANAS.map(({ id, etiqueta, Icono }) => (
             <button
               key={id}

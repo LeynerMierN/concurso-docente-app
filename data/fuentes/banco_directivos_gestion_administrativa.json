@@ -1,0 +1,282 @@
+[
+  {
+    "id": "DIR_ADM_001",
+    "area": "Competencias Específicas - Directivos Docentes (Gestión Administrativa y Financiera)",
+    "tema": "Administración del Fondo de Servicios Educativos (FSE) y Contratación Escolar",
+    "norma_referencia": "Ley 715 de 2001 / Decreto 1075 de 2015 (Reglamentario del Sector Educación) / Reglamento FSE",
+    "contexto": "Un Rector de una institución educativa oficial necesita ejecutar recursos asignados por concepto de gratuidad del Sistema General de Participaciones (SGP) a través del Fondo de Servicios Educativos (FSE) para la adquisición de dotación de papelería y suministros de oficina para las sedes escolares, por un monto que no supera los 20 salarios mínimos mensuales legales vigentes (SMMLV).",
+    "pregunta": "De acuerdo con el Decreto 1075 de 2015 y la reglamentación del FSE, ¿cuál es el procedimiento legalmente establecido que debe seguir el Rector como ordenador del gasto?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Realizar la compra de manera directa en cualquier establecimiento comercial sin solicitar cotizaciones ni requerir aprobación previa del Consejo Directivo."
+      },
+      {
+        "id": "B",
+        "texto": "Elaborar los estudios previos, solicitar al menos tres cotizaciones en el mercado, expedir la disponibilidad presupuestal y presentar el proyecto de contratación al Consejo Directivo dentro de los límites de cuantía autorizados por dicho órgano."
+      },
+      {
+        "id": "C",
+        "texto": "Transferir la totalidad de los fondos a la asociación de padres de familia para que ellos ejecuten las compras libremente sin control fiscal."
+      },
+      {
+        "id": "D",
+        "texto": "Solicitar autorización escrita previa al Ministerio de Educación Nacional antes de firmar cualquier orden de compra o contrato."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El Decreto 1075 de 2015 (artículos reglamentarios de los Fondos de Servicios Educativos) establece que el Rector es el ordenador del gasto del FSE, pero debe ceñirse al presupuesto aprobado por el Consejo Directivo, elaborar estudios previos, garantizar la pluralidad de oferentes mediante cotizaciones que demuestren la economía y eficiencia, y contar con la respectiva disponibilidad y registro presupuestal."
+  },
+  {
+    "id": "DIR_ADM_002",
+    "area": "Competencias Específicas - Directivos Docentes (Gestión Administrativa y Financiera)",
+    "tema": "Administración de Personal y Gestión de Permisos Docentes",
+    "norma_referencia": "Decreto 1278 de 2002 / Decreto 1075 de 2015 (Artículos de Licencias y Permisos)",
+    "contexto": "Un docente adscrito al Decreto Ley 1278 de 2002 radica ante el Coordinador y el Rector una solicitud de permiso remunerado por tres (3) días hábiles consecutivos, adjuntando la justificación de una calamidad doméstica debidamente comprobada.",
+    "pregunta": "¿Cuál es la competencia administrativa del Rector frente a la concesión de permisos remunerados a los docentes de su establecimiento educativo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Denegar el permiso argumentando que los docentes no tienen derecho a permisos remunerados durante el periodo lectivo escolar."
+      },
+      {
+        "id": "B",
+        "texto": "Conceder el permiso remunerado hasta por tres (3) días hábiles consecutivos en el mes, siempre que medie justa causa comprobada, garantizando la atención del servicio educativo mediante el plan de contingencia pedagógica."
+      },
+      {
+        "id": "C",
+        "texto": "Remitir la solicitud al Ministerio de Trabajo para que sea este organismo externo quien autorice el permiso laboral."
+      },
+      {
+        "id": "D",
+        "texto": "Descontar automáticamente de la nómina los tres días de salario del docente y exigirle la reposición en jornada nocturna."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El Decreto 1075 de 2015 (y el marco legal del Decreto Ley 1278/2002) faculta al Rector o Director Rural para conceder permisos remunerados a los docentes y directivos de su sede hasta por tres (3) días hábiles consecutivos cuando exista justa causa (como una calamidad doméstica). El rector debe velar por la continuidad de la prestación del servicio educativo organizando el apoyo pedagógico correspondiente."
+  },
+  {
+    "id": "DIR_ADM_003",
+    "area": "Competencias Específicas - Directivos Docentes (Gestión Administrativa y Financiera)",
+    "tema": "Administración de Planta Física, Inventarios y Control de Bienes Públicos",
+    "norma_referencia": "Ley 715 de 2001 / Guía de Gestión Administrativa e Inventarios Institucionales",
+    "contexto": "Al realizar la verificación anual de inventarios en la sala de sistemas de una sede rural, la administración del colegio detecta la pérdida de tres computadores portátiles institucionales entregados por el programa Computadores para Educar. No se evidencia violencia física en las cerraduras del aula.",
+    "pregunta": "¿Cuál es el procedimiento administrativo e institucional ineludible que debe adelantar el Directivo Docente frente al hallazgo de la pérdida de bienes públicos?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Dar de baja discretamente los equipos en los libros de contabilidad sin reportar a las autoridades para evitar investigaciones a la institución."
+      },
+      {
+        "id": "B",
+        "texto": "Interponer la denuncia correspondiente ante la Fiscalía General de la Nación / Policía Nacional, iniciar la investigación administrativa interna preliminar, e informar a la Secretaría de Educación y a las autoridades de control (Contraloría) sobre la novedad en el inventario de bienes del Estado."
+      },
+      {
+        "id": "C",
+        "texto": "Descontar por nómina el valor total de los portátiles a todos los docentes de la sede rural de forma equitativa."
+      },
+      {
+        "id": "D",
+        "texto": "Exigir a los estudiantes de grado 11° que realicen una rifa obligatoria para reemplazar los computadores extraviados."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "Los bienes entregados a las instituciones educativas oficiales son bienes públicos custodiados bajo responsabilidad administrativa del Rector. Ante la pérdida de inventario, la norma exige interponer la denuncia penal por pérdida de bienes del Estado, reportar la novedad a la Secretaría de Educación y entes de control (Contraloría/Procuraduría) e iniciar las indagaciones administrativas pertinentes."
+  },
+  {
+    "id": "DIR_ADM_004",
+    "area": "Competencias Específicas - Directivos Docentes (Gestión Administrativa y Financiera)",
+    "tema": "Proceso Disciplinario y Debido Proceso Administrativo",
+    "norma_referencia": "Constitución Política (Art. 29) / Ley 1952 de 2019 (Código General Disciplinario) / Decreto 1278 de 2002",
+    "contexto": "Un padre de familia presenta una queja formal por escrito ante la rectoría acusando a un docente de haber incurrido en reiteradas ausencias injustificadas del aula de clase durante el último mes, abandonando el grupo durante las dos primeras horas de la jornada.",
+    "pregunta": "Desde la gestión administrativa y el respeto estricto al Debido Proceso (Art. 29 C.P.), ¿cuál es la actuación correcta del Rector?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Suspender de inmediato al docente del ejercicio del cargo mediante resolución rectoral de sanción y retirarle el sueldo del mes."
+      },
+      {
+        "id": "B",
+        "texto": "Solicitar informe escrito al docente sobre los hechos señalados, verificar los planillas de asistencia y control de aula, e informar la situación debidamente documentada a la Oficina de Control Interno Disciplinario de la Secretaría de Educación competente, por ser esta la autoridad disciplinaria del Estado."
+      },
+      {
+        "id": "C",
+        "texto": "Expulsar al docente del grupo y asignarle funciones de aseo y mantenimiento en la sede administrativa."
+      },
+      {
+        "id": "D",
+        "texto": "Archivar la queja sin realizar ninguna verificación para proteger la imagen del colegio ante la comunidad."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El Rector tiene la potestad de administración del personal y control de asistencia dentro de la sede, pero la competencia sancionatoria y potestad disciplinaria formal sobre los docentes oficiales reside en la Oficina de Control Interno Disciplinario de la Secretaría de Educación Territorial Certificada (o Gobernación/Alcaldía). El Rector debe garantizar el debido proceso (oír al docente, verificar planillas) y compulsar copias con las pruebas recaudadas a la autoridad disciplinaria correspondiente."
+  },
+  {
+    "id": "DIR_ADM_005",
+    "area": "Competencias Específicas - Directivos Docentes (Gestión Administrativa y Financiera)",
+    "tema": "Gestión del Sistema de Información de Matrícula (SIMAT) y Gratuidad Educativa",
+    "norma_referencia": "Decreto 1075 de 2015 / Lineamientos SIMAT Ministerio de Educación Nacional",
+    "contexto": "Durante la auditoría de cobertura realizada por la Secretaría de Educación al registro SIMAT del establecimiento educativo, se detecta la existencia de 15 estudiantes reportados como 'matriculados y asistentes' en la sede central, quienes en realidad abandonaron el colegio tres meses atrás y se trasladaron a otro municipio sin que se realizara la cancelación de matrícula en el sistema.",
+    "pregunta": "¿Qué impacto administrativo y financiero genera la falta de actualización oportuna del SIMAT y cuál es la responsabilidad del equipo directivo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "No genera ningún impacto porque los recursos del SGP se asignan únicamente con base en el número de docentes nombrados."
+      },
+      {
+        "id": "B",
+        "texto": "Constituye un hallazgo administrativo por 'alumnos fantasma' o inexactitud en la cobertura, lo cual altera la transferencia de recursos de gratuidad del SGP e implica la obligación de depurar de inmediato el SIMAT previa verificación del retiro del estudiante."
+      },
+      {
+        "id": "C",
+        "texto": "Obliga a la Secretaría de Educación a cerrar de forma permanente la institución educativa sin previo aviso."
+      },
+      {
+        "id": "D",
+        "texto": "Exime a la institución de rendir cuentas públicas durante los siguientes cinco años lectivos."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El registro del SIMAT es la fuente oficial para el cálculo y giro de los recursos de gratuidad educativa del Sistema General de Participaciones (SGP). Mantener registros inexactos de estudiantes no asistentes genera giros indebidos y hallazgos fiscales por parte de la Contraloría. El Rector y el equipo directivo deben garantizar el reporte veraz y la depuración continua del sistema."
+  },
+  {
+    "id": "DIR_ADM_006",
+    "area": "Competencias Específicas - Directivos Docentes (Gestión Administrativa y Financiera)",
+    "tema": "Sistema de Gestión de Seguridad y Salud en el Trabajo (SG-SST) en el Entorno Escolar",
+    "norma_referencia": "Decreto 1072 de 2015 (Único Reglamentario del Sector Trabajo) / Resolución 0312 de 2019",
+    "contexto": "En un colegio oficial, un sector del muro perimetral de la cancha deportiva presenta grietas estructurales severas con riesgo inminente de colapso. El comité paritario de seguridad y salud en el trabajo (COPASST) reporta el hallazgo en el diagnóstico del SG-SST.",
+    "pregunta": "¿Cuál es la acción administrativa inmediata que debe adoptar el Directivo Docente para mitigar el riesgo y cumplir la normatividad de gestión del riesgo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Ignorar el reporte del COPASST hasta que la Secretaría de Infraestructura envíe un presupuesto especial de vigencias futuras."
+      },
+      {
+        "id": "B",
+        "texto": "Aislar y señalizar de inmediato el área de riesgo prohibiendo el paso de estudiantes y personal, notificar la emergencia de infraestructura a la Secretaría de Educación y al Comité Municipal de Gestión del Riesgo, e implementar medidas preventivas temporales."
+      },
+      {
+        "id": "C",
+        "texto": "Solicitar a los estudiantes de los grados superiores que demuelan el muro manualmente durante las horas de Educación Física."
+      },
+      {
+        "id": "D",
+        "texto": "Clausurar de forma definitiva las clases en todas las sedes del municipio sin informar a las autoridades territoriales."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "En el marco del SG-SST (Decreto 1072 de 2015) y la gestión del riesgo escolar, el rector tiene el deber de proteger la vida e integridad de la comunidad educativa. Frente a una amenaza de infraestructura, la acción inmediata es el aislamiento/señalización del peligro, la prohibición de uso de la zona y el reporte oficial prioritario a la entidad territorial certificada y comités de gestión del riesgo."
+  },
+  {
+    "id": "DIR_ADM_007",
+    "area": "Competencias Específicas - Directivos Docentes (Gestión Administrativa y Financiera)",
+    "tema": "Uso de Uso y Arrendamiento de Espacios Escolares a Terceros",
+    "norma_referencia": "Ley 715 de 2001 / Decreto 1075 de 2015 (Reglamentación Uso de Bienes Públicos)",
+    "contexto": "Una organización privada solicita al Rector el arrendamiento de la cancha sintética de la institución educativa para eventos deportivos nocturnos los fines de semana, ofreciendo un canon mensual que ingresaría directamente a la cuenta del Fondo de Servicios Educativos (FSE).",
+    "pregunta": "De acuerdo con el uso de bienes públicos destinados a la educación, ¿cuáles son los condicionantes normativos indispensables para autorizar el uso de planta física a terceros?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El Rector puede firmar el contrato de forma verbal sin necesidad de aprobación del Consejo Directivo ni pólizas de seguro."
+      },
+      {
+        "id": "B",
+        "texto": "El uso por terceros no puede interferir con las actividades pedagógicas y comunitarias de la institución; debe contar con la reglamentación y aprobación del Consejo Directivo, suscribirse mediante contrato formal, exigir pólizas de responsabilidad extracontractual e ingresar los cánones al FSE para el mantenimiento del colegio."
+      },
+      {
+        "id": "C",
+        "texto": "Está prohibido en todos los casos que las instituciones educativas oficiales faciliten o arrienden sus espacios comunitarios bajo cualquier circunstancia."
+      },
+      {
+        "id": "D",
+        "texto": "Los ingresos obtenidos por arrendamiento deben distribuirse en efectivo entre los docentes del área de Educación Física."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El Decreto 1075 de 2015 permite el uso temporal de espacios de la planta física escolar por parte de terceros cuando no interfiera con el servicio educativo. La aprobación le corresponde al Consejo Directivo, la contratación debe ser formal, los recursos deben ingresar legalmente al FSE y se deben amparar los riesgos sobre los bienes públicos con pólizas de garantía."
+  },
+  {
+    "id": "DIR_ADM_008",
+    "area": "Competencias Específicas - Directivos Docentes (Gestión Administrativa y Financiera)",
+    "tema": "Manejo de Situaciones Administrativas y Traslados Docentes",
+    "norma_referencia": "Decreto 1075 de 2015 / Ley 715 de 2001 (Parámetros de Planta de Personal)",
+    "contexto": "Debido a una disminución en la matrícula oficial en la sede principal durante dos años consecutivos, la Secretaría de Educación notifica que la institución presenta un sobredimensionamiento de la planta docente (un docente en exceso según la relación técnico-estudiante fijada por la norma).",
+    "pregunta": "Desde la gestión administrativa de la planta docente, ¿cuál es el criterio legal que debe aplicar la administración educativa territorial y el directivo docente para reubicar al docente sin nombrar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Despedir inmediatamente al docente con menor tiempo de servicio en la institución sin derecho a indemnización."
+      },
+      {
+        "id": "B",
+        "texto": "Realizar el estudio de reorganización de planta, identificar las áreas excedentarias y gestionar mediante la Secretaría de Educación el traslado por necesidad del servicio a otra institución que presente déficit de personal, respetando los derechos de carrera del docente."
+      },
+      {
+        "id": "C",
+        "texto": "Obligar al docente excedentario a trabajar sin asignación académica en la biblioteca durante todo el año escolar."
+      },
+      {
+        "id": "D",
+        "texto": "Someter a votación del consejo de padres de familia cuál docente debe ser retirado del servicio público."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La Ley 715 de 2001 y el Decreto 1075 de 2015 establecen que la administración de las plantas de personal docente se rige por parámetros técnicos de cobertura (relación alumnos/docente). Cuando se genera un excedente de planta, la entidad territorial certificada procede a reubicar al docente mediante traslado por necesidad del servicio, garantizando sus derechos laborales y de carrera."
+  },
+  {
+    "id": "DIR_ADM_009",
+    "area": "Competencias Específicas - Directivos Docentes (Gestión Administrativa y Financiera)",
+    "tema": "Protección de Datos Personales (Habeas Data) en Archivos Escolares",
+    "norma_referencia": "Ley 1581 de 2012 (Ley Estatutaria de Protección de Datos Personales) / Código de la Infancia y la Adolescencia",
+    "contexto": "Una empresa comercial privada se acerca a la secretaría del colegio solicitando la base de datos completa con nombres, números de identificación, direcciones y teléfonos de acudientes y estudiantes de grado 11° para ofrecerles cursos de preparación Icfes y uniformes de graduación.",
+    "pregunta": "En cumplimiento de la Ley 1581 de 2012 y la protección del derecho fundamental al Habeas Data de los estudiantes (menores de edad), ¿cuál es la respuesta ineludible de la directiva institucional?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Vender la base de datos a la empresa privada e ingresar los recursos al Fondo de Servicios Educativos."
+      },
+      {
+        "id": "B",
+        "texto": "Negar de manera categórica la entrega de la base de datos, toda vez que la información personal de estudiantes y acudientes está sujeta a reserva legal y no puede compartirse con terceros sin la autorización explícita, previa e informada de los titulares de la patria potestad."
+      },
+      {
+        "id": "C",
+        "texto": "Entregar la información únicamente en medio impreso para no dejar registro digital."
+      },
+      {
+        "id": "D",
+        "texto": "Publicar la lista de contactos en la página web institucional para que cualquier entidad tenga libre acceso a ella."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La Ley 1581 de 2012 y la jurisprudencia constitucional consagran la protección especial de los datos personales, más aún cuando se trata de niños, niñas y adolescentes. Las bases de datos escolares del SIMAT o archivos institucionales son confidenciales y su cesión a empresas privadas sin consentimiento previo y expreso constituye una violación grave objeto de sanciones por la Superintendencia de Industria y Comercio."
+  },
+  {
+    "id": "DIR_ADM_010",
+    "area": "Competencias Específicas - Directivos Docentes (Gestión Administrativa y Financiera)",
+    "tema": "Gestión del Programa de Alimentación Escolar (PAE) y Control de Calidad",
+    "norma_referencia": "Resolución 0335 de 2021 (Unidad de Alimentos para Aprender - UApA) / Lineamientos PAE",
+    "contexto": "Durante la entrega diaria del complemento alimenticio del Programa de Alimentación Escolar (PAE) en el comedor escolar, el comité de alimentación escolar (CAE) detecta que los alimentos lácteos entregados por el operador presentan fechas de vencimiento expiadas y deterioro en el empaque.",
+    "pregunta": "En el marco de la gestión administrativa y la responsabilidad del equipo directivo frente al PAE, ¿cuál es el protocolo de actuación inmediata?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Distribuir los alimentos de todas formas para no generar desperdicio de comida en la institución."
+      },
+      {
+        "id": "B",
+        "texto": "Rechazar inmediatamente la recepción/distribución de los lotes defectuosos, levantar el acta de no conformidad suscrita por el CAE, exigir al operador la reposición urgente de alimentos en óptimas condiciones y reportar formalmente la anomalía al supervisor del contrato del PAE en la Secretaría de Educación."
+      },
+      {
+        "id": "C",
+        "texto": "Guardar los alimentos vencidos en la rectoría durante tres meses sin notificar a nadie."
+      },
+      {
+        "id": "D",
+        "texto": "Cobrar una multa económica directa en efectivo al conductor del vehículo repartidor."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "Los lineamientos técnicos del PAE (Resolución 0335 de 2021 UApA) señalan que el Rector, junto con el Comité de Alimentación Escolar (CAE), ejerce veeduría y control de calidad. Ante alimentos vencidos o en mal estado, el protocolo exige la no distribución, el levantamiento del acta de no conformidad, la exigencia de sustitución inmediata y la notificación formal al equipo de supervisión de la Secretaría de Educación."
+  }
+]

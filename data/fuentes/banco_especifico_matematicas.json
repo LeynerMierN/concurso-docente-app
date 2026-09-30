@@ -1,0 +1,282 @@
+[
+  {
+    "id": "MAT_001",
+    "area": "Competencias Específicas - Matemáticas",
+    "tema": "Pensamiento Variacional y Modelación de Funciones",
+    "norma_referencia": "Estándares Básicos de Competencias en Matemáticas (MEN) / DBA de Matemáticas",
+    "contexto": "Un docente de Matemáticas de grado 9° trabaja la modelación de situaciones de variación lineal. Al plantear un problema sobre el cobro de una tarifa telefónica que incluye un cargo fijo mensual de $15.000 y un costo variable de $200 por minuto consumido, varios estudiantes proponen la ecuación C(x) = 15000x + 200 para representar el costo total C en función de los minutos x.",
+    "pregunta": "¿Cuál es el error conceptual subyacente en la representación propuesta por los estudiantes y cuál es la intervención pedagógica adecuada del docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Confunden el parámetro de pendiente (razón de cambio variable) con el intercepto (valor constante); el docente debe guiarlos a analizar qué magnitud varía según los minutos hablados y cuál permanece fija independientemente del consumo."
+      },
+      {
+        "id": "B",
+        "texto": "Confunden la variable independiente con la dependiente; el docente debe exigir la memorización de la fórmula general de la recta y sancionar la confusión en la libreta."
+      },
+      {
+        "id": "C",
+        "texto": "El planteamiento es algebraicamente correcto pero numéricamente impreciso; el docente debe pedirles que reemplacen x por 1 para comprobar la igualdad."
+      },
+      {
+        "id": "D",
+        "texto": "Se trata de una función exponencial no lineal; el docente debe cambiar el problema por una recta que pase por el origen del plano cartesiano."
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "En el desarrollo del pensamiento variacional (Estándares MEN), un error común en la transición del lenguaje verbal al algebraico es asociar la variable x al valor constante (cargo fijo) en lugar de la magnitud dependiente de la cantidad de minutos (razón de cambio). La intervención adecuada no es punitiva ni memorística, sino de reflexión sobre el significado contextual de los parámetros m (pendiente = 200) y b (intercepto = 15000), llegando a la expresión correcta C(x) = 200x + 15000."
+  },
+  {
+    "id": "MAT_002",
+    "area": "Competencias Específicas - Matemáticas",
+    "tema": "Pensamiento Espacial y Geométrico - Semejanza y Resolución de Problemas",
+    "norma_referencia": "Estándares Básicos de Competencias en Matemáticas (MEN) / Metodología de Pólya",
+    "contexto": "Un docente de Matemáticas de grado 8° planea una clase para enseñar la semejanza de triángulos y el Teorema de Tales mediante la medición indirecta de alturas (como la sombra de un edificio respecto a la de un poste). En lugar de entregar la fórmula directamente, decide aplicar las fases de resolución de problemas de George Pólya.",
+    "pregunta": "De acuerdo con las fases de resolución de problemas de Pólya y los Estándares Básicos de Matemáticas, ¿cuál es la primera acción pedagógica que debe promover el docente en sus estudiantes?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Exigir que ejecuten la regla de tres de manera directa e inmediata en sus cuadernos sin realizar gráficos previos."
+      },
+      {
+        "id": "B",
+        "texto": "Guiar a los estudiantes a comprender el problema mediante la representación gráfica del fenómeno, identificando los datos conocidos, la incógnita y las relaciones geométricas de las sombras proyectadas."
+      },
+      {
+        "id": "C",
+        "texto": "Demostrar la solución completa en el tablero para que los estudiantes copien y memoricen el procedimiento técnico."
+      },
+      {
+        "id": "D",
+        "texto": "Evaluar la situación mediante una prueba objetiva sumativa e individual sin trabajo de campo ni exploración previa."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La primera fase del modelo de resolución de problemas de George Pólya es 'Comprender el problema'. En el pensamiento espacial y geométrico, esto requiere que el estudiante elabore representaciones mentales y esquemas visuales, identifique qué se pregunta, con qué datos se cuenta y cuáles son las condiciones del contexto antes de trazar un plan o aplicar algoritmos numéricos."
+  },
+  {
+    "id": "MAT_003",
+    "area": "Competencias Específicas - Matemáticas",
+    "tema": "Pensamiento Aleatorio - Interpretación de Medidas de Dispersión",
+    "norma_referencia": "Estándares Básicos de Competencias en Matemáticas (MEN) / DBA de Matemáticas",
+    "contexto": "En grado 10°, un docente analiza con sus estudiantes los resultados del cálculo de la desviación estándar en la evaluación de Matemáticas de dos cursos. El Curso A presenta una media de 3.5 y una desviación estándar de 0.2, mientras que el Curso B tiene una media de 3.5 y una desviación estándar de 1.1. Un grupo de estudiantes afirma que el Curso B tuvo un rendimiento más homogéneo porque su desviación es numéricamente mayor.",
+    "pregunta": "Desde la didáctica del pensamiento aleatorio, ¿cuál es la retroalimentación cualitativa que debe brindar el docente para corregir la concepción errónea?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Confirmar la afirmación del grupo, pues una mayor desviación estándar representa mayor estabilidad y concentración de los datos alrededor de la media."
+      },
+      {
+        "id": "B",
+        "texto": "Aclarar que la desviación estándar mide el promedio de alejamiento o dispersión de los datos respecto a la media; por tanto, el Curso A es más homogéneo (datos muy cerca de 3.5) y el Curso B presenta mayor heterogeneidad o variabilidad entre los estudiantes."
+      },
+      {
+        "id": "C",
+        "texto": "Explicar que la desviación estándar solo aplica cuando las medias de ambos cursos son cuantitativamente distintas."
+      },
+      {
+        "id": "D",
+        "texto": "Indicar que la variabilidad no se puede determinar sin calcular primero la mediana y la moda de ambos cursos."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "En el pensamiento aleatorio, la desviación estándar es un indicador central de variabilidad. A menor desviación estándar, menor dispersión de los datos alrededor de la media (mayor homogeneidad del grupo). La labor pedagógica del docente es llevar al estudiante a interpretar el significado contextual de los parámetros estadísticos más allá del mero cálculo algebraico."
+  },
+  {
+    "id": "MAT_004",
+    "area": "Competencias Específicas - Matemáticas",
+    "tema": "Pensamiento Numérico - Propiedad de Densidad en los Números Racionales",
+    "norma_referencia": "Estándares Básicos de Competencias en Matemáticas (MEN) / Lineamientos Curriculares",
+    "contexto": "En grado 7°, al abordar la estructura del conjunto de los números racionales, la docente pregunta a sus estudiantes cuántos números existen entre 1/4 y 1/2. La mayoría del grupo responde de manera categórica que 'no existe ningún número porque entre el 1 y el 2 en los numeradores no hay números enteros'.",
+    "pregunta": "En términos didácticos, ¿qué propiedad del conjunto de los números racionales desconocen los estudiantes y cuál es la estrategia didáctica pertinente para evidenciarla?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Desconocen la propiedad de densidad; la docente debe promover la amplificación de fracciones hacia denominadores comunes mayores (como 2/8 y 4/8, visibilizando 3/8) o la conversión a representación decimal (0.25 y 0.50) para demostrar la infinitud de números entre dos racionales."
+      },
+      {
+        "id": "B",
+        "texto": "Desconocen la propiedad asociativa; la docente debe aplicar la suma directa de numeradores y denominadores para encontrar un único término medio."
+      },
+      {
+        "id": "C",
+        "texto": "Desconocen la propiedad discreta; la docente debe explicarles que los racionales se comportan exactamente igual que los números naturales."
+      },
+      {
+        "id": "D",
+        "texto": "Desconocen el principio de clausura; la docente debe limitar el estudio de los números racionales exclusivamente a las fracciones homogéneas."
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "Un obstáculo de aprendizaje común al pasar de los enteros a los racionales es la transferencia de la propiedad discreta (donde a cada entero le sigue un consecutivo único) a los racionales. Los racionales son densos: entre cualquier par de racionales existen infinitos racionales. Usar representaciones equivalentes (como 2/8 y 4/8 -> 3/8) o decimales permite a los estudiantes superar este obstáculo conceptual de forma reflexiva."
+  },
+  {
+    "id": "MAT_005",
+    "area": "Competencias Específicas - Matemáticas",
+    "tema": "Pensamiento Métrico - Conservación de Área y Perímetro",
+    "norma_referencia": "Estándares Básicos de Competencias en Matemáticas (MEN) / Lineamientos Curriculares",
+    "contexto": "Un docente de grado 6° presenta dos figuras geométricas construidas con la misma cantidad de cuadrados unitarios (área constante = 12 cm²), pero organizadas de forma diferente: la Figura X es un rectángulo de 3x4 (perímetro = 14 cm) y la Figura Y es un rectángulo de 1x12 (perímetro = 26 cm). Un estudiante afirma que la Figura Y 'tiene mayor superficie porque es más larga y tiene mayor perímetro'.",
+    "pregunta": "¿Cuál es el obstáculo didáctico identificado en el estudiante y cuál es la intervención más adecuada para superarlo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El estudiante confunde la magnitud superficie (área) con el contorno (perímetro); el docente debe utilizar material concreto cuadriculado y recubrimiento para diferenciar la medida de la región plana independientemente de la longitud de su borde."
+      },
+      {
+        "id": "B",
+        "texto": "El estudiante desconoce la fórmula del área del rectángulo; el docente debe exigirle la memorización repetitiva de la ecuación Base × Altura."
+      },
+      {
+        "id": "C",
+        "texto": "La Figura Y carece de validez geométrica; el docente debe eliminar los rectángulos elongados del plan de estudios."
+      },
+      {
+        "id": "D",
+        "texto": "El estudiante confunde el área con la tercera dimensión (volumen); el docente debe pasar de inmediato al cálculo de cilindros y esferas."
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "En el desarrollo del pensamiento métrico, la independencia entre área y perímetro suele ser un obstáculo persistente. Muchos estudiantes asumen que a mayor perímetro le corresponde necesariamente mayor área. La intervención pedagógica eficaz exige el uso de material concreto, conservación de superficie y descomposición de figuras para dissociar ambas magnitudes."
+  },
+  {
+    "id": "MAT_006",
+    "area": "Competencias Específicas - Matemáticas",
+    "tema": "Inclusión y DUA en Matemáticas",
+    "norma_referencia": "Decreto 1421 de 2017 / DUA y PIAR",
+    "contexto": "En un aula de grado 8°, la docente de Matemáticas incluye a un estudiante con baja visión severa en la unidad de geometría plana (propiedades de polígonos y congruencia). La docente diseña su planeación pedagógica bajo el enfoque del Diseño Universal para el Aprendizaje (DUA).",
+    "pregunta": "¿Cuál es la estrategia pedagógica e inclusiva más adecuada para garantizar la participación y aprendizaje del estudiante en el aula común según el Decreto 1421 de 2017?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Eximir al estudiante de las clases de geometría y asignarle lecturas teóricas individuales sobre la historia de las matemáticas en la biblioteca."
+      },
+      {
+        "id": "B",
+        "texto": "Incorporar geoplanos táctiles de relieve, figuras poligonales con texturas diferenciadas, software geométrico con lector de pantalla y descripciones auditivas explícitas de las propiedades espaciales para todo el grupo."
+      },
+      {
+        "id": "C",
+        "texto": "Solicitar el traslado del estudiante a una institución de educación especial hasta que aprenda el algoritmo escrito tradicional."
+      },
+      {
+        "id": "D",
+        "texto": "Reprobar al estudiante en el componente geométrico por la imposibilidad biológica de visualizar el tablero institucional."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El Decreto 1421 de 2017 exige garantizar la presencia, participación y aprendizaje de los estudiantes con discapacidad en el aula común junto a sus pares. El DUA promueve proporcionar múltiples formas de representación (auditiva, táctil, multisensorial) y de acción/expresión, permitiendo que el estudiante explore propiedades geométricas mediante el tacto y el sonido sin segregación."
+  },
+  {
+    "id": "MAT_007",
+    "area": "Competencias Específicas - Matemáticas",
+    "tema": "Uso de Tecnologías en la Enseñanza de las Matemáticas",
+    "norma_referencia": "Estándares Básicos de Competencias en Matemáticas (MEN) / Lineamientos de Tecnologías en el Aula",
+    "contexto": "Un docente de Matemáticas de grado 11° diseña una secuencia didáctica para explorar la variación de los parámetros a, b y c en la función cuadrática f(x) = ax² + bx + c utilizando el software dinámico GeoGebra con deslizadores.",
+    "pregunta": "Desde la didáctica del pensamiento variacional y la integración pedagógica de las TIC, ¿cuál es la principal ventaja del uso de este recurso dinámico frente a la enseñanza tradicional?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Sustituir el trabajo cognitivo de los estudiantes para que no tengan que realizar análisis conceptuales en el cuaderno."
+      },
+      {
+        "id": "B",
+        "texto": "Permitir a los estudiantes visualizar de manera interactiva e instantánea cómo la modificación continua de cada parámetro altera la apertura, el vértice y la traslación de la parábola, favoreciendo la formulación de conjeturas y el razonamiento intuitivo."
+      },
+      {
+        "id": "C",
+        "texto": "Eliminar la necesidad de realizar evaluaciones escritas o pruebas diagnósticas en el área de matemáticas."
+      },
+      {
+        "id": "D",
+        "texto": "Demostrar que el aprendizaje de las funciones matemáticas avanzadas requiere obligatoriamente lenguajes de programación profesional."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El uso de software dinámico como GeoGebra en el pensamiento variacional permite pasar de la visión estática de una gráfica a la exploración dinámica de familias de funciones. Los deslizadores posibilitan que el estudiante formule conjeturas, verifique hipótesis en tiempo real y comprenda el papel de cada parámetro en el comportamiento global de la curva."
+  },
+  {
+    "id": "MAT_008",
+    "area": "Competencias Específicas - Matemáticas",
+    "tema": "Evaluación Formativa y Análisis del Error en Matemáticas",
+    "norma_referencia": "Decreto 1290 de 2009 / Documento No. 11 MEN",
+    "contexto": "Un docente de grado 7° aplica una prueba formativa de seguimiento sobre suma de fracciones heterogéneas. Al revisar los desempeños, detecta que el 60% del curso comete el mismo error sistemático: sumar directamente los numeradores entre sí y los denominadores entre sí (ejemplo: 1/2 + 1/3 = 2/5).",
+    "pregunta": "De acuerdo con las orientaciones sobre evaluación formativa del Documento No. 11 del MEN, ¿cuál es la actuación pedagógica inmediata que debe asumir el docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Asignar una calificación reprobatoria de 1.0 a todos los estudiantes que fallaron y avanzar de inmediato al siguiente tema del programa académico."
+      },
+      {
+        "id": "B",
+        "texto": "Utilizar el error sistemático como un insumo diagnóstico fundamental para reorientar la práctica de aula, diseñando una sesión de modelación concreta y gráfica del concepto de equivalencia antes de reintentar la abstracción algorítmica."
+      },
+      {
+        "id": "C",
+        "texto": "Anular la evaluación del registro escolar para evitar cuestionamientos sobre el rendimiento del grupo ante la Comisión de Evaluación."
+      },
+      {
+        "id": "D",
+        "texto": "Sugerir a los padres de familia que contraten docentes particulares para que ejerciten el algoritmo de la carita feliz o del mínimo común múltiplo en casa."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El Decreto 1290 de 2009 y el Documento No. 11 conciben la evaluación de aula como un proceso esencialmente formativo. El error recurrente no se castiga ni se ignora; representa la evidencia de un obstáculo didáctico en la comprensión del concepto (fracción como parte-todo o razón). El docente debe reajustar su enseñanza utilizando representaciones concretas y pictóricas para afianzar la equivalencia de fracciones."
+  },
+  {
+    "id": "MAT_009",
+    "area": "Competencias Específicas - Matemáticas",
+    "tema": "Pensamiento Variacional - Razonamiento Algebraico Temprano",
+    "norma_referencia": "Estándares Básicos de Competencias en Matemáticas (MEN) / DBA de Matemáticas",
+    "contexto": "En grado 6°, el docente presenta una secuencia de patrones construidos con palitos de madera: Figura 1 (3 palitos, forma un triángulo), Figura 2 (5 palitos, forma dos triángulos unidos por un lado), Figura 3 (7 palitos, forma tres triángulos unidos). Solicita a los estudiantes determinar cuántos palitos se necesitan para construir la Figura n.",
+    "pregunta": "¿Cuál es la expresión algebraica que modela la secuencia y qué proceso del pensamiento matemático promueve esta actividad?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La expresión es P(n) = 2n + 1; promueve la transición del pensamiento aritmético al algebraico mediante la identificación de patrones, regularidades y generalización."
+      },
+      {
+        "id": "B",
+        "texto": "La expresión es P(n) = 3n; promueve únicamente el ejercicio de memorización de la tabla del 3."
+      },
+      {
+        "id": "C",
+        "texto": "La expresión es P(n) = n² + 2; promueve la aplicación de ecuaciones cuadráticas complejas en básica primaria."
+      },
+      {
+        "id": "D",
+        "texto": "La expresión es P(n) = n + 2; promueve la medición de ángulos interiores en geometría analítica."
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "El razonamiento algebraico temprano (algebra temprana) enfatiza el paso de la aritmética al álgebra a través del estudio de patrones y regularidades. Para n = 1 -> 2(1)+1 = 3; n = 2 -> 2(2)+1 = 5; n = 3 -> 2(3)+1 = 7. Generalizar la regla P(n) = 2n + 1 permite al estudiante comprender la variable como un número generalizado y como una relación funcional."
+  },
+  {
+    "id": "MAT_010",
+    "area": "Competencias Específicas - Matemáticas",
+    "tema": "Razonamiento Lógico y Argumentación Matemática",
+    "norma_referencia": "Estándares Básicos de Competencias en Matemáticas (MEN)",
+    "contexto": "En grado 11°, la docente plantea el análisis de la afirmación condicional: 'Si n es un número entero par, entonces n² es un número entero par'. Un estudiante afirma que la proposición es totalmente verdadera porque comprobó con tres ejemplos: 2² = 4 (par), 4² = 16 (par) y 6² = 36 (par), concluyendo que 'con tres casos favorables queda demostrado para todos los números infinitos'.",
+    "pregunta": "¿Cuál es la debilidad en el razonamiento del estudiante y cuál es la orientación docente para consolidar la argumentación matemática rigurosa?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El razonamiento es completamente válido y suficiente, pues en matemáticas tres ejemplos bastan para constituir una prueba universal."
+      },
+      {
+        "id": "B",
+        "texto": "El estudiante incurre en una inducción incompleta (ejemplificación), la cual no constituye una demostración matemática universal; la docente debe guiarlo a utilizar la definición algebraica de número par (n = 2k, donde k es entero) y demostrar deductivamente que n² = (2k)² = 4k² = 2(2k²), garantizando que n² es múltiplo de 2 para todo entero."
+      },
+      {
+        "id": "C",
+        "texto": "El estudiante debió comprobar la propiedad utilizando números negativos y ceros únicamente."
+      },
+      {
+        "id": "D",
+        "texto": "La argumentación matemática escolar no debe exigir formalismo algebraico y debe limitarse al uso de calculadoras científicas."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "En el desarrollo del razonamiento lógico-matemático (Estándares MEN), la ejemplificación o inducción incompleta sirve para formular conjeturas, pero no sustituye la demostración deductiva universal. La orientación docente debe conducir a formalizar la propiedad utilizando la estructura algebraica n = 2k -> n² = 2(2k²), lo que demuestra deductivamente que el cuadrado de cualquier par es siempre par."
+  }
+]

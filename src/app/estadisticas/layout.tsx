@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Simulacro cronometrado",
-  description: "Simulacro tipo prueba CNSC con cronómetro, preguntas marcadas para revisar y resultado frente al umbral de 60/100.",
+  title: "Mi rendimiento",
+  description: "Tu acierto por área, la evolución de tus simulacros y la proyección de tu puntaje frente al umbral de la CNSC.",
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

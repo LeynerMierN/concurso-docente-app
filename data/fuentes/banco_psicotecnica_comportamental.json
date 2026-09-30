@@ -1,0 +1,437 @@
+[
+  {
+    "id": "PSI_001",
+    "categoria_id": "comportamental",
+    "area": "Competencias Comportamentales (Núcleo Común)",
+    "tema": "Trabajo en Equipo y Cooperación Inter-Áreas",
+    "norma_referencia": "Manual de Funciones, Requisitos y Competencias del MEN",
+    "contexto": "Un docente es asignado a liderar el Proyecto Ambiental Escolar (PRAE). Al convocar a los docentes de Matemáticas y Ciencias Sociales para integrar contenidos, estos manifiestan no tener tiempo ni interés en 'temas que no corresponden a su asignatura'.",
+    "pregunta": "Desde la competencia de Trabajo en Equipo, ¿cuál es la conducta más asertiva y propositiva del docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Elevar un reporte negativo a la rectoría solicitando sanciones disciplinarias para los docentes que se negaron a colaborar."
+      },
+      {
+        "id": "B",
+        "texto": "Presentar ejemplos concretos y sencillos de cómo el PRAE aporta a los estándares de Matemáticas y Sociales, proponiendo actividades articuladas de bajo impacto en la carga laboral."
+      },
+      {
+        "id": "C",
+        "texto": "Desarrollar el proyecto en total aislamiento sin volver a convocar a ninguna otra área académica."
+      },
+      {
+        "id": "D",
+        "texto": "Renunciar al proyecto argumentando falta de garantías institucionales."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El Trabajo en Equipo implica persuasión asertiva, empatía y capacidad para generar sinergias mostrando el beneficio mutuo e integrando a los demás estamentos."
+  },
+  {
+    "id": "PSI_002",
+    "categoria_id": "comportamental",
+    "area": "Competencias Comportamentales (Núcleo Común)",
+    "tema": "Comunicación Asertiva y Manejo de Padres de Familia",
+    "norma_referencia": "Manual de Funciones del MEN / Guía de Entrevista CNSC",
+    "contexto": "Un acudiente irrumpe de forma agresiva en la sala de profesores gritando e insultando a un docente porque su hijo obtuvo una valoración insuficiente en el periodo.",
+    "pregunta": "¿Cuál es la respuesta profesional que demuestra autorregulación y comunicación asertiva?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Responder con el mismo tono de voz elevado para defender el honor profesional ante los compañeros."
+      },
+      {
+        "id": "B",
+        "texto": "Escuchar con calma sin engancharse en la agresión verbal, invitar al acudiente a un espacio privado de atención a padres y revisar con evidencias pedagógicas el desempeño del estudiante dentro del conducto regular."
+      },
+      {
+        "id": "C",
+        "texto": "Modificar la nota inmediatamente a la máxima calificación para que el padre se retire tranquilo."
+      },
+      {
+        "id": "D",
+        "texto": "Llamar a la fuerza pública para que desaloje al acudiente a la fuerza."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La Comunicación Asertiva y la Autorregulación permiten desescalar la tensión, mantener el profesionalismo y canalizar los reclamos institucionales mediante evidencias pedagógicas en los espacios adecuados."
+  },
+  {
+    "id": "PSI_003",
+    "categoria_id": "comportamental",
+    "area": "Competencias Comportamentales (Núcleo Común)",
+    "tema": "Liderazgo Pedagógico e Innovación Educativa",
+    "norma_referencia": "Manual de Funciones y Competencias del MEN",
+    "contexto": "En una institución con bajos recursos de conectividad, un docente desea implementar estrategias activas utilizando herramientas digitales offline para motivar a sus estudiantes.",
+    "pregunta": "¿Qué acción evidencia mejor la competencia comportamental de Liderazgo e Iniciativa?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Esperar a que la Secretaría de Educación instale redes de fibra óptica de alta velocidad antes de intentar cualquier innovación."
+      },
+      {
+        "id": "B",
+        "texto": "Investigar y adaptar recursos educativos digitales abiertos que funcionan sin internet (repositorios offline) y compartirlos con sus colegas del área."
+      },
+      {
+        "id": "C",
+        "texto": "Exigir a los estudiantes que compren planes de datos costosos con su propio dinero."
+      },
+      {
+        "id": "D",
+        "texto": "Continuar usando únicamente el dictado tradicional criticando la falta de apoyo estatal."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El Liderazgo e Iniciativa se demuestra buscando soluciones creativas y adaptativas ante las limitaciones del entorno, agregando valor a la comunidad educativa."
+  },
+  {
+    "id": "PSI_004",
+    "categoria_id": "comportamental",
+    "area": "Competencias Comportamentales (Núcleo Común)",
+    "tema": "Sensibilidad Intercultural y Empatía Social",
+    "norma_referencia": "Manual de Funciones del MEN / Decreto 804 de 1995",
+    "contexto": "Un docente es trasladado a una escuela rural con alta población de estudiantes indígenas. Algunos niños demuestran timidez y responden con pausas prolongadas por no dominar completamente el español.",
+    "pregunta": "¿Cuál actitud del docente manifiesta Sensibilidad Intercultural y Compromiso?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Interpretaciones apresuradas sobre falta de inteligencia y asignación de notas deficientes."
+      },
+      {
+        "id": "B",
+        "texto": "Valorar los tiempos de pensamiento de los estudiantes, aprender elementos básicos de su contexto cultural e integrar la tradición oral de la comunidad en las guías de clase."
+      },
+      {
+        "id": "C",
+        "texto": "Obligar a los estudiantes a hablar únicamente en español fluido bajo pena de reprobación."
+      },
+      {
+        "id": "D",
+        "texto": "Solicitar el traslado inmediato a una zona urbana alegando incompatibilidad metodológica."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La Sensibilidad Intercultural exige empatía, respeto por la diversidad lingüística y disposición para adaptar la enseñanza a la realidad sociocultural de los estudiantes."
+  },
+  {
+    "id": "PSI_005",
+    "categoria_id": "comportamental",
+    "area": "Competencias Comportamentales (Núcleo Común)",
+    "tema": "Orientación al Logro y Adaptabilidad al Cambio",
+    "norma_referencia": "Manual de Funciones del MEN",
+    "contexto": "Durante la mitad del año escolar, el rector anuncia una reestructuración completa del plan de estudios para adoptar el modelo de Aprendizaje Basado en Proyectos (ABP), lo que requiere reformular las planificaciones de aula.",
+    "pregunta": "¿Qué conducta caracteriza a un docente con alta Adaptabilidad y Orientación al Logro?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Asumir el cambio como una oportunidad de crecimiento, participar activamente en las capacitaciones y reestructurar sus unidades didácticas buscando impactar el aprendizaje del grupo."
+      },
+      {
+        "id": "B",
+        "texto": "Liderar una protesta para negarse rotundamente a modificar las planificaciones antiguas."
+      },
+      {
+        "id": "C",
+        "texto": "Simular que adopta el nuevo modelo en los documentos oficiales pero seguir dictando exactamente las mismas clases de siempre."
+      },
+      {
+        "id": "D",
+        "texto": "Presentar una incapacidad médica prolongada para evitar el trabajo de reestructuración."
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "La Adaptabilidad implica flexibilidad mental para acoger los cambios organizacionales y convertirlos en oportunidades de mejoramiento continuo enfocadas en el logro educativo."
+  },
+  {
+    "id": "PSI_006",
+    "categoria_id": "comportamental",
+    "area": "Competencias Comportamentales (Núcleo Común)",
+    "tema": "Integridad Ética y Transparencia Profesional",
+    "norma_referencia": "Código Único Disciplinario / Ley 1952 de 2019",
+    "contexto": "El padre de un estudiante que está a punto de reprobar el año le ofrece al docente una suma de dinero en efectivo a cambio de que le otorgue la nota máxima en la evaluación final.",
+    "pregunta": "¿Cuál es la conducta recta e ineludible que debe asumir el docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Rechazar categóricamente el ofrecimiento económico e informar de inmediato la novedad al directivo docente y a la oficina de control interno."
+      },
+      {
+        "id": "B",
+        "texto": "Aceptar el dinero argumentando que los sueldos docentes son muy bajos."
+      },
+      {
+        "id": "C",
+        "texto": "Recibir la mitad del dinero proponiendo que el estudiante haga un trabajo sencillo."
+      },
+      {
+        "id": "D",
+        "texto": "Guardar silencio para no causarle problemas legales al padre de familia."
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "La Integridad exige la observancia estricta de la ética pública, el rechazo absoluto a cualquier acto de corrupción o cohecho y el deber de denuncia ante las autoridades."
+  },
+  {
+    "id": "PSI_007",
+    "categoria_id": "comportamental",
+    "area": "Competencias Comportamentales (Núcleo Común)",
+    "tema": "Gestión del Estrés y Autorregulación Emocional",
+    "norma_referencia": "Manual de Funciones del MEN / Competencias Comportamentales",
+    "contexto": "Durante la semana de cierre de notas y comisiones de evaluación, se acumulan simultáneamente la calificación de exámenes, la entrega de planillas y la atención a padres angustiados.",
+    "pregunta": "¿Cómo demuestra un docente la competencia de Gestión del Estrés?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Planificando y priorizando sus tareas con un cronograma realista, manteniendo la calma y respondiendo con asertividad ante la presión del entorno."
+      },
+      {
+        "id": "B",
+        "texto": "Gritando a los estudiantes y cerrando la puerta del aula con candado para no atender a nadie."
+      },
+      {
+        "id": "C",
+        "texto": "Calificando las evaluaciones al azar para terminar rápido y librarse de la carga."
+      },
+      {
+        "id": "D",
+        "texto": "Delegando la calificación de sus exámenes a los estudiantes de cursos superiores."
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "La Gestión del Estrés se refleja en la capacidad para mantener el autocontrol emocional, organizar eficientemente las prioridades bajo presión y preservar la calidad del trabajo."
+  },
+  {
+    "id": "PSI_008",
+    "categoria_id": "comportamental",
+    "area": "Competencias Comportamentales (Núcleo Común)",
+    "tema": "Resolución Negociada de Conflictos entre Pares Docentes",
+    "norma_referencia": "Manual de Funciones del MEN / Clima Organizacional",
+    "contexto": "Dos docentes que comparten el mismo grado tienen diferencias de criterio sobre la asignación del aula de sistemas y comienzan a realizarse comentarios desobligantes frente a los estudiantes.",
+    "pregunta": "¿Cuál es la conducta profesional de ambos docentes para resolver la diferencia?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Solicitar un espacio de diálogo privado y respetuoso para concertar un horario equitativo de uso del aula, priorizando el bienestar académico de los estudiantes."
+      },
+      {
+        "id": "B",
+        "texto": "Continuar la discusión pública en las redes sociales del colegio."
+      },
+      {
+        "id": "C",
+        "texto": "Exigir al rector que despida al otro docente de inmediato."
+      },
+      {
+        "id": "D",
+        "texto": "Cerrar la sala de sistemas con llave para que ninguno pueda utilizarla."
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "La Resolución de Conflictos implica madurez profesional para buscar consensos mediante el diálogo directo y respetuoso, velando siempre por el clima escolar y el interés de los estudiantes."
+  },
+  {
+    "id": "PSI_009",
+    "categoria_id": "comportamental",
+    "area": "Competencias Comportamentales (Núcleo Común)",
+    "tema": "Compromiso Institucional y Sentido de Pertenencia",
+    "norma_referencia": "Manual de Funciones del MEN",
+    "contexto": "La institución educativa organiza una feria de la ciencia en sábado para integrar a la comunidad del barrio. La actividad es voluntaria pero requiere el apoyo de los docentes para guiar los estands.",
+    "pregunta": "¿Qué acción evidencia un alto Compromiso Institucional?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Vincularse con entusiasmo a la jornada, coordinar la presentación de sus estudiantes y apoyar la integración comunitaria del colegio."
+      },
+      {
+        "id": "B",
+        "texto": "Desmotivar a los estudiantes diciéndoles que asistir los sábados es una pérdida de tiempo."
+      },
+      {
+        "id": "C",
+        "texto": "Exigir un pago extraordinario por fuera de la ley para asistir dos horas."
+      },
+      {
+        "id": "D",
+        "texto": "Asistir pero permanecer con actitud apática sin interactuar con las familias."
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "El Compromiso Institucional se traduce en la identificación activa con los fines socioeducativos del colegio y la disposición de colaborar en el fortalecimiento del vínculo comunidad-escuela."
+  },
+  {
+    "id": "PSI_010",
+    "categoria_id": "comportamental",
+    "area": "Competencias Comportamentales (Núcleo Común)",
+    "tema": "Orientación al Servicio Educativo y Atención al Estudiante",
+    "norma_referencia": "Manual de Funciones del MEN",
+    "contexto": "Un estudiante de grado 6° se acerca al finalizar la clase manifestando que no entendió un concepto clave y que siente mucha angustia por la próxima evaluación.",
+    "pregunta": "¿Cuál es la respuesta del docente orientada a la excelencia en el servicio pedagógico?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Dedicar unos minutos a explicar el concepto de manera alternativa, felicitar al estudiante por consultar y sugerirle un ejercicio práctico de refuerzo."
+      },
+      {
+        "id": "B",
+        "texto": "Decirle que debió prestar atención en la clase y que no tiene tiempo para explicaciones individuales."
+      },
+      {
+        "id": "C",
+        "texto": "Recomendarle que pague a un profesor particular para que le enseñe por fuera del colegio."
+      },
+      {
+        "id": "D",
+        "texto": "Bajarle la nota de disciplina por interrumpir el cambio de clase."
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "La Orientación al Servicio en la docencia se demuestra con disposición empática para apoyar el aprendizaje de los estudiantes, disipar sus dudas y reforzar su confianza."
+  },
+  {
+    "id": "PSI_011",
+    "categoria_id": "comportamental",
+    "area": "Competencias Comportamentales (Núcleo Común)",
+    "tema": "Autodesarrollo y Formación Profesional Continua",
+    "norma_referencia": "Decreto Ley 1278 de 2002 / Desarrollo Profesional",
+    "contexto": "El docente identifica que sus estudiantes muestran desinterés frente a sus guías escritas tradicionales y nota un cambio positivo cuando sus colegas usan videos interactivos.",
+    "pregunta": "¿Qué acción refleja la competencia comportamental de Autodesarrollo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Inscribirse en cursos de formación en TICs y diseño didáctico para actualizar sus metodologías de enseñanza."
+      },
+      {
+        "id": "B",
+        "texto": "Prohibir a sus colegas el uso de videos para que todos mantengan el mismo nivel tradicional."
+      },
+      {
+        "id": "C",
+        "texto": "Culpar a los estudiantes por no tener hábitos de lectura de textos largos."
+      },
+      {
+        "id": "D",
+        "texto": "Solicitar la jubilación anticipada para no aprender nuevas tecnologías."
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "El Autodesarrollo implica una actitud autocrítica continua y la búsqueda constante de actualización pedagógica y tecnológica para cualificar el desempeño docente."
+  },
+  {
+    "id": "PSI_012",
+    "categoria_id": "comportamental",
+    "area": "Competencias Comportamentales (Núcleo Común)",
+    "tema": "Negociación y Gestión de Acuerdos con el Grupo",
+    "norma_referencia": "Manual de Funciones del MEN",
+    "contexto": "Los estudiantes de grado 10° solicitan aplazar la entrega de un proyecto final porque coincide con la presentación de las Pruebas Saber de la misma semana.",
+    "pregunta": "¿Cómo actúa un docente con capacidad de Negociación Asertiva?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Dialogar con el curso, valorar la carga académica de la semana y concertar una fecha alternativa de entrega exigiendo el cumplimiento riguroso del nuevo plazo."
+      },
+      {
+        "id": "B",
+        "texto": "Rechazar de plano la solicitud amenazando con calificar sobre 1.0 a quien no entregue el día fijado originalmente."
+      },
+      {
+        "id": "C",
+        "texto": "Anular la entrega del proyecto y colocarle 5.0 a todo el grupo sin revisar nada."
+      },
+      {
+        "id": "D",
+        "texto": "Someter el aplazamiento a una votación pública sin fijar reglas de entrega posteriores."
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "La Negociación Asertiva permite evaluar de forma justa las peticiones razonables del grupo, ajustar acuerdos con flexibilidad pedagógica y sostener la exigencia de cumplimiento."
+  },
+  {
+    "id": "PSI_013",
+    "categoria_id": "comportamental",
+    "area": "Competencias Comportamentales (Núcleo Común)",
+    "tema": "Uso Eficiente de Recursos Institucionales",
+    "norma_referencia": "Manual de Funciones del MEN",
+    "contexto": "Un docente nota que en la sala de profesores se imprimen cientos de hojas personales que terminan desperdiciadas en la basura.",
+    "pregunta": "¿Qué propuesta evidencia un comportamiento responsable con los recursos del establecimiento?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Proponer al equipo docente el uso de herramientas de revisión digital e impresión a doble cara para reducir el consumo innecesario de papel."
+      },
+      {
+        "id": "B",
+        "texto": "Llevarse las resmas de papel para su casa antes de que otros docentes las utilicen."
+      },
+      {
+        "id": "C",
+        "texto": "Dañar la impresora de la institución para forzar la digitalización."
+      },
+      {
+        "id": "D",
+        "texto": "Ignorar la situación argumentando que el papel es pagado por el Estado."
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "El uso eficiente de recursos demuestra ética en la administración de los bienes públicos e iniciativas de sostenibilidad dentro de la institución."
+  },
+  {
+    "id": "PSI_014",
+    "categoria_id": "comportamental",
+    "area": "Competencias Comportamentales (Núcleo Común)",
+    "tema": "Acompañamiento Socioemocional a la Comunidad",
+    "norma_referencia": "Manual de Funciones del MEN",
+    "contexto": "Un estudiante regresa a clases tras el fallecimiento de un familiar cercano en un accidente. El estudiante luce decaído y con dificultad para concentrarse.",
+    "pregunta": "¿Cuál es la respuesta empática y profesional del docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Ofrecer un saludo cálido de acogida, adaptar temporalmente las entregas académicas, coordinar apoyo con psicoorientación y estar atento a su evolución emocional."
+      },
+      {
+        "id": "B",
+        "texto": "Exigirle el cumplimiento inmediato de todos los exámenes atrasados sin consideraciones especiales."
+      },
+      {
+        "id": "C",
+        "texto": "Evitar dirigirle la palabra para no 'incomodarlo' con el tema del duelo."
+      },
+      {
+        "id": "D",
+        "texto": "Pedirle al estudiante que se retire a su casa hasta que supere el duelo por completo."
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "La respuesta empática y humana ante situaciones dolorosas facilita la contención socioemocional del estudiante, articulando el apoyo pedagógico con la orientación escolar."
+  },
+  {
+    "id": "PSI_015",
+    "categoria_id": "comportamental",
+    "area": "Competencias Comportamentales (Núcleo Común)",
+    "tema": "Promoción del Clima Escolar Positivo",
+    "norma_referencia": "Manual de Funciones del MEN / Ley 1620 de 2013",
+    "contexto": "Al iniciar el año lectivo, el docente establece con sus estudiantes los acuerdos de convivencia para el trabajo de aula.",
+    "pregunta": "¿Cuál es la metodología más coherente con la promoción de la democracia escolar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Construir participativamente los acuerdos de aula mediante el diálogo con los estudiantes, enfocándose en la autorregulación y la convivencia restaurativa."
+      },
+      {
+        "id": "B",
+        "texto": "Imponer un listado de prohibiciones y castigos redactado previamente por el docente sin consultar al grupo."
+      },
+      {
+        "id": "C",
+        "texto": "Permitir que cada estudiante haga lo que quiera sin fijar ninguna regla ni límite de convivencia."
+      },
+      {
+        "id": "D",
+        "texto": "Copiar el código penal colombiano como reglamento de aula."
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "La participación democrática en la construcción de los acuerdos de aula fomenta el sentido de pertenencia, el respeto mutuo y la responsabilidad compartida en la convivencia."
+  }
+]

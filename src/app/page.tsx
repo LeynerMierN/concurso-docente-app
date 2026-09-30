@@ -1,40 +1,47 @@
 import Link from "next/link";
-import { ArrowRight, BookOpenCheck, ChevronRight, ClipboardList, GraduationCap, Layers, Target, Wallet } from "lucide-react";
-import TuProgreso from "@/components/TuProgreso";
+import { ArrowRight, ChevronRight, FileText, GraduationCap, Wallet } from "lucide-react";
+import RachaDiaria from "@/components/dashboard/RachaDiaria";
+import TarjetasModos from "@/components/dashboard/TarjetasModos";
+import { APP } from "@/lib/appConfig";
 import { CONVOCATORIA_DATA, calcularIngresoAnualDocente, formatoCOP } from "@/lib/convocatoria";
 import { FICHAS } from "@/lib/fichas";
-import { PREGUNTAS, UMBRAL_DOCENTE_AULA, obtenerAreas } from "@/lib/preguntas";
+import { PREGUNTAS } from "@/lib/preguntas";
 
+/** Dashboard: racha diaria, acceso rápido a las modalidades de examen y recursos */
 export default function Inicio() {
-  const areas = obtenerAreas();
   const vacantes = CONVOCATORIA_DATA.informacion_general.vacantes_estimadas;
   const licenciado = calcularIngresoAnualDocente("2A_base");
 
-  const modulos = [
-    { href: "/practica", titulo: "Práctica por áreas", detalle: `${areas.length} áreas temáticas`, Icono: BookOpenCheck },
-    { href: "/simulacro", titulo: "Simulacro cronometrado", detalle: `Aprueba con ${UMBRAL_DOCENTE_AULA}/100`, Icono: ClipboardList },
-    { href: "/fichas", titulo: "Fichas normativas", detalle: `${FICHAS.length} conceptos clave: DUA, PIAR, Ley 1620…`, Icono: Layers },
+  const recursos = [
+    { href: "/normatividad", titulo: "Fichas normativas", detalle: `${FICHAS.length} conceptos clave: DUA, PIAR, Ley 1620…`, Icono: FileText },
     { href: "/convocatoria", titulo: "Convocatoria y salario", detalle: "Requisitos, fases y calculadora", Icono: Wallet },
   ];
 
   return (
     <div className="space-y-6">
-      <header className="rounded-3xl bg-gradient-to-br from-marca-600 to-marca-700 p-6 text-white shadow-lg">
+      <header className="rounded-3xl bg-gradient-to-br from-primary to-primary-dark p-6 text-white shadow-lg">
         <div className="flex items-center gap-2 text-sm font-medium text-marca-100">
-          <GraduationCap className="size-5" /> Concurso Docente Colombia
+          <GraduationCap className="size-5" /> {APP.name}
         </div>
-        <h1 className="mt-2 text-2xl font-bold leading-tight">Entrena hoy para ganar tu plaza</h1>
-        <div className="mt-5 grid grid-cols-2 gap-3 text-center">
-          <div className="rounded-2xl bg-white/10 p-3">
-            <p className="text-2xl font-bold">{PREGUNTAS.length}</p>
-            <p className="text-xs text-marca-100">preguntas PJS</p>
-          </div>
-          <div className="rounded-2xl bg-white/10 p-3">
-            <p className="text-2xl font-bold">{vacantes.toLocaleString("es-CO")}</p>
-            <p className="text-xs text-marca-100">vacantes estimadas</p>
-          </div>
+        <h1 className="mt-2 text-2xl font-extrabold leading-tight md:text-3xl">{APP.tagline}</h1>
+        <div className="mt-5 grid grid-cols-3 gap-3 text-center">
+          {[
+            { valor: PREGUNTAS.length, etiqueta: "preguntas en el banco" },
+            { valor: FICHAS.length, etiqueta: "fichas normativas" },
+            { valor: vacantes.toLocaleString("es-CO"), etiqueta: "vacantes estimadas" },
+          ].map(({ valor, etiqueta }) => (
+            <div key={etiqueta} className="rounded-2xl bg-white/10 p-3">
+              <p className="font-heading text-xl font-bold md:text-2xl">{valor}</p>
+              <p className="text-[11px] leading-tight text-marca-100">{etiqueta}</p>
+            </div>
+          ))}
         </div>
       </header>
+
+      <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.4fr)] lg:items-start">
+        <RachaDiaria />
+        <TarjetasModos />
+      </div>
 
       <Link
         href="/convocatoria#salarios"
@@ -51,14 +58,14 @@ export default function Inicio() {
         </p>
       </Link>
 
-      <section className="space-y-3">
-        {modulos.map(({ href, titulo, detalle, Icono }) => (
+      <section aria-label="Recursos de estudio" className="grid gap-3 md:grid-cols-2">
+        {recursos.map(({ href, titulo, detalle, Icono }) => (
           <Link
             key={href}
             href={href}
-            className="flex items-center gap-4 rounded-2xl bg-white p-4 shadow-sm ring-1 ring-slate-200 transition active:scale-[0.98] dark:bg-slate-900 dark:ring-slate-800"
+            className="flex items-center gap-4 rounded-2xl bg-white p-4 ring-1 ring-slate-200 transition active:scale-[0.98] dark:bg-tarjeta dark:ring-slate-700/60"
           >
-            <span className="grid size-11 place-items-center rounded-xl bg-marca-50 text-marca-600 dark:bg-marca-700/30 dark:text-oro">
+            <span className="grid size-11 place-items-center rounded-xl bg-marca-50 text-primary dark:bg-primary-light/20 dark:text-oro">
               <Icono className="size-6" />
             </span>
             <span className="flex-1">
@@ -69,22 +76,6 @@ export default function Inicio() {
           </Link>
         ))}
       </section>
-
-      <TuProgreso />
-
-      <section>
-        <h2 className="mb-3 flex items-center gap-2 font-semibold">
-          <Target className="size-5 text-marca-500" /> Áreas del banco
-        </h2>
-        <ul className="flex flex-wrap gap-2">
-          {areas.map(({ area, total }) => (
-            <li key={area} className="rounded-full bg-slate-100 px-3 py-1 text-xs text-slate-700 dark:bg-slate-800 dark:text-slate-300">
-              {area} · {total}
-            </li>
-          ))}
-        </ul>
-      </section>
-
     </div>
   );
 }

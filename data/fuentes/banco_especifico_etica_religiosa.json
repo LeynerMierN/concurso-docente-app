@@ -1,0 +1,282 @@
+[
+  {
+    "id": "ETI_REL_001",
+    "area": "Competencias Específicas - Ética, Valores y Educación Religiosa",
+    "tema": "Libertad de Cultos, Laicidad del Estado y Pluralismo",
+    "norma_referencia": "Constitución Política de Colombia (Art. 19) / Ley 133 de 1994 (Libertad de Cultos)",
+    "contexto": "Un docente de Educación Religiosa en un colegio oficial exige a todos sus estudiantes aprenderse de memoria oraciones de una confesión religiosa específica para aprobar la asignatura. Un grupo de estudiantes de otras profesiones de fe solicita no realizar dichas oraciones.",
+    "pregunta": "De acuerdo con el carácter laico del Estado colombiano y la libertad de cultos (Art. 19 de la C.P. y Ley 133 de 1994), ¿cuál es la actuación correcta de la institución educativa?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Reprobar automáticamente a los estudiantes por desobedecer al docente."
+      },
+      {
+        "id": "B",
+        "texto": "Garantizar la libertad de conciencia y cultos, ofreciendo una Educación Religiosa de carácter histórico, sociológico y ecuménico, o un programa alternativo de ética/filosofía de las religiones sin adoctrinamiento confesional obligatorio."
+      },
+      {
+        "id": "C",
+        "texto": "Obligar a los estudiantes a convertirse a la religión mayoritaria para mantener la disciplina escolar."
+      },
+      {
+        "id": "D",
+        "texto": "Expulsar a los estudiantes que manifiesten creencias distintas."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La Corte Constitucional y la Ley 133 de 1994 establecen que en colegios oficiales la Educación Religiosa no puede ser dogmática ni catequística. Se debe respetar la libertad de cultos y brindar opciones no confesionales respetuosas del pluralismo."
+  },
+  {
+    "id": "ETI_REL_002",
+    "area": "Competencias Específicas - Ética, Valores y Educación Religiosa",
+    "tema": "Desarrollo Moral, Dilemas Éticos e Inteligencia Emocional",
+    "norma_referencia": "Ley 115 de 1994 (Art. 23 - Ética y Valores) / Teorías del Desarrollo Moral (Kohlberg / Gilligan)",
+    "contexto": "Para abordar el juzgamiento de acciones humanas en grado 9°, el docente presenta el 'Dilema de Heinz' (robar un medicamento costoso para salvar la vida de la esposa enferma).",
+    "pregunta": "¿Qué busca evaluar y fortalecer el docente al aplicar esta metodología en la clase de Ética?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Saber si los estudiantes conocen los precios de las medicinas en las farmacias."
+      },
+      {
+        "id": "B",
+        "texto": "Analizar la estructura del juicio moral de los estudiantes, observando si sus razones se fundamentan en el miedo al castigo (preconvencional), la norma social (convencional) o principios éticos universales de la vida y los derechos humanos (postconvencional)."
+      },
+      {
+        "id": "C",
+        "texto": "Inducir a los estudiantes a cometer delitos en su vida cotidiana."
+      },
+      {
+        "id": "D",
+        "texto": "Calificar como incorrecta cualquier respuesta que no sea exactamente la opinión del docente."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La didáctica de la ética basada en dilemas morales (Kohlberg/Gilligan) promueve el desarrollo del juicio moral autónomo, invitando a la reflexión sobre valores, justicia, empatía y derechos humanos."
+  },
+  {
+    "id": "ETI_REL_003",
+    "area": "Competencias Específicas - Ética, Valores y Educación Religiosa",
+    "tema": "Cátedra de la Paz, Convivencia y Resolución Pacífica de Conflictos",
+    "norma_referencia": "Ley 1732 de 2014 (Cátedra de la Paz) / Decreto 1038 de 2015",
+    "contexto": "El docente de Ética y Valores coordina el módulo de Cátedra de la Paz en grado 8° y diseña actividades sobre reconciliación, memoria e inclusión.",
+    "pregunta": "¿Cuál es el enfoque pedagógico obligatorio que debe tener la Cátedra de la Paz según el Decreto 1038 de 2015?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Dictar conferencias sobre guerras históricas sin vinculación con la vida cotidiana del estudiante."
+      },
+      {
+        "id": "B",
+        "texto": "Fomentar una cultura de paz basada en el desarrollo de competencias ciudadanas, el respeto a los derechos humanos, la prevención de la violencia y la resolución pacífica de conflictos en la escuela y la comunidad."
+      },
+      {
+        "id": "C",
+        "texto": "Hacer que los estudiantes firmen cartas de perdón sin discutir las causas de las agresiones."
+      },
+      {
+        "id": "D",
+        "texto": "Exigir que los estudiantes apoyen un partido político específico."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La Ley 1732 de 2014 y el Decreto 1038 definen la Cátedra de la Paz como un espacio interdisciplinar para formar ciudadanos reflexivos capaces de construir convivencia pacífica y respetar la diversidad."
+  },
+  {
+    "id": "ETI_REL_004",
+    "area": "Competencias Específicas - Ética, Valores y Educación Religiosa",
+    "tema": "Fenomenología de la Religión e Historia Comparada de las Grandes Religiones",
+    "norma_referencia": "Lineamientos Curriculares de Educación Religiosa MEN / Estándares ERE",
+    "contexto": "En grado 10°, la unidad formativa analiza las manifestaciones del fenómeno religioso a través de los mitos, ritos, textos sagrados y símbolos en las principales tradiciones del mundo (Judaísmo, Cristianismo, Islam, Hinduismo, Budismo).",
+    "pregunta": "¿Qué actitud crítica y de convivencia se busca desarrollar mediante el estudio comparado de las religiones?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Demostrar la superioridad de una fe sobre las demás para desacreditar a las minorías."
+      },
+      {
+        "id": "B",
+        "texto": "Promover la tolerancia, el diálogo interreligioso, el respeto por la diversidad cultural y el reconocimiento de las búsquedas éticas universales del ser humano."
+      },
+      {
+        "id": "C",
+        "texto": "Asegurar que los estudiantes abandonen todas sus creencias familiares."
+      },
+      {
+        "id": "D",
+        "texto": "Memorizar pasajes bíblicos sin análisis histórico o literario."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La dimensión de la Fenomenología Religiosa en el currículo escolar promueve el diálogo intercultural, el respeto ecuménico y la comprensión de la diversidad espiritual humana."
+  },
+  {
+    "id": "ETI_REL_005",
+    "area": "Competencias Específicas - Ética, Valores y Educación Religiosa",
+    "tema": "Bioética Escolar, Respeto a la Vida y Diversidad",
+    "norma_referencia": "Ley 115 de 1994 / Orientaciones de Ética y Valores MEN",
+    "contexto": "Se plantea un debate con estudiantes de grado 11° sobre la donación de órganos, el cuidado del medio ambiente y el maltrato animal.",
+    "pregunta": "¿Cuál es la categoría ética que fundamenta la protección activa de la vida en todas sus manifestaciones?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El individualismo absoluto sin responsabilidad social."
+      },
+      {
+        "id": "B",
+        "texto": "El principio bioético de la dignidad humana, la vulnerabilidad y la responsabilidad ecocéntrica del cuidado de la casa común."
+      },
+      {
+        "id": "C",
+        "texto": "La rentabilidad económica del uso de los recursos naturales."
+      },
+      {
+        "id": "D",
+        "texto": "La obediencia ciega a órdenes superiores sin discernimiento moral."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La educación ética y bioética promueve la ampliación del círculo de consideración moral, articulando la dignidad humana con la ética del cuidado de la vida y el ambiente."
+  },
+  {
+    "id": "ETI_REL_006",
+    "area": "Competencias Específicas - Ética, Valores y Educación Religiosa",
+    "tema": "Afectividad, Sexualidad y Derechos Humanos (PESCC)",
+    "norma_referencia": "Programa de Educación para la Sexualidad y Construcción de Ciudadanía (PESCC MEN) / Ley 1620",
+    "contexto": "El área de Ética desarrolla un taller sobre afectividad, autocuidado y toma de decisiones responsables dentro del marco del PESCC.",
+    "pregunta": "De acuerdo con los lineamientos del PESCC del MEN, ¿cuál es el principio orientador de la educación en afectividad?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El uso del miedo y la culpa para inhibir el desarrollo emocional de los jóvenes."
+      },
+      {
+        "id": "B",
+        "texto": "La vivencia de la sexualidad como una dimensión humana integral articulada a los derechos humanos, la afectividad, la equidad de género y el proyecto de vida."
+      },
+      {
+        "id": "C",
+        "texto": "La transmisión de información exclusivamente anatómica y biológica sin dimensión ética."
+      },
+      {
+        "id": "D",
+        "texto": "La prohibición de hablar sobre vínculos afectivos en la institución educativa."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El PESCC del MEN fundamenta la educación para la sexualidad en los derechos humanos y las competencias ciudadanas, integrando la afectividad y la ética en la toma de decisiones."
+  },
+  {
+    "id": "ETI_REL_007",
+    "area": "Competencias Específicas - Ética, Valores y Educación Religiosa",
+    "tema": "Inclusión y DUA en Educación Ética (Decreto 1421 de 2017)",
+    "norma_referencia": "Decreto 1421 de 2017 / Pautas DUA",
+    "contexto": "Un estudiante con discapacidad cognitiva leve participa en la clase de Ética donde se realizan sociodramas sobre dilemas de honestidad.",
+    "pregunta": "¿Qué estrategia de andamiaje garantiza la participación plena del estudiante bajo el enfoque DUA?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Impedir que actúe en el sociodrama por temor a que olvide sus líneas de diálogo."
+      },
+      {
+        "id": "B",
+        "texto": "Adaptar el rol con apoyos visuales (pictogramas), modelamiento previo y asignarle un papel activo en la toma de decisiones grupales según sus capacidades."
+      },
+      {
+        "id": "C",
+        "texto": "Asignarle un trabajo de copia escrita individual mientras el grupo realiza la actividad."
+      },
+      {
+        "id": "D",
+        "texto": "Calificarlo con la máxima nota sin que participe en la dinámica."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El DUA promueve múltiples formas de acción y expresión. Adaptar los sociodramas con pictogramas y modelamiento permite la vivencia ética y social inclusiva del estudiante."
+  },
+  {
+    "id": "ETI_REL_008",
+    "area": "Competencias Específicas - Ética, Valores y Educación Religiosa",
+    "tema": "Evaluación Formativa y Autoevaluación Ética",
+    "norma_referencia": "Decreto 1290 de 2009 / Documento 11 MEN",
+    "contexto": "El docente reflexiona sobre cómo evaluar el desarrollo de las actitudes y valores morales de los estudiantes sin caer en arbitrariedades o subjetivismos disciplinarios.",
+    "pregunta": "¿Cuál es la herramienta pedagógica adecuada para la evaluación de la dimensión ética?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Calificar la materia de Ética únicamente según si el estudiante viste el uniforme de manera perfecta."
+      },
+      {
+        "id": "B",
+        "texto": "Utilizar rúbricas analíticas transparentes, diarios de reflexión personal, coevaluación entre pares sobre trabajos grupales y procesos de autocompromiso autorregulado (Decreto 1290)."
+      },
+      {
+        "id": "C",
+        "texto": "Bajar la nota de Ética como sanción por reprobar Matemáticas."
+      },
+      {
+        "id": "D",
+        "texto": "Asignar notas sorpresa según el estado de ánimo del profesor."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La evaluación en Ética y Valores (Decreto 1290) debe centrarse en procesos de autorreflexión, desarrollo del juicio moral y compromisos actitudinales evaluados mediante instrumentos transparentes."
+  },
+  {
+    "id": "ETI_REL_009",
+    "area": "Competencias Específicas - Ética, Valores y Educación Religiosa",
+    "tema": "Derechos Humanos, Dignidad e Inviolabilidad de la Persona",
+    "norma_referencia": "Declaración Universal de los Derechos Humanos / Constitución de 1991",
+    "contexto": "Se discute en clase un caso histórico de vulneración de derechos fundamentales y el concepto de dignidad humana kantiana (el ser humano como fin en sí mismo y nunca como mero medio).",
+    "pregunta": "¿Qué imperativo ético deben comprender los estudiantes frente a los derechos humanos?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que los derechos humanos son un invento opcional que los estados pueden suspender a voluntad."
+      },
+      {
+        "id": "B",
+        "texto": "Que la dignidad humana es inalienable e inviolable, constituyendo el límite ético supremo contra cualquier abuso de poder o discriminación."
+      },
+      {
+        "id": "C",
+        "texto": "Que solo las personas con altos ingresos económicos tienen derecho a la dignidad."
+      },
+      {
+        "id": "D",
+        "texto": "Que los derechos humanos atentan contra la autoridad moral de las instituciones."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El principio de la dignidad inalienable del ser humano es el pilar ético de la Constitución Política colombiana y de la educación en valores de la Ley 115."
+  },
+  {
+    "id": "ETI_REL_010",
+    "area": "Competencias Específicas - Ética, Valores y Educación Religiosa",
+    "tema": "Empatía, Altruismo y Responsabilidad Social",
+    "norma_referencia": "Ley 115 de 1994 / Orientaciones de Ética MEN",
+    "contexto": "Los estudiantes de grado 7° organizan una campaña de solidaridad con una comunidad vecina que sufrió pérdidas por un desastre natural.",
+    "pregunta": "¿Qué aprendizaje prosocial profundiza esta experiencia pedagógica?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El asistencialismo humillante enfocado en tomar fotos para redes sociales."
+      },
+      {
+        "id": "B",
+        "texto": "La vivencia de la empatía, la solidaridad ciudadana activa y el sentido de corresponsabilidad comunitaria frente al dolor ajeno."
+      },
+      {
+        "id": "C",
+        "texto": "La convicción de que las tragedias ajenas no son responsabilidad de la sociedad."
+      },
+      {
+        "id": "D",
+        "texto": "La competencia por ganar reconocimientos individuales y premios económicos."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La educación ética impulsa la empatía y la conducta prosocial, conectando el aula con el compromiso transformador y solidario en el territorio."
+  }
+]

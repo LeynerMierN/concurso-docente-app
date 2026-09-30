@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { armarExamen, calificar, etiquetaFiltro, listarRespuestas, mezclar, obtenerPregunta } from "@/lib/preguntas";
+import { armarExamen, armarPorDistribucion, calificar, etiquetaFiltro, listarRespuestas, mezclar, obtenerPregunta } from "@/lib/preguntas";
 import { registrarIntento } from "@/lib/storage";
 import type { ConfigExamen, Opcion, OpcionId, Pregunta, SesionExamen } from "@/types/exam";
 
@@ -51,17 +51,18 @@ export function useQuizRunner(clave: string) {
     if (cargado) guardarSesion(clave, sesion);
   }, [clave, sesion, cargado]);
 
-  const enCurso = !!sesion && sesion.terminadoMs === null;
+  const pausado = !!sesion?.pausadoMs && sesion.terminadoMs === null;
+  const corriendo = !!sesion && sesion.terminadoMs === null && !pausado;
 
   useEffect(() => {
-    if (!enCurso) return;
+    if (!corriendo) return;
     const intervalo = setInterval(() => setAhora(Date.now()), 1000);
     return () => clearInterval(intervalo);
-  }, [enCurso]);
+  }, [corriendo]);
 
   // Cierre automático al agotarse el tiempo (también si se agotó con la página cerrada)
   useEffect(() => {
-    if (sesion && sesion.terminadoMs === null && sesion.finMs !== null && ahora >= sesion.finMs) {
+    if (sesion && sesion.terminadoMs === null && !sesion.pausadoMs && sesion.finMs !== null && ahora >= sesion.finMs) {
       setSesion({ ...sesion, terminadoMs: sesion.finMs });
     }
   }, [ahora, sesion]);
@@ -72,7 +73,7 @@ export function useQuizRunner(clave: string) {
   }, []);
 
   const iniciar = useCallback((config: ConfigExamen) => {
-    const preguntas = armarExamen(config.filtro, config.cantidad);
+    const preguntas = config.distribucion ? armarPorDistribucion(config.distribucion) : armarExamen(config.filtro, config.cantidad);
     if (preguntas.length === 0) return;
     const inicioMs = Date.now();
     setAhora(inicioMs);
@@ -123,7 +124,27 @@ export function useQuizRunner(clave: string) {
     [modificar],
   );
 
-  const finalizar = useCallback(() => modificar((s) => ({ ...s, terminadoMs: Date.now() })), [modificar]);
+  // Si se entrega estando en pausa, el tiempo en pausa no cuenta
+  const finalizar = useCallback(
+    () => modificar((s) => ({ ...s, terminadoMs: s.pausadoMs ?? Date.now(), pausadoMs: null })),
+    [modificar],
+  );
+
+  const pausar = useCallback(
+    () => modificar((s) => (s.config.permitirPausa && !s.pausadoMs ? { ...s, pausadoMs: Date.now() } : s)),
+    [modificar],
+  );
+
+  /** Reanuda desplazando inicio y límite, así el tiempo en pausa no se descuenta */
+  const reanudar = useCallback(() => {
+    const ahoraMs = Date.now();
+    setAhora(ahoraMs);
+    modificar((s) => {
+      if (!s.pausadoMs) return s;
+      const pausa = ahoraMs - s.pausadoMs;
+      return { ...s, inicioMs: s.inicioMs + pausa, finMs: s.finMs === null ? null : s.finMs + pausa, pausadoMs: null };
+    });
+  }, [modificar]);
 
   const reiniciar = useCallback(() => setSesion(null), []);
 
@@ -164,7 +185,7 @@ export function useQuizRunner(clave: string) {
     [sesion, preguntas],
   );
 
-  const referencia = sesion?.terminadoMs ?? ahora;
+  const referencia = sesion?.terminadoMs ?? sesion?.pausadoMs ?? ahora;
   const segundosTranscurridos = sesion ? Math.max(0, Math.floor((referencia - sesion.inicioMs) / 1000)) : 0;
   const segundosRestantes =
     sesion?.finMs != null ? Math.max(0, Math.ceil((sesion.finMs - referencia) / 1000)) : null;
@@ -184,6 +205,9 @@ export function useQuizRunner(clave: string) {
     alternarBandera,
     finalizar,
     reiniciar,
+    pausado,
+    pausar,
+    reanudar,
     opcionesDe,
   };
 }

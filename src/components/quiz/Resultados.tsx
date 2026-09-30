@@ -71,7 +71,7 @@ export default function Resultados({ runner }: { runner: QuizRunner }) {
       </header>
 
       {/* Desglose por área */}
-      <section className="space-y-3 rounded-3xl bg-white p-5 ring-1 ring-slate-200 dark:bg-slate-900 dark:ring-slate-800">
+      <section className="space-y-3 rounded-3xl bg-white p-5 ring-1 ring-slate-200 dark:bg-tarjeta dark:ring-slate-700/60">
         <h2 className="font-semibold">Aciertos por área</h2>
         <ul className="space-y-3">
           {Object.entries(resultado.desglosePorArea)
@@ -86,7 +86,7 @@ export default function Resultados({ runner }: { runner: QuizRunner }) {
                       {correctas}/{total}
                     </span>
                   </div>
-                  <div className="h-2 overflow-hidden rounded-full bg-slate-100 dark:bg-slate-800">
+                  <div className="h-2 overflow-hidden rounded-full bg-slate-100 dark:bg-slate-700/60">
                     <div
                       className={`h-full rounded-full ${pct >= resultado.umbral ? "bg-exito" : "bg-error"}`}
                       style={{ width: `${pct}%` }}
@@ -133,7 +133,7 @@ export default function Resultados({ runner }: { runner: QuizRunner }) {
             const acerto = elegida === p.respuesta_correcta;
             return (
               <li key={p.id}>
-                <details className="group rounded-2xl bg-white ring-1 ring-slate-200 dark:bg-slate-900 dark:ring-slate-800">
+                <details className="group rounded-2xl bg-white ring-1 ring-slate-200 dark:bg-tarjeta dark:ring-slate-700/60">
                   <summary className="flex cursor-pointer list-none items-start gap-3 p-4">
                     {acerto ? (
                       <CheckCircle2 className="mt-0.5 size-5 shrink-0 text-exito" />
@@ -152,11 +152,11 @@ export default function Resultados({ runner }: { runner: QuizRunner }) {
                     <ChevronDown className="mt-0.5 size-5 shrink-0 text-slate-400 transition group-open:rotate-180" />
                   </summary>
 
-                  <div className="space-y-3 border-t border-slate-100 p-4 text-sm dark:border-slate-800">
+                  <div className="space-y-3 border-t border-slate-100 p-4 text-sm dark:border-slate-700">
                     <p className="leading-relaxed text-slate-600 dark:text-slate-400">{p.contexto}</p>
                     <div
                       className={`rounded-xl p-3 ${
-                        acerto ? "bg-exito/10" : elegida ? "bg-error/10" : "bg-slate-100 dark:bg-slate-800"
+                        acerto ? "bg-exito/10" : elegida ? "bg-error/10" : "bg-slate-100 dark:bg-slate-700/60"
                       }`}
                     >
                       <p className="text-xs font-semibold text-slate-500">Tu respuesta</p>

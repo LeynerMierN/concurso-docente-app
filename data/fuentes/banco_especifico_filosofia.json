@@ -1,0 +1,282 @@
+[
+  {
+    "id": "FIL_001",
+    "area": "Competencias Específicas - Filosofía",
+    "tema": "Lógica, Argumentación y Análisis de Falacias",
+    "norma_referencia": "Orientaciones Pedagógicas para la Enseñanza de la Filosofía (Documento No. 14 MEN)",
+    "contexto": "Durante un debate filosófico en grado 10° sobre la justicia, un estudiante refuta la postura de su compañero diciendo: 'No podemos aceptar la opinión de Juan sobre la igualdad de derechos porque él es demasiado joven y nunca ha trabajado'.",
+    "pregunta": "Desde la lógica y la enseñanza de la filosofía, ¿cuál es la intervención del docente para orientar el análisis del argumento?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Dar por válida la refutación ya que la edad es un factor determinante en la verdad de una afirmación."
+      },
+      {
+        "id": "B",
+        "texto": "Identificar que se ha incurrido en una falacia ad hominem (ataque a la persona en lugar de a la premisa) y reorientar la discusión hacia el análisis de las razones y evidencias presentadas."
+      },
+      {
+        "id": "C",
+        "texto": "Expulsar al estudiante del salón por opinar en contra de su compañero."
+      },
+      {
+        "id": "D",
+        "texto": "Dar por terminado el debate y dictar una clase magistral sobre la biografía de Sócrates."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El Documento No. 14 del MEN enfatiza que la filosofía escolar busca desarrollar la competencia argumentativa. Identificar falacias no formales (como el ataque ad hominem) permite a los estudiantes evaluar la validez estructural de los argumentos con rigor crítico."
+  },
+  {
+    "id": "FIL_002",
+    "area": "Competencias Específicas - Filosofía",
+    "tema": "Epistemología y Teoría del Conocimiento (Racionalismo vs Empirismo)",
+    "norma_referencia": "Documento No. 14 MEN (Orientaciones Pedagógicas de Filosofía)",
+    "contexto": "Para abordar la pregunta '¿Cómo conocemos la realidad?', el docente confronta fragmentos de las 'Meditaciones Metafísicas' de Descartes con el 'Ensayo sobre el entendimiento humano' de John Locke.",
+    "pregunta": "¿Cuál es la estrategia didáctica más pertinente para lograr la comprensión crítica de este problema epistemológico?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Exigir la memorización de las fechas de nacimiento y muerte de Descartes y Locke para un examen escrito."
+      },
+      {
+        "id": "B",
+        "texto": "Proponer un cuadro comparativo y un debate donde los estudiantes analicen el origen de las ideas (ideas innatas frente a la 'tabula rasa' de la experiencia sensible) aplicado a un ejemplo cotidiano."
+      },
+      {
+        "id": "C",
+        "texto": "Dictar los resúmenes del libro de texto sin permitir que los estudiantes lean directamente los fragmentos primarios."
+      },
+      {
+        "id": "D",
+        "texto": "Concluir que ambas posturas son exactamente iguales y que no existe diferencia entre razón y experiencia."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "Según el Documento No. 14 del MEN, la didáctica filosófica debe centrarse en los problemas filosóficos fundamentales y en el diálogo filosófico directo a partir de textos fuente y situaciones conceptuales."
+  },
+  {
+    "id": "FIL_003",
+    "area": "Competencias Específicas - Filosofía",
+    "tema": "Ética y Filosofía Política (Contrato Social y Justicia)",
+    "norma_referencia": "Documento No. 14 MEN / Lineamientos de Filosofía",
+    "contexto": "En grado 11°, el docente presenta el dilema del 'Velo de la Ignorancia' de John Rawls para discutir las bases de una sociedad justa.",
+    "pregunta": "¿Qué busca desarrollar este experimento mental en el pensamiento ético-político de los estudiantes?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Demostrar que en la sociedad siempre deben prevalecer los intereses de las clases dominantes."
+      },
+      {
+        "id": "B",
+        "texto": "Imaginarse en una posición imparcial, abstraídos de sus ventajas o desventajas sociales particulares, para acordar principios equitativos de distribución de bienes básicos."
+      },
+      {
+        "id": "C",
+        "texto": "Memorizar los artículos de la constitución política colombiana sin discusión filosófica."
+      },
+      {
+        "id": "D",
+        "texto": "Aceptar que la justicia es una ilusión imposible de debatir racionalmente."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El experimento de la 'posición original' y el 'velo de la ignorancia' de Rawls es un recurso poderoso para ejercitar la descentración, la imparcialidad moral y la fundamentación filosófica de la justicia equitativa."
+  },
+  {
+    "id": "FIL_004",
+    "area": "Competencias Específicas - Filosofía",
+    "tema": "Comunidad de Indagación y Filosofía para Niños/Jóvenes",
+    "norma_referencia": "Documento No. 14 MEN / Propuesta de Matthew Lipman",
+    "contexto": "El docente organiza la clase en un círculo de diálogo (Comunidad de Indagación), donde los estudiantes leen un cuento filosófico, formulan sus propias preguntas conceptuales y coordinan el turno de palabra.",
+    "pregunta": "¿Cuál es el rol del docente de filosofía dentro de esta metodología pedagógica?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Ser el sabio indiscutible que responde de inmediato a cada pregunta y califica como correcta o incorrecta cada opinión."
+      },
+      {
+        "id": "B",
+        "texto": "Facilitar el proceso dialógico, formulando repreguntas clarificadoras, solicitando razones e inferencias y garantizando el rigor del pensamiento sin imponer una verdad dogmática."
+      },
+      {
+        "id": "C",
+        "texto": "Permanecer en silencio y ausentarse del aula para que los estudiantes hablen libremente de cualquier tema sin estructura."
+      },
+      {
+        "id": "D",
+        "texto": "Evaluar la dicción y entonación de la lectura en voz alta ignorando el contenido filosófico."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La Comunidad de Indagación (Lipman / Doc 14 MEN) transforma la clase de filosofía en una práctica democrática del pensamiento. El docente actúa como facilitador del diálogo crítico y filosófico."
+  },
+  {
+    "id": "FIL_005",
+    "area": "Competencias Específicas - Filosofía",
+    "tema": "Pensamiento Filosófico Latinoamericano y Descolonialidad",
+    "norma_referencia": "Documento No. 14 MEN / Estándares de Ciencias Sociales y Filosofía",
+    "contexto": "En la unidad de Antropología Filosófica, el docente introduce textos de pensadores latinoamericanos (como Leopoldo Zea, Enrique Dussel o Rodolfo Kusch) sobre la identidad, el 'estar' y la alteridad.",
+    "pregunta": "¿Qué propósito pedagógico cumple la inclusión de la filosofía latinoamericana en el currículo escolar?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Demostrar que la filosofía solo existió en la Grecia antigua y en Europa occidental."
+      },
+      {
+        "id": "B",
+        "texto": "Fomentar el pensamiento crítico territorializado, cuestionando el eurocentrismo filosófico y visibilizando las reflexiones ontológicas y políticas desde nuestra propia realidad histórica y cultural."
+      },
+      {
+        "id": "C",
+        "texto": "Sustituir todo el pensamiento universal por anécdotas folclóricas sin rigor conceptual."
+      },
+      {
+        "id": "D",
+        "texto": "Obligar a los estudiantes a memorizar manifiestos políticos partidistas."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El Documento No. 14 del MEN promueve el reconocimiento de la filosofía latinoamericana como un espacio válido de problematización sobre el sujeto, la historia y la liberación cultural en el contexto escolar."
+  },
+  {
+    "id": "FIL_006",
+    "area": "Competencias Específicas - Filosofía",
+    "tema": "Bioética, Tecnología y Filosofía de la Ciencia",
+    "norma_referencia": "Documento No. 14 MEN / Orientaciones Pedagógicas",
+    "contexto": "Un grupo de estudiantes de grado 11° plantea el dilema ético sobre la edición genética en humanos y el desarrollo de Inteligencia Artificial consciente.",
+    "pregunta": "¿Cómo debe articular el docente la filosofía de la técnica y la bioética ante estos avances contemporáneos?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Rechazar todo avance científico por considerarlo opuesto a la filosofía clásica."
+      },
+      {
+        "id": "B",
+        "texto": "Brindar herramientas conceptuales (imperativo categórico, utilitarismo, ética del cuidado) para examinar la responsabilidad moral, los límites éticos y la condición humana ante la técnica."
+      },
+      {
+        "id": "C",
+        "texto": "Afirmar que la ciencia no necesita ninguna reflexión ética porque se autorregula comercialmente."
+      },
+      {
+        "id": "D",
+        "texto": "Delegar la discusión a la clase de Informática exonerando a la filosofía de debatir la realidad tecnológica."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La filosofía contemporánea en la escuela debe abordar los problemas bioéticos y de la técnica, conectando los conceptos éticos normativos con los desafíos científicos actuales."
+  },
+  {
+    "id": "FIL_007",
+    "area": "Competencias Específicas - Filosofía",
+    "tema": "Lectura Crítica de Textos Filosóficos Complejos",
+    "norma_referencia": "Documento No. 14 MEN / Pruebas Saber 11 (Lectura Crítica)",
+    "contexto": "Al abordar un fragmento de la 'Crítica de la Razón Pura' de Kant, los estudiantes manifiestan frustración por la densidad del vocabulario y la sintaxis del autor.",
+    "pregunta": "¿Cuál es la estrategia de andamiaje pedagógico más efectiva para acompañar la lectura del texto primario?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Eliminar la lectura de fuentes primarias y remplazarlas definitivamente por cómics resúmenes."
+      },
+      {
+        "id": "B",
+        "texto": "Aplicar una lectura guiada por fases: glosario conceptual previo, delimitación de la pregunta central del autor, identificación de tesis y premisas, y reconstrucción del argumento con ejemplos propios."
+      },
+      {
+        "id": "C",
+        "texto": "Sancionar a los estudiantes que no entiendan el texto en la primera lectura individual en silencio."
+      },
+      {
+        "id": "D",
+        "texto": "Leer el texto completo en voz alta por parte del docente sin hacer ninguna pausa explicativa."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El acceso a fuentes primarias en filosofía requiere un andamiaje didáctico estructurado (Doc. 14 MEN) que descomponga la complejidad textual sin perder la riqueza del argumento filosófico."
+  },
+  {
+    "id": "FIL_008",
+    "area": "Competencias Específicas - Filosofía",
+    "tema": "Estética y Filosofía del Arte",
+    "norma_referencia": "Documento No. 14 MEN / Orientaciones Pedagógicas",
+    "contexto": "Durante la visita virtual a una galería de arte contemporáneo, los estudiantes cuestionan si una instalación interactiva 'es realmente arte o una simple burla'.",
+    "pregunta": "¿Cómo aprovecha el docente esta inquietud desde la dimensión estética de la filosofía?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Imponer su gusto personal y calificar de ignorante a quien no aprecie la obra."
+      },
+      {
+        "id": "B",
+        "texto": "Problematizar el concepto de belleza, la intención artística, el juicio de gusto (Kant/Hegel) y la función social del arte contemporáneo a través de la indagación filosófica."
+      },
+      {
+        "id": "C",
+        "texto": "Prohibir el debate y limitarse a dictar la biografía del artista."
+      },
+      {
+        "id": "D",
+        "texto": "Declarar que cualquier objeto es arte sin necesidad de justificación o criterio conceptual."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La dimensión estética en la filosofía escolar promueve la indagación sobre las categorías estéticas, la percepción y los criterios del juicio de gusto frente a las manifestaciones artísticas."
+  },
+  {
+    "id": "FIL_009",
+    "area": "Competencias Específicas - Filosofía",
+    "tema": "Filosofía del Lenguaje y Hermenéutica",
+    "norma_referencia": "Documento No. 14 MEN / Lineamientos de Filosofía",
+    "contexto": "El docente analiza con los estudiantes cómo una misma palabra o discurso político puede asumir significados totalmente opuestos dependiendo del contexto comunicativo e ideológico (Wittgenstein y los juegos de lenguaje).",
+    "pregunta": "¿Qué competencia del pensamiento crítico se fortalece con este análisis hermenéutico?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "La memorización de reglas ortográficas estrictas."
+      },
+      {
+        "id": "B",
+        "texto": "La comprensión del uso contextual del lenguaje, la deconstrucción de discursos persuasivos y la interpretación hermenéutica del sentido."
+      },
+      {
+        "id": "C",
+        "texto": "La creencia de que las palabras no tienen ninguna relación con la realidad."
+      },
+      {
+        "id": "D",
+        "texto": "El aprendizaje exclusivo de lenguas muertas como el latín clásico."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El análisis hermenéutico y la filosofía del lenguaje permiten a los estudiantes desentrañar las intenciones, contextos y presupuestos ideológicos detrás de las producciones discursivas."
+  },
+  {
+    "id": "FIL_010",
+    "area": "Competencias Específicas - Filosofía",
+    "tema": "Inclusión y Adaptación de la Filosofía (DUA / Decreto 1421)",
+    "norma_referencia": "Decreto 1421 de 2017 / Documento No. 14 MEN",
+    "contexto": "En el grado 11°, está matriculado un estudiante con discapacidad auditiva (sordo usuario de LSC). La clase de filosofía abordará el dilema del mito de la caverna de Platón.",
+    "pregunta": "¿Cuál es la adaptación pedagógica adecuada desde el DUA y el Decreto 1421 de 2017?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Exonerar al estudiante del tema por considerar la alegoría demasiado abstracta para una persona sorda."
+      },
+      {
+        "id": "B",
+        "texto": "Coordinar con el intérprete de LSC, utilizar representaciones visuales/dramatizaciones de la alegoría y adaptar los textos con apoyos gráficos para el análisis conceptual inclusivo."
+      },
+      {
+        "id": "C",
+        "texto": "Obligar al estudiante a leer en silencio el texto griego original sin traducción ni acompañamiento."
+      },
+      {
+        "id": "D",
+        "texto": "Asignarle la elaboración de un dibujo coloreado sin preguntas filosóficas sobre el mundo inteligible."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El Decreto 1421 de 2017 establece que la abstracción filosófica es plenamente accesible para estudiantes sordos cuando se proporcionan mediaciones lingüísticas (LSC) y recursos visuales/multimodales en el marco del DUA."
+  }
+]

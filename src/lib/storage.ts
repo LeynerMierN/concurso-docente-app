@@ -13,6 +13,8 @@ export interface Intento {
   area: string;
   puntaje: number;
   totalPreguntas: number;
+  /** Preguntas contestadas (ausente en intentos guardados antes de este campo) */
+  respondidas?: number;
   correctas: number;
   aprobado: boolean;
   duracionSegundos: number;
@@ -99,6 +101,7 @@ export function registrarIntento(datos: DatosIntento): void {
     area: datos.area,
     puntaje: datos.puntaje,
     totalPreguntas: datos.preguntas.length,
+    respondidas,
     correctas,
     aprobado: datos.aprobado,
     duracionSegundos: Math.round((datos.terminadoMs - datos.inicioMs) / 1000),
@@ -144,4 +147,21 @@ export function calcularRacha(diasEstudio: string[], hoy: Date = new Date()): { 
   }
 
   return { actual, mejor, estudioHoy };
+}
+
+/** Preguntas contestadas en un día (por defecto hoy), para la meta diaria */
+export function respondidasEnDia(progreso: Progreso, dia: string = diaLocal(new Date())): number {
+  return progreso.intentos
+    .filter((i) => diaLocal(new Date(i.fecha)) === dia)
+    .reduce((suma, i) => suma + (i.respondidas ?? i.totalPreguntas), 0);
+}
+
+/** Últimos `n` días (del más antiguo a hoy) con la marca de si hubo estudio */
+export function ultimosDias(diasEstudio: string[], n = 7, hoy: Date = new Date()) {
+  const estudiados = new Set(diasEstudio);
+  return Array.from({ length: n }, (_, i) => {
+    const fecha = new Date(hoy.getFullYear(), hoy.getMonth(), hoy.getDate() - (n - 1 - i));
+    const dia = diaLocal(fecha);
+    return { dia, fecha, estudio: estudiados.has(dia) };
+  });
 }

@@ -1,10 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import { CheckCircle2, ChevronLeft, ChevronRight, Clock, Flag, Scale, X, XCircle } from "lucide-react";
+import { CheckCircle2, ChevronLeft, ChevronRight, Clock, Flag, Pause, Play, Scale, X, XCircle } from "lucide-react";
 import Confirmacion from "./Confirmacion";
 import Resultados from "./Resultados";
 import type { QuizRunner as Runner } from "@/hooks/useQuizRunner";
+import { obtenerModo } from "@/lib/appConfig";
 import { etiquetaFiltro } from "@/lib/preguntas";
 import { formatoTiempo } from "@/lib/tiempo";
 
@@ -27,11 +28,10 @@ export default function QuizRunner({ runner }: { runner: Runner }) {
   const esUltima = indice === preguntas.length - 1;
   const respondidas = Object.keys(respuestas).length;
   const sinResponder = preguntas.length - respondidas;
-  const poco = segundosRestantes !== null && segundosRestantes <= 60;
+  const poco = segundosRestantes !== null && segundosRestantes <= 60 && !runner.pausado;
+  const nombreModo = obtenerModo(config.modoId ?? null)?.nombre;
 
-  return (
-    <div className="space-y-4">
-      {/* Encabezado: progreso, cronómetro y acciones */}
+  const encabezado = (
       <header className="space-y-3">
         <div className="flex items-center gap-2">
           <button
@@ -44,7 +44,7 @@ export default function QuizRunner({ runner }: { runner: Runner }) {
           </button>
           <div className="min-w-0 flex-1">
             <p className="truncate text-xs font-medium uppercase tracking-wide text-slate-500">
-              {esSimulacro ? "Simulacro" : etiquetaFiltro(config.filtro)}
+              {nombreModo ?? (esSimulacro ? "Simulacro" : etiquetaFiltro(config.filtro))}
             </p>
             <p className="text-sm font-semibold">
               Pregunta {indice + 1} de {preguntas.length}
@@ -54,24 +54,63 @@ export default function QuizRunner({ runner }: { runner: Runner }) {
             className={`flex items-center gap-1.5 rounded-full px-3 py-1.5 text-sm font-semibold tabular-nums ${
               poco
                 ? "animate-pulse bg-error/10 text-error"
-                : "bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-200"
+                : "bg-slate-100 text-slate-700 dark:bg-slate-700/60 dark:text-slate-200"
             }`}
             aria-label={segundosRestantes !== null ? "Tiempo restante" : "Tiempo transcurrido"}
           >
             <Clock className="size-4" />
             {formatoTiempo(segundosRestantes ?? segundosTranscurridos)}
           </span>
+          {config.permitirPausa && !runner.pausado && (
+            <button
+              type="button"
+              onClick={runner.pausar}
+              aria-label="Pausar"
+              className="grid size-9 place-items-center rounded-full bg-slate-100 text-slate-700 dark:bg-slate-700/60 dark:text-slate-200"
+            >
+              <Pause className="size-4" fill="currentColor" />
+            </button>
+          )}
         </div>
-        <div className="h-1.5 overflow-hidden rounded-full bg-slate-200 dark:bg-slate-800">
+        <div className="h-1.5 overflow-hidden rounded-full bg-slate-200 dark:bg-slate-700/60">
           <div
             className="h-full rounded-full bg-marca-500 transition-all"
             style={{ width: `${(respondidas / preguntas.length) * 100}%` }}
           />
         </div>
       </header>
+  );
+
+  if (runner.pausado) {
+    return (
+      <div className="space-y-4">
+        {encabezado}
+        <section className="space-y-4 rounded-3xl bg-white p-8 text-center ring-1 ring-slate-200 dark:bg-tarjeta dark:ring-slate-700/60">
+          <Pause className="mx-auto size-10 text-primary dark:text-oro" />
+          <div>
+            <h2 className="text-xl font-bold">En pausa</h2>
+            <p className="mt-1 text-sm text-slate-500">
+              El cronómetro está detenido. La pregunta se oculta hasta que continúes.
+            </p>
+          </div>
+          <button
+            type="button"
+            onClick={runner.reanudar}
+            className="mx-auto flex items-center gap-2 rounded-2xl bg-primary px-6 py-3 font-semibold text-white active:scale-[0.98]"
+          >
+            <Play className="size-5" fill="currentColor" /> Continuar
+          </button>
+        </section>
+      </div>
+    );
+  }
+
+  return (
+    <div className="space-y-4">
+      {encabezado}
 
       {/* Pregunta */}
-      <article className="space-y-4 rounded-3xl bg-white p-5 shadow-sm ring-1 ring-slate-200 dark:bg-slate-900 dark:ring-slate-800">
+      <article className="space-y-4 rounded-3xl bg-white p-5 shadow-sm ring-1 ring-slate-200 dark:bg-tarjeta dark:ring-slate-700/60">
         <div className="flex items-start justify-between gap-3">
           <div className="min-w-0">
             <p className="text-xs font-semibold text-marca-600 dark:text-oro">{preguntaActual.area}</p>
@@ -84,7 +123,7 @@ export default function QuizRunner({ runner }: { runner: Runner }) {
             className={`flex shrink-0 items-center gap-1 rounded-full px-3 py-1.5 text-xs font-semibold transition ${
               marcada
                 ? "bg-oro text-slate-900"
-                : "bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-300"
+                : "bg-slate-100 text-slate-600 dark:bg-slate-700/60 dark:text-slate-300"
             }`}
           >
             <Flag className="size-3.5" fill={marcada ? "currentColor" : "none"} />
@@ -92,7 +131,7 @@ export default function QuizRunner({ runner }: { runner: Runner }) {
           </button>
         </div>
 
-        <p className="rounded-2xl bg-slate-50 p-4 text-[15px] leading-relaxed text-slate-700 dark:bg-slate-800/60 dark:text-slate-300">
+        <p className="rounded-2xl bg-slate-50 p-4 text-[15px] leading-relaxed text-slate-700 dark:bg-slate-700/40 dark:text-slate-300">
           {preguntaActual.contexto}
         </p>
         <h2 className="font-semibold leading-snug">{preguntaActual.pregunta}</h2>
@@ -102,7 +141,7 @@ export default function QuizRunner({ runner }: { runner: Runner }) {
             const elegida = seleccion === opcion.id;
             const correcta = opcion.id === preguntaActual.respuesta_correcta;
             let estilo = "ring-slate-200 dark:ring-slate-700 hover:ring-marca-500";
-            let letra = "bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-300";
+            let letra = "bg-slate-100 text-slate-600 dark:bg-slate-700/60 dark:text-slate-300";
             if (revelada && correcta) {
               estilo = "ring-2 ring-exito bg-exito/10";
               letra = "bg-exito text-white";
@@ -157,7 +196,7 @@ export default function QuizRunner({ runner }: { runner: Runner }) {
           type="button"
           onClick={() => runner.irA(indice - 1)}
           disabled={indice === 0}
-          className="flex items-center justify-center gap-1 rounded-2xl bg-white px-4 py-3 font-semibold ring-1 ring-slate-200 disabled:opacity-40 dark:bg-slate-900 dark:ring-slate-800"
+          className="flex items-center justify-center gap-1 rounded-2xl bg-white px-4 py-3 font-semibold ring-1 ring-slate-200 disabled:opacity-40 dark:bg-tarjeta dark:ring-slate-700/60"
         >
           <ChevronLeft className="size-5" /> Anterior
         </button>
@@ -181,7 +220,7 @@ export default function QuizRunner({ runner }: { runner: Runner }) {
       </div>
 
       {/* Mapa de preguntas: navegación libre */}
-      <section className="rounded-3xl bg-white p-4 ring-1 ring-slate-200 dark:bg-slate-900 dark:ring-slate-800">
+      <section className="rounded-3xl bg-white p-4 ring-1 ring-slate-200 dark:bg-tarjeta dark:ring-slate-700/60">
         <div className="mb-3 flex items-center justify-between text-xs text-slate-500">
           <span>
             {respondidas}/{preguntas.length} respondidas
@@ -195,7 +234,7 @@ export default function QuizRunner({ runner }: { runner: Runner }) {
         <ol className="grid grid-cols-8 gap-1.5">
           {preguntas.map((p, i) => {
             const r = respuestas[p.id];
-            let color = "bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-300";
+            let color = "bg-slate-100 text-slate-600 dark:bg-slate-700/60 dark:text-slate-300";
             if (r && config.feedbackInmediato) {
               color = r === p.respuesta_correcta ? "bg-exito text-white" : "bg-error text-white";
             } else if (r) {

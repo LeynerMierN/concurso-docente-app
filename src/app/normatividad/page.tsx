@@ -64,7 +64,7 @@ export default function Pagina() {
                 className={`whitespace-nowrap rounded-full px-3.5 py-2 text-sm transition ${
                   categoria === id
                     ? "bg-marca-600 font-semibold text-white"
-                    : "bg-white text-slate-700 ring-1 ring-slate-200 dark:bg-slate-900 dark:text-slate-300 dark:ring-slate-800"
+                    : "bg-white text-slate-700 ring-1 ring-slate-200 dark:bg-tarjeta dark:text-slate-300 dark:ring-slate-700/60"
                 }`}
               >
                 {id} <span className="opacity-70">· {total}</span>
@@ -98,7 +98,7 @@ export default function Pagina() {
               onClick={() => irA(indice - 1)}
               disabled={indice === 0}
               aria-label="Ficha anterior"
-              className="grid size-12 place-items-center rounded-2xl bg-white ring-1 ring-slate-200 disabled:opacity-40 dark:bg-slate-900 dark:ring-slate-800"
+              className="grid size-12 place-items-center rounded-2xl bg-white ring-1 ring-slate-200 disabled:opacity-40 dark:bg-tarjeta dark:ring-slate-700/60"
             >
               <ChevronLeft className="size-6" />
             </button>

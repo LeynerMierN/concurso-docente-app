@@ -1,0 +1,58 @@
+[
+  {
+    "id": "JUR_001",
+    "area": "Módulo Especial Premium - Casos Jurídicos y Debido Proceso",
+    "tema": "Protección de Derechos de la Niñez y Vulneración en el Entorno Escolar",
+    "norma_referencia": "Ley 1098 de 2006 (Código de Infancia) / Ley 115 de 1994",
+    "contexto": "Un docente de grado 4° sospecha que una estudiante de 9 años está siendo víctima de negligencia grave y maltrato físico en su hogar debido a constantes hematomas no explicados y desnutrición visible. Al informar al Rector, este le ordena guardar silencio 'para no buscarle problemas legales al colegio con la familia'.",
+    "pregunta": "Desde el marco de la Ley 1098 de 2006 (Código de Infancia y Adolescencia), ¿cuál es la conducta legal ineludible que debe asumir el docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Acatar la orden del Rector para proteger la estabilidad institucional frente a la comunidad."
+      },
+      {
+        "id": "B",
+        "texto": "Denunciar y reportar de manera inmediata el caso ante el ICBF, la Comisaría de Familia o la Personería, prevaleciendo el interés superior de la niña por encima de órdenes jerárquicas internas."
+      },
+      {
+        "id": "C",
+        "texto": "Confrontar a los padres a la salida del colegio exigiendo explicaciones bajo amenaza de no dejar entrar a la niña."
+      },
+      {
+        "id": "D",
+        "texto": "Esperar a que finalice el año lectivo para incluir la observación en el informe cualitativo del boletín."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El artículo 44 del Código de la Infancia y la Adolescencia (Ley 1098) establece el deber de denuncia obligatoria e inmediata para los educadores frente a cualquier indicio de vulneración de derechos de los menores. El principio del Interés Superior del Niño prevalece sobre cualquier orden o directriz institucional."
+  },
+  {
+    "id": "JUR_002",
+    "area": "Módulo Especial Premium - Casos Jurídicos y Debido Proceso",
+    "tema": "Libertad de Cultos, Laicidad y Derechos Fundamentales",
+    "norma_referencia": "Constitución Política de 1991 (Art. 19) / Ley 115 de 1994",
+    "contexto": "En un colegio público, la directiva programa eucaristías católicas obligatorias todos los primeros viernes del mes y asigna una nota de la asignatura de Religión a la asistencia. Un estudiante y su familia profesan un culto distinto y solicitan ser eximidos.",
+    "pregunta": "De acuerdo con los principios constitucionales de laicidad del Estado y la libertad de cultos en la educación pública:",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El colegio puede obligar al estudiante porque las decisiones del Consejo Directivo priman sobre las creencias individuales."
+      },
+      {
+        "id": "B",
+        "texto": "El colegio debe garantizar el derecho a la objeción de conciencia, ofreciendo actividades pedagógicas alternativas no confesionales sin afectar la evaluación académica del estudiante."
+      },
+      {
+        "id": "C",
+        "texto": "El estudiante debe ser reprobado en la asignatura de Religión por inasistencia justificada."
+      },
+      {
+        "id": "D",
+        "texto": "La familia debe ser reportada ante el ICBF por negarse a participar en la vida cultural del colegio."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El artículo 19 de la Constitución Política y la Ley 115 garantizan la libertad de cultos. En las instituciones educativas oficiales, la educación religiosa no puede ser confensional ni obligatoria, debiendo ofrecerse alternativas para quienes ejerzan su derecho a no profesarla."
+  }
+]

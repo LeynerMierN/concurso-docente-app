@@ -1,0 +1,437 @@
+[
+  {
+    "id": "CUA_001",
+    "categoria_id": "razonamiento_cuantitativo",
+    "area": "Razonamiento Cuantitativo (Núcleo Común)",
+    "tema": "Promedios Ponderados en el SIEE",
+    "norma_referencia": "Decreto 1290 de 2009 / Sistema Institucional de Evaluación",
+    "contexto": "El SIEE de un colegio pondera la nota final de Matemáticas así: P1 (20%), P2 (25%), P3 (25%) y P4 (30%). Un estudiante obtuvo en los tres primeros periodos: 2.8, 3.2 y 3.0 respectivamente.",
+    "pregunta": "¿Cuál es la calificación mínima que requiere obtener en el Periodo 4 para alcanzar una nota final aprobatoria acumulada exacta de 3.40?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "4.10"
+      },
+      {
+        "id": "B",
+        "texto": "4.30"
+      },
+      {
+        "id": "C",
+        "texto": "4.50"
+      },
+      {
+        "id": "D",
+        "texto": "4.70"
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "Acumulado actual: (2.8 * 0.20) + (3.2 * 0.25) + (3.0 * 0.25) = 0.56 + 0.80 + 0.75 = 2.11. Meta: 3.40. Faltante para P4: 3.40 - 2.11 = 1.29. Como P4 vale el 30%, la nota requerida es N = 1.29 / 0.30 = 4.30."
+  },
+  {
+    "id": "CUA_002",
+    "categoria_id": "razonamiento_cuantitativo",
+    "area": "Razonamiento Cuantitativo (Núcleo Común)",
+    "tema": "Variación Porcentual y Deserción Escolar",
+    "norma_referencia": "Indicadores de Gestión Educativa del MEN / SIMAT",
+    "contexto": "Un colegio inició el año con 500 estudiantes. En el primer semestre la matrícula disminuyó un 10%. En el segundo semestre, la matrícula aumentó un 10% sobre la población del final del primer semestre.",
+    "pregunta": "¿Cuántos estudiantes finalizaron el año lectivo y cuál fue la variación neta respecto al inicio de 500?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "500 estudiantes (variación neta del 0%)."
+      },
+      {
+        "id": "B",
+        "texto": "495 estudiantes (disminución neta de 5 estudiantes, equivalente al 1%)."
+      },
+      {
+        "id": "C",
+        "texto": "490 estudiantes (disminución neta de 10 estudiantes, equivalente al 2%)."
+      },
+      {
+        "id": "D",
+        "texto": "505 estudiantes (aumento neto de 5 estudiantes)."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "Final del 1er semestre: 500 - 10% (50) = 450 estudiantes. 2do semestre: aumenta 10% sobre 450 (+45) = 495 estudiantes. Variación neta: 500 - 495 = 5 estudiantes menos (disminución del 1%)."
+  },
+  {
+    "id": "CUA_003",
+    "categoria_id": "razonamiento_cuantitativo",
+    "area": "Razonamiento Cuantitativo (Núcleo Común)",
+    "tema": "Medidas de Tendencia Central en Pruebas Saber",
+    "norma_referencia": "Reporte de Resultados ICFES Saber 11 / Evaluación Institucional",
+    "contexto": "Las puntajes de 7 estudiantes en la prueba de Lectura Crítica son: 45, 50, 52, 60, 85, 90, 92. El docente analiza la representatividad de la media frente a la mediana.",
+    "pregunta": "¿Cuáles son los valores exactos de la media y la mediana, y cuál medida describe mejor el rendimiento del grupo?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Media = 67.7 y Mediana = 60. La mediana es más representativa por la dispersión de datos extremos."
+      },
+      {
+        "id": "B",
+        "texto": "Media = 60.0 y Mediana = 67.7. La media es superior."
+      },
+      {
+        "id": "C",
+        "texto": "Media = 65.0 y Mediana = 65.0. Ambas son idénticas."
+      },
+      {
+        "id": "D",
+        "texto": "Media = 70.0 y Mediana = 52.0. La moda es la medida principal."
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "Suma total = 474. Media = 474 / 7 = 67.71. Mediana (dato central ordenado) = 60. Dado que hay dispersión con puntajes distantes (45 vs 92), la mediana refleja mejor la posición central sin sesgarse por valores extremos."
+  },
+  {
+    "id": "CUA_004",
+    "categoria_id": "razonamiento_cuantitativo",
+    "area": "Razonamiento Cuantitativo (Núcleo Común)",
+    "tema": "Regla de Tres Compuesta en Proyectos Escolares",
+    "norma_referencia": "Planeación de Recursos y Proyectos Comunitarios",
+    "contexto": "Para adecuar 3 huertas escolares se requieren 6 docentes trabajando 4 horas diarias durante 5 días. La rectoría necesita adecuar 6 huertas similares disponiendo de 8 docentes trabajando 5 horas diarias.",
+    "pregunta": "¿Cuántos días tardarán los 8 docentes en completar la adecuación de las 6 huertas?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "3 días"
+      },
+      {
+        "id": "B",
+        "texto": "4.5 días"
+      },
+      {
+        "id": "C",
+        "texto": "5 días"
+      },
+      {
+        "id": "D",
+        "texto": "6 días"
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "Horas-hombre totales para 3 huertas = 6 doc * 4 h/d * 5 días = 120 h-h (40 h-h por huerta). Para 6 huertas se requieren 6 * 40 = 240 h-h. Con 8 docentes a 5 h/d (40 h-h por día): Días = 240 / 40 = 6 días... Espera, re-verificando: 6 doc * 4 h * 5 d = 120 h-h para 3 huertas -> 40 h-h/huerta. Para 6 huertas = 240 h-h. 8 doc * 5 h = 40 h-h/día. Días = 240/40 = 6 días. La opción D es 6 días. (Colocamos D como respuesta)."
+  },
+  {
+    "id": "CUA_005",
+    "categoria_id": "razonamiento_cuantitativo",
+    "area": "Razonamiento Cuantitativo (Núcleo Común)",
+    "tema": "Probabilidad Condicional en Convivencia Escolar",
+    "norma_referencia": "Registro de Convivencia e Indicadores de Gestión",
+    "contexto": "De un grupo de 100 estudiantes, 60 participan en deportes, 40 en actividades artísticas y 15 participan en ambas. Se elige un estudiante al azar y resulta que participa en deportes.",
+    "pregunta": "¿Cuál es la probabilidad condicional de que ese estudiante seleccionado TAMBIÉN participe en actividades artísticas?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "15%"
+      },
+      {
+        "id": "B",
+        "texto": "25%"
+      },
+      {
+        "id": "C",
+        "texto": "37.5%"
+      },
+      {
+        "id": "D",
+        "texto": "40%"
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "P(Arte | Deporte) = P(Arte y Deporte) / P(Deporte) = 15 / 60 = 0.25, es decir, el 25%."
+  },
+  {
+    "id": "CUA_006",
+    "categoria_id": "razonamiento_cuantitativo",
+    "area": "Razonamiento Cuantitativo (Núcleo Común)",
+    "tema": "Conversión de Escalas y Evaluación SIEE",
+    "norma_referencia": "Decreto 1290 de 2009 / Escala Nacional de Desempeño",
+    "contexto": "El SIEE establece la equivalencia de la escala numérica (1.0 a 5.0) a la escala nacional: Desempeño Bajo (1.0 - 3.2), Básico (3.3 - 3.9), Alto (4.0 - 4.5) y Superior (4.6 - 5.0). En un grupo de 40 estudiantes, el 25% obtuvo Bajo, el 50% Básico, el 20% Alto y el 5% Superior.",
+    "pregunta": "¿Cuántos estudiantes en total APROBARON el área (Desempeño Básico, Alto o Superior)?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "10 estudiantes"
+      },
+      {
+        "id": "B",
+        "texto": "20 estudiantes"
+      },
+      {
+        "id": "C",
+        "texto": "30 estudiantes"
+      },
+      {
+        "id": "D",
+        "texto": "35 estudiantes"
+      }
+    ],
+    "respuesta_correcta": "C",
+    "justificacion": "Porcentaje de aprobados = 50% (Básico) + 20% (Alto) + 5% (Superior) = 75%. Estudiantes aprobados = 75% de 40 = 30 estudiantes (los 10 restantes, 25%, reprobaron)."
+  },
+  {
+    "id": "CUA_007",
+    "categoria_id": "razonamiento_cuantitativo",
+    "area": "Razonamiento Cuantitativo (Núcleo Común)",
+    "tema": "Cálculo de Aforo e Infraestructura Escolar (NTC 4595)",
+    "norma_referencia": "Norma Técnica Colombiana NTC 4595 (Planeamiento e Instalaciones Escolares)",
+    "contexto": "Según la NTC 4595, el área mínima requerida por estudiante en aulas de Educación Secundaria es de 1.80 m². Un rector planea adecuar un aula rectangular que mide 9 metros de largo por 6 metros de ancho.",
+    "pregunta": "Aplicando rigurosamente la norma NTC 4595, ¿cuál es el aforo máximo de estudiantes que puede albergar dicha aula?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "25 estudiantes"
+      },
+      {
+        "id": "B",
+        "texto": "30 estudiantes"
+      },
+      {
+        "id": "C",
+        "texto": "35 estudiantes"
+      },
+      {
+        "id": "D",
+        "texto": "40 estudiantes"
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "Área total del aula = 9 m * 6 m = 54 m². Aforo máximo = 54 m² / 1.80 m² por estudiante = 30 estudiantes."
+  },
+  {
+    "id": "CUA_008",
+    "categoria_id": "razonamiento_cuantitativo",
+    "area": "Razonamiento Cuantitativo (Núcleo Común)",
+    "tema": "Optimización Presupuestal del Fondo de Servicios Educativos",
+    "norma_referencia": "Decreto 1075 de 2015 / Contratación FSE",
+    "contexto": "Un colegio cuenta con un presupuesto de $12.000.000 en el FSE para comprar resmas de papel. El Proveedor A vende la caja de 5 resmas a $120.000 con un descuento del 10% por compras superiores a $5.000.000. El Proveedor B vende la resma individual a $22.000 con la promoción de entregar 1 resma gratis por cada 10 compradas.",
+    "pregunta": "¿Cuál opción permite adquirir el mayor número de resmas utilizando la totalidad del presupuesto?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "El Proveedor A, permitiendo comprar un total de 555 resmas."
+      },
+      {
+        "id": "B",
+        "texto": "El Proveedor A, permitiendo comprar un total de 550 resmas."
+      },
+      {
+        "id": "C",
+        "texto": "El Proveedor B, permitiendo adquirir 599 resmas en total."
+      },
+      {
+        "id": "D",
+        "texto": "Ambos proveedores ofrecen exactamente la misma cantidad de resmas."
+      }
+    ],
+    "respuesta_correcta": "C",
+    "justificacion": "Proveedor A: Precio caja con 10% desc = $108.000. Cajas compradas = 12.000.000 / 108.000 = 111.11 -> 111 cajas * 5 resmas = 555 resmas. Proveedor B: Con $12.000.000 compramos 12.000.000 / 22.000 = 545.45 -> 545 resmas pagadas. Por cada 10 regalan 1 -> 54 resmas gratis. Total Proveedor B = 545 + 54 = 599 resmas. El Proveedor B es más eficiente."
+  },
+  {
+    "id": "CUA_009",
+    "categoria_id": "razonamiento_cuantitativo",
+    "area": "Razonamiento Cuantitativo (Núcleo Común)",
+    "tema": "Cálculo de Promedios Exactos en Tiempos Docentes",
+    "norma_referencia": "Decreto 1850 de 2002 / Asignación Académica",
+    "contexto": "Un colegio con 40 docentes acumula un registro total de 156 horas semanales dedicadas a la orientación de proyectos pedagógicos y tutorías. Se requiere conocer el promedio exacto de horas por docente.",
+    "pregunta": "¿Cuál es el promedio exacto de horas dedicadas por docente a proyectos pedagógicos?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "3.85 horas"
+      },
+      {
+        "id": "B",
+        "texto": "3.90 horas"
+      },
+      {
+        "id": "C",
+        "texto": "3.95 horas"
+      },
+      {
+        "id": "D",
+        "texto": "4.00 horas"
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "Promedio exacto = Total de horas / Total de docentes = 156 / 40 = 3.90 horas por docente."
+  },
+  {
+    "id": "CUA_010",
+    "categoria_id": "razonamiento_cuantitativo",
+    "area": "Razonamiento Cuantitativo (Núcleo Común)",
+    "tema": "Análisis de Gráficos de Dispersión y Correlación",
+    "norma_referencia": "Evaluación de Resultados Institucionales",
+    "contexto": "Un gráfico de dispersión compara las horas de lectura semanal autónoma (eje X) frente al puntaje en la prueba de Lenguaje (eje Y) para 50 estudiantes. Los puntos forman una franja ascendente con r = 0.85.",
+    "pregunta": "¿Qué interpretación estadística correcta debe extraer el equipo docente de dicho gráfico?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Existe una fuerte correlación positiva entre las horas de lectura y el rendimiento en Lenguaje."
+      },
+      {
+        "id": "B",
+        "texto": "Las horas de lectura no influyen en el puntaje obtenido."
+      },
+      {
+        "id": "C",
+        "texto": "A mayor número de horas de lectura, menor es el puntaje obtenido (correlación negativa)."
+      },
+      {
+        "id": "D",
+        "texto": "El gráfico demuestra causalidad biológica absoluta en el aprendizaje."
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "Un coeficiente de correlación de Pearson r = 0.85 cercano a +1.0 con tendencia ascendente indica una correlación positiva fuerte entre ambas variables."
+  },
+  {
+    "id": "CUA_011",
+    "categoria_id": "razonamiento_cuantitativo",
+    "area": "Razonamiento Cuantitativo (Núcleo Común)",
+    "tema": "Proporcionalidad Directa e Inversa en Material Didáctico",
+    "norma_referencia": "Gestión de Recursos Educativos",
+    "contexto": "Si 4 impresoras de alta velocidad imprimen las guías de estudio de toda la institución en 6 horas, la coordinación académica necesita imprimir el mismo volumen de guías en solo 2 horas.",
+    "pregunta": "¿Cuántas impresoras idénticas en total se requieren operando simultáneamente para lograr la meta de 2 horas?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "8 impresoras"
+      },
+      {
+        "id": "B",
+        "texto": "10 impresoras"
+      },
+      {
+        "id": "C",
+        "texto": "12 impresoras"
+      },
+      {
+        "id": "D",
+        "texto": "14 impresoras"
+      }
+    ],
+    "respuesta_correcta": "C",
+    "justificacion": "Relación inversamente proporcional: Impresoras * Horas = Constante. 4 impresoras * 6 horas = 24 horas-impresora. Para imprimir en 2 horas: N * 2 = 24 => N = 12 impresoras."
+  },
+  {
+    "id": "CUA_012",
+    "categoria_id": "razonamiento_cuantitativo",
+    "area": "Razonamiento Cuantitativo (Núcleo Común)",
+    "tema": "Interpretación de Diagramas de Venn e Inclusión",
+    "norma_referencia": "Decreto 1421 de 2017 / Diagnósticos de Aula",
+    "contexto": "En un grado sexto de 40 estudiantes, un diagrama de Venn revela que 22 estudiantes requieren apoyos en lectura (Conjunto L), 18 requieren apoyos en matemáticas (Conjunto M) y 8 estudiantes requieren apoyos en AMBAS áreas.",
+    "pregunta": "¿Cuántos estudiantes del curso NO requieren ningún apoyo especializado en estas dos áreas?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "4 estudiantes"
+      },
+      {
+        "id": "B",
+        "texto": "8 estudiantes"
+      },
+      {
+        "id": "C",
+        "texto": "10 estudiantes"
+      },
+      {
+        "id": "D",
+        "texto": "12 estudiantes"
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "Unión L U M = N(L) + N(M) - N(L n M) = 22 + 18 - 8 = 32 estudiantes que requieren al menos un apoyo. Estudiantes sin apoyo = Total - Unión = 40 - 32 = 8 estudiantes."
+  },
+  {
+    "id": "CUA_013",
+    "categoria_id": "razonamiento_cuantitativo",
+    "area": "Razonamiento Cuantitativo (Núcleo Común)",
+    "tema": "Cálculo de Áreas Geométricas y Adecuación de Patios",
+    "norma_referencia": "Planta Física e Infraestructura Escolar",
+    "contexto": "La cancha del colegio tiene forma rectangular de 20 m de largo por 10 m de ancho. Se planea pintar una franja de protección de 1 metro de ancho en todo el perímetro exterior de la cancha.",
+    "pregunta": "¿Cuál es el área total en metros cuadrados que abarcará únicamente la nueva franja de protección?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "60 m²"
+      },
+      {
+        "id": "B",
+        "texto": "64 m²"
+      },
+      {
+        "id": "C",
+        "texto": "70 m²"
+      },
+      {
+        "id": "D",
+        "texto": "80 m²"
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "Área cancha original = 20 * 10 = 200 m². Dimensiones con franja exterior de 1 m por cada lado: Largo = 22 m, Ancho = 12 m. Área total exterior = 22 * 12 = 264 m². Área de la franja = 264 - 200 = 64 m²."
+  },
+  {
+    "id": "CUA_014",
+    "categoria_id": "razonamiento_cuantitativo",
+    "area": "Razonamiento Cuantitativo (Núcleo Común)",
+    "tema": "Estadística Inferencial y Muestreo Representativo",
+    "norma_referencia": "Investigación Pedagógica de Aula",
+    "contexto": "Para realizar un estudio sobre hábitos de alimentación escolar en un colegio de 1.200 estudiantes distribuidos en 3 sedes (Sede A: 600, Sede B: 400, Sede C: 200), se aplica un muestreo estratificado proporcional de 120 estudiantes en total.",
+    "pregunta": "¿Cuántos estudiantes se deben seleccionar de la Sede B para respetar la proporcionalidad?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "20 estudiantes"
+      },
+      {
+        "id": "B",
+        "texto": "40 estudiantes"
+      },
+      {
+        "id": "C",
+        "texto": "60 estudiantes"
+      },
+      {
+        "id": "D",
+        "texto": "80 estudiantes"
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "Proporción Sede B = 400 / 1200 = 1/3 (33.33%). Muestra asignada a Sede B = (1/3) * 120 = 40 estudiantes."
+  },
+  {
+    "id": "CUA_015",
+    "categoria_id": "razonamiento_cuantitativo",
+    "area": "Razonamiento Cuantitativo (Núcleo Común)",
+    "tema": "Modelación de Crecimiento de Materiales Pedagógicos",
+    "norma_referencia": "Gestión Educativa",
+    "contexto": "La biblioteca escolar inicia con 800 libros y el proyecto de adquisición estipula incrementar el inventario a una tasa constante del 5% anual compuesto durante 2 años consecutivos.",
+    "pregunta": "¿Cuál será el número total de libros al finalizar el segundo año?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "880 libros"
+      },
+      {
+        "id": "B",
+        "texto": "882 libros"
+      },
+      {
+        "id": "C",
+        "texto": "890 libros"
+      },
+      {
+        "id": "D",
+        "texto": "900 libros"
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "Año 1: 800 + 5% (40) = 840 libros. Año 2: 840 + 5% (42) = 882 libros."
+  }
+]

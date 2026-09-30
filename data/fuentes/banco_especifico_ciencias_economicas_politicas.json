@@ -1,0 +1,282 @@
+[
+  {
+    "id": "ECO_001",
+    "area": "Competencias Específicas - Ciencias Económicas y Políticas",
+    "tema": "Sistemas Económicos, Macroeconomía y Política Fiscal/Monetaria",
+    "norma_referencia": "Estándares Básicos de Competencias en Ciencias Sociales / Ley 115 de 1994",
+    "contexto": "En la asignatura de Ciencias Económicas y Políticas de grado 11°, el docente analiza el fenómeno de la inflación y las decisiones del Banco de la República al modificar la tasa de interés de intervención.",
+    "pregunta": "¿Cuál es la relación de causa y efecto macroeconómica que los estudiantes deben deducir cuando el Banco de la República sube las tasas de interés para contener la inflación?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Al subir las tasas, el crédito se encarece, lo que desestimula el consumo y la inversión, reduciendo la presión sobre la demanda agregada y desacelerando el crecimiento de los precios."
+      },
+      {
+        "id": "B",
+        "texto": "Al subir las tasas, el dinero se regalaba en las calles provocando hiperinflación inmediata."
+      },
+      {
+        "id": "C",
+        "texto": "La tasa de interés no tiene ningún impacto en la circulación del dinero ni en las decisiones de ahorro."
+      },
+      {
+        "id": "D",
+        "texto": "Subir la tasa de interés aumenta automáticamente los salarios de todos los trabajadores informales."
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "En la enseñanza de la economía escolar (Estándares MEN), la comprensión del mecanismo de transmisión de la política monetaria permite a los jóvenes interpretar las decisiones económicas nacionales y su impacto en la canasta familiar."
+  },
+  {
+    "id": "ECO_002",
+    "area": "Competencias Específicas - Ciencias Económicas y Políticas",
+    "tema": "Constitución Política, Estado Social de Derecho y Mecanismos de Participación",
+    "norma_referencia": "Sentencia SU-095 de 2018 (Corte Constitucional) / Principio de Concurrencia",
+    "contexto": "En un municipio se propone realizar una consulta popular de iniciativa local para prohibir las actividades de exploración y explotación minera e hidrocarburífera en todo el territorio municipal. Un docente de Ciencias Políticas aborda el caso con sus estudiantes de grado 11° para analizar los límites competenciales de los entes territoriales.",
+    "pregunta": "De acuerdo con la jurisprudencia constitucional vigente (Sentencia SU-095 de 2018), ¿cuál es la validez jurídica de la consulta popular municipal en materia minera?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Es plenamente vinculante y puede vetar unilateralmente proyectos mineros aprobados por la Nación."
+      },
+      {
+        "id": "B",
+        "texto": "Carece de competencia para vetar unilateralmente la actividad minera, pues la ordenación del subsuelo es del nivel nacional, requiriéndose mecanismos de concertación y concurrencia Nación-Territorio."
+      },
+      {
+        "id": "C",
+        "texto": "Es inconstitucional porque los entes territoriales no tienen ninguna autonomía sobre el uso del suelo."
+      },
+      {
+        "id": "D",
+        "texto": "Debe ser aprobada exclusivamente por el Concejo Municipal sin intervención de autoridades ambientales."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La Sentencia Unificada SU-095 de 2018 de la Corte Constitucional determinó que los municipios no pueden utilizar consultas populares para vetar de forma unilateral proyectos mineros o de hidrocarburos, ya que el subsuelo es propiedad del Estado y debe primar el principio de concurrencia y coordinación entre la Nación y los entes territoriales."
+  },
+  {
+    "id": "ECO_003",
+    "area": "Competencias Específicas - Ciencias Económicas y Políticas",
+    "tema": "Educación Económica y Financiera (EEF - Ley 1450 de 2011)",
+    "norma_referencia": "Orientaciones para la Educación Económica y Financiera (EEF) MEN / Ley 1450",
+    "contexto": "El docente de grado 10° diseña un taller donde los estudiantes construyen un presupuesto familiar mensual, diferenciando entre ingresos fijos/variables y gastos necesarios/prescindibles, analizando el endeudamiento.",
+    "pregunta": "¿Cuál es el objetivo formativo central del Programa de Educación Económica y Financiera del MEN?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Convertir a los estudiantes en corredores de bolsa especulativos desde la educación media."
+      },
+      {
+        "id": "B",
+        "texto": "Fomentar la toma de decisiones financieras informadas, conscientes y responsables que promuevan el bienestar individual, familiar y comunitario a lo largo de la vida."
+      },
+      {
+        "id": "C",
+        "texto": "Promover la acumulación ilimitada de dinero sin considerar la ética social."
+      },
+      {
+        "id": "D",
+        "texto": "Reemplazar las asignaturas de Ciencias Sociales por contabilidad bancaria."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "Las orientaciones del MEN para la EEF buscan desarrollar competencias ciudadanas y económicas para el manejo responsable de los recursos, la prevención del sobreendeudamiento y la planeación del futuro."
+  },
+  {
+    "id": "ECO_004",
+    "area": "Competencias Específicas - Ciencias Económicas y Políticas",
+    "tema": "Desarrollo Sostenible, Globalización y Cadenas Globales de Valor",
+    "norma_referencia": "Estándares Básicos de Ciencias Sociales / Objetivos de Desarrollo Sostenible (ODS)",
+    "contexto": "Al estudiar la cadena global de producción textil, los estudiantes descubren que la ropa económica comprada en las ciudades colombianas suele ser confeccionada en países en desarrollo bajo condiciones laborales precarias y alto impacto ambiental.",
+    "pregunta": "Desde la enseñanza de las ciencias económicas y políticas, ¿cuál es el análisis crítico que debe promoverse?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Celebrar el consumo desmedido sin importar los costos sociales y ecológicos en el lugar de origen."
+      },
+      {
+        "id": "B",
+        "texto": "Comprender la interconexión de los mercados globales, las externalidades ambientales y promover el consumo responsable y el comercio justo."
+      },
+      {
+        "id": "C",
+        "texto": "Prohibir la compra de cualquier prenda de vestir importada."
+      },
+      {
+        "id": "D",
+        "texto": "Afirmar que la economía global no tiene relación con los derechos humanos de los trabajadores."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El análisis de las cadenas globales de valor en ciencias políticas y económicas desarrolla la conciencia global, la ética del consumo y la comprensión de las relaciones centro-periferia."
+  },
+  {
+    "id": "ECO_005",
+    "area": "Competencias Específicas - Ciencias Económicas y Políticas",
+    "tema": "Sistemas de Gobierno, Democracia Representativa vs Participativa",
+    "norma_referencia": "Constitución Política de 1991 / Estándares de Ciencias Sociales",
+    "contexto": "Se debate en clase la diferencia entre la Constitución de 1886 (Democracia Representativa) y la de 1991 (Estado Social de Derecho y Democracia Participativa).",
+    "pregunta": "¿Cuál es el giro sustancial en el rol del ciudadano impulsado por la Carta de 1991?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Limitar el papel del ciudadano exclusivamente al ejercicio del voto cada cuatro años."
+      },
+      {
+        "id": "B",
+        "texto": "Reconocer al ciudadano como actor político activo con capacidad de intervención, fiscalización, veeduría y decisión constante en la gestión pública y la defensa de derechos."
+      },
+      {
+        "id": "C",
+        "texto": "Eliminar la división de poderes del Estado (Ejecutivo, Legislativo, Judicial)."
+      },
+      {
+        "id": "D",
+        "texto": "Establecer la obligatoriedad del servicio militar para poder opinar sobre política."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La Constitución de 1991 transforma la concepción de ciudadanía, pasando de la mera delegación electoral a la participación activa en las decisiones que afectan la vida económica, política y social de la nación."
+  },
+  {
+    "id": "ECO_006",
+    "area": "Competencias Específicas - Ciencias Económicas y Políticas",
+    "tema": "Trabajo Informa, Mercado Laboral y Seguridad Social en Colombia",
+    "norma_referencia": "Estándares de Ciencias Sociales / DANE / Código Sustantivo del Trabajo",
+    "contexto": "El docente analiza los datos del DANE que señalan que más del 50% de la población ocupada en Colombia se encuentra en la informalidad laboral.",
+    "pregunta": "¿Qué consecuencias socioeconómicas críticas deben inferir los estudiantes a partir de este indicador?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Que la economía informal no afecta la recaudación tributaria ni el sistema pensional."
+      },
+      {
+        "id": "B",
+        "texto": "La vulnerabilidad de los trabajadores frente a riesgos de vejez, enfermedad y accidentes, y la fragilidad del recaudo para la sostenibilidad de la protección social."
+      },
+      {
+        "id": "C",
+        "texto": "Que la informalidad es la forma más eficiente y deseable de desarrollo económico nacional."
+      },
+      {
+        "id": "D",
+        "texto": "Que los trabajadores informales cuentan con estabilidad laboral reforzada por ley."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El estudio de la estructura del mercado laboral colombiano permite a los estudiantes comprender las causas estructurales de la pobreza, la desigualdad y los retos del sistema de seguridad social."
+  },
+  {
+    "id": "ECO_007",
+    "area": "Competencias Específicas - Ciencias Económicas y Políticas",
+    "tema": "Geopolítica, Relaciones Internacionales y Organismos Multilaterales",
+    "norma_referencia": "Estándares Básicos de Ciencias Sociales (Grados 10°-11°)",
+    "contexto": "En el marco de la ONU o la OEA, se discute el papel de las sanciones económicas internacionales y las misiones de paz en la resolución de conflictos entre estados.",
+    "pregunta": "¿Qué competencia de pensamiento sistémico promueve este análisis en ciencias políticas?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Comprender la soberanía de los estados en equilibrio con el derecho internacional público, la diplomacia y el multilateralismo."
+      },
+      {
+        "id": "B",
+        "texto": "Aceptar que los países poderosos pueden invadir fronteras sin rendir cuentas a ningún organismo."
+      },
+      {
+        "id": "C",
+        "texto": "Memorizar los nombres de todos los embajadores del mundo."
+      },
+      {
+        "id": "D",
+        "texto": "Desconocer el valor de los tratados internacionales firmados por Colombia."
+      }
+    ],
+    "respuesta_correcta": "A",
+    "justificacion": "El análisis del derecho internacional y los organismos multilaterales desarrolla en los estudiantes la capacidad de interpretar el orden global y el papel de la diplomacia en la paz mundial."
+  },
+  {
+    "id": "ECO_008",
+    "area": "Competencias Específicas - Ciencias Económicas y Políticas",
+    "tema": "Evaluación Formativa e Interpretación de Indicadores (PIB, Gini, HDI)",
+    "norma_referencia": "Decreto 1290 de 2009 / Estándares de Ciencias Sociales",
+    "contexto": "Al evaluar un taller sobre desigualdad, el docente observa que un estudiante confunde el Producto Interno Bruto (PIB) con el Coeficiente de Gini, afirmando que 'si el PIB de un país crece, automáticamente disminuye la pobreza de todos sus habitantes'.",
+    "pregunta": "¿Cómo debe realizar el docente la retroalimentación formativa?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Calificar con cero sin explicar la diferencia entre ambos indicadores."
+      },
+      {
+        "id": "B",
+        "texto": "Aclarar que el PIB mide la producción total de bienes y servicios (crecimiento), mientras que el Coeficiente de Gini mide la concentración o distribución del ingreso (equidad), mostrando casos donde hay crecimiento económico con alta desigualdad."
+      },
+      {
+        "id": "C",
+        "texto": "Decirle que los números en economía no importan."
+      },
+      {
+        "id": "D",
+        "texto": "Confirmar el error del estudiante como una verdad teórica indiscutible."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La evaluación formativa (Decreto 1290) exige corregir los sesgos conceptuales demostrando la diferencia analítica entre el volumen de producción (PIB) y la distribución del ingreso (Gini)."
+  },
+  {
+    "id": "ECO_009",
+    "area": "Competencias Específicas - Ciencias Económicas y Políticas",
+    "tema": "Políticas Públicas y Análisis de Problemas Sociales",
+    "norma_referencia": "Estándares Básicos de Ciencias Sociales / Lineamientos MEN",
+    "contexto": "Los estudiantes investigan la problemática del desempleo juvenil en su municipio para proponer una iniciativa de política pública local ante el Concejo Municipal.",
+    "pregunta": "¿Cuál es la fase inicial fundamental del ciclo de políticas públicas que deben aplicar los estudiantes?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Gastar el presupuesto de contratación inmediatamente sin diagnóstico."
+      },
+      {
+        "id": "B",
+        "texto": "La identificación, caracterización y delimitación clara del problema público con datos empíricos y participación de los actores involucrados."
+      },
+      {
+        "id": "C",
+        "texto": "Evaluar los resultados antes de haber diseñado el programa."
+      },
+      {
+        "id": "D",
+        "texto": "Copiar una ley de un país extranjero sin adaptar al contexto local."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El ciclo de políticas públicas requiere en su primera etapa la estructuración del problema público mediante diagnósticos participativos y basados en evidencia."
+  },
+  {
+    "id": "ECO_010",
+    "area": "Competencias Específicas - Ciencias Económicas y Políticas",
+    "tema": "Inclusión y Enfoque de Género en la Economía (Trabajo Doméstico No Remunerado)",
+    "norma_referencia": "Ley 1413 de 2010 (Economía del Cuidado) / Decreto 1421 de 2017",
+    "contexto": "En la unidad de contabilidad social, el docente presenta la Ley 1413 de 2010 que regula la inclusión del trabajo doméstico y de cuidado no remunerado en la Cuenta Satélite del PIB en Colombia.",
+    "pregunta": "¿Qué visibilización ética y económica promueve esta norma en la enseñanza de la economía?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Sugerir que las labores del hogar no tienen ningún valor económico para la sociedad."
+      },
+      {
+        "id": "B",
+        "texto": "Reconocer y valorar el aporte económico fundamental de la economía del cuidado (realizada mayoritariamente por mujeres) para la reproducción social y la sostenibilidad del sistema productivo."
+      },
+      {
+        "id": "C",
+        "texto": "Prohibir que los hombres colaboren en el hogar."
+      },
+      {
+        "id": "D",
+        "texto": "Reducir la economía a las transacciones que ocurren en la bolsa de valores."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La Ley 1413 de 2010 visibiliza la contribución de la Economía del Cuidado al desarrollo nacional, fomentando un enfoque de equidad de género en el análisis económico escolar."
+  }
+]

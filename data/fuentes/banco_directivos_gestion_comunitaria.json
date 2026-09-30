@@ -1,0 +1,282 @@
+[
+  {
+    "id": "DIR_COM_001",
+    "area": "Competencias Específicas - Directivos Docentes",
+    "tema": "Liderazgo en el Comité Escolar de Convivencia y Ruta de Atención Integral",
+    "norma_referencia": "Ley 1620 de 2013 / Decreto 1965 de 2013 / Guía Pedagógica No. 49",
+    "contexto": "El Rector de una institución educativa es informado por el Orientador Escolar de un caso que involucra la presunta venta de sustancias psicoactivas dentro del colegio por parte de un estudiante de grado 10°, hecho que constituye una Situación Tipo III (presunta comisión de un delito). Algunos miembros del Consejo Directivo sugieren expulsar inmediatamente al estudiante esa misma tarde para 'proteger el buen nombre de la institución' antes de informar a las autoridades.",
+    "pregunta": "¿Cuál es la actuación legal y directiva correcta que debe asumir el Rector como Presidente del Comité Escolar de Convivencia?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Firmar la resolución rectoral de expulsión inmediata y cancelar la matrícula del estudiante sin convocar al Comité de Convivencia."
+      },
+      {
+        "id": "B",
+        "texto": "Activar de inmediato el componente de atención de la Ruta de Atención Integral, reportando el caso a la Policía de Infancia y Adolescencia y al ICBF, informando a los acudientes, garantizando el debido proceso sin desescolarizar de manera intempestiva y garantizando los derechos del estudiante."
+      },
+      {
+        "id": "C",
+        "texto": "Ocultar la situación a las autoridades externas y citar a los padres del estudiante para exigirles que presenten la renuncia voluntaria al cupo escolar."
+      },
+      {
+        "id": "D",
+        "texto": "Someter a votación del personero estudiantil y el consejo de grupo si el estudiante debe ser entregado o no a las autoridades."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "Según la Ley 1620 de 2013 y el Decreto 1965 de 2013, ante una Situación Tipo III (que involucra la presunta comisión de un delito), la institución debe activar de inmediato la Ruta de Atención Integral reportando a las autoridades competentes (Policía de Infancia y Adolescencia, ICBF y/o Fiscalía). Las sanciones arbitrarias o la expulsión sumaria violan el debido proceso y los derechos fundamentales a la educación y a la protección integral definidos en la Ley 1098 de 2006."
+  },
+  {
+    "id": "DIR_COM_002",
+    "area": "Competencias Específicas - Directivos Docentes",
+    "tema": "Corresponsabilidad Familia-Escuela y Alianzas Comunitarias",
+    "norma_referencia": "Ley 115 de 1994 (Art. 7°) / Ley 2025 de 2020 (Escuela de Padres)",
+    "contexto": "Durante la consolidación de indicadores de participación familiar, la Coordinación de una sede educativa reporta que el 35% de los acudientes de estudiantes con bajo desempeño académico o fallas recurrentes de convivencia no asisten a las citaciones ni a los talleres de la Escuela de Padres. Varios docentes proponen aplicar sanciones económicas o prohibir el ingreso de los estudiantes a clase hasta que sus acudientes se presenten.",
+    "pregunta": "Desde la Gestión Comunitaria y el marco de la Ley 2025 de 2020, ¿cuál es la estrategia directiva adecuada para fortalecer la corresponsabilidad sin vulnerar derechos?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Aprobar la suspensión temporal del derecho a la educación de los estudiantes cuyos padres no asistan a las reuniones escolares."
+      },
+      {
+        "id": "B",
+        "texto": "Diseñar e implementar una estrategia flexible de formación a familias (Escuela de Padres) con diversos horarios, formatos híbridos o virtuales, alianzas con líderes comunitarios y visitas domiciliarias del equipo de orientación para flexibilizar canales y hacer efectivo el compromiso familiar."
+      },
+      {
+        "id": "C",
+        "texto": "Establecer multas económicas obligatorias cobradas en la planilla de matrícula anual para los acudientes ausentes."
+      },
+      {
+        "id": "D",
+        "texto": "Remitir automáticamente las hojas de vida de todos los estudiantes afectados a la Comisaría de Familia solicitando la pérdida de la patria potestad."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La Ley 2025 de 2020 busca institucionalizar la Escuela de Padres y Madres de Familia fomentando la corresponsabilidad en la formación de los estudiantes. Sin embargo, la jurisprudencia constitucional prohíbe condicionar el derecho fundamental a la educación de los niños por faltas u omisiones de sus padres. Por lo tanto, el directivo debe crear mecanismos flexibles de comunicación y acompañamiento psicosocial."
+  },
+  {
+    "id": "DIR_COM_003",
+    "area": "Competencias Específicas - Directivos Docentes",
+    "tema": "Prevención de Riesgos Sociales y Entornos Escolares Seguros",
+    "norma_referencia": "Manual de Funciones MEN / Ley 1620 de 2013 / Ley 1098 de 2006",
+    "contexto": "Una institución educativa ubicada en un sector con alta presencia de grupos delictivos enfrenta problemas de fronteras invisibles y microtráfico en los alrededores de la planta física, lo que genera zozobra a la hora de salida de los estudiantes. El Rector convoca a una mesa de trabajo comunitaria.",
+    "pregunta": "En el marco de la Gestión Comunitaria, ¿cuál es la acción interinstitucional más efectiva que debe liderar el Rector?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Contratar un servicio de vigilancia privada armada financiado con cuotas extraordinarias exigidas a los padres de familia."
+      },
+      {
+        "id": "B",
+        "texto": "Liderar la conformación del Comité Intersectorial de Entorno Escolar Seguro, articulando a la Secretaría de Gobierno, Policía Comunitaria, Personería y líderes del barrio para establecer rutas seguras de llegada y salida, frentes de seguridad comunitaria y actividades culturales/deportivas extracurriculares."
+      },
+      {
+        "id": "C",
+        "texto": "Autorizar a los docentes para que realicen requisas corporales e inspección de pertenencias a todos los estudiantes al ingresar al colegio."
+      },
+      {
+        "id": "D",
+        "texto": "Adelantar la hora de salida de clases a las 11:00 a.m. para evitar la presencia de personas sospechosas en la tarde, reduciendo la jornada escolar."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El liderazgo comunitario del Directivo Docente implica trascender los muros del colegio mediante la articulación interinstitucional y la corresponsabilidad del Estado y la sociedad. La creación de entornos escolares seguros requiere la colaboración con la fuerza pública, personería y líderes locales para garantizar la protección de los niños fuera de la planta física sin infringir sus derechos dentro del aula."
+  },
+  {
+    "id": "DIR_COM_004",
+    "area": "Competencias Específicas - Directivos Docentes",
+    "tema": "Gobierno Escolar y Autonomía de la Democracia Estudiantil",
+    "norma_referencia": "Ley 115 de 1994 (Art. 94) / Decreto 1860 de 1994 (Art. 28)",
+    "contexto": "Durante el proceso de elección del Personero Estudiantil, un candidato de grado 11° presenta propuestas enfocadas en la veeduría crítica al estado de los baños, el restaurante escolar y la evaluación docente. Un grupo de profesores solicita al Rector que anule la candidatura del estudiante argumentando que sus propuestas son 'subversivas' e incomodan la labor docente.",
+    "pregunta": "Frente a esta solicitud y en respeto a la democracia escolar regulada en el Decreto 1860 de 1994, ¿cuál debe ser la decisión del Rector?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Aceptar la solicitud de los docentes y descalificar al candidato para mantener la armonía entre el cuerpo profesoral."
+      },
+      {
+        "id": "B",
+        "texto": "Garantizar el ejercicio democrático y la autonomía del estamento estudiantil, permitiendo la candidatura siempre que se enmarque en el respeto y el manual de convivencia, orientando al estudiante sobre las funciones legales del Personero (promover el ejercicio de los derechos y deberes)."
+      },
+      {
+        "id": "C",
+        "texto": "Modificar el reglamento para que solo puedan ser candidatos a Personero los estudiantes con las calificaciones académicas más altas."
+      },
+      {
+        "id": "D",
+        "texto": "Nombrar directamente como Personero al estudiante que el Consejo Académico elija por consenso."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El Decreto 1860 de 1994 establece que el Personero Estudiantil es un estudiante de último grado encargado de promover el ejercicio de los derechos y deberes de los estudiantes garantizados en la Constitución y el Manual de Convivencia. El directivo docente debe salvaguardar la formación ciudadana y la participación democrática participativa sin censurar posturas críticas respetuosas."
+  },
+  {
+    "id": "DIR_COM_005",
+    "area": "Competencias Específicas - Directivos Docentes",
+    "tema": "Delimitación de Funciones del Consejo y Asociación de Padres de Familia",
+    "norma_referencia": "Decreto 1286 de 2005 / Ley 115 de 1994",
+    "contexto": "La junta directiva de la Asociación de Padres de Familia aprueba un reglamento interno en el que exige la potestad de evaluar el desempeño pedagógico de los profesores en el aula, decidir la continuidad o despido de los docentes en periodo de prueba y fijar los horarios de atención de las comisiones de evaluación.",
+    "pregunta": "Como máxima autoridad ejecutiva de la institución, ¿cómo debe actuar el Rector frente a este reglamento aprobado por la Asociación de Padres?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Aprobar el reglamento y permitir que los padres de familia evalúen y sancionen directamente a los docentes."
+      },
+      {
+        "id": "B",
+        "texto": "Aclarar de manera asertiva y fundamentada en el Decreto 1286 de 2005 los límites legales del Consejo y Asociación de Padres, explicando que su función es de acompañamiento y apoyo al PEI, y que la evaluación, administración y juzgamiento del personal docente es competencia exclusiva del Rector y la Secretaría de Educación."
+      },
+      {
+        "id": "C",
+        "texto": "Disolver inmediatamente la Asociación de Padres y prohibir la entrada de los acudientes a la sede escolar."
+      },
+      {
+        "id": "D",
+        "texto": "Delegar en la Asociación de Padres la elaboración del calendario académico y los horarios de clase."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El Decreto 1286 de 2005 reglamenta la participación de los padres de familia en los procesos educativos. Establece claramente que la Asociación y el Consejo de Padres apoyan la consecución de metas institucionales, pero prohíbe expresamente su injerencia en la contratación, administración o evaluación del personal docente y directivo docente, competencias reservadas por ley a las autoridades educativas."
+  },
+  {
+    "id": "DIR_COM_006",
+    "area": "Competencias Específicas - Directivos Docentes",
+    "tema": "Inclusión y Atención a Poblaciones de Especial Protección",
+    "norma_referencia": "Decreto 1075 de 2015 / Ley 1448 de 2011 (Ley de Víctimas) / Decreto 1421 de 2017",
+    "contexto": "Llega a la institución una familia en condición de desplazamiento forzado y movilidad humana que solicita cupo escolar para dos menores en medio del segundo periodo académico. Los niños no cuentan con certificados de estudio de años anteriores debido a las condiciones de salida intempestiva de su territorio de origen.",
+    "pregunta": "Desde la Gestión Comunitaria y el marco de protección al derecho a la educación, ¿cuál es el procedimiento que debe ordenar la Dirección del colegio?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Rechazar la solicitud de matrícula hasta que la familia viaje a su municipio de origen y aporte los certificados originales apostillados."
+      },
+      {
+        "id": "B",
+        "texto": "Garantizar el acceso inmediato al sistema educativo formal matriculando temporalmente a los estudiantes, realizando una evaluación diagnóstica pedagógica de ubicación por parte de la institución y gestionando la formalización extemporánea ante la Secretaría de Educación."
+      },
+      {
+        "id": "C",
+        "texto": "Exigir a la familia el pago anticipado de una póliza de seguros y derechos de grado para autorizar el ingreso al aula."
+      },
+      {
+        "id": "D",
+        "texto": "Remitir a los niños a un programa no formal de alfabetización de adultos hasta que comience el siguiente año lectivo."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La legislación colombiana (Decreto 1075 de 2015 y Ley 1448 de 2011) consagra que la falta de documentos académicos previos no es barrera para el acceso a la educación de niños vulnerables o víctimas del conflicto. El directivo debe matricular inmediatamente al estudiante y realizar pruebas diagnósticas de ubicación para situarlo en el grado correspondiente."
+  },
+  {
+    "id": "DIR_COM_007",
+    "area": "Competencias Específicas - Directivos Docentes",
+    "tema": "Uso Comunitario de la Planta Física e Infraestructura Escolar",
+    "norma_referencia": "Decreto 1075 de 2015 (Art. 2.3.3.1.6.1) / Guía No. 34 MEN",
+    "contexto": "La Junta de Acción Comunal (JAC) del barrio solicita formalmente al Rector el préstamo de la cancha polideportiva del colegio los domingos para realizar un torneo deportivo comunitario que busca prevenir el consumo de sustancias en los jóvenes del sector.",
+    "pregunta": "En el marco de la apertura comunitaria de la escuela y las responsabilidades administrativas del Rector, ¿cuál es la decisión adecuada?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Rechazar la solicitud argumentando que la planta física es de uso exclusivo del personal docente y estudiante durante todo el año."
+      },
+      {
+        "id": "B",
+        "texto": "Evaluar la viabilidad y firmar un convenio o acta de préstamo con la JAC en la que se fijen compromisos claros de cuidado de la planta física, póliza o responsabilidad sobre aseo y vigilancia, horarios no lectivos y normas de convivencia de uso comunitario de bienes públicos."
+      },
+      {
+        "id": "C",
+        "texto": "Entregar las llaves de la institución al presidente de la JAC sin suscribir ningún documento ni fijar condiciones de uso."
+      },
+      {
+        "id": "D",
+        "texto": "Cobrar en efectivo una tarifa comercial de alquiler para beneficio personal por el uso de las instalaciones."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "El Decreto 1075 de 2015 permite el uso de las instalaciones educativas públicas para actividades comunitarias, culturales y deportivas fuera de la jornada escolar, en concordancia con el principio de integración comunitaria del PEI. No obstante, el rector debe proteger los bienes públicos suscribiendo actos que delimiten responsabilidades de aseo, seguridad y conservación de la infraestructura."
+  },
+  {
+    "id": "DIR_COM_008",
+    "area": "Competencias Específicas - Directivos Docentes",
+    "tema": "Proyectos Pedagógicos Productivos y Desarrollo Local",
+    "norma_referencia": "Ley 115 de 1994 / Guía No. 34 del MEN / Manual de Funciones Directivos",
+    "contexto": "Un colegio técnico agropecuario busca articular la formación de sus estudiantes de Media con las necesidades socioeconómicas del municipio. El Rector convoca a pequeños productores, asociaciones agrícolas y representantes de instituciones de educación superior regional.",
+    "pregunta": "¿Qué impacto prioritario busca el liderazgo del Directivo Docente al dinamizar este tipo de alianzas estratégicas?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Garantizar la privatización progresiva de los servicios de la granja escolar para generar ganancias comerciales a particulares."
+      },
+      {
+        "id": "B",
+        "texto": "Fortalecer la pertinencia del PEI mediante Proyectos Pedagógicos Productivos (PPP) que favorezcan el arraigo, la empleabilidad, el emprendimiento local y la continuidad en la educación superior de los egresados en su propio territorio."
+      },
+      {
+        "id": "C",
+        "texto": "Sustituir el plan de estudios académico formal por jornadas completas de trabajo no remunerado de los estudiantes en fincas privadas."
+      },
+      {
+        "id": "D",
+        "texto": "Eximir al colegio de presentar pruebas estandarizadas Saber 11 por tener vocación productiva."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La Gestión Comunitaria articula la escuela con el entorno productivo y social para dar sentido y pertinencia al aprendizaje. Los Proyectos Pedagógicos Productivos (PPP) impulsados por el directivo promueven el desarrollo socioeconómico local, el desarrollo de competencias emprendedoras y el fortalecimiento de la proyección comunitaria del PEI."
+  },
+  {
+    "id": "DIR_COM_009",
+    "area": "Competencias Específicas - Directivos Docentes",
+    "tema": "Preservación de la Identidad Cultural y Diálogo Intercultural",
+    "norma_referencia": "Ley 115 de 1994 / Decreto 1122 de 1998 / Constitución Política Art. 7 y 19",
+    "contexto": "En una institución educativa con matrícula diversa (estudiantes afrocolombianos, indígenas y de diversas confesiones religiosas), surge una controversia porque algunos padres protestan contra la realización de la feria cultural institucional argumentando que se promueven prácticas contrarias a sus creencias personales.",
+    "pregunta": "Desde la Gestión Comunitaria e Intercultural, ¿cuál debe ser la posición pedagógica del Directivo Docente?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Abolir definitivamente todos los proyectos y eventos culturales de la institución para evitar reclamos."
+      },
+      {
+        "id": "B",
+        "texto": "Promover un diálogo intercultural respetuoso reafirmando los principios constitucionales de diversidad étnica y plurarismo cultural, ofreciendo alternativas pedagógicas a las familias con objeciones específicas sin invisibilizar la riqueza de las identidades culturales presentes en la comunidad."
+      },
+      {
+        "id": "C",
+        "texto": "Imponer la asistencia obligatoria bajo amenaza de reprobación académica a quienes no compartan la cosmovisión mayoritaria."
+      },
+      {
+        "id": "D",
+        "texto": "Expulsar del colegio a las familias que presenten objeciones de tipo religioso o cultural."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La Constitución colombiana y la Ley 115 de 1994 fundamentan la educación en el reconocimiento de la diversidad étnica y cultural y la libertad de cultos. El directivo docente debe ser un mediador intercultural que garantice el respeto a la diversidad sin imponer dogmas, promoviendo el diálogo, la inclusión y la convivencia pacífica en la comunidad educativa."
+  },
+  {
+    "id": "DIR_COM_010",
+    "area": "Competencias Específicas - Directivos Docentes",
+    "tema": "Rendición Social de Cuentas y Transparencia Comunitaria",
+    "norma_referencia": "Ley 1712 de 2014 / Guía 34 del MEN / Manual de Funciones MEN",
+    "contexto": "El Rector organiza el proceso de Rendición de Cuentas a la Comunidad Educativa de fin de año. La Secretaria del colegio le sugiere limitarse a publicar un balance contable de dos páginas en la cartelera principal sin convocar a reunión presencial ni virtual para 'ahorrar tiempo y evitar preguntas incómodas'.",
+    "pregunta": "Desde la perspectiva de la democracia participativa y la transparencia en la gestión pública directiva, ¿cuál es el deber del Rector?",
+    "opciones": [
+      {
+        "id": "A",
+        "texto": "Aceptar la sugerencia de la secretaria y omitir la realización de audiencias o diálogos públicos de participación."
+      },
+      {
+        "id": "B",
+        "texto": "Liderar una Audiencia Pública de Rendición de Cuentas participativa, transparente y accesible, donde se presenten no solo los resultados financieros del FSE, sino también los avances del PEI, metas pedagógicas, indicadores de convivencia y resultados académicos, abriendo espacio al diálogo y retroalimentación de la comunidad."
+      },
+      {
+        "id": "C",
+        "texto": "Presentar la rendición de cuentas únicamente ante las empresas contratistas de la institución educativa."
+      },
+      {
+        "id": "D",
+        "texto": "Cobrar una entrada simbólica a los acudientes para entregarles el informe de gestión de la rectoría."
+      }
+    ],
+    "respuesta_correcta": "B",
+    "justificacion": "La Ley de Transparencia (Ley 1712 de 2014) y la Guía 34 del MEN establecen que la rendición de cuentas en las instituciones educativas es un proceso de diálogo democrático y permanente con la comunidad. No se limita a números financieros, sino que abarca la gestión académica, la directiva y la comunitaria, garantizando el control social legítimo."
+  }
+]
