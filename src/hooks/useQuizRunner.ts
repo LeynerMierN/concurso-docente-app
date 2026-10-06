@@ -73,7 +73,11 @@ export function useQuizRunner(clave: string) {
   }, []);
 
   const iniciar = useCallback((config: ConfigExamen) => {
-    const preguntas = config.distribucion ? armarPorDistribucion(config.distribucion) : armarExamen(config.filtro, config.cantidad);
+    const preguntas = config.preguntaIds
+      ? mezclar(config.preguntaIds.map((id) => obtenerPregunta(id)).filter((p): p is Pregunta => !!p))
+      : config.distribucion
+        ? armarPorDistribucion(config.distribucion)
+        : armarExamen(config.filtro, config.cantidad);
     if (preguntas.length === 0) return;
     const inicioMs = Date.now();
     setAhora(inicioMs);

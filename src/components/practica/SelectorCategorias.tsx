@@ -1,6 +1,6 @@
 "use client";
 
-import { Layers, Library } from "lucide-react";
+import { Layers, Library, RotateCcw } from "lucide-react";
 import { GRUPOS, NOMBRE_GRUPO } from "@/lib/categorias";
 import { CATEGORIAS_CON_PREGUNTAS, CONTEO_POR_CATEGORIA, FILTROS_TEMATICOS, PREGUNTAS, filtrarPreguntas, filtroDeGrupo } from "@/lib/preguntas";
 import type { FiltroExamen } from "@/types/exam";
@@ -10,6 +10,8 @@ interface Props {
   onElegir: (filtro: FiltroExamen) => void;
   /** Oculta las opciones que mezclan áreas (para modos enfocados en una sola) */
   soloUnaArea?: boolean;
+  /** Preguntas falladas que toca repasar hoy */
+  pendientesRepaso?: number;
 }
 
 const chip = (activo: boolean) =>
@@ -20,11 +22,31 @@ const chip = (activo: boolean) =>
   }`;
 
 /** Selector de qué practicar, organizado por la taxonomía de data/app_config.json */
-export default function SelectorCategorias({ filtro, onElegir, soloUnaArea }: Props) {
+export default function SelectorCategorias({ filtro, onElegir, soloUnaArea, pendientesRepaso = 0 }: Props) {
   const nucleo = filtroDeGrupo("core_transversal");
+  const repaso = filtro === "repaso";
 
   return (
     <div className="space-y-6">
+      {pendientesRepaso > 0 && (
+        <button
+          type="button"
+          onClick={() => onElegir("repaso")}
+          aria-pressed={repaso}
+          className={`flex w-full items-center gap-3 rounded-2xl p-4 text-left transition active:scale-[0.99] ${
+            repaso ? "bg-accent text-white shadow-md" : "bg-accent/10 ring-1 ring-accent/30"
+          }`}
+        >
+          <RotateCcw className={`size-6 shrink-0 ${repaso ? "text-white" : "text-accent"}`} />
+          <span className="min-w-0 flex-1">
+            <span className="block font-semibold">Repaso de errores</span>
+            <span className={`block text-sm ${repaso ? "text-white/90" : "text-slate-600 dark:text-slate-300"}`}>
+              {pendientesRepaso} {pendientesRepaso === 1 ? "pregunta" : "preguntas"} que fallaste te esperan hoy
+            </span>
+          </span>
+        </button>
+      )}
+
       {!soloUnaArea && (
         <section className="space-y-2">
           <h2 className="text-xs font-semibold uppercase tracking-wide text-slate-500">Repaso general</h2>

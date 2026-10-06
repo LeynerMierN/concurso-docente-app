@@ -7,11 +7,13 @@ import { BookOpenCheck, Clock, Pause, Play } from "lucide-react";
 import Cargando from "@/components/quiz/Cargando";
 import QuizRunner from "@/components/quiz/QuizRunner";
 import { usePerfil } from "@/hooks/usePerfil";
+import { useProgreso } from "@/hooks/useProgreso";
 import { useQuizRunner } from "@/hooks/useQuizRunner";
 import { umbralDe } from "@/lib/perfil";
 import SelectorCategorias from "@/components/practica/SelectorCategorias";
 import { FILTRO_NUCLEO_COMUN, MODOS_EXAMEN, configDesdeModo, dimensionarModo, obtenerModo } from "@/lib/appConfig";
-import { filtrarPreguntas } from "@/lib/preguntas";
+import { filtrarPreguntas, mezclar } from "@/lib/preguntas";
+import { FILTRO_REPASO, pendientesHoy } from "@/lib/repaso";
 import type { FiltroExamen } from "@/types/exam";
 
 /** "Prueba por Competencia" se enfoca en una sola área: no admite "Todas las áreas" */
@@ -33,7 +35,7 @@ function Practica() {
   const modo = obtenerModo(parametros.get("modo"));
   // ?filtro= permite llegar con una categoría preseleccionada (p. ej. desde "Tu ruta" en Inicio)
   const pedido = parametros.get("filtro");
-  const filtroInicial = pedido && filtrarPreguntas(pedido).length > 0 ? pedido : null;
+  const filtroInicial = pedido && (pedido === FILTRO_REPASO || filtrarPreguntas(pedido).length > 0) ? pedido : null;
   // La clave cambia con el modo para que al elegir otro modo se reinicie la selección
   return <Selector key={`${modo?.id ?? "libre"}-${filtroInicial}`} modoId={modo?.id ?? null} filtroInicial={filtroInicial} />;
 }
@@ -42,6 +44,8 @@ function Selector({ modoId, filtroInicial }: { modoId: string | null; filtroInic
   const runner = useQuizRunner("concurso-docente:practica");
   const { perfil } = usePerfil();
   const umbral = umbralDe(perfil);
+  const progreso = useProgreso();
+  const pendientes = progreso ? pendientesHoy(progreso) : [];
   const modo = obtenerModo(modoId);
   const unaArea = !!modo && MODOS_DE_UNA_AREA.has(modo.id);
   const [filtro, setFiltro] = useState<FiltroExamen | null>(filtroInicial ?? (unaArea ? null : FILTRO_NUCLEO_COMUN));
@@ -50,10 +54,29 @@ function Selector({ modoId, filtroInicial }: { modoId: string | null; filtroInic
   if (!runner.cargado) return <Cargando />;
   if (runner.sesion) return <QuizRunner runner={runner} />;
 
-  const dimension = modo && filtro ? dimensionarModo(modo, filtro) : null;
-  const cantidad = dimension ? dimension.preguntas : filtro ? filtrarPreguntas(filtro).length : 0;
+  const esRepaso = filtro === FILTRO_REPASO;
+  const dimension = modo && filtro && !esRepaso ? dimensionarModo(modo, filtro) : null;
+  // En el repaso, cada modo usa como máximo sus preguntas del config; el tiempo se escala igual
+  const cantidadRepaso = modo ? Math.min(modo.preguntasConfig, pendientes.length) : pendientes.length;
+  const minutosRepaso = modo?.minutosPorPregunta ? Math.ceil(modo.minutosPorPregunta * cantidadRepaso) : null;
+  const cantidad = esRepaso ? cantidadRepaso : dimension ? dimension.preguntas : filtro ? filtrarPreguntas(filtro).length : 0;
   const iniciar = () => {
-    if (!filtro) return;
+    if (!filtro || cantidad === 0) return;
+    if (esRepaso) {
+      runner.iniciar({
+        modo: "practica",
+        modoId: modo?.id,
+        filtro,
+        // Prioriza las más frágiles (cajas bajas) y mezcla dentro del lote
+        preguntaIds: mezclar(pendientes.slice(0, cantidadRepaso)),
+        cantidad: cantidadRepaso,
+        limiteSegundos: minutosRepaso === null ? null : minutosRepaso * 60,
+        feedbackInmediato: modo ? modo.feedbackInmediato : true,
+        permitirPausa: modo?.permitePausa,
+        umbral,
+      });
+      return;
+    }
     runner.iniciar(
       modo
         ? configDesdeModo(modo, filtro, umbral)
@@ -117,7 +140,7 @@ function Selector({ modoId, filtroInicial }: { modoId: string | null; filtroInic
         </p>
       )}
 
-      <SelectorCategorias filtro={filtro} onElegir={setFiltro} soloUnaArea={unaArea} />
+      <SelectorCategorias filtro={filtro} onElegir={setFiltro} soloUnaArea={unaArea} pendientesRepaso={pendientes.length} />
 
       {!modo && (
         <label className="flex items-center justify-between gap-4 rounded-2xl bg-white p-4 ring-1 ring-slate-200 dark:bg-tarjeta dark:ring-slate-700/60">

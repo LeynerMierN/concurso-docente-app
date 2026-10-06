@@ -50,3 +50,9 @@ export function ultimosDias(estudiados: string[], protegidos: string[] = [], n =
     return { dia, fecha, estudio: e.has(dia), protegido: p.has(dia) };
   });
 }
+
+/** Suma (o resta) días a una fecha YYYY-MM-DD */
+export function sumarDias(dia: string, dias: number): string {
+  const [a, m, d] = dia.split("-").map(Number);
+  return diaLocal(new Date(a, m - 1, d + dias));
+}

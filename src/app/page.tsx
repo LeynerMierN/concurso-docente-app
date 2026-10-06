@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowRight, ChevronRight, FileText, GraduationCap, Wallet } from "lucide-react";
 import BotonPerfil from "@/components/dashboard/BotonPerfil";
 import RachaDiaria from "@/components/dashboard/RachaDiaria";
+import RepasoErrores from "@/components/dashboard/RepasoErrores";
 import RutaEstudio from "@/components/dashboard/RutaEstudio";
 import TarjetasModos from "@/components/dashboard/TarjetasModos";
 import { APP } from "@/lib/appConfig";
@@ -42,6 +43,8 @@ export default function Inicio() {
           ))}
         </div>
       </header>
+
+      <RepasoErrores />
 
       <RutaEstudio />
 

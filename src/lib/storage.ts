@@ -2,6 +2,7 @@ import config from "@data/app_config.json";
 import { insigniasCumplidas } from "@/lib/insignias";
 import { sincronizarPerfil } from "@/lib/perfil";
 import { calcularRacha, diaAnterior, diaLocal } from "@/lib/racha";
+import { estadoRepaso, registrarRespuesta, type MapaRepaso } from "@/lib/repaso";
 import type { ModoExamen, Pregunta } from "@/types/exam";
 
 export { calcularRacha, diaLocal, ultimosDias } from "@/lib/racha";
@@ -35,6 +36,8 @@ export interface Intento {
   xp?: number;
   /** Insignias desbloqueadas al terminar este intento */
   insigniasNuevas?: string[];
+  /** Preguntas que salieron del repaso de errores por quedar dominadas */
+  dominadas?: number;
 }
 
 export interface Progreso {
@@ -54,6 +57,8 @@ export interface Progreso {
   diasProtegidos?: string[];
   /** Insignias desbloqueadas: id → fecha ISO */
   insignias?: Record<string, string>;
+  /** Repaso de errores (repetición espaciada): id de pregunta → caja y próxima fecha */
+  repaso?: MapaRepaso;
 }
 
 const VACIO: Progreso = { version: 1, intentos: [], diasEstudio: [], totalRespondidas: 0, porPregunta: {} };
@@ -111,11 +116,14 @@ export function registrarIntento(datos: DatosIntento): Intento {
   let respondidas = 0;
   let correctas = 0;
   let xp = 0;
+  let dominadas = 0;
+  const repaso: MapaRepaso = { ...estadoRepaso(progreso, new Date(datos.terminadoMs)) };
   for (const p of datos.preguntas) {
     const r = datos.respuestas[p.id];
     if (!r) continue;
     const acierto = r === p.respuesta_correcta;
     respondidas++;
+    if (registrarRespuesta(repaso, p.id, acierto, new Date(datos.terminadoMs))) dominadas++;
     const previo = porPregunta[p.id] ?? { respondidas: 0, correctas: 0 };
     if (acierto) {
       correctas++;
@@ -137,7 +145,7 @@ export function registrarIntento(datos: DatosIntento): Intento {
     xp += XP.streak_bonus_per_day * calcularRacha([...diasEstudio, ...(progreso.diasProtegidos ?? [])]).actual;
   }
 
-  const base = { ...progreso, diasEstudio, porPregunta };
+  const base = { ...progreso, diasEstudio, porPregunta, repaso };
   const yaTenia = progreso.insignias ?? {};
   const insigniasNuevas = insigniasCumplidas(base).filter((b) => !yaTenia[b]);
   const fechaIso = new Date(datos.terminadoMs).toISOString();
@@ -156,6 +164,7 @@ export function registrarIntento(datos: DatosIntento): Intento {
     duracionSegundos: Math.round((datos.terminadoMs - datos.inicioMs) / 1000),
     xp,
     insigniasNuevas,
+    dominadas,
   };
 
   guardarProgreso({

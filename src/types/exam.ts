@@ -63,6 +63,8 @@ export interface ConfigExamen {
   limiteSegundos: number | null;
   /** Muestra la respuesta correcta y la justificación apenas se responde */
   feedbackInmediato: boolean;
+  /** Lista exacta de preguntas (repaso de errores); si existe, reemplaza a filtro/cantidad */
+  preguntaIds?: string[];
   /** Preguntas por categoría (simulacros por componentes); si existe, reemplaza a filtro/cantidad */
   distribucion?: Record<string, number>;
   /** Permite pausar el cronómetro (allow_pause del config) */

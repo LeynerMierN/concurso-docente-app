@@ -55,6 +55,7 @@ export function filtrarPreguntas(filtro: FiltroExamen): Pregunta[] {
 
 export function etiquetaFiltro(filtro: FiltroExamen): string {
   if (filtro === "todos") return "Todo el banco";
+  if (filtro === "repaso") return "Repaso de errores";
   if (filtro.startsWith(PREFIJO_GRUPO)) return NOMBRE_GRUPO[filtro.slice(PREFIJO_GRUPO.length) as GrupoCategoria] ?? filtro;
   return FILTROS_TEMATICOS.find((f) => f.id === filtro)?.etiqueta ?? nombreCategoria(filtro);
 }

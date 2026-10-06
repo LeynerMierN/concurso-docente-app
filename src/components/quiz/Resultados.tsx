@@ -77,6 +77,14 @@ export default function Resultados({ runner }: { runner: QuizRunner }) {
         </dl>
       </header>
 
+      {/* Preguntas que salieron del repaso de errores */}
+      {registro?.dominadas ? (
+        <p className="flex items-center gap-2 rounded-2xl bg-secondary/10 p-4 text-sm font-semibold text-secondary-dark ring-1 ring-secondary/30 dark:text-secondary-light">
+          <CheckCircle2 className="size-5 shrink-0" />
+          Dominaste {registro.dominadas} {registro.dominadas === 1 ? "pregunta" : "preguntas"}: ya no {registro.dominadas === 1 ? "volverá" : "volverán"} al repaso.
+        </p>
+      ) : null}
+
       {/* Insignias desbloqueadas en este intento */}
       {(registro?.insigniasNuevas ?? []).map((id) => {
         const insignia = INSIGNIAS.find((x) => x.id === id);
