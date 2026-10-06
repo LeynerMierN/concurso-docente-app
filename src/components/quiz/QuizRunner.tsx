@@ -5,7 +5,7 @@ import { CheckCircle2, ChevronDown, ChevronLeft, ChevronRight, Clock, Flag, Paus
 import AvisoFlotante, { type Aviso } from "./AvisoFlotante";
 import Confirmacion from "./Confirmacion";
 import Resultados from "./Resultados";
-import Buho, { type AnimoBuho } from "@/components/mascota/Buho";
+import Capibara, { type AnimoMascota } from "@/components/mascota/Capibara";
 import type { QuizRunner as Runner } from "@/hooks/useQuizRunner";
 import { obtenerModo } from "@/lib/appConfig";
 import { mensajeAvance, mensajeRacha, otraFrase } from "@/lib/frases";
@@ -40,7 +40,7 @@ export default function QuizRunner({ runner }: { runner: Runner }) {
     if (previa) return;
 
     let texto: string | null = null;
-    let animo: AnimoBuho = "feliz";
+    let animo: AnimoMascota = "feliz";
     if (sesion.config.feedbackInmediato) {
       if (opcion === preguntaActual.respuesta_correcta) {
         seguidas.current += 1;
@@ -258,7 +258,7 @@ export default function QuizRunner({ runner }: { runner: Runner }) {
             }`}
           >
             <div className="flex items-center gap-3">
-              <Buho animo={acerto ? "celebrando" : "animando"} tamano={44} mirarPuntero={false} />
+              <Capibara animo={acerto ? "celebrando" : "animando"} tamano={44} mirarPuntero={false} />
               <div>
                 <p className="flex items-center gap-2 font-bold">
                   {acerto ? <CheckCircle2 className="size-5 text-exito" /> : <XCircle className="size-5 text-error" />}

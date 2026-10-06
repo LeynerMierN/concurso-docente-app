@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { AlertTriangle, Award, BarChart3, CheckCircle2, Info, Star, XCircle } from "lucide-react";
-import Buho from "@/components/mascota/Buho";
+import Capibara from "@/components/mascota/Capibara";
 import { useProgreso } from "@/hooks/useProgreso";
 import { MODULOS_NAVEGACION } from "@/lib/appConfig";
 import { CATEGORIAS_NUCLEO, aciertoGlobal, aciertoPorArea, proyeccionPuntaje } from "@/lib/estadisticas";
@@ -41,10 +41,10 @@ export default function Pagina() {
       <div className="space-y-6">
         {encabezado}
         <section className={`${tarjeta} text-center`}>
-          <Buho animo="durmiendo" tamano={88} mirarPuntero={false} className="mx-auto block" />
+          <Capibara animo="durmiendo" tamano={88} mirarPuntero={false} className="mx-auto block" />
           <h2 className="mt-3 font-bold">Aún no hay datos</h2>
           <p className="mt-1 text-sm text-slate-500">
-            Sabino está dormido esperando tus primeros resultados. Termina una práctica o un simulacro y aquí verás tus
+            Sabino está durmiendo mientras espera tus primeros resultados. Termina una práctica o un simulacro y aquí verás tus
             métricas.
           </p>
           <Link href="/practica" className="mt-4 inline-block rounded-2xl bg-primary px-5 py-2.5 text-sm font-semibold text-white">

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Lightbulb } from "lucide-react";
-import Buho from "@/components/mascota/Buho";
+import Capibara from "@/components/mascota/Capibara";
 import { usePerfil } from "@/hooks/usePerfil";
 import { useProgreso } from "@/hooks/useProgreso";
 import { CONSEJOS, estadoMascota } from "@/lib/mascota";
@@ -20,14 +20,14 @@ export default function MascotaInicio() {
   const mostrandoConsejo = consejo >= 0;
 
   return (
-    <section aria-label="Sabino, tu búho de estudio" className="flex items-end gap-3">
-      <Buho
+    <section aria-label="Sabino, tu capibara de estudio" className="flex items-end gap-3">
+      <Capibara
         animo={mostrandoConsejo ? "pensando" : estado.animo}
         tamano={84}
         onToque={() => setConsejo((c) => (c + 1) % CONSEJOS.length)}
       />
       <div className="relative mb-4 flex-1 rounded-3xl rounded-bl-md bg-white p-4 text-sm leading-relaxed shadow-sm ring-1 ring-slate-200 dark:bg-tarjeta dark:ring-slate-700/60">
-        {/* Colita del globo apuntando al búho */}
+        {/* Colita del globo apuntando al capibara */}
         <span
           aria-hidden
           className="absolute -left-1.5 bottom-3 size-3 rotate-45 bg-white ring-1 ring-slate-200 [clip-path:polygon(0_0,0_100%,100%_100%)] dark:bg-tarjeta dark:ring-slate-700/60"

@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Award, CheckCircle2, ChevronDown, CircleDashed, Clock, Flag, RotateCcw, Scale, Sparkles, XCircle } from "lucide-react";
 import IconoInsignia from "@/components/gamificacion/IconoInsignia";
-import Buho from "@/components/mascota/Buho";
+import Capibara from "@/components/mascota/Capibara";
 import type { QuizRunner } from "@/hooks/useQuizRunner";
 import { INSIGNIAS } from "@/lib/insignias";
 import { celebrarAprobacion } from "@/lib/celebrar";
@@ -40,7 +40,7 @@ export default function Resultados({ runner }: { runner: QuizRunner }) {
           aprobado ? "bg-gradient-to-br from-emerald-500 to-emerald-700" : "bg-gradient-to-br from-slate-600 to-slate-800"
         }`}
       >
-        <Buho animo={aprobado ? "celebrando" : "animando"} tamano={72} className="mx-auto mb-2 block" />
+        <Capibara animo={aprobado ? "celebrando" : "animando"} tamano={72} className="mx-auto mb-2 block" />
         <p className="text-sm font-medium opacity-90">
           {sesion.config.modo === "simulacro" ? "Resultado del simulacro" : "Resultado de la práctica"}
         </p>

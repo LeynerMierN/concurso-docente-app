@@ -82,25 +82,25 @@ body {
   padding-bottom: max(1rem, env(safe-area-inset-bottom));
 }
 
-/* Sabino, el búho mascota: animaciones solo si el usuario no pidió reducir movimiento */
+/* Sabino, el capibara mascota: animaciones solo si el usuario no pidió reducir movimiento */
 @media (prefers-reduced-motion: no-preference) {
-  .buho-flotar {
-    animation: buho-flotar 3.2s ease-in-out infinite;
+  .mascota-flotar {
+    animation: mascota-flotar 3.2s ease-in-out infinite;
   }
-  .buho-salto {
-    animation: buho-salto 0.6s ease-out;
+  .mascota-salto {
+    animation: mascota-salto 0.6s ease-out;
   }
-  .buho-parpadeo {
-    animation: buho-parpadeo 4.5s ease-in-out infinite;
+  .mascota-parpadeo {
+    animation: mascota-parpadeo 4.5s ease-in-out infinite;
   }
-  .buho-aleteo-izq {
-    animation: buho-aleteo-izq 0.5s ease-in-out infinite;
+  .mascota-brazo-izq {
+    animation: mascota-brazo-izq 0.5s ease-in-out infinite;
   }
-  .buho-aleteo-der {
-    animation: buho-aleteo-der 0.5s ease-in-out infinite;
+  .mascota-brazo-der {
+    animation: mascota-brazo-der 0.5s ease-in-out infinite;
   }
-  .buho-zzz {
-    animation: buho-zzz 2.4s ease-in-out infinite;
+  .mascota-zzz {
+    animation: mascota-zzz 2.4s ease-in-out infinite;
   }
   .frase-entrar {
     animation: frase-entrar 0.35s ease-out;
@@ -113,29 +113,29 @@ body {
   }
 }
 
-@keyframes buho-flotar {
+@keyframes mascota-flotar {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-3px); }
 }
-@keyframes buho-salto {
+@keyframes mascota-salto {
   0% { transform: translateY(0) rotate(0); }
   35% { transform: translateY(-14px) rotate(-6deg); }
   65% { transform: translateY(0) rotate(4deg); }
   100% { transform: translateY(0) rotate(0); }
 }
-@keyframes buho-parpadeo {
+@keyframes mascota-parpadeo {
   0%, 93%, 100% { transform: scaleY(1); }
   96% { transform: scaleY(0.1); }
 }
-@keyframes buho-aleteo-izq {
+@keyframes mascota-brazo-izq {
   0%, 100% { transform: rotate(0); }
   50% { transform: rotate(-18deg); }
 }
-@keyframes buho-aleteo-der {
+@keyframes mascota-brazo-der {
   0%, 100% { transform: rotate(0); }
   50% { transform: rotate(18deg); }
 }
-@keyframes buho-zzz {
+@keyframes mascota-zzz {
   0% { opacity: 0; transform: translate(0, 4px); }
   40% { opacity: 1; }
   100% { opacity: 0; transform: translate(6px, -8px); }

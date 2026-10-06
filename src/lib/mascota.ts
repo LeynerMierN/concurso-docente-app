@@ -1,4 +1,4 @@
-import type { AnimoBuho } from "@/components/mascota/Buho";
+import type { AnimoMascota } from "@/components/mascota/Capibara";
 import { META_DIARIA_PREGUNTAS } from "@/lib/appConfig";
 import { FICHAS } from "@/lib/fichas";
 import type { Perfil } from "@/lib/perfil";
@@ -6,7 +6,7 @@ import { resumenRepaso } from "@/lib/repaso";
 import { calcularRacha, diasDeRacha, respondidasEnDia, type Progreso } from "@/lib/storage";
 
 export interface EstadoMascota {
-  animo: AnimoBuho;
+  animo: AnimoMascota;
   mensaje: string;
 }
 
