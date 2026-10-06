@@ -28,7 +28,7 @@ export default function BarraLateral() {
     }`;
 
   return (
-    <aside className="fixed inset-y-0 left-0 z-40 hidden w-64 flex-col border-r border-slate-200 bg-white px-4 py-6 lg:flex dark:border-slate-700 dark:bg-tarjeta">
+    <aside className="barra-app fixed inset-y-0 left-0 z-40 hidden w-64 flex-col border-r border-slate-200 bg-white px-4 py-6 lg:flex dark:border-slate-700 dark:bg-tarjeta">
       <Link href="/" className="flex items-center gap-3 px-2">
         <Image src="/icons/icon-192.png" alt="" width={40} height={40} className="rounded-xl" />
         <span className="min-w-0">

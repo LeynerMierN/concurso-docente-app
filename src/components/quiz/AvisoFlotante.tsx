@@ -10,7 +10,7 @@ export interface Aviso {
   animo: AnimoMascota;
 }
 
-/** Mensaje de Capi que aparece abajo unos segundos sin tapar el cronómetro; se cierra al tocarlo */
+/** Mensaje de Capi que aparece abajo unos segundos sin tapar el cronómetro (en modo enfoque no hay barra abajo); se cierra al tocarlo */
 export default function AvisoFlotante({ aviso, onCerrar }: { aviso: Aviso | null; onCerrar: () => void }) {
   useEffect(() => {
     if (!aviso) return;
@@ -19,7 +19,7 @@ export default function AvisoFlotante({ aviso, onCerrar }: { aviso: Aviso | null
   }, [aviso, onCerrar]);
 
   return (
-    <div aria-live="polite" className="pointer-events-none fixed inset-x-0 bottom-24 z-40 flex justify-center px-4 lg:bottom-6 lg:pl-64">
+    <div aria-live="polite" className="pointer-events-none fixed inset-x-0 bottom-6 z-40 flex justify-center px-4">
       {aviso && (
         <button
           key={aviso.id}

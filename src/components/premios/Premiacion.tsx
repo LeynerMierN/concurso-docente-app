@@ -75,13 +75,13 @@ export default function Premiacion({ premios, onCerrar, repeticion = false }: Pr
       <div key={indice} className="w-full max-w-sm text-center text-white">
         <div className="relative mx-auto grid size-64 place-items-center">
           <div aria-hidden className="premio-rayos absolute inset-0 rounded-full" />
-          <div aria-hidden className="absolute inset-10 rounded-full bg-oro/25 blur-2xl" />
+          <div aria-hidden className="absolute inset-10 rounded-full bg-resaltador/25 blur-2xl" />
           {DESTELLOS.map(({ x, y, d }) => (
             <svg
               key={`${x}-${y}`}
               viewBox="0 0 20 20"
               aria-hidden
-              className="premio-chispa absolute size-5 text-oro"
+              className="premio-chispa absolute size-5 text-resaltador"
               style={{ left: `${x}%`, top: `${y}%`, animationDelay: `${d}s` }}
             >
               <path d="M10 0 L12 8 L20 10 L12 12 L10 20 L8 12 L0 10 L8 8 Z" fill="currentColor" />
@@ -94,7 +94,7 @@ export default function Premiacion({ premios, onCerrar, repeticion = false }: Pr
           </div>
         </div>
 
-        <p className="premio-texto mt-2 text-sm font-bold uppercase tracking-widest text-oro">{etiqueta}</p>
+        <p className="premio-texto mt-2 text-sm font-bold uppercase tracking-widest text-resaltador">{etiqueta}</p>
         <h2 id="titulo-premio" className="premio-texto mt-1 text-2xl font-extrabold" style={{ animationDelay: "0.1s" }}>
           {titulo}
         </h2>
@@ -106,7 +106,7 @@ export default function Premiacion({ premios, onCerrar, repeticion = false }: Pr
           ref={boton}
           type="button"
           onClick={() => (hayMas ? setIndice((i) => i + 1) : onCerrar())}
-          className="mt-6 w-full rounded-2xl bg-oro px-5 py-3 font-bold text-slate-900 shadow-lg outline-none transition focus-visible:ring-4 focus-visible:ring-white/60 active:scale-[0.98]"
+          className="mt-6 w-full rounded-2xl bg-resaltador px-5 py-3 font-bold text-tinta outline-none transition focus-visible:ring-4 focus-visible:ring-white/60 active:scale-[0.98]"
         >
           {hayMas ? `Siguiente premio (${indice + 1}/${premios.length})` : repeticion ? "Cerrar" : "¡A seguir estudiando!"}
         </button>

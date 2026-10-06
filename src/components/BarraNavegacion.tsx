@@ -10,7 +10,7 @@ export default function BarraNavegacion() {
   const actual = usePathname();
 
   return (
-    <nav className="pb-safe fixed inset-x-0 bottom-0 z-40 border-t border-slate-200 bg-white/90 pt-2 backdrop-blur lg:hidden dark:border-slate-700 dark:bg-tarjeta/90">
+    <nav className="barra-app pb-safe fixed inset-x-0 bottom-0 z-40 border-t border-slate-200 bg-white/90 pt-2 backdrop-blur lg:hidden dark:border-slate-700 dark:bg-tarjeta/90">
       <ul className="mx-auto grid max-w-md px-1" style={{ gridTemplateColumns: `repeat(${MODULOS_MOVIL.length}, minmax(0, 1fr))` }}>
         {MODULOS_MOVIL.map(({ id, etiquetaCorta, ruta, Icono }) => {
           const activo = esRutaActiva(actual, ruta);

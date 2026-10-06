@@ -66,7 +66,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="es-CO" className={`${atkinson.variable} ${bricolage.variable} ${caveat.variable}`}>
       <body className="min-h-dvh font-sans antialiased">
         <BarraLateral />
-        <div className="lg:pl-64">
+        <div className="contenedor-app lg:pl-64">
           <main className="mx-auto max-w-md px-4 pt-6 pb-28 md:max-w-2xl lg:max-w-3xl lg:px-8 lg:pt-10 lg:pb-12">{children}</main>
         </div>
         <BarraNavegacion />

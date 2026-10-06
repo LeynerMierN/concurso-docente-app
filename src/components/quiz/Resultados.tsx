@@ -1,16 +1,18 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import { Award, CheckCircle2, ChevronDown, CircleDashed, Clock, Flag, RotateCcw, Scale, Sparkles, XCircle } from "lucide-react";
+import Link from "next/link";
+import { Bookmark, CheckCircle2, ChevronDown, CircleDashed, Clock, RotateCcw, Scale, Sparkles, XCircle } from "lucide-react";
 import Capibara from "@/components/mascota/Capibara";
 import Diploma from "@/components/premios/Diploma";
 import Medalla from "@/components/premios/Medalla";
+import Sello from "@/components/premios/Sello";
 import Premiacion, { type Premio } from "@/components/premios/Premiacion";
 import Trofeo from "@/components/premios/Trofeo";
 import { useProgreso } from "@/hooks/useProgreso";
 import type { QuizRunner } from "@/hooks/useQuizRunner";
 import { INSIGNIAS } from "@/lib/insignias";
-import { PUNTOS, TROFEOS, nivelDe, trofeosGanados } from "@/lib/meritos";
+import { PUNTOS, PUNTOS_CORTO, TROFEOS, nivelDe, trofeosGanados } from "@/lib/meritos";
 import { celebrarAprobacion } from "@/lib/celebrar";
 import { formatoTiempo } from "@/lib/tiempo";
 
@@ -66,61 +68,84 @@ export default function Resultados({ runner }: { runner: QuizRunner }) {
 
   if (!sesion || !resultado) return null;
 
+  const faltaron = Math.max(0, Math.ceil(resultado.umbral - resultado.porcentaje));
+  const nivel = progreso ? nivelDe(progreso.xpTotal ?? 0) : null;
+  const areas = Object.entries(resultado.desglosePorArea)
+    .map(([area, { total, correctas }]) => ({ area, total, correctas, pct: Math.round((correctas / total) * 100) }))
+    .sort((a, b) => a.pct - b.pct);
+
   const revision = preguntas
     .map((p, i) => ({ p, i, elegida: sesion.respuestas[p.id] }))
     .filter(({ p, elegida }) => !soloErrores || elegida !== p.respuesta_correcta);
 
   return (
     <div className="space-y-6">
-      {/* Puntaje */}
-      <header
-        className={`rounded-3xl p-6 text-center text-white shadow-lg ${
-          aprobado ? "bg-gradient-to-br from-emerald-500 to-emerald-700" : "bg-gradient-to-br from-slate-600 to-slate-800"
-        }`}
-      >
-        <Capibara animo={aprobado ? "celebrando" : "animando"} tamano={72} className="mx-auto mb-2 block" />
-        <p className="text-sm font-medium opacity-90">
+      {/* Puntaje: papel cuadriculado; el sello solo aparece si aprobó */}
+      <header className="cuadricula overflow-hidden rounded-3xl px-5 pt-5 pb-6 ring-1 ring-slate-200 dark:ring-slate-700/60">
+        <p className="text-xs font-bold uppercase tracking-wide text-texto-tenue">
           {sesion.config.modo === "simulacro" ? "Resultado del simulacro" : "Resultado de la práctica"}
         </p>
-        <p className="mt-2 text-6xl font-extrabold tabular-nums">
-          {resultado.porcentaje.toLocaleString("es-CO")}
-          <span className="text-2xl font-semibold opacity-80">/100</span>
-        </p>
-        <span
-          className={`mt-3 inline-flex items-center gap-1.5 rounded-full px-4 py-1.5 text-sm font-bold ${
-            aprobado ? "bg-oro text-slate-900" : "bg-error text-white"
-          }`}
-        >
-          {aprobado ? <Award className="size-4" /> : <XCircle className="size-4" />}
-          {aprobado ? "Aprobado" : "No aprobado"}
-        </span>
-        <p className="mt-2 text-xs opacity-80">Umbral: {resultado.umbral}/100</p>
-        <p className="mx-auto mt-2 max-w-sm text-sm font-medium">
-          {aprobado
-            ? "Capi: ¡Lo lograste! Sigue así y el día del examen será uno más."
-            : `Capi: Te faltaron ${Math.max(0, Math.ceil(resultado.umbral - resultado.porcentaje))} puntos. Repasa tus errores y vuelve a intentarlo.`}
-        </p>
-        {registro?.xp ? (
-          <p className="mt-3 inline-flex items-center gap-1 rounded-full bg-white/15 px-3 py-1 text-sm font-bold">
-            <Sparkles className="size-4 text-oro" /> +{registro.xp} {PUNTOS}
+        <div className="relative mt-2 min-h-[120px]">
+          <p className="margen-cuaderno">
+            <span className="block font-heading text-[108px] leading-[0.9] font-extrabold tracking-[-0.04em] tabular-nums">
+              {resultado.porcentaje.toLocaleString("es-CO")}
+            </span>
+            <span className="mt-1 block text-sm font-bold text-texto-tenue">de 100 puntos</span>
           </p>
-        ) : null}
+          {/* El sello puede montarse un poco sobre el número, como un sello real */}
+          {aprobado && <Sello fecha={new Date(terminadoMs)} tamano={108} className="absolute top-1 -right-1" />}
+        </div>
+        <p className="mt-3 text-[15px]">
+          {resultado.correctas} correctas de {resultado.totalPreguntas}. Para aprobar necesitabas {resultado.umbral}.
+        </p>
+        {!aprobado && <p className="mt-1 text-[15px] font-bold">Te faltaron {faltaron} {faltaron === 1 ? "punto" : "puntos"}.</p>}
+
+        <div className="mt-4 flex items-center gap-3">
+          <Capibara animo={aprobado ? "celebrando" : "animando"} tamano={64} mirarPuntero={false} />
+          <p className="font-tiza text-2xl font-bold leading-tight text-secondary-light">
+            {aprobado ? "¡Así se gana una plaza! Hoy demostraste que puedes." : "Cada intento te acerca. Repasa y vuelve con todo."}
+          </p>
+        </div>
 
         <dl className="mt-5 grid grid-cols-4 gap-2 text-center">
           {[
             { etiqueta: "Correctas", valor: resultado.correctas, Icono: CheckCircle2 },
-            { etiqueta: "Incorrectas", valor: resultado.incorrectas, Icono: XCircle },
+            { etiqueta: "Para reforzar", valor: resultado.incorrectas, Icono: XCircle },
             { etiqueta: "Sin resp.", valor: resultado.sinResponder, Icono: CircleDashed },
             { etiqueta: "Tiempo", valor: formatoTiempo(segundosTranscurridos), Icono: Clock },
           ].map(({ etiqueta, valor, Icono }) => (
-            <div key={etiqueta} className="rounded-2xl bg-white/10 px-1 py-2">
-              <Icono className="mx-auto size-4 opacity-80" />
+            <div key={etiqueta} className="rounded-2xl bg-tarjeta px-1 py-2 ring-1 ring-slate-200 dark:ring-slate-700">
+              <Icono className="mx-auto size-4 text-texto-tenue" />
               <dd className="mt-1 font-bold tabular-nums">{valor}</dd>
-              <dt className="text-[10px] opacity-80">{etiqueta}</dt>
+              <dt className="text-[10px] leading-tight text-texto-tenue">{etiqueta}</dt>
             </div>
           ))}
         </dl>
       </header>
+
+      {/* Puntos de mérito ganados y avance de nivel */}
+      {registro?.xp ? (
+        <section className="rounded-3xl bg-resaltador-suave p-5" aria-labelledby="titulo-meritos">
+          <h2 id="titulo-meritos" className="flex items-center gap-1.5 text-lg">
+            <Sparkles className="size-5 text-accent-dark" /> +{registro.xp} {PUNTOS}
+          </h2>
+          {nivel && (
+            <>
+              <p className="mt-1 text-sm">
+                Nivel {nivel.actual.numero} · <span className="font-bold">{nivel.actual.nombre}</span>
+              </p>
+              <div className="mt-2 h-3 overflow-hidden rounded-[3px_10px_6px_2px] bg-tarjeta">
+                <div className="barra-resaltador h-full" style={{ width: `${nivel.avance * 100}%` }} />
+              </div>
+              <p className="mt-1.5 text-xs text-texto-tenue">
+                {nivel.siguiente
+                  ? `Te faltan ${nivel.faltan.toLocaleString("es-CO")} ${PUNTOS_CORTO} para ${nivel.siguiente.nombre}.`
+                  : "Estás en el nivel más alto."}
+              </p>
+            </>
+          )}
+        </section>
+      ) : null}
 
       {/* Preguntas que salieron del repaso de errores */}
       {registro?.dominadas ? (
@@ -132,7 +157,7 @@ export default function Resultados({ runner }: { runner: QuizRunner }) {
 
       {/* Premios ganados en este intento */}
       {premios.length > 0 && (
-        <section className="space-y-3 rounded-3xl bg-accent/10 p-5 ring-1 ring-accent/30" aria-labelledby="titulo-premios">
+        <section className="space-y-3 rounded-3xl bg-resaltador-suave p-5 ring-1 ring-accent/50" aria-labelledby="titulo-premios">
           <h2 id="titulo-premios" className="font-bold">
             Premios de este intento
           </h2>
@@ -166,41 +191,53 @@ export default function Resultados({ runner }: { runner: QuizRunner }) {
       )}
       {ceremonia && <Premiacion premios={premios} repeticion={ceremonia === "repeticion"} onCerrar={() => setCeremonia(null)} />}
 
-      {/* Desglose por área */}
-      <section className="space-y-3 rounded-3xl bg-white p-5 ring-1 ring-slate-200 dark:bg-tarjeta dark:ring-slate-700/60">
-        <h2 className="font-semibold">Aciertos por área</h2>
+      {/* Desglose por área: barras verdes; la más baja, en mora y presentada como meta */}
+      <section className="space-y-3 rounded-3xl bg-tarjeta p-5 ring-1 ring-slate-200 dark:ring-slate-700/60">
+        <h2 className="text-lg">Aciertos por área</h2>
         <ul className="space-y-3">
-          {Object.entries(resultado.desglosePorArea)
-            .sort(([, a], [, b]) => a.correctas / a.total - b.correctas / b.total)
-            .map(([area, { total, correctas }]) => {
-              const pct = Math.round((correctas / total) * 100);
-              return (
-                <li key={area} className="space-y-1">
-                  <div className="flex justify-between gap-3 text-sm">
-                    <span className="min-w-0 text-slate-700 dark:text-slate-300">{area}</span>
-                    <span className="shrink-0 font-semibold tabular-nums">
-                      {correctas}/{total}
-                    </span>
-                  </div>
-                  <div className="h-2 overflow-hidden rounded-full bg-slate-100 dark:bg-slate-700/60">
-                    <div
-                      className={`h-full rounded-full ${pct >= resultado.umbral ? "bg-exito" : "bg-error"}`}
-                      style={{ width: `${pct}%` }}
-                    />
-                  </div>
-                </li>
-              );
-            })}
+          {areas.map(({ area, total, correctas, pct }, k) => {
+            const meta = k === 0 && pct < resultado.umbral;
+            return (
+              <li key={area} className="space-y-1">
+                <div className="flex justify-between gap-3 text-sm">
+                  <span className="min-w-0">{area}</span>
+                  <span className="shrink-0 font-bold tabular-nums">
+                    {correctas}/{total}
+                  </span>
+                </div>
+                <div className="h-2 overflow-hidden rounded-full bg-slate-100 dark:bg-slate-700/60">
+                  <div className={`h-full rounded-full ${meta ? "bg-danger dark:bg-danger-light" : "bg-primary"}`} style={{ width: `${pct}%` }} />
+                </div>
+                {meta && (
+                  <p className="text-sm font-bold text-danger dark:text-danger-light">
+                    Tu próxima meta: subir {resultado.umbral - pct} puntos aquí.
+                  </p>
+                )}
+              </li>
+            );
+          })}
         </ul>
       </section>
 
-      <button
-        type="button"
-        onClick={runner.reiniciar}
-        className="flex w-full items-center justify-center gap-2 rounded-2xl bg-marca-600 px-4 py-3.5 font-semibold text-white active:scale-[0.98]"
-      >
-        <RotateCcw className="size-5" /> Nuevo intento
-      </button>
+      <div className="space-y-3">
+        {resultado.incorrectas > 0 && (
+          <Link
+            href="/practica?filtro=repaso"
+            className="flex w-full items-center justify-center gap-2 rounded-2xl bg-primary px-4 py-3.5 font-bold text-white active:scale-[0.98]"
+          >
+            <RotateCcw className="size-5" /> {resultado.incorrectas === 1 ? "Repasar mi error" : `Repasar mis ${resultado.incorrectas} errores`}
+          </Link>
+        )}
+        <button
+          type="button"
+          onClick={runner.reiniciar}
+          className={`flex w-full items-center justify-center gap-2 rounded-2xl px-4 py-3.5 font-bold active:scale-[0.98] ${
+            resultado.incorrectas > 0 ? "bg-tarjeta ring-1 ring-slate-200 dark:ring-slate-700" : "bg-primary text-white"
+          }`}
+        >
+          Nuevo intento
+        </button>
+      </div>
 
       {/* Revisión pregunta por pregunta */}
       <section className="space-y-3">
@@ -218,7 +255,7 @@ export default function Resultados({ runner }: { runner: QuizRunner }) {
         </div>
 
         {revision.length === 0 && (
-          <p className="rounded-2xl bg-exito/10 p-4 text-center text-sm">¡Sin errores! Respondiste todo correctamente.</p>
+          <p className="rounded-2xl bg-verde-suave p-4 text-center text-sm">¡Sin errores! Respondiste todo correctamente.</p>
         )}
 
         <ul className="space-y-3">
@@ -229,7 +266,7 @@ export default function Resultados({ runner }: { runner: QuizRunner }) {
             const acerto = elegida === p.respuesta_correcta;
             return (
               <li key={p.id}>
-                <details className="group rounded-2xl bg-white ring-1 ring-slate-200 dark:bg-tarjeta dark:ring-slate-700/60">
+                <details className="group rounded-2xl bg-tarjeta ring-1 ring-slate-200 dark:ring-slate-700/60">
                   <summary className="flex cursor-pointer list-none items-start gap-3 p-4">
                     {acerto ? (
                       <CheckCircle2 className="mt-0.5 size-5 shrink-0 text-secondary-light" />
@@ -241,7 +278,7 @@ export default function Resultados({ runner }: { runner: QuizRunner }) {
                     <span className="min-w-0 flex-1">
                       <span className="flex items-center gap-1.5 text-xs text-slate-500">
                         Pregunta {i + 1} · {p.tema}
-                        {sesion.banderas.includes(p.id) && <Flag className="size-3 text-oro" fill="currentColor" />}
+                        {sesion.banderas.includes(p.id) && <Bookmark className="size-3 text-accent-dark" fill="currentColor" />}
                       </span>
                       <span className="mt-0.5 block text-sm font-medium leading-snug">{p.pregunta}</span>
                     </span>
@@ -252,14 +289,14 @@ export default function Resultados({ runner }: { runner: QuizRunner }) {
                     <p className="leading-relaxed text-slate-600 dark:text-slate-300">{p.contexto}</p>
                     <div
                       className={`rounded-xl p-3 ${
-                        acerto ? "bg-exito/10" : elegida ? "bg-error/10" : "bg-slate-100 dark:bg-slate-700/60"
+                        acerto ? "bg-verde-suave" : elegida ? "bg-mora-suave" : "bg-slate-100 dark:bg-slate-700/60"
                       }`}
                     >
                       <p className="text-xs font-semibold text-slate-500">Tu respuesta</p>
                       <p>{tuya ? `${tuya.letra}. ${tuya.texto}` : "Sin responder"}</p>
                     </div>
                     {!acerto && correcta && (
-                      <div className="rounded-xl bg-exito/10 p-3">
+                      <div className="rounded-xl bg-verde-suave p-3">
                         <p className="text-xs font-semibold text-slate-500">Respuesta correcta</p>
                         <p>
                           {correcta.letra}. {correcta.texto}

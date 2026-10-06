@@ -223,6 +223,20 @@ body {
   .premio-flotar {
     animation: mascota-flotar 3.6s ease-in-out infinite;
   }
+  /* Golpe corto del sello «APROBADO» */
+  .sello-golpe {
+    animation: sello-golpe 0.25s ease-out 0.2s both;
+  }
+}
+
+/* Modo enfoque: durante un examen no hay barras de navegación */
+body[data-enfoque] .barra-app {
+  display: none;
+}
+@media (min-width: 1024px) {
+  body[data-enfoque] .contenedor-app {
+    padding-left: 0;
+  }
 }
 
 /* Rayos de luz detrás del premio (se ven también sin animación) */
@@ -297,4 +311,8 @@ body {
 @keyframes premio-balanceo {
   0%, 100% { transform: rotate(-5deg); }
   50% { transform: rotate(5deg); }
+}
+@keyframes sello-golpe {
+  from { opacity: 0; transform: scale(1.3) rotate(-20deg); }
+  to { opacity: 1; transform: scale(1) rotate(-12deg); }
 }
