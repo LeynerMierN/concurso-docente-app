@@ -47,6 +47,7 @@ Idioma de la interfaz y del código de dominio: español (es-CO).
 - `src/components/convocatoria/`: PestanasConvocatoria, ReglasExamen, CalculadoraSalarial, Beneficios (estos beneficios extra —sin copagos, 7 semanas de vacaciones— están en el componente, no en data/).
 - `src/lib/celebrar.ts`: `celebrarAprobacion()` confeti con colores de Colombia, llamarla al aprobar un simulacro.
 - `src/lib/fichas.ts`: FICHAS, CATEGORIAS_FICHAS, fichasDe(categoria).
+- Mascota «Sabino» (búho propio, café con birrete azul; distinto del búho de Duolingo): `src/components/mascota/Buho.tsx` (SVG, ánimos feliz/celebrando/animando/pensando/durmiendo, ojos siguen el puntero, salta al tocarlo; animaciones `buho-*` en `globals.css` solo con `prefers-reduced-motion: no-preference`). `MascotaInicio` va bajo el hero del inicio; también aparece en la retroalimentación de QuizRunner y en Resultados. Mensajes en `src/lib/mascota.ts` (`estadoMascota` por prioridad: sin intentos → meta cumplida → racha en riesgo → repaso pendiente → falta para la meta; `CONSEJOS` = trampas frecuentes de las fichas + consejos generales; `fraseRespuesta`).
 
 
 ## Próximos pasos

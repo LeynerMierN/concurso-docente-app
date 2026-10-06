@@ -4,8 +4,10 @@ import { useState } from "react";
 import { CheckCircle2, ChevronLeft, ChevronRight, Clock, Flag, Pause, Play, Scale, X, XCircle } from "lucide-react";
 import Confirmacion from "./Confirmacion";
 import Resultados from "./Resultados";
+import Buho from "@/components/mascota/Buho";
 import type { QuizRunner as Runner } from "@/hooks/useQuizRunner";
 import { obtenerModo } from "@/lib/appConfig";
+import { fraseRespuesta } from "@/lib/mascota";
 import { etiquetaFiltro } from "@/lib/preguntas";
 import { formatoTiempo } from "@/lib/tiempo";
 
@@ -178,10 +180,16 @@ export default function QuizRunner({ runner }: { runner: Runner }) {
               acerto ? "bg-exito/10 text-emerald-900 dark:text-emerald-100" : "bg-error/10 text-red-900 dark:text-red-100"
             }`}
           >
-            <p className="flex items-center gap-2 font-bold">
-              {acerto ? <CheckCircle2 className="size-5 text-exito" /> : <XCircle className="size-5 text-error" />}
-              {acerto ? "¡Correcto!" : "Respuesta incorrecta"}
-            </p>
+            <div className="flex items-center gap-3">
+              <Buho animo={acerto ? "celebrando" : "animando"} tamano={44} mirarPuntero={false} />
+              <div>
+                <p className="flex items-center gap-2 font-bold">
+                  {acerto ? <CheckCircle2 className="size-5 text-exito" /> : <XCircle className="size-5 text-error" />}
+                  {acerto ? "¡Correcto!" : "Respuesta incorrecta"}
+                </p>
+                <p className="text-xs opacity-80">{fraseRespuesta(acerto, preguntaActual.id)}</p>
+              </div>
+            </div>
             <p className="leading-relaxed">{preguntaActual.justificacion}</p>
             <p className="flex items-start gap-1.5 text-xs opacity-80">
               <Scale className="mt-0.5 size-3.5 shrink-0" /> {preguntaActual.norma_referencia}

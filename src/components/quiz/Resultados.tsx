@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Award, CheckCircle2, ChevronDown, CircleDashed, Clock, Flag, RotateCcw, Scale, Sparkles, XCircle } from "lucide-react";
 import IconoInsignia from "@/components/gamificacion/IconoInsignia";
+import Buho from "@/components/mascota/Buho";
 import type { QuizRunner } from "@/hooks/useQuizRunner";
 import { INSIGNIAS } from "@/lib/insignias";
 import { celebrarAprobacion } from "@/lib/celebrar";
@@ -39,6 +40,7 @@ export default function Resultados({ runner }: { runner: QuizRunner }) {
           aprobado ? "bg-gradient-to-br from-emerald-500 to-emerald-700" : "bg-gradient-to-br from-slate-600 to-slate-800"
         }`}
       >
+        <Buho animo={aprobado ? "celebrando" : "animando"} tamano={72} className="mx-auto mb-2 block" />
         <p className="text-sm font-medium opacity-90">
           {sesion.config.modo === "simulacro" ? "Resultado del simulacro" : "Resultado de la práctica"}
         </p>
@@ -55,6 +57,11 @@ export default function Resultados({ runner }: { runner: QuizRunner }) {
           {aprobado ? "Aprobado" : "No aprobado"}
         </span>
         <p className="mt-2 text-xs opacity-80">Umbral: {resultado.umbral}/100</p>
+        <p className="mx-auto mt-2 max-w-sm text-sm font-medium">
+          {aprobado
+            ? "Sabino: ¡Lo lograste! Sigue así y el día del examen será uno más."
+            : `Sabino: Te faltaron ${Math.max(0, Math.ceil(resultado.umbral - resultado.porcentaje))} puntos. Repasa tus errores y vuelve a intentarlo.`}
+        </p>
         {registro?.xp ? (
           <p className="mt-3 inline-flex items-center gap-1 rounded-full bg-white/15 px-3 py-1 text-sm font-bold">
             <Sparkles className="size-4 text-oro" /> +{registro.xp} XP

@@ -5,6 +5,7 @@ import RachaDiaria from "@/components/dashboard/RachaDiaria";
 import RepasoErrores from "@/components/dashboard/RepasoErrores";
 import RutaEstudio from "@/components/dashboard/RutaEstudio";
 import TarjetasModos from "@/components/dashboard/TarjetasModos";
+import MascotaInicio from "@/components/mascota/MascotaInicio";
 import { APP } from "@/lib/appConfig";
 import { CONVOCATORIA_DATA, calcularIngresoAnualDocente, formatoCOP } from "@/lib/convocatoria";
 import { FICHAS } from "@/lib/fichas";
@@ -43,6 +44,8 @@ export default function Inicio() {
           ))}
         </div>
       </header>
+
+      <MascotaInicio />
 
       <RepasoErrores />
 
