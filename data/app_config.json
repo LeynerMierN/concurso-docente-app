@@ -17,46 +17,47 @@
   "ui_theme": {
     "color_palette": {
       "primary": {
-        "light": "#2563EB",
-        "DEFAULT": "#1E40AF",
-        "dark": "#1E3A8A",
-        "label": "Azul Institucional"
+        "light": "#0F8467",
+        "DEFAULT": "#0D7A5F",
+        "dark": "#0A5A46",
+        "label": "Verde esperanza"
       },
       "secondary": {
-        "light": "#10B981",
-        "DEFAULT": "#059669",
-        "dark": "#047857",
-        "label": "Verde Éxito / Acierto"
+        "light": "#5FD0A8",
+        "DEFAULT": "#0D7A5F",
+        "dark": "#0A5A46",
+        "label": "Verde aciertos"
       },
       "accent": {
-        "light": "#F59E0B",
-        "DEFAULT": "#D97706",
-        "dark": "#B45309",
-        "label": "Ámbar Premium / Insignias"
+        "light": "#FFE58A",
+        "DEFAULT": "#FFD447",
+        "dark": "#8A6500",
+        "label": "Resaltador / logros"
       },
       "danger": {
-        "light": "#EF4444",
-        "DEFAULT": "#DC2626",
-        "dark": "#B91C1C",
-        "label": "Rojo Error / Alerta"
+        "light": "#C2457E",
+        "DEFAULT": "#9A2257",
+        "dark": "#7A1A45",
+        "label": "Mora / errores"
       },
       "background": {
-        "light": "#F8FAFC",
-        "dark": "#0F172A"
+        "light": "#FDFCF7",
+        "dark": "#121A33"
       },
       "card_bg": {
         "light": "#FFFFFF",
-        "dark": "#1E293B"
+        "dark": "#1F2950"
       },
       "text": {
-        "primary": "#0F172A",
-        "secondary": "#475569",
-        "muted": "#94A3B8"
+        "primary": "#1E2A52",
+        "secondary": "#515B7A",
+        "muted": "#5C6585"
       }
     },
     "typography": {
-      "font_family_sans": "Inter, system-ui, sans-serif",
-      "font_family_heading": "Plus Jakarta Sans, sans-serif"
+      "font_family_sans": "Atkinson Hyperlegible, system-ui, sans-serif",
+      "font_family_heading": "Bricolage Grotesque, sans-serif",
+      "font_family_handwriting": "Caveat, cursive"
     },
     "layout_breakpoints": {
       "mobile": "320px",
