@@ -1,14 +1,16 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { Award, CheckCircle2, ChevronDown, CircleDashed, Clock, Flag, RotateCcw, Scale, XCircle } from "lucide-react";
+import { Award, CheckCircle2, ChevronDown, CircleDashed, Clock, Flag, RotateCcw, Scale, Sparkles, XCircle } from "lucide-react";
+import IconoInsignia from "@/components/gamificacion/IconoInsignia";
 import type { QuizRunner } from "@/hooks/useQuizRunner";
+import { INSIGNIAS } from "@/lib/insignias";
 import { celebrarAprobacion } from "@/lib/celebrar";
 import { formatoTiempo } from "@/lib/tiempo";
 
 /** Pantalla final: puntaje, desglose por área y revisión pregunta por pregunta */
 export default function Resultados({ runner }: { runner: QuizRunner }) {
-  const { sesion, preguntas, resultado, segundosTranscurridos } = runner;
+  const { sesion, preguntas, resultado, segundosTranscurridos, registro } = runner;
   const [soloErrores, setSoloErrores] = useState(false);
   const celebrado = useRef(false);
 
@@ -53,6 +55,11 @@ export default function Resultados({ runner }: { runner: QuizRunner }) {
           {aprobado ? "Aprobado" : "No aprobado"}
         </span>
         <p className="mt-2 text-xs opacity-80">Umbral: {resultado.umbral}/100</p>
+        {registro?.xp ? (
+          <p className="mt-3 inline-flex items-center gap-1 rounded-full bg-white/15 px-3 py-1 text-sm font-bold">
+            <Sparkles className="size-4 text-oro" /> +{registro.xp} XP
+          </p>
+        ) : null}
 
         <dl className="mt-5 grid grid-cols-4 gap-2 text-center">
           {[
@@ -69,6 +76,28 @@ export default function Resultados({ runner }: { runner: QuizRunner }) {
           ))}
         </dl>
       </header>
+
+      {/* Insignias desbloqueadas en este intento */}
+      {(registro?.insigniasNuevas ?? []).map((id) => {
+        const insignia = INSIGNIAS.find((x) => x.id === id);
+        if (!insignia) return null;
+        return (
+          <section
+            key={id}
+            className="flex items-center gap-4 rounded-3xl bg-accent/10 p-5 ring-1 ring-accent/30"
+            aria-label="Nueva insignia"
+          >
+            <span className="grid size-14 shrink-0 place-items-center rounded-2xl bg-accent text-white">
+              <IconoInsignia nombre={insignia.icono} className="size-8" />
+            </span>
+            <div>
+              <p className="text-xs font-bold uppercase tracking-wide text-accent-dark dark:text-accent-light">¡Nueva insignia!</p>
+              <p className="font-heading font-bold">{insignia.titulo}</p>
+              <p className="text-sm text-slate-600 dark:text-slate-300">{insignia.descripcion}</p>
+            </div>
+          </section>
+        );
+      })}
 
       {/* Desglose por área */}
       <section className="space-y-3 rounded-3xl bg-white p-5 ring-1 ring-slate-200 dark:bg-tarjeta dark:ring-slate-700/60">

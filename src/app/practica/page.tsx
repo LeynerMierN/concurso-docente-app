@@ -6,10 +6,12 @@ import { useSearchParams } from "next/navigation";
 import { BookOpenCheck, Clock, Pause, Play } from "lucide-react";
 import Cargando from "@/components/quiz/Cargando";
 import QuizRunner from "@/components/quiz/QuizRunner";
+import { usePerfil } from "@/hooks/usePerfil";
 import { useQuizRunner } from "@/hooks/useQuizRunner";
+import { umbralDe } from "@/lib/perfil";
 import SelectorCategorias from "@/components/practica/SelectorCategorias";
 import { FILTRO_NUCLEO_COMUN, MODOS_EXAMEN, configDesdeModo, dimensionarModo, obtenerModo } from "@/lib/appConfig";
-import { UMBRAL_DOCENTE_AULA, filtrarPreguntas } from "@/lib/preguntas";
+import { filtrarPreguntas } from "@/lib/preguntas";
 import type { FiltroExamen } from "@/types/exam";
 
 /** "Prueba por Competencia" se enfoca en una sola área: no admite "Todas las áreas" */
@@ -27,16 +29,22 @@ export default function Pagina() {
 }
 
 function Practica() {
-  const modo = obtenerModo(useSearchParams().get("modo"));
+  const parametros = useSearchParams();
+  const modo = obtenerModo(parametros.get("modo"));
+  // ?filtro= permite llegar con una categoría preseleccionada (p. ej. desde "Tu ruta" en Inicio)
+  const pedido = parametros.get("filtro");
+  const filtroInicial = pedido && filtrarPreguntas(pedido).length > 0 ? pedido : null;
   // La clave cambia con el modo para que al elegir otro modo se reinicie la selección
-  return <Selector key={modo?.id ?? "libre"} modoId={modo?.id ?? null} />;
+  return <Selector key={`${modo?.id ?? "libre"}-${filtroInicial}`} modoId={modo?.id ?? null} filtroInicial={filtroInicial} />;
 }
 
-function Selector({ modoId }: { modoId: string | null }) {
+function Selector({ modoId, filtroInicial }: { modoId: string | null; filtroInicial: FiltroExamen | null }) {
   const runner = useQuizRunner("concurso-docente:practica");
+  const { perfil } = usePerfil();
+  const umbral = umbralDe(perfil);
   const modo = obtenerModo(modoId);
   const unaArea = !!modo && MODOS_DE_UNA_AREA.has(modo.id);
-  const [filtro, setFiltro] = useState<FiltroExamen | null>(unaArea ? null : FILTRO_NUCLEO_COMUN);
+  const [filtro, setFiltro] = useState<FiltroExamen | null>(filtroInicial ?? (unaArea ? null : FILTRO_NUCLEO_COMUN));
   const [feedback, setFeedback] = useState(true);
 
   if (!runner.cargado) return <Cargando />;
@@ -48,8 +56,8 @@ function Selector({ modoId }: { modoId: string | null }) {
     if (!filtro) return;
     runner.iniciar(
       modo
-        ? configDesdeModo(modo, filtro)
-        : { modo: "practica", filtro, limiteSegundos: null, feedbackInmediato: feedback, umbral: UMBRAL_DOCENTE_AULA },
+        ? configDesdeModo(modo, filtro, umbral)
+        : { modo: "practica", filtro, limiteSegundos: null, feedbackInmediato: feedback, umbral },
     );
   };
 

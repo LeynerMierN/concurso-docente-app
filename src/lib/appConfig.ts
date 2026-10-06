@@ -5,6 +5,7 @@ import {
   FileText,
   LayoutDashboard,
   Timer,
+  Wallet,
   type LucideIcon,
 } from "lucide-react";
 import config from "@data/app_config.json";
@@ -16,14 +17,14 @@ export const APP = config.app_metadata;
 /** Íconos que el config nombra por texto. Importarlos uno a uno evita cargar toda la librería. */
 const ICONOS: Record<string, LucideIcon> = { LayoutDashboard, BookOpenCheck, Timer, FileText, BarChart3, Crown };
 
-/** Módulos que aún no existen: se leen del config pero no se muestran */
-const MODULOS_OCULTOS = new Set(["premium"]);
+/** Módulos del config que no van en la barra inferior del celular (se accede desde Inicio y Perfil) */
+const FUERA_DE_BARRA_MOVIL = new Set(["premium"]);
 
 /** Etiquetas cortas para la barra inferior del celular, donde no caben las del config */
 const ETIQUETA_CORTA: Record<string, string> = {
   home: "Inicio",
   practica: "Práctica",
-  simulacros: "Simulacros",
+  simulacros: "Simulacro",
   normatividad: "Fichas",
   estadisticas: "Progreso",
 };
@@ -37,9 +38,7 @@ export interface ModuloNavegacion {
   Icono: LucideIcon;
 }
 
-export const MODULOS_NAVEGACION: ModuloNavegacion[] = config.navigation_modules
-  .filter((m) => !MODULOS_OCULTOS.has(m.id))
-  .map((m) => ({
+export const MODULOS_NAVEGACION: ModuloNavegacion[] = config.navigation_modules.map((m) => ({
     id: m.id,
     etiqueta: m.label,
     etiquetaCorta: ETIQUETA_CORTA[m.id] ?? m.label,
@@ -47,6 +46,19 @@ export const MODULOS_NAVEGACION: ModuloNavegacion[] = config.navigation_modules
     ruta: m.route,
     Icono: ICONOS[m.icon] ?? FileText,
   }));
+
+/** Barra inferior del celular: módulos de estudio + Convocatoria (que no está en el config) */
+export const MODULOS_MOVIL: ModuloNavegacion[] = [
+  ...MODULOS_NAVEGACION.filter((m) => !FUERA_DE_BARRA_MOVIL.has(m.id)),
+  {
+    id: "convocatoria",
+    etiqueta: "Convocatoria y salario",
+    etiquetaCorta: "Concurso",
+    descripcion: "Reglas del examen, calculadora salarial y beneficios.",
+    ruta: "/convocatoria",
+    Icono: Wallet,
+  },
+];
 
 export const META_DIARIA_PREGUNTAS = config.gamification.streak_system.daily_goal_questions;
 
@@ -142,7 +154,11 @@ export function obtenerModo(id: string | null): ModoExamen | undefined {
 }
 
 /** Traduce un modo del config a la configuración del motor de examen */
-export function configDesdeModo(modo: ModoExamen, filtro: FiltroExamen = FILTRO_NUCLEO_COMUN): ConfigExamen {
+export function configDesdeModo(
+  modo: ModoExamen,
+  filtro: FiltroExamen = FILTRO_NUCLEO_COMUN,
+  umbral: number = UMBRAL_DOCENTE_AULA,
+): ConfigExamen {
   const { preguntas, minutos, distribucion } = dimensionarModo(modo, filtro);
   return {
     modo: modo.feedbackInmediato ? "practica" : "simulacro",
@@ -153,6 +169,6 @@ export function configDesdeModo(modo: ModoExamen, filtro: FiltroExamen = FILTRO_
     limiteSegundos: minutos === null ? null : minutos * 60,
     feedbackInmediato: modo.feedbackInmediato,
     permitirPausa: modo.permitePausa,
-    umbral: UMBRAL_DOCENTE_AULA,
+    umbral,
   };
 }

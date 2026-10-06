@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { ArrowRight, ChevronRight, FileText, GraduationCap, Wallet } from "lucide-react";
+import BotonPerfil from "@/components/dashboard/BotonPerfil";
 import RachaDiaria from "@/components/dashboard/RachaDiaria";
+import RutaEstudio from "@/components/dashboard/RutaEstudio";
 import TarjetasModos from "@/components/dashboard/TarjetasModos";
 import { APP } from "@/lib/appConfig";
 import { CONVOCATORIA_DATA, calcularIngresoAnualDocente, formatoCOP } from "@/lib/convocatoria";
@@ -20,8 +22,11 @@ export default function Inicio() {
   return (
     <div className="space-y-6">
       <header className="rounded-3xl bg-gradient-to-br from-primary to-primary-dark p-6 text-white shadow-lg">
-        <div className="flex items-center gap-2 text-sm font-medium text-marca-100">
-          <GraduationCap className="size-5" /> {APP.name}
+        <div className="flex items-center justify-between gap-3">
+          <div className="flex items-center gap-2 text-sm font-medium text-marca-100">
+            <GraduationCap className="size-5" /> {APP.name}
+          </div>
+          <BotonPerfil />
         </div>
         <h1 className="mt-2 text-2xl font-extrabold leading-tight md:text-3xl">{APP.tagline}</h1>
         <div className="mt-5 grid grid-cols-3 gap-3 text-center">
@@ -37,6 +42,8 @@ export default function Inicio() {
           ))}
         </div>
       </header>
+
+      <RutaEstudio />
 
       <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.4fr)] lg:items-start">
         <RachaDiaria />

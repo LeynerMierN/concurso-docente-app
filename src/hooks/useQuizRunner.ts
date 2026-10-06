@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { armarExamen, armarPorDistribucion, calificar, etiquetaFiltro, listarRespuestas, mezclar, obtenerPregunta } from "@/lib/preguntas";
-import { registrarIntento } from "@/lib/storage";
+import { registrarIntento, type Intento } from "@/lib/storage";
 import type { ConfigExamen, Opcion, OpcionId, Pregunta, SesionExamen } from "@/types/exam";
 
 const LETRAS: OpcionId[] = ["A", "B", "C", "D"];
@@ -166,9 +166,14 @@ export function useQuizRunner(clave: string) {
   );
 
   // Guarda el intento en el historial al terminar (registrarIntento ignora duplicados tras recargar)
+  const [registro, setRegistro] = useState<Intento | null>(null);
   useEffect(() => {
-    if (!sesion?.terminadoMs || !resultado) return;
-    registrarIntento({
+    if (!sesion?.terminadoMs || !resultado) {
+      setRegistro(null);
+      return;
+    }
+    const intento = registrarIntento({
+      modoId: sesion.config.modoId,
       modo: sesion.config.modo,
       area: etiquetaFiltro(sesion.config.filtro),
       inicioMs: sesion.inicioMs,
@@ -178,6 +183,7 @@ export function useQuizRunner(clave: string) {
       puntaje: resultado.porcentaje,
       aprobado: resultado.aprobado,
     });
+    setRegistro(intento);
   }, [sesion, preguntas, resultado]);
 
   const respuestasUsuario = useMemo(
@@ -197,6 +203,8 @@ export function useQuizRunner(clave: string) {
     preguntaActual,
     respuestasUsuario,
     resultado,
+    /** Intento guardado (con XP e insignias ganadas) cuando la sesión terminó */
+    registro,
     segundosTranscurridos,
     segundosRestantes,
     iniciar,

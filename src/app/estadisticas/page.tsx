@@ -6,7 +6,7 @@ import { useProgreso } from "@/hooks/useProgreso";
 import { MODULOS_NAVEGACION } from "@/lib/appConfig";
 import { CATEGORIAS_NUCLEO, aciertoGlobal, aciertoPorArea, proyeccionPuntaje } from "@/lib/estadisticas";
 import { UMBRAL_DOCENTE_AULA } from "@/lib/preguntas";
-import { calcularRacha } from "@/lib/storage";
+import { calcularRacha, diasDeRacha } from "@/lib/storage";
 import { formatoTiempo } from "@/lib/tiempo";
 
 const tarjeta = "rounded-3xl bg-white p-5 ring-1 ring-slate-200 dark:bg-tarjeta dark:ring-slate-700/60";
@@ -56,7 +56,7 @@ export default function Pagina() {
   const simulacros = progreso.intentos.filter((i) => i.modo === "simulacro");
   const aprobados = simulacros.filter((s) => s.aprobado).length;
   const proyeccion = proyeccionPuntaje(progreso);
-  const racha = calcularRacha(progreso.diasEstudio);
+  const racha = calcularRacha(diasDeRacha(progreso));
   const evolucion = simulacros.slice(0, 10).reverse();
   const fuerte = areas.length > 1 ? areas[areas.length - 1] : null;
 

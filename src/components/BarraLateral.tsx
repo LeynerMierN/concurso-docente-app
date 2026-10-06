@@ -3,11 +3,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Wallet } from "lucide-react";
+import { UserRound, Wallet } from "lucide-react";
 import { APP, MODULOS_NAVEGACION } from "@/lib/appConfig";
 
-/** Enlaces que no están en navigation_modules pero deben seguir accesibles en escritorio */
-const RECURSOS = [{ ruta: "/convocatoria", etiqueta: "Convocatoria y salario", Icono: Wallet }];
+/** Enlaces que no están en navigation_modules */
+const RECURSOS = [
+  { ruta: "/convocatoria", etiqueta: "Convocatoria y salario", Icono: Wallet },
+  { ruta: "/perfil", etiqueta: "Mi perfil", Icono: UserRound },
+];
 
 export function esRutaActiva(actual: string, ruta: string) {
   return ruta === "/" ? actual === "/" : actual.startsWith(ruta);

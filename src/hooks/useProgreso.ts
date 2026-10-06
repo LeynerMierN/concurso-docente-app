@@ -12,7 +12,12 @@ export function useProgreso(): Progreso | null {
     cargar();
     // Si el usuario termina un intento en otra pestaña, refrescamos
     window.addEventListener("storage", cargar);
-    return () => window.removeEventListener("storage", cargar);
+    // Cambios hechos en esta misma pestaña (p. ej. usar un protector de racha)
+    window.addEventListener("concurso-docente:progreso", cargar);
+    return () => {
+      window.removeEventListener("storage", cargar);
+      window.removeEventListener("concurso-docente:progreso", cargar);
+    };
   }, []);
 
   return progreso;

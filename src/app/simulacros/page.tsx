@@ -5,10 +5,11 @@ import { useSearchParams } from "next/navigation";
 import { Clock, EyeOff, Flag, Info, Play, Target, Timer } from "lucide-react";
 import Cargando from "@/components/quiz/Cargando";
 import QuizRunner from "@/components/quiz/QuizRunner";
+import { usePerfil } from "@/hooks/usePerfil";
 import { useQuizRunner } from "@/hooks/useQuizRunner";
+import { ROLES, umbralDe } from "@/lib/perfil";
 import { DISTRIBUCION_CNSC, MODOS_EXAMEN, configDesdeModo, dimensionarModo, obtenerModo } from "@/lib/appConfig";
 import { obtenerCategoria } from "@/lib/categorias";
-import { UMBRAL_DOCENTE_AULA } from "@/lib/preguntas";
 
 /** Simulacros cronometrados sin retroalimentación, definidos en data/app_config.json */
 const MODOS_SIMULACRO = MODOS_EXAMEN.filter((m) => !m.feedbackInmediato);
@@ -29,6 +30,9 @@ function Simulacros() {
 
 function Configurar({ inicial }: { inicial: string }) {
   const runner = useQuizRunner("concurso-docente:simulacro");
+  const { perfil } = usePerfil();
+  const umbral = umbralDe(perfil);
+  const rol = ROLES.find((r) => r.id === perfil?.role);
   const [modoId, setModoId] = useState(inicial);
 
   if (!runner.cargado) return <Cargando />;
@@ -41,7 +45,7 @@ function Configurar({ inicial }: { inicial: string }) {
     { Icono: Clock, texto: `${modo.minutos} minutos en total. Al agotarse, se entrega solo.` },
     { Icono: EyeOff, texto: "Sin retroalimentación ni pausa hasta que entregues, como en el examen real." },
     { Icono: Flag, texto: "Navega libremente y marca con bandera las preguntas que quieras revisar." },
-    { Icono: Target, texto: `Apruebas con ${UMBRAL_DOCENTE_AULA}/100. Las preguntas sin responder cuentan como incorrectas.` },
+    { Icono: Target, texto: `Apruebas con ${umbral}/100${rol ? ` (umbral de ${rol.nombre.toLowerCase()})` : ""}. Las preguntas sin responder cuentan como incorrectas.` },
   ];
 
   return (
@@ -123,7 +127,7 @@ function Configurar({ inicial }: { inicial: string }) {
 
       <button
         type="button"
-        onClick={() => runner.iniciar(configDesdeModo(modo))}
+        onClick={() => runner.iniciar(configDesdeModo(modo, undefined, umbral))}
         className="flex w-full items-center justify-center gap-2 rounded-2xl bg-primary px-4 py-3.5 font-semibold text-white shadow-lg active:scale-[0.98]"
       >
         <Play className="size-5" fill="currentColor" /> Iniciar simulacro
