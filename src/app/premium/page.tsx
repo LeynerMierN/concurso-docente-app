@@ -27,25 +27,25 @@ const BENEFICIOS = [
 export default function Pagina() {
   return (
     <div className="space-y-6">
-      <header className="rounded-3xl bg-gradient-to-br from-accent to-accent-dark p-6 text-white shadow-lg">
-        <span className="inline-flex items-center gap-1.5 rounded-full bg-white/20 px-3 py-1 text-xs font-bold uppercase tracking-wide">
+      <header className="rounded-3xl bg-accent p-6 text-tinta">
+        <span className="inline-flex items-center gap-1.5 rounded-full bg-tinta/10 px-3 py-1 text-xs font-bold uppercase tracking-wide">
           Próximamente
         </span>
         <h1 className="mt-3 flex items-center gap-2 text-2xl font-extrabold md:text-3xl">
           <Crown className="size-8" /> Modo Premium
         </h1>
-        {descripcion && <p className="mt-2 text-white/90">{descripcion}</p>}
+        {descripcion && <p className="mt-2 text-tinta/85">{descripcion}</p>}
       </header>
 
       <ul className="space-y-3">
         {BENEFICIOS.map(({ Icono, titulo, texto }) => (
           <li key={titulo} className="flex gap-4 rounded-3xl bg-white p-5 ring-1 ring-slate-200 dark:bg-tarjeta dark:ring-slate-700/60">
-            <span className="grid size-12 shrink-0 place-items-center rounded-2xl bg-accent/15 text-accent">
+            <span className="grid size-12 shrink-0 place-items-center rounded-2xl bg-accent/15 text-accent-dark">
               <Icono className="size-6" />
             </span>
             <div>
               <h2 className="font-semibold">{titulo}</h2>
-              <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">{texto}</p>
+              <p className="mt-1 text-sm text-slate-600 dark:text-slate-300">{texto}</p>
             </div>
           </li>
         ))}
@@ -53,7 +53,7 @@ export default function Pagina() {
 
       <section className="rounded-3xl bg-secondary/10 p-5 ring-1 ring-secondary/30">
         <h2 className="flex items-center gap-2 font-bold">
-          <Check className="size-5 text-secondary" /> Mientras tanto, todo es gratis
+          <Check className="size-5 text-secondary-light" /> Mientras tanto, todo es gratis
         </h2>
         <p className="mt-1 text-sm text-slate-700 dark:text-slate-300">
           Las {PREGUNTAS.length} preguntas actuales, los simulacros, las fichas, la calculadora salarial y tu progreso están

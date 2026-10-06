@@ -42,11 +42,11 @@ export default function ReglasExamen() {
           {umbrales.map(({ perfil, minimo }) => (
             <div key={perfil} className="rounded-2xl bg-slate-50 p-4 text-center dark:bg-slate-700/40">
               <p className="text-xs font-medium text-slate-500">{perfil}</p>
-              <p className="mt-1 text-4xl font-extrabold tabular-nums text-marca-600 dark:text-oro">{minimo}</p>
+              <p className="mt-1 text-4xl font-extrabold tabular-nums text-primary-light dark:text-oro">{minimo}</p>
               <div className="mt-2 h-2 overflow-hidden rounded-full bg-slate-200 dark:bg-slate-700">
                 <div className="h-full rounded-full bg-marca-500" style={{ width: `${minimo}%` }} />
               </div>
-              <p className="mt-2 inline-flex items-center gap-1 rounded-full bg-error/10 px-2 py-0.5 text-[11px] font-semibold text-error">
+              <p className="mt-2 inline-flex items-center gap-1 rounded-full bg-error/10 px-2 py-0.5 text-[11px] font-semibold text-danger dark:text-danger-light">
                 <ShieldAlert className="size-3" /> Eliminatorio
               </p>
             </div>
@@ -59,20 +59,20 @@ export default function ReglasExamen() {
         <h2 className="font-semibold">Componentes de la prueba escrita</h2>
         {eliminatoria && (
           <div className="rounded-3xl border-l-4 border-error bg-white p-5 ring-1 ring-slate-200 dark:bg-tarjeta dark:ring-slate-700/60">
-            <p className="flex items-center gap-2 text-xs font-bold uppercase tracking-wide text-error">
+            <p className="flex items-center gap-2 text-xs font-bold uppercase tracking-wide text-danger dark:text-danger-light">
               <Ban className="size-4" /> Eliminatoria
             </p>
             <h3 className="mt-1 font-semibold">Básicas, Pedagógicas y Disciplinares</h3>
-            <p className="mt-1 text-sm leading-relaxed text-slate-600 dark:text-slate-400">{eliminatoria.descripcion}</p>
+            <p className="mt-1 text-sm leading-relaxed text-slate-600 dark:text-slate-300">{eliminatoria.descripcion}</p>
           </div>
         )}
         {clasificatoria && (
           <div className="rounded-3xl border-l-4 border-exito bg-white p-5 ring-1 ring-slate-200 dark:bg-tarjeta dark:ring-slate-700/60">
-            <p className="flex items-center gap-2 text-xs font-bold uppercase tracking-wide text-exito">
+            <p className="flex items-center gap-2 text-xs font-bold uppercase tracking-wide text-secondary-light">
               <Trophy className="size-4" /> Clasificatoria · {clasificatoria.peso_porcentual}
             </p>
             <h3 className="mt-1 font-semibold">{clasificatoria.nombre}</h3>
-            <p className="mt-1 text-sm leading-relaxed text-slate-600 dark:text-slate-400">{clasificatoria.descripcion}</p>
+            <p className="mt-1 text-sm leading-relaxed text-slate-600 dark:text-slate-300">{clasificatoria.descripcion}</p>
           </div>
         )}
       </section>
@@ -106,13 +106,13 @@ export default function ReglasExamen() {
             <li key={p.tipo} className="py-3 first:pt-0 last:pb-0">
               <div className="flex items-start justify-between gap-3">
                 <p className="text-sm font-semibold">{p.tipo}</p>
-                <span className="shrink-0 rounded-full bg-marca-50 px-2 py-0.5 text-[11px] font-semibold text-marca-600 dark:bg-marca-700/30 dark:text-oro">
+                <span className="shrink-0 rounded-full bg-marca-50 px-2 py-0.5 text-[11px] font-semibold text-primary-light dark:bg-marca-700/30 dark:text-oro">
                   {p.ingreso_escalafon}
                 </span>
               </div>
               <p className="mt-1 text-xs text-slate-500">{p.grados_habilitados.join(" · ")}</p>
               {"condicion_adicional" in p && p.condicion_adicional && (
-                <p className="mt-1 text-xs text-amber-700 dark:text-amber-400">{p.condicion_adicional}</p>
+                <p className="mt-1 text-xs text-accent-dark">{p.condicion_adicional}</p>
               )}
             </li>
           ))}
@@ -133,7 +133,7 @@ export default function ReglasExamen() {
           ))}
         </ol>
         <p className="mt-4 flex items-start gap-2 rounded-2xl bg-exito/10 p-3 text-xs text-slate-700 dark:text-slate-300">
-          <CheckCircle2 className="size-4 shrink-0 text-exito" /> Tu meta en esta app: superar con holgura el umbral de la
+          <CheckCircle2 className="size-4 shrink-0 text-secondary-light" /> Tu meta en esta app: superar con holgura el umbral de la
           prueba eliminatoria.
         </p>
       </section>

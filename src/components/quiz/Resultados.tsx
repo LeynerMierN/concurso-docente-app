@@ -158,7 +158,7 @@ export default function Resultados({ runner }: { runner: QuizRunner }) {
           <button
             type="button"
             onClick={() => setCeremonia("repeticion")}
-            className="w-full rounded-2xl bg-accent px-4 py-2.5 text-sm font-bold text-white active:scale-[0.98]"
+            className="w-full rounded-2xl bg-accent px-4 py-2.5 text-sm font-bold text-tinta active:scale-[0.98]"
           >
             Ver la premiación otra vez
           </button>
@@ -232,9 +232,9 @@ export default function Resultados({ runner }: { runner: QuizRunner }) {
                 <details className="group rounded-2xl bg-white ring-1 ring-slate-200 dark:bg-tarjeta dark:ring-slate-700/60">
                   <summary className="flex cursor-pointer list-none items-start gap-3 p-4">
                     {acerto ? (
-                      <CheckCircle2 className="mt-0.5 size-5 shrink-0 text-exito" />
+                      <CheckCircle2 className="mt-0.5 size-5 shrink-0 text-secondary-light" />
                     ) : elegida ? (
-                      <XCircle className="mt-0.5 size-5 shrink-0 text-error" />
+                      <XCircle className="mt-0.5 size-5 shrink-0 text-danger dark:text-danger-light" />
                     ) : (
                       <CircleDashed className="mt-0.5 size-5 shrink-0 text-slate-400" />
                     )}
@@ -249,7 +249,7 @@ export default function Resultados({ runner }: { runner: QuizRunner }) {
                   </summary>
 
                   <div className="space-y-3 border-t border-slate-100 p-4 text-sm dark:border-slate-700">
-                    <p className="leading-relaxed text-slate-600 dark:text-slate-400">{p.contexto}</p>
+                    <p className="leading-relaxed text-slate-600 dark:text-slate-300">{p.contexto}</p>
                     <div
                       className={`rounded-xl p-3 ${
                         acerto ? "bg-exito/10" : elegida ? "bg-error/10" : "bg-slate-100 dark:bg-slate-700/60"

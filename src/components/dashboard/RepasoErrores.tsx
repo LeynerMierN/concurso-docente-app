@@ -20,16 +20,16 @@ export default function RepasoErrores() {
     return (
       <Link
         href="/practica?filtro=repaso"
-        className="flex items-center gap-4 rounded-3xl bg-accent p-5 text-white shadow-sm transition active:scale-[0.99]"
+        className="flex items-center gap-4 rounded-3xl bg-accent p-5 text-tinta shadow-sm transition active:scale-[0.99]"
       >
-        <span className="grid size-12 shrink-0 place-items-center rounded-2xl bg-white/20">
+        <span className="grid size-12 shrink-0 place-items-center rounded-2xl bg-tinta/10">
           <RotateCcw className="size-7" />
         </span>
         <span className="min-w-0 flex-1">
           <span className="block font-heading text-lg font-bold leading-snug">
             {hoy} {hoy === 1 ? "pregunta" : "preguntas"} para repasar hoy
           </span>
-          <span className="block text-sm text-white/90">Vuelve sobre lo que fallaste antes de que se te olvide.</span>
+          <span className="block text-sm text-tinta/80">Vuelve sobre lo que fallaste antes de que se te olvide.</span>
         </span>
         <ChevronRight className="size-6 shrink-0" />
       </Link>
@@ -39,7 +39,7 @@ export default function RepasoErrores() {
   const [a, m, d] = (proximaFecha ?? "").split("-").map(Number);
   return (
     <div className="flex items-center gap-4 rounded-3xl bg-white p-5 ring-1 ring-slate-200 dark:bg-tarjeta dark:ring-slate-700/60">
-      <span className="grid size-12 shrink-0 place-items-center rounded-2xl bg-secondary/15 text-secondary">
+      <span className="grid size-12 shrink-0 place-items-center rounded-2xl bg-secondary/15 text-secondary-light">
         <CalendarClock className="size-7" />
       </span>
       <span className="min-w-0 flex-1">

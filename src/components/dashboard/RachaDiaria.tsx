@@ -47,14 +47,14 @@ export default function RachaDiaria() {
           <p className="mt-0.5 text-xs text-slate-500">Mejor marca: {racha.mejor}</p>
           <Link
             href="/perfil"
-            className="mt-2 inline-flex items-center gap-1 rounded-full bg-primary/10 px-2.5 py-1 text-xs font-bold text-primary dark:bg-primary-light/15 dark:text-oro"
+            className="mt-2 inline-flex items-center gap-1 rounded-full bg-primary/10 px-2.5 py-1 text-xs font-bold text-primary-light dark:bg-primary-light/15 dark:text-oro"
           >
             <GraduationCap className="size-3.5" /> {nivel.nombre} · {xp.toLocaleString("es-CO")} {PUNTOS_CORTO}
           </Link>
         </div>
         <span
           className={`grid size-14 shrink-0 place-items-center rounded-2xl ${
-            racha.actual > 0 ? "bg-primary/10 text-primary dark:bg-primary-light/15 dark:text-oro" : "bg-slate-100 text-slate-400 dark:bg-slate-700/60"
+            racha.actual > 0 ? "bg-primary/10 text-primary-light dark:bg-primary-light/15 dark:text-oro" : "bg-slate-100 text-slate-400 dark:bg-slate-700/60"
           }`}
         >
           <CalendarCheck2 className="size-8" />
@@ -84,7 +84,7 @@ export default function RachaDiaria() {
       <div>
         <div className="flex items-center justify-between text-sm">
           <span className="flex items-center gap-1.5 font-medium">
-            {metaCumplida ? <CheckCircle2 className="size-4 text-secondary" /> : <ClipboardList className="size-4 text-primary-light" />}
+            {metaCumplida ? <CheckCircle2 className="size-4 text-secondary-light" /> : <ClipboardList className="size-4 text-primary-light" />}
             Tarea de hoy
           </span>
           <span className="tabular-nums">
@@ -151,7 +151,7 @@ export default function RachaDiaria() {
           href="/estadisticas"
           className="flex items-center gap-3 rounded-2xl bg-slate-50 p-3 text-sm transition hover:bg-slate-100 dark:bg-slate-700/40 dark:hover:bg-slate-700/60"
         >
-          <AlertTriangle className="size-5 shrink-0 text-accent" />
+          <AlertTriangle className="size-5 shrink-0 text-accent-dark" />
           <span className="min-w-0 flex-1">
             Tu área más débil: <span className="font-semibold">{masDebil.area}</span> ({masDebil.pct}%)
           </span>

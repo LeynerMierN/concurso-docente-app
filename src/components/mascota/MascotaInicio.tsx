@@ -27,7 +27,7 @@ export default function MascotaInicio() {
         onToque={() => setConsejo((c) => (c + 1) % CONSEJOS.length)}
       />
       {/* Tablero de clase con marco de madera: Sabino escribe con tiza */}
-      <div className="relative mb-3 flex-1 rounded-xl border-[6px] border-tablero-marco bg-tablero bg-[radial-gradient(circle_at_30%_20%,rgb(255_255_255/0.08),transparent_60%)] px-4 pt-3 pb-4 text-slate-50 shadow-md">
+      <div className="relative mb-3 flex-1 rounded-xl border-[6px] border-tablero-marco bg-tablero px-4 pt-3 pb-4 text-slate-50 shadow-md">
         <p aria-live="polite" className="font-tiza text-xl leading-snug">
           {mostrandoConsejo && (
             <span className="mb-0.5 flex items-center gap-1 font-sans text-xs font-bold uppercase tracking-wide text-oro">
@@ -38,7 +38,7 @@ export default function MascotaInicio() {
         </p>
         <p className="mt-1.5 text-xs text-white/60">{mostrandoConsejo ? "Toca a Sabino para otro consejo" : "Toca a Sabino para un consejo"}</p>
         {/* Repisa con una tiza */}
-        <span aria-hidden className="absolute inset-x-3 -bottom-[6px] h-1.5 rounded-sm bg-amber-950/70">
+        <span aria-hidden className="absolute inset-x-3 -bottom-[6px] h-1.5 rounded-sm bg-tablero-marco">
           <span className="absolute -top-1 right-4 h-1.5 w-5 rounded-sm bg-white/90" />
         </span>
       </div>

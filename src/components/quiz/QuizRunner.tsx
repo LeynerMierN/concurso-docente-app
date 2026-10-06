@@ -130,7 +130,7 @@ export default function QuizRunner({ runner }: { runner: Runner }) {
           <span
             className={`flex items-center gap-1.5 rounded-full px-3 py-1.5 text-sm font-semibold tabular-nums ${
               poco
-                ? "animate-pulse bg-error/10 text-error"
+                ? "animate-pulse bg-error/10 text-danger dark:text-danger-light"
                 : "bg-slate-100 text-slate-700 dark:bg-slate-700/60 dark:text-slate-200"
             }`}
             aria-label={segundosRestantes !== null ? "Tiempo restante" : "Tiempo transcurrido"}
@@ -163,7 +163,7 @@ export default function QuizRunner({ runner }: { runner: Runner }) {
       <div className="space-y-4">
         {encabezado}
         <section className="space-y-4 rounded-3xl bg-white p-8 text-center ring-1 ring-slate-200 dark:bg-tarjeta dark:ring-slate-700/60">
-          <Pause className="mx-auto size-10 text-primary dark:text-oro" />
+          <Pause className="mx-auto size-10 text-primary-light dark:text-oro" />
           <div>
             <h2 className="text-xl font-bold">En pausa</h2>
             <p className="mt-1 text-sm text-slate-500">
@@ -192,7 +192,7 @@ export default function QuizRunner({ runner }: { runner: Runner }) {
       <article className="space-y-4 rounded-3xl bg-white p-5 shadow-sm ring-1 ring-slate-200 dark:bg-tarjeta dark:ring-slate-700/60">
         <div className="flex items-start justify-between gap-3">
           <div className="min-w-0">
-            <p className="text-xs font-semibold text-marca-600 dark:text-oro">{preguntaActual.area}</p>
+            <p className="text-xs font-semibold text-primary-light dark:text-oro">{preguntaActual.area}</p>
             <p className="text-xs text-slate-500">{preguntaActual.tema}</p>
           </div>
           <button
@@ -254,14 +254,14 @@ export default function QuizRunner({ runner }: { runner: Runner }) {
         {revelada && (
           <div
             className={`space-y-2 rounded-2xl p-4 text-sm ${
-              acerto ? "bg-exito/10 text-emerald-900 dark:text-emerald-100" : "bg-error/10 text-red-900 dark:text-red-100"
+              acerto ? "bg-verde-suave" : "bg-mora-suave"
             }`}
           >
             <div className="flex items-center gap-3">
               <Capibara animo={acerto ? "celebrando" : "animando"} tamano={44} mirarPuntero={false} />
               <div>
                 <p className="flex items-center gap-2 font-bold">
-                  {acerto ? <CheckCircle2 className="size-5 text-exito" /> : <XCircle className="size-5 text-error" />}
+                  {acerto ? <CheckCircle2 className="size-5 text-secondary-light" /> : <XCircle className="size-5 text-danger dark:text-danger-light" />}
                   {acerto ? "¡Correcto!" : "Respuesta incorrecta"}
                 </p>
                 <p className="text-xs opacity-80">{fraseRespuesta(acerto, preguntaActual.id)}</p>

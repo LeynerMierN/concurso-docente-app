@@ -48,7 +48,7 @@ export default function Pagina() {
     <div className="space-y-5">
       <header>
         <h1 className="flex items-center gap-2 text-2xl font-bold">
-          <Layers className="size-7 text-marca-600 dark:text-oro" /> Fichas normativas
+          <Layers className="size-7 text-primary-light dark:text-oro" /> Fichas normativas
         </h1>
         <p className="mt-1 text-sm text-slate-500">Repasa los conceptos que más se preguntan en el examen.</p>
       </header>

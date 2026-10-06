@@ -75,14 +75,14 @@ export default function Pagina() {
               {(progreso.xp ?? 0).toLocaleString("es-CO")} disponibles
             </p>
           </div>
-          <span className="grid size-12 shrink-0 place-items-center rounded-2xl bg-primary/10 text-primary dark:bg-primary-light/15 dark:text-oro">
+          <span className="grid size-12 shrink-0 place-items-center rounded-2xl bg-primary/10 text-primary-light dark:bg-primary-light/15 dark:text-oro">
             <GraduationCap className="size-7" />
           </span>
         </div>
 
         <div className="mt-4">
           <div className="h-2.5 overflow-hidden rounded-full bg-slate-100 dark:bg-slate-700/60">
-            <div className="h-full rounded-full bg-gradient-to-r from-primary-light to-oro" style={{ width: `${nivel.avance * 100}%` }} />
+            <div className="h-full rounded-full barra-resaltador" style={{ width: `${nivel.avance * 100}%` }} />
           </div>
           <p className="mt-1.5 text-xs text-slate-500">
             {nivel.siguiente
@@ -102,7 +102,7 @@ export default function Pagina() {
                   n.numero === nivel.actual.numero
                     ? "bg-primary font-bold text-white"
                     : alcanzado
-                      ? "bg-primary/10 font-semibold text-primary dark:bg-primary-light/15 dark:text-oro"
+                      ? "bg-primary/10 font-semibold text-primary-light dark:bg-primary-light/15 dark:text-oro"
                       : "bg-slate-50 text-slate-400 dark:bg-slate-700/40"
                 }`}
               >
@@ -119,14 +119,14 @@ export default function Pagina() {
             {REGLAS_XP.map(({ texto, xp }) => (
               <li key={texto} className="flex items-center justify-between gap-3 py-2">
                 <span className="text-slate-600 dark:text-slate-300">{texto}</span>
-                <span className="shrink-0 font-bold tabular-nums text-secondary">+{xp}</span>
+                <span className="shrink-0 font-bold tabular-nums text-secondary-light">+{xp}</span>
               </li>
             ))}
             <li className="flex items-center justify-between gap-3 py-2">
               <span className="flex items-center gap-1.5 text-slate-600 dark:text-slate-300">
                 <FileCheck2 className="size-4 text-primary-light" /> Excusa justificada (cubre un día que faltaste)
               </span>
-              <span className="shrink-0 font-bold tabular-nums text-danger">−{COSTO_PROTECTOR_XP}</span>
+              <span className="shrink-0 font-bold tabular-nums text-danger dark:text-danger-light">−{COSTO_PROTECTOR_XP}</span>
             </li>
           </ul>
         </details>
@@ -140,7 +140,7 @@ export default function Pagina() {
         <p className="mt-0.5 text-sm text-slate-500">Toca un premio ganado para ver su ceremonia.</p>
 
         <h3 className="mt-4 text-xs font-bold uppercase tracking-wide text-slate-500">Trofeos de simulacro</h3>
-        <ul className="mt-2 grid grid-cols-2 gap-3 border-b-8 border-amber-900/70 pb-3 md:grid-cols-4 dark:border-amber-900/80">
+        <ul className="mt-2 grid grid-cols-2 gap-3 border-b-8 border-tablero-marco pb-3 md:grid-cols-4">
           {TROFEOS.map((t) => {
             const ganado = trofeos.has(t.id);
             return (
@@ -176,7 +176,7 @@ export default function Pagina() {
                   <Medalla icono={ins.icono} tamano={52} bloqueada={!fecha} balanceo={!!fecha} />
                   <span className="text-sm font-semibold leading-tight">{ins.titulo}</span>
                   {fecha ? (
-                    <span className="inline-flex items-center gap-1 text-xs font-semibold text-secondary">
+                    <span className="inline-flex items-center gap-1 text-xs font-semibold text-secondary-light">
                       <Check className="size-3.5" /> {fechaCorta.format(new Date(fecha))}
                     </span>
                   ) : (
@@ -199,7 +199,7 @@ export default function Pagina() {
       {premioVisto && <Premiacion premios={[premioVisto]} repeticion onCerrar={() => setPremioVisto(null)} />}
 
       <Link href="/premium" className={`${tarjeta} flex items-center gap-4 transition hover:ring-accent`}>
-        <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-accent/15 text-accent">
+        <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-accent/15 text-accent-dark">
           <Crown className="size-6" />
         </span>
         <span className="flex-1">

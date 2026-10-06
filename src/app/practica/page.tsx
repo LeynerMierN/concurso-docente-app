@@ -88,7 +88,7 @@ function Selector({ modoId, filtroInicial }: { modoId: string | null; filtroInic
     <div className="space-y-6 pb-20">
       <header>
         <h1 className="flex items-center gap-2 text-2xl font-bold">
-          <BookOpenCheck className="size-7 text-primary dark:text-oro" /> Práctica guiada
+          <BookOpenCheck className="size-7 text-primary-light dark:text-oro" /> Práctica guiada
         </h1>
         <p className="mt-1 text-sm text-slate-500">
           {modo ? modo.descripcion : "Elige qué repasar: el núcleo común, tu especialidad o un tema clave. Sin límite de tiempo."}

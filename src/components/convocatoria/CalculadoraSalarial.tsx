@@ -70,7 +70,7 @@ export default function CalculadoraSalarial() {
               >
                 <span className="min-w-0">
                   <span className="block text-sm font-semibold">{etiquetaCorta(item)}</span>
-                  <span className={`block truncate text-xs ${activo ? "text-marca-100" : "text-slate-500"}`}>
+                  <span className={`block truncate text-xs ${activo ? "text-white/90" : "text-slate-500"}`}>
                     {item.estudios}
                   </span>
                 </span>
@@ -83,20 +83,20 @@ export default function CalculadoraSalarial() {
 
       {/* Resultado */}
       <section aria-live="polite" className="space-y-3">
-        <div className="rounded-3xl bg-gradient-to-br from-marca-600 to-marca-700 p-5 text-white shadow-lg">
-          <p className="text-sm text-marca-100">
+        <div className="rounded-3xl bg-primary p-5 text-white">
+          <p className="text-sm text-white/90">
             {calculo.grado} · {calculo.posgrado}
           </p>
-          <p className="mt-3 text-xs uppercase tracking-wide text-marca-100">Asignación básica mensual</p>
+          <p className="mt-3 text-xs uppercase tracking-wide text-white/90">Asignación básica mensual</p>
           <p className="text-3xl font-extrabold tabular-nums">{formatoCOP.format(s)}</p>
 
           <div className="mt-5 grid grid-cols-2 gap-3">
             <div className="rounded-2xl bg-white/10 p-3">
-              <p className="text-[11px] text-marca-100">Total anual proyectado</p>
+              <p className="text-[11px] text-white/90">Total anual proyectado</p>
               <p className="text-lg font-bold tabular-nums">{formatoCOP.format(calculo.ingreso_total_anual_proyectado)}</p>
             </div>
             <div className="rounded-2xl bg-white/10 p-3">
-              <p className="text-[11px] text-marca-100">Promedio mensual real</p>
+              <p className="text-[11px] text-white/90">Promedio mensual real</p>
               <p className="text-lg font-bold tabular-nums">{formatoCOP.format(calculo.promedio_mensual_real)}</p>
             </div>
           </div>
@@ -122,7 +122,7 @@ export default function CalculadoraSalarial() {
               />
             ))}
           </div>
-          <ul className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-xs text-slate-600 dark:text-slate-400">
+          <ul className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-xs text-slate-600 dark:text-slate-300">
             {segmentos.map((seg) => (
               <li key={seg.etiqueta} className="flex items-center gap-1.5">
                 <span className={`size-2.5 rounded-full ${seg.color}`} /> {seg.etiqueta}
@@ -142,12 +142,12 @@ export default function CalculadoraSalarial() {
             ))}
             <li className="flex items-center justify-between gap-3 pt-3 text-sm font-bold">
               <span>Total prestaciones</span>
-              <span className="tabular-nums text-exito">+{formatoCOP.format(calculo.total_beneficios_adicionales)}</span>
+              <span className="tabular-nums text-secondary-light">+{formatoCOP.format(calculo.total_beneficios_adicionales)}</span>
             </li>
           </ul>
         </div>
 
-        <p className="flex gap-2 rounded-2xl bg-slate-100 p-3 text-xs leading-relaxed text-slate-600 dark:bg-slate-700/40 dark:text-slate-400">
+        <p className="flex gap-2 rounded-2xl bg-slate-100 p-3 text-xs leading-relaxed text-slate-600 dark:bg-slate-700/40 dark:text-slate-300">
           <Info className="mt-0.5 size-4 shrink-0" />
           Valores brutos antes de aportes a salud y pensión. De los {formatoFactor.format(factor)} salarios, cerca de{" "}
           {formatoFactor.format(factorEfectivo)} se reciben en nómina; las cesantías se consignan al FOMAG. La bonificación

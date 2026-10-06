@@ -31,8 +31,8 @@ export default function TarjetasModos() {
                   <span
                     className={`grid size-11 shrink-0 place-items-center rounded-2xl ${
                       modo.feedbackInmediato
-                        ? "bg-secondary/10 text-secondary"
-                        : "bg-primary/10 text-primary dark:bg-primary-light/20 dark:text-marca-100"
+                        ? "bg-secondary/10 text-secondary-light"
+                        : "bg-primary/10 text-primary-light dark:bg-primary-light/20 dark:text-secondary-light"
                     }`}
                   >
                     <Icono className="size-6" />

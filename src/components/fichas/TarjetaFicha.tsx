@@ -52,7 +52,7 @@ export default function TarjetaFicha({ ficha, volteada, onVoltear }: Props) {
           className={`${cara} rotate-y-180 space-y-4 overflow-y-auto overscroll-contain bg-white text-sm dark:bg-tarjeta`}
         >
           <div className="flex items-center justify-between gap-3">
-            <p className="text-lg font-bold text-marca-600 dark:text-oro">{ficha.sigla}</p>
+            <p className="text-lg font-bold text-primary-light dark:text-oro">{ficha.sigla}</p>
             <RotateCw className="size-4 text-slate-400" aria-hidden />
           </div>
           <p className="leading-relaxed text-slate-700 dark:text-slate-300">{ficha.definicion}</p>
@@ -66,7 +66,7 @@ export default function TarjetaFicha({ ficha, volteada, onVoltear }: Props) {
             <ul className="space-y-2">
               {ficha.puntos_clave.map((punto) => (
                 <li key={punto} className="flex gap-2 leading-snug">
-                  <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-exito" />
+                  <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-secondary-light" />
                   <span>{punto}</span>
                 </li>
               ))}

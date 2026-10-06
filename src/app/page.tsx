@@ -81,7 +81,7 @@ export default function Inicio() {
             href={href}
             className="flex items-center gap-4 rounded-2xl bg-white p-4 ring-1 ring-slate-200 transition active:scale-[0.98] dark:bg-tarjeta dark:ring-slate-700/60"
           >
-            <span className="grid size-11 place-items-center rounded-xl bg-marca-50 text-primary dark:bg-primary-light/20 dark:text-oro">
+            <span className="grid size-11 place-items-center rounded-xl bg-marca-50 text-primary-light dark:bg-primary-light/20 dark:text-oro">
               <Icono className="size-6" />
             </span>
             <span className="flex-1">

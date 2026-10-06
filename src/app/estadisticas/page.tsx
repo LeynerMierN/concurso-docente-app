@@ -21,7 +21,7 @@ export default function Pagina() {
   const encabezado = (
     <header>
       <h1 className="flex items-center gap-2 text-2xl font-bold">
-        <BarChart3 className="size-7 text-primary dark:text-oro" /> Mi rendimiento
+        <BarChart3 className="size-7 text-primary-light dark:text-oro" /> Mi rendimiento
       </h1>
       {descripcion && <p className="mt-1 text-sm text-slate-500">{descripcion}</p>}
     </header>
@@ -102,7 +102,7 @@ export default function Pagina() {
         {evolucion.length === 0 ? (
           <p className="mt-3 text-sm text-slate-500">
             Aún no has hecho simulacros.{" "}
-            <Link href="/simulacros" className="font-semibold text-primary dark:text-oro">
+            <Link href="/simulacros" className="font-semibold text-primary-light dark:text-oro">
               Haz el primero
             </Link>
           </p>
@@ -209,9 +209,9 @@ export default function Pagina() {
               <span className="flex shrink-0 items-center gap-2">
                 <span className="font-bold tabular-nums">{i.puntaje.toLocaleString("es-CO")}</span>
                 {i.aprobado ? (
-                  <Award className="size-4 text-secondary" aria-label="Aprobado" />
+                  <Award className="size-4 text-secondary-light" aria-label="Aprobado" />
                 ) : (
-                  <XCircle className="size-4 text-danger" aria-label="No aprobado" />
+                  <XCircle className="size-4 text-danger dark:text-danger-light" aria-label="No aprobado" />
                 )}
               </span>
             </li>

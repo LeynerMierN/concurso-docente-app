@@ -20,7 +20,7 @@ export default function BarraNavegacion() {
                 href={ruta}
                 aria-current={activo ? "page" : undefined}
                 className={`flex flex-col items-center gap-1 rounded-xl px-1 py-1 text-[10px] font-medium transition ${
-                  activo ? "text-primary dark:text-oro" : "text-slate-500 hover:text-slate-800 dark:hover:text-slate-200"
+                  activo ? "text-primary-light dark:text-oro" : "text-slate-500 hover:text-slate-800 dark:hover:text-slate-200"
                 }`}
               >
                 <Icono className="size-6" strokeWidth={activo ? 2.4 : 1.8} />

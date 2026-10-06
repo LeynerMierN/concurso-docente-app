@@ -34,10 +34,10 @@ export default function SelectorCategorias({ filtro, onElegir, soloUnaArea, pend
           onClick={() => onElegir("repaso")}
           aria-pressed={repaso}
           className={`flex w-full items-center gap-3 rounded-2xl p-4 text-left transition active:scale-[0.99] ${
-            repaso ? "bg-accent text-white shadow-md" : "bg-accent/10 ring-1 ring-accent/30"
+            repaso ? "bg-accent text-tinta shadow-md" : "bg-accent/10 ring-1 ring-accent/30"
           }`}
         >
-          <RotateCcw className={`size-6 shrink-0 ${repaso ? "text-white" : "text-accent"}`} />
+          <RotateCcw className={`size-6 shrink-0 ${repaso ? "text-white" : "text-accent-dark"}`} />
           <span className="min-w-0 flex-1">
             <span className="block font-semibold">Repaso de errores</span>
             <span className={`block text-sm ${repaso ? "text-white/90" : "text-slate-600 dark:text-slate-300"}`}>
@@ -104,7 +104,7 @@ export default function SelectorCategorias({ filtro, onElegir, soloUnaArea, pend
                       <Icono className={`mt-0.5 size-5 shrink-0 ${activo ? "text-oro" : "text-primary-light dark:text-oro"}`} />
                       <span className="min-w-0">
                         <span className="block hyphens-auto break-words text-sm font-semibold leading-snug">{nombre}</span>
-                        <span className={`block text-xs ${activo ? "text-marca-100" : "text-slate-500"}`}>
+                        <span className={`block text-xs ${activo ? "text-white/90" : "text-slate-500"}`}>
                           {CONTEO_POR_CATEGORIA[id]} preguntas
                         </span>
                       </span>

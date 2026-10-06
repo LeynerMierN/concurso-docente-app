@@ -18,7 +18,7 @@ export default function RutaEstudio() {
   if (!perfil) {
     return (
       <Link href="/perfil" className={`${tarjeta} flex items-center gap-4 transition hover:ring-primary-light`}>
-        <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-primary/10 text-primary dark:bg-primary-light/20 dark:text-oro">
+        <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-primary/10 text-primary-light dark:bg-primary-light/20 dark:text-oro">
           <Settings2 className="size-6" />
         </span>
         <span className="flex-1">
@@ -57,7 +57,7 @@ export default function RutaEstudio() {
         <h2 id="titulo-ruta" className="font-bold">
           Tu ruta de estudio
         </h2>
-        <Link href="/perfil" className="text-xs font-semibold text-primary dark:text-oro">
+        <Link href="/perfil" className="text-xs font-semibold text-primary-light dark:text-oro">
           {ROLES.find((r) => r.id === perfil.role)?.nombre}
         </Link>
       </div>

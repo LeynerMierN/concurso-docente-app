@@ -52,7 +52,7 @@ function Configurar({ inicial }: { inicial: string }) {
     <div className="space-y-6">
       <header>
         <h1 className="flex items-center gap-2 text-2xl font-bold">
-          <Timer className="size-7 text-primary dark:text-oro" /> Simulacros reales
+          <Timer className="size-7 text-primary-light dark:text-oro" /> Simulacros reales
         </h1>
         <p className="mt-1 text-sm text-slate-500">
           Núcleo común de la prueba CNSC, armado al azar desde el banco con la distribución oficial por componentes.
@@ -75,8 +75,8 @@ function Configurar({ inicial }: { inicial: string }) {
               }`}
             >
               <span className="block font-semibold">{m.nombre}</span>
-              <span className={`mt-0.5 block text-sm ${activo ? "text-marca-100" : "text-slate-500"}`}>{m.descripcion}</span>
-              <span className={`mt-2 block text-xs font-medium ${activo ? "text-marca-100" : "text-slate-500"}`}>
+              <span className={`mt-0.5 block text-sm ${activo ? "text-white/90" : "text-slate-500"}`}>{m.descripcion}</span>
+              <span className={`mt-2 block text-xs font-medium ${activo ? "text-white/90" : "text-slate-500"}`}>
                 {m.preguntas} preguntas · {m.minutos} min
               </span>
             </button>

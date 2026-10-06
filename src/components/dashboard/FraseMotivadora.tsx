@@ -58,10 +58,10 @@ export default function FraseMotivadora() {
   return (
     <section
       aria-labelledby="titulo-frase"
-      className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-secondary to-secondary-dark p-5 text-white shadow-sm"
+      className="relative overflow-hidden rounded-3xl bg-verde-suave p-5"
     >
-      <Quote className="pointer-events-none absolute -top-2 -right-2 size-24 rotate-180 opacity-15" aria-hidden />
-      <h2 id="titulo-frase" className="text-xs font-bold uppercase tracking-wide text-white/80">
+      <Quote className="pointer-events-none absolute -top-2 -right-2 size-24 rotate-180 text-secondary-light opacity-15" aria-hidden />
+      <h2 id="titulo-frase" className="text-xs font-bold uppercase tracking-wide text-secondary-light">
         {esDelDia ? "Frase del día" : "Otra frase para ti"}
       </h2>
 
@@ -77,7 +77,7 @@ export default function FraseMotivadora() {
             setFrase(otraFrase(frase.id));
             setEsDelDia(false);
           }}
-          className={`${boton} bg-white text-secondary-dark`}
+          className={`${boton} bg-primary text-white`}
         >
           <Shuffle className="size-4" /> Otra frase
         </button>
@@ -86,11 +86,11 @@ export default function FraseMotivadora() {
           onClick={() => actualizarFavoritas(esFavorita ? favoritas.filter((id) => id !== frase.id) : [...favoritas, frase.id])}
           aria-pressed={esFavorita}
           aria-label={esFavorita ? "Quitar de favoritas" : "Guardar en favoritas"}
-          className={`${boton} bg-white/15`}
+          className={`${boton} bg-tarjeta ring-1 ring-slate-200 dark:ring-slate-700`}
         >
-          <Heart key={String(esFavorita)} className={`size-5 ${esFavorita ? "corazon-latir text-red-300" : ""}`} fill={esFavorita ? "currentColor" : "none"} />
+          <Heart key={String(esFavorita)} className={`size-5 ${esFavorita ? "corazon-latir text-danger-light" : ""}`} fill={esFavorita ? "currentColor" : "none"} />
         </button>
-        <button type="button" onClick={compartir} aria-label="Compartir frase" className={`${boton} bg-white/15`}>
+        <button type="button" onClick={compartir} aria-label="Compartir frase" className={`${boton} bg-tarjeta ring-1 ring-slate-200 dark:ring-slate-700`}>
           {compartida === "copiada" ? <Check className="size-5" /> : <Share2 className="size-5" />}
         </button>
       </div>
@@ -120,14 +120,14 @@ export default function FraseMotivadora() {
             type="button"
             onClick={() => setVerFavoritas((v) => !v)}
             aria-expanded={verFavoritas}
-            className="text-xs font-semibold text-white/90 underline underline-offset-4"
+            className="text-xs font-semibold text-secondary-light underline underline-offset-4"
           >
             {verFavoritas ? "Ocultar mis favoritas" : `Mis favoritas (${favoritas.length})`}
           </button>
           {verFavoritas && (
             <ul className="mt-2 space-y-2">
               {FRASES.filter((f) => favoritas.includes(f.id)).map((f) => (
-                <li key={f.id} className="flex items-start gap-2 rounded-2xl bg-white/10 p-3 text-sm leading-snug">
+                <li key={f.id} className="flex items-start gap-2 rounded-2xl bg-tarjeta/70 p-3 text-sm leading-snug">
                   <button
                     type="button"
                     onClick={() => {
@@ -142,7 +142,7 @@ export default function FraseMotivadora() {
                     type="button"
                     onClick={() => actualizarFavoritas(favoritas.filter((id) => id !== f.id))}
                     aria-label="Quitar de favoritas"
-                    className="grid size-7 shrink-0 place-items-center rounded-full bg-white/15"
+                    className="grid size-7 shrink-0 place-items-center rounded-full bg-slate-100 dark:bg-slate-700"
                   >
                     <X className="size-4" />
                   </button>
