@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowRight, ChevronRight, FileText, GraduationCap, Wallet } from "lucide-react";
 import BotonPerfil from "@/components/dashboard/BotonPerfil";
+import FraseMotivadora from "@/components/dashboard/FraseMotivadora";
 import RachaDiaria from "@/components/dashboard/RachaDiaria";
 import RepasoErrores from "@/components/dashboard/RepasoErrores";
 import RutaEstudio from "@/components/dashboard/RutaEstudio";
@@ -50,6 +51,8 @@ export default function Inicio() {
       <RepasoErrores />
 
       <RutaEstudio />
+
+      <FraseMotivadora />
 
       <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.4fr)] lg:items-start">
         <RachaDiaria />

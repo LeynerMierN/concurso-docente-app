@@ -1,22 +1,96 @@
 "use client";
 
-import { useState } from "react";
-import { CheckCircle2, ChevronLeft, ChevronRight, Clock, Flag, Pause, Play, Scale, X, XCircle } from "lucide-react";
+import { useCallback, useEffect, useRef, useState } from "react";
+import { CheckCircle2, ChevronDown, ChevronLeft, ChevronRight, Clock, Flag, Pause, Play, Scale, X, XCircle } from "lucide-react";
+import AvisoFlotante, { type Aviso } from "./AvisoFlotante";
 import Confirmacion from "./Confirmacion";
 import Resultados from "./Resultados";
-import Buho from "@/components/mascota/Buho";
+import Buho, { type AnimoBuho } from "@/components/mascota/Buho";
 import type { QuizRunner as Runner } from "@/hooks/useQuizRunner";
 import { obtenerModo } from "@/lib/appConfig";
+import { mensajeAvance, mensajeRacha, otraFrase } from "@/lib/frases";
 import { fraseRespuesta } from "@/lib/mascota";
 import { etiquetaFiltro } from "@/lib/preguntas";
 import { formatoTiempo } from "@/lib/tiempo";
+import type { OpcionId } from "@/types/exam";
 
 type Dialogo = "finalizar" | "abandonar" | null;
+
+/** Con más preguntas que esto, el mapa empieza plegado para no ocupar media pantalla */
+const MAPA_PLEGADO_DESDE = 40;
+const LETRAS_TECLADO = ["a", "b", "c", "d"];
 
 /** Ejecuta una sesión de Práctica o Simulacro y, al terminar, muestra los resultados */
 export default function QuizRunner({ runner }: { runner: Runner }) {
   const { sesion, preguntas, preguntaActual, resultado, segundosRestantes, segundosTranscurridos } = runner;
   const [dialogo, setDialogo] = useState<Dialogo>(null);
+  const [aviso, setAviso] = useState<Aviso | null>(null);
+  const [mapaAbierto, setMapaAbierto] = useState<boolean | null>(null);
+  const seguidas = useRef(0);
+  const raiz = useRef<HTMLDivElement>(null);
+  const cerrarAviso = useCallback(() => setAviso(null), []);
+
+  /** Responde y, si toca, celebra la racha de aciertos o el avance con un aviso de Sabino */
+  const elegir = (opcion: OpcionId) => {
+    if (!sesion || !preguntaActual || sesion.terminadoMs !== null) return;
+    const previa = sesion.respuestas[preguntaActual.id];
+    if (sesion.config.feedbackInmediato && previa) return;
+    runner.responder(opcion);
+    // Cambiar una respuesta ya dada no cuenta como avance
+    if (previa) return;
+
+    let texto: string | null = null;
+    let animo: AnimoBuho = "feliz";
+    if (sesion.config.feedbackInmediato) {
+      if (opcion === preguntaActual.respuesta_correcta) {
+        seguidas.current += 1;
+        texto = mensajeRacha(seguidas.current);
+        animo = "celebrando";
+      } else {
+        if (seguidas.current >= 3) {
+          texto = `Se cortó tu racha de ${seguidas.current}, pero cada error te enseña algo. ¡Sigue!`;
+          animo = "animando";
+        }
+        seguidas.current = 0;
+      }
+    }
+    if (!texto) {
+      texto = mensajeAvance(Object.keys(sesion.respuestas).length + 1, sesion.preguntaIds.length);
+      animo = "feliz";
+    }
+    if (texto) setAviso({ id: Date.now(), texto, animo });
+  };
+
+  // Al cambiar de pregunta, vuelve arriba si la pregunta quedó fuera de la vista (p. ej. tras «Siguiente»)
+  const indiceActual = sesion?.indice;
+  useEffect(() => {
+    const el = raiz.current;
+    // Salto inmediato: una animación suave se interrumpe si se responde rápido
+    if (el && el.getBoundingClientRect().top < 0) el.scrollIntoView({ block: "start" });
+  }, [indiceActual]);
+
+  // Atajos de teclado: A–D o 1–4 para responder, ← → para moverse
+  useEffect(() => {
+    if (!sesion || !preguntaActual || resultado || runner.pausado || dialogo) return;
+    const alPresionar = (e: KeyboardEvent) => {
+      if (e.metaKey || e.ctrlKey || e.altKey) return;
+      if (e.target instanceof HTMLElement && e.target.closest("input, textarea, select")) return;
+      const tecla = e.key.toLowerCase();
+      const posicion = LETRAS_TECLADO.includes(tecla) ? LETRAS_TECLADO.indexOf(tecla) : ["1", "2", "3", "4"].indexOf(tecla);
+      if (posicion >= 0) {
+        const opcion = runner.opcionesDe(preguntaActual)[posicion];
+        if (opcion) elegir(opcion.id);
+      } else if (e.key === "ArrowRight" && sesion.indice < sesion.preguntaIds.length - 1) {
+        e.preventDefault();
+        runner.irA(sesion.indice + 1);
+      } else if (e.key === "ArrowLeft" && sesion.indice > 0) {
+        e.preventDefault();
+        runner.irA(sesion.indice - 1);
+      }
+    };
+    window.addEventListener("keydown", alPresionar);
+    return () => window.removeEventListener("keydown", alPresionar);
+  });
 
   if (!sesion || !preguntaActual) return null;
   if (resultado) return <Resultados runner={runner} />;
@@ -32,6 +106,7 @@ export default function QuizRunner({ runner }: { runner: Runner }) {
   const sinResponder = preguntas.length - respondidas;
   const poco = segundosRestantes !== null && segundosRestantes <= 60 && !runner.pausado;
   const nombreModo = obtenerModo(config.modoId ?? null)?.nombre;
+  const verMapa = mapaAbierto ?? preguntas.length <= MAPA_PLEGADO_DESDE;
 
   const encabezado = (
       <header className="space-y-3">
@@ -95,6 +170,7 @@ export default function QuizRunner({ runner }: { runner: Runner }) {
               El cronómetro está detenido. La pregunta se oculta hasta que continúes.
             </p>
           </div>
+          <FrasePausa />
           <button
             type="button"
             onClick={runner.reanudar}
@@ -108,7 +184,8 @@ export default function QuizRunner({ runner }: { runner: Runner }) {
   }
 
   return (
-    <div className="space-y-4">
+    <div ref={raiz} className="scroll-mt-4 space-y-4">
+      <AvisoFlotante aviso={aviso} onCerrar={cerrarAviso} />
       {encabezado}
 
       {/* Pregunta */}
@@ -161,7 +238,7 @@ export default function QuizRunner({ runner }: { runner: Runner }) {
                 <button
                   type="button"
                   disabled={revelada}
-                  onClick={() => runner.responder(opcion.id)}
+                  onClick={() => elegir(opcion.id)}
                   className={`flex w-full items-start gap-3 rounded-2xl p-3.5 text-left text-sm leading-snug ring-1 transition active:scale-[0.99] disabled:active:scale-100 ${estilo}`}
                 >
                   <span className={`grid size-7 shrink-0 place-items-center rounded-full text-xs font-bold ${letra}`}>
@@ -226,10 +303,14 @@ export default function QuizRunner({ runner }: { runner: Runner }) {
           </button>
         )}
       </div>
+      <p className="hidden text-center text-xs text-slate-500 lg:block">
+        Atajos: <kbd className="font-sans font-semibold">A–D</kbd> o <kbd className="font-sans font-semibold">1–4</kbd> para
+        responder · <kbd className="font-sans font-semibold">← →</kbd> para moverte
+      </p>
 
       {/* Mapa de preguntas: navegación libre */}
       <section className="rounded-3xl bg-white p-4 ring-1 ring-slate-200 dark:bg-tarjeta dark:ring-slate-700/60">
-        <div className="mb-3 flex items-center justify-between text-xs text-slate-500">
+        <div className="flex items-center justify-between gap-2 text-xs text-slate-500">
           <span>
             {respondidas}/{preguntas.length} respondidas
           </span>
@@ -238,36 +319,47 @@ export default function QuizRunner({ runner }: { runner: Runner }) {
               <Flag className="size-3 text-oro" fill="currentColor" /> {banderas.length} por revisar
             </span>
           )}
+          <button
+            type="button"
+            onClick={() => setMapaAbierto(!verMapa)}
+            aria-expanded={verMapa}
+            className="ml-auto flex items-center gap-1 rounded-full px-2 py-1 font-semibold text-primary-light dark:text-oro"
+          >
+            {verMapa ? "Ocultar mapa" : "Ver mapa"}
+            <ChevronDown className={`size-4 transition ${verMapa ? "rotate-180" : ""}`} />
+          </button>
         </div>
-        <ol className="grid grid-cols-8 gap-1.5">
-          {preguntas.map((p, i) => {
-            const r = respuestas[p.id];
-            let color = "bg-slate-100 text-slate-600 dark:bg-slate-700/60 dark:text-slate-300";
-            if (r && config.feedbackInmediato) {
-              color = r === p.respuesta_correcta ? "bg-exito text-white" : "bg-error text-white";
-            } else if (r) {
-              color = "bg-marca-600 text-white";
-            }
-            return (
-              <li key={p.id} className="relative">
-                <button
-                  type="button"
-                  onClick={() => runner.irA(i)}
-                  aria-label={`Ir a la pregunta ${i + 1}`}
-                  aria-current={i === indice}
-                  className={`aspect-square w-full rounded-lg text-xs font-semibold tabular-nums ${color} ${
-                    i === indice ? "ring-2 ring-oro ring-offset-2 ring-offset-white dark:ring-offset-slate-900" : ""
-                  }`}
-                >
-                  {i + 1}
-                </button>
-                {banderas.includes(p.id) && (
-                  <Flag className="absolute -top-1 -right-1 size-3 text-oro" fill="currentColor" />
-                )}
-              </li>
-            );
-          })}
-        </ol>
+        {verMapa && (
+          <ol className="mt-3 grid grid-cols-8 gap-1.5">
+            {preguntas.map((p, i) => {
+              const r = respuestas[p.id];
+              let color = "bg-slate-100 text-slate-600 dark:bg-slate-700/60 dark:text-slate-300";
+              if (r && config.feedbackInmediato) {
+                color = r === p.respuesta_correcta ? "bg-exito text-white" : "bg-error text-white";
+              } else if (r) {
+                color = "bg-marca-600 text-white";
+              }
+              return (
+                <li key={p.id} className="relative">
+                  <button
+                    type="button"
+                    onClick={() => runner.irA(i)}
+                    aria-label={`Ir a la pregunta ${i + 1}`}
+                    aria-current={i === indice}
+                    className={`aspect-square w-full rounded-lg text-xs font-semibold tabular-nums ${color} ${
+                      i === indice ? "ring-2 ring-oro ring-offset-2 ring-offset-white dark:ring-offset-slate-900" : ""
+                    }`}
+                  >
+                    {i + 1}
+                  </button>
+                  {banderas.includes(p.id) && (
+                    <Flag className="absolute -top-1 -right-1 size-3 text-oro" fill="currentColor" />
+                  )}
+                </li>
+              );
+            })}
+          </ol>
+        )}
         {!esUltima && (
           <button
             type="button"
@@ -314,5 +406,15 @@ export default function QuizRunner({ runner }: { runner: Runner }) {
         </Confirmacion>
       )}
     </div>
+  );
+}
+
+/** Frase motivadora al azar mientras el examen está en pausa */
+function FrasePausa() {
+  const [frase] = useState(() => otraFrase());
+  return (
+    <p className="mx-auto max-w-sm rounded-2xl bg-secondary/10 p-4 text-sm font-medium italic leading-relaxed text-secondary-dark dark:text-secondary-light">
+      «{frase.texto}»
+    </p>
   );
 }
