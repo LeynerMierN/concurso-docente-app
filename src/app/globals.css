@@ -169,7 +169,7 @@ body {
   padding-bottom: max(1rem, env(safe-area-inset-bottom));
 }
 
-/* Sabino, el capibara mascota: animaciones solo si el usuario no pidió reducir movimiento */
+/* Capi, el capibara mascota: animaciones solo si el usuario no pidió reducir movimiento */
 @media (prefers-reduced-motion: no-preference) {
   .mascota-flotar {
     animation: mascota-flotar 3.2s ease-in-out infinite;

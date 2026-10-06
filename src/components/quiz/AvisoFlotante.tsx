@@ -10,7 +10,7 @@ export interface Aviso {
   animo: AnimoMascota;
 }
 
-/** Mensaje de Sabino que aparece abajo unos segundos sin tapar el cronómetro; se cierra al tocarlo */
+/** Mensaje de Capi que aparece abajo unos segundos sin tapar el cronómetro; se cierra al tocarlo */
 export default function AvisoFlotante({ aviso, onCerrar }: { aviso: Aviso | null; onCerrar: () => void }) {
   useEffect(() => {
     if (!aviso) return;

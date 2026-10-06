@@ -97,8 +97,8 @@ export default function Resultados({ runner }: { runner: QuizRunner }) {
         <p className="mt-2 text-xs opacity-80">Umbral: {resultado.umbral}/100</p>
         <p className="mx-auto mt-2 max-w-sm text-sm font-medium">
           {aprobado
-            ? "Sabino: ¡Lo lograste! Sigue así y el día del examen será uno más."
-            : `Sabino: Te faltaron ${Math.max(0, Math.ceil(resultado.umbral - resultado.porcentaje))} puntos. Repasa tus errores y vuelve a intentarlo.`}
+            ? "Capi: ¡Lo lograste! Sigue así y el día del examen será uno más."
+            : `Capi: Te faltaron ${Math.max(0, Math.ceil(resultado.umbral - resultado.porcentaje))} puntos. Repasa tus errores y vuelve a intentarlo.`}
         </p>
         {registro?.xp ? (
           <p className="mt-3 inline-flex items-center gap-1 rounded-full bg-white/15 px-3 py-1 text-sm font-bold">

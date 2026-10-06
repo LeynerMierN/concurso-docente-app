@@ -30,7 +30,7 @@ export default function QuizRunner({ runner }: { runner: Runner }) {
   const raiz = useRef<HTMLDivElement>(null);
   const cerrarAviso = useCallback(() => setAviso(null), []);
 
-  /** Responde y, si toca, celebra la serie de aciertos o el avance con un aviso de Sabino */
+  /** Responde y, si toca, celebra la serie de aciertos o el avance con un aviso de Capi */
   const elegir = (opcion: OpcionId) => {
     if (!sesion || !preguntaActual || sesion.terminadoMs !== null) return;
     const previa = sesion.respuestas[preguntaActual.id];

@@ -12,7 +12,7 @@ export interface EstadoMascota {
 
 const plural = (n: number, uno: string, varios: string) => `${n} ${n === 1 ? uno : varios}`;
 
-/** Lo que Sabino dice en el inicio según el progreso de hoy (en orden de prioridad) */
+/** Lo que Capi dice en el inicio según el progreso de hoy (en orden de prioridad) */
 export function estadoMascota(progreso: Progreso, perfil: Perfil | null, hoy: Date = new Date()): EstadoMascota {
   const nombre = perfil?.name.trim().split(/\s+/)[0];
   const saludo = nombre ? `¡Hola, ${nombre}! ` : "¡Hola! ";
@@ -20,7 +20,7 @@ export function estadoMascota(progreso: Progreso, perfil: Perfil | null, hoy: Da
   if (progreso.intentos.length === 0) {
     return {
       animo: "feliz",
-      mensaje: `${saludo}Soy Sabino y te acompaño en tu preparación. Empieza con una práctica corta y tócame cuando quieras un consejo.`,
+      mensaje: `${saludo}Soy Capi y te acompaño en tu preparación. Empieza con una práctica corta y tócame cuando quieras un consejo.`,
     };
   }
 
@@ -61,7 +61,7 @@ const CONSEJOS_GENERALES = [
   "Estudiar 20 minutos todos los días rinde más que tres horas un solo día.",
 ];
 
-/** Consejos que da Sabino al tocarlo: trampas frecuentes de las fichas y consejos generales, intercalados */
+/** Consejos que da Capi al tocarlo: trampas frecuentes de las fichas y consejos generales, intercalados */
 export const CONSEJOS: string[] = FICHAS.flatMap((f, i) => {
   const trampa = `Trampa frecuente sobre ${f.sigla || f.concepto}: ${f.error_frecuente}`;
   const general = CONSEJOS_GENERALES[i];

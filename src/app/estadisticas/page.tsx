@@ -44,7 +44,7 @@ export default function Pagina() {
           <Capibara animo="durmiendo" tamano={88} mirarPuntero={false} className="mx-auto block" />
           <h2 className="mt-3 font-bold">Aún no hay datos</h2>
           <p className="mt-1 text-sm text-slate-500">
-            Sabino está durmiendo mientras espera tus primeros resultados. Termina una práctica o un simulacro y aquí verás tus
+            Capi está durmiendo mientras espera tus primeros resultados. Termina una práctica o un simulacro y aquí verás tus
             métricas.
           </p>
           <Link href="/practica" className="mt-4 inline-block rounded-2xl bg-primary px-5 py-2.5 text-sm font-semibold text-white">

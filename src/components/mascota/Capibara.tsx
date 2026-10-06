@@ -26,9 +26,9 @@ const COLORES = {
   pupila: "#2A1A10",
   dientes: "#FFF8EC",
   boca: "#5B2A1A",
-  birrete: "#1E3A8A",
-  birreteBorde: "#172554",
-  borla: "#FCD116",
+  birrete: "#1E2A52",
+  birreteBorde: "#141C3A",
+  borla: "#FFD447",
   mejilla: "#F4A0A0",
 };
 
@@ -39,7 +39,7 @@ const OJOS = [
 ];
 
 /**
- * Sabino, el capibara mascota. Dibujo propio en SVG (café, hocico cuadrado y birrete).
+ * Capi, el capibara mascota. Dibujo propio en SVG (café, hocico cuadrado y birrete).
  * Parpadea, flota y puede seguir el puntero; las animaciones respetan «reducir movimiento».
  */
 export default function Capibara({ animo = "feliz", tamano = 96, onToque, mirarPuntero = true, className = "" }: Props) {
@@ -92,7 +92,7 @@ export default function Capibara({ animo = "feliz", tamano = 96, onToque, mirarP
       width={tamano}
       height={(tamano * 132) / 120}
       role="img"
-      aria-label={`Sabino, el capibara, ${ETIQUETA_ANIMO[animo]}`}
+      aria-label={`Capi, el capibara, ${ETIQUETA_ANIMO[animo]}`}
       className={`overflow-visible ${className}`}
     >
       <g key={salto} className={saltando ? "mascota-salto" : "mascota-flotar"} style={{ transformBox: "fill-box", transformOrigin: "center bottom" }}>
@@ -193,7 +193,7 @@ export default function Capibara({ animo = "feliz", tamano = 96, onToque, mirarP
 
         {/* Zzz al dormir */}
         {ojosCerrados && (
-          <text x="98" y="16" fontSize="14" fontWeight="700" fill={COLORES.birrete} className="mascota-zzz">
+          <text x="98" y="16" fontSize="14" fontWeight="700" fill="#6B7390" className="mascota-zzz">
             z
           </text>
         )}
@@ -212,7 +212,7 @@ export default function Capibara({ animo = "feliz", tamano = 96, onToque, mirarP
         onToque();
       }}
       className="shrink-0 rounded-3xl outline-none focus-visible:ring-2 focus-visible:ring-primary-light"
-      aria-label="Tocar a Sabino para recibir un consejo"
+      aria-label="Tocar a Capi para recibir un consejo"
     >
       {dibujo}
     </button>
