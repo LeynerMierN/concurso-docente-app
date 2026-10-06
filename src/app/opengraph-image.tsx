@@ -3,17 +3,20 @@ import { join } from "node:path";
 import { ImageResponse } from "next/og";
 
 // Imagen de previsualización para WhatsApp, Facebook y X. Se genera una sola vez en el build.
-export const alt = "Simulacro Concurso Docente Colombia: práctica tipo Juicio Situacional y calculadora salarial";
+// Estilo «Cuaderno de la esperanza»: papel cuadriculado, tinta azul, verde esperanza y resaltador.
+export const alt = "Concurso Docente App: «Hola, profe.» Simulacros y práctica para la prueba escrita de la CNSC";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-const TEXTO = "Simulacro Concurso Docente ColombiaPrepárate para la prueba escrita de la CNSCJuicio SituacionalCalculadora salarial 1278Fichas normativas";
+const TINTA = "#1E2A52";
+const VERDE = "#0D7A5F";
+const RESALTADOR = "#FFD447";
 
-/** Descarga Inter solo con los glifos usados. Si no hay red, se usa la fuente por defecto. */
-async function cargarInter(peso: number): Promise<ArrayBuffer | null> {
+/** Descarga una fuente de Google solo con los glifos usados. Si no hay red, se usa la fuente por defecto. */
+async function cargarFuente(familia: string, peso: number, texto: string): Promise<ArrayBuffer | null> {
   try {
     const css = await (
-      await fetch(`https://fonts.googleapis.com/css2?family=Inter:wght@${peso}&text=${encodeURIComponent(TEXTO)}`)
+      await fetch(`https://fonts.googleapis.com/css2?family=${familia}:wght@${peso}&text=${encodeURIComponent(texto)}`)
     ).text();
     const url = css.match(/src: url\((.+?)\) format\('(opentype|truetype)'\)/)?.[1];
     return url ? await (await fetch(url)).arrayBuffer() : null;
@@ -22,15 +25,22 @@ async function cargarInter(peso: number): Promise<ArrayBuffer | null> {
   }
 }
 
+const TITULO = "Hola, profe.";
+const NOTA = "Cada pregunta de hoy es un paso hacia tu plaza.";
+const SUBTITULO = "Simulacros y práctica para la prueba escrita de la CNSC";
+const ETIQUETAS = ["Juicio situacional", "Simulacros 30/30/20/20", "Fichas normativas"];
+
 export default async function Imagen() {
-  const [icono, negrita, normal] = await Promise.all([
+  const [icono, titulos, nota, cuerpo] = await Promise.all([
     readFile(join(process.cwd(), "public/icons/icon-512.png")),
-    cargarInter(800),
-    cargarInter(500),
+    cargarFuente("Bricolage+Grotesque", 800, TITULO + SUBTITULO + ETIQUETAS.join("") + "Concurso Docente App"),
+    cargarFuente("Caveat", 700, NOTA),
+    cargarFuente("Atkinson+Hyperlegible", 700, SUBTITULO + ETIQUETAS.join("")),
   ]);
   const fuentes = [
-    ...(negrita ? [{ name: "Inter", data: negrita, weight: 800 as const }] : []),
-    ...(normal ? [{ name: "Inter", data: normal, weight: 500 as const }] : []),
+    ...(titulos ? [{ name: "Bricolage", data: titulos, weight: 800 as const }] : []),
+    ...(nota ? [{ name: "Caveat", data: nota, weight: 700 as const }] : []),
+    ...(cuerpo ? [{ name: "Atkinson", data: cuerpo, weight: 700 as const }] : []),
   ];
 
   return new ImageResponse(
@@ -40,40 +50,41 @@ export default async function Imagen() {
           width: "100%",
           height: "100%",
           display: "flex",
+          position: "relative",
+          padding: "60px 72px 60px 120px",
           flexDirection: "column",
           justifyContent: "space-between",
-          padding: "64px 72px",
-          background: "linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%)",
-          color: "white",
-          fontFamily: fuentes.length ? "Inter" : undefined,
+          backgroundColor: "#FDFCF7",
+          backgroundImage: "linear-gradient(#E2EBE5 2px, transparent 2px), linear-gradient(90deg, #E2EBE5 2px, transparent 2px)",
+          backgroundSize: "44px 44px",
+          color: TINTA,
+          fontFamily: titulos ? "Bricolage" : undefined,
         }}
       >
-        <div style={{ display: "flex", alignItems: "center", gap: 24 }}>
-          <img src={`data:image/png;base64,${icono.toString("base64")}`} width={96} height={96} alt="" />
-          <div style={{ display: "flex", flexDirection: "column", width: 150, height: 36, borderRadius: 6, overflow: "hidden" }}>
-            <div style={{ flex: 2, background: "#FCD116" }} />
-            <div style={{ flex: 1, background: "#003893" }} />
-            <div style={{ flex: 1, background: "#CE1126" }} />
-          </div>
+        {/* Línea de margen del cuaderno */}
+        <div style={{ position: "absolute", left: 88, top: 0, bottom: 0, width: 4, background: "#E9A9C2" }} />
+
+        <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
+          <img src={`data:image/png;base64,${icono.toString("base64")}`} width={84} height={84} alt="" style={{ borderRadius: 20 }} />
+          <div style={{ fontSize: 34, fontWeight: 800 }}>Concurso Docente App</div>
         </div>
 
-        <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
-          <div style={{ fontSize: 76, fontWeight: 800, lineHeight: 1.05, letterSpacing: -2 }}>
-            Simulacro Concurso Docente Colombia
-          </div>
-          <div style={{ fontSize: 34, fontWeight: 500, color: "#dbe6ff" }}>Prepárate para la prueba escrita de la CNSC</div>
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          <div style={{ fontSize: 120, fontWeight: 800, lineHeight: 1, letterSpacing: -4 }}>{TITULO}</div>
+          <div style={{ marginTop: 12, fontSize: 56, color: VERDE, fontFamily: nota ? "Caveat" : undefined }}>{NOTA}</div>
+          <div style={{ marginTop: 18, fontSize: 32, color: "#515B7A", fontFamily: cuerpo ? "Atkinson" : undefined }}>{SUBTITULO}</div>
         </div>
 
         <div style={{ display: "flex", gap: 16 }}>
-          {["Juicio Situacional", "Calculadora salarial 1278", "Fichas normativas"].map((etiqueta) => (
+          {ETIQUETAS.map((etiqueta) => (
             <div
               key={etiqueta}
               style={{
                 display: "flex",
-                padding: "12px 24px",
-                borderRadius: 999,
-                background: "#FCD116",
-                color: "#0f172a",
+                padding: "10px 22px",
+                borderRadius: "6px 18px 10px 4px",
+                background: RESALTADOR,
+                color: TINTA,
                 fontSize: 26,
                 fontWeight: 800,
               }}

@@ -1,14 +1,16 @@
 import type { Metadata, Viewport } from "next";
-import { Caveat, Inter, Plus_Jakarta_Sans } from "next/font/google";
+import { Atkinson_Hyperlegible, Bricolage_Grotesque, Caveat } from "next/font/google";
 import BarraLateral from "@/components/BarraLateral";
 import BarraNavegacion from "@/components/BarraNavegacion";
 import { DESCRIPCION_SITIO, NOMBRE_SITIO, TITULO_SITIO, URL_SITIO } from "@/lib/sitio";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-const jakarta = Plus_Jakarta_Sans({ subsets: ["latin"], variable: "--font-jakarta" });
-// Letra de tiza para el tablero de Sabino
-const caveat = Caveat({ subsets: ["latin"], weight: ["500", "700"], variable: "--font-caveat" });
+// Lectura: Atkinson Hyperlegible distingue letras parecidas en los casos largos
+const atkinson = Atkinson_Hyperlegible({ subsets: ["latin"], weight: ["400", "700"], variable: "--font-atkinson" });
+// Títulos
+const bricolage = Bricolage_Grotesque({ subsets: ["latin"], weight: ["600", "700", "800"], variable: "--font-bricolage" });
+// Notas a mano del profe y de Capi (solo frases cortas, nunca contenido de estudio)
+const caveat = Caveat({ subsets: ["latin"], weight: ["600", "700"], variable: "--font-caveat" });
 
 export const metadata: Metadata = {
   metadataBase: new URL(URL_SITIO),
@@ -61,7 +63,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es-CO" className={`${inter.variable} ${jakarta.variable} ${caveat.variable}`}>
+    <html lang="es-CO" className={`${atkinson.variable} ${bricolage.variable} ${caveat.variable}`}>
       <body className="min-h-dvh font-sans antialiased">
         <BarraLateral />
         <div className="lg:pl-64">
