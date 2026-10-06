@@ -131,7 +131,7 @@ export function useQuizRunner(clave: string) {
   );
 
   const pausar = useCallback(
-    () => modificar((s) => (s.config.permitirPausa && !s.pausadoMs ? { ...s, pausadoMs: Date.now() } : s)),
+    () => modificar((s) => (s.config.permitirPausa && s.finMs !== null && !s.pausadoMs ? { ...s, pausadoMs: Date.now() } : s)),
     [modificar],
   );
 

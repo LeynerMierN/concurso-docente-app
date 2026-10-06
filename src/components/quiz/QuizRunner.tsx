@@ -61,7 +61,7 @@ export default function QuizRunner({ runner }: { runner: Runner }) {
             <Clock className="size-4" />
             {formatoTiempo(segundosRestantes ?? segundosTranscurridos)}
           </span>
-          {config.permitirPausa && !runner.pausado && (
+          {config.permitirPausa && sesion.finMs !== null && !runner.pausado && (
             <button
               type="button"
               onClick={runner.pausar}
