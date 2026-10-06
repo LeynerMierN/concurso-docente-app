@@ -20,18 +20,18 @@ export default function RepasoErrores() {
     return (
       <Link
         href="/practica?filtro=repaso"
-        className="flex items-center gap-4 rounded-3xl bg-accent p-5 text-tinta shadow-sm transition active:scale-[0.99]"
+        className="flex items-center gap-4 rounded-3xl bg-tarjeta p-5 ring-1 ring-slate-200 transition active:scale-[0.99] dark:ring-slate-700/60"
       >
-        <span className="grid size-12 shrink-0 place-items-center rounded-2xl bg-tinta/10">
+        <span className="grid size-12 shrink-0 place-items-center rounded-2xl bg-mora-suave text-danger dark:text-danger-light">
           <RotateCcw className="size-7" />
         </span>
         <span className="min-w-0 flex-1">
           <span className="block font-heading text-lg font-bold leading-snug">
-            {hoy} {hoy === 1 ? "pregunta" : "preguntas"} para repasar hoy
+            {hoy} {hoy === 1 ? "pregunta" : "preguntas"} para reforzar hoy
           </span>
-          <span className="block text-sm text-tinta/80">Vuelve sobre lo que fallaste antes de que se te olvide.</span>
+          <span className="block text-sm text-texto-tenue">Vuelve sobre lo que fallaste antes de que se te olvide.</span>
         </span>
-        <ChevronRight className="size-6 shrink-0" />
+        <ChevronRight className="size-6 shrink-0 text-texto-tenue" />
       </Link>
     );
   }

@@ -1,18 +1,19 @@
 import Link from "next/link";
-import { ArrowRight, ChevronRight, FileText, GraduationCap, Wallet } from "lucide-react";
-import BotonPerfil from "@/components/dashboard/BotonPerfil";
+import { ArrowRight, ChevronRight, FileText, Wallet } from "lucide-react";
+import Constancia from "@/components/dashboard/Constancia";
+import EncabezadoInicio from "@/components/dashboard/EncabezadoInicio";
 import FraseMotivadora from "@/components/dashboard/FraseMotivadora";
-import RachaDiaria from "@/components/dashboard/RachaDiaria";
+import Proyeccion from "@/components/dashboard/Proyeccion";
 import RepasoErrores from "@/components/dashboard/RepasoErrores";
 import RutaEstudio from "@/components/dashboard/RutaEstudio";
+import TareaHoy from "@/components/dashboard/TareaHoy";
 import TarjetasModos from "@/components/dashboard/TarjetasModos";
 import MascotaInicio from "@/components/mascota/MascotaInicio";
-import { APP } from "@/lib/appConfig";
 import { CONVOCATORIA_DATA, calcularIngresoAnualDocente, formatoCOP } from "@/lib/convocatoria";
 import { FICHAS } from "@/lib/fichas";
 import { PREGUNTAS } from "@/lib/preguntas";
 
-/** Dashboard: racha diaria, acceso rápido a las modalidades de examen y recursos */
+/** Inicio: «Hola, profe.», tarea de hoy, proyección, constancia, modalidades de examen y recursos */
 export default function Inicio() {
   const vacantes = CONVOCATORIA_DATA.informacion_general.vacantes_estimadas;
   const licenciado = calcularIngresoAnualDocente("2A_base");
@@ -24,52 +25,38 @@ export default function Inicio() {
 
   return (
     <div className="space-y-6">
-      <header className="rounded-3xl bg-gradient-to-br from-primary to-primary-dark p-6 text-white shadow-lg">
-        <div className="flex items-center justify-between gap-3">
-          <div className="flex items-center gap-2 text-sm font-medium text-marca-100">
-            <GraduationCap className="size-5" /> {APP.name}
-          </div>
-          <BotonPerfil />
-        </div>
-        <h1 className="mt-2 text-2xl font-extrabold leading-tight md:text-3xl">{APP.tagline}</h1>
-        <div className="mt-5 grid grid-cols-3 gap-3 text-center">
-          {[
-            { valor: PREGUNTAS.length, etiqueta: "preguntas en el banco" },
-            { valor: FICHAS.length, etiqueta: "fichas normativas" },
-            { valor: vacantes.toLocaleString("es-CO"), etiqueta: "vacantes estimadas" },
-          ].map(({ valor, etiqueta }) => (
-            <div key={etiqueta} className="rounded-2xl bg-white/10 p-3">
-              <p className="font-heading text-xl font-bold md:text-2xl">{valor}</p>
-              <p className="text-[11px] leading-tight text-marca-100">{etiqueta}</p>
-            </div>
-          ))}
-        </div>
-      </header>
+      <EncabezadoInicio
+        resumen={`${PREGUNTAS.length} preguntas · ${FICHAS.length} fichas normativas · ${vacantes.toLocaleString("es-CO")} vacantes estimadas`}
+      />
 
-      <MascotaInicio />
+      <TareaHoy />
+
+      <Proyeccion />
 
       <RepasoErrores />
 
+      <MascotaInicio />
+
       <RutaEstudio />
 
-      <FraseMotivadora />
-
       <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.4fr)] lg:items-start">
-        <RachaDiaria />
+        <Constancia />
         <TarjetasModos />
       </div>
 
+      <FraseMotivadora />
+
       <Link
         href="/convocatoria#salarios"
-        className="group relative block overflow-hidden rounded-3xl bg-oro p-5 text-slate-900 shadow-sm transition active:scale-[0.98]"
+        className="group relative block overflow-hidden rounded-3xl bg-resaltador-suave p-5 ring-1 ring-accent/50 transition active:scale-[0.98]"
       >
-        <Wallet className="absolute -right-3 -bottom-3 size-24 opacity-15" />
-        <p className="text-xs font-bold uppercase tracking-wide">Conoce salarios y vacantes</p>
+        <Wallet className="absolute -right-3 -bottom-3 size-24 text-accent-dark opacity-15" />
+        <p className="text-xs font-bold uppercase tracking-wide text-accent-dark">Conoce salarios y vacantes</p>
         <p className="mt-1 text-lg font-bold leading-snug">
           Un licenciado recién nombrado recibe en promedio{" "}
           {licenciado ? formatoCOP.format(licenciado.promedio_mensual_real) : "más de 4 millones"} al mes con prestaciones
         </p>
-        <p className="mt-3 inline-flex items-center gap-1 text-sm font-semibold">
+        <p className="mt-3 inline-flex items-center gap-1 text-sm font-bold text-secondary-light">
           Ver calculadora salarial <ArrowRight className="size-4 transition group-hover:translate-x-1" />
         </p>
       </Link>
@@ -79,16 +66,16 @@ export default function Inicio() {
           <Link
             key={href}
             href={href}
-            className="flex items-center gap-4 rounded-2xl bg-white p-4 ring-1 ring-slate-200 transition active:scale-[0.98] dark:bg-tarjeta dark:ring-slate-700/60"
+            className="flex items-center gap-4 rounded-2xl bg-tarjeta p-4 ring-1 ring-slate-200 transition active:scale-[0.98] dark:ring-slate-700/60"
           >
-            <span className="grid size-11 place-items-center rounded-xl bg-marca-50 text-primary-light dark:bg-primary-light/20 dark:text-oro">
+            <span className="grid size-11 place-items-center rounded-xl bg-verde-suave text-secondary-light">
               <Icono className="size-6" />
             </span>
             <span className="flex-1">
               <span className="block font-semibold">{titulo}</span>
-              <span className="block text-sm text-slate-500">{detalle}</span>
+              <span className="block text-sm text-texto-tenue">{detalle}</span>
             </span>
-            <ChevronRight className="size-5 text-slate-400" />
+            <ChevronRight className="size-5 text-texto-tenue" />
           </Link>
         ))}
       </section>

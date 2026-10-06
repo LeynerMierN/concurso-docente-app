@@ -20,7 +20,7 @@ export function estadoMascota(progreso: Progreso, perfil: Perfil | null, hoy: Da
   if (progreso.intentos.length === 0) {
     return {
       animo: "feliz",
-      mensaje: `${saludo}Soy Capi y te acompaño en tu preparación. Empieza con una práctica corta y tócame cuando quieras un consejo.`,
+      mensaje: `${saludo}Soy Capi y te acompaño en tu preparación.`,
     };
   }
 
