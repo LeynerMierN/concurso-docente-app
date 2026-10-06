@@ -31,13 +31,13 @@ export function estadoMascota(progreso: Progreso, perfil: Perfil | null, hoy: Da
   if (respondidas >= META_DIARIA_PREGUNTAS) {
     return {
       animo: "celebrando",
-      mensaje: `¡Meta del día cumplida! Llevas ${plural(racha.actual, "día", "días")} de racha. Así se gana el concurso.`,
+      mensaje: `¡Tarea del día cumplida! Llevas ${plural(racha.actual, "día", "días")} de constancia. Así se gana el concurso.`,
     };
   }
   if (racha.actual > 0 && !racha.estudioHoy) {
     return {
       animo: "animando",
-      mensaje: `${saludo}Tu racha de ${plural(racha.actual, "día", "días")} está en riesgo: responde al menos una pregunta hoy para no perderla.`,
+      mensaje: `${saludo}Llevas ${plural(racha.actual, "día", "días")} de constancia. Una práctica corta hoy y la mantienes.`,
     };
   }
   if (repaso.hoy > 0) {
@@ -48,9 +48,9 @@ export function estadoMascota(progreso: Progreso, perfil: Perfil | null, hoy: Da
   }
   if (racha.estudioHoy) {
     const faltan = META_DIARIA_PREGUNTAS - respondidas;
-    return { animo: "feliz", mensaje: `¡Vas bien! Te ${faltan === 1 ? "falta" : "faltan"} ${plural(faltan, "pregunta", "preguntas")} para la meta de hoy.` };
+    return { animo: "feliz", mensaje: `¡Vas bien! Te ${faltan === 1 ? "falta" : "faltan"} ${plural(faltan, "pregunta", "preguntas")} para completar la tarea de hoy.` };
   }
-  return { animo: "feliz", mensaje: `${saludo}Hoy es un buen día para empezar una racha nueva.` };
+  return { animo: "feliz", mensaje: `${saludo}Hoy es un buen día para retomar el estudio.` };
 }
 
 const CONSEJOS_GENERALES = [

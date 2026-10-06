@@ -1,11 +1,16 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Award, CheckCircle2, ChevronDown, CircleDashed, Clock, Flag, RotateCcw, Scale, Sparkles, XCircle } from "lucide-react";
-import IconoInsignia from "@/components/gamificacion/IconoInsignia";
 import Capibara from "@/components/mascota/Capibara";
+import Diploma from "@/components/premios/Diploma";
+import Medalla from "@/components/premios/Medalla";
+import Premiacion, { type Premio } from "@/components/premios/Premiacion";
+import Trofeo from "@/components/premios/Trofeo";
+import { useProgreso } from "@/hooks/useProgreso";
 import type { QuizRunner } from "@/hooks/useQuizRunner";
 import { INSIGNIAS } from "@/lib/insignias";
+import { PUNTOS, TROFEOS, nivelDe, trofeosGanados } from "@/lib/meritos";
 import { celebrarAprobacion } from "@/lib/celebrar";
 import { formatoTiempo } from "@/lib/tiempo";
 
@@ -13,10 +18,43 @@ import { formatoTiempo } from "@/lib/tiempo";
 export default function Resultados({ runner }: { runner: QuizRunner }) {
   const { sesion, preguntas, resultado, segundosTranscurridos, registro } = runner;
   const [soloErrores, setSoloErrores] = useState(false);
+  const [ceremonia, setCeremonia] = useState<"nueva" | "repeticion" | null>(null);
   const celebrado = useRef(false);
+  const progreso = useProgreso();
 
   const terminadoMs = sesion?.terminadoMs ?? 0;
   const aprobado = !!resultado?.aprobado;
+
+  /** Trofeos, distinciones y subida de nivel que se ganaron justo en este intento */
+  const premios = useMemo<Premio[]>(() => {
+    if (!registro || !progreso || !progreso.intentos.some((i) => i.id === registro.id)) return [];
+    const lista: Premio[] = [];
+    const antes = new Set(trofeosGanados(progreso.intentos.filter((i) => i.id !== registro.id)));
+    for (const id of trofeosGanados(progreso.intentos)) {
+      const trofeo = TROFEOS.find((t) => t.id === id);
+      if (trofeo && !antes.has(id)) lista.push({ tipo: "trofeo", trofeo });
+    }
+    for (const id of registro.insigniasNuevas ?? []) {
+      const insignia = INSIGNIAS.find((x) => x.id === id);
+      if (insignia) lista.push({ tipo: "medalla", insignia });
+    }
+    // La subida de nivel solo se puede saber si este es el intento más reciente
+    if (progreso.intentos[0]?.id === registro.id) {
+      const total = progreso.xpTotal ?? 0;
+      const ahora = nivelDe(total).actual;
+      if (ahora.numero > nivelDe(total - (registro.xp ?? 0)).actual.numero) lista.push({ tipo: "nivel", nivel: ahora });
+    }
+    return lista;
+  }, [registro, progreso]);
+
+  // La ceremonia se abre sola al terminar; al volver a abrir resultados guardados se puede repetir a mano
+  const ceremoniaMostrada = useRef(false);
+  useEffect(() => {
+    if (premios.length > 0 && !ceremoniaMostrada.current && Date.now() - terminadoMs < 10_000) {
+      ceremoniaMostrada.current = true;
+      setCeremonia("nueva");
+    }
+  }, [premios, terminadoMs]);
 
   useEffect(() => {
     // Solo celebramos al terminar, no al volver a abrir unos resultados guardados
@@ -64,7 +102,7 @@ export default function Resultados({ runner }: { runner: QuizRunner }) {
         </p>
         {registro?.xp ? (
           <p className="mt-3 inline-flex items-center gap-1 rounded-full bg-white/15 px-3 py-1 text-sm font-bold">
-            <Sparkles className="size-4 text-oro" /> +{registro.xp} XP
+            <Sparkles className="size-4 text-oro" /> +{registro.xp} {PUNTOS}
           </p>
         ) : null}
 
@@ -92,27 +130,41 @@ export default function Resultados({ runner }: { runner: QuizRunner }) {
         </p>
       ) : null}
 
-      {/* Insignias desbloqueadas en este intento */}
-      {(registro?.insigniasNuevas ?? []).map((id) => {
-        const insignia = INSIGNIAS.find((x) => x.id === id);
-        if (!insignia) return null;
-        return (
-          <section
-            key={id}
-            className="flex items-center gap-4 rounded-3xl bg-accent/10 p-5 ring-1 ring-accent/30"
-            aria-label="Nueva insignia"
+      {/* Premios ganados en este intento */}
+      {premios.length > 0 && (
+        <section className="space-y-3 rounded-3xl bg-accent/10 p-5 ring-1 ring-accent/30" aria-labelledby="titulo-premios">
+          <h2 id="titulo-premios" className="font-bold">
+            Premios de este intento
+          </h2>
+          <ul className="space-y-3">
+            {premios.map((p) => (
+              <li key={p.tipo === "trofeo" ? p.trofeo.id : p.tipo === "medalla" ? p.insignia.id : "nivel"} className="flex items-center gap-4">
+                <span className="grid w-14 shrink-0 place-items-center">
+                  {p.tipo === "trofeo" && <Trofeo metal={p.trofeo.metal} forma={p.trofeo.forma} tamano={44} />}
+                  {p.tipo === "medalla" && <Medalla icono={p.insignia.icono} tamano={38} />}
+                  {p.tipo === "nivel" && <Diploma tamano={56} />}
+                </span>
+                <div className="min-w-0">
+                  <p className="font-heading font-bold leading-snug">
+                    {p.tipo === "trofeo" ? p.trofeo.titulo : p.tipo === "medalla" ? p.insignia.titulo : `Nivel ${p.nivel.numero}: ${p.nivel.nombre}`}
+                  </p>
+                  <p className="text-sm text-slate-600 dark:text-slate-300">
+                    {p.tipo === "trofeo" ? p.trofeo.descripcion : p.tipo === "medalla" ? p.insignia.descripcion : "Subiste de nivel de formación."}
+                  </p>
+                </div>
+              </li>
+            ))}
+          </ul>
+          <button
+            type="button"
+            onClick={() => setCeremonia("repeticion")}
+            className="w-full rounded-2xl bg-accent px-4 py-2.5 text-sm font-bold text-white active:scale-[0.98]"
           >
-            <span className="grid size-14 shrink-0 place-items-center rounded-2xl bg-accent text-white">
-              <IconoInsignia nombre={insignia.icono} className="size-8" />
-            </span>
-            <div>
-              <p className="text-xs font-bold uppercase tracking-wide text-accent-dark dark:text-accent-light">¡Nueva insignia!</p>
-              <p className="font-heading font-bold">{insignia.titulo}</p>
-              <p className="text-sm text-slate-600 dark:text-slate-300">{insignia.descripcion}</p>
-            </div>
-          </section>
-        );
-      })}
+            Ver la premiación otra vez
+          </button>
+        </section>
+      )}
+      {ceremonia && <Premiacion premios={premios} repeticion={ceremonia === "repeticion"} onCerrar={() => setCeremonia(null)} />}
 
       {/* Desglose por área */}
       <section className="space-y-3 rounded-3xl bg-white p-5 ring-1 ring-slate-200 dark:bg-tarjeta dark:ring-slate-700/60">

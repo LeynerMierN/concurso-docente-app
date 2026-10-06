@@ -39,9 +39,13 @@
   --color-error: var(--color-danger);
   /* Amarillo de la bandera: íconos, confeti e imagen Open Graph */
   --color-oro: #fcd116;
+  /* Tablero de aula donde escribe Sabino */
+  --color-tablero: #24453a;
+  --color-tablero-marco: #8b5e3c;
 
   --font-sans: var(--font-inter), Inter, system-ui, sans-serif;
   --font-heading: var(--font-jakarta), "Plus Jakarta Sans", sans-serif;
+  --font-tiza: var(--font-caveat), "Caveat", cursive;
 
   /* Breakpoints del config: móvil desde 320px, tablet 768px, escritorio 1024px */
   --breakpoint-md: 768px;
@@ -111,6 +115,37 @@ body {
   .aviso-entrar {
     animation: aviso-entrar 0.3s ease-out;
   }
+  /* Premiación: trofeos, medallas y diplomas */
+  .premio-fondo {
+    animation: premio-fondo 0.3s ease-out;
+  }
+  .premio-rayos {
+    animation: premio-rayos 14s linear infinite;
+  }
+  .premio-caer {
+    animation: premio-caer 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+  }
+  .premio-chispa {
+    animation: premio-chispa 1.6s ease-in-out infinite both;
+  }
+  .premio-texto {
+    animation: premio-texto 0.5s ease-out 0.35s both;
+  }
+  .premio-barrido {
+    animation: premio-barrido 3s ease-in-out infinite;
+  }
+  .premio-balanceo {
+    animation: premio-balanceo 2.4s ease-in-out infinite;
+  }
+  .premio-flotar {
+    animation: mascota-flotar 3.6s ease-in-out infinite;
+  }
+}
+
+/* Rayos de luz detrás del premio (se ven también sin animación) */
+.premio-rayos {
+  background: repeating-conic-gradient(from 0deg, rgb(252 209 22 / 0.28) 0deg 9deg, transparent 9deg 24deg);
+  mask-image: radial-gradient(circle, #000 25%, transparent 70%);
 }
 
 @keyframes mascota-flotar {
@@ -152,4 +187,31 @@ body {
 @keyframes aviso-entrar {
   from { opacity: 0; transform: translateY(12px) scale(0.96); }
   to { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes premio-fondo {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes premio-rayos {
+  to { transform: rotate(360deg); }
+}
+@keyframes premio-caer {
+  0% { opacity: 0; transform: translateY(-90px) scale(0.5) rotate(-12deg); }
+  100% { opacity: 1; transform: translateY(0) scale(1) rotate(0); }
+}
+@keyframes premio-chispa {
+  0%, 100% { opacity: 0; transform: scale(0.2) rotate(0); }
+  50% { opacity: 1; transform: scale(1) rotate(45deg); }
+}
+@keyframes premio-texto {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes premio-barrido {
+  0%, 55% { transform: translateX(0) rotate(20deg); }
+  100% { transform: translateX(140px) rotate(20deg); }
+}
+@keyframes premio-balanceo {
+  0%, 100% { transform: rotate(-5deg); }
+  50% { transform: rotate(5deg); }
 }

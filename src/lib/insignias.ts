@@ -36,7 +36,7 @@ export const INSIGNIAS: Insignia[] = config.gamification.badges.map((b) => ({
   descripcion: b.description,
   icono: b.icon,
   meta: "req_streak_days" in b ? (b.req_streak_days as number) : (b.count as number),
-  unidad: "req_streak_days" in b ? "días de racha" : "aciertos",
+  unidad: "req_streak_days" in b ? "días seguidos" : "aciertos",
 }));
 
 function coincideTema(etiqueta: string): (p: Pregunta) => boolean {

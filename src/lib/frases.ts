@@ -18,7 +18,7 @@ export const FRASES: Frase[] = [
   "Lo que hoy te parece difícil, en un mes será una pregunta fácil.",
   "Enseñar es creer en el futuro de otros. Prepararte es creer en el tuyo.",
   "Un error entendido vale más que diez aciertos de suerte.",
-  "Tu racha no mide lo que sabes: mide lo que construyes cada día.",
+  "Tu constancia no mide lo que sabes: mide lo que construyes cada día.",
   "La norma se olvida si se memoriza; se queda si se entiende.",
   "Cada justificación que lees es una clase que te regalas.",
   "El día del examen solo tendrás que hacer lo que ya practicaste muchas veces.",
@@ -78,12 +78,12 @@ export function guardarFavoritas(ids: string[]): void {
   }
 }
 
-/** Mensajes flotantes durante un examen: rachas de aciertos y avance */
+/** Mensajes flotantes durante un examen: series de aciertos y avance */
 export function mensajeRacha(seguidas: number): string | null {
-  if (seguidas === 3) return "¡3 seguidas! Vas en racha.";
-  if (seguidas === 5) return "¡5 aciertos seguidos! Así se prepara quien va a ganar.";
-  if (seguidas === 10) return "¡10 seguidas! Estás en nivel de examen.";
-  if (seguidas > 10 && seguidas % 5 === 0) return `¡${seguidas} seguidas! Nadie te para.`;
+  if (seguidas === 3) return "¡3 aciertos consecutivos! Buen ritmo.";
+  if (seguidas === 5) return "¡5 aciertos consecutivos! Así se prepara quien va a ganar.";
+  if (seguidas === 10) return "¡10 aciertos consecutivos! Estás en nivel de examen.";
+  if (seguidas > 10 && seguidas % 5 === 0) return `¡${seguidas} aciertos consecutivos! Nadie te para.`;
   return null;
 }
 

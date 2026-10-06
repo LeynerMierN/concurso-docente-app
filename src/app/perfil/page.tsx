@@ -2,13 +2,16 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Check, ChevronRight, Crown, Lock, Shield, Sparkles, UserRound } from "lucide-react";
+import { Check, ChevronRight, Crown, FileCheck2, GraduationCap, UserRound } from "lucide-react";
 import config from "@data/app_config.json";
-import IconoInsignia from "@/components/gamificacion/IconoInsignia";
+import Medalla from "@/components/premios/Medalla";
+import Premiacion, { type Premio } from "@/components/premios/Premiacion";
+import Trofeo from "@/components/premios/Trofeo";
 import { usePerfil } from "@/hooks/usePerfil";
 import { useProgreso } from "@/hooks/useProgreso";
 import { CATEGORIAS } from "@/lib/categorias";
 import { INSIGNIAS, avanceInsignias } from "@/lib/insignias";
+import { NIVELES, PUNTOS, PUNTOS_CORTO, TROFEOS, nivelDe, trofeosGanados } from "@/lib/meritos";
 import { CONTEXTOS, ROLES, guardarPerfil, perfilNuevo, type Perfil } from "@/lib/perfil";
 import { COSTO_PROTECTOR_XP } from "@/lib/storage";
 
@@ -22,12 +25,13 @@ const REGLAS_XP = [
   { texto: "Correcta la primera vez que ves la pregunta", xp: XP.correct_first_try },
   { texto: "Terminar una práctica o simulacro", xp: XP.complete_quiz },
   { texto: "Terminar el Simulacro Tipo ICFES / CNSC", xp: XP.complete_full_simulation },
-  { texto: "Por cada día de racha (una vez al día)", xp: XP.streak_bonus_per_day },
+  { texto: "Por cada día de constancia (una vez al día)", xp: XP.streak_bonus_per_day },
 ];
 
 export default function Pagina() {
   const { perfil, cargado } = usePerfil();
   const progreso = useProgreso();
+  const [premioVisto, setPremioVisto] = useState<Premio | null>(null);
 
   if (!cargado || !progreso) {
     return <div className="h-96 animate-pulse rounded-3xl bg-slate-200 dark:bg-slate-700/60" aria-hidden />;
@@ -35,6 +39,9 @@ export default function Pagina() {
 
   const avance = avanceInsignias(progreso);
   const desbloqueadas = progreso.insignias ?? {};
+  const trofeos = new Set(trofeosGanados(progreso.intentos));
+  const nivel = nivelDe(progreso.xpTotal ?? 0);
+  const ganados = trofeos.size + Object.keys(desbloqueadas).length;
 
   return (
     <div className="space-y-6">
@@ -53,80 +60,143 @@ export default function Pagina() {
       {/* Se monta cuando el perfil ya cargó, así arranca con los datos guardados */}
       <FormularioPerfil inicial={perfil} />
 
-      {/* Experiencia */}
-      <section className={tarjeta} aria-labelledby="titulo-xp">
+      {/* Escalafón del aspirante: nivel según los puntos de mérito acumulados */}
+      <section className={tarjeta} aria-labelledby="titulo-nivel">
         <div className="flex items-start justify-between gap-3">
           <div>
-            <h2 id="titulo-xp" className="font-bold">
-              Puntos de experiencia
+            <h2 id="titulo-nivel" className="text-sm font-semibold text-slate-500">
+              Tu escalafón de aspirante
             </h2>
-            <p className="mt-1 flex items-baseline gap-1.5">
-              <span className="font-heading text-4xl font-extrabold tabular-nums">{(progreso.xp ?? 0).toLocaleString("es-CO")}</span>
-              <span className="font-semibold text-slate-500">XP disponibles</span>
+            <p className="mt-1 font-heading text-2xl font-extrabold">
+              Nivel {nivel.actual.numero} · {nivel.actual.nombre}
             </p>
-            <p className="text-xs text-slate-500">{(progreso.xpTotal ?? 0).toLocaleString("es-CO")} XP ganados en total</p>
+            <p className="text-sm text-slate-500">
+              {(progreso.xpTotal ?? 0).toLocaleString("es-CO")} {PUNTOS} ganados ·{" "}
+              {(progreso.xp ?? 0).toLocaleString("es-CO")} disponibles
+            </p>
           </div>
-          <span className="grid size-12 shrink-0 place-items-center rounded-2xl bg-accent/15 text-accent">
-            <Sparkles className="size-7" />
+          <span className="grid size-12 shrink-0 place-items-center rounded-2xl bg-primary/10 text-primary dark:bg-primary-light/15 dark:text-oro">
+            <GraduationCap className="size-7" />
           </span>
         </div>
-        <ul className="mt-4 divide-y divide-slate-100 text-sm dark:divide-slate-700">
-          {REGLAS_XP.map(({ texto, xp }) => (
-            <li key={texto} className="flex items-center justify-between gap-3 py-2">
-              <span className="text-slate-600 dark:text-slate-300">{texto}</span>
-              <span className="shrink-0 font-bold tabular-nums text-secondary">+{xp}</span>
+
+        <div className="mt-4">
+          <div className="h-2.5 overflow-hidden rounded-full bg-slate-100 dark:bg-slate-700/60">
+            <div className="h-full rounded-full bg-gradient-to-r from-primary-light to-oro" style={{ width: `${nivel.avance * 100}%` }} />
+          </div>
+          <p className="mt-1.5 text-xs text-slate-500">
+            {nivel.siguiente
+              ? `Te faltan ${nivel.faltan.toLocaleString("es-CO")} ${PUNTOS_CORTO} para ${nivel.siguiente.nombre}.`
+              : "Llegaste al nivel más alto. ¡Felicitaciones!"}
+          </p>
+        </div>
+
+        {/* Escalera de niveles */}
+        <ol className="mt-4 grid grid-cols-3 gap-2 text-center text-xs md:grid-cols-6">
+          {NIVELES.map((n) => {
+            const alcanzado = n.numero <= nivel.actual.numero;
+            return (
+              <li
+                key={n.numero}
+                className={`rounded-xl px-1 py-2 ${
+                  n.numero === nivel.actual.numero
+                    ? "bg-primary font-bold text-white"
+                    : alcanzado
+                      ? "bg-primary/10 font-semibold text-primary dark:bg-primary-light/15 dark:text-oro"
+                      : "bg-slate-50 text-slate-400 dark:bg-slate-700/40"
+                }`}
+              >
+                <span className="block text-[10px] opacity-80">Nivel {n.numero}</span>
+                {n.nombre}
+              </li>
+            );
+          })}
+        </ol>
+
+        <details className="mt-4 text-sm">
+          <summary className="cursor-pointer font-semibold text-primary-light dark:text-oro">Cómo ganar {PUNTOS}</summary>
+          <ul className="mt-2 divide-y divide-slate-100 dark:divide-slate-700">
+            {REGLAS_XP.map(({ texto, xp }) => (
+              <li key={texto} className="flex items-center justify-between gap-3 py-2">
+                <span className="text-slate-600 dark:text-slate-300">{texto}</span>
+                <span className="shrink-0 font-bold tabular-nums text-secondary">+{xp}</span>
+              </li>
+            ))}
+            <li className="flex items-center justify-between gap-3 py-2">
+              <span className="flex items-center gap-1.5 text-slate-600 dark:text-slate-300">
+                <FileCheck2 className="size-4 text-primary-light" /> Excusa justificada (cubre un día que faltaste)
+              </span>
+              <span className="shrink-0 font-bold tabular-nums text-danger">−{COSTO_PROTECTOR_XP}</span>
             </li>
-          ))}
-          <li className="flex items-center justify-between gap-3 py-2">
-            <span className="flex items-center gap-1.5 text-slate-600 dark:text-slate-300">
-              <Shield className="size-4 text-primary-light" /> Protector de racha (cubre un día perdido)
-            </span>
-            <span className="shrink-0 font-bold tabular-nums text-danger">−{COSTO_PROTECTOR_XP}</span>
-          </li>
-        </ul>
+          </ul>
+        </details>
       </section>
 
-      {/* Insignias */}
-      <section className="space-y-3" aria-labelledby="titulo-insignias">
-        <h2 id="titulo-insignias" className="font-bold">
-          Insignias · {Object.keys(desbloqueadas).length}/{INSIGNIAS.length}
+      {/* Vitrina: trofeos de simulacros y distinciones temáticas */}
+      <section className={tarjeta} aria-labelledby="titulo-vitrina">
+        <h2 id="titulo-vitrina" className="font-bold">
+          Vitrina de premios · {ganados}/{TROFEOS.length + INSIGNIAS.length}
         </h2>
-        <ul className="grid gap-3 md:grid-cols-2">
+        <p className="mt-0.5 text-sm text-slate-500">Toca un premio ganado para ver su ceremonia.</p>
+
+        <h3 className="mt-4 text-xs font-bold uppercase tracking-wide text-slate-500">Trofeos de simulacro</h3>
+        <ul className="mt-2 grid grid-cols-2 gap-3 border-b-8 border-amber-900/70 pb-3 md:grid-cols-4 dark:border-amber-900/80">
+          {TROFEOS.map((t) => {
+            const ganado = trofeos.has(t.id);
+            return (
+              <li key={t.id}>
+                <button
+                  type="button"
+                  disabled={!ganado}
+                  onClick={() => setPremioVisto({ tipo: "trofeo", trofeo: t })}
+                  className="flex h-full w-full flex-col items-center gap-1 rounded-2xl p-2 text-center transition enabled:hover:bg-slate-50 enabled:active:scale-95 dark:enabled:hover:bg-slate-700/40"
+                >
+                  <Trofeo metal={t.metal} forma={t.forma} tamano={64} brillo={ganado} bloqueado={!ganado} className={ganado ? "premio-flotar" : ""} />
+                  <span className="text-sm font-semibold leading-tight">{t.titulo}</span>
+                  <span className="text-xs leading-snug text-slate-500">{t.descripcion}</span>
+                </button>
+              </li>
+            );
+          })}
+        </ul>
+
+        <h3 className="mt-5 text-xs font-bold uppercase tracking-wide text-slate-500">Distinciones</h3>
+        <ul className="mt-2 grid grid-cols-2 gap-3 md:grid-cols-4">
           {INSIGNIAS.map((ins) => {
             const fecha = desbloqueadas[ins.id];
             const valor = Math.min(avance[ins.id] ?? 0, ins.meta);
             return (
-              <li key={ins.id} className={`${tarjeta} flex gap-4 ${fecha ? "" : "opacity-90"}`}>
-                <span
-                  className={`grid size-14 shrink-0 place-items-center rounded-2xl ${
-                    fecha ? "bg-accent text-white" : "bg-slate-100 text-slate-400 dark:bg-slate-700/60"
-                  }`}
+              <li key={ins.id}>
+                <button
+                  type="button"
+                  disabled={!fecha}
+                  onClick={() => setPremioVisto({ tipo: "medalla", insignia: ins })}
+                  className="flex h-full w-full flex-col items-center gap-1 rounded-2xl p-2 text-center transition enabled:hover:bg-slate-50 enabled:active:scale-95 dark:enabled:hover:bg-slate-700/40"
                 >
-                  {fecha ? <IconoInsignia nombre={ins.icono} className="size-8" /> : <Lock className="size-6" />}
-                </span>
-                <div className="min-w-0 flex-1">
-                  <p className="font-heading font-bold leading-snug">{ins.titulo}</p>
-                  <p className="mt-0.5 text-sm text-slate-500">{ins.descripcion}</p>
+                  <Medalla icono={ins.icono} tamano={52} bloqueada={!fecha} balanceo={!!fecha} />
+                  <span className="text-sm font-semibold leading-tight">{ins.titulo}</span>
                   {fecha ? (
-                    <p className="mt-2 inline-flex items-center gap-1 text-xs font-semibold text-secondary">
-                      <Check className="size-3.5" /> Desbloqueada el {fechaCorta.format(new Date(fecha))}
-                    </p>
+                    <span className="inline-flex items-center gap-1 text-xs font-semibold text-secondary">
+                      <Check className="size-3.5" /> {fechaCorta.format(new Date(fecha))}
+                    </span>
                   ) : (
-                    <div className="mt-2">
-                      <div className="h-2 overflow-hidden rounded-full bg-slate-100 dark:bg-slate-700/60">
-                        <div className="h-full rounded-full bg-accent" style={{ width: `${(valor / ins.meta) * 100}%` }} />
-                      </div>
-                      <p className="mt-1 text-xs text-slate-500 tabular-nums">
+                    <span className="w-full">
+                      <span className="block h-1.5 overflow-hidden rounded-full bg-slate-100 dark:bg-slate-700/60">
+                        <span className="block h-full rounded-full bg-accent" style={{ width: `${(valor / ins.meta) * 100}%` }} />
+                      </span>
+                      <span className="mt-1 block text-xs tabular-nums text-slate-500">
                         {valor}/{ins.meta} {ins.unidad}
-                      </p>
-                    </div>
+                      </span>
+                    </span>
                   )}
-                </div>
+                </button>
               </li>
             );
           })}
         </ul>
       </section>
+
+      {premioVisto && <Premiacion premios={[premioVisto]} repeticion onCerrar={() => setPremioVisto(null)} />}
 
       <Link href="/premium" className={`${tarjeta} flex items-center gap-4 transition hover:ring-accent`}>
         <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-accent/15 text-accent">

@@ -26,21 +26,21 @@ export default function MascotaInicio() {
         tamano={84}
         onToque={() => setConsejo((c) => (c + 1) % CONSEJOS.length)}
       />
-      <div className="relative mb-4 flex-1 rounded-3xl rounded-bl-md bg-white p-4 text-sm leading-relaxed shadow-sm ring-1 ring-slate-200 dark:bg-tarjeta dark:ring-slate-700/60">
-        {/* Colita del globo apuntando al capibara */}
-        <span
-          aria-hidden
-          className="absolute -left-1.5 bottom-3 size-3 rotate-45 bg-white ring-1 ring-slate-200 [clip-path:polygon(0_0,0_100%,100%_100%)] dark:bg-tarjeta dark:ring-slate-700/60"
-        />
-        <p aria-live="polite">
+      {/* Tablero de clase con marco de madera: Sabino escribe con tiza */}
+      <div className="relative mb-3 flex-1 rounded-xl border-[6px] border-tablero-marco bg-tablero bg-[radial-gradient(circle_at_30%_20%,rgb(255_255_255/0.08),transparent_60%)] px-4 pt-3 pb-4 text-slate-50 shadow-md">
+        <p aria-live="polite" className="font-tiza text-xl leading-snug">
           {mostrandoConsejo && (
-            <span className="mb-1 flex items-center gap-1 text-xs font-bold uppercase tracking-wide text-accent">
+            <span className="mb-0.5 flex items-center gap-1 font-sans text-xs font-bold uppercase tracking-wide text-oro">
               <Lightbulb className="size-3.5" /> Consejo {consejo + 1}/{CONSEJOS.length}
             </span>
           )}
           {mostrandoConsejo ? CONSEJOS[consejo] : estado.mensaje}
         </p>
-        <p className="mt-1.5 text-xs text-slate-500">{mostrandoConsejo ? "Tócame para otro consejo" : "Tócame para un consejo"}</p>
+        <p className="mt-1.5 text-xs text-white/60">{mostrandoConsejo ? "Toca a Sabino para otro consejo" : "Toca a Sabino para un consejo"}</p>
+        {/* Repisa con una tiza */}
+        <span aria-hidden className="absolute inset-x-3 -bottom-[6px] h-1.5 rounded-sm bg-amber-950/70">
+          <span className="absolute -top-1 right-4 h-1.5 w-5 rounded-sm bg-white/90" />
+        </span>
       </div>
     </section>
   );

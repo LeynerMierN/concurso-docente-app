@@ -65,7 +65,7 @@ export default function Pagina() {
   const fuerte = areas.length > 1 ? areas[areas.length - 1] : null;
 
   const indicadores = [
-    { etiqueta: "Preguntas resueltas", valor: progreso.totalRespondidas.toLocaleString("es-CO"), detalle: `Mejor racha: ${racha.mejor} días` },
+    { etiqueta: "Preguntas resueltas", valor: progreso.totalRespondidas.toLocaleString("es-CO"), detalle: `Mejor constancia: ${racha.mejor} días` },
     { etiqueta: "Acierto global", valor: `${aciertoGlobal(progreso)}%`, detalle: `Meta: ${UMBRAL_DOCENTE_AULA}%` },
     { etiqueta: "Simulacros aprobados", valor: `${aprobados}/${simulacros.length}`, detalle: `${progreso.intentos.length} intentos en total` },
     {
