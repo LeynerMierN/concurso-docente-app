@@ -88,9 +88,9 @@ function Selector({ modoId, filtroInicial }: { modoId: string | null; filtroInic
     <div className="space-y-6 pb-20">
       <header>
         <h1 className="flex items-center gap-2 text-2xl font-bold">
-          <BookOpenCheck className="size-7 text-primary-light dark:text-oro" /> Práctica guiada
+          <BookOpenCheck className="size-7 text-primary-light" /> Práctica guiada
         </h1>
-        <p className="mt-1 text-sm text-slate-500">
+        <p className="mt-1 text-sm text-texto-tenue">
           {modo ? modo.descripcion : "Elige qué repasar: el núcleo común, tu especialidad o un tema clave. Sin límite de tiempo."}
         </p>
       </header>
@@ -107,7 +107,7 @@ function Selector({ modoId, filtroInicial }: { modoId: string | null; filtroInic
                   className={`block whitespace-nowrap rounded-2xl px-3.5 py-2 text-sm transition ${
                     modoId === m.id
                       ? "bg-primary font-semibold text-white"
-                      : "bg-white text-slate-700 ring-1 ring-slate-200 dark:bg-tarjeta dark:text-slate-300 dark:ring-slate-700/60"
+                      : "bg-tarjeta text-slate-700 ring-1 ring-slate-200 dark:text-slate-300 dark:ring-slate-700/60"
                   }`}
                 >
                   {m.nombre}
@@ -143,10 +143,10 @@ function Selector({ modoId, filtroInicial }: { modoId: string | null; filtroInic
       <SelectorCategorias filtro={filtro} onElegir={setFiltro} soloUnaArea={unaArea} pendientesRepaso={pendientes.length} />
 
       {!modo && (
-        <label className="flex items-center justify-between gap-4 rounded-2xl bg-white p-4 ring-1 ring-slate-200 dark:bg-tarjeta dark:ring-slate-700/60">
+        <label className="flex items-center justify-between gap-4 rounded-2xl bg-tarjeta p-4 ring-1 ring-slate-200 dark:ring-slate-700/60">
           <span>
             <span className="block font-semibold">Retroalimentación inmediata</span>
-            <span className="block text-sm text-slate-500">Ver la respuesta y la justificación al responder</span>
+            <span className="block text-sm text-texto-tenue">Ver la respuesta y la justificación al responder</span>
           </span>
           <input
             type="checkbox"

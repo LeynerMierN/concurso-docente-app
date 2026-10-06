@@ -38,13 +38,13 @@ export default function RepasoErrores() {
 
   const [a, m, d] = (proximaFecha ?? "").split("-").map(Number);
   return (
-    <div className="flex items-center gap-4 rounded-3xl bg-white p-5 ring-1 ring-slate-200 dark:bg-tarjeta dark:ring-slate-700/60">
+    <div className="flex items-center gap-4 rounded-3xl bg-tarjeta p-5 ring-1 ring-slate-200 dark:ring-slate-700/60">
       <span className="grid size-12 shrink-0 place-items-center rounded-2xl bg-secondary/15 text-secondary-light">
         <CalendarClock className="size-7" />
       </span>
       <span className="min-w-0 flex-1">
         <span className="block font-semibold">Repaso de errores al día</span>
-        <span className="block text-sm text-slate-500">
+        <span className="block text-sm text-texto-tenue">
           {proximaFecha
             ? `Próximo repaso: ${fechaCorta.format(new Date(a, m - 1, d))} (${proximosEseDia} ${proximosEseDia === 1 ? "pregunta" : "preguntas"}).`
             : "Sigue practicando para mantenerlo así."}

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { AlertTriangle, Award, BarChart3, CheckCircle2, Info, Star, XCircle } from "lucide-react";
+import { Award, BarChart3, CheckCircle2, Info, Star, Target, XCircle } from "lucide-react";
 import Capibara from "@/components/mascota/Capibara";
 import { useProgreso } from "@/hooks/useProgreso";
 import { MODULOS_NAVEGACION } from "@/lib/appConfig";
@@ -10,7 +10,7 @@ import { UMBRAL_DOCENTE_AULA } from "@/lib/preguntas";
 import { calcularRacha, diasDeRacha } from "@/lib/storage";
 import { formatoTiempo } from "@/lib/tiempo";
 
-const tarjeta = "rounded-3xl bg-white p-5 ring-1 ring-slate-200 dark:bg-tarjeta dark:ring-slate-700/60";
+const tarjeta = "rounded-3xl bg-tarjeta p-5 ring-1 ring-slate-200 dark:ring-slate-700/60";
 const formatoFecha = new Intl.DateTimeFormat("es-CO", { day: "numeric", month: "short" });
 const formatoFechaHora = new Intl.DateTimeFormat("es-CO", { day: "numeric", month: "short", hour: "numeric", minute: "2-digit" });
 const descripcion = MODULOS_NAVEGACION.find((m) => m.id === "estadisticas")?.descripcion;
@@ -21,9 +21,9 @@ export default function Pagina() {
   const encabezado = (
     <header>
       <h1 className="flex items-center gap-2 text-2xl font-bold">
-        <BarChart3 className="size-7 text-primary-light dark:text-oro" /> Mi rendimiento
+        <BarChart3 className="size-7 text-primary-light" /> Mi rendimiento
       </h1>
-      {descripcion && <p className="mt-1 text-sm text-slate-500">{descripcion}</p>}
+      {descripcion && <p className="mt-1 text-sm text-texto-tenue">{descripcion}</p>}
     </header>
   );
 
@@ -43,7 +43,7 @@ export default function Pagina() {
         <section className={`${tarjeta} text-center`}>
           <Capibara animo="durmiendo" tamano={88} mirarPuntero={false} className="mx-auto block" />
           <h2 className="mt-3 font-bold">Aún no hay datos</h2>
-          <p className="mt-1 text-sm text-slate-500">
+          <p className="mt-1 text-sm text-texto-tenue">
             Capi está durmiendo mientras espera tus primeros resultados. Termina una práctica o un simulacro y aquí verás tus
             métricas.
           </p>
@@ -81,10 +81,10 @@ export default function Pagina() {
 
       <section aria-label="Indicadores" className="grid grid-cols-2 gap-3 md:grid-cols-4">
         {indicadores.map(({ etiqueta, valor, detalle }) => (
-          <div key={etiqueta} className="rounded-2xl bg-white p-4 ring-1 ring-slate-200 dark:bg-tarjeta dark:ring-slate-700/60">
-            <p className="text-xs font-medium text-slate-500">{etiqueta}</p>
+          <div key={etiqueta} className="rounded-2xl bg-tarjeta p-4 ring-1 ring-slate-200 dark:ring-slate-700/60">
+            <p className="text-xs font-medium text-texto-tenue">{etiqueta}</p>
             <p className="mt-1 font-heading text-2xl font-extrabold tabular-nums">{valor}</p>
-            <p className="mt-0.5 text-[11px] text-slate-500">{detalle}</p>
+            <p className="mt-0.5 text-[11px] text-texto-tenue">{detalle}</p>
           </div>
         ))}
       </section>
@@ -95,14 +95,14 @@ export default function Pagina() {
           <h2 id="titulo-evolucion" className="font-bold">
             Evolución de tus simulacros
           </h2>
-          <span className="flex items-center gap-1.5 text-[11px] text-slate-500">
+          <span className="flex items-center gap-1.5 text-[11px] text-texto-tenue">
             <span className="inline-block h-0 w-4 border-t-2 border-dashed border-slate-400" /> umbral {UMBRAL_DOCENTE_AULA}
           </span>
         </div>
         {evolucion.length === 0 ? (
-          <p className="mt-3 text-sm text-slate-500">
+          <p className="mt-3 text-sm text-texto-tenue">
             Aún no has hecho simulacros.{" "}
-            <Link href="/simulacros" className="font-semibold text-primary-light dark:text-oro">
+            <Link href="/simulacros" className="font-semibold text-primary-light">
               Haz el primero
             </Link>
           </p>
@@ -129,12 +129,12 @@ export default function Pagina() {
             </div>
             <ol className="mt-1 flex gap-2 border-t border-slate-200 pt-1 dark:border-slate-700" aria-hidden>
               {evolucion.map((s) => (
-                <li key={s.id} className="min-w-0 flex-1 truncate text-center text-[10px] text-slate-500">
+                <li key={s.id} className="min-w-0 flex-1 truncate text-center text-[10px] text-texto-tenue">
                   {formatoFecha.format(new Date(s.fecha))}
                 </li>
               ))}
             </ol>
-            <p className="mt-3 flex gap-1.5 text-xs text-slate-500">
+            <p className="mt-3 flex gap-1.5 text-xs text-texto-tenue">
               <Info className="mt-0.5 size-3.5 shrink-0" />
               El puntaje proyectado es el promedio de tus últimos 3 simulacros: indica tendencia, no predice el resultado oficial.
             </p>
@@ -142,13 +142,13 @@ export default function Pagina() {
         )}
       </section>
 
-      {/* Fortalezas y debilidades */}
+      {/* Fortalezas y áreas para reforzar (nunca «débil») */}
       <section className={tarjeta} aria-labelledby="titulo-areas">
         <div className="flex items-baseline justify-between gap-2">
           <h2 id="titulo-areas" className="font-bold">
-            Fortalezas y debilidades
+            Fortalezas y áreas para reforzar
           </h2>
-          <span className="flex items-center gap-1 text-[11px] text-slate-500">
+          <span className="flex items-center gap-1 text-[11px] text-texto-tenue">
             <span className="inline-block h-3 w-0.5 rounded bg-slate-500" /> meta {UMBRAL_DOCENTE_AULA}%
           </span>
         </div>
@@ -159,8 +159,8 @@ export default function Pagina() {
                 <span className="flex min-w-0 items-center gap-1.5">
                   <span className="truncate">{area}</span>
                   {i === 0 && areas.length > 1 && pct < 100 && (
-                    <span className="inline-flex shrink-0 items-center gap-0.5 rounded-full bg-accent/15 px-1.5 py-0.5 text-[10px] font-bold text-accent-dark dark:text-accent-light">
-                      <AlertTriangle className="size-3" /> Más débil
+                    <span className="inline-flex shrink-0 items-center gap-0.5 rounded-full bg-mora-suave px-1.5 py-0.5 text-[10px] font-bold text-danger dark:text-danger-light">
+                      <Target className="size-3" /> Para reforzar
                     </span>
                   )}
                   {fuerte?.area === area && pct > areas[0].pct && (
@@ -170,21 +170,24 @@ export default function Pagina() {
                   )}
                 </span>
                 <span className="shrink-0 tabular-nums">
-                  <span className="font-semibold">{pct}%</span> <span className="text-xs text-slate-500">· {respondidas}</span>
+                  <span className="font-semibold">{pct}%</span> <span className="text-xs text-texto-tenue">· {respondidas}</span>
                 </span>
               </div>
               <div
                 className="relative mt-1.5 h-2 rounded-full bg-slate-100 dark:bg-slate-700/60"
                 title={`${area}: ${pct}% de acierto en ${respondidas} respuestas`}
               >
-                <div className="h-full rounded-full bg-primary-light" style={{ width: `${Math.max(pct, 2)}%` }} />
+                <div
+                  className={`h-full rounded-full ${i === 0 && areas.length > 1 && pct < UMBRAL_DOCENTE_AULA ? "bg-danger dark:bg-danger-light" : "bg-primary"}`}
+                  style={{ width: `${Math.max(pct, 2)}%` }}
+                />
                 <span className="absolute -top-0.5 h-3 w-0.5 rounded bg-slate-500" style={{ left: `${UMBRAL_DOCENTE_AULA}%` }} aria-hidden />
               </div>
             </li>
           ))}
         </ul>
         {sinPracticar.length > 0 && (
-          <p className="mt-4 text-xs text-slate-500">
+          <p className="mt-4 text-xs text-texto-tenue">
             <span className="font-semibold">Núcleo común sin practicar:</span> {sinPracticar.join(" · ")}
           </p>
         )}
@@ -200,9 +203,9 @@ export default function Pagina() {
             <li key={i.id} className="flex items-center justify-between gap-3 py-2.5 first:pt-0 last:pb-0">
               <span className="min-w-0">
                 <span className="block text-sm font-medium">
-                  {i.modo === "simulacro" ? "Simulacro" : "Práctica"} · <span className="text-slate-500">{i.area}</span>
+                  {i.modo === "simulacro" ? "Simulacro" : "Práctica"} · <span className="text-texto-tenue">{i.area}</span>
                 </span>
-                <span className="block text-xs text-slate-500">
+                <span className="block text-xs text-texto-tenue">
                   {formatoFechaHora.format(new Date(i.fecha))} · {i.correctas}/{i.totalPreguntas} correctas · {formatoTiempo(i.duracionSegundos)}
                 </span>
               </span>
@@ -218,7 +221,7 @@ export default function Pagina() {
           ))}
         </ul>
         {progreso.intentos.length > 20 && (
-          <p className="mt-3 flex items-center gap-1 text-xs text-slate-500">
+          <p className="mt-3 flex items-center gap-1 text-xs text-texto-tenue">
             <CheckCircle2 className="size-3.5" /> Mostrando los 20 más recientes de {progreso.intentos.length}.
           </p>
         )}

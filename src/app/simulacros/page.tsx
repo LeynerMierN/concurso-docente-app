@@ -52,9 +52,9 @@ function Configurar({ inicial }: { inicial: string }) {
     <div className="space-y-6">
       <header>
         <h1 className="flex items-center gap-2 text-2xl font-bold">
-          <Timer className="size-7 text-primary-light dark:text-oro" /> Simulacros reales
+          <Timer className="size-7 text-primary-light" /> Simulacros reales
         </h1>
-        <p className="mt-1 text-sm text-slate-500">
+        <p className="mt-1 text-sm text-texto-tenue">
           Núcleo común de la prueba CNSC, armado al azar desde el banco con la distribución oficial por componentes.
         </p>
       </header>
@@ -71,12 +71,12 @@ function Configurar({ inicial }: { inicial: string }) {
               className={`w-full rounded-2xl p-4 text-left transition ${
                 activo
                   ? "bg-primary text-white shadow-md"
-                  : "bg-white ring-1 ring-slate-200 dark:bg-tarjeta dark:ring-slate-700/60"
+                  : "bg-tarjeta ring-1 ring-slate-200 dark:ring-slate-700/60"
               }`}
             >
               <span className="block font-semibold">{m.nombre}</span>
-              <span className={`mt-0.5 block text-sm ${activo ? "text-white/90" : "text-slate-500"}`}>{m.descripcion}</span>
-              <span className={`mt-2 block text-xs font-medium ${activo ? "text-white/90" : "text-slate-500"}`}>
+              <span className={`mt-0.5 block text-sm ${activo ? "text-white/90" : "text-texto-tenue"}`}>{m.descripcion}</span>
+              <span className={`mt-2 block text-xs font-medium ${activo ? "text-white/90" : "text-texto-tenue"}`}>
                 {m.preguntas} preguntas · {m.minutos} min
               </span>
             </button>
@@ -85,7 +85,7 @@ function Configurar({ inicial }: { inicial: string }) {
       </section>
 
       {/* Distribución por componentes */}
-      <section className="rounded-3xl bg-white p-5 ring-1 ring-slate-200 dark:bg-tarjeta dark:ring-slate-700/60" aria-labelledby="titulo-distribucion">
+      <section className="rounded-3xl bg-tarjeta p-5 ring-1 ring-slate-200 dark:ring-slate-700/60" aria-labelledby="titulo-distribucion">
         <h2 id="titulo-distribucion" className="font-bold">
           Distribución de este simulacro
         </h2>
@@ -97,12 +97,12 @@ function Configurar({ inicial }: { inicial: string }) {
             const Icono = categoria?.Icono ?? Target;
             return (
               <li key={cat} className="flex items-center gap-3 text-sm">
-                <Icono className="size-5 shrink-0 text-primary-light dark:text-oro" />
+                <Icono className="size-5 shrink-0 text-primary-light" />
                 <span className="min-w-0 flex-1">{categoria?.nombre ?? cat}</span>
-                <span className="shrink-0 text-xs text-slate-500">{Math.round(pct * 100)}%</span>
+                <span className="shrink-0 text-xs text-texto-tenue">{Math.round(pct * 100)}%</span>
                 <span className="w-14 shrink-0 text-right font-semibold tabular-nums">
                   {reales}
-                  {reales < pedidas && <span className="font-normal text-slate-500">/{pedidas}</span>}
+                  {reales < pedidas && <span className="font-normal text-texto-tenue">/{pedidas}</span>}
                 </span>
               </li>
             );
@@ -117,7 +117,7 @@ function Configurar({ inicial }: { inicial: string }) {
         )}
       </section>
 
-      <ul className="space-y-3 rounded-3xl bg-white p-5 ring-1 ring-slate-200 dark:bg-tarjeta dark:ring-slate-700/60">
+      <ul className="space-y-3 rounded-3xl bg-tarjeta p-5 ring-1 ring-slate-200 dark:ring-slate-700/60">
         {reglas.map(({ Icono, texto }) => (
           <li key={texto} className="flex gap-3 text-sm text-slate-700 dark:text-slate-300">
             <Icono className="size-5 shrink-0 text-primary-light" /> {texto}

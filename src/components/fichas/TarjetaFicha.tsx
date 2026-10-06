@@ -10,7 +10,7 @@ interface Props {
 }
 
 const cara =
-  "[grid-area:1/1] h-[min(30rem,calc(100dvh-24rem))] min-h-72 backface-hidden rounded-3xl p-6 shadow-sm ring-1 ring-slate-200 dark:ring-slate-700/60 cursor-pointer select-none";
+  "[grid-area:1/1] h-[min(30rem,calc(100dvh-24rem))] min-h-72 backface-hidden rounded-3xl p-6 cursor-pointer select-none";
 
 /**
  * Tarjeta con giro 3D. Ambas caras ocupan la misma celda del grid con una altura fija
@@ -25,59 +25,55 @@ export default function TarjetaFicha({ ficha, volteada, onVoltear }: Props) {
           volteada ? "rotate-y-180" : ""
         }`}
       >
-        {/* Frente */}
-        <section
-          aria-hidden={volteada}
-          inert={volteada}
-          className={`${cara} flex flex-col bg-gradient-to-br from-marca-600 to-marca-700 text-white`}
-        >
-          <span className="self-start rounded-full bg-white/15 px-3 py-1 text-xs font-semibold">{ficha.categoria}</span>
+        {/* Frente: papel cuadriculado con el concepto */}
+        <section aria-hidden={volteada} inert={volteada} className={`${cara} cuadricula flex flex-col ring-1 ring-slate-200 dark:ring-slate-700/60`}>
+          <span className="self-start rounded-full bg-tarjeta px-3 py-1 text-xs font-bold ring-1 ring-slate-200 dark:ring-slate-700">{ficha.categoria}</span>
           <div className="my-auto py-6 text-center">
-            <p className="text-4xl font-extrabold tracking-tight text-oro">{ficha.sigla}</p>
-            <h2 className="mt-2 text-lg font-semibold leading-snug">{ficha.concepto}</h2>
-            <p className="mx-auto mt-6 flex max-w-xs items-start justify-center gap-2 text-left text-[15px] leading-relaxed text-marca-100">
-              <HelpCircle className="mt-0.5 size-5 shrink-0 text-oro" />
+            <p className="font-heading text-4xl font-extrabold tracking-[-0.02em]">{ficha.sigla}</p>
+            <h2 className="mt-2 text-lg leading-snug font-bold">{ficha.concepto}</h2>
+            <p className="mx-auto mt-6 flex max-w-xs items-start justify-center gap-2 text-left text-base leading-relaxed">
+              <HelpCircle className="mt-0.5 size-5 shrink-0 text-secondary-light" />
               {ficha.pregunta_disparadora}
             </p>
           </div>
-          <p className="flex items-center justify-center gap-1.5 text-xs text-marca-100">
+          <p className="flex items-center justify-center gap-1.5 text-xs text-texto-tenue">
             <RotateCw className="size-3.5" /> Toca la ficha para ver la respuesta
           </p>
         </section>
 
-        {/* Reverso */}
+        {/* Reverso: tablero. La tiza solo en el título corto; el contenido de estudio va en letra de lectura */}
         <section
           aria-hidden={!volteada}
           inert={!volteada}
-          className={`${cara} rotate-y-180 space-y-4 overflow-y-auto overscroll-contain bg-white text-sm dark:bg-tarjeta`}
+          className={`${cara} rotate-y-180 space-y-4 overflow-y-auto overscroll-contain border-[6px] border-tablero-marco bg-tablero text-[15px] text-tiza`}
         >
           <div className="flex items-center justify-between gap-3">
-            <p className="text-lg font-bold text-primary-light dark:text-oro">{ficha.sigla}</p>
-            <RotateCw className="size-4 text-slate-400" aria-hidden />
+            <p className="font-tiza text-3xl font-bold leading-none">{ficha.sigla}</p>
+            <RotateCw className="size-4 text-tiza/70" aria-hidden />
           </div>
-          <p className="leading-relaxed text-slate-700 dark:text-slate-300">{ficha.definicion}</p>
+          <p className="leading-relaxed">{ficha.definicion}</p>
 
-          <p className="flex items-start gap-2 rounded-2xl bg-slate-100 p-3 text-xs font-medium text-slate-600 dark:bg-slate-700/60 dark:text-slate-300">
+          <p className="flex items-start gap-2 rounded-xl bg-white/10 p-3 text-xs font-bold">
             <Scale className="mt-0.5 size-4 shrink-0" /> {ficha.norma}
           </p>
 
           <div>
-            <h3 className="mb-2 text-xs font-bold uppercase tracking-wide text-slate-500">Claves para el examen</h3>
+            <h3 className="mb-2 font-sans text-xs font-bold uppercase tracking-wide text-tiza/80">Claves para el examen</h3>
             <ul className="space-y-2">
               {ficha.puntos_clave.map((punto) => (
                 <li key={punto} className="flex gap-2 leading-snug">
-                  <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-secondary-light" />
+                  <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-verde-claro" />
                   <span>{punto}</span>
                 </li>
               ))}
             </ul>
           </div>
 
-          <div className="rounded-2xl bg-amber-50 p-3 dark:bg-amber-500/10">
-            <p className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wide text-amber-800 dark:text-amber-300">
+          <div className="rounded-xl border-2 border-resaltador p-3">
+            <p className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wide text-resaltador">
               <AlertTriangle className="size-4" /> Trampa frecuente
             </p>
-            <p className="mt-1 leading-snug text-amber-900 dark:text-amber-100">{ficha.error_frecuente}</p>
+            <p className="mt-1 leading-snug">{ficha.error_frecuente}</p>
           </div>
         </section>
       </div>

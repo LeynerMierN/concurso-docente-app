@@ -20,7 +20,7 @@ export default function Confirmacion({ titulo, children, textoConfirmar, peligro
         aria-modal="true"
         aria-label={titulo}
         onClick={(e) => e.stopPropagation()}
-        className="pb-safe w-full max-w-md space-y-4 rounded-t-3xl bg-white px-5 pt-5 shadow-2xl dark:bg-tarjeta"
+        className="pb-safe w-full max-w-md space-y-4 rounded-t-3xl bg-tarjeta px-5 pt-5 shadow-2xl"
       >
         <h2 className="text-lg font-bold">{titulo}</h2>
         {children && <div className="text-sm text-slate-600 dark:text-slate-300">{children}</div>}

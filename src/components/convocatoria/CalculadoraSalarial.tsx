@@ -41,9 +41,9 @@ export default function CalculadoraSalarial() {
 
   // Composición del ingreso anual para la barra apilada
   const segmentos = [
-    { etiqueta: "12 salarios", valor: calculo.total_12_salarios, color: "bg-marca-600" },
-    { etiqueta: "Primas", valor: d.prima_servicios + d.prima_navidad + d.prima_vacaciones, color: "bg-oro" },
-    { etiqueta: "Bonificación", valor: d.bonificacion_pedagogica, color: "bg-exito" },
+    { etiqueta: "12 salarios", valor: calculo.total_12_salarios, color: "bg-primary" },
+    { etiqueta: "Primas", valor: d.prima_servicios + d.prima_navidad + d.prima_vacaciones, color: "bg-resaltador" },
+    { etiqueta: "Bonificación", valor: d.bonificacion_pedagogica, color: "bg-verde-claro" },
     { etiqueta: "Cesantías", valor: d.cesantias_fomag, color: "bg-slate-400" },
   ];
 
@@ -51,7 +51,7 @@ export default function CalculadoraSalarial() {
     <div className="space-y-5">
       {/* Selector de escalafón */}
       <section className="space-y-2">
-        <h2 className="text-xs font-semibold uppercase tracking-wide text-slate-500">Tu nivel de estudios al ingresar</h2>
+        <h2 className="text-xs font-semibold uppercase tracking-wide text-texto-tenue">Tu nivel de estudios al ingresar</h2>
         <div role="radiogroup" aria-label="Grado en el escalafón" className="grid grid-cols-1 gap-2">
           {ESCALAFON.map((item) => {
             const activo = item.id === id;
@@ -65,12 +65,12 @@ export default function CalculadoraSalarial() {
                 className={`flex items-center justify-between gap-3 rounded-2xl px-4 py-3 text-left transition active:scale-[0.99] ${
                   activo
                     ? "bg-marca-600 text-white shadow-md"
-                    : "bg-white ring-1 ring-slate-200 dark:bg-tarjeta dark:ring-slate-700/60"
+                    : "bg-tarjeta ring-1 ring-slate-200 dark:ring-slate-700/60"
                 }`}
               >
                 <span className="min-w-0">
                   <span className="block text-sm font-semibold">{etiquetaCorta(item)}</span>
-                  <span className={`block truncate text-xs ${activo ? "text-white/90" : "text-slate-500"}`}>
+                  <span className={`block truncate text-xs ${activo ? "text-white/90" : "text-texto-tenue"}`}>
                     {item.estudios}
                   </span>
                 </span>
@@ -101,16 +101,16 @@ export default function CalculadoraSalarial() {
             </div>
           </div>
 
-          <p className="mt-4 flex items-center gap-2 rounded-2xl bg-oro px-3 py-2 text-sm font-semibold text-slate-900">
+          <p className="mt-4 flex items-center gap-2 rounded-2xl bg-resaltador px-3 py-2 text-sm font-bold text-tinta">
             <Sparkles className="size-4 shrink-0" />
             Equivale a {formatoFactor.format(factor)} salarios al año
           </p>
         </div>
 
         {/* Composición */}
-        <div className="rounded-3xl bg-white p-5 ring-1 ring-slate-200 dark:bg-tarjeta dark:ring-slate-700/60">
+        <div className="rounded-3xl bg-tarjeta p-5 ring-1 ring-slate-200 dark:ring-slate-700/60">
           <h3 className="flex items-center gap-2 font-semibold">
-            <TrendingUp className="size-5 text-marca-500 dark:text-oro" /> ¿De dónde sale el ingreso anual?
+            <TrendingUp className="size-5 text-marca-500" /> ¿De dónde sale el ingreso anual?
           </h3>
           <div className="mt-4 flex h-4 overflow-hidden rounded-full">
             {segmentos.map((seg) => (
@@ -135,7 +135,7 @@ export default function CalculadoraSalarial() {
               <li key={nombre} className="flex items-center justify-between gap-3 py-2.5 text-sm">
                 <span>
                   <span className="block font-medium">{nombre}</span>
-                  <span className="block text-xs text-slate-500">{detalle}</span>
+                  <span className="block text-xs text-texto-tenue">{detalle}</span>
                 </span>
                 <span className="shrink-0 font-semibold tabular-nums">{formatoCOP.format(valor)}</span>
               </li>

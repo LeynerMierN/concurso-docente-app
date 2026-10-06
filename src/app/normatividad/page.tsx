@@ -48,9 +48,9 @@ export default function Pagina() {
     <div className="space-y-5">
       <header>
         <h1 className="flex items-center gap-2 text-2xl font-bold">
-          <Layers className="size-7 text-primary-light dark:text-oro" /> Fichas normativas
+          <Layers className="size-7 text-primary-light" /> Fichas normativas
         </h1>
-        <p className="mt-1 text-sm text-slate-500">Repasa los conceptos que más se preguntan en el examen.</p>
+        <p className="mt-1 text-sm text-texto-tenue">Repasa los conceptos que más se preguntan en el examen.</p>
       </header>
 
       <div className="-mx-4 overflow-x-auto px-4 [scrollbar-width:none]">
@@ -64,7 +64,7 @@ export default function Pagina() {
                 className={`whitespace-nowrap rounded-full px-3.5 py-2 text-sm transition ${
                   categoria === id
                     ? "bg-marca-600 font-semibold text-white"
-                    : "bg-white text-slate-700 ring-1 ring-slate-200 dark:bg-tarjeta dark:text-slate-300 dark:ring-slate-700/60"
+                    : "bg-tarjeta text-slate-700 ring-1 ring-slate-200 dark:text-slate-300 dark:ring-slate-700/60"
                 }`}
               >
                 {id} <span className="opacity-70">· {total}</span>
@@ -84,7 +84,7 @@ export default function Pagina() {
               {fichas.map((f, i) => (
                 <span
                   key={f.id}
-                  className={`h-1.5 rounded-full transition-all ${i === indice ? "w-5 bg-marca-600 dark:bg-oro" : "w-1.5 bg-slate-300 dark:bg-slate-700"}`}
+                  className={`h-1.5 rounded-full transition-all ${i === indice ? "w-5 bg-marca-600 dark:bg-secondary-light" : "w-1.5 bg-slate-300 dark:bg-slate-700"}`}
                 />
               ))}
             </div>
@@ -98,7 +98,7 @@ export default function Pagina() {
               onClick={() => irA(indice - 1)}
               disabled={indice === 0}
               aria-label="Ficha anterior"
-              className="grid size-12 place-items-center rounded-2xl bg-white ring-1 ring-slate-200 disabled:opacity-40 dark:bg-tarjeta dark:ring-slate-700/60"
+              className="grid size-12 place-items-center rounded-2xl bg-tarjeta ring-1 ring-slate-200 disabled:opacity-40 dark:ring-slate-700/60"
             >
               <ChevronLeft className="size-6" />
             </button>
@@ -106,7 +106,7 @@ export default function Pagina() {
               type="button"
               onClick={() => setVolteada((v) => !v)}
               aria-pressed={volteada}
-              className="flex items-center justify-center gap-1.5 whitespace-nowrap rounded-2xl bg-oro px-2 text-[13px] font-semibold text-slate-900 active:scale-[0.98]"
+              className="flex items-center justify-center gap-1.5 whitespace-nowrap rounded-2xl bg-primary px-2 text-[13px] font-bold text-white active:scale-[0.98]"
             >
               {volteada ? <EyeOff className="size-5 shrink-0" /> : <Eye className="size-5 shrink-0" />}
               {volteada ? "Ver la pregunta" : "Ver respuesta / sustento"}

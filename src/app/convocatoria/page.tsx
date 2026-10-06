@@ -18,9 +18,9 @@ export default function Pagina() {
     <div className="space-y-4">
       <header>
         <h1 className="flex items-center gap-2 text-2xl font-bold">
-          <Landmark className="size-7 text-primary-light dark:text-oro" /> La convocatoria
+          <Landmark className="size-7 text-primary-light" /> La convocatoria
         </h1>
-        <p className="mt-1 text-sm text-slate-500">
+        <p className="mt-1 text-sm text-texto-tenue">
           {info.nombre} · {info.entidades.map((e) => e.match(/\((\w+)\)/)?.[1] ?? e).join(" y ")} · ~
           {info.vacantes_estimadas.toLocaleString("es-CO")} vacantes
         </p>

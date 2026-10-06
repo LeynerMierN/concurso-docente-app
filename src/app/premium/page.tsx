@@ -27,19 +27,19 @@ const BENEFICIOS = [
 export default function Pagina() {
   return (
     <div className="space-y-6">
-      <header className="rounded-3xl bg-accent p-6 text-tinta">
-        <span className="inline-flex items-center gap-1.5 rounded-full bg-tinta/10 px-3 py-1 text-xs font-bold uppercase tracking-wide">
+      <header className="rounded-3xl bg-resaltador-suave p-6 ring-1 ring-accent/50">
+        <span className="inline-flex items-center gap-1.5 rounded-full bg-accent px-3 py-1 text-xs font-bold text-tinta uppercase tracking-wide">
           Próximamente
         </span>
         <h1 className="mt-3 flex items-center gap-2 text-2xl font-extrabold md:text-3xl">
-          <Crown className="size-8" /> Modo Premium
+          <Crown className="size-8 text-accent-dark" /> Modo Premium
         </h1>
-        {descripcion && <p className="mt-2 text-tinta/85">{descripcion}</p>}
+        {descripcion && <p className="mt-2">{descripcion}</p>}
       </header>
 
       <ul className="space-y-3">
         {BENEFICIOS.map(({ Icono, titulo, texto }) => (
-          <li key={titulo} className="flex gap-4 rounded-3xl bg-white p-5 ring-1 ring-slate-200 dark:bg-tarjeta dark:ring-slate-700/60">
+          <li key={titulo} className="flex gap-4 rounded-3xl bg-tarjeta p-5 ring-1 ring-slate-200 dark:ring-slate-700/60">
             <span className="grid size-12 shrink-0 place-items-center rounded-2xl bg-accent/15 text-accent-dark">
               <Icono className="size-6" />
             </span>

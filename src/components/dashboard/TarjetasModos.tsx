@@ -25,7 +25,7 @@ export default function TarjetasModos() {
             <li key={modo.id}>
               <Link
                 href={modo.href}
-                className="group flex h-full flex-col rounded-3xl bg-white p-5 ring-1 ring-slate-200 transition hover:ring-primary-light active:scale-[0.99] dark:bg-tarjeta dark:ring-slate-700/60"
+                className="group flex h-full flex-col rounded-3xl bg-tarjeta p-5 ring-1 ring-slate-200 transition hover:ring-primary-light active:scale-[0.99] dark:ring-slate-700/60"
               >
                 <div className="flex items-start gap-3">
                   <span
@@ -39,9 +39,9 @@ export default function TarjetasModos() {
                   </span>
                   <span className="min-w-0 flex-1">
                     <span className="block font-heading font-bold leading-snug">{modo.nombre}</span>
-                    <span className="mt-1 block text-sm text-slate-500">{modo.descripcion}</span>
+                    <span className="mt-1 block text-sm text-texto-tenue">{modo.descripcion}</span>
                   </span>
-                  <ChevronRight className="mt-1 size-5 shrink-0 text-slate-400 transition group-hover:translate-x-0.5" />
+                  <ChevronRight className="mt-1 size-5 shrink-0 text-texto-tenue transition group-hover:translate-x-0.5" />
                 </div>
 
                 <ul className="mt-4 flex flex-wrap gap-1.5 text-[11px] font-semibold text-slate-600 dark:text-slate-300">
@@ -67,7 +67,7 @@ export default function TarjetasModos() {
         })}
       </ul>
       {MODOS_EXAMEN.some((m) => m.preguntas < m.preguntasConfig) && (
-        <p className="text-xs text-slate-500">
+        <p className="text-xs text-texto-tenue">
           Los simulacros se arman con la distribución CNSC (30/30/20/20). Mientras el banco crece, algunos componentes aportan
           menos preguntas de las pedidas y el tiempo se ajusta en la misma proporción.
         </p>

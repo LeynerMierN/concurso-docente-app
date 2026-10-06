@@ -273,16 +273,16 @@ export default function Resultados({ runner }: { runner: QuizRunner }) {
                     ) : elegida ? (
                       <XCircle className="mt-0.5 size-5 shrink-0 text-danger dark:text-danger-light" />
                     ) : (
-                      <CircleDashed className="mt-0.5 size-5 shrink-0 text-slate-400" />
+                      <CircleDashed className="mt-0.5 size-5 shrink-0 text-texto-tenue" />
                     )}
                     <span className="min-w-0 flex-1">
-                      <span className="flex items-center gap-1.5 text-xs text-slate-500">
+                      <span className="flex items-center gap-1.5 text-xs text-texto-tenue">
                         Pregunta {i + 1} · {p.tema}
                         {sesion.banderas.includes(p.id) && <Bookmark className="size-3 text-accent-dark" fill="currentColor" />}
                       </span>
                       <span className="mt-0.5 block text-sm font-medium leading-snug">{p.pregunta}</span>
                     </span>
-                    <ChevronDown className="mt-0.5 size-5 shrink-0 text-slate-400 transition group-open:rotate-180" />
+                    <ChevronDown className="mt-0.5 size-5 shrink-0 text-texto-tenue transition group-open:rotate-180" />
                   </summary>
 
                   <div className="space-y-3 border-t border-slate-100 p-4 text-sm dark:border-slate-700">
@@ -292,22 +292,22 @@ export default function Resultados({ runner }: { runner: QuizRunner }) {
                         acerto ? "bg-verde-suave" : elegida ? "bg-mora-suave" : "bg-slate-100 dark:bg-slate-700/60"
                       }`}
                     >
-                      <p className="text-xs font-semibold text-slate-500">Tu respuesta</p>
+                      <p className="text-xs font-semibold text-texto-tenue">Tu respuesta</p>
                       <p>{tuya ? `${tuya.letra}. ${tuya.texto}` : "Sin responder"}</p>
                     </div>
                     {!acerto && correcta && (
                       <div className="rounded-xl bg-verde-suave p-3">
-                        <p className="text-xs font-semibold text-slate-500">Respuesta correcta</p>
+                        <p className="text-xs font-semibold text-texto-tenue">Respuesta correcta</p>
                         <p>
                           {correcta.letra}. {correcta.texto}
                         </p>
                       </div>
                     )}
                     <div>
-                      <p className="text-xs font-semibold text-slate-500">Justificación</p>
+                      <p className="text-xs font-semibold text-texto-tenue">Justificación</p>
                       <p className="leading-relaxed">{p.justificacion}</p>
                     </div>
-                    <p className="flex items-start gap-1.5 text-xs text-slate-500">
+                    <p className="flex items-start gap-1.5 text-xs text-texto-tenue">
                       <Scale className="mt-0.5 size-3.5 shrink-0" /> {p.norma_referencia}
                     </p>
                   </div>

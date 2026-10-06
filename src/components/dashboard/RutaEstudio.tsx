@@ -7,7 +7,7 @@ import { obtenerCategoria } from "@/lib/categorias";
 import { CONTEO_POR_CATEGORIA, filtrarPreguntas, filtroDeGrupo } from "@/lib/preguntas";
 import { ROLES } from "@/lib/perfil";
 
-const tarjeta = "rounded-3xl bg-white p-5 ring-1 ring-slate-200 dark:bg-tarjeta dark:ring-slate-700/60";
+const tarjeta = "rounded-3xl bg-tarjeta p-5 ring-1 ring-slate-200 dark:ring-slate-700/60";
 
 /** Accesos directos a lo que le toca estudiar al aspirante según su perfil */
 export default function RutaEstudio() {
@@ -18,14 +18,14 @@ export default function RutaEstudio() {
   if (!perfil) {
     return (
       <Link href="/perfil" className={`${tarjeta} flex items-center gap-4 transition hover:ring-primary-light`}>
-        <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-primary/10 text-primary-light dark:bg-primary-light/20 dark:text-oro">
+        <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-primary/10 text-primary-light dark:bg-primary-light/20">
           <Settings2 className="size-6" />
         </span>
         <span className="flex-1">
           <span className="block font-semibold">Personaliza tu preparación</span>
-          <span className="block text-sm text-slate-500">Elige tu rol, especialidad y contexto para ver tu ruta de estudio.</span>
+          <span className="block text-sm text-texto-tenue">Elige tu rol, especialidad y contexto para ver tu ruta de estudio.</span>
         </span>
-        <ChevronRight className="size-5 text-slate-400" />
+        <ChevronRight className="size-5 text-texto-tenue" />
       </Link>
     );
   }
@@ -57,7 +57,7 @@ export default function RutaEstudio() {
         <h2 id="titulo-ruta" className="font-bold">
           Tu ruta de estudio
         </h2>
-        <Link href="/perfil" className="text-xs font-semibold text-primary-light dark:text-oro">
+        <Link href="/perfil" className="text-xs font-semibold text-primary-light">
           {ROLES.find((r) => r.id === perfil.role)?.nombre}
         </Link>
       </div>
@@ -68,12 +68,12 @@ export default function RutaEstudio() {
               href={href}
               className="flex items-center gap-3 rounded-2xl bg-slate-50 p-3 transition hover:bg-slate-100 dark:bg-slate-700/40 dark:hover:bg-slate-700/60"
             >
-              <Icono className="size-5 shrink-0 text-primary-light dark:text-oro" />
+              <Icono className="size-5 shrink-0 text-primary-light" />
               <span className="min-w-0 flex-1">
                 <span className="block truncate text-sm font-semibold">{titulo}</span>
-                <span className="block text-xs text-slate-500">{detalle}</span>
+                <span className="block text-xs text-texto-tenue">{detalle}</span>
               </span>
-              <ChevronRight className="size-4 shrink-0 text-slate-400" />
+              <ChevronRight className="size-4 shrink-0 text-texto-tenue" />
             </Link>
           </li>
         ))}

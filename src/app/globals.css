@@ -41,6 +41,8 @@
   --color-tablero: #23483b;
   --color-tablero-marco: #8b5e3c;
   --color-tiza: #f3f1e6;
+  /* Verde legible sobre el tablero (siempre oscuro) */
+  --color-verde-claro: #5fd0a8;
 
   /* Alias heredados */
   --color-marca-50: #eaf6f1;

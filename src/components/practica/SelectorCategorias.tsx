@@ -18,7 +18,7 @@ const chip = (activo: boolean) =>
   `rounded-full px-3.5 py-2 text-left text-sm transition ${
     activo
       ? "bg-primary font-semibold text-white"
-      : "bg-white text-slate-700 ring-1 ring-slate-200 dark:bg-tarjeta dark:text-slate-300 dark:ring-slate-700/60"
+      : "bg-tarjeta text-slate-700 ring-1 ring-slate-200 dark:text-slate-300 dark:ring-slate-700/60"
   }`;
 
 /** Selector de qué practicar, organizado por la taxonomía de data/app_config.json */
@@ -49,7 +49,7 @@ export default function SelectorCategorias({ filtro, onElegir, soloUnaArea, pend
 
       {!soloUnaArea && (
         <section className="space-y-2">
-          <h2 className="text-xs font-semibold uppercase tracking-wide text-slate-500">Repaso general</h2>
+          <h2 className="text-xs font-semibold uppercase tracking-wide text-texto-tenue">Repaso general</h2>
           <ul className="flex flex-wrap gap-2">
             <li>
               <button type="button" onClick={() => onElegir(nucleo)} aria-pressed={filtro === nucleo} className={chip(filtro === nucleo)}>
@@ -68,7 +68,7 @@ export default function SelectorCategorias({ filtro, onElegir, soloUnaArea, pend
       )}
 
       <section className="space-y-2">
-        <h2 className="text-xs font-semibold uppercase tracking-wide text-slate-500">Temas clave</h2>
+        <h2 className="text-xs font-semibold uppercase tracking-wide text-texto-tenue">Temas clave</h2>
         <ul className="flex flex-wrap gap-2">
           {FILTROS_TEMATICOS.map((f) => (
             <li key={f.id}>
@@ -85,7 +85,7 @@ export default function SelectorCategorias({ filtro, onElegir, soloUnaArea, pend
         if (categorias.length === 0) return null;
         return (
           <section key={grupo} className="space-y-2">
-            <h2 className="text-xs font-semibold uppercase tracking-wide text-slate-500">{NOMBRE_GRUPO[grupo]}</h2>
+            <h2 className="text-xs font-semibold uppercase tracking-wide text-texto-tenue">{NOMBRE_GRUPO[grupo]}</h2>
             <ul className="grid grid-cols-2 gap-2 md:grid-cols-3">
               {categorias.map(({ id, nombre, Icono }) => {
                 const activo = filtro === id;
@@ -98,13 +98,13 @@ export default function SelectorCategorias({ filtro, onElegir, soloUnaArea, pend
                       className={`flex h-full w-full items-start gap-2.5 rounded-2xl p-3 text-left transition active:scale-[0.98] ${
                         activo
                           ? "bg-primary text-white shadow-md"
-                          : "bg-white ring-1 ring-slate-200 hover:ring-primary-light dark:bg-tarjeta dark:ring-slate-700/60"
+                          : "bg-tarjeta ring-1 ring-slate-200 hover:ring-primary-light dark:ring-slate-700/60"
                       }`}
                     >
-                      <Icono className={`mt-0.5 size-5 shrink-0 ${activo ? "text-oro" : "text-primary-light dark:text-oro"}`} />
+                      <Icono className={`mt-0.5 size-5 shrink-0 ${activo ? "text-white" : "text-primary-light"}`} />
                       <span className="min-w-0">
                         <span className="block hyphens-auto break-words text-sm font-semibold leading-snug">{nombre}</span>
-                        <span className={`block text-xs ${activo ? "text-white/90" : "text-slate-500"}`}>
+                        <span className={`block text-xs ${activo ? "text-white/90" : "text-texto-tenue"}`}>
                           {CONTEO_POR_CATEGORIA[id]} preguntas
                         </span>
                       </span>

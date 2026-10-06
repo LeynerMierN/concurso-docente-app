@@ -49,7 +49,7 @@ export default function PestanasConvocatoria({ paneles }: { paneles: Record<IdPe
               onClick={() => elegir(id)}
               className={`flex items-center justify-center gap-1.5 rounded-xl py-2 text-sm font-semibold transition ${
                 activa === id
-                  ? "bg-white text-primary-light shadow-sm dark:bg-slate-950 dark:text-oro"
+                  ? "bg-tarjeta font-bold text-primary-dark shadow-sm dark:bg-slate-950 dark:text-secondary-light"
                   : "text-slate-600 dark:text-slate-300"
               }`}
             >

@@ -25,7 +25,7 @@ export default function AvisoFlotante({ aviso, onCerrar }: { aviso: Aviso | null
           key={aviso.id}
           type="button"
           onClick={onCerrar}
-          className="aviso-entrar pointer-events-auto flex max-w-sm items-center gap-3 rounded-3xl bg-white py-2 pr-4 pl-2 text-left text-sm font-semibold shadow-lg ring-1 ring-slate-200 dark:bg-tarjeta dark:ring-slate-700"
+          className="aviso-entrar pointer-events-auto flex max-w-sm items-center gap-3 rounded-3xl bg-tarjeta py-2 pr-4 pl-2 text-left text-sm font-semibold shadow-lg ring-1 ring-slate-200 dark:ring-slate-700"
         >
           <Capibara animo={aviso.animo} tamano={40} mirarPuntero={false} />
           <span>{aviso.texto}</span>

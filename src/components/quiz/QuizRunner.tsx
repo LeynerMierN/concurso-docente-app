@@ -346,7 +346,7 @@ export default function QuizRunner({ runner }: { runner: Runner }) {
             type="button"
             onClick={() => setMapaAbierto(!verMapa)}
             aria-expanded={verMapa}
-            className="ml-auto flex items-center gap-1 rounded-full px-2 py-1 font-semibold text-primary-light dark:text-oro"
+            className="ml-auto flex items-center gap-1 rounded-full px-2 py-1 font-semibold text-primary-light"
           >
             {verMapa ? "Ocultar mapa" : "Ver mapa"}
             <ChevronDown className={`size-4 transition ${verMapa ? "rotate-180" : ""}`} />

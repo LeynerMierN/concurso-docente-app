@@ -15,7 +15,7 @@ import { NIVELES, PUNTOS, PUNTOS_CORTO, TROFEOS, nivelDe, trofeosGanados } from 
 import { CONTEXTOS, ROLES, guardarPerfil, perfilNuevo, type Perfil } from "@/lib/perfil";
 import { COSTO_PROTECTOR_XP } from "@/lib/storage";
 
-const tarjeta = "rounded-3xl bg-white p-5 ring-1 ring-slate-200 dark:bg-tarjeta dark:ring-slate-700/60";
+const tarjeta = "rounded-3xl bg-tarjeta p-5 ring-1 ring-slate-200 dark:ring-slate-700/60";
 const ESPECIALIDADES = CATEGORIAS.filter((c) => c.grupo === "especialidades_docentes");
 const XP = config.gamification.xp_system;
 const fechaCorta = new Intl.DateTimeFormat("es-CO", { day: "numeric", month: "short", year: "numeric" });
@@ -51,7 +51,7 @@ export default function Pagina() {
         </span>
         <div className="min-w-0">
           <h1 className="truncate text-2xl font-bold">{perfil?.name || "Mi perfil"}</h1>
-          <p className="text-sm text-slate-500">
+          <p className="text-sm text-texto-tenue">
             {perfil ? ROLES.find((r) => r.id === perfil.role)?.nombre : "Configura tu perfil para personalizar tu preparación"}
           </p>
         </div>
@@ -64,18 +64,18 @@ export default function Pagina() {
       <section className={tarjeta} aria-labelledby="titulo-nivel">
         <div className="flex items-start justify-between gap-3">
           <div>
-            <h2 id="titulo-nivel" className="text-sm font-semibold text-slate-500">
+            <h2 id="titulo-nivel" className="text-sm font-semibold text-texto-tenue">
               Tu escalafón de aspirante
             </h2>
             <p className="mt-1 font-heading text-2xl font-extrabold">
               Nivel {nivel.actual.numero} · {nivel.actual.nombre}
             </p>
-            <p className="text-sm text-slate-500">
+            <p className="text-sm text-texto-tenue">
               {(progreso.xpTotal ?? 0).toLocaleString("es-CO")} {PUNTOS} ganados ·{" "}
               {(progreso.xp ?? 0).toLocaleString("es-CO")} disponibles
             </p>
           </div>
-          <span className="grid size-12 shrink-0 place-items-center rounded-2xl bg-primary/10 text-primary-light dark:bg-primary-light/15 dark:text-oro">
+          <span className="grid size-12 shrink-0 place-items-center rounded-2xl bg-primary/10 text-primary-light dark:bg-primary-light/15">
             <GraduationCap className="size-7" />
           </span>
         </div>
@@ -84,7 +84,7 @@ export default function Pagina() {
           <div className="h-2.5 overflow-hidden rounded-full bg-slate-100 dark:bg-slate-700/60">
             <div className="h-full rounded-full barra-resaltador" style={{ width: `${nivel.avance * 100}%` }} />
           </div>
-          <p className="mt-1.5 text-xs text-slate-500">
+          <p className="mt-1.5 text-xs text-texto-tenue">
             {nivel.siguiente
               ? `Te faltan ${nivel.faltan.toLocaleString("es-CO")} ${PUNTOS_CORTO} para ${nivel.siguiente.nombre}.`
               : "Llegaste al nivel más alto. ¡Felicitaciones!"}
@@ -102,8 +102,8 @@ export default function Pagina() {
                   n.numero === nivel.actual.numero
                     ? "bg-primary font-bold text-white"
                     : alcanzado
-                      ? "bg-primary/10 font-semibold text-primary-light dark:bg-primary-light/15 dark:text-oro"
-                      : "bg-slate-50 text-slate-400 dark:bg-slate-700/40"
+                      ? "bg-primary/10 font-semibold text-primary-light dark:bg-primary-light/15"
+                      : "bg-slate-50 text-texto-tenue dark:bg-slate-700/40"
                 }`}
               >
                 <span className="block text-[10px] opacity-80">Nivel {n.numero}</span>
@@ -114,7 +114,7 @@ export default function Pagina() {
         </ol>
 
         <details className="mt-4 text-sm">
-          <summary className="cursor-pointer font-semibold text-primary-light dark:text-oro">Cómo ganar {PUNTOS}</summary>
+          <summary className="cursor-pointer font-semibold text-primary-light">Cómo ganar {PUNTOS}</summary>
           <ul className="mt-2 divide-y divide-slate-100 dark:divide-slate-700">
             {REGLAS_XP.map(({ texto, xp }) => (
               <li key={texto} className="flex items-center justify-between gap-3 py-2">
@@ -137,9 +137,9 @@ export default function Pagina() {
         <h2 id="titulo-vitrina" className="font-bold">
           Vitrina de premios · {ganados}/{TROFEOS.length + INSIGNIAS.length}
         </h2>
-        <p className="mt-0.5 text-sm text-slate-500">Toca un premio ganado para ver su ceremonia.</p>
+        <p className="mt-0.5 text-sm text-texto-tenue">Toca un premio ganado para ver su ceremonia.</p>
 
-        <h3 className="mt-4 text-xs font-bold uppercase tracking-wide text-slate-500">Trofeos de simulacro</h3>
+        <h3 className="mt-4 text-xs font-bold uppercase tracking-wide text-texto-tenue">Trofeos de simulacro</h3>
         <ul className="mt-2 grid grid-cols-2 gap-3 border-b-8 border-tablero-marco pb-3 md:grid-cols-4">
           {TROFEOS.map((t) => {
             const ganado = trofeos.has(t.id);
@@ -153,14 +153,14 @@ export default function Pagina() {
                 >
                   <Trofeo metal={t.metal} forma={t.forma} tamano={64} brillo={ganado} bloqueado={!ganado} className={ganado ? "premio-flotar" : ""} />
                   <span className="text-sm font-semibold leading-tight">{t.titulo}</span>
-                  <span className="text-xs leading-snug text-slate-500">{t.descripcion}</span>
+                  <span className="text-xs leading-snug text-texto-tenue">{t.descripcion}</span>
                 </button>
               </li>
             );
           })}
         </ul>
 
-        <h3 className="mt-5 text-xs font-bold uppercase tracking-wide text-slate-500">Distinciones</h3>
+        <h3 className="mt-5 text-xs font-bold uppercase tracking-wide text-texto-tenue">Distinciones</h3>
         <ul className="mt-2 grid grid-cols-2 gap-3 md:grid-cols-4">
           {INSIGNIAS.map((ins) => {
             const fecha = desbloqueadas[ins.id];
@@ -184,7 +184,7 @@ export default function Pagina() {
                       <span className="block h-1.5 overflow-hidden rounded-full bg-slate-100 dark:bg-slate-700/60">
                         <span className="block h-full rounded-full bg-accent" style={{ width: `${(valor / ins.meta) * 100}%` }} />
                       </span>
-                      <span className="mt-1 block text-xs tabular-nums text-slate-500">
+                      <span className="mt-1 block text-xs tabular-nums text-texto-tenue">
                         {valor}/{ins.meta} {ins.unidad}
                       </span>
                     </span>
@@ -204,9 +204,9 @@ export default function Pagina() {
         </span>
         <span className="flex-1">
           <span className="block font-semibold">Modo Premium</span>
-          <span className="block text-sm text-slate-500">Conoce lo que viene</span>
+          <span className="block text-sm text-texto-tenue">Conoce lo que viene</span>
         </span>
-        <ChevronRight className="size-5 text-slate-400" />
+        <ChevronRight className="size-5 text-texto-tenue" />
       </Link>
     </div>
   );
@@ -226,7 +226,7 @@ function FormularioPerfil({ inicial }: { inicial: Perfil | null }) {
     `rounded-2xl px-4 py-3 text-left text-sm transition ${
       activa
         ? "bg-primary font-semibold text-white"
-        : "bg-white ring-1 ring-slate-200 dark:bg-tarjeta dark:ring-slate-700/60"
+        : "bg-tarjeta ring-1 ring-slate-200 dark:ring-slate-700/60"
     }`;
 
   return (
@@ -307,7 +307,7 @@ function FormularioPerfil({ inicial }: { inicial: Perfil | null }) {
           "Guardar perfil"
         )}
       </button>
-      <p className="text-center text-xs text-slate-500">Se guarda solo en este dispositivo.</p>
+      <p className="text-center text-xs text-texto-tenue">Se guarda solo en este dispositivo.</p>
     </form>
   );
 }

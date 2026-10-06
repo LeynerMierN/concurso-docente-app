@@ -11,14 +11,14 @@ const BENEFICIOS = [
     etiqueta: "Decreto 1278 de 2002",
     texto:
       "Al superar el periodo de prueba quedas inscrito en carrera docente con derechos de carrera: solo se puede retirar del servicio por las causales previstas en la ley, no por decisión discrecional.",
-    color: "text-primary-light bg-marca-50 dark:bg-marca-700/30 dark:text-oro",
+    color: "text-primary-light bg-marca-50 dark:bg-marca-700/30",
   },
   {
     Icono: HeartPulse,
     titulo: "Salud FOMAG, régimen especial",
     etiqueta: "Régimen exceptuado",
     texto: `Sin copagos ni cuotas moderadoras. ${fomag?.descripcion ?? ""}`,
-    color: "text-danger bg-mora-suave dark:text-danger-light",
+    color: "text-texto bg-slate-100 dark:bg-slate-700",
   },
   {
     Icono: CalendarDays,
@@ -41,12 +41,12 @@ export default function Beneficios() {
   return (
     <ul className="space-y-3">
       {BENEFICIOS.map(({ Icono, titulo, etiqueta, texto, color }) => (
-        <li key={titulo} className="flex gap-4 rounded-3xl bg-white p-5 ring-1 ring-slate-200 dark:bg-tarjeta dark:ring-slate-700/60">
+        <li key={titulo} className="flex gap-4 rounded-3xl bg-tarjeta p-5 ring-1 ring-slate-200 dark:ring-slate-700/60">
           <span className={`grid size-12 shrink-0 place-items-center rounded-2xl ${color}`}>
             <Icono className="size-6" />
           </span>
           <div>
-            <p className="text-[11px] font-semibold uppercase tracking-wide text-slate-400">{etiqueta}</p>
+            <p className="text-[11px] font-semibold uppercase tracking-wide text-texto-tenue">{etiqueta}</p>
             <h3 className="font-semibold leading-snug">{titulo}</h3>
             <p className="mt-1 text-sm leading-relaxed text-slate-600 dark:text-slate-300">{texto}</p>
           </div>
