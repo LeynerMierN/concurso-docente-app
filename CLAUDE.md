@@ -4,6 +4,12 @@ App web mobile-first (Next.js 15 App Router + TypeScript + Tailwind CSS v4 + luc
 para que aspirantes se preparen y ganen el Concurso Docente en Colombia (Decreto 1278, CNSC/MEN).
 Idioma de la interfaz y del código de dominio: español (es-CO).
 
+## Identidad visual (decidida el 2026-10-06, PENDIENTE DE APLICAR)
+- Estilo elegido: **«Cuaderno de la esperanza»**. Guía completa y plan de migración paso a paso en `docs/identidad-visual.md`: leerla antes de tocar cualquier estilo y seguirla como fuente de verdad.
+- Resumen: papel `#FDFCF7` y tinta azul `#1E2A52` en lugar de blanco/negro; verde esperanza `#0D7A5F` para botones, aciertos y avance; resaltador `#FFD447` solo para logros; errores en mora `#9A2257` (nunca rojo); títulos en Bricolage Grotesque, lectura en Atkinson Hyperlegible, notas a mano en Caveat; saludo «Hola, profe.»; sello «APROBADO» en resultados; modo enfoque (sin barras) durante el examen; sin degradados.
+- **La mascota se llama Capi** (antes Sabino): renombrar en UI, aria-labels, comentarios y en este archivo; birrete tinta y borla resaltador.
+- Al terminar la migración: quitar «PENDIENTE DE APLICAR» de este título y actualizar las líneas de Estado actual que mencionen la paleta anterior o a Sabino.
+
 ## Estado actual
 - Estructura base creada a mano (sin create-next-app). Dependencias instaladas; `npm run dev` y `tsc --noEmit` compilan sin errores (Next 15.5, React 19, Tailwind 4).
 - El puerto 3000 suele estar ocupado por otra app del usuario; usar `PORT=3002 npm run dev`. `turbopack.root` fijado en `next.config.ts` porque hay un `pnpm-lock.yaml` en el home.
