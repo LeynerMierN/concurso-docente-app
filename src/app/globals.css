@@ -1,50 +1,73 @@
 @import "tailwindcss";
 
 /*
- * Tema de la app. Tailwind v4 se configura aquí (no en tailwind.config.js).
- * Paleta y tipografías tomadas de data/app_config.json → ui_theme.
- * Uso: bg-primary, text-primary-dark, bg-secondary-light, text-accent, ring-danger, font-heading…
+ * Tema de la app: identidad «Cuaderno de la esperanza» (docs/identidad-visual.md es la fuente de verdad).
+ * Tailwind v4 se configura aquí (no en tailwind.config.js). Los nombres de token se conservan,
+ * así que primary, secondary, accent, danger, marca-(50…700), exito y error cambian de valor sin tocar los componentes.
  */
 @theme {
-  /* Azul Institucional */
-  --color-primary-light: #2563eb;
-  --color-primary: #1e40af;
-  --color-primary-dark: #1e3a8a;
-  /* Verde Éxito / Acierto */
-  --color-secondary-light: #10b981;
-  --color-secondary: #059669;
-  --color-secondary-dark: #047857;
-  /* Ámbar Premium / Insignias */
-  --color-accent-light: #f59e0b;
-  --color-accent: #d97706;
-  --color-accent-dark: #b45309;
-  /* Rojo Error / Alerta */
-  --color-danger-light: #ef4444;
-  --color-danger: #dc2626;
-  --color-danger-dark: #b91c1c;
+  /* Verde esperanza: botones, aciertos, avance */
+  --color-primary-light: var(--verde-texto); /* #0F8467 claro · #5FD0A8 oscuro */
+  --color-primary: #0d7a5f;
+  --color-primary-dark: #0a5a46;
+  --color-secondary-light: var(--verde-texto);
+  --color-secondary: #0d7a5f;
+  --color-secondary-dark: #0a5a46;
+  /* Resaltador: logros. Nunca como color de texto; para texto usar accent-dark */
+  --color-accent-light: #ffe58a;
+  --color-accent: #ffd447;
+  --color-accent-dark: var(--resaltador-texto); /* #8A6500 claro · #FFD447 oscuro */
+  /* Mora: errores (nunca rojo) */
+  --color-danger-light: var(--mora-texto); /* #C2457E claro · #F29BC0 oscuro */
+  --color-danger: #9a2257;
+  --color-danger-dark: #7a1a45;
+
   /* Superficies y texto: cambian solas en modo oscuro (ver :root abajo) */
   --color-fondo: var(--fondo);
   --color-tarjeta: var(--tarjeta);
   --color-texto: var(--texto);
-  --color-texto-secundario: #475569;
-  --color-texto-tenue: #94a3b8;
+  --color-texto-secundario: var(--texto-secundario);
+  --color-texto-tenue: var(--texto-tenue);
 
-  /* Alias usados por las pantallas existentes, apuntando a la paleta del config */
-  --color-marca-50: #eef4ff;
-  --color-marca-100: #dbe6ff;
+  /* Cuaderno */
+  --color-tinta: #1e2a52;
+  --color-papel: #fdfcf7;
+  --color-resaltador: #ffd447;
+  --color-resaltador-suave: var(--resaltador-suave);
+  --color-verde-suave: var(--verde-suave);
+  --color-mora: #9a2257;
+  --color-mora-suave: var(--mora-suave);
+  /* Tablero de aula donde escribe Capi */
+  --color-tablero: #23483b;
+  --color-tablero-marco: #8b5e3c;
+  --color-tiza: #f3f1e6;
+
+  /* Alias heredados */
+  --color-marca-50: #eaf6f1;
+  --color-marca-100: #d3ede3;
   --color-marca-500: var(--color-primary-light);
   --color-marca-600: var(--color-primary);
   --color-marca-700: var(--color-primary-dark);
   --color-exito: var(--color-secondary);
   --color-error: var(--color-danger);
-  /* Amarillo de la bandera: íconos, confeti e imagen Open Graph */
+  /* Amarillo de la bandera: solo confeti y premios */
   --color-oro: #fcd116;
-  /* Tablero de aula donde escribe Sabino */
-  --color-tablero: #24453a;
-  --color-tablero-marco: #8b5e3c;
 
-  --font-sans: var(--font-inter), Inter, system-ui, sans-serif;
-  --font-heading: var(--font-jakarta), "Plus Jakarta Sans", sans-serif;
+  /* Neutros: la escala slate se tiñe de tinta azul (cambia todas las clases slate-* de una vez) */
+  --color-slate-50: #f7f7f1;
+  --color-slate-100: #f1f1ea;
+  --color-slate-200: #dde1e9;
+  --color-slate-300: #c3c8d6;
+  --color-slate-400: #6b7390;
+  --color-slate-500: #5c6585;
+  --color-slate-600: #4e5878;
+  --color-slate-700: #283258;
+  --color-slate-800: #1f2950;
+  --color-slate-900: #1e2a52;
+  --color-slate-950: #141c3a;
+
+  --font-sans: var(--font-atkinson), "Atkinson Hyperlegible", system-ui, sans-serif;
+  --font-heading: var(--font-bricolage), "Bricolage Grotesque", sans-serif;
   --font-tiza: var(--font-caveat), "Caveat", cursive;
 
   /* Breakpoints del config: móvil desde 320px, tablet 768px, escritorio 1024px */
@@ -53,16 +76,72 @@
 }
 
 :root {
-  --fondo: #f8fafc;
+  --fondo: #fdfcf7;
   --tarjeta: #ffffff;
-  --texto: #0f172a;
+  --texto: #1e2a52;
+  --texto-secundario: #515b7a;
+  --texto-tenue: #5c6585;
+  --verde-texto: #0f8467;
+  --verde-suave: #e3f3ec;
+  --resaltador-texto: #8a6500;
+  --resaltador-suave: #fff6cc;
+  --mora-texto: #c2457e;
+  --mora-suave: #fbe8ef;
+  --cuadricula: #e2ebe5;
+  --margen: #e9a9c2;
+  --resaltado: #ffe58a;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --fondo: #0f172a;
-    --tarjeta: #1e293b;
-    --texto: #e2e8f0;
+    --fondo: #121a33;
+    --tarjeta: #1f2950;
+    --texto: #eceff7;
+    --texto-secundario: #aeb6cf;
+    --texto-tenue: #9aa3bf;
+    --verde-texto: #5fd0a8;
+    --verde-suave: #163b33;
+    --resaltador-texto: #ffd447;
+    --resaltador-suave: #3a3416;
+    --mora-texto: #f29bc0;
+    --mora-suave: #3a1b2c;
+    --cuadricula: rgb(255 255 255 / 0.05);
+    --margen: rgb(233 169 194 / 0.35);
+    /* En oscuro el texto es claro: un amarillo opaco lo dejaría ilegible */
+    --resaltado: rgb(255 212 71 / 0.3);
+  }
+}
+
+/* Elementos de firma del cuaderno */
+@layer components {
+  /* Papel cuadriculado: solo encabezados del inicio y de resultados, nunca detrás de texto de estudio */
+  .cuadricula {
+    background-color: var(--fondo);
+    background-image:
+      linear-gradient(var(--cuadricula) 1px, transparent 1px),
+      linear-gradient(90deg, var(--cuadricula) 1px, transparent 1px);
+    background-size: 22px 22px;
+  }
+  .margen-cuaderno {
+    position: relative;
+    padding-left: 1.125rem;
+  }
+  .margen-cuaderno::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.25rem;
+    bottom: 0.25rem;
+    width: 2px;
+    background: var(--margen);
+  }
+  .resaltado {
+    background: linear-gradient(transparent 50%, var(--resaltado) 50%);
+    padding: 0 0.15em;
+  }
+  .barra-resaltador {
+    background: #ffd447;
+    border-radius: 3px 10px 6px 2px;
   }
 }
 
