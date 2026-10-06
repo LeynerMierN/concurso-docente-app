@@ -34,7 +34,7 @@ export default function Pagina() {
   const [premioVisto, setPremioVisto] = useState<Premio | null>(null);
 
   if (!cargado || !progreso) {
-    return <div className="h-96 animate-pulse rounded-3xl bg-slate-200 dark:bg-slate-700/60" aria-hidden />;
+    return <div className="h-96 motion-safe:animate-pulse rounded-3xl bg-slate-200 dark:bg-slate-700/60" aria-hidden />;
   }
 
   const avance = avanceInsignias(progreso);

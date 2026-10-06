@@ -31,7 +31,7 @@ export default function Pagina() {
     return (
       <div className="space-y-6">
         {encabezado}
-        <div className="h-64 animate-pulse rounded-3xl bg-slate-200 dark:bg-slate-700/60" aria-hidden />
+        <div className="h-64 motion-safe:animate-pulse rounded-3xl bg-slate-200 dark:bg-slate-700/60" aria-hidden />
       </div>
     );
   }

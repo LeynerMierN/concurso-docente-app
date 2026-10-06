@@ -14,7 +14,7 @@ export default function MascotaInicio() {
   // -1 = mensaje de progreso; 0..n = índice del consejo actual
   const [consejo, setConsejo] = useState(-1);
 
-  if (!progreso || !cargado) return <div className="h-28 animate-pulse rounded-3xl bg-slate-200 dark:bg-slate-700/60" aria-hidden />;
+  if (!progreso || !cargado) return <div className="h-28 motion-safe:animate-pulse rounded-3xl bg-slate-200 dark:bg-slate-700/60" aria-hidden />;
 
   const estado = estadoMascota(progreso, perfil);
   const mostrandoConsejo = consejo >= 0;

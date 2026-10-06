@@ -29,7 +29,7 @@ export default function Constancia() {
   const progreso = useProgreso();
   const { perfil } = usePerfil();
 
-  if (!progreso) return <div className="h-56 animate-pulse rounded-3xl bg-slate-200 dark:bg-slate-700/60" aria-hidden />;
+  if (!progreso) return <div className="h-56 motion-safe:animate-pulse rounded-3xl bg-slate-200 dark:bg-slate-700/60" aria-hidden />;
 
   const racha = calcularRacha(diasDeRacha(progreso));
   const xp = progreso.xp ?? 0;

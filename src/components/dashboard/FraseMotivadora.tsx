@@ -24,7 +24,7 @@ export default function FraseMotivadora() {
     return () => clearTimeout(t);
   }, [compartida]);
 
-  if (!frase) return <div className="h-44 animate-pulse rounded-3xl bg-slate-200 dark:bg-slate-700/60" aria-hidden />;
+  if (!frase) return <div className="h-44 motion-safe:animate-pulse rounded-3xl bg-slate-200 dark:bg-slate-700/60" aria-hidden />;
 
   const esFavorita = favoritas.includes(frase.id);
 
@@ -61,7 +61,7 @@ export default function FraseMotivadora() {
       className="relative overflow-hidden rounded-3xl bg-verde-suave p-5"
     >
       <Quote className="pointer-events-none absolute -top-2 -right-2 size-24 rotate-180 text-secondary-light opacity-15" aria-hidden />
-      <h2 id="titulo-frase" className="text-xs font-bold uppercase tracking-wide text-secondary-light">
+      <h2 id="titulo-frase" className="text-xs font-bold uppercase tracking-wide text-primary-dark dark:text-secondary-light">
         {esDelDia ? "Frase del día" : "Otra frase para ti"}
       </h2>
 
@@ -120,7 +120,7 @@ export default function FraseMotivadora() {
             type="button"
             onClick={() => setVerFavoritas((v) => !v)}
             aria-expanded={verFavoritas}
-            className="text-xs font-semibold text-secondary-light underline underline-offset-4"
+            className="text-xs font-semibold text-primary-dark underline underline-offset-4 dark:text-secondary-light"
           >
             {verFavoritas ? "Ocultar mis favoritas" : `Mis favoritas (${favoritas.length})`}
           </button>

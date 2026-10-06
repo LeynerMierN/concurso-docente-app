@@ -260,7 +260,7 @@ export default function QuizRunner({ runner }: { runner: Runner }) {
                   <span className={`grid size-8 shrink-0 place-items-center rounded-full text-sm font-bold ${circulo}`}>{contenido}</span>
                   <span className="pt-0.5">
                     {etiqueta && (
-                      <span className={`mb-0.5 block text-xs font-bold uppercase tracking-wide ${correcta ? "text-secondary-light" : "text-danger dark:text-danger-light"}`}>
+                      <span className={`mb-0.5 block text-xs font-bold uppercase tracking-wide ${correcta ? "text-primary-dark dark:text-secondary-light" : "text-danger dark:text-danger-light"}`}>
                         {etiqueta}
                       </span>
                     )}
@@ -291,7 +291,7 @@ export default function QuizRunner({ runner }: { runner: Runner }) {
               </div>
             </div>
             <p className="text-base leading-[1.6]">{preguntaActual.justificacion}</p>
-            <p className="inline-flex items-start gap-1.5 rounded-xl bg-verde-suave px-3 py-1.5 text-xs font-bold text-secondary-light">
+            <p className="inline-flex items-start gap-1.5 rounded-xl bg-verde-suave px-3 py-1.5 text-xs font-bold text-primary-dark dark:text-secondary-light">
               <Scale className="mt-px size-3.5 shrink-0" /> {preguntaActual.norma_referencia}
             </p>
           </div>

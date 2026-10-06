@@ -20,7 +20,7 @@ export default function Proyeccion() {
 
   return (
     <section aria-labelledby="titulo-proyeccion" className="rounded-3xl bg-verde-suave p-5">
-      <h2 id="titulo-proyeccion" className="text-sm font-bold uppercase tracking-wide text-secondary-light">
+      <h2 id="titulo-proyeccion" className="text-sm font-bold uppercase tracking-wide text-primary-dark dark:text-secondary-light">
         Tu proyección
       </h2>
       <p className="mt-1 flex items-baseline gap-1">

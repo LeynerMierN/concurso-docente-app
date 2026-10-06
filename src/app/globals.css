@@ -110,7 +110,7 @@
     --cuadricula: rgb(255 255 255 / 0.05);
     --margen: rgb(233 169 194 / 0.35);
     /* En oscuro el texto es claro: un amarillo opaco lo dejaría ilegible */
-    --resaltado: rgb(255 212 71 / 0.3);
+    --resaltado: rgb(255 212 71 / 0.22);
   }
 }
 

@@ -12,7 +12,7 @@ const MINUTOS_POR_PREGUNTA = 1.5;
 /** Tarea de hoy: cuánto falta (no cuánto se hizo) y un botón para seguir */
 export default function TareaHoy() {
   const progreso = useProgreso();
-  if (!progreso) return <div className="h-36 animate-pulse rounded-3xl bg-slate-200 dark:bg-slate-700/60" aria-hidden />;
+  if (!progreso) return <div className="h-36 motion-safe:animate-pulse rounded-3xl bg-slate-200 dark:bg-slate-700/60" aria-hidden />;
 
   const hoy = Math.min(respondidasEnDia(progreso), META_DIARIA_PREGUNTAS);
   const faltan = META_DIARIA_PREGUNTAS - hoy;
