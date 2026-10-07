@@ -83,11 +83,12 @@ function Selector({ modoId, filtroInicial, empezar }: PropsSelector) {
   const arrancado = useRef(false);
 
   // Arranque directo: una sola vez, cuando ya se leyó la sesión y el progreso (el repaso lo necesita).
-  // Si ya había una sesión en curso, se retoma esa. Luego se quita ?empezar para que «Nuevo intento» no rearranque.
+  // Una sesión a medias se retoma (no se pierden respuestas); una ya terminada se reemplaza por la nueva.
+  // Luego se quita ?empezar para que «Nuevo intento» no rearranque.
   useEffect(() => {
     if (!empezar || arrancado.current || !runner.cargado || !progreso) return;
     arrancado.current = true;
-    if (!runner.sesion) iniciar();
+    if (!runner.sesion || runner.sesion.terminadoMs !== null) iniciar();
     const resto = new URLSearchParams(parametros.toString());
     resto.delete("empezar");
     const consulta = resto.toString();

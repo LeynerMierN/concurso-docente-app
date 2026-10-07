@@ -11,6 +11,7 @@ import { obtenerModo } from "@/lib/appConfig";
 import { mensajeAvance, mensajeRacha, otraFrase } from "@/lib/frases";
 import { fraseRespuesta } from "@/lib/mascota";
 import { etiquetaFiltro } from "@/lib/preguntas";
+import { FILTRO_REPASO } from "@/lib/repaso";
 import { formatoTiempo } from "@/lib/tiempo";
 import type { OpcionId } from "@/types/exam";
 
@@ -115,7 +116,8 @@ export default function QuizRunner({ runner }: { runner: Runner }) {
   const respondidas = Object.keys(respuestas).length;
   const sinResponder = preguntas.length - respondidas;
   const poco = segundosRestantes !== null && segundosRestantes <= 60 && !runner.pausado;
-  const nombreModo = obtenerModo(config.modoId ?? null)?.nombre;
+  // En el repaso de errores manda lo que se repasa, no el modo con el que se armó la sesión
+  const nombreModo = config.filtro === FILTRO_REPASO ? etiquetaFiltro(config.filtro) : obtenerModo(config.modoId ?? null)?.nombre;
   const verMapa = mapaAbierto ?? preguntas.length <= MAPA_PLEGADO_DESDE;
 
   const encabezado = (

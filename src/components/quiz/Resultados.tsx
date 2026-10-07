@@ -96,7 +96,8 @@ export default function Resultados({ runner }: { runner: QuizRunner }) {
           {aprobado && <Sello fecha={new Date(terminadoMs)} tamano={108} className="absolute top-1 -right-1" />}
         </div>
         <p className="mt-3 text-[15px]">
-          {resultado.correctas} correctas de {resultado.totalPreguntas}. Para aprobar necesitabas {resultado.umbral}.
+          {resultado.correctas} {resultado.correctas === 1 ? "correcta" : "correctas"} de {resultado.totalPreguntas}. Para aprobar necesitabas{" "}
+          {resultado.umbral}.
         </p>
         {!aprobado && <p className="mt-1 text-[15px] font-bold">Te faltaron {faltaron} {faltaron === 1 ? "punto" : "puntos"}.</p>}
 
