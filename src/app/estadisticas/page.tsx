@@ -4,11 +4,12 @@ import Link from "next/link";
 import { Award, BarChart3, CheckCircle2, Info, Star, Target, XCircle } from "lucide-react";
 import Capibara from "@/components/mascota/Capibara";
 import Constancia from "@/components/progreso/Constancia";
+import Escalafon from "@/components/progreso/Escalafon";
 import FraseMotivadora from "@/components/progreso/FraseMotivadora";
 import Proyeccion from "@/components/progreso/Proyeccion";
+import Vitrina from "@/components/progreso/Vitrina";
 import { usePerfil } from "@/hooks/usePerfil";
 import { useProgreso } from "@/hooks/useProgreso";
-import { MODULOS_NAVEGACION } from "@/lib/appConfig";
 import { CATEGORIAS_NUCLEO, aciertoGlobal, aciertoPorArea } from "@/lib/estadisticas";
 import { umbralDe } from "@/lib/perfil";
 import { formatoTiempo } from "@/lib/tiempo";
@@ -16,7 +17,6 @@ import { formatoTiempo } from "@/lib/tiempo";
 const tarjeta = "rounded-3xl bg-tarjeta p-5 ring-1 ring-slate-200 dark:ring-slate-700/60";
 const formatoFecha = new Intl.DateTimeFormat("es-CO", { day: "numeric", month: "short" });
 const formatoFechaHora = new Intl.DateTimeFormat("es-CO", { day: "numeric", month: "short", hour: "numeric", minute: "2-digit" });
-const descripcion = MODULOS_NAVEGACION.find((m) => m.id === "estadisticas")?.descripcion;
 
 export default function Pagina() {
   const progreso = useProgreso();
@@ -26,10 +26,10 @@ export default function Pagina() {
 
   const encabezado = (
     <header>
-      <h1 className="flex items-center gap-2 text-2xl font-bold">
-        <BarChart3 className="size-7 text-primary-light" /> Mi rendimiento
+      <h1 className="flex items-center gap-2 text-2xl">
+        <BarChart3 className="size-7 text-secondary-light" /> Progreso
       </h1>
-      {descripcion && <p className="mt-1 text-sm text-texto-tenue">{descripcion}</p>}
+      <p className="mt-1 text-[15px] text-texto-tenue">Cuánto te falta para aprobar, tu constancia, tu nivel y tus premios.</p>
     </header>
   );
 
@@ -57,6 +57,8 @@ export default function Pagina() {
             Hacer mi primera práctica
           </Link>
         </section>
+        <Escalafon progreso={progreso} />
+        <Vitrina progreso={progreso} />
         <FraseMotivadora />
       </div>
     );
@@ -71,9 +73,9 @@ export default function Pagina() {
 
   // La proyección tiene su propia tarjeta arriba; aquí van los totales
   const indicadores = [
-    { etiqueta: "Preguntas resueltas", valor: progreso.totalRespondidas.toLocaleString("es-CO"), detalle: `${progreso.intentos.length} sesiones` },
+    { etiqueta: "Preguntas resueltas", valor: progreso.totalRespondidas.toLocaleString("es-CO"), detalle: progreso.intentos.length === 1 ? "en 1 sesión" : `en ${progreso.intentos.length} sesiones` },
     { etiqueta: "Acierto global", valor: `${aciertoGlobal(progreso)}%`, detalle: `Meta: ${umbral}%` },
-    { etiqueta: "Simulacros aprobados", valor: `${aprobados}`, detalle: simulacros.length ? `de ${simulacros.length} hechos` : "Aún ninguno" },
+    { etiqueta: "Simulacros aprobados", valor: `${aprobados}`, detalle: simulacros.length ? `de ${simulacros.length} ${simulacros.length === 1 ? "hecho" : "hechos"}` : "Aún ninguno" },
   ];
 
   return (
@@ -83,6 +85,8 @@ export default function Pagina() {
       <Proyeccion />
 
       <Constancia />
+
+      <Escalafon progreso={progreso} />
 
       <section aria-label="Indicadores" className="grid grid-cols-3 gap-2 md:gap-3">
         {indicadores.map(({ etiqueta, valor, detalle }) => (
@@ -197,6 +201,8 @@ export default function Pagina() {
           </p>
         )}
       </section>
+
+      <Vitrina progreso={progreso} />
 
       {/* Historial */}
       <section className={tarjeta} aria-labelledby="titulo-historial">

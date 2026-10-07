@@ -28,7 +28,7 @@ async function cargarFuente(familia: string, peso: number, texto: string): Promi
 const TITULO = "Hola, profe.";
 const NOTA = "Cada pregunta de hoy es un paso hacia tu plaza.";
 const SUBTITULO = "Simulacros y práctica para la prueba escrita de la CNSC";
-const ETIQUETAS = ["Juicio situacional", "Simulacros 30/30/20/20", "Fichas normativas"];
+const ETIQUETAS = ["Juicio situacional", "Simulacros 30/30/20/20", "Fichas de normas"];
 
 export default async function Imagen() {
   const [icono, titulos, nota, cuerpo] = await Promise.all([

@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight, Eye, EyeOff, Layers } from "lucide-react";
+import Volver from "@/components/Volver";
 import TarjetaFicha from "@/components/fichas/TarjetaFicha";
 import { CATEGORIAS_FICHAS, FICHAS, fichasDe, type CategoriaFicha } from "@/lib/fichas";
 
@@ -47,8 +48,9 @@ export default function Pagina() {
   return (
     <div className="space-y-5">
       <header>
-        <h1 className="flex items-center gap-2 text-2xl font-bold">
-          <Layers className="size-7 text-primary-light" /> Fichas normativas
+        <Volver href="/estudiar" etiqueta="Estudiar" />
+        <h1 className="mt-1 flex items-center gap-2 text-2xl">
+          <Layers className="size-7 text-secondary-light" /> Fichas de normas
         </h1>
         <p className="mt-1 text-sm text-texto-tenue">Repasa los conceptos que más se preguntan en el examen.</p>
       </header>

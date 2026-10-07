@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ChevronRight, Layers, Settings2, Trees, Users } from "lucide-react";
+import { ChevronRight, Layers, Trees, UserRoundCog, Users } from "lucide-react";
 import { usePerfil } from "@/hooks/usePerfil";
 import { obtenerCategoria } from "@/lib/categorias";
 import { CONTEO_POR_CATEGORIA, filtrarPreguntas, filtroDeGrupo } from "@/lib/preguntas";
@@ -9,7 +9,7 @@ import { ROLES } from "@/lib/perfil";
 
 const tarjeta = "rounded-3xl bg-tarjeta p-5 ring-1 ring-slate-200 dark:ring-slate-700/60";
 
-/** Accesos directos a lo que le toca estudiar al aspirante según su perfil */
+/** Lo que le toca estudiar según su cargo: núcleo común, su especialidad o la gestión directiva, y lo rural */
 export default function RutaEstudio() {
   const { perfil, cargado } = usePerfil();
 
@@ -18,12 +18,12 @@ export default function RutaEstudio() {
   if (!perfil) {
     return (
       <Link href="/perfil" className={`${tarjeta} flex items-center gap-4 transition hover:ring-primary-light`}>
-        <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-primary/10 text-primary-light dark:bg-primary-light/20">
-          <Settings2 className="size-6" />
+        <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-verde-suave text-secondary-light">
+          <UserRoundCog className="size-6" />
         </span>
         <span className="flex-1">
-          <span className="block font-semibold">Personaliza tu preparación</span>
-          <span className="block text-sm text-texto-tenue">Elige tu rol, especialidad y contexto para ver tu ruta de estudio.</span>
+          <span className="block font-bold">¿A qué cargo aspiras?</span>
+          <span className="block text-sm text-texto-tenue">Elígelo y te mostramos qué estudiar para tu prueba.</span>
         </span>
         <ChevronRight className="size-5 text-texto-tenue" />
       </Link>
@@ -34,7 +34,7 @@ export default function RutaEstudio() {
   const directivos = filtroDeGrupo("directivos_docentes");
   const especialidad = obtenerCategoria(perfil.specialty);
   const rutas = [
-    { href: `/practica?filtro=${nucleo}`, titulo: "Núcleo común", detalle: `${filtrarPreguntas(nucleo).length} preguntas`, Icono: Layers },
+    { href: `/practica?filtro=${nucleo}`, titulo: "Núcleo común", detalle: "Lo presentan todos", Icono: Layers },
     perfil.role === "directivo_docente"
       ? { href: `/practica?filtro=${directivos}`, titulo: "Gestión directiva", detalle: `${filtrarPreguntas(directivos).length} preguntas`, Icono: Users }
       : especialidad && {
@@ -54,10 +54,10 @@ export default function RutaEstudio() {
   return (
     <section className={tarjeta} aria-labelledby="titulo-ruta">
       <div className="flex items-baseline justify-between gap-3">
-        <h2 id="titulo-ruta" className="font-bold">
-          Tu ruta de estudio
+        <h2 id="titulo-ruta" className="text-lg">
+          Para tu cargo
         </h2>
-        <Link href="/perfil" className="text-xs font-semibold text-primary-light">
+        <Link href="/perfil" className="text-sm font-bold text-primary-dark dark:text-secondary-light">
           {ROLES.find((r) => r.id === perfil.role)?.nombre}
         </Link>
       </div>
@@ -68,9 +68,9 @@ export default function RutaEstudio() {
               href={href}
               className="flex items-center gap-3 rounded-2xl bg-slate-50 p-3 transition hover:bg-slate-100 dark:bg-slate-700/40 dark:hover:bg-slate-700/60"
             >
-              <Icono className="size-5 shrink-0 text-primary-light" />
+              <Icono className="size-5 shrink-0 text-secondary-light" />
               <span className="min-w-0 flex-1">
-                <span className="block truncate text-sm font-semibold">{titulo}</span>
+                <span className="block truncate text-sm font-bold">{titulo}</span>
                 <span className="block text-xs text-texto-tenue">{detalle}</span>
               </span>
               <ChevronRight className="size-4 shrink-0 text-texto-tenue" />
@@ -78,6 +78,14 @@ export default function RutaEstudio() {
           </li>
         ))}
       </ul>
+      {perfil.role === "docente_aula" && !especialidad && (
+        <p className="mt-3 text-sm text-texto-tenue">
+          <Link href="/perfil" className="font-bold text-primary-dark underline underline-offset-4 dark:text-secondary-light">
+            Elige tu especialidad
+          </Link>{" "}
+          para practicar también las preguntas de tu área.
+        </p>
+      )}
     </section>
   );
 }

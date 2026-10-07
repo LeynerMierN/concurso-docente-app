@@ -3,7 +3,8 @@
 import { Suspense, useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import { BookOpenCheck, Clock, Pause, Play } from "lucide-react";
+import { BookOpenCheck, Play } from "lucide-react";
+import Volver from "@/components/Volver";
 import Cargando from "@/components/quiz/Cargando";
 import QuizRunner from "@/components/quiz/QuizRunner";
 import { usePerfil } from "@/hooks/usePerfil";
@@ -12,15 +13,23 @@ import { useQuizRunner } from "@/hooks/useQuizRunner";
 import { umbralDe } from "@/lib/perfil";
 import SelectorCategorias from "@/components/practica/SelectorCategorias";
 import { FILTRO_NUCLEO_COMUN, MODOS_EXAMEN, configDesdeModo, dimensionarModo, obtenerModo } from "@/lib/appConfig";
-import { filtrarPreguntas, mezclar } from "@/lib/preguntas";
+import { etiquetaFiltro, filtrarPreguntas, mezclar } from "@/lib/preguntas";
 import { FILTRO_REPASO, pendientesHoy } from "@/lib/repaso";
 import type { FiltroExamen } from "@/types/exam";
 
-/** "Prueba por Competencia" se enfoca en una sola área: no admite "Todas las áreas" */
+/** «Practicar un tema» (area_20) se enfoca en una sola área: no admite «Todas las áreas» */
 const MODOS_DE_UNA_AREA = new Set(["area_20"]);
 
-/** Modos de práctica (con retroalimentación inmediata) definidos en data/app_config.json */
-const MODOS_PRACTICA = MODOS_EXAMEN.filter((m) => m.feedbackInmediato);
+/** Sin ?modo se abre la práctica rápida (10 preguntas); la práctica sin límite es ?modo=libre */
+const MODO_LIBRE = "libre";
+const MODO_POR_DEFECTO = "express_10";
+
+/** Tipos de práctica, con nombre corto para el selector segmentado */
+const TIPOS = [
+  { id: MODO_POR_DEFECTO, etiqueta: "Rápida" },
+  { id: "area_20", etiqueta: "Por tema" },
+  { id: null, etiqueta: "Sin límite" },
+].filter((t) => t.id === null || MODOS_EXAMEN.some((m) => m.id === t.id && m.feedbackInmediato));
 
 export default function Pagina() {
   return (
@@ -32,8 +41,9 @@ export default function Pagina() {
 
 function Practica() {
   const parametros = useSearchParams();
-  const modo = obtenerModo(parametros.get("modo"));
-  // ?filtro= permite llegar con una categoría preseleccionada (p. ej. desde "Tu ruta" en Inicio)
+  const modoPedido = parametros.get("modo");
+  const modo = modoPedido === MODO_LIBRE ? undefined : (obtenerModo(modoPedido) ?? obtenerModo(MODO_POR_DEFECTO));
+  // ?filtro= permite llegar con una categoría preseleccionada (p. ej. desde «Para tu cargo» en Estudiar)
   const pedido = parametros.get("filtro");
   const filtroInicial = pedido && (pedido === FILTRO_REPASO || filtrarPreguntas(pedido).length > 0) ? pedido : null;
   // ?empezar=1 arranca la sesión sin pasar por el selector (botón «Tu siguiente paso» del inicio)
@@ -65,6 +75,8 @@ function Selector({ modoId, filtroInicial, empezar }: PropsSelector) {
   const unaArea = !!modo && MODOS_DE_UNA_AREA.has(modo.id);
   const [filtro, setFiltro] = useState<FiltroExamen | null>(filtroInicial ?? (unaArea ? null : FILTRO_NUCLEO_COMUN));
   const [feedback, setFeedback] = useState(true);
+  // La lista de temas va plegada: se abre si hay que elegir uno o si se pide cambiarlo
+  const [eligiendo, setEligiendo] = useState(!filtroInicial && unaArea);
   const router = useRouter();
   const ruta = usePathname();
   const parametros = useSearchParams();
@@ -116,68 +128,73 @@ function Selector({ modoId, filtroInicial, empezar }: PropsSelector) {
   if (runner.sesion) return <QuizRunner runner={runner} />;
 
   return (
-    <div className="space-y-6 pb-20">
+    <div className="space-y-5 pb-24">
       <header>
-        <h1 className="flex items-center gap-2 text-2xl font-bold">
-          <BookOpenCheck className="size-7 text-primary-light" /> Práctica guiada
+        <Volver href="/estudiar" etiqueta="Estudiar" />
+        <h1 className="mt-1 flex items-center gap-2 text-2xl">
+          <BookOpenCheck className="size-7 text-secondary-light" /> Práctica
         </h1>
-        <p className="mt-1 text-sm text-texto-tenue">
-          {modo ? modo.descripcion : "Elige qué repasar: el núcleo común, tu especialidad o un tema clave. Sin límite de tiempo."}
-        </p>
+        <p className="mt-1 text-[15px] text-texto-tenue">{modo ? modo.descripcion : "Todas las preguntas que quieras, sin límite de tiempo."}</p>
       </header>
 
-      {/* Cambiar de modalidad */}
-      <nav aria-label="Modalidad de práctica" className="-mx-4 overflow-x-auto px-4 [scrollbar-width:none]">
-        <ul className="flex w-max gap-2">
-          {[{ id: null, nombre: "Libre", href: "/practica" }, ...MODOS_PRACTICA.map((m) => ({ id: m.id, nombre: m.nombre, href: m.href }))].map(
-            (m) => (
-              <li key={m.href}>
-                <Link
-                  href={m.href}
-                  aria-current={modoId === m.id ? "page" : undefined}
-                  className={`block whitespace-nowrap rounded-2xl px-3.5 py-2 text-sm transition ${
-                    modoId === m.id
-                      ? "bg-primary font-semibold text-white"
-                      : "bg-tarjeta text-slate-700 ring-1 ring-slate-200 dark:text-slate-300 dark:ring-slate-700/60"
-                  }`}
-                >
-                  {m.nombre}
-                </Link>
-              </li>
-            ),
-          )}
-        </ul>
+      {/* Tipo de práctica: tres opciones, una activa */}
+      <nav aria-label="Tipo de práctica" className="grid grid-cols-3 gap-1 rounded-2xl bg-slate-100 p-1 dark:bg-slate-800">
+        {TIPOS.map((t) => {
+          const activo = (modoId ?? null) === t.id;
+          return (
+            <Link
+              key={t.etiqueta}
+              href={`/practica?modo=${t.id ?? MODO_LIBRE}`}
+              aria-current={activo ? "page" : undefined}
+              className={`rounded-xl py-2 text-center text-sm transition ${
+                activo ? "bg-tarjeta font-bold shadow-sm ring-1 ring-slate-200 dark:ring-slate-600" : "font-semibold text-texto-tenue hover:text-texto"
+              }`}
+            >
+              {t.etiqueta}
+            </Link>
+          );
+        })}
       </nav>
 
-      {modo && (
-        <ul className="flex flex-wrap gap-2 text-xs font-medium text-slate-600 dark:text-slate-300">
-          <li className="rounded-full bg-slate-100 px-3 py-1 dark:bg-slate-700/60">
-            Hasta {modo.preguntas} preguntas
-          </li>
-          <li className="flex items-center gap-1 rounded-full bg-slate-100 px-3 py-1 dark:bg-slate-700/60">
-            <Clock className="size-3.5" /> {modo.minutos ? `${modo.minutos} min` : "Sin límite de tiempo"}
-          </li>
-          {modo.permitePausa && modo.minutos && (
-            <li className="flex items-center gap-1 rounded-full bg-slate-100 px-3 py-1 dark:bg-slate-700/60">
-              <Pause className="size-3.5" /> Se puede pausar
-            </li>
+      {/* Qué practicar: resumen con «Cambiar»; la taxonomía completa solo cuando se pide */}
+      <section aria-labelledby="titulo-tema" className="rounded-3xl bg-tarjeta p-4 ring-1 ring-slate-200 dark:ring-slate-700/60">
+        <div className="flex items-center justify-between gap-3">
+          <div className="min-w-0">
+            <h2 id="titulo-tema" className="text-xs font-bold uppercase tracking-wide text-texto-tenue">
+              Qué vas a practicar
+            </h2>
+            <p className="mt-0.5 font-heading text-lg font-bold leading-snug">{filtro ? etiquetaFiltro(filtro) : "Elige un área o tema"}</p>
+          </div>
+          {!eligiendo && (
+            <button
+              type="button"
+              onClick={() => setEligiendo(true)}
+              className="shrink-0 rounded-xl px-3 py-2 text-sm font-bold text-primary-dark ring-1 ring-slate-200 dark:text-secondary-light dark:ring-slate-600"
+            >
+              Cambiar
+            </button>
           )}
-        </ul>
-      )}
-
-      {unaArea && !filtro && (
-        <p className="rounded-2xl bg-accent/10 p-3 text-sm text-accent-dark dark:text-accent-light">
-          Elige el área o tema que quieres evaluar.
-        </p>
-      )}
-
-      <SelectorCategorias filtro={filtro} onElegir={setFiltro} soloUnaArea={unaArea} pendientesRepaso={pendientes.length} />
+        </div>
+        {eligiendo && (
+          <div className="mt-4">
+            <SelectorCategorias
+              filtro={filtro}
+              onElegir={(f) => {
+                setFiltro(f);
+                setEligiendo(false);
+              }}
+              soloUnaArea={unaArea}
+              pendientesRepaso={pendientes.length}
+            />
+          </div>
+        )}
+      </section>
 
       {!modo && (
         <label className="flex items-center justify-between gap-4 rounded-2xl bg-tarjeta p-4 ring-1 ring-slate-200 dark:ring-slate-700/60">
           <span>
-            <span className="block font-semibold">Retroalimentación inmediata</span>
-            <span className="block text-sm text-texto-tenue">Ver la respuesta y la justificación al responder</span>
+            <span className="block font-bold">Ver la respuesta al instante</span>
+            <span className="block text-sm text-texto-tenue">Si lo apagas, ves todas las respuestas al final.</span>
           </span>
           <input
             type="checkbox"
@@ -193,12 +210,12 @@ function Selector({ modoId, filtroInicial, empezar }: PropsSelector) {
           type="button"
           onClick={iniciar}
           disabled={!filtro}
-          className="mx-auto flex w-full max-w-md items-center justify-center gap-2 rounded-2xl bg-primary px-4 py-3.5 font-semibold text-white shadow-lg active:scale-[0.98] disabled:opacity-50"
+          className="mx-auto flex w-full max-w-md items-center justify-center gap-2 rounded-2xl bg-primary px-4 py-3.5 font-bold text-white shadow-lg active:scale-[0.98] disabled:bg-slate-200 disabled:text-texto-tenue disabled:shadow-none dark:disabled:bg-slate-700"
         >
           <Play className="size-5" fill="currentColor" />
           {filtro
             ? `Empezar · ${cantidad} ${cantidad === 1 ? "pregunta" : "preguntas"}${dimension?.minutos ? ` · ${dimension.minutos} min` : ""}`
-            : "Elige un área para empezar"}
+            : "Elige un tema para empezar"}
         </button>
       </div>
     </div>

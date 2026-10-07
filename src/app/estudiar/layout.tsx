@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Fichas de normas",
-  description: "Repasa DUA, PIAR, situaciones Tipo I, II y III, Ruta de Atención Integral, SIEE, Ley 115 y Decreto 1278 con fichas de estudio.",
+  title: "Estudiar",
+  description: "Práctica rápida, práctica por tema, simulacros con tiempo, repaso de errores y fichas de normas para el Concurso Docente.",
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

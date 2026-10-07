@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Práctica guiada",
+  title: "Práctica",
   description: "Practica preguntas de Juicio Situacional por área o tema, con retroalimentación inmediata y la norma que sustenta cada respuesta.",
 };
 

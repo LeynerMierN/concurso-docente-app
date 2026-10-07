@@ -2,7 +2,8 @@
 
 import { Suspense, useState } from "react";
 import { useSearchParams } from "next/navigation";
-import { Clock, EyeOff, Flag, Info, Play, Target, Timer } from "lucide-react";
+import { Bookmark, Clock, EyeOff, Info, Play, Target, Timer } from "lucide-react";
+import Volver from "@/components/Volver";
 import Cargando from "@/components/quiz/Cargando";
 import QuizRunner from "@/components/quiz/QuizRunner";
 import { usePerfil } from "@/hooks/usePerfil";
@@ -43,19 +44,20 @@ function Configurar({ inicial }: { inicial: string }) {
   const { distribucion = {} } = dimensionarModo(modo);
   const reglas = [
     { Icono: Clock, texto: `${modo.minutos} minutos en total. Al agotarse, se entrega solo.` },
-    { Icono: EyeOff, texto: "Sin retroalimentación ni pausa hasta que entregues, como en el examen real." },
-    { Icono: Flag, texto: "Navega libremente y marca con bandera las preguntas que quieras revisar." },
+    { Icono: EyeOff, texto: "No ves las respuestas ni puedes pausar hasta que entregues, como en el examen real." },
+    { Icono: Bookmark, texto: "Puedes ir y volver entre preguntas, y guardar las que quieras revisar antes de entregar." },
     { Icono: Target, texto: `Apruebas con ${umbral}/100${rol ? ` (umbral de ${rol.nombre.toLowerCase()})` : ""}. Las preguntas sin responder cuentan como incorrectas.` },
   ];
 
   return (
     <div className="space-y-6">
       <header>
-        <h1 className="flex items-center gap-2 text-2xl font-bold">
-          <Timer className="size-7 text-primary-light" /> Simulacros reales
+        <Volver href="/estudiar" etiqueta="Estudiar" />
+        <h1 className="mt-1 flex items-center gap-2 text-2xl">
+          <Timer className="size-7 text-secondary-light" /> Simulacro
         </h1>
-        <p className="mt-1 text-sm text-texto-tenue">
-          Núcleo común de la prueba CNSC, armado al azar desde el banco con la distribución oficial por componentes.
+        <p className="mt-1 text-[15px] text-texto-tenue">
+          Mide tu puntaje como el día del examen: con tiempo y con las mismas áreas y proporciones de la prueba de la CNSC.
         </p>
       </header>
 
@@ -128,9 +130,9 @@ function Configurar({ inicial }: { inicial: string }) {
       <button
         type="button"
         onClick={() => runner.iniciar(configDesdeModo(modo, undefined, umbral))}
-        className="flex w-full items-center justify-center gap-2 rounded-2xl bg-primary px-4 py-3.5 font-semibold text-white shadow-lg active:scale-[0.98]"
+        className="flex w-full items-center justify-center gap-2 rounded-2xl bg-primary px-4 py-3.5 font-bold text-white active:scale-[0.98]"
       >
-        <Play className="size-5" fill="currentColor" /> Iniciar simulacro
+        <Play className="size-5" fill="currentColor" /> Empezar el {modo.nombre.toLowerCase()}
       </button>
     </div>
   );

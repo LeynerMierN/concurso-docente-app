@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { FileCheck2, GraduationCap } from "lucide-react";
+import QueEs from "@/components/QueEs";
 import { useProgreso } from "@/hooks/useProgreso";
 import { PUNTOS_CORTO, nivelDe } from "@/lib/meritos";
 import { COSTO_PROTECTOR_XP, calcularRacha, diaProtegible, diasDeRacha, ultimosDias, usarProtector } from "@/lib/storage";
@@ -47,9 +48,13 @@ export default function Constancia() {
             <span className="font-bold text-texto-tenue">{racha.actual === 1 ? "día de estudio" : "días de estudio seguidos"}</span>
           </p>
           <p className="mt-0.5 text-xs text-texto-tenue">Mejor marca: {racha.mejor}</p>
+          <QueEs>
+            Los días seguidos en que estudias. Si faltas un día, puedes cubrirlo con una excusa justificada, que cuesta puntos de
+            mérito.
+          </QueEs>
         </div>
         <Link
-          href="/perfil"
+          href="#escalafon"
           className="inline-flex shrink-0 items-center gap-1 rounded-full bg-resaltador-suave px-2.5 py-1 text-xs font-bold text-accent-dark"
         >
           <GraduationCap className="size-3.5" /> {nivel.nombre} · {xp.toLocaleString("es-CO")} {PUNTOS_CORTO}

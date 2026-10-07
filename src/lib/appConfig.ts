@@ -5,7 +5,6 @@ import {
   FileText,
   LayoutDashboard,
   Timer,
-  Wallet,
   type LucideIcon,
 } from "lucide-react";
 import config from "@data/app_config.json";
@@ -17,22 +16,10 @@ export const APP = config.app_metadata;
 /** Íconos que el config nombra por texto. Importarlos uno a uno evita cargar toda la librería. */
 const ICONOS: Record<string, LucideIcon> = { LayoutDashboard, BookOpenCheck, Timer, FileText, BarChart3, Crown };
 
-/** Módulos del config que no van en la barra inferior del celular (se accede desde Inicio y Perfil) */
-const FUERA_DE_BARRA_MOVIL = new Set(["premium"]);
-
-/** Etiquetas cortas para la barra inferior del celular, donde no caben las del config */
-const ETIQUETA_CORTA: Record<string, string> = {
-  home: "Inicio",
-  practica: "Práctica",
-  simulacros: "Simulacro",
-  normatividad: "Fichas",
-  estadisticas: "Progreso",
-};
-
+/** Módulos del config (navigation_modules). Las pestañas que se ven en pantalla están en `lib/navegacion.ts` */
 export interface ModuloNavegacion {
   id: string;
   etiqueta: string;
-  etiquetaCorta: string;
   descripcion: string;
   ruta: string;
   Icono: LucideIcon;
@@ -41,24 +28,10 @@ export interface ModuloNavegacion {
 export const MODULOS_NAVEGACION: ModuloNavegacion[] = config.navigation_modules.map((m) => ({
     id: m.id,
     etiqueta: m.label,
-    etiquetaCorta: ETIQUETA_CORTA[m.id] ?? m.label,
     descripcion: m.description,
     ruta: m.route,
     Icono: ICONOS[m.icon] ?? FileText,
   }));
-
-/** Barra inferior del celular: módulos de estudio + Convocatoria (que no está en el config) */
-export const MODULOS_MOVIL: ModuloNavegacion[] = [
-  ...MODULOS_NAVEGACION.filter((m) => !FUERA_DE_BARRA_MOVIL.has(m.id)),
-  {
-    id: "convocatoria",
-    etiqueta: "Convocatoria y salario",
-    etiquetaCorta: "Concurso",
-    descripcion: "Reglas del examen, calculadora salarial y beneficios.",
-    ruta: "/convocatoria",
-    Icono: Wallet,
-  },
-];
 
 export const META_DIARIA_PREGUNTAS = config.gamification.streak_system.daily_goal_questions;
 
@@ -128,6 +101,17 @@ export function dimensionarModo(
   return { preguntas, minutos, distribucion };
 }
 
+/**
+ * Nombres y descripciones en lenguaje sencillo para la pantalla. El config conserva los suyos
+ * («Entrenamiento Rápido (10 Preguntas)»…), pero repetían cifras y no decían qué hace cada modo.
+ */
+const TEXTOS_SENCILLOS: Record<string, { nombre: string; descripcion: string }> = {
+  express_10: { nombre: "Práctica rápida", descripcion: "10 preguntas con la respuesta explicada al instante." },
+  area_20: { nombre: "Practicar un tema", descripcion: "Eliges un área o tema y respondes hasta 20 preguntas con tiempo." },
+  simulacro_medio: { nombre: "Simulacro corto", descripcion: "La mitad del examen, con tiempo y sin ver las respuestas hasta entregar." },
+  simulacro_oficial_100: { nombre: "Simulacro completo", descripcion: "Como el examen real: el mismo tiempo y sin ver las respuestas hasta entregar." },
+};
+
 export const MODOS_EXAMEN: ModoExamen[] = config.exam_modes.map((m) => {
   const base = {
     preguntasConfig: m.question_count,
@@ -138,8 +122,8 @@ export const MODOS_EXAMEN: ModoExamen[] = config.exam_modes.map((m) => {
   const ruta = m.instant_feedback ? "/practica" : "/simulacros";
   return {
     id: m.id,
-    nombre: m.name,
-    descripcion: m.description,
+    nombre: TEXTOS_SENCILLOS[m.id]?.nombre ?? m.name,
+    descripcion: TEXTOS_SENCILLOS[m.id]?.descripcion ?? m.description,
     ...base,
     preguntas,
     minutos,

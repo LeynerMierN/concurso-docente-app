@@ -14,7 +14,7 @@ export interface SiguientePaso {
 }
 
 const META = config.gamification.streak_system.daily_goal_questions;
-/** Ritmo de la Prueba por Competencia (20 preguntas en 30 minutos), para estimar el tiempo */
+/** Ritmo de «Practicar un tema» (20 preguntas en 30 minutos), para estimar el tiempo */
 const MINUTOS_POR_PREGUNTA = 1.5;
 /** Cada cuánto conviene medirse con un simulacro */
 const DIAS_ENTRE_SIMULACROS = 7;

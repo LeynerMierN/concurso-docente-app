@@ -222,7 +222,7 @@ export default function Resultados({ runner }: { runner: QuizRunner }) {
       <div className="space-y-3">
         {resultado.incorrectas > 0 && (
           <Link
-            href="/practica?filtro=repaso"
+            href="/practica?filtro=repaso&empezar=1"
             className="flex w-full items-center justify-center gap-2 rounded-2xl bg-primary px-4 py-3.5 font-bold text-white active:scale-[0.98]"
           >
             <RotateCcw className="size-5" /> {resultado.incorrectas === 1 ? "Repasar mi error" : `Repasar mis ${resultado.incorrectas} errores`}

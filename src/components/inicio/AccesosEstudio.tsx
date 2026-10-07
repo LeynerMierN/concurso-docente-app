@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Layers, Target, Timer } from "lucide-react";
+import { ChevronRight, Layers, Target, Timer } from "lucide-react";
 
 const ACCESOS = [
   { href: "/practica?modo=area_20", titulo: "Por tema", detalle: "Tú eliges", Icono: Target },
@@ -11,9 +11,14 @@ const ACCESOS = [
 export default function AccesosEstudio() {
   return (
     <section aria-labelledby="titulo-accesos">
-      <h2 id="titulo-accesos" className="px-1 text-base">
-        Estudiar a tu manera
-      </h2>
+      <div className="flex items-center justify-between gap-3 px-1">
+        <h2 id="titulo-accesos" className="text-base">
+          Estudiar a tu manera
+        </h2>
+        <Link href="/estudiar" className="flex items-center gap-0.5 text-sm font-bold text-primary-dark dark:text-secondary-light">
+          Ver todo <ChevronRight className="size-4" />
+        </Link>
+      </div>
       <ul className="mt-2 grid grid-cols-3 gap-2">
         {ACCESOS.map(({ href, titulo, detalle, Icono }) => (
           <li key={href}>

@@ -34,13 +34,13 @@ export default function SelectorCategorias({ filtro, onElegir, soloUnaArea, pend
           onClick={() => onElegir("repaso")}
           aria-pressed={repaso}
           className={`flex w-full items-center gap-3 rounded-2xl p-4 text-left transition active:scale-[0.99] ${
-            repaso ? "bg-accent text-tinta shadow-md" : "bg-accent/10 ring-1 ring-accent/30"
+            repaso ? "bg-danger text-white" : "bg-mora-suave ring-1 ring-danger/30 dark:ring-danger-light/30"
           }`}
         >
-          <RotateCcw className={`size-6 shrink-0 ${repaso ? "text-white" : "text-accent-dark"}`} />
+          <RotateCcw className={`size-6 shrink-0 ${repaso ? "text-white" : "text-danger dark:text-danger-light"}`} />
           <span className="min-w-0 flex-1">
-            <span className="block font-semibold">Repaso de errores</span>
-            <span className={`block text-sm ${repaso ? "text-white/90" : "text-slate-600 dark:text-slate-300"}`}>
+            <span className="block font-bold">Repasar mis errores</span>
+            <span className={`block text-sm ${repaso ? "text-white/90" : "text-texto-tenue"}`}>
               {pendientesRepaso} {pendientesRepaso === 1 ? "pregunta" : "preguntas"} que fallaste te esperan hoy
             </span>
           </span>
