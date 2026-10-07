@@ -3,11 +3,14 @@
 import Link from "next/link";
 import { Award, BarChart3, CheckCircle2, Info, Star, Target, XCircle } from "lucide-react";
 import Capibara from "@/components/mascota/Capibara";
+import Constancia from "@/components/progreso/Constancia";
+import FraseMotivadora from "@/components/progreso/FraseMotivadora";
+import Proyeccion from "@/components/progreso/Proyeccion";
+import { usePerfil } from "@/hooks/usePerfil";
 import { useProgreso } from "@/hooks/useProgreso";
 import { MODULOS_NAVEGACION } from "@/lib/appConfig";
-import { CATEGORIAS_NUCLEO, aciertoGlobal, aciertoPorArea, proyeccionPuntaje } from "@/lib/estadisticas";
-import { UMBRAL_DOCENTE_AULA } from "@/lib/preguntas";
-import { calcularRacha, diasDeRacha } from "@/lib/storage";
+import { CATEGORIAS_NUCLEO, aciertoGlobal, aciertoPorArea } from "@/lib/estadisticas";
+import { umbralDe } from "@/lib/perfil";
 import { formatoTiempo } from "@/lib/tiempo";
 
 const tarjeta = "rounded-3xl bg-tarjeta p-5 ring-1 ring-slate-200 dark:ring-slate-700/60";
@@ -17,6 +20,9 @@ const descripcion = MODULOS_NAVEGACION.find((m) => m.id === "estadisticas")?.des
 
 export default function Pagina() {
   const progreso = useProgreso();
+  const { perfil } = usePerfil();
+  // Puntaje para aprobar según el cargo del perfil (60 aula, 70 directivo)
+  const umbral = umbralDe(perfil);
 
   const encabezado = (
     <header>
@@ -47,10 +53,11 @@ export default function Pagina() {
             Capi está durmiendo mientras espera tus primeros resultados. Termina una práctica o un simulacro y aquí verás tus
             métricas.
           </p>
-          <Link href="/practica" className="mt-4 inline-block rounded-2xl bg-primary px-5 py-2.5 text-sm font-semibold text-white">
-            Empezar a practicar
+          <Link href="/practica?modo=express_10&empezar=1" className="mt-4 inline-block rounded-2xl bg-primary px-5 py-2.5 text-sm font-bold text-white">
+            Hacer mi primera práctica
           </Link>
         </section>
+        <FraseMotivadora />
       </div>
     );
   }
@@ -59,30 +66,28 @@ export default function Pagina() {
   const sinPracticar = CATEGORIAS_NUCLEO.filter((a) => !areas.some((x) => x.area === a));
   const simulacros = progreso.intentos.filter((i) => i.modo === "simulacro");
   const aprobados = simulacros.filter((s) => s.aprobado).length;
-  const proyeccion = proyeccionPuntaje(progreso);
-  const racha = calcularRacha(diasDeRacha(progreso));
   const evolucion = simulacros.slice(0, 10).reverse();
   const fuerte = areas.length > 1 ? areas[areas.length - 1] : null;
 
+  // La proyección tiene su propia tarjeta arriba; aquí van los totales
   const indicadores = [
-    { etiqueta: "Preguntas resueltas", valor: progreso.totalRespondidas.toLocaleString("es-CO"), detalle: `Mejor constancia: ${racha.mejor} días` },
-    { etiqueta: "Acierto global", valor: `${aciertoGlobal(progreso)}%`, detalle: `Meta: ${UMBRAL_DOCENTE_AULA}%` },
-    { etiqueta: "Simulacros aprobados", valor: `${aprobados}/${simulacros.length}`, detalle: `${progreso.intentos.length} intentos en total` },
-    {
-      etiqueta: "Puntaje proyectado",
-      valor: proyeccion === null ? "—" : proyeccion.toLocaleString("es-CO"),
-      detalle: proyeccion === null ? "Haz un simulacro" : proyeccion >= UMBRAL_DOCENTE_AULA ? "Por encima del umbral" : "Por debajo del umbral",
-    },
+    { etiqueta: "Preguntas resueltas", valor: progreso.totalRespondidas.toLocaleString("es-CO"), detalle: `${progreso.intentos.length} sesiones` },
+    { etiqueta: "Acierto global", valor: `${aciertoGlobal(progreso)}%`, detalle: `Meta: ${umbral}%` },
+    { etiqueta: "Simulacros aprobados", valor: `${aprobados}`, detalle: simulacros.length ? `de ${simulacros.length} hechos` : "Aún ninguno" },
   ];
 
   return (
     <div className="space-y-6">
       {encabezado}
 
-      <section aria-label="Indicadores" className="grid grid-cols-2 gap-3 md:grid-cols-4">
+      <Proyeccion />
+
+      <Constancia />
+
+      <section aria-label="Indicadores" className="grid grid-cols-3 gap-2 md:gap-3">
         {indicadores.map(({ etiqueta, valor, detalle }) => (
-          <div key={etiqueta} className="rounded-2xl bg-tarjeta p-4 ring-1 ring-slate-200 dark:ring-slate-700/60">
-            <p className="text-xs font-medium text-texto-tenue">{etiqueta}</p>
+          <div key={etiqueta} className="rounded-2xl bg-tarjeta p-3 ring-1 ring-slate-200 md:p-4 dark:ring-slate-700/60">
+            <p className="text-xs font-bold leading-tight text-texto-tenue">{etiqueta}</p>
             <p className="mt-1 font-heading text-2xl font-extrabold tabular-nums">{valor}</p>
             <p className="mt-0.5 text-[11px] text-texto-tenue">{detalle}</p>
           </div>
@@ -96,7 +101,7 @@ export default function Pagina() {
             Evolución de tus simulacros
           </h2>
           <span className="flex items-center gap-1.5 text-[11px] text-texto-tenue">
-            <span className="inline-block h-0 w-4 border-t-2 border-dashed border-slate-400" /> umbral {UMBRAL_DOCENTE_AULA}
+            <span className="inline-block h-0 w-4 border-t-2 border-dashed border-slate-400" /> umbral {umbral}
           </span>
         </div>
         {evolucion.length === 0 ? (
@@ -111,7 +116,7 @@ export default function Pagina() {
             <div className="relative mt-6 h-40" role="img" aria-label={`Puntajes de los últimos ${evolucion.length} simulacros`}>
               <div
                 className="absolute inset-x-0 border-t-2 border-dashed border-slate-300 dark:border-slate-600"
-                style={{ bottom: `${UMBRAL_DOCENTE_AULA}%` }}
+                style={{ bottom: `${umbral}%` }}
                 aria-hidden
               />
               <ol className="relative flex h-full items-end gap-2">
@@ -149,7 +154,7 @@ export default function Pagina() {
             Fortalezas y áreas para reforzar
           </h2>
           <span className="flex items-center gap-1 text-[11px] text-texto-tenue">
-            <span className="inline-block h-3 w-0.5 rounded bg-slate-500" /> meta {UMBRAL_DOCENTE_AULA}%
+            <span className="inline-block h-3 w-0.5 rounded bg-slate-500" /> meta {umbral}%
           </span>
         </div>
         <ul className="mt-4 space-y-3.5">
@@ -178,10 +183,10 @@ export default function Pagina() {
                 title={`${area}: ${pct}% de acierto en ${respondidas} respuestas`}
               >
                 <div
-                  className={`h-full rounded-full ${i === 0 && areas.length > 1 && pct < UMBRAL_DOCENTE_AULA ? "bg-danger dark:bg-danger-light" : "bg-primary"}`}
+                  className={`h-full rounded-full ${i === 0 && areas.length > 1 && pct < umbral ? "bg-danger dark:bg-danger-light" : "bg-primary"}`}
                   style={{ width: `${Math.max(pct, 2)}%` }}
                 />
-                <span className="absolute -top-0.5 h-3 w-0.5 rounded bg-slate-500" style={{ left: `${UMBRAL_DOCENTE_AULA}%` }} aria-hidden />
+                <span className="absolute -top-0.5 h-3 w-0.5 rounded bg-slate-500" style={{ left: `${umbral}%` }} aria-hidden />
               </div>
             </li>
           ))}
@@ -226,6 +231,8 @@ export default function Pagina() {
           </p>
         )}
       </section>
+
+      <FraseMotivadora />
     </div>
   );
 }

@@ -1,8 +1,8 @@
 "use client";
 
-import { Suspense, useState } from "react";
+import { Suspense, useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { useSearchParams } from "next/navigation";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { BookOpenCheck, Clock, Pause, Play } from "lucide-react";
 import Cargando from "@/components/quiz/Cargando";
 import QuizRunner from "@/components/quiz/QuizRunner";
@@ -36,11 +36,26 @@ function Practica() {
   // ?filtro= permite llegar con una categoría preseleccionada (p. ej. desde "Tu ruta" en Inicio)
   const pedido = parametros.get("filtro");
   const filtroInicial = pedido && (pedido === FILTRO_REPASO || filtrarPreguntas(pedido).length > 0) ? pedido : null;
+  // ?empezar=1 arranca la sesión sin pasar por el selector (botón «Tu siguiente paso» del inicio)
+  const empezar = parametros.get("empezar") === "1";
   // La clave cambia con el modo para que al elegir otro modo se reinicie la selección
-  return <Selector key={`${modo?.id ?? "libre"}-${filtroInicial}`} modoId={modo?.id ?? null} filtroInicial={filtroInicial} />;
+  return (
+    <Selector
+      key={`${modo?.id ?? "libre"}-${filtroInicial}`}
+      modoId={modo?.id ?? null}
+      filtroInicial={filtroInicial}
+      empezar={empezar}
+    />
+  );
 }
 
-function Selector({ modoId, filtroInicial }: { modoId: string | null; filtroInicial: FiltroExamen | null }) {
+interface PropsSelector {
+  modoId: string | null;
+  filtroInicial: FiltroExamen | null;
+  empezar: boolean;
+}
+
+function Selector({ modoId, filtroInicial, empezar }: PropsSelector) {
   const runner = useQuizRunner("concurso-docente:practica");
   const { perfil } = usePerfil();
   const umbral = umbralDe(perfil);
@@ -50,9 +65,22 @@ function Selector({ modoId, filtroInicial }: { modoId: string | null; filtroInic
   const unaArea = !!modo && MODOS_DE_UNA_AREA.has(modo.id);
   const [filtro, setFiltro] = useState<FiltroExamen | null>(filtroInicial ?? (unaArea ? null : FILTRO_NUCLEO_COMUN));
   const [feedback, setFeedback] = useState(true);
+  const router = useRouter();
+  const ruta = usePathname();
+  const parametros = useSearchParams();
+  const arrancado = useRef(false);
 
-  if (!runner.cargado) return <Cargando />;
-  if (runner.sesion) return <QuizRunner runner={runner} />;
+  // Arranque directo: una sola vez, cuando ya se leyó la sesión y el progreso (el repaso lo necesita).
+  // Si ya había una sesión en curso, se retoma esa. Luego se quita ?empezar para que «Nuevo intento» no rearranque.
+  useEffect(() => {
+    if (!empezar || arrancado.current || !runner.cargado || !progreso) return;
+    arrancado.current = true;
+    if (!runner.sesion) iniciar();
+    const resto = new URLSearchParams(parametros.toString());
+    resto.delete("empezar");
+    const consulta = resto.toString();
+    router.replace(consulta ? `${ruta}?${consulta}` : ruta, { scroll: false });
+  });
 
   const esRepaso = filtro === FILTRO_REPASO;
   const dimension = modo && filtro && !esRepaso ? dimensionarModo(modo, filtro) : null;
@@ -83,6 +111,9 @@ function Selector({ modoId, filtroInicial }: { modoId: string | null; filtroInic
         : { modo: "practica", filtro, limiteSegundos: null, feedbackInmediato: feedback, umbral },
     );
   };
+
+  if (!runner.cargado) return <Cargando />;
+  if (runner.sesion) return <QuizRunner runner={runner} />;
 
   return (
     <div className="space-y-6 pb-20">

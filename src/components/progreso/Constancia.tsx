@@ -1,12 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { ChevronRight, FileCheck2, GraduationCap, Target } from "lucide-react";
-import { usePerfil } from "@/hooks/usePerfil";
+import { FileCheck2, GraduationCap } from "lucide-react";
 import { useProgreso } from "@/hooks/useProgreso";
-import { aciertoPorArea } from "@/lib/estadisticas";
 import { PUNTOS_CORTO, nivelDe } from "@/lib/meritos";
-import { umbralDe } from "@/lib/perfil";
 import { COSTO_PROTECTOR_XP, calcularRacha, diaProtegible, diasDeRacha, ultimosDias, usarProtector } from "@/lib/storage";
 
 const letraDia = new Intl.DateTimeFormat("es-CO", { weekday: "narrow" });
@@ -27,7 +24,6 @@ function Chulito() {
  */
 export default function Constancia() {
   const progreso = useProgreso();
-  const { perfil } = usePerfil();
 
   if (!progreso) return <div className="h-56 motion-safe:animate-pulse rounded-3xl bg-slate-200 dark:bg-slate-700/60" aria-hidden />;
 
@@ -36,8 +32,6 @@ export default function Constancia() {
   const nivel = nivelDe(progreso.xpTotal ?? 0).actual;
   const protegible = diaProtegible(progreso);
   const semana = ultimosDias(progreso.diasEstudio, progreso.diasProtegidos);
-  const masBaja = aciertoPorArea(progreso)[0];
-  const umbral = umbralDe(perfil);
   // Si hoy ya estudió, el siguiente número se alcanza mañana
   const siguiente = racha.actual + 1;
 
@@ -117,27 +111,6 @@ export default function Constancia() {
         </p>
       </div>
 
-      {/* Área con menos aciertos: se presenta como la próxima meta, no como «débil» */}
-      {masBaja && (
-        <Link
-          href="/estadisticas"
-          className="flex items-center gap-3 rounded-2xl bg-slate-50 p-3 text-sm transition hover:bg-slate-100 dark:bg-slate-700/40 dark:hover:bg-slate-700/60"
-        >
-          <Target className="size-5 shrink-0 text-danger dark:text-danger-light" />
-          <span className="min-w-0 flex-1">
-            {masBaja.pct < umbral ? (
-              <>
-                Tu próxima meta: subir {umbral - masBaja.pct} puntos en <span className="font-bold">{masBaja.area}</span>.
-              </>
-            ) : (
-              <>
-                Para reforzar: <span className="font-bold">{masBaja.area}</span> ({masBaja.pct} %).
-              </>
-            )}
-          </span>
-          <ChevronRight className="size-4 shrink-0 text-texto-tenue" />
-        </Link>
-      )}
     </section>
   );
 }
