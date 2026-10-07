@@ -2,6 +2,12 @@ import { BookOpenCheck } from "lucide-react";
 import ConsejoCapi from "@/components/estudiar/ConsejoCapi";
 import OpcionesEstudio from "@/components/estudiar/OpcionesEstudio";
 import RutaEstudio from "@/components/estudiar/RutaEstudio";
+import { filtroDeGrupo } from "@/lib/categorias";
+import { CONTEO_POR_CATEGORIA, filtrarPreguntas } from "@/lib/preguntas";
+
+/** Se calcula en el servidor al compilar: el banco no viaja al navegador en esta pantalla */
+const DIRECTIVOS = filtroDeGrupo("directivos_docentes");
+const CONTEOS: Record<string, number> = { ...CONTEO_POR_CATEGORIA, [DIRECTIVOS]: filtrarPreguntas(DIRECTIVOS).length };
 
 /** Todo lo que es estudiar en un solo lugar: práctica, temas, simulacros, repaso y fichas */
 export default function Pagina() {
@@ -15,7 +21,7 @@ export default function Pagina() {
       </header>
 
       <OpcionesEstudio />
-      <RutaEstudio />
+      <RutaEstudio conteos={CONTEOS} />
       <ConsejoCapi />
     </div>
   );

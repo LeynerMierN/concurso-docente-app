@@ -2,7 +2,7 @@
 
 import { usePerfil } from "@/hooks/usePerfil";
 import { useProgreso } from "@/hooks/useProgreso";
-import { proyeccionPuntaje } from "@/lib/estadisticas";
+import { proyeccionPuntaje } from "@/lib/progreso";
 import { umbralDe } from "@/lib/perfil";
 
 /** Proyección con los últimos simulacros: número grande, umbral marcado y un mensaje de esperanza concreto */

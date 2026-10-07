@@ -8,7 +8,7 @@ import Premiacion, { type Premio } from "@/components/premios/Premiacion";
 import Trofeo from "@/components/premios/Trofeo";
 import { INSIGNIAS, avanceInsignias } from "@/lib/insignias";
 import { TROFEOS, trofeosGanados } from "@/lib/meritos";
-import type { Progreso } from "@/lib/storage";
+import type { Progreso } from "@/lib/progreso";
 
 const fechaCorta = new Intl.DateTimeFormat("es-CO", { day: "numeric", month: "short", year: "numeric" });
 

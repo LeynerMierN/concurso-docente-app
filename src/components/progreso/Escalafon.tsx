@@ -2,7 +2,7 @@ import { FileCheck2, GraduationCap } from "lucide-react";
 import config from "@data/app_config.json";
 import QueEs from "@/components/QueEs";
 import { NIVELES, PUNTOS, PUNTOS_CORTO, nivelDe } from "@/lib/meritos";
-import { COSTO_PROTECTOR_XP, type Progreso } from "@/lib/storage";
+import { COSTO_PROTECTOR_XP, type Progreso } from "@/lib/progreso";
 
 const XP = config.gamification.xp_system;
 

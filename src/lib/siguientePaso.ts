@@ -1,7 +1,7 @@
 import config from "@data/app_config.json";
 import type { AnimoMascota } from "@/components/mascota/Capibara";
 import { resumenRepaso } from "@/lib/repaso";
-import { respondidasEnDia, type Progreso } from "@/lib/storage";
+import { respondidasEnDia, type Progreso } from "@/lib/progreso";
 
 /** Lo único que el inicio le pide hacer al aspirante en este momento */
 export interface SiguientePaso {

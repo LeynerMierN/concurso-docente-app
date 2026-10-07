@@ -59,3 +59,10 @@ export function obtenerCategoria(id: string): Categoria | undefined {
 }
 
 export const GRUPOS = Object.keys(NOMBRE_GRUPO) as GrupoCategoria[];
+
+/** Prefijo de los filtros por grupo de la taxonomía («grupo:core_transversal») */
+export const PREFIJO_GRUPO = "grupo:";
+
+export function filtroDeGrupo(grupo: GrupoCategoria): string {
+  return `${PREFIJO_GRUPO}${grupo}`;
+}

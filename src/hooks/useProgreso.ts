@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { leerProgreso, type Progreso } from "@/lib/storage";
+import { leerProgreso, type Progreso } from "@/lib/progreso";
 
 /** Progreso guardado en localStorage; null mientras carga (evita desajustes de hidratación) */
 export function useProgreso(): Progreso | null {

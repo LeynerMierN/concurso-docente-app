@@ -5,7 +5,7 @@ import { FileCheck2, GraduationCap } from "lucide-react";
 import QueEs from "@/components/QueEs";
 import { useProgreso } from "@/hooks/useProgreso";
 import { PUNTOS_CORTO, nivelDe } from "@/lib/meritos";
-import { COSTO_PROTECTOR_XP, calcularRacha, diaProtegible, diasDeRacha, ultimosDias, usarProtector } from "@/lib/storage";
+import { COSTO_PROTECTOR_XP, calcularRacha, diaProtegible, diasDeRacha, ultimosDias, usarProtector } from "@/lib/progreso";
 
 const letraDia = new Intl.DateTimeFormat("es-CO", { weekday: "narrow" });
 const nombreDia = new Intl.DateTimeFormat("es-CO", { weekday: "long", day: "numeric", month: "long" });

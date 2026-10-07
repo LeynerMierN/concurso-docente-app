@@ -1,5 +1,5 @@
 import banco from "@data/banco_preguntas.json";
-import { CATEGORIAS, NOMBRE_GRUPO, obtenerCategoria, type GrupoCategoria } from "@/lib/categorias";
+import { CATEGORIAS, NOMBRE_GRUPO, PREFIJO_GRUPO, obtenerCategoria, type GrupoCategoria } from "@/lib/categorias";
 import type { FiltroExamen, Pregunta, RespuestaUsuario, ResultadoExamen } from "@/types/exam";
 
 /** Banco unificado generado por scripts/importar_bancos.py a partir de data/fuentes/ */
@@ -39,11 +39,7 @@ export const FILTROS_TEMATICOS: { id: FiltroExamen; etiqueta: string; coincide: 
   { id: "psicotecnica", etiqueta: "Psicotécnica", coincide: (p) => p.categoria_id === "comportamental" },
 ];
 
-const PREFIJO_GRUPO = "grupo:";
-
-export function filtroDeGrupo(grupo: GrupoCategoria): FiltroExamen {
-  return `${PREFIJO_GRUPO}${grupo}`;
-}
+export { filtroDeGrupo } from "@/lib/categorias";
 
 export function filtrarPreguntas(filtro: FiltroExamen): Pregunta[] {
   if (filtro === "todos") return PREGUNTAS;

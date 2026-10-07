@@ -33,7 +33,7 @@ export const MODULOS_NAVEGACION: ModuloNavegacion[] = config.navigation_modules.
     Icono: ICONOS[m.icon] ?? FileText,
   }));
 
-export const META_DIARIA_PREGUNTAS = config.gamification.streak_system.daily_goal_questions;
+export { META_DIARIA_PREGUNTAS } from "@/lib/progreso";
 
 /**
  * Distribución de la Prueba de Aptitudes y Competencias Básicas por componente

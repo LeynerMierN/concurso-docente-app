@@ -1,6 +1,8 @@
 import { CATEGORIAS } from "@/lib/categorias";
 import { CONTEO_POR_CATEGORIA, obtenerPregunta } from "@/lib/preguntas";
-import type { Progreso } from "@/lib/storage";
+import type { Progreso } from "@/lib/progreso";
+
+export { proyeccionPuntaje } from "@/lib/progreso";
 
 /** Categorías del núcleo común con preguntas: las que todo aspirante debería practicar */
 export const CATEGORIAS_NUCLEO = CATEGORIAS.filter((c) => c.grupo === "core_transversal" && CONTEO_POR_CATEGORIA[c.id]).map((c) => c.nombre);
@@ -29,14 +31,4 @@ export function aciertoPorArea(progreso: Progreso): AciertoArea[] {
 export function aciertoGlobal(progreso: Progreso): number {
   const correctas = Object.values(progreso.porPregunta).reduce((s, p) => s + p.correctas, 0);
   return progreso.totalRespondidas ? Math.round((correctas / progreso.totalRespondidas) * 100) : 0;
-}
-
-/**
- * Proyección simple: promedio de los últimos 3 simulacros.
- * Es una referencia de tendencia, no una predicción del puntaje oficial.
- */
-export function proyeccionPuntaje(progreso: Progreso): number | null {
-  const ultimos = progreso.intentos.filter((i) => i.modo === "simulacro").slice(0, 3);
-  if (ultimos.length === 0) return null;
-  return Math.round((ultimos.reduce((s, i) => s + i.puntaje, 0) / ultimos.length) * 10) / 10;
 }

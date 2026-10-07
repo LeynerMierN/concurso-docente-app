@@ -3,14 +3,17 @@
 import Link from "next/link";
 import { ChevronRight, Layers, Trees, UserRoundCog, Users } from "lucide-react";
 import { usePerfil } from "@/hooks/usePerfil";
-import { obtenerCategoria } from "@/lib/categorias";
-import { CONTEO_POR_CATEGORIA, filtrarPreguntas, filtroDeGrupo } from "@/lib/preguntas";
+import { filtroDeGrupo, obtenerCategoria } from "@/lib/categorias";
 import { ROLES } from "@/lib/perfil";
 
 const tarjeta = "rounded-3xl bg-tarjeta p-5 ring-1 ring-slate-200 dark:ring-slate-700/60";
 
-/** Lo que le toca estudiar según su cargo: núcleo común, su especialidad o la gestión directiva, y lo rural */
-export default function RutaEstudio() {
+/**
+ * Lo que le toca estudiar según su cargo: núcleo común, su especialidad o la gestión directiva, y lo rural.
+ * `conteos` llega calculado desde el servidor (id de categoría o filtro de grupo → preguntas), así esta tarjeta
+ * no descarga el banco de preguntas.
+ */
+export default function RutaEstudio({ conteos }: { conteos: Record<string, number> }) {
   const { perfil, cargado } = usePerfil();
 
   if (!cargado) return null;
@@ -36,17 +39,17 @@ export default function RutaEstudio() {
   const rutas = [
     { href: `/practica?filtro=${nucleo}`, titulo: "Núcleo común", detalle: "Lo presentan todos", Icono: Layers },
     perfil.role === "directivo_docente"
-      ? { href: `/practica?filtro=${directivos}`, titulo: "Gestión directiva", detalle: `${filtrarPreguntas(directivos).length} preguntas`, Icono: Users }
+      ? { href: `/practica?filtro=${directivos}`, titulo: "Gestión directiva", detalle: `${conteos[directivos] ?? 0} preguntas`, Icono: Users }
       : especialidad && {
           href: `/practica?filtro=${especialidad.id}`,
           titulo: especialidad.nombre,
-          detalle: `${CONTEO_POR_CATEGORIA[especialidad.id] ?? 0} preguntas`,
+          detalle: `${conteos[especialidad.id] ?? 0} preguntas`,
           Icono: especialidad.Icono,
         },
     perfil.context === "rural_pdet" && {
       href: "/practica?filtro=rural_pdet",
       titulo: "Contexto rural",
-      detalle: `${CONTEO_POR_CATEGORIA.rural_pdet ?? 0} preguntas`,
+      detalle: `${conteos.rural_pdet ?? 0} preguntas`,
       Icono: Trees,
     },
   ].filter(Boolean) as { href: string; titulo: string; detalle: string; Icono: typeof Layers }[];

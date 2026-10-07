@@ -4,11 +4,18 @@ import Link from "next/link";
 import { ChevronRight, FileCheck2 } from "lucide-react";
 import { usePerfil } from "@/hooks/usePerfil";
 import { useProgreso } from "@/hooks/useProgreso";
-import { META_DIARIA_PREGUNTAS } from "@/lib/appConfig";
-import { proyeccionPuntaje } from "@/lib/estadisticas";
 import { PUNTOS_CORTO } from "@/lib/meritos";
 import { umbralDe } from "@/lib/perfil";
-import { COSTO_PROTECTOR_XP, calcularRacha, diaProtegible, diasDeRacha, respondidasEnDia, usarProtector } from "@/lib/storage";
+import {
+  COSTO_PROTECTOR_XP,
+  META_DIARIA_PREGUNTAS,
+  calcularRacha,
+  diaProtegible,
+  diasDeRacha,
+  proyeccionPuntaje,
+  respondidasEnDia,
+  usarProtector,
+} from "@/lib/progreso";
 
 /** Resumen de una mirada: tarea de hoy, días seguidos y proyección. El detalle está en Progreso */
 export default function TuAvance() {
